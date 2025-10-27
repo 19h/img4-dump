@@ -1,6 +1,6 @@
 [package]
 name = "img4-dump"
-version = "2.0.0"
+version = "2.1.0"
 edition = "2021"
 license = "MIT"
 description = "Extracts payloads and metadata from IMG4/IM4P/IM4M; decrypts with user-supplied IV+Key; optional LZFSE/LZSS decompress."
