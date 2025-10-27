@@ -15,6 +15,13 @@ mod decompress_lzfse;
 #[cfg(feature = "lzss")]
 mod decompress_lzss;
 
+#[derive(Copy, Clone, Debug, Eq, PartialEq, ValueEnum)]
+pub enum KbagClass {
+    Prod,   // kclass=1
+    Dev,    // kclass=2
+    Any,    // first entry
+}
+
 /// IMG4 / IM4P / IM4M dumper & decryptor.
 #[derive(Parser, Debug)]
 #[command(name = "img4-dump", version)]
@@ -78,6 +85,14 @@ struct Cli {
     /// Dump IM4M certificate chain (DER + PEM files)
     #[arg(long = "dump-im4m-certs", action = ArgAction::SetTrue)]
     dump_im4m_certs: bool,
+
+    /// KBAG selection preference (prod=class 1, dev=class 2, any=first)
+    #[arg(long = "kbag-class", value_enum, default_value_t = KbagClass::Prod)]
+    kbag_class: KbagClass,
+
+    /// Optional KBAG entry index override (0-based)
+    #[arg(long = "kbag-index")]
+    kbag_index: Option<usize>,
 }
 
 #[derive(Copy, Clone, Debug, Eq, PartialEq, ValueEnum)]
@@ -202,7 +217,7 @@ fn main() -> Result<()> {
             let src: &[u8] = if let Some(ref d) = clear { d } else { &im4p.data };
             eprintln!("DEBUG: Decompression source size {} bytes", src.len());
 
-            match util::try_decompress(src) {
+            match util::try_decompress_with_metadata(src, im4p.compression.as_ref()) {
                 Ok(Some((name, dec))) => {
                     eprintln!("DEBUG: Decompression succeeded, generated {} ({} bytes)", name, dec.len());
                     let p = cli.outdir.join(name);
@@ -277,6 +292,18 @@ fn main() -> Result<()> {
     let mut im4r_len = None;
     if let Some(im4r) = &parsed.im4r {
         eprintln!("DEBUG: IM4R present, length {} bytes", im4r.len());
+
+        // Try to extract BNCN nonce
+        match parse::extract_im4r_bncn_nonce(im4r) {
+            Ok(Some(nonce)) => {
+                let p = cli.outdir.join("im4r.bncn.bin");
+                fs::write(&p, &nonce)?;
+                if cli.verbose { eprintln!("extracted BNCN nonce ({} bytes) -> {:?}", nonce.len(), p); }
+            }
+            Ok(None) => { eprintln!("DEBUG: IM4R contains no BNCN property"); }
+            Err(e) => { eprintln!("DEBUG: IM4R nonce parse error: {}", e); }
+        }
+
         if cli.dump_im4r {
             let p = cli.outdir.join("im4r.der");
             fs::write(&p, im4r)?;
@@ -284,6 +311,7 @@ fn main() -> Result<()> {
                 eprintln!("wrote {:?}", p);
             }
         }
+
         im4r_len = Some(im4r.len());
     }
 

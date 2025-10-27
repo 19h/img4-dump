@@ -27,6 +27,12 @@ pub struct KbagEntry {
     pub key: Vec<u8>,  // 16/24/32 bytes
 }
 
+#[derive(Debug, Clone, Serialize)]
+pub struct Im4pCompression {
+    pub method_id: u64,                 // 0=LZSS, 1=LZFSE (A1)
+    pub uncompressed_len: Option<u64>,  // may be absent in some images
+}
+
 #[derive(Debug)]
 pub struct Im4p {
     pub r#type: String,
@@ -34,6 +40,7 @@ pub struct Im4p {
     pub data: Vec<u8>,
     pub kbag_der: Option<Vec<u8>>,
     pub kbag_summary: Option<Vec<KbagEntry>>,
+    pub compression: Option<Im4pCompression>,   // NEW
 }
 
 #[derive(Debug)]
@@ -83,6 +90,60 @@ pub struct Im4mInfoSummary {
     pub images_present: Vec<String>,
     pub cert_chain_len: Option<usize>,
     pub signature_len: Option<usize>,
+}
+
+fn parse_im4p_compression(obj: &DerObject) -> Result<Im4pCompression> {
+    let seq = obj.as_sequence().map_err(|_| anyhow!("compression not SEQUENCE"))?;
+
+    if seq.is_empty() { bail!("compression SEQUENCE empty"); }
+
+    let id = seq[0].as_u64().map_err(|_| anyhow!("compression id not INTEGER"))?;
+
+    let uncl =
+        if seq.len() > 1 {
+            Some(seq[1].as_u64().map_err(|_| anyhow!("compression len not INTEGER"))?)
+        } else {
+            None
+        };
+
+    Ok(Im4pCompression { method_id: id, uncompressed_len: uncl })
+}
+
+// Reuse the generic constructed walker: find SEQUENCE { IA5String(4), OCTET STRING }
+fn find_bncn(o: &DerObject) -> Result<Option<&[u8]>> {
+    if let Ok(seq) = o.as_sequence() {
+        if seq.len() >= 2 {
+            if let Some(k) = super::ia5str(&seq[0]) {
+                if k == "BNCN" {
+                    if let Some(val) = seq[1].as_slice().ok() {
+                        return Ok(Some(val));
+                    }
+                }
+            }
+        }
+        for ch in seq { if let Some(v) = find_bncn(ch)? { return Ok(Some(v)); } }
+    }
+
+    // Recurse into constructed non-universal too
+    if o.header.is_constructed() {
+        if let Ok(bytes) = o.as_slice() {
+            let mut off = 0usize;
+            while off < bytes.len() {
+                let (rem, child) = parse_der(&bytes[off..]).map_err(|e| anyhow!("IM4R inner DER: {e}"))?;
+                let consumed = bytes[off..].len() - rem.len();
+                if let Some(v) = find_bncn(&child)? { return Ok(Some(v)); }
+                off += consumed;
+            }
+        }
+    }
+
+    Ok(None)
+}
+
+pub fn extract_im4r_bncn_nonce(raw: &[u8]) -> Result<Option<Vec<u8>>> {
+    let (_, obj) = parse_der(raw).map_err(|e| anyhow!("IM4R DER: {e}"))?;
+
+    Ok(find_bncn(&obj)?.map(|s| s.to_vec()))
 }
 
 pub fn parse_img4_like(bytes: &[u8]) -> Result<Parsed> {
@@ -222,12 +283,24 @@ fn parse_im4p_from_der_obj(obj: &DerObject) -> Result<Im4p> {
         None
     };
 
+    // 5: optional compression (SEQUENCE { INTEGER id, INTEGER uncompressed_len })
+    let compression =
+        if let Some(cobj) = seq.get(5) {
+            match parse_im4p_compression(cobj) {
+                Ok(c) => { debug!("IM4P compression: id={}, uncompressed_len={:?}", c.method_id, c.uncompressed_len); Some(c) }
+                Err(e) => { warn!("IM4P compression parse failed: {}", e); None }
+            }
+        } else {
+            None
+        };
+
     Ok(Im4p {
         r#type: ty,
         description: desc,
         data,
         kbag_der: kbag_der_vec,
         kbag_summary,
+        compression,          // NEW
     })
 }
 
@@ -287,6 +360,7 @@ pub fn summarize_im4m(im4m: &Im4m) -> Result<Im4mInfoSummary> {
         "summarize_im4m: start, raw DER size {} bytes",
         im4m.raw.len()
     );
+
     // Decode top-level to extract version, signature, cert chain lengths (as before)
     let (_, obj) = parse_der(&im4m.raw).map_err(|e| anyhow!("IM4M DER: {e}"))?;
     let seq = obj.as_sequence().map_err(|_| anyhow!("IM4M not SEQUENCE"))?;
@@ -295,10 +369,17 @@ pub fn summarize_im4m(im4m: &Im4m) -> Result<Im4mInfoSummary> {
         .get(0)
         .and_then(ia5str)
         .ok_or_else(|| anyhow!("IM4M label missing"))?;
+
     if lbl != "IM4M" {
         bail!("label != IM4M");
     }
+
     debug!("IM4M label validated");
+
+    // Per pongoOS, IM4M[1] is INTEGER zero; validate if present
+    if let Some(z) = seq.get(1).and_then(|o| o.as_u64().ok()) {
+        if z != 0 { warn!("IM4M[1] expected 0, got {}", z); }
+    }
 
     let version = seq.get(1).and_then(|o| o.as_u64().ok());
     debug!("IM4M version: {:?}", version);
@@ -315,7 +396,7 @@ pub fn summarize_im4m(im4m: &Im4m) -> Result<Im4mInfoSummary> {
         .map(|s| s.len());
     debug!("IM4M cert chain length: {:?}", cert_chain_len);
 
-    // NEW: collect all IA5 strings (4-char) anywhere inside IM4M (including under private/context-specific)
+    // collect all IA5 strings (4-char) anywhere inside IM4M (including under private/context-specific)
     let mut tokens = Vec::<String>::new();
     scan_der_collect_ia5_fourccs(&im4m.raw, &mut tokens)?;
     debug!("Collected {} IA5 tokens before dedup", tokens.len());
@@ -364,14 +445,14 @@ pub fn summarize_im4m(im4m: &Im4m) -> Result<Im4mInfoSummary> {
 pub fn extract_im4m_cert_chain(raw: &[u8]) -> anyhow::Result<Vec<Vec<u8>>> {
     // Manually parse to extract raw DER bytes including headers
     let mut out: Vec<Vec<u8>> = Vec::new();
-    
+
     // Parse top-level IM4M SEQUENCE to find chain at index 4
     let mut pos = 0usize;
     let (tag_len, _, _, _) = der_read_tag(&raw[pos..]).map_err(|e| anyhow::anyhow!("IM4M tag: {e}"))?;
     pos += tag_len;
     let (len_len, _) = der_read_len(&raw[pos..]).map_err(|e| anyhow::anyhow!("IM4M len: {e}"))?;
     pos += len_len;
-    
+
     // Skip to index 4 by parsing elements 0..4
     for idx in 0..5 {
         let elem_start = pos;
@@ -381,13 +462,13 @@ pub fn extract_im4m_cert_chain(raw: &[u8]) -> anyhow::Result<Vec<Vec<u8>>> {
         let (len_len, elem_len) = der_read_len(&raw[pos..])
             .map_err(|e| anyhow::anyhow!("elem[{idx}] len: {e}"))?;
         pos += len_len;
-        
+
         if idx == 4 {
             // This is the cert chain container (should be SEQUENCE)
             if class != 0 || tag_no != 16 {
                 return Ok(Vec::new()); // Not a SEQUENCE, no certs
             }
-            
+
             // Parse inner SEQUENCE of certificates
             let chain_end = pos + elem_len;
             while pos < chain_end {
@@ -399,9 +480,9 @@ pub fn extract_im4m_cert_chain(raw: &[u8]) -> anyhow::Result<Vec<Vec<u8>>> {
                     .map_err(|e| anyhow::anyhow!("cert len: {e}"))?;
                 pos += cert_len_len;
                 let cert_full_len = cert_tag_len + cert_len_len + cert_len;
-                
+
                 debug!("cert[{}]: @{:04x} class={}, tag={}, len={}", out.len(), cert_start, cert_class, cert_tag, cert_len);
-                
+
                 // Extract certificate based on encoding
                 match (cert_class, cert_tag) {
                     (0, 4) => {
@@ -422,7 +503,7 @@ pub fn extract_im4m_cert_chain(raw: &[u8]) -> anyhow::Result<Vec<Vec<u8>>> {
                         }
                     }
                 }
-                
+
                 pos += cert_len;
             }
             break;
@@ -431,7 +512,7 @@ pub fn extract_im4m_cert_chain(raw: &[u8]) -> anyhow::Result<Vec<Vec<u8>>> {
             pos += elem_len;
         }
     }
-    
+
     Ok(out)
 }
 

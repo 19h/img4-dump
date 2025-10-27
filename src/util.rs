@@ -4,7 +4,8 @@ use anyhow::{anyhow, bail, Context, Result};
 use hex::FromHex;
 
 use crate::Cli;
-use crate::parse::Im4p;
+use crate::parse::{Im4p, Im4pCompression};
+use crate::KbagClass;
 
 pub fn ensure_outdir(outdir: &Path, force: bool) -> Result<()> {
     if outdir.exists() {
@@ -26,6 +27,12 @@ fn is_empty_dir(p: &Path) -> Result<bool> {
     Ok(true)
 }
 
+fn pick_ivk(e: &crate::parse::KbagEntry) -> Result<(Vec<u8>, Vec<u8>)> {
+    if e.iv.len() != 16 { bail!("KBAG IV not 16 bytes"); }
+    if !matches!(e.key.len(), 16|24|32) { bail!("KBAG key is not 16/24/32 bytes"); }
+    Ok((e.iv.clone(), e.key.clone()))
+}
+
 pub fn resolve_iv_key(cli: &Cli, im4p: &Im4p) -> Result<(Vec<u8>, Vec<u8>)> {
     // CLI overrides KBAG
     let iv_cli = if let Some(ref hx) = cli.iv_hex {
@@ -42,11 +49,16 @@ pub fn resolve_iv_key(cli: &Cli, im4p: &Im4p) -> Result<(Vec<u8>, Vec<u8>)> {
 
     // Otherwise use a KBAG entry if present (assumes already-unwrapped IV/Key in plaintext KBAG)
     if let Some(ref entries) = im4p.kbag_summary {
-        let pick = entries.iter().find(|e| e.kclass == 1).or(entries.get(0))
-            .ok_or_else(|| anyhow!("KBAG present but empty"))?;
-        if pick.iv.len() != 16 { bail!("KBAG IV not 16 bytes"); }
-        if !matches!(pick.key.len(), 16|24|32) { bail!("KBAG key is not 16/24/32 bytes"); }
-        return Ok((pick.iv.clone(), pick.key.clone()));
+        if let Some(i) = cli.kbag_index {
+            let e = entries.get(i).ok_or_else(|| anyhow!("KBAG index {} out of range", i))?;
+            return pick_ivk(e);
+        }
+        let pick = match cli.kbag_class {
+            KbagClass::Prod => entries.iter().find(|e| e.kclass == 1).or(entries.get(0)),
+            KbagClass::Dev  => entries.iter().find(|e| e.kclass == 2).or(entries.get(0)),
+            KbagClass::Any  => entries.get(0),
+        }.ok_or_else(|| anyhow!("KBAG present but empty"))?;
+        return pick_ivk(pick);
     }
 
     bail!("no IV/Key provided and no KBAG available");
@@ -66,10 +78,10 @@ pub fn validate_decryption(data: &[u8]) -> (bool, Option<String>) {
     if data.len() < 4 {
         return (false, Some("too short".into()));
     }
-    
+
     // Check for common magic bytes
     let magic = u32::from_be_bytes([data[0], data[1], data[2], data[3]]);
-    
+
     match magic {
         // Mach-O headers
         0xfeedfacf | 0xcffaedfe | 0xfeedface | 0xcefaedfe => {
@@ -83,12 +95,12 @@ pub fn validate_decryption(data: &[u8]) -> (bool, Option<String>) {
         0x494d4734 => return (true, Some("IMG4".into())),              // "IMG4"
         _ => {}
     }
-    
+
     // Check first 64 bytes for patterns (firmware usually has non-zero header)
     let header_len = data.len().min(64);
     let header_zeros = data[..header_len].iter().filter(|&&b| b == 0).count();
     let header_ones = data[..header_len].iter().filter(|&&b| b == 0xFF).count();
-    
+
     // If header is ALL zeros or ALL 0xFF, likely garbage
     if header_zeros == header_len {
         return (false, Some("all-zero header".into()));
@@ -96,36 +108,76 @@ pub fn validate_decryption(data: &[u8]) -> (bool, Option<String>) {
     if header_ones == header_len {
         return (false, Some("all-0xFF header".into()));
     }
-    
+
     // Check if there's any structure in first 16 bytes (non-uniform distribution)
     if data.len() >= 16 {
-        let unique_bytes: std::collections::HashSet<u8> = 
+        let unique_bytes: std::collections::HashSet<u8> =
             data[..16].iter().copied().collect();
         if unique_bytes.len() >= 3 {
             // Has variety in first 16 bytes, likely structured data
             return (true, Some("structured binary".into()));
         }
     }
-    
+
     // If we get here, it might be valid but we can't be sure
     (true, Some("unknown format".into()))
 }
 
-pub fn try_decompress(_input: &[u8]) -> Result<Option<(String, Vec<u8>)>> {
-    // Heuristics are feature-gated; if you enabled features, wire them here.
+pub fn try_decompress(input: &[u8]) -> Result<Option<(String, Vec<u8>)>> {
     #[cfg(feature = "lzfse")]
     {
-        if crate::decompress_lzfse::looks_like_lzfse(_input) {
-            let out = crate::decompress_lzfse::decompress_lzfse(_input)?;
+        if crate::decompress_lzfse::looks_like_lzfse(input) {
+            let out = crate::decompress_lzfse::decompress_lzfse_with_hint(input, None)?;
             return Ok(Some(("im4p.decompressed.lzfse".into(), out)));
         }
     }
     #[cfg(feature = "lzss")]
     {
-        if crate::decompress_lzss::looks_like_lzss(_input) {
-            let out = crate::decompress_lzss::decompress_lzss(_input)?;
+        if crate::decompress_lzss::looks_like_lzss(input) {
+            let out = crate::decompress_lzss::decompress_lzss(input)?;
             return Ok(Some(("im4p.decompressed.lzss".into(), out)));
         }
     }
     Ok(None)
+}
+
+pub fn try_decompress_with_metadata(input: &[u8], meta: Option<&Im4pCompression>) -> Result<Option<(String, Vec<u8>)>> {
+    // Prefer explicit metadata (A1)
+    if let Some(m) = meta {
+        match m.method_id {
+            0 => { // LZSS
+                #[cfg(feature = "lzss")]
+                {
+                    let out = crate::decompress_lzss::decompress_lzss(input)?;
+                    if let Some(u) = m.uncompressed_len {
+                        if out.len() as u64 != u {
+                            return Ok(Some(("im4p.decompressed.lzss".into(), out))); // warn upstream
+                        }
+                    }
+                    return Ok(Some(("im4p.decompressed.lzss".into(), out)));
+                }
+                #[cfg(not(feature = "lzss"))]
+                bail!("lzss feature disabled but IM4P.compression indicates LZSS");
+            }
+            1 => { // LZFSE
+                #[cfg(feature = "lzfse")]
+                {
+                    let hint = m.uncompressed_len.map(|v| v as usize);
+                    let out = crate::decompress_lzfse::decompress_lzfse_with_hint(input, hint)?;
+                    if let Some(u) = m.uncompressed_len {
+                        if out.len() as u64 != u {
+                            // length mismatch; upstream can log a warning
+                        }
+                    }
+                    return Ok(Some(("im4p.decompressed.lzfse".into(), out)));
+                }
+                #[cfg(not(feature = "lzfse"))]
+                bail!("lzfse feature disabled but IM4P.compression indicates LZFSE");
+            }
+            _ => { /* unknown id → fall through to heuristics */ }
+        }
+    }
+
+    // Heuristics (existing)
+    try_decompress(input)
 }
