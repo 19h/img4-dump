@@ -237,9 +237,9 @@ fn main() -> Result<()> {
             }
         }
 
-        im4p_info = Some(parse::Im4pInfo {
+im4p_info = Some(parse::Im4pInfo {
             r#type: im4p.r#type.clone(),
-            description: im4p.description.clone(),
+            version: im4p.version.clone(),
             data_len: im4p.data.len(),
             kbag: im4p.kbag_summary.clone(),
         });
@@ -273,47 +273,65 @@ fn main() -> Result<()> {
             }
         }
 
-        // Dump IM4M properties (typed) if requested
-        if cli.dump_im4m_props {
-            let props = parse::extract_im4m_properties(&im4m.raw)?;
-            let p = cli.outdir.join("im4m.props.json");
-            fs::write(&p, serde_json::to_vec_pretty(&props)?)?;
-            if cli.verbose {
-                eprintln!("wrote {:?}", p);
-            }
-        }
+// Dump IM4M properties (typed) if requested
+if cli.dump_im4m_props {
+    let props = parse::extract_im4m_properties_typed(&im4m.raw)?;
+    let p = cli.outdir.join("im4m.props.json");
+    fs::write(&p, serde_json::to_vec_pretty(&props)?)?;
+    if cli.verbose {
+        eprintln!("wrote {:?}", p);
+    }
+}
 
         im4m_summary = Some(parse::summarize_im4m(im4m)?);
         eprintln!("DEBUG: IM4M summary generated");
     }
 
 
-    // Dump IM4R
-    let mut im4r_len = None;
-    if let Some(im4r) = &parsed.im4r {
-        eprintln!("DEBUG: IM4R present, length {} bytes", im4r.len());
+// Dump IM4R
+let mut im4r_len = None;
+if let Some(im4r) = &parsed.im4r {
+    eprintln!("DEBUG: IM4R present, length {} bytes", im4r.len());
 
-        // Try to extract BNCN nonce
-        match parse::extract_im4r_bncn_nonce(im4r) {
-            Ok(Some(nonce)) => {
-                let p = cli.outdir.join("im4r.bncn.bin");
-                fs::write(&p, &nonce)?;
-                if cli.verbose { eprintln!("extracted BNCN nonce ({} bytes) -> {:?}", nonce.len(), p); }
+    // Extract all IM4R properties using structured parser
+    match parse::extract_im4r_properties(im4r) {
+        Ok(props) => {
+            // Extract BNCN nonce if present
+            if let Some(bncn_prop) = props.iter().find(|p| p.key == "BNCN") {
+                if let parse::Im4mPropertyValue::OctetString { value: hex_nonce } = &bncn_prop.value {
+                    if let Ok(nonce) = hex::decode(hex_nonce) {
+                        let p = cli.outdir.join("im4r.bncn.bin");
+                        fs::write(&p, &nonce)?;
+                        if cli.verbose {
+                            eprintln!("extracted BNCN nonce ({} bytes) -> {:?}", nonce.len(), p);
+                        }
+                    }
+                }
+            } else {
+                eprintln!("DEBUG: IM4R contains no BNCN property");
             }
-            Ok(None) => { eprintln!("DEBUG: IM4R contains no BNCN property"); }
-            Err(e) => { eprintln!("DEBUG: IM4R nonce parse error: {}", e); }
-        }
-
-        if cli.dump_im4r {
-            let p = cli.outdir.join("im4r.der");
-            fs::write(&p, im4r)?;
+            // Dump all IM4R properties to JSON
+            let p = cli.outdir.join("im4r.props.json");
+            fs::write(&p, serde_json::to_vec_pretty(&props)?)?;
             if cli.verbose {
-                eprintln!("wrote {:?}", p);
+                eprintln!("wrote IM4R properties to {:?}", p);
             }
         }
-
-        im4r_len = Some(im4r.len());
+        Err(e) => {
+            eprintln!("WARNING: IM4R property parse error: {}", e);
+        }
     }
+
+    if cli.dump_im4r {
+        let p = cli.outdir.join("im4r.der");
+        fs::write(&p, im4r)?;
+        if cli.verbose {
+            eprintln!("wrote {:?}", p);
+        }
+    }
+
+    im4r_len = Some(im4r.len());
+}
 
     let summary = Summary {
         container: parsed.kind,

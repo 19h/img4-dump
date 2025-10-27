@@ -123,18 +123,18 @@ pub fn validate_decryption(data: &[u8]) -> (bool, Option<String>) {
     (true, Some("unknown format".into()))
 }
 
-pub fn try_decompress(input: &[u8]) -> Result<Option<(String, Vec<u8>)>> {
+pub fn try_decompress(_input: &[u8]) -> Result<Option<(String, Vec<u8>)>> {
     #[cfg(feature = "lzfse")]
     {
-        if crate::decompress_lzfse::looks_like_lzfse(input) {
-            let out = crate::decompress_lzfse::decompress_lzfse_with_hint(input, None)?;
+        if crate::decompress_lzfse::looks_like_lzfse(_input) {
+let out = crate::decompress_lzfse::decompress_lzfse_with_hint(_input, None)?;
             return Ok(Some(("im4p.decompressed.lzfse".into(), out)));
         }
     }
     #[cfg(feature = "lzss")]
     {
-        if crate::decompress_lzss::looks_like_lzss(input) {
-            let out = crate::decompress_lzss::decompress_lzss(input)?;
+        if crate::decompress_lzss::looks_like_lzss(_input) {
+            let out = crate::decompress_lzss::decompress_lzss(_input)?;
             return Ok(Some(("im4p.decompressed.lzss".into(), out)));
         }
     }

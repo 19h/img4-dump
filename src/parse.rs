@@ -2,6 +2,8 @@ use anyhow::{anyhow, bail, Result};
 use der_parser::der::{parse_der, Class, DerObject};
 use serde::Serialize;
 use log::{debug, warn};
+use std::collections::HashMap;
+use once_cell::sync::Lazy;
 
 /// Top-level kind detected
 #[derive(Copy, Clone, Debug, Serialize)]
@@ -36,7 +38,7 @@ pub struct Im4pCompression {
 #[derive(Debug)]
 pub struct Im4p {
     pub r#type: String,
-    pub description: String,
+    pub version: String,
     pub data: Vec<u8>,
     pub kbag_der: Option<Vec<u8>>,
     pub kbag_summary: Option<Vec<KbagEntry>>,
@@ -49,6 +51,8 @@ pub struct Im4m {
     pub raw: Vec<u8>,
 }
 
+/// Legacy untyped property value (kept for backwards compatibility)
+#[allow(dead_code)]
 #[derive(Debug, Clone, Serialize)]
 #[serde(tag = "type", content = "value")]
 pub enum Im4mValue {
@@ -63,12 +67,39 @@ pub enum Im4mValue {
     Unknown { class_id: u8, tag: u32, len: usize },
 }
 
+/// Legacy untyped property structure (kept for backwards compatibility)
+#[allow(dead_code)]
 #[derive(Debug, Clone, Serialize)]
 pub struct Im4mProperty {
     pub key: String,   // 4-char IA5 tag (e.g., "DGST","CEPO")
     pub value: Im4mValue,
 }
 
+/// Enhanced property value with type information
+#[derive(Debug, Clone, Serialize)]
+#[serde(tag = "type")]
+pub enum Im4mPropertyValue {
+    Integer { value: u64 },
+    Boolean { value: bool },
+    String { value: String },
+    OctetString { value: String }, // Hex-encoded
+    Digest { value: String },      // Hex-encoded, specifically for properties known to be digests
+    Unknown { der_type: String, #[serde(skip_serializing_if = "Option::is_none")] hex_value: Option<String>, #[serde(skip_serializing_if = "Option::is_none")] hex_values: Option<Vec<String>> },
+}
+
+/// Typed property structure with metadata
+#[derive(Debug, Clone, Serialize)]
+pub struct TypedIm4mProperty {
+    pub key: String,
+    pub name: String,
+    pub description: String,
+    pub value: Im4mPropertyValue,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub anomaly: Option<String>,
+}
+
+/// Image manifest structure (kept for future use)
+#[allow(dead_code)]
 #[derive(Debug, Clone, Serialize)]
 pub struct Im4mImageManifest {
     pub fourcc: String,  // e.g. "krnl", "bstc"
@@ -78,7 +109,7 @@ pub struct Im4mImageManifest {
 #[derive(Debug, Clone, Serialize)]
 pub struct Im4pInfo {
     pub r#type: String,
-    pub description: String,
+    pub version: String,
     pub data_len: usize,
     pub kbag: Option<Vec<KbagEntry>>,
 }
@@ -91,6 +122,57 @@ pub struct Im4mInfoSummary {
     pub cert_chain_len: Option<usize>,
     pub signature_len: Option<usize>,
 }
+
+/// Property metadata from XNU headers
+struct PropertyMetadata {
+    name: &'static str,
+    description: &'static str,
+    expected_type: ExpectedDerType,
+}
+
+#[derive(Debug)]
+enum ExpectedDerType {
+    Boolean,
+    Integer,
+    OctetString,
+    Digest,
+    Ia5String,
+}
+
+/// Known Image4 properties from XNU headers
+static KNOWN_PROPERTIES: Lazy<HashMap<&'static str, PropertyMetadata>> = Lazy::new(|| {
+    let mut m = HashMap::new();
+    m.insert("CEPO", PropertyMetadata { name: "ChipEpoch", description: "Chip Epoch", expected_type: ExpectedDerType::Integer });
+    m.insert("BORD", PropertyMetadata { name: "BoardId", description: "Board Identifier", expected_type: ExpectedDerType::Integer });
+    m.insert("CHIP", PropertyMetadata { name: "ChipId", description: "Chip Identifier", expected_type: ExpectedDerType::Integer });
+    m.insert("SDOM", PropertyMetadata { name: "SecurityDomain", description: "Security Domain", expected_type: ExpectedDerType::Integer });
+    m.insert("ECID", PropertyMetadata { name: "ExclusiveChipId", description: "Unique Chip Identifier", expected_type: ExpectedDerType::Integer });
+    m.insert("CPRO", PropertyMetadata { name: "CertificateProductionStatus", description: "Certificate Production Status", expected_type: ExpectedDerType::Boolean });
+    m.insert("CSEC", PropertyMetadata { name: "CertificateSecurityMode", description: "Certificate Security Mode", expected_type: ExpectedDerType::Boolean });
+    m.insert("EPRO", PropertyMetadata { name: "EffectiveProductionStatus", description: "Effective Production Status", expected_type: ExpectedDerType::Boolean });
+    m.insert("ESEC", PropertyMetadata { name: "EffectiveSecurityMode", description: "Effective Security Mode", expected_type: ExpectedDerType::Boolean });
+    m.insert("IUOU", PropertyMetadata { name: "InternalUseOnlyUnit", description: "Internal Use Only Unit", expected_type: ExpectedDerType::Boolean });
+    m.insert("AMNM", PropertyMetadata { name: "AllowMixNMatch", description: "Allow Mix-n-Match", expected_type: ExpectedDerType::Boolean });
+    m.insert("UDID", PropertyMetadata { name: "UniqueDeviceIdentifier", description: "Unique Device Identifier (digest)", expected_type: ExpectedDerType::Digest });
+    m.insert("DGST", PropertyMetadata { name: "Digest", description: "Payload Digest", expected_type: ExpectedDerType::Digest });
+    m.insert("BNCN", PropertyMetadata { name: "BootNonce", description: "Boot Nonce", expected_type: ExpectedDerType::OctetString });
+    m.insert("love", PropertyMetadata { name: "LongOsVersion", description: "Long OS Version", expected_type: ExpectedDerType::Ia5String });
+    m.insert("augs", PropertyMetadata { name: "AugmentedManifest", description: "Augmented Manifest", expected_type: ExpectedDerType::Integer });
+    m.insert("clas", PropertyMetadata { name: "Class", description: "Manifest Class", expected_type: ExpectedDerType::Integer });
+    m.insert("fchp", PropertyMetadata { name: "FusingChip", description: "Fusing Chip", expected_type: ExpectedDerType::Integer });
+    m.insert("pave", PropertyMetadata { name: "PlatformVersion", description: "Platform Version", expected_type: ExpectedDerType::Integer });
+    m.insert("srvn", PropertyMetadata { name: "SecurityRevision", description: "Security Revision", expected_type: ExpectedDerType::Integer });
+    m.insert("styp", PropertyMetadata { name: "SystemType", description: "System Type", expected_type: ExpectedDerType::Integer });
+    m.insert("type", PropertyMetadata { name: "Type", description: "Image Type", expected_type: ExpectedDerType::Ia5String });
+    m.insert("upcl", PropertyMetadata { name: "UpgradeClaim", description: "Upgrade Claim", expected_type: ExpectedDerType::Integer });
+    m.insert("vnum", PropertyMetadata { name: "VersionNumber", description: "Version Number", expected_type: ExpectedDerType::Integer });
+    m.insert("gdmg", PropertyMetadata { name: "GlobalDigest", description: "Global Digest", expected_type: ExpectedDerType::Digest });
+    m.insert("ginc", PropertyMetadata { name: "GlobalIncrement", description: "Global Increment", expected_type: ExpectedDerType::Integer });
+    m.insert("ginf", PropertyMetadata { name: "GlobalInfo", description: "Global Info", expected_type: ExpectedDerType::Integer });
+    m.insert("gtcd", PropertyMetadata { name: "GlobalTrustedCode", description: "Global Trusted Code", expected_type: ExpectedDerType::Integer });
+    m.insert("gtgv", PropertyMetadata { name: "GlobalTrustGlobalVersion", description: "Global Trust Global Version", expected_type: ExpectedDerType::Integer });
+    m
+});
 
 fn parse_im4p_compression(obj: &DerObject) -> Result<Im4pCompression> {
     let seq = obj.as_sequence().map_err(|_| anyhow!("compression not SEQUENCE"))?;
@@ -109,41 +191,42 @@ fn parse_im4p_compression(obj: &DerObject) -> Result<Im4pCompression> {
     Ok(Im4pCompression { method_id: id, uncompressed_len: uncl })
 }
 
-// Reuse the generic constructed walker: find SEQUENCE { IA5String(4), OCTET STRING }
-fn find_bncn(o: &DerObject) -> Result<Option<&[u8]>> {
-    if let Ok(seq) = o.as_sequence() {
-        if seq.len() >= 2 {
-            if let Some(k) = super::ia5str(&seq[0]) {
-                if k == "BNCN" {
-                    if let Some(val) = seq[1].as_slice().ok() {
-                        return Ok(Some(val));
-                    }
-                }
-            }
-        }
-        for ch in seq { if let Some(v) = find_bncn(ch)? { return Ok(Some(v)); } }
+/// Extract properties from IM4R using formal structure: SEQUENCE { "IM4R", SET { properties } }
+pub fn extract_im4r_properties(raw: &[u8]) -> Result<Vec<TypedIm4mProperty>> {
+    let (_, obj) = parse_der(raw).map_err(|e| anyhow!("IM4R DER: {e}"))?;
+    let seq = obj.as_sequence().map_err(|_| anyhow!("IM4R not SEQUENCE"))?;
+
+    let label = seq.get(0).and_then(ia5str).ok_or_else(|| anyhow!("IM4R label missing"))?;
+    if label != "IM4R" {
+        bail!("IM4R label is not 'IM4R'");
     }
 
-    // Recurse into constructed non-universal too
-    if o.header.is_constructed() {
-        if let Ok(bytes) = o.as_slice() {
-            let mut off = 0usize;
-            while off < bytes.len() {
-                let (rem, child) = parse_der(&bytes[off..]).map_err(|e| anyhow!("IM4R inner DER: {e}"))?;
-                let consumed = bytes[off..].len() - rem.len();
-                if let Some(v) = find_bncn(&child)? { return Ok(Some(v)); }
-                off += consumed;
-            }
-        }
-    }
+    let prop_set = seq
+        .get(1)
+        .ok_or_else(|| anyhow!("IM4R missing property SET"))?
+        .as_set()
+        .map_err(|_| anyhow!("IM4R properties not in a SET"))?;
 
-    Ok(None)
+    let mut out = Vec::new();
+    for prop_obj in prop_set {
+        collect_typed_props_from_obj(prop_obj, &mut out)?;
+    }
+    Ok(out)
 }
 
+/// Legacy function for backwards compatibility - extracts only BNCN nonce
+#[allow(dead_code)]
+#[deprecated(note = "Use extract_im4r_properties instead")]
 pub fn extract_im4r_bncn_nonce(raw: &[u8]) -> Result<Option<Vec<u8>>> {
-    let (_, obj) = parse_der(raw).map_err(|e| anyhow!("IM4R DER: {e}"))?;
-
-    Ok(find_bncn(&obj)?.map(|s| s.to_vec()))
+    let props = extract_im4r_properties(raw)?;
+    for prop in props {
+        if prop.key == "BNCN" {
+            if let Im4mPropertyValue::OctetString { value: hex_val } = prop.value {
+                return Ok(Some(hex::decode(hex_val).unwrap_or_default()));
+            }
+        }
+    }
+    Ok(None)
 }
 
 pub fn parse_img4_like(bytes: &[u8]) -> Result<Parsed> {
@@ -244,13 +327,13 @@ fn parse_im4p_from_der_obj(obj: &DerObject) -> Result<Im4p> {
         .to_string();
     debug!("IM4P type: {}", ty);
 
-    // 2: description
-    let desc = seq
-        .get(2)
-        .and_then(ia5str)
-        .ok_or_else(|| anyhow!("IM4P description missing"))?
-        .to_string();
-    debug!("IM4P description length: {}", desc.len());
+// 2: version
+let version_str = seq
+    .get(2)
+    .and_then(ia5str)
+    .ok_or_else(|| anyhow!("IM4P version missing"))?
+    .to_string();
+debug!("IM4P version: {}", version_str);
 
     // 3: payload data
     let data = seq
@@ -294,14 +377,14 @@ fn parse_im4p_from_der_obj(obj: &DerObject) -> Result<Im4p> {
             None
         };
 
-    Ok(Im4p {
-        r#type: ty,
-        description: desc,
-        data,
-        kbag_der: kbag_der_vec,
-        kbag_summary,
-        compression,          // NEW
-    })
+Ok(Im4p {
+    r#type: ty,
+    version: version_str,
+    data,
+    kbag_der: kbag_der_vec,
+    kbag_summary,
+    compression,          // NEW
+})
 }
 
 fn parse_kbag_summary(kbag_der: &[u8]) -> Result<Vec<KbagEntry>> {
@@ -414,18 +497,15 @@ pub fn summarize_im4m(im4m: &Im4m) -> Result<Im4mInfoSummary> {
         manifest_property_tags
     );
 
-    // Heuristic: image 4CCs are commonly lowercase (e.g., "krnl","sepi"), but avoid false positives
-    // We exclude well-known property keys that are 4-char IA5.
-    const NON_IMAGE_KEYS: &[&str] = &[
-        "IM4M", "MANB", "MANP", "DGST", "CEPO", "CPRO", "SDOM", "augs", "clas", "fchp", "pave", "srvn",
-        "styp", "type", "upcl", "vnum", "gdmg", "ginc", "ginf", "gtcd", "gtgv",
-    ];
+    // Heuristic: image 4CCs are commonly lowercase (e.g., "krnl","sepi").
+    // We exclude all well-known property keys and manifest block tags.
     let images_present = tokens
         .iter()
         .filter(|s| {
             s.len() == 4
-                && !NON_IMAGE_KEYS.contains(&s.as_str())
-                && s.chars().all(|c| c.is_ascii_lowercase())
+                && !KNOWN_PROPERTIES.contains_key(s.as_str())
+                && !matches!(s.as_str(), "IM4M" | "MANB" | "MANP")
+                && s.chars().all(|c| c.is_ascii_lowercase() || c.is_ascii_digit())
         })
         .cloned()
         .collect::<Vec<_>>();
@@ -454,9 +534,9 @@ pub fn extract_im4m_cert_chain(raw: &[u8]) -> anyhow::Result<Vec<Vec<u8>>> {
     pos += len_len;
 
     // Skip to index 4 by parsing elements 0..4
-    for idx in 0..5 {
-        let elem_start = pos;
-        let (tag_len, class, constructed, tag_no) = der_read_tag(&raw[pos..])
+for idx in 0..5 {
+        let _elem_start = pos;
+        let (tag_len, class, _constructed, tag_no) = der_read_tag(&raw[pos..])
             .map_err(|e| anyhow::anyhow!("elem[{idx}] tag: {e}"))?;
         pos += tag_len;
         let (len_len, elem_len) = der_read_len(&raw[pos..])
@@ -472,8 +552,8 @@ pub fn extract_im4m_cert_chain(raw: &[u8]) -> anyhow::Result<Vec<Vec<u8>>> {
             // Parse inner SEQUENCE of certificates
             let chain_end = pos + elem_len;
             while pos < chain_end {
-                let cert_start = pos;
-                let (cert_tag_len, cert_class, cert_constructed, cert_tag) = der_read_tag(&raw[pos..])
+let cert_start = pos;
+                let (cert_tag_len, cert_class, _cert_constructed, cert_tag) = der_read_tag(&raw[pos..])
                     .map_err(|e| anyhow::anyhow!("cert tag: {e}"))?;
                 pos += cert_tag_len;
                 let (cert_len_len, cert_len) = der_read_len(&raw[pos..])
@@ -553,6 +633,8 @@ fn write_der_len(buf: &mut Vec<u8>, len: usize) {
 }
 
 /// Extracts all properties of the form SEQUENCE { IA5String(4CC), ANY } found anywhere in the IM4M.
+/// Returns the legacy untyped property structure for backwards compatibility.
+#[allow(dead_code)]
 pub fn extract_im4m_properties(raw: &[u8]) -> Result<Vec<Im4mProperty>> {
     let (_, obj) = parse_der(raw).map_err(|e| anyhow!("IM4M DER: {e}"))?;
     let mut out = Vec::<Im4mProperty>::new();
@@ -560,6 +642,15 @@ pub fn extract_im4m_properties(raw: &[u8]) -> Result<Vec<Im4mProperty>> {
     Ok(out)
 }
 
+/// Extracts typed properties with metadata from IM4M.
+pub fn extract_im4m_properties_typed(raw: &[u8]) -> Result<Vec<TypedIm4mProperty>> {
+    let (_, obj) = parse_der(raw).map_err(|e| anyhow!("IM4M DER: {e}"))?;
+    let mut out = Vec::<TypedIm4mProperty>::new();
+    collect_typed_props_from_obj(&obj, &mut out)?;
+    Ok(out)
+}
+
+#[allow(dead_code)]
 fn collect_props_from_obj(o: &DerObject, out: &mut Vec<Im4mProperty>) -> Result<()> {
     // If this is a SEQUENCE, check for the { IA5String(4CC), ANY } pattern
     if let Ok(seq) = o.as_sequence() {
@@ -602,6 +693,179 @@ fn collect_props_from_obj(o: &DerObject, out: &mut Vec<Im4mProperty>) -> Result<
     Ok(())
 }
 
+/// Collect typed properties with metadata
+fn collect_typed_props_from_obj(o: &DerObject, out: &mut Vec<TypedIm4mProperty>) -> Result<()> {
+    if let Ok(seq) = o.as_sequence() {
+        if seq.len() >= 2 {
+            if let Some(k) = ia5str(&seq[0]) {
+                if k.len() == 4 && k.chars().all(|c| c.is_ascii_graphic()) {
+                    let (value, anomaly) = decode_typed_value(&seq[1], Some(k))?;
+                    let meta = KNOWN_PROPERTIES.get(k);
+                    let (name, description) = if let Some(m) = meta {
+                        (m.name.to_string(), m.description.to_string())
+                    } else {
+                        ("UnknownProperty".to_string(), "An unknown or undocumented property.".to_string())
+                    };
+                    out.push(TypedIm4mProperty {
+                        key: k.to_string(),
+                        name,
+                        description,
+                        value,
+                        anomaly,
+                    });
+                }
+            }
+        }
+        for ch in seq {
+            collect_typed_props_from_obj(ch, out)?;
+        }
+        return Ok(());
+    }
+
+    if let Ok(set) = o.as_set() {
+        for ch in set {
+            collect_typed_props_from_obj(ch, out)?;
+        }
+        return Ok(());
+    }
+
+    let h = &o.header;
+    if h.is_constructed() {
+        if let Ok(bytes) = o.as_slice() {
+            let mut off = 0usize;
+            while off < bytes.len() {
+                let (rem, child) = parse_der(&bytes[off..]).map_err(|e| anyhow!("inner DER: {e}"))?;
+                let consumed = bytes[off..].len() - rem.len();
+                collect_typed_props_from_obj(&child, out)?;
+                off += consumed;
+            }
+        }
+    }
+    Ok(())
+}
+
+/// Decode a value with type hint from property metadata
+fn decode_typed_value(o: &DerObject, key_hint: Option<&str>) -> Result<(Im4mPropertyValue, Option<String>)> {
+    let meta = key_hint.and_then(|k| KNOWN_PROPERTIES.get(k));
+    let mut anomaly = None;
+
+    let val = match meta.map(|m| &m.expected_type) {
+        Some(ExpectedDerType::Boolean) => {
+            if let Ok(b) = o.as_bool() {
+                Im4mPropertyValue::Boolean { value: b }
+            } else {
+                anomaly = Some(format!("Expected BOOLEAN, got {:?}", o.header.tag()));
+                Im4mPropertyValue::Unknown {
+                    der_type: format!("{:?}", o.header.tag()),
+                    hex_value: Some(hex::encode(o.as_slice().unwrap_or_default())),
+                    hex_values: None,
+                }
+            }
+        }
+        Some(ExpectedDerType::Integer) => {
+            if let Ok(i) = o.as_u64() {
+                Im4mPropertyValue::Integer { value: i }
+            } else {
+                anomaly = Some(format!("Expected INTEGER, got {:?}", o.header.tag()));
+                Im4mPropertyValue::Unknown {
+                    der_type: format!("{:?}", o.header.tag()),
+                    hex_value: Some(hex::encode(o.as_slice().unwrap_or_default())),
+                    hex_values: None,
+                }
+            }
+        }
+        Some(ExpectedDerType::Digest) => {
+            if let Ok(s) = o.as_slice() {
+                Im4mPropertyValue::Digest { value: hex::encode(s) }
+            } else {
+                anomaly = Some(format!("Expected OCTET STRING for Digest, got {:?}", o.header.tag()));
+                Im4mPropertyValue::Unknown {
+                    der_type: format!("{:?}", o.header.tag()),
+                    hex_value: Some(hex::encode(o.as_slice().unwrap_or_default())),
+                    hex_values: None,
+                }
+            }
+        }
+        Some(ExpectedDerType::OctetString) => {
+            if let Ok(s) = o.as_slice() {
+                Im4mPropertyValue::OctetString { value: hex::encode(s) }
+            } else {
+                anomaly = Some(format!("Expected OCTET STRING, got {:?}", o.header.tag()));
+                Im4mPropertyValue::Unknown {
+                    der_type: format!("{:?}", o.header.tag()),
+                    hex_value: Some(hex::encode(o.as_slice().unwrap_or_default())),
+                    hex_values: None,
+                }
+            }
+        }
+        Some(ExpectedDerType::Ia5String) => {
+            if let Some(s) = ia5str(o) {
+                Im4mPropertyValue::String { value: s.to_string() }
+            } else {
+                anomaly = Some(format!("Expected IA5String, got {:?}", o.header.tag()));
+                Im4mPropertyValue::Unknown {
+                    der_type: format!("{:?}", o.header.tag()),
+                    hex_value: Some(hex::encode(o.as_slice().unwrap_or_default())),
+                    hex_values: None,
+                }
+            }
+        }
+        None => {
+            // Fallback for unknown keys
+            match o.header.tag().0 {
+                1 => Im4mPropertyValue::Boolean { value: o.as_bool().unwrap_or(false) },
+                2 => Im4mPropertyValue::Integer { value: o.as_u64().unwrap_or(0) },
+                4 => Im4mPropertyValue::OctetString { value: hex::encode(o.as_slice().unwrap_or_default()) },
+                22 => Im4mPropertyValue::String { value: ia5str(o).unwrap_or("").to_string() },
+                16 | 17 => {
+                    // SEQUENCE (16) or SET (17) - recursively collect child elements
+                    let (type_name, children) = if o.header.tag().0 == 16 {
+                        ("Sequence", o.as_sequence().ok())
+                    } else {
+                        ("Set", o.as_set().ok())
+                    };
+                    
+                    if let Some(items) = children {
+                        if items.is_empty() {
+                            Im4mPropertyValue::Unknown {
+                                der_type: format!("{}(empty)", type_name),
+                                hex_value: None,
+                                hex_values: None,
+                            }
+                        } else {
+                            // Recursively encode children for debugging
+                            let mut parts = Vec::new();
+                            for child in items {
+                                if let Ok(slice) = child.as_slice() {
+                                    parts.push(hex::encode(slice));
+                                }
+                            }
+                            Im4mPropertyValue::Unknown {
+                                der_type: format!("{}({} elements)", type_name, items.len()),
+                                hex_value: None,
+                                hex_values: Some(parts),
+                            }
+                        }
+                    } else {
+                        Im4mPropertyValue::Unknown {
+                            der_type: format!("{}(malformed)", type_name),
+                            hex_value: Some(hex::encode(o.as_slice().unwrap_or_default())),
+                            hex_values: None,
+                        }
+                    }
+                }
+                _ => Im4mPropertyValue::Unknown {
+                    der_type: format!("{:?}", o.header.tag()),
+                    hex_value: Some(hex::encode(o.as_slice().unwrap_or_default())),
+                    hex_values: None,
+                },
+            }
+        }
+    };
+    Ok((val, anomaly))
+}
+
+#[allow(dead_code)]
 fn decode_any_value(o: &DerObject) -> Result<Im4mValue> {
     let h = &o.header;
     // Convert the Class enum into its underlying integer representation

@@ -1,0 +1,97 @@
+*   **ibss**: iBSS (Early/DFU single-stage iBoot)
+*   **love**: Local OS Version (LocalPolicy flag)
+*   **nsih**: Next Stage Image Hash (LocalPolicy property)
+*   **rtpf**: RT(P) (unknown)
+*   **sip2**: SIP Flag 2 (Disable CTRR lock)
+*   **sip3**: SIP Flag 3 (Disable iBoot boot-args allow-list)
+*   **smb0**: Security Mode Boot 0 ("Reduced Security")
+*   **smb2**: Security Mode Boot 2 (Allow user-managed kexts)
+*   **spih**: Supplemental Policy Image Hash (LocalPolicy property)
+*   **stng**: Supplemental Generation (Cryptex/RSR anti-replay counter)
+*   **BORD**: Board Identifier
+*   **CEPO**: Chip Epoch
+*   **CHIP**: Chip Identifier
+*   **CPRO**: Production/class/mode indicator
+*   **CSEC**: Chip Security Mode
+*   **ECID**: Exclusive Chip ID
+*   **SDOM**: Security Domain
+
+*   **apmv**: Correctly identified as a manifest version, not a payload type.
+*   **esdm**: Correctly identified as a mode/indicator.
+*   **mtpf**: Correctly identified as MTP (Media Transfer Protocol) Firmware, not "Multi-Touch Pro".
+*   **pmcf**: More specific name provided: `ApplePMCFirmware`.
+*   **rspt**: Full name provided: Restore Secure Page Table Monitor.
+*   **rtrx**: Full name provided: Restore Trusted Execution Monitor.
+*   **sdkp**: Correctly identified as a manifest property, not a payload type.
+*   **snon**: Correctly identified as a manifest nonce, not a payload type.
+*   **snuf**: More specific inferred name: Secure Nonce Update.
+*   **sptm**: Full name provided: Secure Page Table Monitor.
+*   **tagt** & **tatp**: Your list marks these as unknown, whereas my analysis inferred their meaning from decoded ASCII values ("Target Board" and "Target Platform"). This highlights a discrepancy between inferred meaning and formal documentation.
+*   **trxm**: Full name provided: Trusted Execution Monitor.
+*   **uidm**: More specific inferred name: Unique ID Manifest Flag.
+
+#### Image4 Payload Types (Firmware/Data)
+*   **anef**: **ANE Firmware**: Apple Neural Engine firmware image.
+*   **aopf**: **AOP Firmware**: Always-On Processor firmware.
+*   **avef**: **AVE Firmware**: Apple Video Encoder firmware.
+*   **bstc**: **Base System Trust Cache**: Trust cache for the base system (restore tooling context).
+*   **csys**: **Base System Volume Root Hash**: APFS SSV root hash for the base-system snapshot.
+*   **dcp2**: **Display Coprocessor 2 Firmware**: Second-generation DCP firmware for Apple Silicon.
+*   **dtre**: **DeviceTree**: Flattened device-tree blob for the platform.
+*   **gfxf**: **GPU Firmware**: Firmware for the AGX/RTKit GPU complex.
+*   **ibdt**: **iBoot Data**: Ancillary data bundle used by iBoot.
+*   **ibec**: **iBEC**: iBoot for recovery/restore stage (DFU/Recovery flows).
+*   **ibot**: **iBoot**: Main bootloader stage.
+*   **ibss**: **iBSS**: Early/DFU single-stage iBoot used during restore.
+*   **ipdf**: **Input Device Firmware**: Input-device (e.g., touch/keyboard) firmware payload.
+*   **isys**: **System Volume Root Hash**: APFS SSV root hash for the system volume.
+*   **krnl**: **KernelCache**: Prelinked kernel cache image.
+*   **msys**: **System Volume Canonical Metadata**: Gzip-compressed canonical metadata bundle for SSV.
+*   **mtfw**: **Multitouch Firmware**: Touch controller firmware.
+*   **mtpf**: **MTP Firmware**: Media Transfer Protocol firmware used on USB-C devices.
+*   **pmcf**: **ApplePMCFirmware**: Power-management controller firmware.
+*   **pmpf**: **PMP Firmware**: Power-management/measurement processor firmware.
+*   **rdc2**: **Restore DCP2 Firmware**: Restore-variant of the DCP2 image.
+*   **rdsk**: **Restore RamDisk**: Restore-mode ramdisk image.
+*   **rdtr**: **Restore DeviceTree**: DeviceTree used during restore.
+*   **rkrn**: **Restore KernelCache**: Kernel cache for restore context.
+*   **rlgo**: **RestoreLogo**: Boot/recovery logo image.
+*   **rosi**: **RestoreOS**: Restore operating-system component.
+*   **rspt**: **Restore Secure Page Table Monitor**: SPTM firmware (restore variant).
+*   **rtrx**: **Restore Trusted Execution Monitor**: TXM firmware (restore variant).
+*   **rtsc**: **Restore Trust Cache**: Trust cache used by restoreOS.
+*   **siof**: **SmartIO Firmware**: Firmware for SmartIO (ASC-class peripheral).
+*   **sptm**: **Secure Page Table Monitor**: High-privilege page-table monitor firmware.
+*   **trst**: **Static Trust Cache**: System trust cache (non-restore).
+*   **trxm**: **Trusted Execution Monitor**: TXM firmware (policy enforcement under SPTM).
+
+#### Manifest Properties & Policy Flags (Not Payloads)
+*   **apmv**: **Apple Manifest Version**: Human-readable OS version string.
+*   **BORD**: **Board Identifier**: Board/model ID for target hardware.
+*   **CEPO**: **Chip Epoch**: SoC epoch/version indicator.
+*   **CHIP**: **Chip Identifier**: SoC model identifier.
+*   **CPRO**: **Certificate Production Status**: Production/class/mode indicator.
+*   **CSEC**: **Certificate Security Mode**: Security-configuration level.
+*   **ECID**: **Exclusive Chip ID**: Per-device 64-bit identifier.
+*   **esdm**: **Effective Security Domain Mode**: Consolidated security-mode indicator.
+*   **love**: **Local OS Version**: LocalPolicy flag recording OS version.
+*   **nsih**: **Next Stage Image Hash**: SHA-384 of the main OS manifest in LocalPolicy.
+*   **prtp**: **Platform Identifier**: ASCII product/model ID (e.g., “Mac16,5”).
+*   **sdkp**: **SDK Platform**: ASCII SDK platform string (e.g., “macosx”).
+*   **sip2**: **SIP Flag 2**: Disable CTRR lock (kernel write-protect) under Reduced Security.
+*   **sip3**: **SIP Flag 3**: Disable iBoot boot-args allow-list.
+*   **smb0**: **Security Mode Boot 0**: “Reduced Security” enabled.
+*   **smb2**: **Security Mode Boot 2**: Allow user-managed kernel extensions.
+*   **snon**: **Secure Nonce**: IM4M/ART nonce field.
+*   **spih**: **Supplemental Policy Image Hash**: SHA-384 of Cryptex1/RSR manifest in LocalPolicy.
+*   **stng**: **Supplemental Generation**: Monotonic counter for Cryptex/RSR anti-replay.
+*   **tstp**: **Timestamp**: UNIX epoch seconds field.
+*   **uidm**: **Unique ID Manifest Flag**: Indicates binding to UID-derived keys.
+*   **SDOM**: **Security Domain**: Security-domain indicator.
+
+#### Unknown/Undocumented
+*   **ispf**: **iSpoof**: Seen in manifests; function not established publicly.
+*   **rtpf**: **RT(P)**: Mentioned for disambiguation; no established IM4P mapping.
+*   **snuf**: **Secure Nonce Update**: Undocumented nonce-related field.
+*   **tagt**: Undocumented manifest property.
+*   **tatp**: Undocumented manifest property. (Tatsu TimestamP?)
