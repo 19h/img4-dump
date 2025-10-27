@@ -26,6 +26,7 @@ cbc = "0.1"          # for CBC mode
 block-padding = "0.3"
 env_logger = "0.11.8"
 log = "0.4.28"
+atty = "0.2"
 
 # Optional decompressors
 # Note: Enable at build time: --features lzfse,lzss

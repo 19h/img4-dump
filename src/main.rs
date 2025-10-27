@@ -9,6 +9,8 @@ use serde::Serialize;
 mod parse;
 mod crypto;
 mod util;
+mod fourcc;
+mod formatter;
 
 #[cfg(feature = "lzfse")]
 mod decompress_lzfse;
@@ -111,25 +113,29 @@ struct Summary {
 }
 
 fn main() -> Result<()> {
+    let cli = Cli::parse();
+    
+    // Initialize logger based on verbose flag
+    if std::env::var("RUST_LOG").is_err() {
+        let level = if cli.verbose { "debug" } else { "info" };
+        std::env::set_var("RUST_LOG", level);
+    }
     env_logger::init();
 
-    let cli = Cli::parse();
-
-    // Debug: show parsed CLI options
-    eprintln!("DEBUG: Parsed CLI options: {:?}", cli);
+    log::debug!("Parsed CLI options: {:?}", cli);
 
     // Read entire input
-    eprintln!("DEBUG: Opening input file: {:?}", cli.input);
+    log::debug!("Opening input file: {:?}", cli.input);
     let mut f = fs::File::open(&cli.input).with_context(|| format!("open {:?}", cli.input))?;
     let mut bytes = Vec::new();
     f.read_to_end(&mut bytes)?;
-    eprintln!("DEBUG: Read {} bytes from input file", bytes.len());
+    log::debug!("Read {} bytes from input file", bytes.len());
 
     // Parse container
-    eprintln!("DEBUG: Starting container parsing");
+    log::debug!("Starting container parsing");
     let parsed = parse::parse_img4_like(&bytes)?;
-    eprintln!(
-        "DEBUG: Parsed container kind: {:?}, im4p: {}, im4m: {}, im4r: {}",
+    log::debug!(
+        "Parsed container kind: {:?}, im4p: {}, im4m: {}, im4r: {}",
         parsed.kind,
         parsed.im4p.is_some(),
         parsed.im4m.is_some(),
@@ -137,26 +143,28 @@ fn main() -> Result<()> {
     );
 
     // Prepare output dir
-    eprintln!("DEBUG: Ensuring output directory at {:?}", cli.outdir);
+    log::debug!("Ensuring output directory at {:?}", cli.outdir);
     util::ensure_outdir(&cli.outdir, cli.force)?;
-    eprintln!("DEBUG: Output directory ready");
+    log::debug!("Output directory ready");
 
     let mut notes = Vec::new();
+    let mut output_paths = formatter::OutputPaths::default();
 
     // Dump IM4P
     let mut im4p_info = None;
     if let Some(im4p) = &parsed.im4p {
-        eprintln!("DEBUG: Processing IM4P payload ({} bytes)", im4p.data.len());
+        log::debug!("Processing IM4P payload ({} bytes)", im4p.data.len());
 
         let base = cli.outdir.join("im4p.bin");
         fs::write(&base, &im4p.data).context("write im4p.bin")?;
+        output_paths.payload = Some(base.display().to_string());
         if cli.verbose {
             eprintln!("wrote {:?}", base);
         }
 
         // If present, persist KBAG DER blob
         if let Some(kbag_raw) = &im4p.kbag_der {
-            eprintln!("DEBUG: KBAG detected, writing DER blob ({} bytes)", kbag_raw.len());
+            log::debug!("KBAG detected, writing DER blob ({} bytes)", kbag_raw.len());
             let p = cli.outdir.join("im4p.kbag.der");
             fs::write(&p, kbag_raw)?;
             if cli.verbose {
@@ -166,7 +174,7 @@ fn main() -> Result<()> {
 
         // Optionally keep ciphertext copy (if decryption requested)
         if cli.decrypt && cli.keep_ciphertext {
-            eprintln!("DEBUG: Keeping ciphertext copy of IM4P");
+            log::debug!("Keeping ciphertext copy of IM4P");
             let p = cli.outdir.join("im4p.ciphertext");
             fs::write(&p, &im4p.data)?;
         }
@@ -174,29 +182,29 @@ fn main() -> Result<()> {
         // Decrypt if requested and IV+Key available (from CLI or KBAG)
         let mut clear = None;
         if cli.decrypt {
-            eprintln!("DEBUG: Decryption requested, resolving IV and key");
+            log::debug!("Decryption requested, resolving IV and key");
             let (iv, key) = util::resolve_iv_key(&cli, im4p)?;
-            eprintln!("DEBUG: IV resolved ({} bytes), Key resolved ({} bytes)", iv.len(), key.len());
+            log::debug!("IV resolved ({} bytes), Key resolved ({} bytes)", iv.len(), key.len());
 
             let mode = cli.aes_mode;
-            eprintln!("DEBUG: Using AES mode: {:?}", mode);
+            log::debug!("Using AES mode: {:?}", mode);
             let dec = crypto::decrypt_aes(&im4p.data, &iv, &key, mode)
                 .with_context(|| "AES decryption failed (check mode/IV/Key)")?;
-            eprintln!("DEBUG: Decryption succeeded, plaintext size {} bytes", dec.len());
+            log::debug!("Decryption succeeded, plaintext size {} bytes", dec.len());
 
             // Validate decryption
             let (valid, detected) = util::validate_decryption(&dec);
             if valid {
                 if let Some(fmt) = detected {
-                    eprintln!("DEBUG: Decryption validation: OK (detected: {})", fmt);
+                    log::debug!("Decryption validation: OK (detected: {})", fmt);
                     if cli.verbose {
                         eprintln!("Decryption appears valid: {}", fmt);
                     }
                 }
             } else {
                 let reason = detected.unwrap_or_else(|| "unknown".into());
-                eprintln!("WARNING: Decryption validation FAILED: {}", reason);
-                eprintln!("WARNING: The output may be garbage (wrong key/IV/mode?)");
+                log::warn!("Decryption validation FAILED: {}", reason);
+                log::warn!("The output may be garbage (wrong key/IV/mode?)");
                 if cli.verbose {
                     eprintln!("TIP: Try different --aes-mode (cbc/ctr) or verify key/IV");
                 }
@@ -205,6 +213,7 @@ fn main() -> Result<()> {
 
             let out = cli.outdir.join("im4p.decrypted");
             fs::write(&out, &dec)?;
+            output_paths.payload_decrypted = Some(out.display().to_string());
             if cli.verbose {
                 eprintln!("wrote {:?}", out);
             }
@@ -213,25 +222,26 @@ fn main() -> Result<()> {
 
         // Optionally decompress decrypted (preferred) or raw
         if cli.decompress {
-            eprintln!("DEBUG: Decompression requested");
+            log::debug!("Decompression requested");
             let src: &[u8] = if let Some(ref d) = clear { d } else { &im4p.data };
-            eprintln!("DEBUG: Decompression source size {} bytes", src.len());
+            log::debug!("Decompression source size {} bytes", src.len());
 
             match util::try_decompress_with_metadata(src, im4p.compression.as_ref()) {
                 Ok(Some((name, dec))) => {
-                    eprintln!("DEBUG: Decompression succeeded, generated {} ({} bytes)", name, dec.len());
+                    log::debug!("Decompression succeeded, generated {} ({} bytes)", name, dec.len());
                     let p = cli.outdir.join(name);
                     fs::write(&p, &dec)?;
+                    output_paths.payload_decompressed = Some(p.display().to_string());
                     if cli.verbose {
                         eprintln!("wrote {:?}", p);
                     }
                 }
                 Ok(None) => {
-                    eprintln!("DEBUG: No known compression detected");
+                    log::debug!("No known compression detected");
                     notes.push("no known compression detected".into())
                 }
                 Err(e) => {
-                    eprintln!("DEBUG: Decompression error: {}", e);
+                    log::debug!("Decompression error: {}", e);
                     notes.push(format!("decompress error: {e}"))
                 }
             }
@@ -243,17 +253,18 @@ im4p_info = Some(parse::Im4pInfo {
             data_len: im4p.data.len(),
             kbag: im4p.kbag_summary.clone(),
         });
-        eprintln!("DEBUG: IM4P info recorded");
+        log::debug!("IM4P info recorded");
     }
 
     // Dump IM4M
     let mut im4m_summary = None;
     if let Some(im4m) = &parsed.im4m {
-        eprintln!("DEBUG: IM4M present, size {} bytes", im4m.raw.len());
+        log::debug!("IM4M present, size {} bytes", im4m.raw.len());
 
         if cli.dump_im4m {
             let p = cli.outdir.join("im4m.der");
             fs::write(&p, &im4m.raw)?;
+            output_paths.manifest = Some(p.display().to_string());
             if cli.verbose {
                 eprintln!("wrote {:?}", p);
             }
@@ -278,20 +289,21 @@ if cli.dump_im4m_props {
     let props = parse::extract_im4m_properties_typed(&im4m.raw)?;
     let p = cli.outdir.join("im4m.props.json");
     fs::write(&p, serde_json::to_vec_pretty(&props)?)?;
+    output_paths.manifest_props = Some(p.display().to_string());
     if cli.verbose {
         eprintln!("wrote {:?}", p);
     }
 }
 
         im4m_summary = Some(parse::summarize_im4m(im4m)?);
-        eprintln!("DEBUG: IM4M summary generated");
+        log::debug!("IM4M summary generated");
     }
 
 
 // Dump IM4R
 let mut im4r_len = None;
 if let Some(im4r) = &parsed.im4r {
-    eprintln!("DEBUG: IM4R present, length {} bytes", im4r.len());
+    log::debug!("IM4R present, length {} bytes", im4r.len());
 
     // Extract all IM4R properties using structured parser
     match parse::extract_im4r_properties(im4r) {
@@ -308,23 +320,25 @@ if let Some(im4r) = &parsed.im4r {
                     }
                 }
             } else {
-                eprintln!("DEBUG: IM4R contains no BNCN property");
+                log::debug!("IM4R contains no BNCN property");
             }
             // Dump all IM4R properties to JSON
             let p = cli.outdir.join("im4r.props.json");
             fs::write(&p, serde_json::to_vec_pretty(&props)?)?;
+            output_paths.restore_info_props = Some(p.display().to_string());
             if cli.verbose {
                 eprintln!("wrote IM4R properties to {:?}", p);
             }
         }
         Err(e) => {
-            eprintln!("WARNING: IM4R property parse error: {}", e);
+            log::warn!("IM4R property parse error: {}", e);
         }
     }
 
     if cli.dump_im4r {
         let p = cli.outdir.join("im4r.der");
         fs::write(&p, im4r)?;
+        output_paths.restore_info = Some(p.display().to_string());
         if cli.verbose {
             eprintln!("wrote {:?}", p);
         }
@@ -341,12 +355,20 @@ if let Some(im4r) = &parsed.im4r {
         notes,
     };
 
-    eprintln!("DEBUG: Final summary prepared: {:#?}", summary);
+    log::debug!("Final summary prepared: {:#?}", summary);
 
     if cli.json {
         println!("{}", serde_json::to_string_pretty(&summary)?);
-    } else if cli.verbose {
-        eprintln!("{:#?}", summary);
+    } else {
+        // Format and print clean output
+        let formatted = formatter::format_summary(
+            summary.container,
+            summary.im4p.as_ref(),
+            summary.im4m.as_ref(),
+            summary.im4r_len,
+            &output_paths,
+        );
+        print!("{}", formatted);
     }
 
     Ok(())

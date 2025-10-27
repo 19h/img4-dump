@@ -1060,3 +1060,10 @@ fn as_bytes<'a>(o: &'a DerObject<'a>) -> Option<&'a [u8]> {
 fn ia5str<'a>(o: &'a DerObject<'a>) -> Option<&'a str> {
     o.as_slice().ok().and_then(|s| std::str::from_utf8(s).ok())
 }
+
+/// Public accessor for property metadata (used by fourcc module for fallback)
+pub fn get_property_metadata(code: &str) -> Option<String> {
+    KNOWN_PROPERTIES.get(code).map(|meta| {
+        format!("{} ({})", meta.name, meta.description)
+    })
+}
