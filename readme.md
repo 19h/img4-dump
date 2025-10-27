@@ -23,6 +23,57 @@ cargo install img4-dump --features lzfse,lzss
 ```
 *Note: The `--features lzfse,lzss` flags are recommended to enable all decompression capabilities.*
 
+### Example Output
+
+<details>
+<summary>Click to expand: <code>img4-dump --dump-im4m -f iBoot.img4</code></summary>
+
+```
+IMG4 Container
+==================================================
+
+IM4P Payload
+   Type: ibot (iBoot)
+   Version: iBoot-13822.41.1
+   Data Size: 1,296,806 bytes
+   KBAG: Not present
+
+IM4M Manifest
+   Version: 0
+   Certificate Chain: 1 certificate
+   Signature Length: 512 bytes
+
+   Manifest Properties:
+      • Manifest Body
+      • Manifest Properties
+
+   Images Referenced: 43 components (manifest covers full bundle)
+      • ibdt - iBoot Data
+      • ibec - iBEC (recovery/restore bootloader)
+      • ibot - iBoot ← THIS FILE
+      • rdc2 - Restore Display Coprocessor 2
+      • rdsk - Restore RamDisk
+      • rdtr - Restore DeviceTree
+      • rkrn - Restore KernelCache
+      • rlgo - Restore Logo
+      • rosi - RestoreOS
+      • rspt - Restore Secure Page Table Monitor
+      • rtrx - Restore Trusted Execution Monitor
+      • rtsc - Restore Trust Cache
+      • anef - ANE Firmware (Neural Engine)
+      • aopf - AOP Firmware (Always-On Processor)
+      • apmv - Apple Manifest Version
+      ... (30 more components)
+
+Output Files
+   Payload: img4_dump/im4p.bin
+   Manifest: img4_dump/im4m.der
+```
+
+**Note:** Output includes color highlighting when viewed in a terminal. The "← THIS FILE" marker shows which component is actually contained in the current file, while other entries are references to the full firmware bundle.
+
+</details>
+
 ### Usage Examples
 
 **1. Basic Dump (Metadata and Payloads)**
