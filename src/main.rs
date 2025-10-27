@@ -157,7 +157,7 @@ fn main() -> Result<()> {
 
         let base = cli.outdir.join("im4p.bin");
         fs::write(&base, &im4p.data).context("write im4p.bin")?;
-        output_paths.payload = Some(base.display().to_string());
+        output_paths.add("Payload", base.display().to_string());
         if cli.verbose {
             eprintln!("wrote {:?}", base);
         }
@@ -167,6 +167,7 @@ fn main() -> Result<()> {
             log::debug!("KBAG detected, writing DER blob ({} bytes)", kbag_raw.len());
             let p = cli.outdir.join("im4p.kbag.der");
             fs::write(&p, kbag_raw)?;
+            output_paths.add("KBAG", p.display().to_string());
             if cli.verbose {
                 eprintln!("wrote {:?}", p);
             }
@@ -213,7 +214,7 @@ fn main() -> Result<()> {
 
             let out = cli.outdir.join("im4p.decrypted");
             fs::write(&out, &dec)?;
-            output_paths.payload_decrypted = Some(out.display().to_string());
+            output_paths.add("Decrypted", out.display().to_string());
             if cli.verbose {
                 eprintln!("wrote {:?}", out);
             }
@@ -231,7 +232,7 @@ fn main() -> Result<()> {
                     log::debug!("Decompression succeeded, generated {} ({} bytes)", name, dec.len());
                     let p = cli.outdir.join(name);
                     fs::write(&p, &dec)?;
-                    output_paths.payload_decompressed = Some(p.display().to_string());
+                    output_paths.add("Decompressed", p.display().to_string());
                     if cli.verbose {
                         eprintln!("wrote {:?}", p);
                     }
@@ -264,7 +265,7 @@ im4p_info = Some(parse::Im4pInfo {
         if cli.dump_im4m {
             let p = cli.outdir.join("im4m.der");
             fs::write(&p, &im4m.raw)?;
-            output_paths.manifest = Some(p.display().to_string());
+            output_paths.add("Manifest", p.display().to_string());
             if cli.verbose {
                 eprintln!("wrote {:?}", p);
             }
@@ -276,8 +277,12 @@ im4p_info = Some(parse::Im4pInfo {
             for (i, der) in certs.iter().enumerate() {
                 let der_path = cli.outdir.join(format!("im4m.cert.{i}.der"));
                 fs::write(&der_path, der)?;
+                output_paths.add(format!("Certificate {} (DER)", i), der_path.display().to_string());
+                
                 let pem_path = cli.outdir.join(format!("im4m.cert.{i}.pem"));
                 write_pem_certificate(&pem_path, der)?;
+                output_paths.add(format!("Certificate {} (PEM)", i), pem_path.display().to_string());
+                
                 if cli.verbose {
                     eprintln!("wrote {:?} and {:?}", der_path, pem_path);
                 }
@@ -289,7 +294,7 @@ if cli.dump_im4m_props {
     let props = parse::extract_im4m_properties_typed(&im4m.raw)?;
     let p = cli.outdir.join("im4m.props.json");
     fs::write(&p, serde_json::to_vec_pretty(&props)?)?;
-    output_paths.manifest_props = Some(p.display().to_string());
+    output_paths.add("Manifest Properties", p.display().to_string());
     if cli.verbose {
         eprintln!("wrote {:?}", p);
     }
@@ -325,7 +330,7 @@ if let Some(im4r) = &parsed.im4r {
             // Dump all IM4R properties to JSON
             let p = cli.outdir.join("im4r.props.json");
             fs::write(&p, serde_json::to_vec_pretty(&props)?)?;
-            output_paths.restore_info_props = Some(p.display().to_string());
+            output_paths.add("IM4R Properties", p.display().to_string());
             if cli.verbose {
                 eprintln!("wrote IM4R properties to {:?}", p);
             }
@@ -338,7 +343,7 @@ if let Some(im4r) = &parsed.im4r {
     if cli.dump_im4r {
         let p = cli.outdir.join("im4r.der");
         fs::write(&p, im4r)?;
-        output_paths.restore_info = Some(p.display().to_string());
+        output_paths.add("IM4R", p.display().to_string());
         if cli.verbose {
             eprintln!("wrote {:?}", p);
         }

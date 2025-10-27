@@ -23,14 +23,13 @@ fn use_colors() -> bool {
 /// Paths to output files written during processing
 #[derive(Default)]
 pub struct OutputPaths {
-    pub payload: Option<String>,
-    pub payload_decrypted: Option<String>,
-    pub payload_decompressed: Option<String>,
-    pub manifest: Option<String>,
-    pub manifest_props: Option<String>,
-    pub manifest_certs: Vec<String>,
-    pub restore_info: Option<String>,
-    pub restore_info_props: Option<String>,
+    pub files: Vec<(String, String)>,  // Vec of (label, path) pairs
+}
+
+impl OutputPaths {
+    pub fn add(&mut self, label: impl Into<String>, path: impl Into<String>) {
+        self.files.push((label.into(), path.into()));
+    }
 }
 
 /// Format the summary in a clean, diskutil-style output
@@ -231,32 +230,10 @@ fn render_output_files(out: &mut String, paths: &OutputPaths, colors: bool) {
         writeln!(out, "Output Files").unwrap();
     }
     
-    let mut pairs = Vec::new();
-    
-    if let Some(p) = &paths.payload {
-        pairs.push(("Payload", p.clone()));
-    }
-    if let Some(p) = &paths.payload_decrypted {
-        pairs.push(("Decrypted", p.clone()));
-    }
-    if let Some(p) = &paths.payload_decompressed {
-        pairs.push(("Decompressed", p.clone()));
-    }
-    if let Some(p) = &paths.manifest {
-        pairs.push(("Manifest", p.clone()));
-    }
-    if let Some(p) = &paths.manifest_props {
-        pairs.push(("Manifest Properties", p.clone()));
-    }
-    if !paths.manifest_certs.is_empty() {
-        pairs.push(("Certificates", format!("{} files", paths.manifest_certs.len())));
-    }
-    if let Some(p) = &paths.restore_info {
-        pairs.push(("Restore Info", p.clone()));
-    }
-    if let Some(p) = &paths.restore_info_props {
-        pairs.push(("Restore Properties", p.clone()));
-    }
+    // Convert to slice of references for render_kv_block
+    let pairs: Vec<(&str, String)> = paths.files.iter()
+        .map(|(label, path)| (label.as_str(), path.clone()))
+        .collect();
     
     render_kv_block(out, &pairs, 3, colors);
 }
@@ -350,14 +327,7 @@ fn format_bytes(n: usize) -> String {
 }
 
 fn has_output_files(paths: &OutputPaths) -> bool {
-    paths.payload.is_some()
-        || paths.payload_decrypted.is_some()
-        || paths.payload_decompressed.is_some()
-        || paths.manifest.is_some()
-        || paths.manifest_props.is_some()
-        || !paths.manifest_certs.is_empty()
-        || paths.restore_info.is_some()
-        || paths.restore_info_props.is_some()
+    !paths.files.is_empty()
 }
 
 #[cfg(test)]
