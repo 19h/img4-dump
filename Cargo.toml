@@ -30,15 +30,13 @@ atty = "0.2"
 
 # Optional decompressors
 # Note: Enable at build time: --features lzfse,lzss
+# lzfse uses the external (C-backed) lzfse crate; lzss is a self-contained native
+# implementation of Apple's "complzss"/Okumura LZSS (no external dependency).
 [features]
 default = []
 lzfse = ["dep:lzfse"]
-lzss  = ["dep:lzss"]
+lzss  = []
 
 [dependencies.lzfse]
 version = "0.2"
-optional = true
-
-[dependencies.lzss]
-version = "0.9"
 optional = true

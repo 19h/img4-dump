@@ -359,7 +359,6 @@ dependencies = [
  "hex",
  "log",
  "lzfse",
- "lzss",
  "once_cell",
  "serde",
  "serde_json",
@@ -439,15 +438,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "23c80418f1cfc4601f8ef2055dcea77eebea47d2edc74ee0dadb005dd3a9f604"
 dependencies = [
  "cc",
-]
-
-[[package]]
-name = "lzss"
-version = "0.9.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ffcbd9e87fc27b574d4e37d4bf0d302828391f80ea3762dfce02d808fa257a01"
-dependencies = [
- "void",
 ]
 
 [[package]]
@@ -690,12 +680,6 @@ name = "version_check"
 version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
-
-[[package]]
-name = "void"
-version = "1.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6a02e4885ed3bc0f2de90ea6dd45ebcbb66dacffe03547fadbb0eeae2770887d"
 
 [[package]]
 name = "winapi"

@@ -286,6 +286,38 @@ fn im4m_standalone() {
     assert_eq!(v["im4m"]["signature_len"], 128);
 }
 
+/// Requesting a KBAG class that is absent must fail loudly, never silently fall
+/// back to the other class's key (which would decrypt to garbage).
+#[test]
+fn kbag_class_selection_enforced() {
+    let dir = tmpdir("kbag-class");
+    // KBAG with ONLY a development (class 2) entry.
+    let kb = kbag(&[(2, vec![0x33; 16], vec![0x44; 16])]);
+    let im4p = Im4pBuilder::new("ibot", "iBoot", &[0xAA; 32]).keybag_raw(kb).build();
+    let input = write_fixture(&dir, "in.im4p", &im4p);
+
+    // Requesting prod (class 1) on a dev-only KBAG must error.
+    let prod = run(&[
+        "--decrypt", "--kbag-class", "prod",
+        "-o", dir.join("prod").to_str().unwrap(), "-f", input.to_str().unwrap(),
+    ]);
+    assert!(!prod.status.success(), "prod request on dev-only KBAG must fail");
+    let stderr = String::from_utf8_lossy(&prod.stderr);
+    assert!(
+        stderr.contains("production") || stderr.contains("class 1"),
+        "error should explain the missing class: {stderr}"
+    );
+
+    // Requesting dev (class 2) succeeds and writes a decrypted payload.
+    let outdev = dir.join("dev");
+    let dev = run(&[
+        "--decrypt", "--kbag-class", "dev",
+        "-o", outdev.to_str().unwrap(), "-f", input.to_str().unwrap(),
+    ]);
+    assert!(dev.status.success(), "dev request should succeed: {}", String::from_utf8_lossy(&dev.stderr));
+    assert!(outdev.join("im4p.decrypted").exists());
+}
+
 /// Garbage input is rejected with a non-zero exit (no panic).
 #[test]
 fn rejects_garbage() {
