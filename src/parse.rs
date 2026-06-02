@@ -224,12 +224,10 @@ fn parse_im4p_compression(obj: &DerObject) -> Result<Im4pCompression> {
 
     let id = seq[0].as_u64().map_err(|_| anyhow!("compression id not INTEGER"))?;
 
-    let uncl =
-        if seq.len() > 1 {
-            Some(seq[1].as_u64().map_err(|_| anyhow!("compression len not INTEGER"))?)
-        } else {
-            None
-        };
+    // The uncompressed size is informational; a value too large for u64 (only
+    // possible at absurd >=2^63 sizes) must not sink the whole compression block —
+    // keep the algorithm id and report the size as unknown.
+    let uncl = seq.get(1).and_then(|o| o.as_u64().ok());
 
     Ok(Im4pCompression { method_id: id, uncompressed_len: uncl })
 }
@@ -1248,7 +1246,13 @@ fn der_read_tag(i: &[u8]) -> Result<(usize, u8, bool, u32)> {
     Ok((idx, class, constructed, tag_no))
 }
 
-/// Parse DER definite length: returns (bytes_consumed, content_length)
+/// Parse a definite-length field: returns (bytes_consumed, content_length).
+///
+/// Safety-critical malformations (indefinite form, the reserved 0xFF marker, and
+/// length fields too wide for `usize`) are rejected. Non-minimal-but-safe
+/// encodings (a long form used for a small value, or leading zero octets) are
+/// accepted deliberately — being BER-lenient here only makes the walker more
+/// robust on slightly-off inputs and never compromises memory safety.
 fn der_read_len(i: &[u8]) -> Result<(usize, usize)> {
     if i.is_empty() {
         bail!("short length");

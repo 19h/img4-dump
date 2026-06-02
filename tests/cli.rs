@@ -90,6 +90,22 @@ fn im4p_keybag_and_compression() {
     assert_eq!(v["im4p"]["compression"]["uncompressed_size"], 9999);
 }
 
+/// A compression block whose declared uncompressed size exceeds u64 must not
+/// sink the whole parse: the algorithm is still reported, the size as unknown.
+#[test]
+fn im4p_compression_oversized_size_degrades() {
+    let dir = tmpdir("im4p-comp-big");
+    // compression = SEQUENCE { INTEGER 1 (lzfse), INTEGER <9 bytes> }
+    let comp = seq(&[integer(1), integer_raw(&[0x01, 2, 3, 4, 5, 6, 7, 8, 9])]);
+    let im4p = seq(&[ia5("IM4P"), ia5("krnl"), ia5("v"), octet(&[0u8; 16]), comp]);
+    let input = write_fixture(&dir, "in.im4p", &im4p);
+    let out = dir.join("out");
+    let v = run_json(&["-o", out.to_str().unwrap(), "-f", input.to_str().unwrap()]);
+    assert_eq!(v["im4p"]["compression"]["algorithm"], "lzfse");
+    assert_eq!(v["im4p"]["compression"]["method_id"], 1);
+    assert!(v["im4p"]["compression"]["uncompressed_size"].is_null());
+}
+
 /// PAYP with-properties variant: payload-scoped properties are extracted and
 /// written to im4p.payp.json, and surfaced in the JSON summary.
 #[test]
