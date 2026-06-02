@@ -621,59 +621,74 @@ pub fn summarize_im4m(im4m: &Im4m) -> Result<Im4mInfoSummary> {
 /// Extract certificate chain from IM4M.
 /// Returns a Vec of DER-encoded X.509 certificates (owned).
 pub fn extract_im4m_cert_chain(raw: &[u8]) -> anyhow::Result<Vec<Vec<u8>>> {
-    // Manually parse to extract raw DER bytes including headers
+    // Hand-rolled DER walk over attacker-controlled bytes. Every offset derived
+    // from a parsed length is validated against the buffer (and against the
+    // enclosing element) before it is used to slice, so malformed input yields a
+    // clean error rather than an out-of-bounds panic.
     let mut out: Vec<Vec<u8>> = Vec::new();
 
-    // Parse top-level IM4M SEQUENCE to find chain at index 4
-    let mut pos = 0usize;
-    let (tag_len, _, _, _) = der_read_tag(&raw[pos..]).map_err(|e| anyhow::anyhow!("IM4M tag: {e}"))?;
-    pos += tag_len;
-    let (len_len, _) = der_read_len(&raw[pos..]).map_err(|e| anyhow::anyhow!("IM4M len: {e}"))?;
-    pos += len_len;
+    // Bounds-checked suffix accessor.
+    let at = |p: usize| -> Result<&[u8]> {
+        raw.get(p..).ok_or_else(|| anyhow!("IM4M: offset {p} past end ({})", raw.len()))
+    };
+    let advance = |p: usize, by: usize| -> Result<usize> {
+        p.checked_add(by).ok_or_else(|| anyhow!("IM4M: offset overflow"))
+    };
 
-    // Skip to index 4 by parsing elements 0..4
-for idx in 0..5 {
-        let _elem_start = pos;
-        let (tag_len, class, _constructed, tag_no) = der_read_tag(&raw[pos..])
-            .map_err(|e| anyhow::anyhow!("elem[{idx}] tag: {e}"))?;
-        pos += tag_len;
-        let (len_len, elem_len) = der_read_len(&raw[pos..])
-            .map_err(|e| anyhow::anyhow!("elem[{idx}] len: {e}"))?;
-        pos += len_len;
+    // Top-level IM4M SEQUENCE header.
+    let mut pos = 0usize;
+    let (tag_len, _, _, _) = der_read_tag(at(pos)?).map_err(|e| anyhow!("IM4M tag: {e}"))?;
+    pos = advance(pos, tag_len)?;
+    let (len_len, _) = der_read_len(at(pos)?).map_err(|e| anyhow!("IM4M len: {e}"))?;
+    pos = advance(pos, len_len)?;
+
+    // Skip to index 4 (the certificate chain) by walking elements 0..4.
+    for idx in 0..5 {
+        let (tag_len, class, _constructed, tag_no) =
+            der_read_tag(at(pos)?).map_err(|e| anyhow!("elem[{idx}] tag: {e}"))?;
+        pos = advance(pos, tag_len)?;
+        let (len_len, elem_len) =
+            der_read_len(at(pos)?).map_err(|e| anyhow!("elem[{idx}] len: {e}"))?;
+        pos = advance(pos, len_len)?;
+
+        let elem_end = advance(pos, elem_len)?;
+        if elem_end > raw.len() {
+            bail!("elem[{idx}] content ({elem_len} bytes) exceeds buffer");
+        }
 
         if idx == 4 {
-            // This is the cert chain container (should be SEQUENCE)
+            // The cert chain container should be a SEQUENCE; anything else => no certs.
             if class != 0 || tag_no != 16 {
-                return Ok(Vec::new()); // Not a SEQUENCE, no certs
+                return Ok(Vec::new());
             }
 
-            // Parse inner SEQUENCE of certificates
-            let chain_end = pos + elem_len;
+            let chain_end = elem_end;
             while pos < chain_end {
-let cert_start = pos;
-                let (cert_tag_len, cert_class, _cert_constructed, cert_tag) = der_read_tag(&raw[pos..])
-                    .map_err(|e| anyhow::anyhow!("cert tag: {e}"))?;
-                pos += cert_tag_len;
-                let (cert_len_len, cert_len) = der_read_len(&raw[pos..])
-                    .map_err(|e| anyhow::anyhow!("cert len: {e}"))?;
-                pos += cert_len_len;
-                let cert_full_len = cert_tag_len + cert_len_len + cert_len;
+                let cert_start = pos;
+                let (cert_tag_len, cert_class, _cert_constructed, cert_tag) =
+                    der_read_tag(at(pos)?).map_err(|e| anyhow!("cert tag: {e}"))?;
+                pos = advance(pos, cert_tag_len)?;
+                let (cert_len_len, cert_len) =
+                    der_read_len(at(pos)?).map_err(|e| anyhow!("cert len: {e}"))?;
+                pos = advance(pos, cert_len_len)?;
 
-                debug!("cert[{}]: @{:04x} class={}, tag={}, len={}", out.len(), cert_start, cert_class, cert_tag, cert_len);
+                let content_end = advance(pos, cert_len)?;
+                if content_end > chain_end {
+                    bail!("cert content ({cert_len} bytes) exceeds cert chain");
+                }
 
-                // Extract certificate based on encoding
+                debug!(
+                    "cert[{}]: @{:04x} class={}, tag={}, len={}",
+                    out.len(), cert_start, cert_class, cert_tag, cert_len
+                );
+
                 match (cert_class, cert_tag) {
-                    (0, 4) => {
-                        // OCTET STRING: content is the DER cert
-                        out.push(raw[pos..pos + cert_len].to_vec());
-                    }
-                    (0, 16) => {
-                        // SEQUENCE: full TLV is the DER cert
-                        out.push(raw[cert_start..cert_start + cert_full_len].to_vec());
-                    }
+                    // OCTET STRING: content is the DER cert.
+                    (0, 4) => out.push(raw[pos..content_end].to_vec()),
+                    // SEQUENCE: the full TLV is the DER cert.
+                    (0, 16) => out.push(raw[cert_start..content_end].to_vec()),
                     _ => {
-                        // Unknown: try to handle gracefully
-                        let content = &raw[pos..pos + cert_len];
+                        let content = &raw[pos..content_end];
                         if !content.is_empty() && content[0] == 0x30 {
                             out.push(content.to_vec());
                         } else {
@@ -682,12 +697,12 @@ let cert_start = pos;
                     }
                 }
 
-                pos += cert_len;
+                pos = content_end;
             }
             break;
         } else {
-            // Skip this element
-            pos += elem_len;
+            // Skip this element's content.
+            pos = elem_end;
         }
     }
 
@@ -1106,19 +1121,26 @@ fn der_read_tag(i: &[u8]) -> Result<(usize, u8, bool, u32)> {
     let mut idx = 1usize;
 
     if tag_no == 0b1_1111 {
-        // High-tag-number form: base-128 big-endian, MSB=1 continuation, last MSB=0
+        // High-tag-number form: base-128 big-endian, MSB=1 continuation, last MSB=0.
+        // A u32 tag number fits in at most 5 base-128 groups (5*7 = 35 >= 32); a
+        // crafted header with more (or wider) groups must not be allowed to shift
+        // past 32 bits (which panics in debug and silently wraps in release).
         tag_no = 0;
+        let mut groups = 0usize;
         loop {
             if idx >= i.len() {
                 bail!("short high-tag-number");
             }
             let b = i[idx];
             idx += 1;
+            groups += 1;
+            if groups > 5 || (tag_no >> 25) != 0 {
+                bail!("high-tag-number overflows u32");
+            }
             tag_no = (tag_no << 7) | (b & 0x7F) as u32;
             if (b & 0x80) == 0 {
                 break;
             }
-            // DER requires shortest form; unlimited loop bounded by buffer size here
         }
     }
 
@@ -1137,7 +1159,18 @@ fn der_read_len(i: &[u8]) -> Result<(usize, usize)> {
     } else {
         let n = (b0 & 0x7F) as usize;
         if n == 0 {
+            // Indefinite form is illegal in DER and would otherwise be read as len 0.
             bail!("indefinite length not allowed in DER");
+        }
+        if n == 0x7F {
+            // 0xFF is reserved by X.690.
+            bail!("reserved length form (0xFF)");
+        }
+        // Reject a length field that cannot fit in usize on this platform. With this
+        // bound the accumulation below cannot overflow (n <= 8 on 64-bit, <= 4 on
+        // 32-bit). This is the critical safety check.
+        if n > core::mem::size_of::<usize>() {
+            bail!("length field too large ({n} octets) for this platform");
         }
         if i.len() < 1 + n {
             bail!("short long-form length");
@@ -1164,4 +1197,133 @@ pub fn get_property_metadata(code: &str) -> Option<String> {
     KNOWN_PROPERTIES.get(code).map(|meta| {
         format!("{} ({})", meta.name, meta.description)
     })
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    // ---- der_read_len: definite-length safety ----
+
+    #[test]
+    fn len_short_form() {
+        assert_eq!(der_read_len(&[0x05]).unwrap(), (1, 5));
+        assert_eq!(der_read_len(&[0x00]).unwrap(), (1, 0));
+        assert_eq!(der_read_len(&[0x7F]).unwrap(), (1, 127));
+    }
+
+    #[test]
+    fn len_long_form() {
+        assert_eq!(der_read_len(&[0x82, 0x01, 0x00]).unwrap(), (3, 256));
+        assert_eq!(der_read_len(&[0x81, 0x80]).unwrap(), (2, 128));
+    }
+
+    #[test]
+    fn len_indefinite_rejected() {
+        assert!(der_read_len(&[0x80]).is_err());
+    }
+
+    #[test]
+    fn len_reserved_rejected() {
+        assert!(der_read_len(&[0xFF, 0, 0, 0, 0, 0, 0, 0, 0]).is_err());
+    }
+
+    #[test]
+    fn len_oversized_rejected_no_overflow() {
+        // 0x89 => 9 length octets; must be rejected on every platform (no shl panic).
+        let buf = [0x89u8, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF];
+        assert!(der_read_len(&buf).is_err());
+    }
+
+    #[test]
+    fn len_truncated_rejected() {
+        assert!(der_read_len(&[0x82, 0x01]).is_err()); // claims 2 octets, only 1 present
+        assert!(der_read_len(&[]).is_err());
+    }
+
+    // ---- der_read_tag: high-tag-number safety ----
+
+    #[test]
+    fn tag_low_form() {
+        let (used, class, constructed, tag) = der_read_tag(&[0x30]).unwrap();
+        assert_eq!((used, class, constructed, tag), (1, 0, true, 16));
+        let (used, class, constructed, tag) = der_read_tag(&[0x16]).unwrap();
+        assert_eq!((used, class, constructed, tag), (1, 0, false, 22));
+    }
+
+    #[test]
+    fn tag_high_form_ok() {
+        // private, constructed, tag = 'MANB' (0x4D414E42) in base-128.
+        let bytes = [0xE0u8 | 0x1F, 0x84, 0xEA, 0x85, 0x9C, 0x42];
+        let (_used, class, constructed, tag) = der_read_tag(&bytes).unwrap();
+        assert_eq!(class, 3);
+        assert!(constructed);
+        assert_eq!(tag, 0x4D414E42);
+    }
+
+    #[test]
+    fn tag_high_form_overflow_rejected_no_panic() {
+        // 7 continuation groups -> would shift past 32 bits; must error, not panic.
+        let bytes = [0x1Fu8, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x7F];
+        assert!(der_read_tag(&bytes).is_err());
+    }
+
+    #[test]
+    fn tag_high_form_truncated_rejected() {
+        assert!(der_read_tag(&[0x1F, 0x84]).is_err()); // continuation bit set, buffer ends
+    }
+
+    // ---- extract_im4m_cert_chain: bounds safety on malformed input ----
+
+    /// A cert whose declared length runs past the chain must error, not panic.
+    #[test]
+    fn cert_chain_overrun_is_rejected() {
+        // IM4M = SEQUENCE { "IM4M", INTEGER 0, SET{}, OCTET{}, SEQUENCE{ bad-cert } }
+        // The cert chain's single element is `30 7F` (claims 127 bytes, none present).
+        let inner: Vec<u8> = [
+            &[0x16, 0x04, b'I', b'M', b'4', b'M'][..], // elem0
+            &[0x02, 0x01, 0x00][..],                   // elem1 INTEGER 0
+            &[0x31, 0x00][..],                         // elem2 SET {}
+            &[0x04, 0x00][..],                         // elem3 OCTET {}
+            &[0x30, 0x02, 0x30, 0x7F][..],             // elem4 SEQUENCE { 30 7F }
+        ]
+        .concat();
+        let mut raw = vec![0x30u8, inner.len() as u8];
+        raw.extend_from_slice(&inner);
+        let r = extract_im4m_cert_chain(&raw);
+        assert!(r.is_err(), "overrunning cert length must be rejected");
+    }
+
+    /// A truncated IM4M (header only) must error cleanly.
+    #[test]
+    fn cert_chain_truncated_is_rejected() {
+        assert!(extract_im4m_cert_chain(&[0x30]).is_err());
+        assert!(extract_im4m_cert_chain(&[]).is_err());
+    }
+
+    /// A well-formed 2-cert chain is extracted intact.
+    #[test]
+    fn cert_chain_valid_two_certs() {
+        let cert_a = [0x30u8, 0x03, 0x02, 0x01, 0x07]; // SEQUENCE { INTEGER 7 }
+        let cert_b = [0x30u8, 0x03, 0x02, 0x01, 0x09];
+        let mut chain = Vec::new();
+        chain.extend_from_slice(&cert_a);
+        chain.extend_from_slice(&cert_b);
+        let mut elem4 = vec![0x30u8, chain.len() as u8];
+        elem4.extend_from_slice(&chain);
+        let inner: Vec<u8> = [
+            &[0x16, 0x04, b'I', b'M', b'4', b'M'][..],
+            &[0x02, 0x01, 0x00][..],
+            &[0x31, 0x00][..],
+            &[0x04, 0x00][..],
+            &elem4[..],
+        ]
+        .concat();
+        let mut raw = vec![0x30u8, inner.len() as u8];
+        raw.extend_from_slice(&inner);
+        let certs = extract_im4m_cert_chain(&raw).unwrap();
+        assert_eq!(certs.len(), 2);
+        assert_eq!(certs[0], cert_a);
+        assert_eq!(certs[1], cert_b);
+    }
 }
