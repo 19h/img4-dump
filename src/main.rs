@@ -104,17 +104,27 @@ pub enum AesMode {
 }
 
 #[derive(Debug, Serialize)]
+struct OutputFile {
+    label: String,
+    path: String,
+}
+
+#[derive(Debug, Serialize)]
 struct Summary {
     container: parse::ContainerKind,
     im4p: Option<parse::Im4pInfo>,
     im4m: Option<parse::Im4mInfoSummary>,
     im4r_len: Option<usize>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    im4r_properties: Option<Vec<parse::TypedIm4mProperty>>,
     notes: Vec<String>,
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    output_files: Vec<OutputFile>,
 }
 
-fn main() -> Result<()> {
+fn main() {
     let cli = Cli::parse();
-    
+
     // Initialize logger based on verbose flag
     if std::env::var("RUST_LOG").is_err() {
         let level = if cli.verbose { "debug" } else { "info" };
@@ -122,6 +132,21 @@ fn main() -> Result<()> {
     }
     env_logger::init();
 
+    let json = cli.json;
+    if let Err(e) = run(cli) {
+        // In --json mode, emit a machine-readable error object on stdout so a
+        // consumer always receives valid JSON; otherwise print the error chain.
+        if json {
+            let obj = serde_json::json!({ "error": format!("{e:#}") });
+            println!("{}", serde_json::to_string_pretty(&obj).unwrap_or_else(|_| "{\"error\":\"unknown\"}".into()));
+        } else {
+            eprintln!("Error: {e:#}");
+        }
+        std::process::exit(1);
+    }
+}
+
+fn run(cli: Cli) -> Result<()> {
     log::debug!("Parsed CLI options: {:?}", cli);
 
     // Read entire input
@@ -328,6 +353,7 @@ if cli.dump_im4m_props {
 
 // Dump IM4R
 let mut im4r_len = None;
+let mut im4r_properties = None;
 if let Some(im4r) = &parsed.im4r {
     log::debug!("IM4R present, length {} bytes", im4r.len());
 
@@ -340,6 +366,7 @@ if let Some(im4r) = &parsed.im4r {
                     if let Ok(nonce) = hex::decode(hex_nonce) {
                         let p = cli.outdir.join("im4r.bncn.bin");
                         fs::write(&p, &nonce)?;
+                        output_paths.add("IM4R Nonce (BNCN)", p.display().to_string());
                         if cli.verbose {
                             eprintln!("extracted BNCN nonce ({} bytes) -> {:?}", nonce.len(), p);
                         }
@@ -355,6 +382,7 @@ if let Some(im4r) = &parsed.im4r {
             if cli.verbose {
                 eprintln!("wrote IM4R properties to {:?}", p);
             }
+            im4r_properties = Some(props);
         }
         Err(e) => {
             log::warn!("IM4R property parse error: {}", e);
@@ -378,7 +406,13 @@ if let Some(im4r) = &parsed.im4r {
         im4p: im4p_info,
         im4m: im4m_summary,
         im4r_len,
+        im4r_properties,
         notes,
+        output_files: output_paths
+            .files
+            .iter()
+            .map(|(label, path)| OutputFile { label: label.clone(), path: path.clone() })
+            .collect(),
     };
 
     log::debug!("Final summary prepared: {:#?}", summary);

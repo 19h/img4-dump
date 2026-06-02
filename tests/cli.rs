@@ -327,3 +327,43 @@ fn rejects_garbage() {
     let res = run(&["-o", out.to_str().unwrap(), "-f", input.to_str().unwrap()]);
     assert!(!res.status.success(), "garbage should be rejected");
 }
+
+/// In --json mode, a failure still produces valid JSON (an {"error": ...} object)
+/// on stdout, so machine consumers never see a broken stream.
+#[test]
+fn json_error_boundary() {
+    let dir = tmpdir("json-err");
+    let input = write_fixture(&dir, "in.bin", b"not der at all");
+    let out = dir.join("out");
+    let res = run(&["--json", "-o", out.to_str().unwrap(), "-f", input.to_str().unwrap()]);
+    assert!(!res.status.success());
+    let v: serde_json::Value = serde_json::from_slice(&res.stdout)
+        .expect("stdout must be valid JSON even on error");
+    assert!(v["error"].is_string(), "error object expected, got {v}");
+}
+
+/// The JSON summary is a superset of the human output: it lists the files written.
+#[test]
+fn json_lists_output_files() {
+    let dir = tmpdir("json-files");
+    let im4p = Im4pBuilder::new("krnl", "K", &[0xCC; 16]).build();
+    let input = write_fixture(&dir, "in.im4p", &im4p);
+    let out = dir.join("out");
+    let v = run_json(&["-o", out.to_str().unwrap(), "-f", input.to_str().unwrap()]);
+    let files = v["output_files"].as_array().expect("output_files array");
+    assert!(files.iter().any(|f| f["label"] == "Payload" && f["path"].as_str().unwrap().ends_with("im4p.bin")));
+}
+
+/// IM4R properties are surfaced in the JSON summary (superset of the file dump).
+#[test]
+fn json_includes_im4r_properties() {
+    let dir = tmpdir("json-im4r");
+    let im4p = Im4pBuilder::new("krnl", "K", &[0; 8]).build();
+    let im4r = seq(&[ia5("IM4R"), set(&[property("BNCN", octet(&[0xab; 8]))])]);
+    let img4 = seq(&[ia5("IMG4"), im4p, ctx_explicit(1, &im4r)]);
+    let input = write_fixture(&dir, "in.img4", &img4);
+    let out = dir.join("out");
+    let v = run_json(&["-o", out.to_str().unwrap(), "-f", input.to_str().unwrap()]);
+    let props = v["im4r_properties"].as_array().expect("im4r_properties");
+    assert!(props.iter().any(|p| p["key"] == "BNCN"));
+}
