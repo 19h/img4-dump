@@ -173,6 +173,16 @@ fn main() -> Result<()> {
             }
         }
 
+        // If present, persist PAYP payload-scoped properties (with-properties variant)
+        if let Some(props) = &im4p.payload_properties {
+            let p = cli.outdir.join("im4p.payp.json");
+            fs::write(&p, serde_json::to_vec_pretty(props)?)?;
+            output_paths.add("Payload Properties", p.display().to_string());
+            if cli.verbose {
+                eprintln!("wrote {:?} ({} properties)", p, props.len());
+            }
+        }
+
         // Optionally keep ciphertext copy (if decryption requested)
         if cli.decrypt && cli.keep_ciphertext {
             log::debug!("Keeping ciphertext copy of IM4P");
@@ -252,7 +262,13 @@ im4p_info = Some(parse::Im4pInfo {
             r#type: im4p.r#type.clone(),
             version: im4p.version.clone(),
             data_len: im4p.data.len(),
-            kbag: im4p.kbag_summary.clone(),
+            // Redact raw IV/key bytes from the summary: expose only class + lengths.
+            kbag: im4p
+                .kbag_summary
+                .as_ref()
+                .map(|v| v.iter().map(parse::KbagEntryInfo::from).collect()),
+            compression: im4p.compression.as_ref().map(parse::CompressionInfo::from),
+            payload_properties: im4p.payload_properties.clone(),
         });
         log::debug!("IM4P info recorded");
     }

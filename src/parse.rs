@@ -22,11 +22,48 @@ pub struct Parsed {
     pub im4r: Option<Vec<u8>>,
 }
 
-#[derive(Debug, Clone, Serialize)]
+#[derive(Debug, Clone)]
 pub struct KbagEntry {
     pub kclass: u64,   // 1=prod, 2=dev
     pub iv: Vec<u8>,   // 16 bytes
     pub key: Vec<u8>,  // 16/24/32 bytes
+}
+
+/// Redacted, JSON-safe view of a KBAG entry. The raw IV and (potentially
+/// plaintext) AES key are NEVER serialized into the summary — only their
+/// lengths and the key class are exposed. The cleartext bytes remain available
+/// internally (on `KbagEntry`) solely for the explicit `--decrypt` path.
+#[derive(Debug, Clone, Serialize)]
+pub struct KbagEntryInfo {
+    pub kclass: u64,
+    pub iv_len: usize,
+    pub key_len: usize,
+}
+
+impl From<&KbagEntry> for KbagEntryInfo {
+    fn from(e: &KbagEntry) -> Self {
+        KbagEntryInfo { kclass: e.kclass, iv_len: e.iv.len(), key_len: e.key.len() }
+    }
+}
+
+/// Human/JSON-facing compression descriptor.
+#[derive(Debug, Clone, Serialize)]
+pub struct CompressionInfo {
+    pub algorithm: String,                 // "lzss" | "lzfse" | "unknown(<id>)"
+    pub method_id: u64,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub uncompressed_size: Option<u64>,
+}
+
+impl From<&Im4pCompression> for CompressionInfo {
+    fn from(c: &Im4pCompression) -> Self {
+        let algorithm = match c.method_id {
+            0 => "lzss".to_string(),
+            1 => "lzfse".to_string(),
+            other => format!("unknown({other})"),
+        };
+        CompressionInfo { algorithm, method_id: c.method_id, uncompressed_size: c.uncompressed_len }
+    }
 }
 
 #[derive(Debug, Clone, Serialize)]
@@ -42,7 +79,9 @@ pub struct Im4p {
     pub data: Vec<u8>,
     pub kbag_der: Option<Vec<u8>>,
     pub kbag_summary: Option<Vec<KbagEntry>>,
-    pub compression: Option<Im4pCompression>,   // NEW
+    pub compression: Option<Im4pCompression>,
+    /// Payload-scoped properties from the with-properties (PAYP) IM4P variant.
+    pub payload_properties: Option<Vec<TypedIm4mProperty>>,
 }
 
 #[derive(Debug)]
@@ -111,7 +150,11 @@ pub struct Im4pInfo {
     pub r#type: String,
     pub version: String,
     pub data_len: usize,
-    pub kbag: Option<Vec<KbagEntry>>,
+    pub kbag: Option<Vec<KbagEntryInfo>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub compression: Option<CompressionInfo>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub payload_properties: Option<Vec<TypedIm4mProperty>>,
 }
 
 #[derive(Debug, Clone, Serialize)]
@@ -191,27 +234,39 @@ fn parse_im4p_compression(obj: &DerObject) -> Result<Im4pCompression> {
     Ok(Im4pCompression { method_id: id, uncompressed_len: uncl })
 }
 
-/// Extract properties from IM4R using formal structure: SEQUENCE { "IM4R", SET { properties } }
-pub fn extract_im4r_properties(raw: &[u8]) -> Result<Vec<TypedIm4mProperty>> {
-    let (_, obj) = parse_der(raw).map_err(|e| anyhow!("IM4R DER: {e}"))?;
-    let seq = obj.as_sequence().map_err(|_| anyhow!("IM4R not SEQUENCE"))?;
+/// Extract a labeled property container of the canonical shape
+/// `SEQUENCE { IA5String(label), SET { properties } }`. IM4R and the IM4P PAYP
+/// payload-properties block share this exact structure, so both reuse this.
+fn extract_property_set(obj: &DerObject, expected_label: &str) -> Result<Vec<TypedIm4mProperty>> {
+    let seq = obj
+        .as_sequence()
+        .map_err(|_| anyhow!("{expected_label}: not SEQUENCE"))?;
 
-    let label = seq.get(0).and_then(ia5str).ok_or_else(|| anyhow!("IM4R label missing"))?;
-    if label != "IM4R" {
-        bail!("IM4R label is not 'IM4R'");
+    let label = seq
+        .get(0)
+        .and_then(ia5str)
+        .ok_or_else(|| anyhow!("{expected_label}: label missing"))?;
+    if label != expected_label {
+        bail!("{expected_label}: label is '{label}'");
     }
 
     let prop_set = seq
         .get(1)
-        .ok_or_else(|| anyhow!("IM4R missing property SET"))?
+        .ok_or_else(|| anyhow!("{expected_label}: missing property SET"))?
         .as_set()
-        .map_err(|_| anyhow!("IM4R properties not in a SET"))?;
+        .map_err(|_| anyhow!("{expected_label}: properties not in a SET"))?;
 
     let mut out = Vec::new();
     for prop_obj in prop_set {
         collect_typed_props_from_obj(prop_obj, &mut out)?;
     }
     Ok(out)
+}
+
+/// Extract properties from IM4R using formal structure: SEQUENCE { "IM4R", SET { properties } }
+pub fn extract_im4r_properties(raw: &[u8]) -> Result<Vec<TypedIm4mProperty>> {
+    let (_, obj) = parse_der(raw).map_err(|e| anyhow!("IM4R DER: {e}"))?;
+    extract_property_set(&obj, "IM4R")
 }
 
 /// Legacy function for backwards compatibility - extracts only BNCN nonce
@@ -327,13 +382,14 @@ fn parse_im4p_from_der_obj(obj: &DerObject) -> Result<Im4p> {
         .to_string();
     debug!("IM4P type: {}", ty);
 
-// 2: version
-let version_str = seq
-    .get(2)
-    .and_then(ia5str)
-    .ok_or_else(|| anyhow!("IM4P version missing"))?
-    .to_string();
-debug!("IM4P version: {}", version_str);
+    // 2: version/description. The spec carries this as a short string; tolerate
+    // non-UTF8 bytes by rendering lossily rather than rejecting a valid payload.
+    let version_str = seq
+        .get(2)
+        .and_then(as_bytes)
+        .map(|b| String::from_utf8_lossy(b).into_owned())
+        .ok_or_else(|| anyhow!("IM4P version missing"))?;
+    debug!("IM4P version: {}", version_str);
 
     // 3: payload data
     let data = seq
@@ -343,16 +399,66 @@ debug!("IM4P version: {}", version_str);
         .to_vec();
     debug!("IM4P payload size: {} bytes", data.len());
 
-    // 4: optional KBAG (OCTET STRING containing DER)
-    let kbag_der_vec = seq.get(4).and_then(as_bytes).map(|b| b.to_vec());
+    // Optional trailing elements [4..] are matched by DER TAG/content, not by a
+    // fixed index — mirroring the spec's DERParseSequenceToObject, which keys off
+    // each item's tag. In particular, KBAG (OCTET STRING) may be absent while
+    // compression (SEQUENCE) is present (e.g. an unencrypted-but-compressed
+    // kernelcache), in which case positional indexing would silently misread the
+    // layout and drop the compression block.
+    let mut kbag_der_vec: Option<Vec<u8>> = None;
+    let mut compression: Option<Im4pCompression> = None;
+    let mut payload_properties: Option<Vec<TypedIm4mProperty>> = None;
+
+    for item in seq.iter().skip(4) {
+        let tag = item.header.tag().0;
+        let universal = item.header.class() == Class::Universal;
+        if universal && tag == 4 {
+            // OCTET STRING -> KBAG (DER-encoded keybag)
+            match as_bytes(item) {
+                Some(b) if kbag_der_vec.is_none() => kbag_der_vec = Some(b.to_vec()),
+                Some(_) => warn!("IM4P: extra OCTET STRING element ignored"),
+                None => {}
+            }
+        } else if universal && tag == 16 {
+            // SEQUENCE -> compression { INTEGER, INTEGER } OR PAYP { IA5 "PAYP", SET }
+            match item.as_sequence() {
+                Ok(children) if children.first().and_then(ia5str) == Some("PAYP") => {
+                    match extract_property_set(item, "PAYP") {
+                        Ok(props) => {
+                            debug!("IM4P PAYP: {} payload properties", props.len());
+                            payload_properties = Some(props);
+                        }
+                        Err(e) => warn!("IM4P PAYP parse failed: {}", e),
+                    }
+                }
+                Ok(_) => {
+                    // A tag-identified compression block that fails to parse is a
+                    // hard error, not a silent None.
+                    let c = parse_im4p_compression(item)?;
+                    debug!(
+                        "IM4P compression: id={}, uncompressed_len={:?}",
+                        c.method_id, c.uncompressed_len
+                    );
+                    compression = Some(c);
+                }
+                Err(_) => debug!("IM4P: ignoring malformed SEQUENCE element"),
+            }
+        } else {
+            debug!(
+                "IM4P: ignoring unexpected optional element (class={:?}, tag={})",
+                item.header.class(),
+                tag
+            );
+        }
+    }
+
     if kbag_der_vec.is_some() {
         debug!("IM4P contains KBAG");
     } else {
         debug!("IM4P does not contain KBAG");
     }
-
-    let kbag_summary = if let Some(ref kraw) = kbag_der_vec {
-        match parse_kbag_summary(kraw) {
+    let kbag_summary = match &kbag_der_vec {
+        Some(kraw) => match parse_kbag_summary(kraw) {
             Ok(summary) => {
                 debug!("Parsed KBAG with {} entries", summary.len());
                 Some(summary)
@@ -361,30 +467,19 @@ debug!("IM4P version: {}", version_str);
                 warn!("Failed to parse KBAG: {}", e);
                 None
             }
-        }
-    } else {
-        None
+        },
+        None => None,
     };
 
-    // 5: optional compression (SEQUENCE { INTEGER id, INTEGER uncompressed_len })
-    let compression =
-        if let Some(cobj) = seq.get(5) {
-            match parse_im4p_compression(cobj) {
-                Ok(c) => { debug!("IM4P compression: id={}, uncompressed_len={:?}", c.method_id, c.uncompressed_len); Some(c) }
-                Err(e) => { warn!("IM4P compression parse failed: {}", e); None }
-            }
-        } else {
-            None
-        };
-
-Ok(Im4p {
-    r#type: ty,
-    version: version_str,
-    data,
-    kbag_der: kbag_der_vec,
-    kbag_summary,
-    compression,          // NEW
-})
+    Ok(Im4p {
+        r#type: ty,
+        version: version_str,
+        data,
+        kbag_der: kbag_der_vec,
+        kbag_summary,
+        compression,
+        payload_properties,
+    })
 }
 
 fn parse_kbag_summary(kbag_der: &[u8]) -> Result<Vec<KbagEntry>> {
@@ -400,8 +495,11 @@ fn parse_kbag_summary(kbag_der: &[u8]) -> Result<Vec<KbagEntry>> {
         let es = entry
             .as_sequence()
             .map_err(|_| anyhow!("KBAG entry not SEQUENCE"))?;
-        if es.len() != 3 {
-            bail!("KBAG entry malformed");
+        // Each entry is { INTEGER class, OCTET iv, OCTET key }. The reference
+        // library never parses KBAG internals, so tolerate (ignore) any extra
+        // trailing fields a future format revision might add.
+        if es.len() < 3 {
+            bail!("KBAG entry malformed (expected >= 3 fields, got {})", es.len());
         }
         let kclass = es[0].as_u64().map_err(|_| anyhow!("KBAG class not INTEGER"))?;
         let iv = es[1].as_slice().map_err(|_| anyhow!("KBAG iv not OCTET STRING"))?.to_vec();

@@ -121,14 +121,29 @@ fn render_im4p(out: &mut String, info: &Im4pInfo, colors: bool) {
     } else {
         "Not present".to_string()
     };
-    
+
     // Build key-value pairs for alignment (excluding Type which we rendered specially)
-    let pairs = vec![
+    let mut pairs = vec![
         ("Version", info.version.clone()),
         ("Data Size", format_bytes(info.data_len)),
         ("KBAG", kbag_str),
     ];
-    
+
+    if let Some(c) = &info.compression {
+        let s = match c.uncompressed_size {
+            Some(n) => format!("{} (uncompressed {})", c.algorithm, format_bytes(n as usize)),
+            None => c.algorithm.clone(),
+        };
+        pairs.push(("Compression", s));
+    }
+
+    if let Some(props) = &info.payload_properties {
+        pairs.push((
+            "Payload Props",
+            format!("{} propert{}", props.len(), if props.len() == 1 { "y" } else { "ies" }),
+        ));
+    }
+
     render_kv_block(out, &pairs, 3, colors);
 }
 
