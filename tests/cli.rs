@@ -152,6 +152,104 @@ fn img4_full_container() {
     assert_eq!(v["im4r_len"].as_u64().unwrap() > 0, true);
 }
 
+/// Build an IM4M wrapping the given MANP property set and image objects.
+fn build_im4m(manp_props: &[Vec<u8>], images: &[(&str, Vec<Vec<u8>>)], version: u64) -> Vec<u8> {
+    let mut manb_children = vec![property("MANP", set(manp_props))];
+    for (fourcc, props) in images {
+        manb_children.push(property(fourcc, set(props)));
+    }
+    let manb = property("MANB", set(&manb_children));
+    seq(&[
+        ia5("IM4M"),
+        integer(version),
+        set(&[manb]),
+        octet(&[0x55; 64]),
+        seq(&[seq(&[ia5("c")])]),
+    ])
+}
+
+/// The structured manifest dump separates global (MANP) properties from per-image
+/// property groups, with image->property association preserved and no structural noise.
+#[test]
+fn im4m_structured_manifest_props() {
+    let dir = tmpdir("im4m-structured");
+    let im4m = build_im4m(
+        &[property("CHIP", integer(0x8030)), property("ECID", integer(0x1122334455))],
+        &[
+            ("krnl", vec![property("DGST", octet(&[0x01; 48]))]),
+            ("sepi", vec![property("DGST", octet(&[0x02; 48]))]),
+        ],
+        0,
+    );
+    let input = write_fixture(&dir, "in.im4m", &im4m);
+    let out = dir.join("out");
+    let _ = run_json(&["--dump-im4m-props", "-o", out.to_str().unwrap(), "-f", input.to_str().unwrap()]);
+
+    let v: serde_json::Value =
+        serde_json::from_slice(&std::fs::read(out.join("im4m.props.json")).unwrap()).unwrap();
+    let mp: Vec<&str> = v["manifest_properties"].as_array().unwrap().iter().map(|p| p["key"].as_str().unwrap()).collect();
+    assert!(mp.contains(&"CHIP") && mp.contains(&"ECID"));
+    // No structural noise: MANB / MANP / IM4M never appear as properties.
+    assert!(!mp.contains(&"MANB") && !mp.contains(&"MANP") && !mp.contains(&"IM4M"));
+
+    let images = v["images"].as_array().unwrap();
+    assert_eq!(images.len(), 2);
+    // Each image keeps its own DGST (association preserved).
+    for img in images {
+        let keys: Vec<&str> = img["properties"].as_array().unwrap().iter().map(|p| p["key"].as_str().unwrap()).collect();
+        assert_eq!(keys, vec!["DGST"]);
+        assert!(matches!(img["fourcc"].as_str().unwrap(), "krnl" | "sepi"));
+    }
+}
+
+/// images_present in the summary is derived structurally from MANB children.
+#[test]
+fn im4m_images_present_structural() {
+    let dir = tmpdir("im4m-images");
+    let im4m = build_im4m(
+        &[property("CHIP", integer(1))],
+        &[("krnl", vec![]), ("ibot", vec![]), ("sepi", vec![])],
+        0,
+    );
+    let input = write_fixture(&dir, "in.im4m", &im4m);
+    let out = dir.join("out");
+    let v = run_json(&["-o", out.to_str().unwrap(), "-f", input.to_str().unwrap()]);
+    let imgs: Vec<&str> = v["im4m"]["images_present"].as_array().unwrap().iter().map(|s| s.as_str().unwrap()).collect();
+    assert_eq!(imgs, vec!["ibot", "krnl", "sepi"]); // sorted, exact, no MANP/MANB
+}
+
+/// An INTEGER property wider than 64 bits is rendered as a hex magnitude, never
+/// silently truncated to zero or mislabeled.
+#[test]
+fn im4m_big_integer_property() {
+    let dir = tmpdir("im4m-bigint");
+    // 9 significant content bytes => exceeds u64.
+    let big = integer_raw(&[0x01, 0x23, 0x45, 0x67, 0x89, 0xAB, 0xCD, 0xEF, 0x11]);
+    let im4m = build_im4m(&[property("CHIP", big)], &[], 0);
+    let input = write_fixture(&dir, "in.im4m", &im4m);
+    let out = dir.join("out");
+    let _ = run_json(&["--dump-im4m-props", "-o", out.to_str().unwrap(), "-f", input.to_str().unwrap()]);
+    let v: serde_json::Value =
+        serde_json::from_slice(&std::fs::read(out.join("im4m.props.json")).unwrap()).unwrap();
+    let chip = v["manifest_properties"].as_array().unwrap().iter().find(|p| p["key"] == "CHIP").unwrap();
+    assert_eq!(chip["value"]["type"], "Unknown");
+    assert_eq!(chip["value"]["der_type"], "INTEGER");
+    assert_eq!(chip["value"]["hex_value"], "0123456789abcdef11");
+    // not mislabeled as an anomaly
+    assert!(chip.get("anomaly").is_none());
+}
+
+/// A manifest with an out-of-spec version (>2) is still parseable (warn, not reject).
+#[test]
+fn im4m_version_out_of_range_tolerated() {
+    let dir = tmpdir("im4m-ver");
+    let im4m = build_im4m(&[property("CHIP", integer(1))], &[], 7);
+    let input = write_fixture(&dir, "in.im4m", &im4m);
+    let out = dir.join("out");
+    let v = run_json(&["-o", out.to_str().unwrap(), "-f", input.to_str().unwrap()]);
+    assert_eq!(v["im4m"]["version"], 7);
+}
+
 /// IM4R BNCN nonce is extracted to a file.
 #[test]
 fn im4r_bncn_extracted() {

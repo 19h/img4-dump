@@ -65,6 +65,11 @@ pub fn integer(n: u64) -> Vec<u8> {
     tlv(0x02, &body)
 }
 
+/// A raw INTEGER from explicit content octets (for crafting values wider than u64).
+pub fn integer_raw(content: &[u8]) -> Vec<u8> {
+    tlv(0x02, content)
+}
+
 pub fn seq(items: &[Vec<u8>]) -> Vec<u8> {
     tlv(0x30, &items.concat())
 }

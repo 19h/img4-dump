@@ -305,14 +305,19 @@ im4p_info = Some(parse::Im4pInfo {
             }
         }
 
-// Dump IM4M properties (typed) if requested
+// Dump IM4M properties (structured: MANP properties + per-image groups)
 if cli.dump_im4m_props {
-    let props = parse::extract_im4m_properties_typed(&im4m.raw)?;
+    let manifest = parse::extract_im4m_manifest(&im4m.raw)?;
     let p = cli.outdir.join("im4m.props.json");
-    fs::write(&p, serde_json::to_vec_pretty(&props)?)?;
+    fs::write(&p, serde_json::to_vec_pretty(&manifest)?)?;
     output_paths.add("Manifest Properties", p.display().to_string());
     if cli.verbose {
-        eprintln!("wrote {:?}", p);
+        eprintln!(
+            "wrote {:?} ({} manifest properties, {} image objects)",
+            p,
+            manifest.manifest_properties.len(),
+            manifest.images.len()
+        );
     }
 }
 

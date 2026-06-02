@@ -536,6 +536,100 @@ fn im4m_from_bytes(bytes: &[u8]) -> Result<Im4m> {
     Ok(Im4m { raw: bytes.to_vec() })
 }
 
+/// A single image object inside the manifest body (e.g. "krnl", "sepi"), with
+/// its own property set.
+#[derive(Debug, Clone, Serialize)]
+pub struct Im4mImage {
+    pub fourcc: String,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub name: Option<String>,
+    pub properties: Vec<TypedIm4mProperty>,
+}
+
+/// Structured view of the IM4M manifest body: the global manifest properties
+/// (MANP) plus each per-image object group. This mirrors the spec structure
+/// (MANB -> { MANP, <image>, ... }) instead of guessing from loose 4CC tokens.
+#[derive(Debug, Clone, Serialize)]
+pub struct Im4mManifestData {
+    pub manifest_properties: Vec<TypedIm4mProperty>,
+    pub images: Vec<Im4mImage>,
+}
+
+/// Walk IM4M -> MANB -> { MANP, <image objects> } and return a structured view.
+/// Each node is located by its actual DER structure (private-tagged wrappers
+/// containing `SEQUENCE { IA5String(4cc), SET { properties } }`).
+pub fn extract_im4m_manifest(raw: &[u8]) -> Result<Im4mManifestData> {
+    let (_, obj) = parse_der(raw).map_err(|e| anyhow!("IM4M DER: {e}"))?;
+    let seq = obj.as_sequence().map_err(|_| anyhow!("IM4M not SEQUENCE"))?;
+
+    let mut manifest_properties = Vec::new();
+    let mut images = Vec::new();
+
+    // IM4M[2] is the manifest body: a SET wrapping the MANB object.
+    let body = seq.get(2).ok_or_else(|| anyhow!("IM4M missing manifest body"))?;
+    let body_set = body.as_set().map_err(|_| anyhow!("IM4M body not a SET"))?;
+
+    for wrapper in body_set {
+        // Each member is a private-tagged wrapper around SEQUENCE { IA5, SET }.
+        let inner = match wrapper.as_slice() {
+            Ok(b) => b,
+            Err(_) => continue,
+        };
+        let manb_seq_obj = match parse_der(inner) {
+            Ok((_, o)) => o,
+            Err(_) => continue,
+        };
+        let manb_seq = match manb_seq_obj.as_sequence() {
+            Ok(s) => s,
+            Err(_) => continue,
+        };
+        if manb_seq.get(0).and_then(ia5str) != Some("MANB") {
+            continue;
+        }
+        let manb_set = match manb_seq.get(1).and_then(|o| o.as_set().ok()) {
+            Some(s) => s,
+            None => continue,
+        };
+
+        for child in manb_set {
+            // child = [private 4cc] -> SEQUENCE { IA5 4cc, SET { props } }
+            let cinner = match child.as_slice() {
+                Ok(b) => b,
+                Err(_) => continue,
+            };
+            let cseq_obj = match parse_der(cinner) {
+                Ok((_, o)) => o,
+                Err(_) => continue,
+            };
+            let cseq = match cseq_obj.as_sequence() {
+                Ok(s) => s,
+                Err(_) => continue,
+            };
+            let label = match cseq.get(0).and_then(ia5str) {
+                Some(l) => l.to_string(),
+                None => continue,
+            };
+
+            let mut props = Vec::new();
+            if let Some(pset) = cseq.get(1).and_then(|o| o.as_set().ok()) {
+                for p in pset {
+                    collect_typed_props_from_obj(p, &mut props)?;
+                }
+            }
+
+            if label == "MANP" {
+                manifest_properties = props;
+            } else {
+                let name = crate::fourcc::get_description(&label);
+                images.push(Im4mImage { fourcc: label, name, properties: props });
+            }
+        }
+    }
+
+    images.sort_by(|a, b| a.fourcc.cmp(&b.fourcc));
+    Ok(Im4mManifestData { manifest_properties, images })
+}
+
 pub fn summarize_im4m(im4m: &Im4m) -> Result<Im4mInfoSummary> {
     debug!(
         "summarize_im4m: start, raw DER size {} bytes",
@@ -557,13 +651,16 @@ pub fn summarize_im4m(im4m: &Im4m) -> Result<Im4mInfoSummary> {
 
     debug!("IM4M label validated");
 
-    // Per pongoOS, IM4M[1] is INTEGER zero; validate if present
-    if let Some(z) = seq.get(1).and_then(|o| o.as_u64().ok()) {
-        if z != 0 { warn!("IM4M[1] expected 0, got {}", z); }
-    }
-
+    // IM4M[1] is the manifest version INTEGER. The reference decoder
+    // (DERImg4DecodeManifestCommon) accepts only 0..=2 and hard-fails otherwise;
+    // as an analysis tool we record the value and flag (rather than reject) any
+    // out-of-range version so an unusual manifest can still be inspected.
     let version = seq.get(1).and_then(|o| o.as_u64().ok());
-    debug!("IM4M version: {:?}", version);
+    match version {
+        Some(v) if v > 2 => warn!("IM4M version {} is out of spec range 0..=2", v),
+        Some(v) => debug!("IM4M version: {}", v),
+        None => warn!("IM4M version field missing or not an integer"),
+    }
 
     let signature_len = seq
         .get(3)
@@ -595,18 +692,15 @@ pub fn summarize_im4m(im4m: &Im4m) -> Result<Im4mInfoSummary> {
         manifest_property_tags
     );
 
-    // Heuristic: image 4CCs are commonly lowercase (e.g., "krnl","sepi").
-    // We exclude all well-known property keys and manifest block tags.
-    let images_present = tokens
-        .iter()
-        .filter(|s| {
-            s.len() == 4
-                && !KNOWN_PROPERTIES.contains_key(s.as_str())
-                && !matches!(s.as_str(), "IM4M" | "MANB" | "MANP")
-                && s.chars().all(|c| c.is_ascii_lowercase() || c.is_ascii_digit())
-        })
-        .cloned()
-        .collect::<Vec<_>>();
+    // Images are enumerated structurally (MANB's child objects other than MANP),
+    // which is exact, rather than guessing from loose lowercase 4CC tokens.
+    let images_present = match extract_im4m_manifest(&im4m.raw) {
+        Ok(m) => m.images.into_iter().map(|i| i.fourcc).collect::<Vec<_>>(),
+        Err(e) => {
+            warn!("structural image enumeration failed: {}", e);
+            Vec::new()
+        }
+    };
     debug!("Images present identified: {:?}", images_present);
 
     Ok(Im4mInfoSummary {
@@ -755,14 +849,6 @@ pub fn extract_im4m_properties(raw: &[u8]) -> Result<Vec<Im4mProperty>> {
     Ok(out)
 }
 
-/// Extracts typed properties with metadata from IM4M.
-pub fn extract_im4m_properties_typed(raw: &[u8]) -> Result<Vec<TypedIm4mProperty>> {
-    let (_, obj) = parse_der(raw).map_err(|e| anyhow!("IM4M DER: {e}"))?;
-    let mut out = Vec::<TypedIm4mProperty>::new();
-    collect_typed_props_from_obj(&obj, &mut out)?;
-    Ok(out)
-}
-
 #[allow(dead_code)]
 fn collect_props_from_obj(o: &DerObject, out: &mut Vec<Im4mProperty>) -> Result<()> {
     // If this is a SEQUENCE, check for the { IA5String(4CC), ANY } pattern
@@ -857,6 +943,20 @@ fn collect_typed_props_from_obj(o: &DerObject, out: &mut Vec<TypedIm4mProperty>)
     Ok(())
 }
 
+/// Decode a DER INTEGER value: returns `Integer` when it fits in u64, otherwise
+/// the raw big-endian magnitude as hex (Apple manifests use 64-bit integers, but
+/// we never silently truncate a wider one to zero).
+fn integer_value(o: &DerObject) -> Im4mPropertyValue {
+    match o.as_u64() {
+        Ok(i) => Im4mPropertyValue::Integer { value: i },
+        Err(_) => Im4mPropertyValue::Unknown {
+            der_type: "INTEGER".to_string(),
+            hex_value: Some(hex::encode(o.as_slice().unwrap_or_default())),
+            hex_values: None,
+        },
+    }
+}
+
 /// Decode a value with type hint from property metadata
 fn decode_typed_value(o: &DerObject, key_hint: Option<&str>) -> Result<(Im4mPropertyValue, Option<String>)> {
     let meta = key_hint.and_then(|k| KNOWN_PROPERTIES.get(k));
@@ -876,8 +976,9 @@ fn decode_typed_value(o: &DerObject, key_hint: Option<&str>) -> Result<(Im4mProp
             }
         }
         Some(ExpectedDerType::Integer) => {
-            if let Ok(i) = o.as_u64() {
-                Im4mPropertyValue::Integer { value: i }
+            if o.header.tag().0 == 2 {
+                // A genuine INTEGER: fits-in-u64 -> Integer, else hex magnitude.
+                integer_value(o)
             } else {
                 anomaly = Some(format!("Expected INTEGER, got {:?}", o.header.tag()));
                 Im4mPropertyValue::Unknown {
@@ -927,7 +1028,7 @@ fn decode_typed_value(o: &DerObject, key_hint: Option<&str>) -> Result<(Im4mProp
             // Fallback for unknown keys
             match o.header.tag().0 {
                 1 => Im4mPropertyValue::Boolean { value: o.as_bool().unwrap_or(false) },
-                2 => Im4mPropertyValue::Integer { value: o.as_u64().unwrap_or(0) },
+                2 => integer_value(o),
                 4 => Im4mPropertyValue::OctetString { value: hex::encode(o.as_slice().unwrap_or_default()) },
                 22 => Im4mPropertyValue::String { value: ia5str(o).unwrap_or("").to_string() },
                 16 | 17 => {
