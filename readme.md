@@ -126,11 +126,14 @@ img4-dump --json my_firmware.img4 > summary.json
     *   Supports AES-128, AES-192, and AES-256.
     *   Supports Counter (CTR) and Cipher Block Chaining (CBC) modes.
     *   Automatically reads IV/Key from plaintext `KBAG` tags if present in the IM4P.
-*   **Decompression:** Optionally decompresses decrypted payloads using LZFSE or LZSS algorithms (requires feature flags).
+*   **Decompression:** Optionally decompresses decrypted payloads (requires feature flags).
+    *   LZFSE via the `lzfse` codec.
+    *   LZSS via a self-contained, dependency-free implementation of Apple's `complzss`/Okumura format, with Adler-32 self-validation of the decompressed result.
 *   **Manifest Analysis:**
-    *   Extracts the complete property list from an IM4M into a structured JSON file.
+    *   Extracts a structured property list from an IM4M (global properties plus per-image groups) into JSON.
     *   Dumps the full X.509 certificate chain used for signature validation.
-*   **Flexible Output:** Provides verbose logging for detailed analysis and a machine-readable JSON summary for automation.
+*   **Flexible Output:** Provides verbose logging for detailed analysis and a machine-readable JSON summary for automation. In `--json` mode, errors are emitted as a structured `{"error": ...}` object so consumers always receive valid JSON.
+*   **Key Hygiene:** The JSON summary never serializes raw KBAG IV/key bytes — only the key class and lengths — so piping `--json` output to logs cannot leak plaintext key material.
 
 ### Technical Background
 
@@ -155,13 +158,16 @@ When run, `img4-dump` creates the following files in the specified output direct
 
 *   `im4p.bin`: The raw, possibly encrypted, IM4P payload.
 *   `im4p.kbag.der`: The raw DER of the KBAG tag, if present.
+*   `im4p.payp.json`: Payload-scoped properties from the with-properties (PAYP) IM4P variant, if present.
 *   `im4p.ciphertext`: A copy of the encrypted payload, if `--keep-ciphertext` is used.
 *   `im4p.decrypted`: The plaintext payload after successful decryption.
-*   `im4p.decompressed.lzfse`: The final data after LZFSE decompression.
+*   `im4p.decompressed.lzfse` / `im4p.decompressed.lzss`: The final data after decompression.
 *   `im4m.der`: The raw DER of the IM4M manifest.
-*   `im4m.props.json`: A JSON representation of all key-value properties within the manifest.
+*   `im4m.props.json`: A **structured** view of the manifest: `{ "manifest_properties": [...], "images": [{ "fourcc", "name", "properties": [...] }] }`. Global (MANP) properties are separated from each per-image object's own property set, mirroring the manifest's `MANB → { MANP, <image> }` structure.
 *   `im4m.cert.0.der`, `im4m.cert.0.pem`, ...: The certificate chain from the manifest.
 *   `im4r.der`: The raw IM4R data blob.
+*   `im4r.props.json`: All IM4R restore-info properties.
+*   `im4r.bncn.bin`: The raw boot nonce (BNCN), if present.
 
 ### Notes
 
