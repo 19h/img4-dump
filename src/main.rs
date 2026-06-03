@@ -241,10 +241,19 @@ fn run(cli: Cli) -> Result<()> {
                 let reason = detected.unwrap_or_else(|| "unknown".into());
                 log::warn!("Decryption validation FAILED: {}", reason);
                 log::warn!("The output may be garbage (wrong key/IV/mode?)");
-                if cli.verbose {
-                    eprintln!("TIP: Try different --aes-mode (cbc/ctr) or verify key/IV");
-                }
+                // Suggest the *other* mode prominently (not just under --verbose):
+                // the single most common cause is mode mismatch. iBoot/iBEC/iBSS/
+                // LLB/SEP/ramdisk/logo images are AES-CBC, not the CTR default.
+                let other = match mode {
+                    AesMode::Ctr => "cbc",
+                    AesMode::Cbc => "ctr",
+                };
+                log::warn!(
+                    "HINT: this looks like the wrong AES mode — retry with --aes-mode {other} \
+                     (most Apple images, e.g. iBoot/iBEC/iBSS/LLB/SEP, are CBC)"
+                );
                 notes.push(format!("decryption validation failed: {}", reason));
+                notes.push(format!("hint: retry with --aes-mode {other}"));
             }
 
             let out = cli.outdir.join("im4p.decrypted");
