@@ -76,33 +76,47 @@ Output Files
 
 ### Usage Examples
 
-**1. Basic Dump (Metadata and Payloads)**
+**1. One-shot decrypt (`--auto`)**
+Give it an IV, a key, and an IM4P; it decrypts the payload and writes
+`<input>.decrypted` right next to the input. It tries CBC then CTR and keeps
+whichever validates, so you don't have to know the mode:
+
+```shell
+img4-dump --auto \
+  --iv e9e9248584860be85a82754e4fb06b3f \
+  --key 40b4610d6b5acb044df751da3d2af4ad30402b832e798f4656295423c33dda40 \
+  iBoot.j42d.RELEASE.im4p
+# -> iBoot.j42d.RELEASE.im4p.decrypted
+```
+
+**2. Basic Dump (Metadata and Payloads)**
 Extracts all components from an `.img4` file into the `dump_output/` directory with verbose logging.
 
 ```shell
 img4-dump -v my_firmware.img4 -o dump_output
 ```
 
-**2. Decrypt Payload with Command-Line IV and Key**
-Decrypts the IM4P payload using a specified AES-256 key in CTR mode.
+**3. Decrypt Payload with Command-Line IV and Key**
+Decrypts the IM4P payload into an output directory. The AES mode defaults to
+**CBC** (correct for iBoot/iBEC/iBSS/LLB/SEP/ramdisk/logo images); pass
+`--aes-mode ctr` for the rare CTR payload.
 
 ```shell
 img4-dump --decrypt \
-  --aes-mode ctr \
   --iv 0123456789abcdef0123456789abcdef \
   --key 00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff \
   -o decrypted_firmware \
   firmware.im4p
 ```
 
-**3. Decrypt and Decompress**
+**4. Decrypt and Decompress**
 Decrypts using keys from a plaintext KBAG within the IM4P, then attempts to decompress the result using LZFSE or LZSS.
 
 ```shell
 img4-dump --decrypt --decompress -o processed_firmware firmware_with_kbag.im4p
 ```
 
-**4. Full Manifest Analysis**
+**5. Full Manifest Analysis**
 Dumps the raw IM4M, extracts its full property list to JSON, and saves the embedded certificate chain as individual `.der` and `.pem` files.
 
 ```shell
@@ -111,7 +125,7 @@ img4-dump --dump-im4m --dump-im4m-props --dump-im4m-certs \
   my_firmware.img4
 ```
 
-**5. JSON Summary Output**
+**6. JSON Summary Output**
 Parses the input file and prints a structured JSON summary of its contents to standard output.
 
 ```shell
@@ -144,7 +158,7 @@ A typical `IMG4` file contains three main components:
 1.  **IM4P (Image Payload):** The core data file, such as a kernel (`krnl`), bootloader (`ibot`), or Secure Enclave processor firmware (`sepi`).
     *   **Structure:** An ASN.1 `SEQUENCE` containing a four-character code (4CC) type, a description string, the payload data (octet string), and an optional `KBAG` tag.
     *   **Encryption:** The payload data is often encrypted with AES. The `KBAG` (keybag) tag contains the necessary decryption IV and the AES key. In production firmware, the key within the KBAG is "wrapped" (encrypted) with a device-specific hardware key (GID key). **This tool requires a plaintext KBAG or a user-supplied raw key; it does not perform GID key unwrapping.**
-    *   **AES Mode:** The AES block cipher mode (e.g., CTR, CBC) is not specified within the format. The user must determine the correct mode for the target payload via other analysis.
+    *   **AES Mode:** The AES block cipher mode (CBC or CTR) is not encoded in the format. Nearly all Apple images (iBoot/iBEC/iBSS/LLB/SEP/ramdisk/logo) use **CBC**, which is the tool's default; pass `--aes-mode ctr` for the rare CTR payload, or use `--auto` to try both and keep whichever decrypts to a valid-looking result.
 
 2.  **IM4M (Image Manifest):** A cryptographically signed manifest that ensures the integrity and authenticity of the IM4P.
     *   **Structure:** An ASN.1 `SEQUENCE` containing properties like the payload's SHA hash (`DGST`), security domain (`SDOM`), and various other boot-time parameters.

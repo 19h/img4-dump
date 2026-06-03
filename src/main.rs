@@ -52,9 +52,16 @@ struct Cli {
     #[arg(long = "decrypt", action = ArgAction::SetTrue)]
     decrypt: bool,
 
-    /// AES mode to use when decrypting (not encoded in KBAG/IM4P)
-    #[arg(long = "aes-mode", value_enum, default_value_t = AesMode::Ctr)]
+    /// AES mode to use when decrypting (not encoded in KBAG/IM4P). Most Apple
+    /// images (iBoot/iBEC/iBSS/LLB/SEP/ramdisk/logo) are CBC, hence the default.
+    #[arg(long = "aes-mode", value_enum, default_value_t = AesMode::Cbc)]
     aes_mode: AesMode,
+
+    /// One-shot decrypt: with --iv/--key (or a plaintext KBAG), decrypt the IM4P
+    /// payload and write "<input>.decrypted" next to the input. Tries CBC then
+    /// CTR and keeps whichever validates. Ignores --outdir and the other dumps.
+    #[arg(long = "auto", action = ArgAction::SetTrue)]
+    auto: bool,
 
     /// Hex IV (32 hex chars), overrides KBAG IV (if present)
     #[arg(long = "iv")]
@@ -166,6 +173,11 @@ fn run(cli: Cli) -> Result<()> {
         parsed.im4m.is_some(),
         parsed.im4r.is_some()
     );
+
+    // One-shot auto-decrypt mode: focused decrypt -> "<input>.decrypted".
+    if cli.auto {
+        return run_auto(&cli, &parsed);
+    }
 
     // Prepare output dir
     log::debug!("Ensuring output directory at {:?}", cli.outdir);
@@ -440,6 +452,94 @@ if let Some(im4r) = &parsed.im4r {
         print!("{}", formatted);
     }
 
+    Ok(())
+}
+
+fn mode_str(m: AesMode) -> &'static str {
+    match m {
+        AesMode::Cbc => "CBC",
+        AesMode::Ctr => "CTR",
+    }
+}
+
+/// One-shot decrypt: resolve IV/key, try the preferred AES mode then the other,
+/// keep whichever produces a valid-looking result, and write it next to the
+/// input as "<input>.decrypted".
+fn run_auto(cli: &Cli, parsed: &parse::Parsed) -> Result<()> {
+    let im4p = parsed
+        .im4p
+        .as_ref()
+        .ok_or_else(|| anyhow::anyhow!("--auto: input has no IM4P payload to decrypt"))?;
+
+    let (iv, key) = util::resolve_iv_key(cli, im4p)?;
+
+    let other = match cli.aes_mode {
+        AesMode::Cbc => AesMode::Ctr,
+        AesMode::Ctr => AesMode::Cbc,
+    };
+
+    // Try preferred mode first, then the other; prefer one that validates, but
+    // keep the first that merely decrypts as a fallback.
+    let mut chosen: Option<(AesMode, Vec<u8>)> = None;
+    let mut fallback: Option<(AesMode, Vec<u8>)> = None;
+    for m in [cli.aes_mode, other] {
+        match crypto::decrypt_aes(&im4p.data, &iv, &key, m) {
+            Ok(dec) => {
+                let (valid, why) = util::validate_decryption(&dec);
+                log::debug!("--auto: {} -> valid={} ({:?})", mode_str(m), valid, why);
+                if valid {
+                    chosen = Some((m, dec));
+                    break;
+                }
+                fallback.get_or_insert((m, dec));
+            }
+            Err(e) => log::debug!("--auto: {} mode failed: {}", mode_str(m), e),
+        }
+    }
+
+    let (mode, dec, validated) = match chosen {
+        Some((m, d)) => (m, d, true),
+        None => {
+            let (m, d) = fallback.ok_or_else(|| {
+                anyhow::anyhow!(
+                    "--auto: decryption failed in every AES mode — check the IV/key, \
+                     or the payload may not be encrypted"
+                )
+            })?;
+            (m, d, false)
+        }
+    };
+
+    // Write "<input>.decrypted" alongside the input file.
+    let mut out = cli.input.clone().into_os_string();
+    out.push(".decrypted");
+    let out = PathBuf::from(out);
+    fs::write(&out, &dec).with_context(|| format!("write {:?}", out))?;
+
+    if cli.json {
+        let obj = serde_json::json!({
+            "mode": mode_str(mode).to_lowercase(),
+            "validated": validated,
+            "bytes": dec.len(),
+            "output": out.display().to_string(),
+        });
+        println!("{}", serde_json::to_string_pretty(&obj)?);
+    } else if validated {
+        eprintln!(
+            "Decrypted with AES-{} -> {} ({} bytes)",
+            mode_str(mode),
+            out.display(),
+            dec.len()
+        );
+    } else {
+        eprintln!(
+            "WARNING: no AES mode produced a valid-looking result; wrote AES-{} output anyway \
+             -> {} ({} bytes). Verify the IV/key.",
+            mode_str(mode),
+            out.display(),
+            dec.len()
+        );
+    }
     Ok(())
 }
 

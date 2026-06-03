@@ -44,3 +44,9 @@ lzss  = []
 [dependencies.lzfse]
 version = "0.2"
 optional = true
+
+# Used only by the integration tests to produce real AES ciphertext fixtures.
+[dev-dependencies]
+aes = "0.8"
+cbc = "0.1"
+cipher = { version = "0.4", features = ["block-padding"] }
