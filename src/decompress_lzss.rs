@@ -70,7 +70,19 @@ pub fn decompress_lzss(buf: &[u8]) -> Result<Vec<u8>> {
 /// Classic Okumura LZSS decoder (XNU `decompress_lzss`-compatible).
 fn lzss_decode(src: &[u8], expected_len: Option<usize>) -> Vec<u8> {
     let mut text = [0x20u8; RING + F - 1];
-    let mut out = Vec::with_capacity(expected_len.unwrap_or(src.len().saturating_mul(4)));
+    // Reserve based on the declared size, but never trust an attacker-controlled
+    // header to drive an unbounded up-front allocation: LZSS expands by at most
+    // ~F/2 (~9x), so cap the reservation by the input size (plus headroom) and a
+    // hard ceiling. The Vec still grows if the real output is somehow larger, and
+    // the caller validates the final length, so this only bounds eager memory.
+    const RESERVE_CEILING: usize = 256 * 1024 * 1024;
+    let reserve = match expected_len {
+        Some(e) => e.min(src.len().saturating_mul(16).saturating_add(64 * 1024)),
+        None => src.len().saturating_mul(4),
+    }
+    .min(RESERVE_CEILING)
+    .max(64);
+    let mut out = Vec::with_capacity(reserve);
     let mut r = RING - F; // ring write cursor (XNU starts at N - F)
     let mut it = src.iter().copied();
     let mut flags: u32 = 0;
@@ -266,6 +278,23 @@ mod tests {
         blob.extend_from_slice(&(comp.len() as u32).to_be_bytes());
         blob.resize(HEADER_LEN, 0);
         blob.extend_from_slice(&comp);
+        assert!(decompress_lzss(&blob).is_err());
+    }
+
+    #[test]
+    fn complzss_oversized_uncompressed_size_is_bounded() {
+        // A tiny stream that declares a ~4 GiB uncompressed size must NOT trigger a
+        // ~4 GiB up-front allocation; it must fail with a clean length mismatch.
+        let payload = b"small".repeat(4);
+        let comp = lzss_encode(&payload);
+        let mut blob = Vec::new();
+        blob.extend_from_slice(b"complzss");
+        blob.extend_from_slice(&adler32(&payload).to_be_bytes());
+        blob.extend_from_slice(&0xFFFF_FFFFu32.to_be_bytes()); // lies: ~4 GiB uncompressed
+        blob.extend_from_slice(&(comp.len() as u32).to_be_bytes());
+        blob.resize(HEADER_LEN, 0);
+        blob.extend_from_slice(&comp);
+        // Reaches here without OOM, and reports the mismatch.
         assert!(decompress_lzss(&blob).is_err());
     }
 

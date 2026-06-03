@@ -125,13 +125,13 @@ fn render_im4p(out: &mut String, info: &Im4pInfo, colors: bool) {
     // Build key-value pairs for alignment (excluding Type which we rendered specially)
     let mut pairs = vec![
         ("Version", info.version.clone()),
-        ("Data Size", format_bytes(info.data_len)),
+        ("Data Size", format_bytes(info.data_len as u64)),
         ("KBAG", kbag_str),
     ];
 
     if let Some(c) = &info.compression {
         let s = match c.uncompressed_size {
-            Some(n) => format!("{} (uncompressed {})", c.algorithm, format_bytes(n as usize)),
+            Some(n) => format!("{} (uncompressed {})", c.algorithm, format_bytes(n)),
             None => c.algorithm.clone(),
         };
         pairs.push(("Compression", s));
@@ -158,7 +158,7 @@ fn render_im4m(out: &mut String, info: &Im4mInfoSummary, payload_type: Option<&s
     let cert_str = info.cert_chain_len.map_or("Unknown".to_string(), |n| {
         format!("{} certificate{}", n, if n == 1 { "" } else { "s" })
     });
-    let sig_str = info.signature_len.map_or("Unknown".to_string(), |n| format_bytes(n));
+    let sig_str = info.signature_len.map_or("Unknown".to_string(), |n| format_bytes(n as u64));
     
     let pairs = vec![
         ("Version", version_str),
@@ -233,7 +233,7 @@ fn render_im4r(out: &mut String, len: usize, colors: bool) {
         writeln!(out, "IM4R Restore Info").unwrap();
     }
     let pairs = vec![
-        ("Data Size", format_bytes(len)),
+        ("Data Size", format_bytes(len as u64)),
     ];
     render_kv_block(out, &pairs, 3, colors);
 }
@@ -314,9 +314,10 @@ fn render_kv_block(out: &mut String, pairs: &[(&str, String)], indent: usize, co
     for (key, value) in pairs {
         let padding = " ".repeat(max_key_len - key.len());
         if colors {
-            writeln!(out, "{}{}{}{}{}: {}{}{}", 
-                indent_str, 
-                BOLD, CYAN, key, RESET,
+            // Apply the same colon alignment as the non-color path.
+            writeln!(out, "{}{}{}{}{}{}: {}{}{}",
+                indent_str,
+                BOLD, CYAN, key, RESET, padding,
                 BRIGHT_CYAN, value, RESET
             ).unwrap();
         } else {
@@ -325,8 +326,9 @@ fn render_kv_block(out: &mut String, pairs: &[(&str, String)], indent: usize, co
     }
 }
 
-/// Format bytes with thousands separators
-fn format_bytes(n: usize) -> String {
+/// Format bytes with thousands separators. Takes u64 so a >4 GiB size (e.g. a
+/// compression `uncompressed_size`) is never truncated on 32-bit targets.
+fn format_bytes(n: u64) -> String {
     let s = n.to_string();
     let mut result = String::new();
     let chars: Vec<char> = s.chars().collect();

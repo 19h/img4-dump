@@ -119,19 +119,34 @@ pub fn validate_decryption(data: &[u8]) -> (bool, Option<String>) {
     // No known magic: judge by byte entropy. Correctly decrypted firmware that
     // lacks a recognized magic is still structured (entropy well under 8
     // bits/byte); output decrypted with the wrong key/mode is effectively uniform
-    // random (entropy ~= 8). The old ">=3 distinct bytes" check flagged random
-    // garbage as valid almost every time. Note: genuinely-compressed payloads are
-    // already caught above by their magic (bvx2/complzss), so they do not reach
-    // this branch. We sample several KiB so the finite-sample entropy of random
-    // data lands close to its 8.0 ceiling. THRESHOLD chosen to separate uniform
-    // random (~7.95) from structured firmware (typically < 7.0).
-    const ENTROPY_THRESHOLD: f64 = 7.5;
+    // random. Genuinely-compressed payloads are already caught above by their
+    // magic (bvx2/complzss), so they do not reach this branch.
+    //
+    // Crucially, the entropy of a uniform-random sample of length n is well below
+    // 8.0 for small n (its finite-sample ceiling is ~8 - 255/(2 n ln2): ~7.2 at
+    // 256 bytes, ~4.0 at 16). A fixed threshold would therefore wave through
+    // small wrong-key payloads. So we compare against the size-adjusted random
+    // ceiling, and below a minimum sample treat the result as inconclusive
+    // (flagged for manual verification) rather than silently "valid".
+    const MIN_SAMPLE: usize = 256;
     let sample = &data[..data.len().min(8192)];
+    let n = sample.len();
+    if n < MIN_SAMPLE {
+        return (
+            false,
+            Some(format!("inconclusive: only {n} bytes, too small to validate — verify manually")),
+        );
+    }
     let entropy = shannon_entropy(sample);
-    if entropy > ENTROPY_THRESHOLD {
+    // Expected entropy ceiling of uniform-random bytes at this sample size.
+    let random_ceiling = 8.0 - 255.0 / (2.0 * n as f64 * std::f64::consts::LN_2);
+    const MARGIN: f64 = 0.30;
+    if entropy >= random_ceiling - MARGIN {
         (
             false,
-            Some(format!("high entropy {entropy:.2} bits/byte, no known magic (likely wrong key/mode)")),
+            Some(format!(
+                "entropy {entropy:.2} bits/byte near random ceiling {random_ceiling:.2}, no known magic (likely wrong key/mode)"
+            )),
         )
     } else {
         (
@@ -259,9 +274,23 @@ mod tests {
 
     #[test]
     fn validate_flags_random_as_invalid() {
-        // Wrongly-decrypted output is ~uniform random: must NOT be called valid.
-        let (ok, why) = validate_decryption(&pseudo_random(8192));
-        assert!(!ok, "high-entropy data should be flagged invalid: {why:?}");
+        // Wrongly-decrypted output is ~uniform random: must NOT be called valid,
+        // at any size from a small block to several KiB (size-adjusted ceiling).
+        for n in [256usize, 384, 512, 1024, 4096, 8192] {
+            let (ok, why) = validate_decryption(&pseudo_random(n));
+            assert!(!ok, "{n}-byte high-entropy data should be flagged invalid: {why:?}");
+        }
+    }
+
+    #[test]
+    fn validate_small_payload_is_inconclusive_not_valid() {
+        // Below the minimum sample, random and structured data are indistinguishable
+        // by entropy, so the result must be flagged (not silently "valid").
+        for n in [16usize, 32, 64, 128, 200] {
+            let (ok, why) = validate_decryption(&pseudo_random(n));
+            assert!(!ok, "{n}-byte payload must not be silently valid: {why:?}");
+            assert!(why.unwrap().contains("inconclusive"));
+        }
     }
 
     #[test]

@@ -430,14 +430,21 @@ fn parse_im4p_from_der_obj(obj: &DerObject) -> Result<Im4p> {
                     }
                 }
                 Ok(_) => {
-                    // A tag-identified compression block that fails to parse is a
-                    // hard error, not a silent None.
-                    let c = parse_im4p_compression(item)?;
-                    debug!(
-                        "IM4P compression: id={}, uncompressed_len={:?}",
-                        c.method_id, c.uncompressed_len
-                    );
-                    compression = Some(c);
+                    // A non-PAYP universal SEQUENCE is expected to be the
+                    // compression block. If it does not parse as one, warn and
+                    // continue rather than aborting the whole payload — matching
+                    // the lenient handling of the other optional arms (an
+                    // inspection tool should still surface everything else).
+                    match parse_im4p_compression(item) {
+                        Ok(c) => {
+                            debug!(
+                                "IM4P compression: id={}, uncompressed_len={:?}",
+                                c.method_id, c.uncompressed_len
+                            );
+                            compression = Some(c);
+                        }
+                        Err(e) => warn!("IM4P: SEQUENCE element is neither PAYP nor valid compression: {}", e),
+                    }
                 }
                 Err(_) => debug!("IM4P: ignoring malformed SEQUENCE element"),
             }

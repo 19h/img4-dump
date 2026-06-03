@@ -90,6 +90,19 @@ fn im4p_keybag_and_compression() {
     assert_eq!(v["im4p"]["compression"]["uncompressed_size"], 9999);
 }
 
+/// A stray/empty SEQUENCE among the IM4P optionals must be tolerated (warned and
+/// skipped), not abort the whole parse.
+#[test]
+fn im4p_stray_sequence_tolerated() {
+    let dir = tmpdir("im4p-stray");
+    let im4p = seq(&[ia5("IM4P"), ia5("krnl"), ia5("v"), octet(&[0xAA; 16]), seq(&[])]);
+    let input = write_fixture(&dir, "in.im4p", &im4p);
+    let out = dir.join("out");
+    let v = run_json(&["-o", out.to_str().unwrap(), "-f", input.to_str().unwrap()]);
+    assert_eq!(v["im4p"]["type"], "krnl");
+    assert!(v["im4p"]["compression"].is_null());
+}
+
 /// A compression block whose declared uncompressed size exceeds u64 must not
 /// sink the whole parse: the algorithm is still reported, the size as unknown.
 #[test]
