@@ -7,7 +7,7 @@
     crates.io
   </a>
   —
-  <a href="https://github.com/example-user/img4-dump">
+  <a href="https://github.com/19h/img4-dump">
     Github
   </a>
 </div>

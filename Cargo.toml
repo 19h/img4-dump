@@ -3,8 +3,12 @@ name = "img4-dump"
 version = "3.0.0"
 edition = "2021"
 license = "MIT"
-description = "Extracts payloads and metadata from IMG4/IM4P/IM4M; decrypts with user-supplied IV+Key; optional LZFSE/LZSS decompress."
-repository = "https://example.invalid/img4-dump"
+description = "Extracts payloads and metadata from Apple IMG4/IM4P/IM4M/IM4R; decrypts with user-supplied IV+Key; optional LZFSE/LZSS decompress."
+repository = "https://github.com/19h/img4-dump"
+homepage = "https://github.com/19h/img4-dump"
+readme = "readme.md"
+keywords = ["img4", "im4p", "apple", "firmware", "ios"]
+categories = ["command-line-utilities", "parser-implementations"]
 
 [dependencies]
 anyhow = "1.0"
