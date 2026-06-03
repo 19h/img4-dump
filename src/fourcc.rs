@@ -79,7 +79,33 @@ static FOURCC_MAP: Lazy<HashMap<&'static str, &'static str>> = Lazy::new(|| {
     map.insert("sptm", "Secure Page Table Monitor");
     // Trusted Execution Monitor for policy enforcement under SPTM
     map.insert("trxm", "Trusted Execution Monitor");
-    
+    // Secure Enclave Processor firmware
+    map.insert("sepi", "SEP Firmware (Secure Enclave Processor)");
+    // Restore-variant Secure Enclave Processor firmware
+    map.insert("rsep", "Restore SEP Firmware");
+    // HPM (USB-C power-delivery controller) firmware
+    map.insert("hpmu", "HPM Firmware (USB-C Power Controller)");
+
+    // Boot chain (additional) - first-stage bootloader and policy
+    // Low-Level Bootloader (first stage after Boot ROM)
+    map.insert("illb", "LLB (Low-Level Bootloader)");
+    // Device LocalPolicy (Apple Silicon boot policy)
+    map.insert("lpol", "LocalPolicy");
+
+    // Display / charging images shown by iBoot
+    // Apple boot logo
+    map.insert("logo", "Boot Logo");
+    // Battery image: critically low / empty
+    map.insert("bat0", "Battery Image (low)");
+    // Battery image: charging
+    map.insert("bat1", "Battery Image (charging)");
+    // Battery image: full
+    map.insert("batF", "Battery Image (full)");
+    // Charging glyph (battery bolt)
+    map.insert("glyC", "Charging Glyph");
+    // Plug-in-to-charge glyph
+    map.insert("glyP", "Plug-In Glyph");
+
     // Manifest properties - Uppercase 4CCs typically found in IM4M manifests
     // Manifest body container
     map.insert("MANB", "Manifest Body");
@@ -190,6 +216,10 @@ mod tests {
         assert_eq!(get_description("CEPO"), Some("Chip Epoch".to_string()));
         assert_eq!(get_description("krnl"), Some("KernelCache".to_string()));
         assert_eq!(get_description("MANB"), Some("Manifest Body".to_string()));
+        // Common firmware/boot images must be recognized (not "Unknown").
+        assert_eq!(get_description("sepi"), Some("SEP Firmware (Secure Enclave Processor)".to_string()));
+        assert_eq!(get_description("illb"), Some("LLB (Low-Level Bootloader)".to_string()));
+        assert!(get_description("logo").is_some());
     }
     
     #[test]
