@@ -309,4 +309,27 @@ mod tests {
         let (ok, _) = validate_decryption(&data);
         assert!(ok);
     }
+
+    /// Realistic structured firmware (moderate entropy, no recognized magic) must
+    /// remain VALID under the size-adjusted ceiling — guards against false positives.
+    #[test]
+    fn validate_moderate_entropy_structured_is_valid() {
+        // ~6.0-7.0 bits/byte: a 96-symbol alphabet with mild skew, resembling
+        // code/text density, at several sizes.
+        for n in [256usize, 512, 2048, 8192] {
+            let mut data = Vec::with_capacity(n);
+            let mut x: u64 = 0x1234_5678_9abc_def0;
+            while data.len() < n {
+                x ^= x << 13;
+                x ^= x >> 7;
+                x ^= x << 17;
+                let v = ((x >> 24) % 96) as u8 + 0x20; // printable-ish, 96 symbols
+                data.push(v);
+            }
+            let (ok, why) = validate_decryption(&data);
+            let e = shannon_entropy(&data);
+            assert!(ok, "moderate-entropy structured data (n={n}, H={e:.2}) wrongly flagged: {why:?}");
+            assert!(e > 6.0 && e < 7.0, "test data should be moderate entropy, got {e:.2} at n={n}");
+        }
+    }
 }
