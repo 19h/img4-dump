@@ -6,3 +6,9 @@
 /libimage4.c
 /libimage4.dylib
 /img4_dump
+
+# Local firmware samples and decryption output (never part of the crate).
+*.im4p
+*.im4p.decrypted
+*.im4p.plist
+*.img4
