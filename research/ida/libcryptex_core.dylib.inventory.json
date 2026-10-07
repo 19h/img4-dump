@@ -1,0 +1,6003 @@
+{
+  "file": "/private/tmp/img4/libcryptex_core.dylib",
+  "sha256": "6478a431043599f7e8e5f77624b665513f6ee698ff9944345b63c0fa4405b8f6",
+  "primary": {
+    "name": "__TEXT",
+    "start": 12004032512,
+    "end": 12004165984,
+    "sections": [
+      {
+        "name": "__text",
+        "start": 12004037256,
+        "end": 12004140060,
+        "offset": 70280
+      },
+      {
+        "name": "__objc_methlist",
+        "start": 12004140064,
+        "end": 12004141156,
+        "offset": 173088
+      },
+      {
+        "name": "__const",
+        "start": 12004141168,
+        "end": 12004141512,
+        "offset": 174192
+      },
+      {
+        "name": "__cstring",
+        "start": 12004141512,
+        "end": 12004150217,
+        "offset": 174536
+      },
+      {
+        "name": "__oslogstring",
+        "start": 12004150217,
+        "end": 12004162532,
+        "offset": 183241
+      },
+      {
+        "name": "__gcc_except_tab",
+        "start": 12004162532,
+        "end": 12004163396,
+        "offset": 195556
+      },
+      {
+        "name": "__info_plist",
+        "start": 12004163396,
+        "end": 12004164662,
+        "offset": 196420
+      },
+      {
+        "name": "__unwind_info",
+        "start": 12004164664,
+        "end": 12004165984,
+        "offset": 197688
+      },
+      {
+        "name": "__objc_stubs",
+        "start": 12004165984,
+        "end": 12004165984,
+        "offset": 0
+      },
+      {
+        "name": "__auth_stubs",
+        "start": 12004165984,
+        "end": 12004165984,
+        "offset": 0
+      },
+      {
+        "name": "__objc_classname",
+        "start": 12004165984,
+        "end": 12004165984,
+        "offset": 0
+      },
+      {
+        "name": "__objc_methname",
+        "start": 12004165984,
+        "end": 12004165984,
+        "offset": 0
+      },
+      {
+        "name": "__objc_methtype",
+        "start": 12004165984,
+        "end": 12004165984,
+        "offset": 0
+      }
+    ]
+  },
+  "function_count": 473,
+  "functions": [
+    {
+      "ea": "0x2cb7f1344",
+      "name": "__cryptex_core_dealloc",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f13b0",
+      "name": "__cryptex_core_cx1_properties_dealloc",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f1404",
+      "name": "_cryptex_core_create",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f147c",
+      "name": "_cryptex_core_set_asset",
+      "size": 412,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f1618",
+      "name": "_cryptex_core_set_assets_from_directory",
+      "size": 1536,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f1c18",
+      "name": "_cryptex_core_attach_signature",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f1c54",
+      "name": "_cryptex_core_cx1_read_from_file",
+      "size": 1676,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f22e0",
+      "name": "_cryptex_core_set_cryptex1_properties",
+      "size": 44,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f230c",
+      "name": "_cryptex_core_get_image_asset",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f2320",
+      "name": "_cryptex_core_set_assets_from_fds",
+      "size": 1720,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f29d8",
+      "name": "_cryptex_core_open",
+      "size": 380,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f2b54",
+      "name": "_cryptex_core_close",
+      "size": 192,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f2c14",
+      "name": "_cryptex_core_get_num_assets",
+      "size": 48,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f2c44",
+      "name": "_cryptex_core_get_asset",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f2c54",
+      "name": "_cryptex_core_get_asset_from_index",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f2c60",
+      "name": "_cryptex_core_get_info_asset",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f2c74",
+      "name": "_cryptex_core_get_tc_asset",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f2c88",
+      "name": "_cryptex_core_get_volumehash_asset",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f2c9c",
+      "name": "_cryptex_core_image_authapfs_enabled",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f2ce4",
+      "name": "_cryptex_core_is_sealed",
+      "size": 348,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f2e40",
+      "name": "_cryptex_core_pop_asset",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f2e54",
+      "name": "_cryptex_core_attach_host",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f2e90",
+      "name": "_cryptex_core_generate_identifier",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f2f24",
+      "name": "_cryptex_core_generate_version",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f2f88",
+      "name": "_cryptex_core_name_is_system_cryptex",
+      "size": 32,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f2fa8",
+      "name": "_cryptex_core_get_nonce_domain_handle",
+      "size": 512,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f31a8",
+      "name": "_cryptex_core_is_cryptex1",
+      "size": 196,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f326c",
+      "name": "_cryptex_core_copy_nonce_domain_desc",
+      "size": 560,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f349c",
+      "name": "_cryptex_core_get_nonce_domain_index",
+      "size": 300,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f35c8",
+      "name": "_cryptex_core_get_nonce_domain",
+      "size": 476,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f37a4",
+      "name": "_cryptex_core_set_nonce_persistence",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f37ac",
+      "name": "_cryptex_core_set_install_persistence",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f37b4",
+      "name": "_cryptex_core_get_cryptex1_properties",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f37bc",
+      "name": "_cryptex_core_cx1_properties_create",
+      "size": 308,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f38f0",
+      "name": "_cryptex_core_cx1_properties_create_with_xpc_dictionary",
+      "size": 992,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f3cd0",
+      "name": "_cryptex_core_cx1_copy_xpc_dictionary",
+      "size": 172,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f3d7c",
+      "name": "_cryptex_core_cx1_write_to_file",
+      "size": 844,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f40c8",
+      "name": "_cryptex_core_parse_info_asset",
+      "size": 976,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f4498",
+      "name": "_cryptex_core_select_chip",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f44d4",
+      "name": "_cryptex_core_write_metadata_to_xattrs",
+      "size": 1172,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f4968",
+      "name": "_cryptex_core_metadata_matches",
+      "size": 572,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f4ba4",
+      "name": "_cryptex_core_metadata_matches_xattrs",
+      "size": 880,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f4f14",
+      "name": "_OUTLINED_FUNCTION_0",
+      "size": 120,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f4f8c",
+      "name": "_OUTLINED_FUNCTION_1",
+      "size": 56,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f4fc4",
+      "name": "_OUTLINED_FUNCTION_2",
+      "size": 52,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f4ff8",
+      "name": "_OUTLINED_FUNCTION_3",
+      "size": 24,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f5010",
+      "name": "_OUTLINED_FUNCTION_4",
+      "size": 40,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f5038",
+      "name": "_OUTLINED_FUNCTION_5",
+      "size": 24,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f5050",
+      "name": "_OUTLINED_FUNCTION_6",
+      "size": 24,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f5068",
+      "name": "_cryptex_content_type_parse",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f50d0",
+      "name": "_cryptex_session_state_to_string",
+      "size": 36,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f50f4",
+      "name": "_cryptex_session_event_to_string",
+      "size": 192,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f51b4",
+      "name": "__session_core_dealloc",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f5230",
+      "name": "_session_core_generate_username",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f52a0",
+      "name": "_session_core_create",
+      "size": 264,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f53a8",
+      "name": "_cryptex_session_core_transition",
+      "size": 384,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f5528",
+      "name": "_cryptex_session_core_merge",
+      "size": 1024,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f5928",
+      "name": "_cryptex_session_core_get_state",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f5930",
+      "name": "_cryptex_session_core_get_uid",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f5938",
+      "name": "_cryptex_session_core_get_overrides",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f5940",
+      "name": "_cryptex_session_core_copy_name",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f5948",
+      "name": "_cryptex_session_core_copy_homedir",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f5958",
+      "name": "_cryptex_session_core_get_attributes",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f5960",
+      "name": "_cryptex_session_core_get_homedir_size",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f5968",
+      "name": "_cryptex_session_core_get_preset_user",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f5970",
+      "name": "_cryptex_session_core_get_admin_user",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f5978",
+      "name": "_cryptex_session_core_set_uid",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f5980",
+      "name": "_cryptex_session_core_set_homedir",
+      "size": 204,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f5a4c",
+      "name": "_cryptex_session_core_set_endpoint",
+      "size": 44,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f5a78",
+      "name": "_cryptex_session_core_append_to_array",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f5a88",
+      "name": "_cryptex_session_core_copy_xpc_object",
+      "size": 360,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f5bf0",
+      "name": "_cryptex_session_core_create_from_xpc",
+      "size": 468,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f5dc4",
+      "name": "_OUTLINED_FUNCTION_0_0",
+      "size": 88,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f5e1c",
+      "name": "_OUTLINED_FUNCTION_1_0",
+      "size": 60,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f5e58",
+      "name": "__IOErrorGetErrno",
+      "size": 224,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f5f38",
+      "name": "__cryptex_base_dealloc",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f5f74",
+      "name": "_cryptex_init",
+      "size": 184,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f602c",
+      "name": "__cryptex_init",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f6068",
+      "name": "_cryptex_set_target_object",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f6074",
+      "name": "_cryptex_set_target_queue",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f607c",
+      "name": "_cryptex_activate",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f6084",
+      "name": "_cryptex_async_f",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f608c",
+      "name": "_cryptex_async",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f6094",
+      "name": "_cryptex_sync_f",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f609c",
+      "name": "_cryptex_sync",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f60a4",
+      "name": "_cryptex_assert_queue",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f60ac",
+      "name": "_cryptex_target_async_f",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f60b4",
+      "name": "_cryptex_target_async",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f60bc",
+      "name": "_cryptex_set_error",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f60c4",
+      "name": "_cryptex_queue_create_with_target",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f60cc",
+      "name": "_cryptex_get_error",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f60d4",
+      "name": "__cpxd_cdxn_stamp",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f60e0",
+      "name": "__cpxd_evaluate",
+      "size": 40,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f6108",
+      "name": "__cryptex_asset_generic_stamp",
+      "size": 836,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f644c",
+      "name": "__pdmg_cdxn_stamp",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f6458",
+      "name": "__cryptex1_asset_stamp",
+      "size": 664,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f66f0",
+      "name": "_cryptex_asset_new",
+      "size": 188,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f67ac",
+      "name": "__cryptex_asset_init_path",
+      "size": 268,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f68b8",
+      "name": "_cryptex_asset_new_borrowed",
+      "size": 176,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f6968",
+      "name": "_cryptex_asset_new_closed",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f6a3c",
+      "name": "_cryptex_asset_copy",
+      "size": 216,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f6b14",
+      "name": "_cryptex_asset_is_open",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f6b24",
+      "name": "_cryptex_asset_open_sealed",
+      "size": 1436,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f70c0",
+      "name": "_cryptex_asset_close",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f70dc",
+      "name": "_cryptex_asset_open",
+      "size": 88,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f7134",
+      "name": "_cryptex_asset_evaluate",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f714c",
+      "name": "_cryptex_asset_create_generic_digest",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f7154",
+      "name": "_cryptex_asset_len",
+      "size": 272,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7264",
+      "name": "_cryptex_asset_destroy",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f72bc",
+      "name": "_cryptex_asset_array_destroy",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7300",
+      "name": "_cryptex_asset_type_is_cryptex1",
+      "size": 56,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f7338",
+      "name": "__cftag",
+      "size": 176,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f73e8",
+      "name": "__shared_cdxn_stamp",
+      "size": 316,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7524",
+      "name": "_OUTLINED_FUNCTION_0_1",
+      "size": 88,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f757c",
+      "name": "_OUTLINED_FUNCTION_2_0",
+      "size": 48,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f75ac",
+      "name": "_OUTLINED_FUNCTION_3_0",
+      "size": 36,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f75d0",
+      "name": "_OUTLINED_FUNCTION_5_0",
+      "size": 32,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f75f0",
+      "name": "-[OS_cryptex_base dealloc]",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7638",
+      "name": "__cryptex_base_alloc",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f76b4",
+      "name": "-[OS_cryptex_core dealloc]",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f76fc",
+      "name": "__cryptex_core_alloc",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7778",
+      "name": "-[OS_cryptex_core_cx1_properties dealloc]",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f77c0",
+      "name": "__cryptex_core_cx1_properties_alloc",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f783c",
+      "name": "-[OS_cryptex_host dealloc]",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7884",
+      "name": "__cryptex_host_alloc",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7900",
+      "name": "-[OS_cryptex_signature dealloc]",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7948",
+      "name": "__cryptex_signature_alloc",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f79c4",
+      "name": "-[OS_cryptex_scrivener dealloc]",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7a0c",
+      "name": "__cryptex_scrivener_alloc",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7a88",
+      "name": "-[OS_cryptex_magister dealloc]",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7ad0",
+      "name": "__cryptex_magister_alloc",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7b4c",
+      "name": "-[OS_session_core dealloc]",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7b94",
+      "name": "__session_core_alloc",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7c10",
+      "name": "_cryptex_core_parse_hdiid",
+      "size": 240,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7d00",
+      "name": "_cryptex_core_unparse_hdiid",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7d80",
+      "name": "_OUTLINED_FUNCTION_0_2",
+      "size": 100,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f7de4",
+      "name": "_OUTLINED_FUNCTION_1_1",
+      "size": 64,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f7e24",
+      "name": "_OUTLINED_FUNCTION_3_1",
+      "size": 20,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7f7e38",
+      "name": "__img4_get_nonce_domain_from_index",
+      "size": 44,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f7e64",
+      "name": "_AppleConnectClientLibraryCore",
+      "size": 300,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f7f90",
+      "name": "___AppleConnectClientLibraryCore_block_invoke",
+      "size": 152,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f8028",
+      "name": "___copy_helper_block_e8_32r",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f8038",
+      "name": "___destroy_helper_block_e8_32r",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f8044",
+      "name": "_AppleConnectClientLibrary",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f8098",
+      "name": "-[CryptexTSS initWithFlags:]",
+      "size": 316,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f81d4",
+      "name": "-[CryptexTSS setURL:]",
+      "size": 4,
+      "flags": 5312
+    },
+    {
+      "ea": "0x2cb7f81d8",
+      "name": "-[CryptexTSS setManifestArray:]",
+      "size": 4,
+      "flags": 5312
+    },
+    {
+      "ea": "0x2cb7f81dc",
+      "name": "-[CryptexTSS setInfoData:]",
+      "size": 4,
+      "flags": 5312
+    },
+    {
+      "ea": "0x2cb7f81e0",
+      "name": "-[CryptexTSS tssStampRequest]",
+      "size": 228,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f82c4",
+      "name": "-[CryptexTSS generatePackedSignatures]",
+      "size": 1240,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f879c",
+      "name": "-[CryptexTSS generateDiavloRequest:]",
+      "size": 848,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f8aec",
+      "name": "sub_2CB7F8AEC",
+      "size": 40,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f8b14",
+      "name": "-[CryptexTSS tssSerializeRequest]",
+      "size": 488,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f8cfc",
+      "name": "-[CryptexTSS tssFormatRequest:withHeaders:withURL:]",
+      "size": 496,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f8eec",
+      "name": "-[CryptexTSS tssFormatResponse:withHeaderData:withCode:]",
+      "size": 312,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f9024",
+      "name": "-[CryptexTSS tssSendRequest]",
+      "size": 3188,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f9c98",
+      "name": "__cryptex_tss_submit_recv",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f9d6c",
+      "name": "-[CryptexTSS isSSOAvailable]",
+      "size": 480,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7f9f4c",
+      "name": "sub_2CB7F9F4C",
+      "size": 32,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7f9f6c",
+      "name": "-[CryptexTSS tssSubmit]",
+      "size": 4304,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb03c",
+      "name": "sub_2CB7FB03C",
+      "size": 108,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb0a8",
+      "name": "__buff_destroy_NSData",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb0ac",
+      "name": "-[CryptexTSS activate]",
+      "size": 168,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb154",
+      "name": "___22-[CryptexTSS activate]_block_invoke",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb1c4",
+      "name": "___copy_helper_block_e8_32s",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb1cc",
+      "name": "___destroy_helper_block_e8_32s",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb1d4",
+      "name": "-[CryptexTSS flags]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb1dc",
+      "name": "-[CryptexTSS log]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb1e4",
+      "name": "-[CryptexTSS nserr]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb1ec",
+      "name": "-[CryptexTSS setNserr:]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb1f8",
+      "name": "-[CryptexTSS dq]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb200",
+      "name": "-[CryptexTSS tssUsage]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb208",
+      "name": "-[CryptexTSS tssURL]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb210",
+      "name": "-[CryptexTSS setTssURL:]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb21c",
+      "name": "-[CryptexTSS tss_request]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb224",
+      "name": "-[CryptexTSS response]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb22c",
+      "name": "-[CryptexTSS setResponse:]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb238",
+      "name": "-[CryptexTSS tssp_sign]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb240",
+      "name": "-[CryptexTSS setTssp_sign:]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb24c",
+      "name": "-[CryptexTSS im4m_array]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb254",
+      "name": "-[CryptexTSS setIm4m_array:]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb260",
+      "name": "-[CryptexTSS info_content]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb268",
+      "name": "-[CryptexTSS setInfo_content:]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb274",
+      "name": "-[CryptexTSS .cxx_destruct]",
+      "size": 164,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb318",
+      "name": "_cryptex_tss_create",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb370",
+      "name": "___cryptex_tss_create_block_invoke",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb3ac",
+      "name": "_cryptex_tss_set_url",
+      "size": 116,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb420",
+      "name": "_cryptex_tss_set_bool",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb478",
+      "name": "_cryptex_tss_set_u32",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb4d0",
+      "name": "_cryptex_tss_set_u64",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb528",
+      "name": "_cryptex_tss_set_dgst",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb588",
+      "name": "_cryptex_tss_set_data",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb5e8",
+      "name": "_cryptex_tss_set_string",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb640",
+      "name": "_cryptex_tss_set_object_bool",
+      "size": 164,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb6e4",
+      "name": "_cryptex_tss_set_object_dgst",
+      "size": 172,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb790",
+      "name": "_cryptex_tss_set_info_from_file",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb864",
+      "name": "_cryptex_tss_set_im4m_array",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fb86c",
+      "name": "j__cryptex_tss_activate",
+      "size": 4,
+      "flags": 5312
+    },
+    {
+      "ea": "0x2cb7fb870",
+      "name": "_cryptex_tss_submit",
+      "size": 208,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb940",
+      "name": "___cryptex_tss_submit_block_invoke",
+      "size": 140,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fb9cc",
+      "name": "_cryptex_tss_async",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fba24",
+      "name": "_getSSOIsACInstalledSymbolLoc",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fbaf8",
+      "name": "sub_2CB7FBAF8",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fbb10",
+      "name": "___getSSOIsACInstalledSymbolLoc_block_invoke",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fbb60",
+      "name": "_getSSOInitSymbolLoc",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fbc34",
+      "name": "sub_2CB7FBC34",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fbc4c",
+      "name": "___getSSOInitSymbolLoc_block_invoke",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fbc9c",
+      "name": "_getSSOGetServiceTicketSymbolLoc",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fbd70",
+      "name": "sub_2CB7FBD70",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fbd88",
+      "name": "___getSSOGetServiceTicketSymbolLoc_block_invoke",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fbdd8",
+      "name": "_OUTLINED_FUNCTION_0_3",
+      "size": 20,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7fbdec",
+      "name": "_OUTLINED_FUNCTION_1_2",
+      "size": 32,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7fbe0c",
+      "name": "_OUTLINED_FUNCTION_2_1",
+      "size": 12,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7fbe18",
+      "name": "_OUTLINED_FUNCTION_3_2",
+      "size": 16,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7fbe28",
+      "name": "_OUTLINED_FUNCTION_4_0",
+      "size": 12,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb7fbe34",
+      "name": "_cryptex_version_new",
+      "size": 348,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fbf90",
+      "name": "_cryptex_version_compare",
+      "size": 60,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fbfcc",
+      "name": "_cryptex_version_destroy",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fc008",
+      "name": "_cryptex_system_cryptex_lookup_by_name",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fc038",
+      "name": "__cryptex_system_cryptex_lookup",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fc08c",
+      "name": "_cryptex_system_cryptex_lookup_by_graftpath",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fc0bc",
+      "name": "_cryptex_system_cryptex_copy_launchjob_tag_for_name",
+      "size": 168,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fc164",
+      "name": "_cryptex_system_cryptex_copy_graft_abspath",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fc1dc",
+      "name": "____cryptex_system_cryptex_lookup_init_block_invoke",
+      "size": 224,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fc2bc",
+      "name": "+[CollationElement scopeToString:]",
+      "size": 44,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fc2e8",
+      "name": "-[CollationElement description]",
+      "size": 164,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fc38c",
+      "name": "-[CollationElement copyAbsolutePath:]",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fc3cc",
+      "name": "-[CollationElement initWithBundle:version:atPath:withScope:withCommand:withCommandArgs:withEnv:]",
+      "size": 340,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fc520",
+      "name": "-[CollationElement initWithXPC:]",
+      "size": 472,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fc6f8",
+      "name": "-[CollationElement package]",
+      "size": 568,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fc930",
+      "name": "-[CollationElement cle_scope]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fc938",
+      "name": "-[CollationElement cle_bundle_id]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fc940",
+      "name": "-[CollationElement cle_bundle_version]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fc948",
+      "name": "-[CollationElement cle_mnt_path]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fc954",
+      "name": "-[CollationElement cle_command]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fc960",
+      "name": "-[CollationElement cle_env]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fc96c",
+      "name": "-[CollationElement cle_command_args]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fc978",
+      "name": "-[CollationElement .cxx_destruct]",
+      "size": 116,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fc9ec",
+      "name": "-[CollationCore initWithID:queue:]",
+      "size": 352,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fcb4c",
+      "name": "-[CollationCore initWithXPC:queue:]",
+      "size": 272,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fcc5c",
+      "name": "___35-[CollationCore initWithXPC:queue:]_block_invoke",
+      "size": 132,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fcce0",
+      "name": "-[CollationCore packToXPC]",
+      "size": 376,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fce58",
+      "name": "-[CollationCore parseMessage:]",
+      "size": 244,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fcf4c",
+      "name": "-[CollationCore setupHandler]",
+      "size": 168,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fcff4",
+      "name": "___29-[CollationCore setupHandler]_block_invoke",
+      "size": 376,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fd16c",
+      "name": "___29-[CollationCore setupHandler]_block_invoke_2",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fd1d8",
+      "name": "___copy_helper_block_e8_32s40s",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fd214",
+      "name": "___destroy_helper_block_e8_32s40s",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fd250",
+      "name": "-[CollationCore description]",
+      "size": 132,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fd2d4",
+      "name": "-[CollationCore mountPointOfBundleID:]",
+      "size": 408,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fd46c",
+      "name": "-[CollationCore getValidPaths:forBundleID:]",
+      "size": 692,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fd720",
+      "name": "-[CollationCore appendCollationElement:]",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fd778",
+      "name": "-[CollationCore removeCollationElementWithPath:]",
+      "size": 428,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fd924",
+      "name": "-[CollationCore enumerateCollationElements:]",
+      "size": 228,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fda08",
+      "name": "___44-[CollationCore enumerateCollationElements:]_block_invoke",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fda40",
+      "name": "___copy_helper_block_e8_32b",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fda50",
+      "name": "-[CollationCore enumerateElements:]",
+      "size": 228,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fdb34",
+      "name": "___35-[CollationCore enumerateElements:]_block_invoke",
+      "size": 256,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fdc34",
+      "name": "-[CollationCore createEndpoint]",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fdc80",
+      "name": "-[CollationCore isEmpty]",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fdcc0",
+      "name": "-[CollationCore getID]",
+      "size": 4,
+      "flags": 5312
+    },
+    {
+      "ea": "0x2cb7fdcc4",
+      "name": "-[CollationCore log]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fdccc",
+      "name": "-[CollationCore setLog:]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fdcd8",
+      "name": "-[CollationCore coll_uid]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fdce0",
+      "name": "-[CollationCore setColl_uid:]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fdce8",
+      "name": "-[CollationCore coll_elems]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fdcf0",
+      "name": "-[CollationCore setColl_elems:]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fdcfc",
+      "name": "-[CollationCore dq]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fdd04",
+      "name": "-[CollationCore setDq:]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fdd10",
+      "name": "-[CollationCore listener]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fdd18",
+      "name": "-[CollationCore setListener:]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fdd24",
+      "name": "-[CollationCore .cxx_destruct]",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fdd80",
+      "name": "__cryptex_host_dealloc",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fdd88",
+      "name": "_cryptex_host_create",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fde5c",
+      "name": "_cryptex_metadata_write_to_file_xattrs",
+      "size": 348,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fdfb8",
+      "name": "sub_2CB7FDFB8",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fdfd4",
+      "name": "_cryptex_metadata_log",
+      "size": 68,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fe018",
+      "name": "___cryptex_metadata_write_to_file_xattrs_block_invoke",
+      "size": 428,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fe1c4",
+      "name": "_cryptex_metadata_read_from_file_xattrs",
+      "size": 592,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fe414",
+      "name": "_cryptex_metadata_read_from_cryptex",
+      "size": 336,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fe564",
+      "name": "sub_2CB7FE564",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fe580",
+      "name": "___cryptex_metadata_log_block_invoke",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fe5c8",
+      "name": "__cryptex_magister_dealloc",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fe61c",
+      "name": "_cryptex_magister_create",
+      "size": 176,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fe6cc",
+      "name": "__cryptex_magister_init",
+      "size": 1660,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fed48",
+      "name": "_cryptex_magister_authenticate_f",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fedb4",
+      "name": "_cryptex_magister_authenticate",
+      "size": 132,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7fee38",
+      "name": "___cryptex_magister_authenticate_f_block_invoke",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb7fee54",
+      "name": "__cryptex_magister_authenticate_continue",
+      "size": 608,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7ff0b4",
+      "name": "_cryptex_magister_record_property",
+      "size": 136,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7ff13c",
+      "name": "__cryptex_magister_record_property_continue",
+      "size": 1460,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7ff6f0",
+      "name": "__cryptex_magister_authenticate_toutoc",
+      "size": 480,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7ff8d0",
+      "name": "__cryptex_magister_authenticate",
+      "size": 1064,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7ffcf8",
+      "name": "__cryptex_magister_authenticate_callback",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb7ffd8c",
+      "name": "__cryptex_magister_firmware_execute_toutoc",
+      "size": 632,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb800004",
+      "name": "__cryptex_magister_firmware_execute_cferr",
+      "size": 2356,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb800938",
+      "name": "__cryptex_magister_firmware_execute",
+      "size": 860,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb800c94",
+      "name": "__cryptex_magister_record_property_continue2",
+      "size": 1296,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8011a4",
+      "name": "__cryptex_magister_record_property_callback",
+      "size": 132,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb801228",
+      "name": "_OUTLINED_FUNCTION_2_2",
+      "size": 44,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb801254",
+      "name": "__cryptex_signature_dealloc",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb80129c",
+      "name": "_cryptex_signature_seal",
+      "size": 376,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb801414",
+      "name": "_cryptex_signature_create",
+      "size": 1904,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb801b84",
+      "name": "__cryptex_signature_compute_hash",
+      "size": 520,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb801d8c",
+      "name": "_cryptex_signature_write",
+      "size": 444,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb801f48",
+      "name": "_cryptex_signature_lock",
+      "size": 1612,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb802594",
+      "name": "_cryptex_signature_secureconfig_add_entry",
+      "size": 2548,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb802f88",
+      "name": "_cryptex_signature_lock_with_sep",
+      "size": 1816,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8036a0",
+      "name": "_generate_manifest",
+      "size": 184,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb803758",
+      "name": "_generate_objects",
+      "size": 236,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb803844",
+      "name": "_null_signature",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb80384c",
+      "name": "__find_error",
+      "size": 192,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb80390c",
+      "name": "__AMAuthInstallErrorString",
+      "size": 264,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb803a14",
+      "name": "__AMAuthInstallPOSIXError",
+      "size": 28,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb803a30",
+      "name": "__AMAuthInstallSetAPParamsFromHost",
+      "size": 352,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb803b90",
+      "name": "__AMAuthInstallCryptex1CopyUDID",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb803c0c",
+      "name": "__AMAuthInstallSetCryptex1ParamsFromHost",
+      "size": 304,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb803d3c",
+      "name": "__AMAuthInstallSetCryptex1ApParamsFromHost",
+      "size": 164,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb803de0",
+      "name": "__init_authinstall_log",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb803df4",
+      "name": "__authinstall_logger",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb803e74",
+      "name": "__cryptex_scrivener_dealloc",
+      "size": 156,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb803f10",
+      "name": "_cryptex_scrivener_create",
+      "size": 292,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb804034",
+      "name": "_cryptex_scrivener_set_url",
+      "size": 312,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb80416c",
+      "name": "__cryptex_scrivener_init",
+      "size": 2088,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb804994",
+      "name": "_cryptex_scrivener_sign",
+      "size": 220,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb804a70",
+      "name": "__cryptex_scrivener_sign_continue",
+      "size": 3940,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8059d4",
+      "name": "_cryptex_scrivener_set_nonce",
+      "size": 32,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb8059f4",
+      "name": "_cryptex_scrivener_read_signature",
+      "size": 224,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb805ad4",
+      "name": "__cryptex_scrivener_read_continue",
+      "size": 1124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb805f38",
+      "name": "_cryptex_scrivener_set_socks_proxy",
+      "size": 352,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb806098",
+      "name": "_cryptex_scrivener_set_auth_token",
+      "size": 300,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8061c4",
+      "name": "__buff_destroy_CFData",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb8061cc",
+      "name": "__cryptex_scrivener_sign_callback",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb806230",
+      "name": "__cryptex_scrivener_init_tss_common",
+      "size": 1632,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb806890",
+      "name": "__cryptex_scrivener_init_tss_assets",
+      "size": 732,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb806b6c",
+      "name": "_OUTLINED_FUNCTION_0_4",
+      "size": 100,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb806bd0",
+      "name": "_OUTLINED_FUNCTION_1_3",
+      "size": 64,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb806c10",
+      "name": "_OUTLINED_FUNCTION_3_3",
+      "size": 32,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb806c30",
+      "name": "__CFCreateAssertImpl",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb806c8c",
+      "name": "__CFStringCopyUTF8String",
+      "size": 152,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb806d24",
+      "name": "__CFNumberCreateFromUInt32",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb806d54",
+      "name": "__CFNumberGetUInt32",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb806dd4",
+      "name": "__CFStringCreateFromUTF8String",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb806de8",
+      "name": "__CFStringLocalizeCaseInsensitiveContains",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb806e34",
+      "name": "__CFURLCreateFromFileDescriptor",
+      "size": 228,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb806f18",
+      "name": "__CFDictionaryCreateMutableForCFTypes",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb806f64",
+      "name": "__CFDictionarySetBool",
+      "size": 32,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb806f84",
+      "name": "__CFDictionarySetUInt32",
+      "size": 116,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb806ff8",
+      "name": "__CFDictionarySetUInt64",
+      "size": 116,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb80706c",
+      "name": "__CFDictionarySetString",
+      "size": 136,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8070f4",
+      "name": "__CFDictionaryMergeDictionary",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb807110",
+      "name": "__CFDictionaryMergeDictionaryKey",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb807124",
+      "name": "_createError",
+      "size": 448,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8072e4",
+      "name": "_OUTLINED_FUNCTION_3_4",
+      "size": 28,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb807300",
+      "name": "_OUTLINED_FUNCTION_4_1",
+      "size": 36,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb807324",
+      "name": "_hash_init",
+      "size": 48,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb807354",
+      "name": "_hash_node_init_cstr",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb807390",
+      "name": "_hash_insert",
+      "size": 164,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb807434",
+      "name": "_hash_lookup",
+      "size": 144,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8074c4",
+      "name": "_hash_lookup_cstr",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb80750c",
+      "name": "_object_proto_init",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb807540",
+      "name": "_object_proto_destroy",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb80757c",
+      "name": "__sprintdgst",
+      "size": 216,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb807654",
+      "name": "__str24cc",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb807660",
+      "name": "__strtou32",
+      "size": 140,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8076ec",
+      "name": "__read_file",
+      "size": 884,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb807a60",
+      "name": "__write_file",
+      "size": 504,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb807c58",
+      "name": "__digest_file",
+      "size": 648,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb807ee0",
+      "name": "___log_util_block_invoke",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb807f10",
+      "name": "_OUTLINED_FUNCTION_2_3",
+      "size": 52,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb807f44",
+      "name": "_OUTLINED_FUNCTION_3_5",
+      "size": 20,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb807f58",
+      "name": "_OUTLINED_FUNCTION_8",
+      "size": 44,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb807f84",
+      "name": "_OUTLINED_FUNCTION_10",
+      "size": 24,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb807f9c",
+      "name": "_OUTLINED_FUNCTION_11",
+      "size": 24,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb807fb4",
+      "name": "__buff_destructor_free",
+      "size": 4,
+      "flags": 5312
+    },
+    {
+      "ea": "0x2cb807fb8",
+      "name": "__buff_destructor_munmap",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb808018",
+      "name": "_buff_init",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb808080",
+      "name": "_buff_init_signed",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8080ec",
+      "name": "_buff_xfer",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb8080f8",
+      "name": "_buff_xfer_subrange",
+      "size": 316,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb808234",
+      "name": "_buff_destroy",
+      "size": 76,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb808280",
+      "name": "_ctx_new",
+      "size": 220,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb80835c",
+      "name": "_ctx_destroy",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8083b4",
+      "name": "__xpc_dictionary_try_get_uint64",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb808418",
+      "name": "__xpc_dictionary_try_get_string",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb80847c",
+      "name": "__xpc_dictionary_try_get_bool",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8084e0",
+      "name": "_cryptex_core_set_asset.cold.1",
+      "size": 172,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80858c",
+      "name": "_cryptex_core_set_assets_from_directory.cold.1",
+      "size": 112,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb8085fc",
+      "name": "_cryptex_core_generate_identifier.cold.1",
+      "size": 120,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb808674",
+      "name": "_cryptex_core_generate_version.cold.1",
+      "size": 172,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb808720",
+      "name": "_cryptex_core_copy_nonce_domain_desc.cold.1",
+      "size": 72,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb808768",
+      "name": "_session_core_generate_username.cold.1",
+      "size": 72,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb8087b0",
+      "name": "_cryptex_session_core_create_from_xpc.cold.1",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb8087cc",
+      "name": "_cryptex_session_core_create_from_xpc.cold.2",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb8087e8",
+      "name": "_cryptex_session_core_create_from_xpc.cold.3",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb808804",
+      "name": "_cryptex_session_core_create_from_xpc.cold.4",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb808820",
+      "name": "_cryptex_session_core_create_from_xpc.cold.5",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80883c",
+      "name": "__cryptex_asset_generic_stamp.cold.1",
+      "size": 212,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb808910",
+      "name": "_cryptex_asset_new.cold.1",
+      "size": 88,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb808968",
+      "name": "__cryptex_asset_init_path.cold.1",
+      "size": 88,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb8089c0",
+      "name": "_cryptex_asset_new_closed.cold.1",
+      "size": 116,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb808a34",
+      "name": "_cryptex_asset_open_sealed.cold.1",
+      "size": 144,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb808ac4",
+      "name": "__cryptex_base_alloc.cold.1",
+      "size": 84,
+      "flags": 5121
+    },
+    {
+      "ea": "0x2cb808b18",
+      "name": "__cryptex_core_alloc.cold.1",
+      "size": 84,
+      "flags": 5121
+    },
+    {
+      "ea": "0x2cb808b6c",
+      "name": "__cryptex_core_cx1_properties_alloc.cold.1",
+      "size": 84,
+      "flags": 5121
+    },
+    {
+      "ea": "0x2cb808bc0",
+      "name": "__cryptex_host_alloc.cold.1",
+      "size": 84,
+      "flags": 5121
+    },
+    {
+      "ea": "0x2cb808c14",
+      "name": "__cryptex_signature_alloc.cold.1",
+      "size": 84,
+      "flags": 5121
+    },
+    {
+      "ea": "0x2cb808c68",
+      "name": "__cryptex_scrivener_alloc.cold.1",
+      "size": 84,
+      "flags": 5121
+    },
+    {
+      "ea": "0x2cb808cbc",
+      "name": "__cryptex_magister_alloc.cold.1",
+      "size": 84,
+      "flags": 5121
+    },
+    {
+      "ea": "0x2cb808d10",
+      "name": "__session_core_alloc.cold.1",
+      "size": 84,
+      "flags": 5121
+    },
+    {
+      "ea": "0x2cb808d64",
+      "name": "_cryptex_core_unparse_hdiid.cold.1",
+      "size": 188,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb808e20",
+      "name": "_AppleConnectClientLibrary.cold.1",
+      "size": 136,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb808ea8",
+      "name": "-[CryptexTSS generateDiavloRequest:].cold.1",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb808ee4",
+      "name": "-[CryptexTSS tssSerializeRequest].cold.1",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb808f64",
+      "name": "-[CryptexTSS tssSerializeRequest].cold.2",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb808fa0",
+      "name": "-[CryptexTSS tssSendRequest].cold.1",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb808ffc",
+      "name": "-[CryptexTSS tssSendRequest].cold.2",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809018",
+      "name": "__cryptex_tss_submit_recv.cold.1",
+      "size": 172,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb8090c4",
+      "name": "-[CryptexTSS isSSOAvailable].cold.1",
+      "size": 128,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809144",
+      "name": "-[CryptexTSS isSSOAvailable].cold.2",
+      "size": 128,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb8091c4",
+      "name": "-[CryptexTSS tssSubmit].cold.1",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb809208",
+      "name": "-[CryptexTSS tssSubmit].cold.2",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb809264",
+      "name": "-[CryptexTSS tssSubmit].cold.3",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8092c0",
+      "name": "-[CryptexTSS tssSubmit].cold.4",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb809320",
+      "name": "-[CryptexTSS tssSubmit].cold.5",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb809380",
+      "name": "-[CryptexTSS tssSubmit].cold.6",
+      "size": 4,
+      "flags": 5121
+    },
+    {
+      "ea": "0x2cb809384",
+      "name": "-[CryptexTSS tssSubmit].cold.8",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8093c8",
+      "name": "-[CryptexTSS tssSubmit].cold.9",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb809440",
+      "name": "-[CryptexTSS tssSubmit].cold.10",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8094b8",
+      "name": "-[CryptexTSS tssSubmit].cold.11",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb809530",
+      "name": "-[CryptexTSS tssSubmit].cold.12",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb809584",
+      "name": "-[CryptexTSS tssSubmit].cold.13",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8095dc",
+      "name": "_cryptex_tss_create.cold.1",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb8095f0",
+      "name": "_cryptex_tss_set_info_from_file.cold.1",
+      "size": 172,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80969c",
+      "name": "_cryptex_version_new.cold.1",
+      "size": 212,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809770",
+      "name": "_cryptex_version_new.cold.2",
+      "size": 200,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809838",
+      "name": "__cryptex_system_cryptex_lookup.cold.1",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb80984c",
+      "name": "_cryptex_system_cryptex_copy_launchjob_tag_for_name.cold.1",
+      "size": 232,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809934",
+      "name": "-[CollationCore parseMessage:].cold.1",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb809980",
+      "name": "-[CollationCore parseMessage:].cold.2",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb8099c8",
+      "name": "_cryptex_metadata_log.cold.1",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cb8099dc",
+      "name": "__cryptex_magister_init.cold.1",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb8099f8",
+      "name": "__cryptex_magister_authenticate_toutoc.cold.1",
+      "size": 84,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809a4c",
+      "name": "__cryptex_magister_firmware_execute_toutoc.cold.1",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809a68",
+      "name": "__cryptex_magister_firmware_execute_toutoc.cold.2",
+      "size": 84,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809abc",
+      "name": "__cryptex_magister_record_property_continue2.cold.1",
+      "size": 228,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809ba0",
+      "name": "_cryptex_signature_seal.cold.1",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809bbc",
+      "name": "_cryptex_signature_create.cold.1",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809bd8",
+      "name": "__cryptex_signature_compute_hash.cold.1",
+      "size": 192,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809c98",
+      "name": "_cryptex_scrivener_create.cold.1",
+      "size": 224,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809d78",
+      "name": "_cryptex_scrivener_set_url.cold.1",
+      "size": 112,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809de8",
+      "name": "__cryptex_scrivener_sign_continue.cold.1",
+      "size": 96,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809e48",
+      "name": "__cryptex_scrivener_sign_continue.cold.2",
+      "size": 96,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809ea8",
+      "name": "__cryptex_scrivener_read_continue.cold.1",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809ec4",
+      "name": "__cryptex_scrivener_init_tss_common.cold.1",
+      "size": 96,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809f24",
+      "name": "__CFCreateAssertImpl.cold.1",
+      "size": 96,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809f84",
+      "name": "__CFStringCopyUTF8String.cold.1",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb809fa0",
+      "name": "__CFNumberGetUInt32.cold.1",
+      "size": 96,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a000",
+      "name": "__CFNumberGetUInt32.cold.2",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a01c",
+      "name": "_hash_insert.cold.1",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a038",
+      "name": "_hash_insert.cold.2",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a054",
+      "name": "_hash_insert.cold.3",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a070",
+      "name": "__sprintdgst.cold.1",
+      "size": 84,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a0c4",
+      "name": "__read_file.cold.1",
+      "size": 28,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb80a0e0",
+      "name": "__read_file.cold.6",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a0fc",
+      "name": "__digest_file.cold.2",
+      "size": 76,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a148",
+      "name": "__digest_file.cold.5",
+      "size": 120,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a1c0",
+      "name": "__buff_destructor_munmap.cold.1",
+      "size": 84,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a214",
+      "name": "_buff_init.cold.1",
+      "size": 80,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a264",
+      "name": "_buff_init_signed.cold.1",
+      "size": 80,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a2b4",
+      "name": "_buff_destroy.cold.1",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a2d0",
+      "name": "_ctx_new.cold.1",
+      "size": 192,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb80a390",
+      "name": "_ctx_new.cold.2",
+      "size": 140,
+      "flags": 5137
+    }
+  ],
+  "strings": [
+    {
+      "ea": "0x2cb80a9c8",
+      "text": "com.apple.security.libcryptex.core",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80a9eb",
+      "text": "cryptex.core",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80a9f8",
+      "text": "[anonymous]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80aa04",
+      "text": "cryptex_core_set_assets_from_fds",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80aa25",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/cryptex_core.c",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80aacf",
+      "text": "com.apple.security.cryptex.posix",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80aaf0",
+      "text": "com.apple.security.cryptex",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ab0b",
+      "text": "anonymous",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ab15",
+      "text": "%s.%#x",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ab1c",
+      "text": "0.0.1",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ab22",
+      "text": "known-constant allocation",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ab3c",
+      "text": "Cryptex1 nonce domain = %u",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ab57",
+      "text": "nonce domain index %llu",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ab6f",
+      "text": "Cryptex1,NonceDomain",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ab84",
+      "text": "Cryptex1,SubType",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ab95",
+      "text": "Cryptex1,Version",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80aba6",
+      "text": "Cryptex1,PreauthVersion",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80abbe",
+      "text": "MountedCryptex",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80abcd",
+      "text": "Cryptex1,UseProductClass",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80abe6",
+      "text": "cryptex_core_write_metadata_to_xattrs",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ac0c",
+      "text": "cryptex_core_metadata_matches",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ac2a",
+      "text": "com.apple.CryptexIdentifier",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ac46",
+      "text": "com.apple.CryptexVersion",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ac5f",
+      "text": "cryptex_core_metadata_matches_xattrs",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ac84",
+      "text": "CFBundleIdentifier",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ac97",
+      "text": "CFBundleVersion",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80aca7",
+      "text": "NoCode",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80acae",
+      "text": "Service",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80acb6",
+      "text": "Library",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80acbe",
+      "text": "Executable",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80acc9",
+      "text": "Factory",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80acd1",
+      "text": "Jetsam Properties",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ace3",
+      "text": "Log Profile",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80acef",
+      "text": "Feature Flags",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80acfd",
+      "text": "Dyld Closures",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad0b",
+      "text": "LOCAL",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad11",
+      "text": "STAGED",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad18",
+      "text": "INIT",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad1d",
+      "text": "RUNNING",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad25",
+      "text": "HALTING",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad2d",
+      "text": "STOPPED",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad35",
+      "text": "UNK",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad39",
+      "text": "NONE",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad3e",
+      "text": "STAGING",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad46",
+      "text": "START",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad4c",
+      "text": "READY",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad52",
+      "text": "STOP",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad57",
+      "text": "TERMINATED",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad62",
+      "text": "FAIL",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad67",
+      "text": "ALL",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad6b",
+      "text": "UNKNOWN",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad73",
+      "text": "cryptex_%s",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad7e",
+      "text": "cryptex.session",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad8e",
+      "text": "(null)",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ad95",
+      "text": "CRYPTEX_SESSION",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ada5",
+      "text": "~/",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ada8",
+      "text": "state",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80adae",
+      "text": "uid",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80adb2",
+      "text": "attributes",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80adbd",
+      "text": "homesize",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80adc6",
+      "text": "simple_session",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80add5",
+      "text": "preset_user",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ade1",
+      "text": "admin_user",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80adec",
+      "text": "name",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80adf1",
+      "text": "cryptex_array",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80adff",
+      "text": "overrides",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ae09",
+      "text": "username",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ae12",
+      "text": "home_directory",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ae21",
+      "text": "endpoint",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ae2a",
+      "text": "unexpected failure: Message received without required cryptex array",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ae6e",
+      "text": "unexpected failure: Message received without required env overrides array",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80aeb8",
+      "text": "unexpected failure: Message received without required username",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80aef7",
+      "text": "unexpected failure: Message received without required name",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80af32",
+      "text": "unexpected failure: Message received without required homedir",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80af70",
+      "text": "/Users/%s",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80af7a",
+      "text": "com.apple.security.libcryptex.core.dq",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80afa0",
+      "text": "com.apple.security.libcryptex.core.targetdq",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80afcc",
+      "text": "cpxd",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80afd1",
+      "text": "CryptexDMG",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80afdc",
+      "text": "ltrs",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80afe1",
+      "text": "LoadableTrustCache",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80aff4",
+      "text": "c411",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80aff9",
+      "text": "Ap,CryptexInfoPlist",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b00d",
+      "text": "im4m",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b012",
+      "text": "Image4Manifest",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b021",
+      "text": "root",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b026",
+      "text": "RootDirectory",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b034",
+      "text": "cont",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b039",
+      "text": "Content",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b041",
+      "text": "pdmg",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b046",
+      "text": "PersonalizedDMG",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b056",
+      "text": "hash",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b05b",
+      "text": "RootHash",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b064",
+      "text": "gtcd",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b069",
+      "text": "Cryptex1,GenericTrustCache",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b084",
+      "text": "ginf",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b089",
+      "text": "Cryptex1,CryptexInfoPlist",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b0a3",
+      "text": "gdmg",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b0a8",
+      "text": "Cryptex1,GenericDmg",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b0bc",
+      "text": "gtgv",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b0c1",
+      "text": "Cryptex1,GenericVolume",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b0d8",
+      "text": "cx1p",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b0dd",
+      "text": "Cryptex1Properties",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b0f0",
+      "text": "Ensuring same sealed volume as:",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b110",
+      "text": "CFString",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b119",
+      "text": "AMAuthInstallApCreateImagePropertiesWithDeviceMapZipped",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b151",
+      "text": "CFMutableDictionary",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b165",
+      "text": "cxdn",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b16a",
+      "text": "Name",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b16f",
+      "text": "pdnm",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b174",
+      "text": "[%s]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b179",
+      "text": "S_IFBLK",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b181",
+      "text": "S_IFCHR",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b189",
+      "text": "S_IFDIR",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b191",
+      "text": "S_IFIFO",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b199",
+      "text": "S_IFREG",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b1a1",
+      "text": "S_IFLNK",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b1a9",
+      "text": "S_IFSOCK",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b1b2",
+      "text": "[unknown]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b1bc",
+      "text": "UF_NODUMP",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b1c6",
+      "text": "UF_IMMUTABLE",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b1d3",
+      "text": "UF_APPEND",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b1dd",
+      "text": "UF_OPAQUE",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b1e7",
+      "text": "UF_COMPRESSED",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b1f5",
+      "text": "UF_TRACKED",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b200",
+      "text": "UF_DATAVAULT",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b20d",
+      "text": "UF_HIDDEN",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b217",
+      "text": "SF_ARCHIVED",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b223",
+      "text": "SF_IMMUTABLE",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b230",
+      "text": "SF_APPEND",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b23a",
+      "text": "SF_RESTRICTED",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b248",
+      "text": "SF_NOUNLINK",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b254",
+      "text": "SF_FIRMLINK",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b260",
+      "text": "SF_DATALESS",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b26c",
+      "text": "cryptex_base",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b279",
+      "text": "cryptex_core",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b286",
+      "text": "cryptex_core_cx1_properties",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b2a2",
+      "text": "cryptex_host",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b2af",
+      "text": "cryptex_signature",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b2c1",
+      "text": "cryptex_scrivener",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b2d3",
+      "text": "cryptex_magister",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b2e4",
+      "text": "session_core",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b2f1",
+      "text": ",",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b2f3",
+      "text": "cryptex",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b2fb",
+      "text": "%s,%s,%s,%s",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b307",
+      "text": "v8@?0",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b30d",
+      "text": "com.apple.libcryptex",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b322",
+      "text": "/System/Library/Frameworks/AppleConnectClient.framework/AppleConnectClient",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b36d",
+      "text": "/System/Library/PrivateFrameworks/AppleConnectClient.framework/AppleConnectClient",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b3bf",
+      "text": "/AppleInternal/Library/Frameworks/AppleConnectClient.framework/AppleConnectClient",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b411",
+      "text": "/System/AppleInternal/Library/Frameworks/AppleConnectClient.framework/AppleConnectClient",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b46a",
+      "text": "void *AppleConnectClientLibrary(void)",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b490",
+      "text": "tss.m",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b496",
+      "text": "%s",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b499",
+      "text": "https://gs.apple.com:443",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b4b2",
+      "text": "tss",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b4b6",
+      "text": "com.apple.security.libcryptex.core.tss",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b4de",
+      "text": "@UUID",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b4e4",
+      "text": "@Cryptex1,Ticket",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b4f5",
+      "text": "@ApImg4Ticket",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b503",
+      "text": "-[CryptexTSS generatePackedSignatures]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b52a",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/tss.m",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b5cb",
+      "text": "info",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b5d0",
+      "text": "sign_request",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b5dd",
+      "text": "signatures",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b5e8",
+      "text": "usage",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b5ee",
+      "text": "-[CryptexTSS generateDiavloRequest:]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b613",
+      "text": "---------REQUEST START---------\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b634",
+      "text": "URL: %@\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b63d",
+      "text": "%@\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b641",
+      "text": "BODY:\n%@\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b64b",
+      "text": "---------REQUEST END---------\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b66a",
+      "text": "---------RESPONSE START---------\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b68c",
+      "text": "HTTP Status Code: %ld\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b6a3",
+      "text": "---------RESPONSE END---------\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b6c3",
+      "text": "Content-Type: text/xml; charset=\"utf-8\"",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b6eb",
+      "text": "Proxy-Connection: Keep-Alive",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b708",
+      "text": "Pragma: no-cache",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b719",
+      "text": "%@/apple.acdc.diavlo.v0.CryptexSigning/AllowCryptex",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b74d",
+      "text": "%@/TSS/controller?action=2",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b768",
+      "text": "unexpected failure: curl init failed",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b78d",
+      "text": "libcryptex.tss",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b79c",
+      "text": "-[CryptexTSS tssSendRequest]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b7b9",
+      "text": "&",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b7bb",
+      "text": "STATUS",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b7c2",
+      "text": "MESSAGE",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b7ca",
+      "text": "REQUEST_STRING",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b7d9",
+      "text": "%@",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b7dc",
+      "text": "-[CryptexTSS isSSOAvailable]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b7f9",
+      "text": "-[CryptexTSS tssSubmit]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b811",
+      "text": "signature",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b81b",
+      "text": "ApImg4Ticket",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b828",
+      "text": "\u001a",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b82a",
+      "text": "SSOIsACInstalled",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b83b",
+      "text": "SSOInit",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b843",
+      "text": "Boolean _SSOIsACInstalled(void)",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b863",
+      "text": "int _SSOInit(void)",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b876",
+      "text": "libcryptex",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b881",
+      "text": "sso-connect",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b88d",
+      "text": "APPLECONNECT.APPLE.COM",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b8a4",
+      "text": "INT",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b8a8",
+      "text": "15531444804973541",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b8ba",
+      "text": "sso.corp.apple.com",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b8cd",
+      "text": "unexpected failure: failed to get username cstring",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b900",
+      "text": "AuthUserId",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b90b",
+      "text": "SSOGetServiceTicket",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80b91f",
+      "text": "int _SSOGetServiceTicket(CFStringRef _Nonnull, CFStringRef _Nonnull, CFStringRef _Nonnull, CFStringRef _Nonnull, CFStringRef _Nullable, SSOSignOffCallbackPtr _Nullable, CFDictionaryRef _Nullable, CFStringRef  _Nullable * _Nonnull, CFDataRef  _Nullable * _Nonnull, void * _Nullable * _Nonnull, CFDictionaryRef  _Nullable * _Nullable, CFStringRef  _Nullable * _Nullable)",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ba90",
+      "text": "value not representable as size_t",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bab2",
+      "text": ".",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bab4",
+      "text": "com.apple.system.app",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bac9",
+      "text": "com.apple.cryptex.app",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80badf",
+      "text": "/System/Volumes/Preboot/Cryptexes",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bb01",
+      "text": "App",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bb05",
+      "text": "com.apple.system.nextos",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bb1d",
+      "text": "com.apple.cryptex.nextos",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bb36",
+      "text": "Incoming/OS",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bb42",
+      "text": "%s/%s",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bb48",
+      "text": "Cryptex1,AppTrustCache",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bb5f",
+      "text": "Cryptex1,AppOS",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bb6e",
+      "text": "Cryptex1,AppVolume",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bb81",
+      "text": "Cryptex1,SystemTrustCache",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bb9b",
+      "text": "Cryptex1,SystemOS",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bbad",
+      "text": "Cryptex1,SystemVolume",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bbc3",
+      "text": "SCOPE_SYSTEM",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bbd0",
+      "text": "SCOPE_USER",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bbdb",
+      "text": "SCOPE_UNK",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bbe5",
+      "text": "[bundle: %@, scope: %@, mount: %@, cmd: %@, env: %@]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc1a",
+      "text": "%@%@",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc1f",
+      "text": "cmd",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc23",
+      "text": "scope",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc29",
+      "text": "mntpath",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc31",
+      "text": "cryptex_bundleid",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc42",
+      "text": "version",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc4a",
+      "text": "env",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc4e",
+      "text": "cmd_arg",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc56",
+      "text": "scope_string",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc63",
+      "text": "command",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc6b",
+      "text": "\u0016",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc6d",
+      "text": "CollationCore",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc7b",
+      "text": "collation_cryptexes",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bc8f",
+      "text": "B24@?0Q8@\"NSObject<OS_xpc_object>\"16",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bcb4",
+      "text": "package",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bcbc",
+      "text": "v16@?0@\"NSObject<OS_xpc_object>\"8",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bcde",
+      "text": "[Collation %d]\n%@",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bcf0",
+      "text": ":",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bcf2",
+      "text": "v24@?0@\"CollationElement\"8^B16",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bd11",
+      "text": "\u0014",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bd13",
+      "text": "B24@?0r*8@\"NSObject<OS_xpc_object>\"16",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bd39",
+      "text": "metadata",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bd42",
+      "text": "magister",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bd4b",
+      "text": "v40@?0^{_cryptex_magister={_cryptex_base={_os_object_header=^vii}Q^{dispatch_queue_s}^{dispatch_queue_s}^?i}{_object_proto=**^{os_log_s}}Q^{_cryptex_core}^{_cryptex_signature}^{_cryptex_host}^{_img4_chip}{_img4_nonce=S[48C]I}}8r^{_cryptex_asset_type=Q^?^?qI**}16^{_buff=(?=**^v^v)(?=Qq)^vQ^v^?^?}24^{__CFError=}32",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80be85",
+      "text": "unexpected failure: no im4m asset in core",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80beaf",
+      "text": "_cryptex_magister_authenticate_continue",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bed7",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/magister.c",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bf7d",
+      "text": "unexpected failure: improper image execution",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bfaa",
+      "text": "_cryptex_magister_firmware_execute_toutoc",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bfd4",
+      "text": "_cryptex_magister_firmware_execute_cferr",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80bffd",
+      "text": "_cryptex_magister_authenticate",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c01c",
+      "text": "_cryptex_magister_firmware_execute",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c03f",
+      "text": "_cryptex_magister_record_property_continue",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c06a",
+      "text": "CRYPTEX1",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c073",
+      "text": "AP",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c076",
+      "text": "_cryptex_magister_select_image4_coproc_and_handle",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c0a8",
+      "text": "_cryptex_magister_record_property_continue2",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c0d4",
+      "text": "unexpected failure: unexpected read-only hash slot",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c107",
+      "text": "unexpected failure: signature created with potentially file-backed memory",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c151",
+      "text": "cryptex_signature_lock",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c168",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/signature.c",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c20f",
+      "text": "cryptex_signature_lock_with_sep",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c22f",
+      "text": "ginc",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c234",
+      "text": "cryptex_sigtool_fingerprint_create",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c257",
+      "text": "com.apple.security.cryptex.libder",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c279",
+      "text": "com.apple.security.cryptex.image4encode",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c2a1",
+      "text": "acdc",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c2a6",
+      "text": "cryptex_signature_secureconfig_add_entry",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c2cf",
+      "text": "Cryptex",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c2d7",
+      "text": ": %#x [%d, %d]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c2e6",
+      "text": "%s%s",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c2eb",
+      "text": "sha1",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c2f0",
+      "text": "sha2-384",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c2f9",
+      "text": "[no error]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c304",
+      "text": "bad parameter",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c312",
+      "text": "allocation failure",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c325",
+      "text": "conversion failure",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c338",
+      "text": "file error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c343",
+      "text": "hash error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c34e",
+      "text": "crypto error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c35b",
+      "text": "bad build identity",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c36e",
+      "text": "entry not found",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c37e",
+      "text": "invalid img3 object",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c392",
+      "text": "invalid fls object",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c3a5",
+      "text": "server not reachable",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c3ba",
+      "text": "server timed out",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c3cb",
+      "text": "not implemented",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c3db",
+      "text": "internal error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c3ea",
+      "text": "invalid baseband firmware",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c404",
+      "text": "network error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c412",
+      "text": "bad response",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c41f",
+      "text": "fusing failure",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c42e",
+      "text": "baseband provisioning failure",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c44c",
+      "text": "apple connect not found",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c464",
+      "text": "apple connect canceled",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c47b",
+      "text": "apple connect auth failure",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c496",
+      "text": "invalid img4 object",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c4aa",
+      "text": "ack provisioning failure",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c4c3",
+      "text": "updater operation failure",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c4dd",
+      "text": "updater not found",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c4ef",
+      "text": "http unauthorized",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c501",
+      "text": "http forbidden",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c510",
+      "text": "http not found",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c51f",
+      "text": "http proxy auth needed",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c536",
+      "text": "zip open failure",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c547",
+      "text": "zip write failure",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c559",
+      "text": "zip close failure",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c56b",
+      "text": "zip parameter error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c57f",
+      "text": "bad zip file",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c58c",
+      "text": "zip internal error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c59f",
+      "text": "zip stream error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c5b0",
+      "text": "zip data error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c5bf",
+      "text": "zip memory error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c5d0",
+      "text": "zip buffer error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c5e1",
+      "text": "zip version error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c5f3",
+      "text": "generic error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c601",
+      "text": "tss declined",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c60e",
+      "text": "http internal server error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c629",
+      "text": "tss error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c633",
+      "text": "unknown error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c641",
+      "text": "authinstall",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c64d",
+      "text": "https://diavlo.apple.com:443",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c66a",
+      "text": "scrivener",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c674",
+      "text": "CFType-compatible",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c686",
+      "text": "CFData",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c68d",
+      "text": "_cryptex_scrivener_sign_continue",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c6ae",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/scrivener.c",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c755",
+      "text": "com.apple.security.cryptex.tatsu",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c776",
+      "text": "Cryptex1,UniqueTagList",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c78d",
+      "text": "CFURL",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c793",
+      "text": "set signing server",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c7a6",
+      "text": "CFNumber",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c7af",
+      "text": "Cryptex1,DataOnly",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c7c1",
+      "text": "AMAuthInstallApSetParameters",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c7de",
+      "text": "AMAuthInstallApImg4CreateServerRequestDictionary",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c80f",
+      "text": "/YYygAofPDbhrwToVsXdeA",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c826",
+      "text": "z41",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c82a",
+      "text": "Ap,UniqueTagList",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c83b",
+      "text": "_cryptex_scrivener_read_continue",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c85c",
+      "text": "unexpected failure: no signature to read",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c885",
+      "text": "FileName",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c88e",
+      "text": "LineNumber",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c899",
+      "text": "FunctionName",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c8a6",
+      "text": "unexpected failure: CFNumberGetValue failed",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c8d2",
+      "text": "761.40.23",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c8dc",
+      "text": "Darwin Cryptex Core Interface Version 2.0.0: Sat Sep 12 00:30:32 PDT 2026; root:libcryptex-761.40.23~235/libcryptex_core/RELEASE_ARM64E",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c964",
+      "text": "RELEASE",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80c96c",
+      "text": "@(#)VERSION:Darwin Cryptex Core Interface Version 2.0.0: Sat Sep 12 00:30:32 PDT 2026; root:libcryptex-761.40.23~235/libcryptex_core/RELEASE_ARM64E",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80ca00",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Binaries/libcryptex/install/Symbols/libcryptex_core",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80cab7",
+      "text": "unexpected failure: node not initialized",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80cae0",
+      "text": "unexpected failure: existing node not removed before insertion",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80cb1f",
+      "text": "probable data corruption: node already in hash",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80cb4e",
+      "text": "%02x",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80cb53",
+      "text": "utility",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80cb5b",
+      "text": "unexpected failure: value not representable as size_t",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80cb91",
+      "text": "unexpected failure: buffer destroyed with active borrow",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb80cbc9",
+      "text": "unexpected failure: asset already present: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80cbf7",
+      "text": "%{public}s: core has research dmg asset",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80cc1f",
+      "text": "%{public}s: no asset of type: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80cc40",
+      "text": "%{public}s: openat: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80cc65",
+      "text": "%{public}s: failed to read im4m: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80cc97",
+      "text": "%{public}s: Failed to load metadata for Image4 manifest.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80cce2",
+      "text": "%{public}s: Failed to read Cryptex1 properties.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80cd24",
+      "text": "%{public}s: No cryptex assets were loaded from directory.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80cd70",
+      "text": "%{public}s: No image nor content asset was loaded from directory.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80cdc4",
+      "text": "%{public}s: cryptex type is not image: %lld %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ce01",
+      "text": "%{public}s: FD for image is invalid %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ce36",
+      "text": "%{public}s: FD for ltrs is invalid. OK for no-code cryptexes.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ce74",
+      "text": "%{public}s: FD for c411 is invalid. Will generate one",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ceaa",
+      "text": "%{public}s: FD for im4m is invalid. Cryptex is not personalized.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ceeb",
+      "text": "%{public}s: FD for volume hash is invalid. AuthAPFS will not be supported.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80cf36",
+      "text": "%{public}s: Failed to open asset '%{public}s': %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80cf76",
+      "text": "%{public}s: Opened all assets from cryptex",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80cfa1",
+      "text": "%{public}s: Closed all assets from cryptex",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80cfcc",
+      "text": "%{public}s: Asset %s is not sealed: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d001",
+      "text": "%{public}s: Invalid input.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d02e",
+      "text": "%{public}s: No Cryptex1 properties available.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d06e",
+      "text": "%{public}s: not supported image type: %s: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d0a9",
+      "text": "%{public}s: Failed to get nonce domain handle.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d0ea",
+      "text": "%{public}s: Failed to get nonce domain index.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d12a",
+      "text": "%{public}s: No such nonce domain exists.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d165",
+      "text": "Dictionary missing key: %s: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d192",
+      "text": "Integer overflow.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d1b6",
+      "text": "Failed to create property object.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d1ea",
+      "text": "Failed to create dictionary.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d219",
+      "text": "Failed to create property list data: %{public}@: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d25b",
+      "text": "Failed to write properties to file.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d291",
+      "text": "Failed to read properties from file.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d2c8",
+      "text": "Failed to create data.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d2f1",
+      "text": "Failed to create property list: %{public}@: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d32e",
+      "text": "Cryptex1 property plist is missing expected key: %s: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d374",
+      "text": "%{public}s: Cryptex has no metadata.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d3ab",
+      "text": "%{public}s: Failed to read info asset.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d3e4",
+      "text": "%{public}s: Failed to parse info asset as plist.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d427",
+      "text": "%{public}s: Info dictionary missing expected key: '%s': %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d470",
+      "text": "%{public}s: realpath %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d496",
+      "text": "%{public}s: failed to get cryptex metadata %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d4d2",
+      "text": "%{public}s: failed to write cryptex metadata to %s %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d516",
+      "text": "%{public}s: failed to read cryptex metadata from %s %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d55b",
+      "text": "assertion failure: \"close(fd)\" -> %{errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d587",
+      "text": "error printing buffer: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d5a1",
+      "text": "allocation failed: obj = %s, size = %lu, error = %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d5d5",
+      "text": "%{public}s: %s: state %s, event %s -> state %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d604",
+      "text": "%{public}s: Invalid session core main - failed to merge.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d63d",
+      "text": "%{public}s: Invalid session core update - failed to merge.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d678",
+      "text": "%{public}s: Trying to merge %s onto different session %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d6b1",
+      "text": "%{public}s: (%p) Updating %s state: %s -> %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d6de",
+      "text": "%{public}s: (%p) Updating %s uid: %d -> %d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d709",
+      "text": "%{public}s: (%p) Updating %s homedir: %s -> %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d738",
+      "text": "Opening sealed %{public}s asset at %{public}s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d766",
+      "text": "openat_authenticated_np: %{public}s [no error]",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d795",
+      "text": "openat_authenticated_np: %{public}s: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d7cb",
+      "text": "Treating unsealed asset of type %{public}s as sealed (internal-only).",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d811",
+      "text": "openat: %{public}s: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d836",
+      "text": "%{public}s: fstat %s: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d85d",
+      "text": "%{public}s: Failed to compute digest.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d895",
+      "text": "%{public}s: Failed to create data.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d8ca",
+      "text": "%{public}s: %s image = %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d8e4",
+      "text": "%{public}s: initializing %s asset",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d906",
+      "text": "%{public}s: _CFURLCreateFromFileDescriptor: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d943",
+      "text": "%{public}s: created url: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d95f",
+      "text": "unexpected failure: %s failed: [%d] %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d986",
+      "text": "realpath_np failed: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d9ab",
+      "text": "%s fd[%d] : [invalid descriptor]: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80d9de",
+      "text": "%s fd[%d]: type = %s, size = %lld, flags = %s, path = %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80da17",
+      "text": "Manifest array not available %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80da45",
+      "text": "Encoding error. XPC Object and Foundation object mismatch %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80da90",
+      "text": "tss request=%@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80da9f",
+      "text": "JSON Serialization failed with error %@ %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dad8",
+      "text": "tss request dictionary:\n%@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80daf3",
+      "text": "Failed to serialize %@ with error %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80db18",
+      "text": "tss request xml = %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80db2d",
+      "text": "TSS Request:\n%{public}@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80db45",
+      "text": "curl code: %#x %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80db65",
+      "text": "failed to get http response code: %#x %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80db9c",
+      "text": "TSS Response:\n%{public}@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dbb5",
+      "text": "Failed to jsonserialize response %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dbd9",
+      "text": "Unknown Response field %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dbf3",
+      "text": "Received the following response %{public}@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dc1e",
+      "text": "http failed: %ld, response: %{public}@ %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dc56",
+      "text": "failed to initialize sso support %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dc88",
+      "text": "tss flags = %#llx",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dc9a",
+      "text": "cryptex_tss has a prior error %{public}@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dcc3",
+      "text": "SSO is not available.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dcd9",
+      "text": "failed to stamp sso credentials: %{darwin.errno}d %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dd1c",
+      "text": "TSS request failed",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dd2f",
+      "text": "No response available %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dd56",
+      "text": "Im4m response %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dd67",
+      "text": "No %{public}@ key in %{public}@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dd87",
+      "text": "TSS Code: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dd94",
+      "text": "TSS Message: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dda4",
+      "text": "TSS Request: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ddb4",
+      "text": "TSS Response: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ddc5",
+      "text": "Failed to parse TSS Request from response %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80de00",
+      "text": "Failed to serialize plist %@ %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80de2e",
+      "text": "Response plist %@ -> im4m: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80de4c",
+      "text": "TSS Submit done with status %{public}@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80de73",
+      "text": "Drained queue",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80de81",
+      "text": "unexpected failure: failed to read file: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80debb",
+      "text": "SSO framework service ticket support not available",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80deee",
+      "text": "SSOGetServiceTicket: ret = %d, error = %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80df18",
+      "text": "sso ticket: username = %@, bytes = %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80df3e",
+      "text": "stamped AppleConnect ticket: %.*P",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80df60",
+      "text": "assertion failure: \"buffer != ((void *)0)\" -> %llu",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80df93",
+      "text": "no reply context",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dfa4",
+      "text": "Unknown subcommand %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dfba",
+      "text": "connection error: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dfcf",
+      "text": "unrecognized connection event",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80dfed",
+      "text": "Invalid metadata.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e011",
+      "text": "Unexpected value for cryptex_metadata key '%s': %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e052",
+      "text": "Failed to apply xattr '%s'.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e080",
+      "text": "No xattr '%s'.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e08f",
+      "text": "Failed to read xattr '%s'.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e0bc",
+      "text": "Failed to extract cryptex identifier and version.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e100",
+      "text": "%{public}s: failed to get nonce domain from core: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e143",
+      "text": "%{public}s: failed to get nonce domain description from core: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e192",
+      "text": "%{public}s: authenticating using nonce from %{public}s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e1c9",
+      "text": "%{public}s: copying cryptex nonce failed: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e204",
+      "text": "%{public}s: read im4m: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e22c",
+      "text": "%{public}s: checking for supplemental fallback",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e25b",
+      "text": "%{public}s: unable to detect chip environment, proceeding anyway",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e29c",
+      "text": "%{public}s: falling back from supplemental",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e2c7",
+      "text": "%{public}s: validated supplemental environment",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e2f6",
+      "text": "%{public}s: Failed to authenticate asset '%{public}s'",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e32c",
+      "text": "%{public}s: authenticating asset [toutoc]: 4cc = %{public}s, fd = %d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e371",
+      "text": "assertion failure: \"cxmg_authntc8->old_off\" -> %{errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e3aa",
+      "text": "%{public}s: firmware execution failed",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e3d0",
+      "text": "%{public}s: executing image: %{public}s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e3f8",
+      "text": "assertion failure: \"old_off\" -> %{errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e422",
+      "text": "Manifest no longer valid. %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e44d",
+      "text": "The chip environment has not yet booted. %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e487",
+      "text": "The firmware data is not valid Image4 data %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e4c3",
+      "text": "The attached manifest is not a valid Image4 manifest %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e509",
+      "text": "The attached manifest does not authenticate this type firmware %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e559",
+      "text": "The attached manifest is not authentic %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e591",
+      "text": "The given chip does not satisfy the constraints of attached manifest %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e5e7",
+      "text": "The firmware has been corrupted, or the given chip does not satisfy the constraints of the corresponding object in attached manifest %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e67d",
+      "text": "Other AppleImage4 error %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e6a6",
+      "text": "%{public}s: Image4 manifest is empty.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e6cc",
+      "text": "%{public}s: authenticating asset: 4cc = %{public}s, fd = %d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e708",
+      "text": "%{public}s: read im4p failed %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e736",
+      "text": "unexpected failure: bogus authenticated bytes pointer: off = %lld, im4p = %p, im4p len = %lu, authenticated = %p, authenticated len = %lu",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e7c0",
+      "text": "%{public}s: im4m buff len: %zu",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e7df",
+      "text": "%{public}s: Unexpected im4m property type: %d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e80d",
+      "text": "%{public}s: Supplemental root SRD cryptex not supported.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e846",
+      "text": "%{public}s: Authenticating with coprocessor %{public}s and handle %llu",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e88d",
+      "text": "%{public}s: image4 trust evaluation failed %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e8c9",
+      "text": "%{public}s: Property size (%zu) is not the expected size (%zu).",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e909",
+      "text": "%{public}s: Property '%{public}s' not found in im4m",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e93d",
+      "text": "%{public}s: Successfully read property '%{public}s' from im4m",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e97b",
+      "text": "aks_sealed_hashes_set: %#x",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e996",
+      "text": "aks_seal_cryptex_manifest_lock: %#x",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e9ba",
+      "text": "%{public}s: couldn't generate cryptex fingerprint",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80e9ec",
+      "text": "%{public}s: Failed to write signature to file.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ea2d",
+      "text": "%{public}s: Failed to write xattr metadata.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ea6b",
+      "text": "%{public}s: successfully set cryptex sealed hash.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ea9d",
+      "text": "%{public}s: All SSR slots have been used",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80eac6",
+      "text": "%{public}s: sealed hash slot is read-only",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80eaf0",
+      "text": "%{public}s: aks_sealed_hashes_set: %#x %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80eb28",
+      "text": "%{public}s: Failed to add SecureConfig entry.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80eb56",
+      "text": "%{public}s: successfully sealed im4m.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80eb7c",
+      "text": "%{public}s: sealing im4m with SEP is unsupported on this device.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ebbd",
+      "text": "%{public}s: failed to verify cryptex manifest: %#x",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ebf0",
+      "text": "%{public}s: failed to write cryptex manifest hash: %#x",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ec27",
+      "text": "%{public}s: aks_measure_and_seal_cryptex_manifest: %#x %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ec6f",
+      "text": "unexpected failure: crypto nightmare: buffer len = %lu, output len = %lu",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ecb8",
+      "text": "%{public}s: computed manifest hash: %.*P",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ece1",
+      "text": "%{public}s: manifest hash cstring: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ed07",
+      "text": "couldn't allocate object digests for fingerprinting %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ed4c",
+      "text": "couldn't decode manifest for fingerprinting",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ed78",
+      "text": "couldn't get object property %X for fingerprinting",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80edab",
+      "text": "couldn't create manifest for fingerprinting",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80edd7",
+      "text": "couldn't decode generated manifest for fingerprinting",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ee0d",
+      "text": "couldn't compute fingerprint digest",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ee31",
+      "text": "%{public}s: Signature has no metadata.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ee58",
+      "text": "%{public}s: Preparing to add entry to secure config.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ee8d",
+      "text": "%{public}s: SecureConfigDB not available",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80eeb6",
+      "text": "%{public}s: Unable to get default SecureConfig database",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80eeee",
+      "text": "%{public}s: Unable to create cryptex slot",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ef18",
+      "text": "%{public}s: Unable to create SecureConfigDB slot with salt",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ef53",
+      "text": "%{public}s: Failed to create config entry",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80ef7d",
+      "text": "%{public}s: Failed to read c411 contents. Bailing %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80efc0",
+      "text": "%{public}s: Failed to add c411 to config entry %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f000",
+      "text": "%{public}s: Failed to register config entry %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f03d",
+      "text": "%{public}s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f048",
+      "text": "%{public}s: signing service url: %s -> %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f072",
+      "text": "%{public}s: requesting signature",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f093",
+      "text": "%{public}s: reading signature",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f0b1",
+      "text": "%{public}s: socks proxy: %s:%d -> %s:%d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f0d9",
+      "text": "%{public}s: empty auth token",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f0f6",
+      "text": "%{public}s: set auth token",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f111",
+      "text": "%{public}s: using caller-provided chip instance",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f141",
+      "text": "%{public}s: using caller-provided chip environment",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f174",
+      "text": "%{public}s: using generic cryptex1 environment",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f1a3",
+      "text": "%{public}s: using personalized chip environment",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f1d3",
+      "text": "%{public}s: failed to instantiate chip: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f20c",
+      "text": "%{public}s: signing using nonce from %{public}s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f23c",
+      "text": "%{public}s: img4_nonce_domain_copy_nonce: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f277",
+      "text": "%{public}s: using Cryptex1 identity:\n    FCHP = %#x\n    TYPE = %#x\n    STYP = %#x\n    CLAS = %#x",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f2d8",
+      "text": "%{public}s: using device identity:\n    CEPO = %#x\n    BORD = %#x\n    CHIP = %#x\n    SDOM = %#x\n    ECID = %#llx\n    CPRO = %#x\n    CSEC = %#x\n    EPRO = %#x\n    ESEC = %#x",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f384",
+      "text": "%{public}s: ap parameters = %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f3a3",
+      "text": "%{public}s: initialization failed %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f3d6",
+      "text": "%{public}s: tss initialization failed %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f40d",
+      "text": "tss request failed: [%d] %{public}s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f431",
+      "text": "%{public}s: tss response: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f44e",
+      "text": "%{public}s: invalid/missing tss response key: %{public}@ %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f498",
+      "text": "%{public}s: Failed to read signature metadata from cryptex. %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f4e5",
+      "text": "%{public}s: Failed to attach asset measurement(s).: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f52a",
+      "text": "%{public}s: Failed to stamp DataOnly.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f562",
+      "text": "%{public}s: tss request = %{public}@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f587",
+      "text": "%{public}s: setting url: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f5a3",
+      "text": "%{public}s: using socks proxy",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f5c1",
+      "text": "%{public}s: AMAuthInstallSetSOCKSProxyInformation: [%d] %{public}s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f604",
+      "text": "%{public}s: using sso",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f61a",
+      "text": "%{public}s: using provided SSO token",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f63f",
+      "text": "%{public}s: AMAuthInstallSsoSetToken: [%d] %{public}s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f675",
+      "text": "%{public}s: AMAuthInstallSsoInitialize: [%d] %{public}s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f6ad",
+      "text": "%{public}s: AMAuthInstallSsoEnable: [%d] %{public}s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f6e1",
+      "text": "%{public}s: auth install = %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f6ff",
+      "text": "%{public}s: skip stamping asset: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f723",
+      "text": "%{public}s: stamping asset: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f742",
+      "text": "%{public}s: failed to stamp asset: %{public}s: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f782",
+      "text": "%{public}s: failed to parse cryptex info: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f7bd",
+      "text": "%{public}s: setting ap parameters = %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f7e4",
+      "text": "%{public}s: creating server request dictionary",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f813",
+      "text": "%{public}s: ignoring ap environment",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f837",
+      "text": "%{public}s: reading im4m failed %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f868",
+      "text": "cf create failed: obj = %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f883",
+      "text": "unexpected failure: not representable as 32-bit unsigned integer: %lld",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f8ca",
+      "text": "unexpected failure: bogus digest length: %lu",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f8f7",
+      "text": "stat: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f90e",
+      "text": "assertion failure: \"munmap(bytes, len)\" -> %{errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f943",
+      "text": "malloc: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f95c",
+      "text": "pread: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f974",
+      "text": "truncated read: actual = %ld, expected = %lu",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f9a1",
+      "text": "read %ld bytes",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f9b0",
+      "text": "write: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80f9c8",
+      "text": "truncated write: actual = %ld, expected = %ld: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80fa08",
+      "text": "wrote %ld bytes",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80fa18",
+      "text": "unexpected failure: buffer not large enough for hash: actual = %lu, expected >= %lu",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80fa6c",
+      "text": "failed to stat file: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80fa92",
+      "text": "failed to map file into memory: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80fac3",
+      "text": "assertion failure: \"munmap(map, len)\" -> %{errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80faf6",
+      "text": "unexpected failure: buffer length too large: %lu",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80fb27",
+      "text": "unexpected failure: negative buffer length: %ld",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80fb57",
+      "text": "unexpected failure: sub-buffer overflows source buffer: off = %lu, len = %lu, source len = %lu",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb80fbb6",
+      "text": "unexpected failure: invalid context size: %lu",
+      "section": "__oslogstring"
+    }
+  ],
+  "patched_bytes_primary": []
+}

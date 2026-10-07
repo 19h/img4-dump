@@ -1,0 +1,579 @@
+{
+  "binary": "libcryptex_interface.dylib",
+  "sha256": "451f099afbbf7e4fb02e74c05bfc33447d745e0b3585af5cb6f991c4f8e3c8d1",
+  "criteria": "img4|im4[pmrc]|image4|(?:^|_)DER|asn1|manifest|kbag|payload|payp|nonce|lzss|lzfse|compress|personaliz|ticket|digest|fourcc|fingerprint|trustcache",
+  "caller_depth": 2,
+  "selected": [
+    {
+      "function": {
+        "ea": "0x247344168",
+        "name": "_remote_service_create_nonce_index_request",
+        "size": 92,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247344188",
+          "string_ea": "0x24734adb7",
+          "text": "nonce-domain"
+        },
+        {
+          "ref_ea": "0x247344198",
+          "string_ea": "0x24734adc4",
+          "text": "get-nonce"
+        },
+        {
+          "ref_ea": "0x2473441a4",
+          "callee": "0x24734a124"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x24734420c",
+        "name": "_remote_service_create_nonce_handle_request",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247344238",
+          "string_ea": "0x24734adc4",
+          "text": "get-nonce"
+        },
+        {
+          "ref_ea": "0x24734422c",
+          "string_ea": "0x24734adce",
+          "text": "nonce-domain-handle"
+        },
+        {
+          "ref_ea": "0x247344244",
+          "callee": "0x24734a124"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247344264",
+        "name": "_remote_service_create_roll_nonce_index_request",
+        "size": 92,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247344284",
+          "string_ea": "0x24734adb7",
+          "text": "nonce-domain"
+        },
+        {
+          "ref_ea": "0x247344294",
+          "string_ea": "0x24734ade2",
+          "text": "roll-nonce"
+        },
+        {
+          "ref_ea": "0x2473442a0",
+          "callee": "0x24734a124"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2473442c0",
+        "name": "_remote_service_create_roll_nonce_handle_request",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2473442e0",
+          "string_ea": "0x24734adce",
+          "text": "nonce-domain-handle"
+        },
+        {
+          "ref_ea": "0x2473442ec",
+          "string_ea": "0x24734ade2",
+          "text": "roll-nonce"
+        },
+        {
+          "ref_ea": "0x2473442f8",
+          "callee": "0x24734a124"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247344fb4",
+        "name": "_remote_service_create_personalization_identifiers_request",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247344fd0",
+          "string_ea": "0x24734afc8",
+          "text": "read-personalization-id"
+        },
+        {
+          "ref_ea": "0x247344fdc",
+          "callee": "0x24734a124"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247344318",
+        "name": "_remote_service_create_install_request",
+        "size": 1352,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x24734438c",
+          "string_ea": "0x24734aefa",
+          "text": "auth"
+        },
+        {
+          "ref_ea": "0x2473443b4",
+          "string_ea": "0x24734af0b",
+          "text": "nonce-persistence"
+        },
+        {
+          "ref_ea": "0x247344414",
+          "string_ea": "0x24734af50",
+          "text": "info"
+        },
+        {
+          "ref_ea": "0x2473444a0",
+          "string_ea": "0x24734af66",
+          "text": "trustcache"
+        },
+        {
+          "ref_ea": "0x2473444c8",
+          "string_ea": "0x24734af71",
+          "text": "im4m"
+        },
+        {
+          "ref_ea": "0x2473445dc",
+          "string_ea": "0x24734bb80",
+          "text": "trustcache fd is invalid"
+        },
+        {
+          "ref_ea": "0x247344738",
+          "string_ea": "0x24734bb80",
+          "text": "trustcache fd is invalid"
+        },
+        {
+          "ref_ea": "0x247344658",
+          "string_ea": "0x24734bb99",
+          "text": "im4m fd is invalid"
+        },
+        {
+          "ref_ea": "0x2473447c4",
+          "string_ea": "0x24734bb99",
+          "text": "im4m fd is invalid"
+        },
+        {
+          "ref_ea": "0x2473444e8",
+          "callee": "0x24734a124"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247344cbc",
+        "name": "_remote_service_install_request_valid",
+        "size": 560,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247344e0c",
+          "string_ea": "0x24734aefa",
+          "text": "auth"
+        },
+        {
+          "ref_ea": "0x247344e28",
+          "string_ea": "0x24734aefa",
+          "text": "auth"
+        },
+        {
+          "ref_ea": "0x247344df0",
+          "string_ea": "0x24734af0b",
+          "text": "nonce-persistence"
+        },
+        {
+          "ref_ea": "0x247344e58",
+          "string_ea": "0x24734af0b",
+          "text": "nonce-persistence"
+        },
+        {
+          "ref_ea": "0x247344e78",
+          "string_ea": "0x24734af50",
+          "text": "info"
+        },
+        {
+          "ref_ea": "0x247344ea8",
+          "string_ea": "0x24734af50",
+          "text": "info"
+        },
+        {
+          "ref_ea": "0x247344d80",
+          "string_ea": "0x24734af66",
+          "text": "trustcache"
+        },
+        {
+          "ref_ea": "0x247344d9c",
+          "string_ea": "0x24734af71",
+          "text": "im4m"
+        },
+        {
+          "ref_ea": "0x247344cdc",
+          "callee": "0x24734a620"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247345a20",
+        "name": "_collation_xpc_endpoint_request",
+        "size": 100,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247345a50",
+          "string_ea": "0x24734b1cb",
+          "text": "user"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2473473b0",
+        "name": "_mount_interface_create_mount_request",
+        "size": 1964,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247347814",
+          "string_ea": "0x24734b4fa",
+          "text": "MOUNT:IM4M_FD"
+        },
+        {
+          "ref_ea": "0x2473476ec",
+          "string_ea": "0x24734bf6e",
+          "text": "Invalid im4m."
+        },
+        {
+          "ref_ea": "0x2473479a4",
+          "string_ea": "0x24734bf6e",
+          "text": "Invalid im4m."
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247348790",
+        "name": "_rpc_init_remote",
+        "size": 372,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2473487e4",
+          "string_ea": "0x24734b8ae",
+          "text": "argv"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247348904",
+        "name": "_rpc_init_local",
+        "size": 2992,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247348940",
+          "string_ea": "0x24734b8ae",
+          "text": "argv"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x24734a124",
+        "name": "__xpc_create_request",
+        "size": 92,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x24734a158",
+          "string_ea": "0x24734b8ae",
+          "text": "argv"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x24734a620",
+        "name": "__xpc_request_get_argv",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x24734a638",
+          "string_ea": "0x24734b8ae",
+          "text": "argv"
+        },
+        {
+          "ref_ea": "0x24734a650",
+          "string_ea": "0x24734b8ae",
+          "text": "argv"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247344b24",
+        "name": "___remote_service_create_install_request_block_invoke.22",
+        "size": 204,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247344bb0",
+          "string_ea": "0x24734bc67",
+          "text": "trustcache transfer [no error]"
+        },
+        {
+          "ref_ea": "0x247344b7c",
+          "string_ea": "0x24734bc86",
+          "text": "trustcache transfer: %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247344bf0",
+        "name": "___remote_service_create_install_request_block_invoke.26",
+        "size": 204,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247344c7c",
+          "string_ea": "0x24734bcac",
+          "text": "im4m transfer [no error]"
+        },
+        {
+          "ref_ea": "0x247344c48",
+          "string_ea": "0x24734bcc5",
+          "text": "im4m transfer: %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247345a84",
+        "name": "_collation_interface_request_endpoint_for_user",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247345aac",
+          "callee": "0x247345a20"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2473432c4",
+        "name": "__cryptex_actor_init_invoke_u64",
+        "size": 84,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247343314",
+          "callee": "0x247348790"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247343318",
+        "name": "__cryptex_actor_init_invoke_cstr",
+        "size": 84,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247343368",
+          "callee": "0x247348790"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x24734336c",
+        "name": "__cryptex_actor_init_invoke_port",
+        "size": 84,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2473433bc",
+          "callee": "0x247348790"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247349580",
+        "name": "_rpc_call",
+        "size": 736,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247349738",
+          "callee": "0x247348904"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247344eec",
+        "name": "_remote_service_create_uninstall_request",
+        "size": 128,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247344f48",
+          "callee": "0x24734a124"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247344f6c",
+        "name": "_remote_service_create_copy_installed_request",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x247344f94",
+          "callee": "0x24734a124"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2473433c0",
+        "name": "_cryptex_actor_trap",
+        "size": 456,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2473433e4",
+          "callee": "0x247349580"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x247343588",
+        "name": "_cryptex_actor_trap_with_cferr",
+        "size": 256,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2473435a8",
+          "callee": "0x247349580"
+        }
+      ]
+    }
+  ]
+}

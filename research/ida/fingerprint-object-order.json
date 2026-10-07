@@ -1,0 +1,68 @@
+{
+  "assembly": [
+    {
+      "ea": "0x2cb801534",
+      "asm": "ADRL            X0, aC411; \"c411\""
+    },
+    {
+      "ea": "0x2cb80153c",
+      "asm": "BL              __str24cc"
+    },
+    {
+      "ea": "0x2cb801540",
+      "asm": "MOV             W8, #0x67646D67"
+    },
+    {
+      "ea": "0x2cb801548",
+      "asm": "STR             W0, [SP,#0x490+var_240]"
+    },
+    {
+      "ea": "0x2cb80154c",
+      "asm": "STR             W8, [SP,#0x490+var_23C]"
+    },
+    {
+      "ea": "0x2cb801550",
+      "asm": "ADRL            X0, aGinc; \"ginc\""
+    },
+    {
+      "ea": "0x2cb801558",
+      "asm": "BL              __str24cc"
+    },
+    {
+      "ea": "0x2cb80155c",
+      "asm": "ADRP            X8, #xmmword_2CB80A980@PAGE"
+    },
+    {
+      "ea": "0x2cb801560",
+      "asm": "LDR             Q0, [X8,#xmmword_2CB80A980@PAGEOFF]"
+    },
+    {
+      "ea": "0x2cb801564",
+      "asm": "STR             W0, [SP,#0x490+var_238]"
+    },
+    {
+      "ea": "0x2cb801568",
+      "asm": "STUR            Q0, [X23,#0xC]"
+    },
+    {
+      "ea": "0x2cb80156c",
+      "asm": "ADRL            X0, aPdmg; \"pdmg\""
+    },
+    {
+      "ea": "0x2cb801574",
+      "asm": "BL              __str24cc"
+    },
+    {
+      "ea": "0x2cb801578",
+      "asm": "STR             W0, [SP,#0x490+var_224]"
+    }
+  ],
+  "table_ea": "0x2cb80a980",
+  "table_hex": "666e696764637467766774677372746c",
+  "fourccs": [
+    "ginf",
+    "gtcd",
+    "gtgv",
+    "ltrs"
+  ]
+}

@@ -1,0 +1,999 @@
+{
+  "date": "2026-10-07",
+  "binaries": [
+    {
+      "binary": "libramrod.dylib",
+      "target": "79ce35529ddc",
+      "sha256": "4afd52789c4bcb9550e4e85440a7811c5126641030ec6b2223fce9fa475ca03f",
+      "primary_function_count": 3137,
+      "triage_selected_count": 602,
+      "decompiled_unique": 13,
+      "functions": [
+        {
+          "address": "0x2cd9bd98c",
+          "name": "_lzfse_decode_buffer_output_size",
+          "sources": [
+            "ida/decompile-ramrod-compression.json"
+          ]
+        },
+        {
+          "address": "0x2cd9bdd38",
+          "name": "_lzfse_decode_buffer_iboot",
+          "sources": [
+            "ida/decompile-ramrod-compression.json"
+          ]
+        },
+        {
+          "address": "0x2cd923100",
+          "name": "_ramrod_manifest_tag_is_valid",
+          "sources": [
+            "ida/decompile-ramrod-compression.json"
+          ]
+        },
+        {
+          "address": "0x2cd96af74",
+          "name": "_ramrod_ticket_copy_hash_data",
+          "sources": [
+            "ida/decompile-ramrod-compression.json"
+          ]
+        },
+        {
+          "address": "0x2cd978248",
+          "name": "_Img4EncodeCreatePayload",
+          "sources": [
+            "ida/decompile-ramrod-encode.json"
+          ]
+        },
+        {
+          "address": "0x2cd978414",
+          "name": "_Img4EncodeCreateManifest",
+          "sources": [
+            "ida/decompile-ramrod-encode.json"
+          ]
+        },
+        {
+          "address": "0x2cd978928",
+          "name": "_Img4EncodeStitch",
+          "sources": [
+            "ida/decompile-ramrod-encode.json"
+          ]
+        },
+        {
+          "address": "0x2cd96c3b0",
+          "name": "_ramrod_copy_manifest_digest_data_from_img4",
+          "sources": [
+            "ida/decompile-ramrod-encode.json"
+          ]
+        },
+        {
+          "address": "0x2cd96ccb8",
+          "name": "_ramrod_ticket_copy_manifest_signature_certificate",
+          "sources": [
+            "ida/decompile-ramrod-restore.json"
+          ]
+        },
+        {
+          "address": "0x2cd942d44",
+          "name": "_ramrod_force_load_nonce_slots",
+          "sources": [
+            "ida/decompile-ramrod-slot-functions.json"
+          ]
+        },
+        {
+          "address": "0x2cd94bce8",
+          "name": "sub_2CD94BCE8",
+          "sources": [
+            "ida/decompile-ramrod-slot-functions.json"
+          ]
+        },
+        {
+          "address": "0x2cda18a44",
+          "name": "sub_2CDA18A44",
+          "sources": [
+            "ida/decompile-ramrod-slot-functions.json"
+          ]
+        },
+        {
+          "address": "0x2cd959f04",
+          "name": "sub_2CD959F04",
+          "sources": [
+            "ida/decompile-ramrod-slot-reader.json"
+          ]
+        }
+      ],
+      "inventory": "ida/libramrod.dylib.inventory.json",
+      "selection": "ida/libramrod.dylib.relevance.json"
+    },
+    {
+      "binary": "CryptexKit",
+      "target": "0d560b30c6c5",
+      "sha256": "d06d4d57bca4d44ed9b5457e89f08d5ce0f642da55e1b08a5763800aedf6f0ac",
+      "primary_function_count": 4572,
+      "triage_selected_count": 417,
+      "decompiled_unique": 9,
+      "functions": [
+        {
+          "address": "0x288d20ec4",
+          "name": "_$s10CryptexKit18Image4PropertySpecV4typeACys6UInt64VGvgZ",
+          "sources": [
+            "ida/decompile-cryptexkit.json"
+          ]
+        },
+        {
+          "address": "0x288d20ee8",
+          "name": "_$s10CryptexKit18Image4PropertySpecV7subTypeACys6UInt64VGvgZ",
+          "sources": [
+            "ida/decompile-cryptexkit.json"
+          ]
+        },
+        {
+          "address": "0x288d20f0c",
+          "name": "_$s10CryptexKit18Image4PropertySpecV8dataOnlyACySbGvgZ",
+          "sources": [
+            "ida/decompile-cryptexkit.json"
+          ]
+        },
+        {
+          "address": "0x288d2100c",
+          "name": "_$s10CryptexKit10Image4AuthV4read8property4froms6UInt64VSgAA0C12PropertySpecVyAHG_10Foundation4DataVtKF",
+          "sources": [
+            "ida/decompile-cryptexkit.json"
+          ]
+        },
+        {
+          "address": "0x288d21a64",
+          "name": "_$s10CryptexKit10Image4AuthV4read8property4fromSbSgAA0C12PropertySpecVySbG_10Foundation4DataVtKF",
+          "sources": [
+            "ida/decompile-cryptexkit.json"
+          ]
+        },
+        {
+          "address": "0x288d21b14",
+          "name": "_$s10CryptexKit10Image4AuthV12authenticate8fileData7with4cc7againsty10Foundation0G0V_SSAJtKF",
+          "sources": [
+            "ida/decompile-cryptexkit.json"
+          ]
+        },
+        {
+          "address": "0x288cb7b18",
+          "name": "_$s10CryptexKit0A9NonceSpecO15cryptex1GenericACvgZ",
+          "sources": [
+            "ida/decompile-kit-nonce-evaluate-retry.json"
+          ]
+        },
+        {
+          "address": "0x288cb7b2c",
+          "name": "_$s10CryptexKit0A9NonceSpecO24cryptex1GenericEphemeralACvgZ",
+          "sources": [
+            "ida/decompile-kit-nonce-evaluate-retry.json"
+          ]
+        },
+        {
+          "address": "0x288d21610",
+          "name": "_$s10CryptexKit10Image4AuthV8evaluate10ticketData4type9configurey10Foundation0G0V_s13OpaquePointerVSgyALKXEtKF",
+          "sources": [
+            "ida/decompile-kit-nonce-evaluate-retry.json"
+          ]
+        }
+      ],
+      "inventory": "ida/CryptexKit.inventory.json",
+      "selection": "ida/CryptexKit.relevance.json"
+    },
+    {
+      "binary": "libcryptex_core.dylib",
+      "target": "6882028eab8b",
+      "sha256": "6478a431043599f7e8e5f77624b665513f6ee698ff9944345b63c0fa4405b8f6",
+      "primary_function_count": 473,
+      "triage_selected_count": 55,
+      "decompiled_unique": 12,
+      "functions": [
+        {
+          "address": "0x2cb807c58",
+          "name": "__digest_file",
+          "sources": [
+            "ida/decompile-core-digest-objects.json"
+          ]
+        },
+        {
+          "address": "0x2cb803758",
+          "name": "_generate_objects",
+          "sources": [
+            "ida/decompile-core-digest-objects.json"
+          ]
+        },
+        {
+          "address": "0x2cb80129c",
+          "name": "_cryptex_signature_seal",
+          "sources": [
+            "ida/decompile-core-digest-objects.json"
+          ]
+        },
+        {
+          "address": "0x2cb7f2f24",
+          "name": "_cryptex_core_generate_version",
+          "sources": [
+            "ida/decompile-core-digest-objects.json"
+          ]
+        },
+        {
+          "address": "0x2cb806890",
+          "name": "__cryptex_scrivener_init_tss_assets",
+          "sources": [
+            "ida/decompile-core-digest-objects.json"
+          ]
+        },
+        {
+          "address": "0x2cb8036a0",
+          "name": "_generate_manifest",
+          "sources": [
+            "ida/decompile-core-fingerprint.json"
+          ]
+        },
+        {
+          "address": "0x2cb7f714c",
+          "name": "_cryptex_asset_create_generic_digest",
+          "sources": [
+            "ida/decompile-core-fingerprint.json"
+          ]
+        },
+        {
+          "address": "0x2cb7f7300",
+          "name": "_cryptex_asset_type_is_cryptex1",
+          "sources": [
+            "ida/decompile-core-fingerprint.json"
+          ]
+        },
+        {
+          "address": "0x2cb801414",
+          "name": "_cryptex_signature_create",
+          "sources": [
+            "ida/decompile-core-signature.json"
+          ]
+        },
+        {
+          "address": "0x2cb801b84",
+          "name": "__cryptex_signature_compute_hash",
+          "sources": [
+            "ida/decompile-core-signature.json"
+          ]
+        },
+        {
+          "address": "0x2cb7f2fa8",
+          "name": "_cryptex_core_get_nonce_domain_handle",
+          "sources": [
+            "ida/decompile-core-signature.json"
+          ]
+        },
+        {
+          "address": "0x2cb800c94",
+          "name": "__cryptex_magister_record_property_continue2",
+          "sources": [
+            "ida/decompile-core-signature.json"
+          ]
+        }
+      ],
+      "inventory": "ida/libcryptex_core.dylib.inventory.json",
+      "selection": "ida/libcryptex_core.dylib.relevance.json"
+    },
+    {
+      "binary": "libauthinstall.dylib",
+      "target": "4cb2b5384360",
+      "sha256": "dfb8b9e883f19903676eeadf8f4ba368ab811b9232fc00f736b70a1655866b48",
+      "primary_function_count": 4062,
+      "triage_selected_count": 1263,
+      "decompiled_unique": 14,
+      "functions": [
+        {
+          "address": "0x242863aa4",
+          "name": "_AMAuthInstallApImg4CreateMeasurementsWithTag",
+          "sources": [
+            "ida/decompile-authinstall-measure.json"
+          ]
+        },
+        {
+          "address": "0x242866050",
+          "name": "_AMAuthInstallApImg4DecodePayloadProperty",
+          "sources": [
+            "ida/decompile-authinstall-measure.json"
+          ]
+        },
+        {
+          "address": "0x2428651a4",
+          "name": "_AMAuthInstallApImg4EncodeRestoreDict",
+          "sources": [
+            "ida/decompile-authinstall-measure.json"
+          ]
+        },
+        {
+          "address": "0x2428659f4",
+          "name": "_AMAuthInstallApImg4CreatePayloadWithProperties",
+          "sources": [
+            "ida/decompile-authinstall-measure.json"
+          ]
+        },
+        {
+          "address": "0x2427e9a90",
+          "name": "__AMAuthInstallApImg4CopyApNonceSlotID",
+          "sources": [
+            "ida/decompile-authinstall-nonce.json"
+          ]
+        },
+        {
+          "address": "0x2427e9a70",
+          "name": "__AMAuthInstallApImg4CopySEPNonceSlotID",
+          "sources": [
+            "ida/decompile-authinstall-nonce.json"
+          ]
+        },
+        {
+          "address": "0x24285e4a8",
+          "name": "__AMAuthInstallCryptex1CopyManifestProperties",
+          "sources": [
+            "ida/decompile-authinstall-nonce.json"
+          ]
+        },
+        {
+          "address": "0x2427ea52c",
+          "name": "_AMAuthInstallApImg4LocalCreateEncodedVersion",
+          "sources": [
+            "ida/decompile-authinstall-nonce.json"
+          ]
+        },
+        {
+          "address": "0x2427f6900",
+          "name": "_AMAuthInstallLocalPolicyCopyPayloadDigestSHA384",
+          "sources": [
+            "ida/decompile-authinstall-nonce.json"
+          ]
+        },
+        {
+          "address": "0x2427e7d34",
+          "name": "_AMAuthInstallApImg4GetTypeForEntryName",
+          "sources": [
+            "ida/decompile-authinstall-types.json"
+          ]
+        },
+        {
+          "address": "0x2428656a4",
+          "name": "_AMAuthInstallApImg4ReCreatePayloadWithProperties",
+          "sources": [
+            "ida/decompile-authinstall-types.json"
+          ]
+        },
+        {
+          "address": "0x2427f5374",
+          "name": "_AMAuthInstallCryptoCreateDigestForDataType",
+          "sources": [
+            "ida/decompile-authinstall-types.json"
+          ]
+        },
+        {
+          "address": "0x2427e88f4",
+          "name": "_AMAuthInstallApImg4EncodeRestoreInfo",
+          "sources": [
+            "ida/decompile-authinstall-types.json"
+          ]
+        },
+        {
+          "address": "0x242864eec",
+          "name": "_AMAuthInstallApImg4DecodeRestoreInfo",
+          "sources": [
+            "ida/decompile-authinstall-types.json"
+          ]
+        }
+      ],
+      "inventory": "ida/libauthinstall.dylib.inventory.json",
+      "selection": "ida/libauthinstall.dylib.relevance.json"
+    },
+    {
+      "binary": "libcryptex_trampoline.dylib",
+      "target": "677b8c997b14",
+      "sha256": "c85438b1089104a9fd3d09c1fd8aa68122e2feef50d81caf1e93dbfeca3b5005",
+      "primary_function_count": 12,
+      "triage_selected_count": 0,
+      "decompiled_unique": 12,
+      "functions": [
+        {
+          "address": "0x2cb811d74",
+          "name": "_cryptex_trampoline_upgrade_wait_options_create.cold.1",
+          "sources": [
+            "ida/decompile-trampoline-cold.json"
+          ]
+        },
+        {
+          "address": "0x2cb811e54",
+          "name": "_cryptex_trampoline_upgrade_wait_options_set_cryptex_name.cold.1",
+          "sources": [
+            "ida/decompile-trampoline-cold.json",
+            "ida/decompile-trampoline-cold.json"
+          ]
+        },
+        {
+          "address": "0x2cb811eac",
+          "name": "_cryptex_trampoline_upgrade_wait.cold.1",
+          "sources": [
+            "ida/decompile-trampoline-final-cold.json"
+          ]
+        },
+        {
+          "address": "0x2cb8117e0",
+          "name": "_cryptex_trampoline_upgrade_wait_options_create",
+          "sources": [
+            "ida/decompile-trampoline.json"
+          ]
+        },
+        {
+          "address": "0x2cb81184c",
+          "name": "_cryptex_trampoline_upgrade_wait_options_destroy",
+          "sources": [
+            "ida/decompile-trampoline.json"
+          ]
+        },
+        {
+          "address": "0x2cb81188c",
+          "name": "_cryptex_trampoline_upgrade_wait_options_set_cryptex_name",
+          "sources": [
+            "ida/decompile-trampoline.json"
+          ]
+        },
+        {
+          "address": "0x2cb811944",
+          "name": "_cryptex_trampoline_upgrade_wait",
+          "sources": [
+            "ida/decompile-trampoline.json"
+          ]
+        },
+        {
+          "address": "0x2cb811bfc",
+          "name": "___cryptex_trampoline_osl_block_invoke",
+          "sources": [
+            "ida/decompile-trampoline.json"
+          ]
+        },
+        {
+          "address": "0x2cb811c2c",
+          "name": "_OUTLINED_FUNCTION_0",
+          "sources": [
+            "ida/decompile-trampoline.json"
+          ]
+        },
+        {
+          "address": "0x2cb811ca4",
+          "name": "_OUTLINED_FUNCTION_1",
+          "sources": [
+            "ida/decompile-trampoline.json"
+          ]
+        },
+        {
+          "address": "0x2cb811cc4",
+          "name": "_OUTLINED_FUNCTION_2",
+          "sources": [
+            "ida/decompile-trampoline.json"
+          ]
+        },
+        {
+          "address": "0x2cb811cfc",
+          "name": "_sysctl_upgrade_is_ongoing",
+          "sources": [
+            "ida/decompile-trampoline.json"
+          ]
+        }
+      ],
+      "inventory": "ida/libcryptex_trampoline.dylib.inventory.json",
+      "selection": "ida/libcryptex_trampoline.dylib.relevance.json"
+    },
+    {
+      "binary": "libimage4.dylib",
+      "target": "54bf8b211d08",
+      "sha256": "251aa2964367d445cb5432d155e96972da17e591794f0fedab68e731980b5888",
+      "primary_function_count": 1147,
+      "triage_selected_count": 648,
+      "decompiled_unique": 35,
+      "functions": [
+        {
+          "address": "0x2438d0bc4",
+          "name": "_Img4DecodeCopyPayloadDigest",
+          "sources": [
+            "ida/decompile-54bf8b211d08-1.json"
+          ]
+        },
+        {
+          "address": "0x2438d1018",
+          "name": "_Img4DecodeCopyPayloadPropertiesDigest",
+          "sources": [
+            "ida/decompile-54bf8b211d08-1.json"
+          ]
+        },
+        {
+          "address": "0x2438d0474",
+          "name": "_DERImg4DecodePayloadWithProperties",
+          "sources": [
+            "ida/decompile-54bf8b211d08-1.json"
+          ]
+        },
+        {
+          "address": "0x2438d069c",
+          "name": "_DERImg4DecodeManifestCommon",
+          "sources": [
+            "ida/decompile-54bf8b211d08-1.json"
+          ]
+        },
+        {
+          "address": "0x2438b3828",
+          "name": "__property_value_init_with_DERImg4",
+          "sources": [
+            "ida/decompile-der-type-checks.json"
+          ]
+        },
+        {
+          "address": "0x2438c9f8c",
+          "name": "_DERParseInteger64",
+          "sources": [
+            "ida/decompile-der-type-checks.json"
+          ]
+        },
+        {
+          "address": "0x2438c9e8c",
+          "name": "_DERParseBoolean",
+          "sources": [
+            "ida/decompile-der-type-checks.json"
+          ]
+        },
+        {
+          "address": "0x2438ca3bc",
+          "name": "_DERParseSequenceContentToObject",
+          "sources": [
+            "ida/decompile-der-type-checks.json"
+          ]
+        },
+        {
+          "address": "0x2438d19c4",
+          "name": "_Img4DecodeEvaluateDictionaryProperties",
+          "sources": [
+            "ida/decompile-der-type-checks.json"
+          ]
+        },
+        {
+          "address": "0x2438d1afc",
+          "name": "_Img4DecodeEvaluateCertificateChain",
+          "sources": [
+            "ida/decompile-der-type-checks.json"
+          ]
+        },
+        {
+          "address": "0x2438cb780",
+          "name": "_Img4DecodeGetPayloadCompressionInfo",
+          "sources": [
+            "ida/decompile-der-type-checks.json"
+          ]
+        },
+        {
+          "address": "0x2438b2898",
+          "name": "__payload_im4p_measure",
+          "sources": [
+            "ida/decompile-measurement.json"
+          ]
+        },
+        {
+          "address": "0x2438b24a8",
+          "name": "_payload_init",
+          "sources": [
+            "ida/decompile-measurement.json"
+          ]
+        },
+        {
+          "address": "0x2438cc220",
+          "name": "_Img4DecodeInitPayload",
+          "sources": [
+            "ida/decompile-measurement.json"
+          ]
+        },
+        {
+          "address": "0x2438cb868",
+          "name": "_Img4DecodeCopyPayloadHashWithCallback",
+          "sources": [
+            "ida/decompile-measurement.json"
+          ]
+        },
+        {
+          "address": "0x2438d0ca4",
+          "name": "_Img4DecodeCopyManifestDigest",
+          "sources": [
+            "ida/decompile-measurement.json"
+          ]
+        },
+        {
+          "address": "0x2438a743c",
+          "name": "_property_get_from_identifier",
+          "sources": [
+            "ida/decompile-property-layout.json"
+          ]
+        },
+        {
+          "address": "0x2438b7cdc",
+          "name": "_property_find_from_fourcc",
+          "sources": [
+            "ida/decompile-property-layout.json"
+          ]
+        },
+        {
+          "address": "0x2438b8dd0",
+          "name": "_property_print_value",
+          "sources": [
+            "ida/decompile-property-layout.json"
+          ]
+        },
+        {
+          "address": "0x2438d13d0",
+          "name": "_Img4DecodeGetPayloadVersionPropertyString",
+          "sources": [
+            "ida/decompile-property-layout.json"
+          ]
+        },
+        {
+          "address": "0x2438d0960",
+          "name": "_DERImg4DecodePropertyWithItem",
+          "sources": [
+            "ida/decompile-property-layout.json"
+          ]
+        },
+        {
+          "address": "0x2438d0a24",
+          "name": "_DERImg4DecodeFindProperty",
+          "sources": [
+            "ida/decompile-property-layout.json"
+          ]
+        },
+        {
+          "address": "0x2438afb48",
+          "name": "__manifest_impose_property",
+          "sources": [
+            "ida/decompile-property-version-decode.json"
+          ]
+        },
+        {
+          "address": "0x2438b9838",
+          "name": "_version_init",
+          "sources": [
+            "ida/decompile-property-version-decode.json"
+          ]
+        },
+        {
+          "address": "0x2438b1328",
+          "name": "_CTImg4GetDigestType",
+          "sources": [
+            "ida/decompile-property-version-decode.json"
+          ]
+        },
+        {
+          "address": "0x2438d2414",
+          "name": "_verify_signature_hybrid_scheme3",
+          "sources": [
+            "ida/decompile-property-version-decode.json"
+          ]
+        },
+        {
+          "address": "0x2438d22a4",
+          "name": "_verify_signature_ml_dsa_87",
+          "sources": [
+            "ida/decompile-property-version-decode.json"
+          ]
+        },
+        {
+          "address": "0x2438cc074",
+          "name": "_Img4DecodeGetPropertyData",
+          "sources": [
+            "ida/decompile-typed-accessors.json"
+          ]
+        },
+        {
+          "address": "0x2438d1320",
+          "name": "_Img4DecodeGetPayloadPropertiesData",
+          "sources": [
+            "ida/decompile-typed-accessors.json"
+          ]
+        },
+        {
+          "address": "0x2438cb2a4",
+          "name": "_DERImg4DecodeProperty",
+          "sources": [
+            "ida/decompile-typed-accessors.json"
+          ]
+        },
+        {
+          "address": "0x2438d14b0",
+          "name": "_Img4DecodeGetPropertyInteger",
+          "sources": [
+            "ida/decompile-typed-accessors.json"
+          ]
+        },
+        {
+          "address": "0x2438d15a0",
+          "name": "_Img4DecodeGetPropertyBoolean",
+          "sources": [
+            "ida/decompile-typed-accessors.json"
+          ]
+        },
+        {
+          "address": "0x2438af7cc",
+          "name": "__manifest_validate_property_manifest",
+          "sources": [
+            "ida/decompile-version-properties.json"
+          ]
+        },
+        {
+          "address": "0x2438b8ac8",
+          "name": "_property_constrain_version",
+          "sources": [
+            "ida/decompile-version-properties.json"
+          ]
+        },
+        {
+          "address": "0x2438a9914",
+          "name": "_expert_query_property_version",
+          "sources": [
+            "ida/decompile-version-properties.json"
+          ]
+        }
+      ],
+      "inventory": "ida/libimage4.dylib.inventory.json",
+      "selection": "ida/libimage4.dylib.relevance.json"
+    },
+    {
+      "binary": "libImage4_V2.dylib",
+      "target": "ed3cb4aaaff9",
+      "sha256": "5d6548275c6715d0b0e04428ff4ccf330af5f566c56fabe82e011a1c5d5aee5d",
+      "primary_function_count": 636,
+      "triage_selected_count": 372,
+      "decompiled_unique": 18,
+      "functions": [
+        {
+          "address": "0x2caddaacc",
+          "name": "_DERImg4DecodePayloadWithProperties",
+          "sources": [
+            "ida/decompile-ed3cb4aaaff9-0.json"
+          ]
+        },
+        {
+          "address": "0x2caddab7c",
+          "name": "_DERImg4DecodePayloadProperties",
+          "sources": [
+            "ida/decompile-ed3cb4aaaff9-0.json"
+          ]
+        },
+        {
+          "address": "0x2caddaa54",
+          "name": "_DERImg4DecodePayloadCompression",
+          "sources": [
+            "ida/decompile-ed3cb4aaaff9-0.json"
+          ]
+        },
+        {
+          "address": "0x2caddaf38",
+          "name": "_DERImg4DecodeRestoreInfo",
+          "sources": [
+            "ida/decompile-ed3cb4aaaff9-0.json"
+          ]
+        },
+        {
+          "address": "0x2caddacf4",
+          "name": "_DERImg4DecodeManifestCommon",
+          "sources": [
+            "ida/decompile-ed3cb4aaaff9-0.json"
+          ]
+        },
+        {
+          "address": "0x2caddadb0",
+          "name": "_DERImg4DecodeCertificate",
+          "sources": [
+            "ida/decompile-ed3cb4aaaff9-0.json"
+          ]
+        },
+        {
+          "address": "0x2caddade0",
+          "name": "_DERImg4DecodeCertificatePropertiesAndPubKey",
+          "sources": [
+            "ida/decompile-im4c.json"
+          ]
+        },
+        {
+          "address": "0x2caddc51c",
+          "name": "_Img4DecodeVerifyChainIM4C",
+          "sources": [
+            "ida/decompile-im4c.json",
+            "ida/decompile-v2-extended.json"
+          ]
+        },
+        {
+          "address": "0x2cadcb6b4",
+          "name": "_Img4DecodeLocalHybridScheme3Sha384IM4C",
+          "sources": [
+            "ida/decompile-im4c.json"
+          ]
+        },
+        {
+          "address": "0x2cadcb65c",
+          "name": "_Img4DecodeLocalMLDSA87Sha384IM4C",
+          "sources": [
+            "ida/decompile-im4c.json"
+          ]
+        },
+        {
+          "address": "0x2cadccda4",
+          "name": "_Img4DecodeInitManifestCommon",
+          "sources": [
+            "ida/decompile-im4c.json"
+          ]
+        },
+        {
+          "address": "0x2cadccc10",
+          "name": "_Img4DecodeInit",
+          "sources": [
+            "ida/decompile-im4c.json"
+          ]
+        },
+        {
+          "address": "0x2cadc712c",
+          "name": "_image4RestoreInfoInit",
+          "sources": [
+            "ida/decompile-v2-extended.json"
+          ]
+        },
+        {
+          "address": "0x2cadc2fac",
+          "name": "_image4ManifestAttachRestoreInfo",
+          "sources": [
+            "ida/decompile-v2-extended.json"
+          ]
+        },
+        {
+          "address": "0x2cadcee90",
+          "name": "_hybrid_scheme3_pubkey_cast",
+          "sources": [
+            "ida/decompile-v2-extended.json"
+          ]
+        },
+        {
+          "address": "0x2cadceef4",
+          "name": "_hybrid_scheme3_signature_cast",
+          "sources": [
+            "ida/decompile-v2-extended.json"
+          ]
+        },
+        {
+          "address": "0x2cadc292c",
+          "name": "_antiReplayCryptex1NonceDomain",
+          "sources": [
+            "ida/decompile-v2-extended.json"
+          ]
+        },
+        {
+          "address": "0x2cadc2c74",
+          "name": "_image4NonceDomainToType",
+          "sources": [
+            "ida/decompile-v2-extended.json"
+          ]
+        }
+      ],
+      "inventory": "ida/libImage4_V2.dylib.inventory.json",
+      "selection": "ida/libImage4_V2.dylib.relevance.json"
+    },
+    {
+      "binary": "AppleMobileFileIntegrity.merged",
+      "target": "9112d92f2593",
+      "sha256": "f9bbe64ac18009c4a99be8e96865898b39ce5088183526f25d9dcccb9080084e",
+      "primary_function_count": 398,
+      "triage_selected_count": 18,
+      "decompiled_unique": 4,
+      "functions": [
+        {
+          "address": "0x21a937428",
+          "name": "-[AMFIPathValidator_macos derCertChain]",
+          "sources": [
+            "ida/decompile-amfi-object-inspection.json",
+            "ida/decompile-amfi.json"
+          ]
+        },
+        {
+          "address": "0x21a93c240",
+          "name": "_amfi_interface_cdhash_in_trustcache",
+          "sources": [
+            "ida/decompile-amfi.json"
+          ]
+        },
+        {
+          "address": "0x21a93c5f8",
+          "name": "_amfi_interface_authorize_local_signing_with_length",
+          "sources": [
+            "ida/decompile-amfi.json"
+          ]
+        },
+        {
+          "address": "0x21a93cb4c",
+          "name": "_LWCRTypeVerificationBackend_verifyLWCR",
+          "sources": [
+            "ida/decompile-amfi.json"
+          ]
+        }
+      ],
+      "inventory": "ida/AppleMobileFileIntegrity.merged.inventory.json",
+      "selection": "ida/AppleMobileFileIntegrity.merged.relevance.json"
+    },
+    {
+      "binary": "libcryptex_interface.dylib",
+      "target": "89c7194f06b9",
+      "sha256": "451f099afbbf7e4fb02e74c05bfc33447d745e0b3585af5cb6f991c4f8e3c8d1",
+      "primary_function_count": 198,
+      "triage_selected_count": 24,
+      "decompiled_unique": 4,
+      "functions": [
+        {
+          "address": "0x24734420c",
+          "name": "_remote_service_create_nonce_handle_request",
+          "sources": [
+            "ida/decompile-interface.json"
+          ]
+        },
+        {
+          "address": "0x247344318",
+          "name": "_remote_service_create_install_request",
+          "sources": [
+            "ida/decompile-interface.json"
+          ]
+        },
+        {
+          "address": "0x247344cbc",
+          "name": "_remote_service_install_request_valid",
+          "sources": [
+            "ida/decompile-interface.json"
+          ]
+        },
+        {
+          "address": "0x2473473b0",
+          "name": "_mount_interface_create_mount_request",
+          "sources": [
+            "ida/decompile-interface.json"
+          ]
+        }
+      ],
+      "inventory": "ida/libcryptex_interface.dylib.inventory.json",
+      "selection": "ida/libcryptex_interface.dylib.relevance.json"
+    },
+    {
+      "binary": "libcryptex.dylib",
+      "target": "c7bcdb863eb7",
+      "sha256": "21908f3dcf46b75ff91af708513e9440f290f2dd089215bdbf50cd5a2cf2d475",
+      "primary_function_count": 554,
+      "triage_selected_count": 93,
+      "decompiled_unique": 3,
+      "functions": [
+        {
+          "address": "0x2cb7d8824",
+          "name": "_cryptex_attach_personalized_manifest",
+          "sources": [
+            "ida/decompile-cryptex-metadata.json"
+          ]
+        },
+        {
+          "address": "0x2cb7d7dcc",
+          "name": "_cryptex_fcopy_personalized_manifest2",
+          "sources": [
+            "ida/decompile-cryptex-metadata.json"
+          ]
+        },
+        {
+          "address": "0x2cb7e2be0",
+          "name": "__img4_chip_instance_from_remote_device_properties",
+          "sources": [
+            "ida/decompile-cryptex-metadata.json"
+          ]
+        }
+      ],
+      "inventory": "ida/libcryptex.dylib.inventory.json",
+      "selection": "ida/libcryptex.dylib.relevance.json"
+    }
+  ],
+  "primary_functions": 15189,
+  "triage_selected": 3492,
+  "unique_decompiled": 124
+}

@@ -1,0 +1,2173 @@
+{
+  "file": "/private/tmp/img4/libcryptex_interface.dylib",
+  "sha256": "451f099afbbf7e4fb02e74c05bfc33447d745e0b3585af5cb6f991c4f8e3c8d1",
+  "primary": {
+    "name": "__TEXT",
+    "start": 9784532992,
+    "end": 9784577364,
+    "sections": [
+      {
+        "name": "__text",
+        "start": 9784536816,
+        "end": 9784568296,
+        "offset": 69360
+      },
+      {
+        "name": "__objc_methlist",
+        "start": 9784568296,
+        "end": 9784568568,
+        "offset": 100840
+      },
+      {
+        "name": "__const",
+        "start": 9784568568,
+        "end": 9784568904,
+        "offset": 101112
+      },
+      {
+        "name": "__cstring",
+        "start": 9784568904,
+        "end": 9784572373,
+        "offset": 101448
+      },
+      {
+        "name": "__oslogstring",
+        "start": 9784572373,
+        "end": 9784574729,
+        "offset": 104917
+      },
+      {
+        "name": "__gcc_except_tab",
+        "start": 9784574732,
+        "end": 9784575432,
+        "offset": 107276
+      },
+      {
+        "name": "__info_plist",
+        "start": 9784575432,
+        "end": 9784576705,
+        "offset": 107976
+      },
+      {
+        "name": "__unwind_info",
+        "start": 9784576708,
+        "end": 9784577364,
+        "offset": 109252
+      },
+      {
+        "name": "__objc_stubs",
+        "start": 9784577364,
+        "end": 9784577364,
+        "offset": 0
+      },
+      {
+        "name": "__auth_stubs",
+        "start": 9784577364,
+        "end": 9784577364,
+        "offset": 0
+      },
+      {
+        "name": "__objc_classname",
+        "start": 9784577364,
+        "end": 9784577364,
+        "offset": 0
+      },
+      {
+        "name": "__objc_methname",
+        "start": 9784577364,
+        "end": 9784577364,
+        "offset": 0
+      },
+      {
+        "name": "__objc_methtype",
+        "start": 9784577364,
+        "end": 9784577364,
+        "offset": 0
+      }
+    ]
+  },
+  "function_count": 198,
+  "functions": [
+    {
+      "ea": "0x247342ef0",
+      "name": "_endpoint_lookup_interface_create_request",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247342f68",
+      "name": "_cryptex_xpc_create_connection",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247342fb4",
+      "name": "___cryptex_xpc_create_connection_block_invoke",
+      "size": 180,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343068",
+      "name": "__cryptex_actor_dealloc",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473430a8",
+      "name": "_cryptex_actor_create",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343110",
+      "name": "_cryptex_actor_connect",
+      "size": 436,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473432c4",
+      "name": "__cryptex_actor_init_invoke_u64",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343318",
+      "name": "__cryptex_actor_init_invoke_cstr",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x24734336c",
+      "name": "__cryptex_actor_init_invoke_port",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473433c0",
+      "name": "_cryptex_actor_trap",
+      "size": 456,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343588",
+      "name": "_cryptex_actor_trap_with_cferr",
+      "size": 256,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343688",
+      "name": "_codex_install_pack",
+      "size": 272,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343798",
+      "name": "_codex_install_unpack",
+      "size": 480,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343978",
+      "name": "_codex_install_reply_pack",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473439f8",
+      "name": "_codex_install_reply_unpack",
+      "size": 144,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343a88",
+      "name": "_codex_list_pack",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247343a8c",
+      "name": "_codex_list_unpack",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247343a94",
+      "name": "_codex_list_reply_pack",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247343aa8",
+      "name": "_codex_list_reply_unpack",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343ad8",
+      "name": "_codex_lockdown_pack",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247343adc",
+      "name": "_codex_lockdown_unpack",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247343ae4",
+      "name": "_codex_lockdown_reply_pack",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247343ae8",
+      "name": "_codex_lockdown_reply_unpack",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247343af0",
+      "name": "_codex_upgrade_stage_semi_splat_pack",
+      "size": 176,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343ba0",
+      "name": "_codex_upgrade_stage_semi_splat_unpack",
+      "size": 236,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343c8c",
+      "name": "_codex_upgrade_stage_semi_splat_reply_pack",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343cec",
+      "name": "_codex_upgrade_stage_semi_splat_reply_unpack",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343d54",
+      "name": "_codex_upgrade_commit_semi_splat_pack",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247343d68",
+      "name": "_codex_upgrade_commit_semi_splat_unpack",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247343d98",
+      "name": "_codex_upgrade_commit_semi_splat_reply_pack",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247343d9c",
+      "name": "_codex_upgrade_commit_semi_splat_reply_unpack",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247343da4",
+      "name": "_cryptex_trampoline_upgrade_interface_wait",
+      "size": 660,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344038",
+      "name": "sub_247344038",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734404c",
+      "name": "_cryptex_upgrade_trampoline_osl",
+      "size": 68,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247344090",
+      "name": "___cryptex_trampoline_upgrade_xpc_get_connection_block_invoke",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473440cc",
+      "name": "___copy_helper_block_e8_32s",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473440d4",
+      "name": "___destroy_helper_block_e8_32s",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473440dc",
+      "name": "___cryptex_trampoline_upgrade_xpc_get_queue_block_invoke",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344120",
+      "name": "___cryptex_upgrade_trampoline_osl_block_invoke",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344168",
+      "name": "_remote_service_create_nonce_index_request",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473441c4",
+      "name": "__remote_service_create_argv",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x24734420c",
+      "name": "_remote_service_create_nonce_handle_request",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344264",
+      "name": "_remote_service_create_roll_nonce_index_request",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473442c0",
+      "name": "_remote_service_create_roll_nonce_handle_request",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344318",
+      "name": "_remote_service_create_install_request",
+      "size": 1352,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344860",
+      "name": "sub_247344860",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734487c",
+      "name": "__rsi_log",
+      "size": 68,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473448c0",
+      "name": "___remote_service_create_install_request_block_invoke",
+      "size": 204,
+      "flags": 5136
+    },
+    {
+      "ea": "0x24734498c",
+      "name": "___remote_service_create_install_request_block_invoke.14",
+      "size": 204,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344a58",
+      "name": "___remote_service_create_install_request_block_invoke.18",
+      "size": 204,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344b24",
+      "name": "___remote_service_create_install_request_block_invoke.22",
+      "size": 204,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344bf0",
+      "name": "___remote_service_create_install_request_block_invoke.26",
+      "size": 204,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344cbc",
+      "name": "_remote_service_install_request_valid",
+      "size": 560,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344eec",
+      "name": "_remote_service_create_uninstall_request",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344f6c",
+      "name": "_remote_service_create_copy_installed_request",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344fb4",
+      "name": "_remote_service_create_personalization_identifiers_request",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247344ffc",
+      "name": "____rsi_log_block_invoke",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345044",
+      "name": "__CFCreateAssertImpl",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473450a0",
+      "name": "__CFStringCreateFromUTF8String",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473450b4",
+      "name": "_createError",
+      "size": 448,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345274",
+      "name": "__CFErrorCopyTopLevelErrorWithDomain",
+      "size": 164,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345318",
+      "name": "__CFErrorIterUnderlying",
+      "size": 248,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345410",
+      "name": "____CFErrorCopyTopLevelErrorWithDomain_block_invoke",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345470",
+      "name": "___copy_helper_block_8_32r",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247345480",
+      "name": "___destroy_helper_block_8_32r",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734548c",
+      "name": "__CFErrorGetTopLevelPosixError",
+      "size": 184,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345544",
+      "name": "_OUTLINED_FUNCTION_2",
+      "size": 64,
+      "flags": 136192
+    },
+    {
+      "ea": "0x247345584",
+      "name": "_OUTLINED_FUNCTION_3",
+      "size": 28,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2473455a0",
+      "name": "_OUTLINED_FUNCTION_4",
+      "size": 36,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2473455c4",
+      "name": "_daemon_version_pack",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473455c8",
+      "name": "_daemon_version_unpack",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473455d0",
+      "name": "_daemon_version_reply_pack",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473455e4",
+      "name": "_daemon_version_reply_unpack",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345614",
+      "name": "_daemon_async_pack",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247345628",
+      "name": "_daemon_async_unpack",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345658",
+      "name": "_daemon_async_reply_pack",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734566c",
+      "name": "_daemon_async_reply_unpack",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x24734569c",
+      "name": "_daemon_open_mountable_pack",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473456a0",
+      "name": "_daemon_open_mountable_unpack",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473456a8",
+      "name": "_daemon_open_mountable_reply_pack",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473456bc",
+      "name": "_daemon_open_mountable_reply_unpack",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473456ec",
+      "name": "_codex_interface_create_uninstall_request",
+      "size": 412,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345888",
+      "name": "sub_247345888",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734589c",
+      "name": "_collation_xpc_get_queue",
+      "size": 68,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473458e0",
+      "name": "___collation_xpc_get_queue_block_invoke",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345920",
+      "name": "_collation_xpc_get_connection",
+      "size": 196,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473459e4",
+      "name": "___collation_xpc_get_connection_block_invoke",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345a20",
+      "name": "_collation_xpc_endpoint_request",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345a84",
+      "name": "_collation_interface_request_endpoint_for_user",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345b18",
+      "name": "-[OS_cryptex_actor dealloc]",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345b60",
+      "name": "__cryptex_actor_alloc",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345bdc",
+      "name": "_cryptex_subsystem_create_actor",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247345be4",
+      "name": "+[UpgradeInterfaceLock getSharedInstance]",
+      "size": 68,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247345c28",
+      "name": "___41+[UpgradeInterfaceLock getSharedInstance]_block_invoke",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345c68",
+      "name": "-[UpgradeInterfaceLock init]",
+      "size": 188,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345d24",
+      "name": "-[UpgradeInterfaceLock dealloc]",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345d80",
+      "name": "-[UpgradeInterfaceLock isLocked]",
+      "size": 196,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345e44",
+      "name": "sub_247345E44",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247345e5c",
+      "name": "___32-[UpgradeInterfaceLock isLocked]_block_invoke",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345e90",
+      "name": "___copy_helper_block_e8_32s40r",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345ed8",
+      "name": "___destroy_helper_block_e8_32s40r",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247345f18",
+      "name": "-[UpgradeInterfaceLock releaseLock]",
+      "size": 324,
+      "flags": 5136
+    },
+    {
+      "ea": "0x24734605c",
+      "name": "sub_24734605C",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247346074",
+      "name": "___35-[UpgradeInterfaceLock releaseLock]_block_invoke",
+      "size": 220,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247346150",
+      "name": "___35-[UpgradeInterfaceLock releaseLock]_block_invoke_2",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247346158",
+      "name": "___copy_helper_block_e8_32s40s48r",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473461a8",
+      "name": "___destroy_helper_block_e8_32s40s48r",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473461f0",
+      "name": "-[UpgradeInterfaceLock acquireLock]",
+      "size": 264,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473462f8",
+      "name": "sub_2473462F8",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247346310",
+      "name": "___Block_byref_object_copy_",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247346320",
+      "name": "___Block_byref_object_dispose_",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247346328",
+      "name": "___35-[UpgradeInterfaceLock acquireLock]_block_invoke",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247346378",
+      "name": "-[UpgradeInterfaceLock _onNextLockRelease:]",
+      "size": 156,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247346414",
+      "name": "-[UpgradeInterfaceLock _createXPCRequest]",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247346460",
+      "name": "-[UpgradeInterfaceLock _isLockedOnQueue]",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473464b4",
+      "name": "-[UpgradeInterfaceLock _acquireLockOnQueue]",
+      "size": 2444,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247346e40",
+      "name": "sub_247346E40",
+      "size": 176,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247346ef0",
+      "name": "___43-[UpgradeInterfaceLock _acquireLockOnQueue]_block_invoke",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247346efc",
+      "name": "-[UpgradeInterfaceLock _handleXPCMessage:]",
+      "size": 616,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247347164",
+      "name": "sub_247347164",
+      "size": 60,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473471a0",
+      "name": "___42-[UpgradeInterfaceLock _handleXPCMessage:]_block_invoke",
+      "size": 296,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473472c8",
+      "name": "-[UpgradeInterfaceLock lockConn]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473472d0",
+      "name": "-[UpgradeInterfaceLock setLockConn:]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473472dc",
+      "name": "-[UpgradeInterfaceLock queue]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473472e4",
+      "name": "-[UpgradeInterfaceLock setQueue:]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473472f0",
+      "name": "-[UpgradeInterfaceLock log]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2473472f8",
+      "name": "-[UpgradeInterfaceLock setLog:]",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247347304",
+      "name": "-[UpgradeInterfaceLock onNextLockReleaseCallbacks]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734730c",
+      "name": "-[UpgradeInterfaceLock .cxx_destruct]",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247347368",
+      "name": "_cryptex_upgrade_interface_acquire_lock",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473473b0",
+      "name": "_mount_interface_create_mount_request",
+      "size": 1964,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247347b5c",
+      "name": "sub_247347B5C",
+      "size": 40,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247347b84",
+      "name": "__mnt_intf_log",
+      "size": 68,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247347bc8",
+      "name": "_mount_interface_create_request",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247347c38",
+      "name": "_mount_interface_create_unmount_request",
+      "size": 704,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247347ef8",
+      "name": "sub_247347EF8",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247347f10",
+      "name": "____mnt_intf_log_block_invoke",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247347f58",
+      "name": "_session_activate_pack",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247347f6c",
+      "name": "_session_activate_unpack",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247347f9c",
+      "name": "_session_activate_reply_pack",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247347fb0",
+      "name": "_session_activate_reply_unpack",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247347fe0",
+      "name": "_session_list_pack",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247347fe4",
+      "name": "_session_list_unpack",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247347fec",
+      "name": "_session_list_reply_pack",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247348000",
+      "name": "_session_list_reply_unpack",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247348030",
+      "name": "_cryptex_upgrade_interface_abort",
+      "size": 1480,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473485f8",
+      "name": "sub_2473485F8",
+      "size": 44,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247348624",
+      "name": "_cryptex_upgrade_abort_osl",
+      "size": 68,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247348668",
+      "name": "___cryptex_upgrade_interface_abort_xpc_get_connection_block_invoke",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473486a4",
+      "name": "___cryptex_upgrade_interface_abort_xpc_get_queue_block_invoke",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473486e8",
+      "name": "___cryptex_upgrade_abort_osl_block_invoke",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247348730",
+      "name": "__rpc_target_init_u64",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734873c",
+      "name": "__rpc_target_init_cstr",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x247348758",
+      "name": "__rpc_target_init_port",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247348790",
+      "name": "_rpc_init_remote",
+      "size": 372,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247348904",
+      "name": "_rpc_init_local",
+      "size": 2992,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2473494b4",
+      "name": "_rpc_cred_init_with_audit_token",
+      "size": 204,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349580",
+      "name": "_rpc_call",
+      "size": 736,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349860",
+      "name": "_object_proto_init",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349894",
+      "name": "_object_set_name",
+      "size": 380,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349a10",
+      "name": "_object_proto_destroy",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349a4c",
+      "name": "__rpc_pack_int64",
+      "size": 4,
+      "flags": 5312
+    },
+    {
+      "ea": "0x247349a50",
+      "name": "__rpc_pack_uint64",
+      "size": 4,
+      "flags": 5312
+    },
+    {
+      "ea": "0x247349a54",
+      "name": "__rpc_pack_string",
+      "size": 152,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349aec",
+      "name": "__rpc_pack_array",
+      "size": 4,
+      "flags": 5312
+    },
+    {
+      "ea": "0x247349af0",
+      "name": "__rpc_pack_endpoint",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349b38",
+      "name": "__rpc_pack_fd",
+      "size": 144,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349bc8",
+      "name": "__rpc_unpack_expected",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349c5c",
+      "name": "__rpc_unpack_int64",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349ccc",
+      "name": "__rpc_unpack_uint64",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349d3c",
+      "name": "__rpc_unpack_string",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349dac",
+      "name": "__rpc_unpack_string_copy",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349e08",
+      "name": "__rpc_unpack_array",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349e78",
+      "name": "__rpc_unpack_dictionary",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349ee8",
+      "name": "__rpc_unpack_endpoint",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349f68",
+      "name": "__rpc_unpack_fd",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x247349fd8",
+      "name": "__xpc_dictionary_key_with_type_exists",
+      "size": 332,
+      "flags": 5136
+    },
+    {
+      "ea": "0x24734a124",
+      "name": "__xpc_create_request",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x24734a180",
+      "name": "__xpc_dictionary_try_get_cferr",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x24734a1f0",
+      "name": "__xpc_dictionary_to_cferr",
+      "size": 1072,
+      "flags": 5136
+    },
+    {
+      "ea": "0x24734a620",
+      "name": "__xpc_request_get_argv",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x24734a680",
+      "name": "____xpc_log_block_invoke",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x24734a6b0",
+      "name": "_OUTLINED_FUNCTION_0",
+      "size": 20,
+      "flags": 136192
+    },
+    {
+      "ea": "0x24734a6c4",
+      "name": "_OUTLINED_FUNCTION_1",
+      "size": 32,
+      "flags": 136192
+    },
+    {
+      "ea": "0x24734a6e4",
+      "name": "___cryptex_xpc_create_connection_block_invoke.cold.1",
+      "size": 28,
+      "flags": 5137
+    },
+    {
+      "ea": "0x24734a700",
+      "name": "_cryptex_trampoline_upgrade_interface_wait.cold.1",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734a714",
+      "name": "_cryptex_upgrade_trampoline_osl.cold.1",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734a728",
+      "name": "__rsi_log.cold.1",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734a73c",
+      "name": "__CFCreateAssertImpl.cold.1",
+      "size": 96,
+      "flags": 5137
+    },
+    {
+      "ea": "0x24734a79c",
+      "name": "_collation_xpc_get_queue.cold.1",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734a7b0",
+      "name": "__cryptex_actor_alloc.cold.1",
+      "size": 228,
+      "flags": 5137
+    },
+    {
+      "ea": "0x24734a894",
+      "name": "+[UpgradeInterfaceLock getSharedInstance].cold.1",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734a8a8",
+      "name": "__mnt_intf_log.cold.1",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734a8bc",
+      "name": "_cryptex_upgrade_interface_abort.cold.1",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734a8d0",
+      "name": "_cryptex_upgrade_abort_osl.cold.1",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734a8e4",
+      "name": "_object_set_name.cold.1",
+      "size": 232,
+      "flags": 5137
+    },
+    {
+      "ea": "0x24734a9cc",
+      "name": "__xpc_dictionary_key_with_type_exists.cold.1",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x24734a9d0",
+      "name": "__xpc_dictionary_to_cferr.cold.1",
+      "size": 24,
+      "flags": 5136
+    }
+  ],
+  "strings": [
+    {
+      "ea": "0x24734ac48",
+      "text": "SUBSYSTEM",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ac52",
+      "text": "ENDPOINT_LOOKUP",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ac62",
+      "text": "ENDPOINT_INDEX",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ac71",
+      "text": "com.apple.security.cryptex.xpc",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ac90",
+      "text": "v16@?0^v8",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ac9a",
+      "text": "unexpected failure: Messages should not be sent to this connection.",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734acde",
+      "text": "com.apple.security.libcryptex.interface",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ad06",
+      "text": "actor",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ad0c",
+      "text": "[anonymous]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ad18",
+      "text": "com.apple.security.cryptexd",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ad34",
+      "text": "v8@?0",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ad3a",
+      "text": "com.apple.security.libcryptex.interface.upgrade_trampoline",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ad75",
+      "text": "UPGRADE_WAIT",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ad82",
+      "text": "cryptex_name",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ad8f",
+      "text": "com.apple.libcryptex",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ada4",
+      "text": "upgrade_trampoline",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734adb7",
+      "text": "nonce-domain",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734adc4",
+      "text": "get-nonce",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734adce",
+      "text": "nonce-domain-handle",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ade2",
+      "text": "roll-nonce",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734aded",
+      "text": "remote_service_create_install_request",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734ae13",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/interface/remote_service_interface.m",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734aece",
+      "text": "com.apple.security.cryptex",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734aee9",
+      "text": "image-type-index",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734aefa",
+      "text": "auth",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734aeff",
+      "text": "persistence",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734af0b",
+      "text": "nonce-persistence",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734af1d",
+      "text": "cryptex1-properties",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734af31",
+      "text": "enable-install-events",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734af47",
+      "text": "v12@?0i8",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734af50",
+      "text": "info",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734af55",
+      "text": "volumehash",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734af60",
+      "text": "image",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734af66",
+      "text": "trustcache",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734af71",
+      "text": "im4m",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734af76",
+      "text": "install",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734af7e",
+      "text": "remote-cryptex-identifier",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734af98",
+      "text": "remote-cryptex-version",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734afaf",
+      "text": "uninstall",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734afb9",
+      "text": "copy-installed",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734afc8",
+      "text": "read-personalization-id",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734afe0",
+      "text": "client-version",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734afef",
+      "text": "remote_service_interface",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b008",
+      "text": "com.apple.security.cryptex.posix",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b029",
+      "text": "known-constant allocation",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b043",
+      "text": "FileName",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b04c",
+      "text": "LineNumber",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b057",
+      "text": "FunctionName",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b064",
+      "text": "CFMutableDictionary",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b078",
+      "text": "B16@?0^{__CFError=}8",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b08d",
+      "text": "CODEX",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b093",
+      "text": "CODEX_SUB_REQ",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b0a1",
+      "text": "UNINSTALL",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b0ab",
+      "text": "codex_interface_create_uninstall_request",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b0d4",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/interface/codex_xpc_interface.m",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b18a",
+      "text": "UNINSTALL:CXID",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b199",
+      "text": "UNINSTALL:CXVER",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b1a9",
+      "text": "UNINSTALL:FORCE_UNMOUNT",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b1c1",
+      "text": "COLLATION",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b1cb",
+      "text": "user",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b1d0",
+      "text": "endpoint",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b1d9",
+      "text": "cryptex_actor",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b1e7",
+      "text": "com.apple.security.libcryptex.interface.daemon",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b216",
+      "text": "com.apple.security.libcryptex.interface.codex",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b244",
+      "text": "com.apple.security.libcryptex.interface.session",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b274",
+      "text": "com.apple.security.libcryptex.interface.upgrade_lock",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b2a9",
+      "text": "upgrade_lock",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b2b6",
+      "text": "UPGRADE_LOCK",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b2c3",
+      "text": "-[UpgradeInterfaceLock _acquireLockOnQueue]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b2ef",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/interface/upgrade_lock_interface.m",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b3a8",
+      "text": "upgrade_lock_error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b3bb",
+      "text": "v16@?0@\"NSObject<OS_xpc_object>\"8",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b3dd",
+      "text": "\u0004",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b3df",
+      "text": "mount_interface_create_mount_request",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b404",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/interface/mount_interface.m",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b4b6",
+      "text": "REQ:MOUNT",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b4c0",
+      "text": "MOUNT:VOLHASH_FD",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b4d1",
+      "text": "MOUNT:DMG_FD",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b4de",
+      "text": "MOUNT:LTRS_FD",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b4ec",
+      "text": "MOUNT:INFO_FD",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b4fa",
+      "text": "MOUNT:IM4M_FD",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b508",
+      "text": "MOUNT:CX1_PROPERTIES",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b51d",
+      "text": "MOUNT:DMG_ASSET_IDX_INT64",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b537",
+      "text": "mount_interface_create_unmount_request",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b55e",
+      "text": "REQ:UNMOUNT",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b56a",
+      "text": "UNMOUNT:INFO_FD",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b57a",
+      "text": "UNMOUNT:FORCE",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b588",
+      "text": "mount_interface",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b598",
+      "text": "MOUNT",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b59e",
+      "text": "MOUNT_SUB_REQ",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b5ac",
+      "text": "cryptex_upgrade_interface_abort",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b5cc",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/interface/upgrade_abort_interface.m",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b686",
+      "text": "com.apple.security.libcryptex.interface.upgrade_abort",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b6bc",
+      "text": "UPGRADE_ABORT",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b6ca",
+      "text": "761.40.23",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b6d4",
+      "text": "Cryptex IPC Interface Version 2.0.0: Sat Sep 12 00:30:15 PDT 2026; root:libcryptex-761.40.23~235/libcryptex_interface/RELEASE_ARM64E",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b759",
+      "text": "RELEASE",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b761",
+      "text": "@(#)VERSION:Cryptex IPC Interface Version 2.0.0: Sat Sep 12 00:30:15 PDT 2026; root:libcryptex-761.40.23~235/libcryptex_interface/RELEASE_ARM64E",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b7f2",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Binaries/libcryptex/install/Symbols/libcryptex_interface",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b8ae",
+      "text": "argv",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b8b3",
+      "text": "subsystem",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b8bd",
+      "text": "routine",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b8c5",
+      "text": "target-type",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b8d1",
+      "text": "target",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b8d8",
+      "text": "rpc_init_local",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b8e7",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/util/rpc.c",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b988",
+      "text": "cferror",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b990",
+      "text": "rpc_call",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b999",
+      "text": "cferr_userinfo",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b9a8",
+      "text": "cferr_domain",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b9b5",
+      "text": "cferr_code",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b9c0",
+      "text": "underlying_cferr",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b9d1",
+      "text": "xpc",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x24734b9d5",
+      "text": "Received error: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734b9e8",
+      "text": "%{public}s: ipc routine succeeded",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734ba0a",
+      "text": "%{public}s: pipe went dead: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734ba37",
+      "text": "%{public}s: ipc failure: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734ba61",
+      "text": "%{public}s: ipc [no error]",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734ba7c",
+      "text": "%{public}s: ipc: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734ba90",
+      "text": "%{public}s: looked up port: %#x",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bab0",
+      "text": "%{public}s: bootstrap_look_up: %{mach.errno}x",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bade",
+      "text": "No reply from cryptexd while waiting on upgrade.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bb21",
+      "text": "Error from cryptexd while waiting on upgrade: %{public}s: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bb6c",
+      "text": "image fd is invalid",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bb80",
+      "text": "trustcache fd is invalid",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bb99",
+      "text": "im4m fd is invalid",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bbac",
+      "text": "c411 transfer [no error]",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bbc5",
+      "text": "c411 transfer: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bbe5",
+      "text": "volume hash transfer [no error]",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bc05",
+      "text": "volume hash transfer: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bc2c",
+      "text": "image transfer [no error]",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bc46",
+      "text": "image transfer: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bc67",
+      "text": "trustcache transfer [no error]",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bc86",
+      "text": "trustcache transfer: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bcac",
+      "text": "im4m transfer [no error]",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bcc5",
+      "text": "im4m transfer: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bce5",
+      "text": "failed to get argv: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bd0a",
+      "text": "cf create failed: obj = %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bd25",
+      "text": "allocation failed: obj = %s, size = %lu, error = %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bd59",
+      "text": "Invalid cryptex identifier.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bd75",
+      "text": "Upgrade interface is already locked by the current process.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bdb1",
+      "text": "Failed to get XPC connection.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bdcf",
+      "text": "Failed to create XPC request.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bded",
+      "text": "No reply to request to lock upgrade interface.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734be1c",
+      "text": "XPC error while locking upgrade interface: %{public}s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734be52",
+      "text": "Error unpacking upgrade lock response: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734be8a",
+      "text": "Failed to lock upgrade interface",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734beab",
+      "text": "Invalid input.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734becc",
+      "text": "XPC error while upgrade interface was locked: %{public}s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bf05",
+      "text": "Unexpected message: %{public}s: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bf36",
+      "text": "Invalid image.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bf45",
+      "text": "Invalid trust cache.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bf5a",
+      "text": "Invalid info plist.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bf6e",
+      "text": "Invalid im4m.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bf7c",
+      "text": "Invalid Cryptex1 properties.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bf99",
+      "text": "Failed to allocate dictionary.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bfb8",
+      "text": "No reply from cryptexd while aborting upgrade.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734bfe7",
+      "text": "Error from cryptexd while aborting upgrade: %{public}s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c01e",
+      "text": "Invalid type for rpc argv %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c049",
+      "text": "Invalid type for rpc subsystem %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c079",
+      "text": "Invalid type for rpc routine %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c0a7",
+      "text": "Invalid type for rpc target %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c0d4",
+      "text": "Invalid value for rpc target %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c102",
+      "text": "Error from daemon",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c114",
+      "text": "sending request: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c128",
+      "text": "xpc_pipe_routine %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c14a",
+      "text": "got reply: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c158",
+      "text": "routine succeeded",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c16a",
+      "text": "%{public}s: changing name: %s -> %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c18e",
+      "text": "%{public}s: setting name: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c1ab",
+      "text": "key %s doesn't exist",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c1c0",
+      "text": "key %s isn't of type %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c1d8",
+      "text": "CFError XPC dictionary is missing user info.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c217",
+      "text": "Failed to create string.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c242",
+      "text": "Failed to unpack underlying error.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c277",
+      "text": "Failed to convert CF to XPC.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c2a6",
+      "text": "Failed to create mutable dictionary.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x24734c2dd",
+      "text": "Failed to create CFError.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    }
+  ],
+  "patched_bytes_primary": []
+}

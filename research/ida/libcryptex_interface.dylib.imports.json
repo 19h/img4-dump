@@ -1,0 +1,888 @@
+{
+  "import_count": 147,
+  "imports": [
+    {
+      "address": "0x34b0f4790",
+      "library": "/usr/lib/libbsm.0.dylib",
+      "name": "_audit_token_to_asid",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4798",
+      "library": "/usr/lib/libbsm.0.dylib",
+      "name": "_audit_token_to_auid",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f47a0",
+      "library": "/usr/lib/libbsm.0.dylib",
+      "name": "_audit_token_to_egid",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f47a8",
+      "library": "/usr/lib/libbsm.0.dylib",
+      "name": "_audit_token_to_euid",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f47b0",
+      "library": "/usr/lib/libbsm.0.dylib",
+      "name": "_audit_token_to_pid",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f47b8",
+      "library": "/usr/lib/libbsm.0.dylib",
+      "name": "_audit_token_to_pidversion",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f47c0",
+      "library": "/usr/lib/libbsm.0.dylib",
+      "name": "_audit_token_to_rgid",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f47c8",
+      "library": "/usr/lib/libbsm.0.dylib",
+      "name": "_audit_token_to_ruid",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f47d0",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFDictionaryCreateMutable",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f47d8",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFDictionaryCreateMutableCopy",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f47e0",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFDictionaryGetValue",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f47e8",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFDictionarySetValue",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f47f0",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFEqual",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f47f8",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFErrorCopyUserInfo",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4800",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFErrorCreate",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4808",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFErrorGetCode",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4810",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFErrorGetDomain",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4818",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFErrorGetTypeID",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4820",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFGetTypeID",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4828",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFNumberCreate",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4830",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFRelease",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4838",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFRetain",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4840",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFStringCreateWithCString",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4848",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_OBJC_CLASS_$_NSMutableArray",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4850",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "__CFXPCCreateCFObjectFromXPCObject",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4858",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "___CFConstantStringClassReference",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4860",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_kCFErrorLocalizedDescriptionKey",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4868",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_kCFErrorUnderlyingErrorKey",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4870",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_kCFTypeDictionaryKeyCallBacks",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4878",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_kCFTypeDictionaryValueCallBacks",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4880",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_OBJC_CLASS_$_NSObject",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4888",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_OBJC_METACLASS_$_NSObject",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4890",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "___objc_personality_v0",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4898",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "__objc_empty_cache",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f48a0",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_alloc_init",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f48a8",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_autorelease",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f48b0",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_autoreleaseReturnValue",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f48b8",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_claimAutoreleasedReturnValue",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f48c0",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_enumerationMutation",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f48c8",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_msgSend",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f48d0",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_msgSendSuper2",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f48d8",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_opt_class",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f48e0",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_release",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f48e8",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_retain",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f48f0",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_retainAutorelease",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f48f8",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_retainAutoreleaseReturnValue",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4900",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_retainBlock",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4908",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_storeStrong",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4910",
+      "library": "/usr/lib/libobjc.A.dylib",
+      "name": "_objc_terminate",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4918",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_OBJC_CLASS_$_OS_object",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4920",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_OBJC_METACLASS_$_OS_object",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4928",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__Block_object_assign",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4930",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__Block_object_dispose",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4938",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__NSConcreteGlobalBlock",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4940",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__NSConcreteStackBlock",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4948",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__Unwind_Resume",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4950",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "___error",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4958",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "___os_temporary_resource_shortage",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4960",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "___stack_chk_fail",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4968",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "___stack_chk_guard",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4970",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__dispatch_is_multithreaded",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4978",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__dispatch_queue_attr_concurrent",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4980",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__os_crash",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4988",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__os_crash_msg",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4990",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__os_log_default",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4998",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__os_log_impl",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f49a0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__os_log_send_and_compose_impl",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f49a8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__os_object_alloc",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f49b0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__xpc_type_array",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f49b8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__xpc_type_dictionary",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f49c0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__xpc_type_endpoint",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f49c8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__xpc_type_error",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f49d0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__xpc_type_fd",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f49d8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__xpc_type_file_transfer",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f49e0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__xpc_type_int64",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f49e8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__xpc_type_mach_send",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f49f0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__xpc_type_null",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f49f8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__xpc_type_string",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a00",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__xpc_type_uint64",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a08",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_bootstrap_look_up2",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a10",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_bootstrap_port",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a18",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_assert_queue$V2",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a20",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_assert_queue_barrier",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a28",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_barrier_async",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a30",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_barrier_sync",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a38",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_group_create",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a40",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_group_enter",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a48",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_group_leave",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a50",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_group_wait",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a58",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_once",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a60",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_queue_create",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a68",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_sync",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a70",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_time",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a78",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_free",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a80",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_mach_right_send_retain",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a88",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_os_log_create",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a90",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_os_log_type_enabled",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4a98",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_os_release",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4aa0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_os_retain",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4aa8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_os_variant_allows_internal_security_policies",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4ab0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_strdup",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4ab8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_strerror",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4ac0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_strlcpy",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4ac8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_strlen",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4ad0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_strrchr",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4ad8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_array_create",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4ae0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_array_get_count",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4ae8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_array_get_value",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4af0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_array_set_int64",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4af8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_array_set_string",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b00",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_array_set_uint64",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b08",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_array_set_value",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b10",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_connection_activate",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b18",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_connection_cancel",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b20",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_connection_create_mach_service",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b28",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_connection_send_message_with_reply_sync",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b30",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_connection_set_event_handler",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b38",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_copy_description",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b40",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_create",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b48",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_create_empty",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b50",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_get_audit_token",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b58",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_get_dictionary",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b60",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_get_int64",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b68",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_get_string",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b70",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_get_uint64",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b78",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_get_value",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b80",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_set_bool",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b88",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_set_fd",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b90",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_set_int64",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4b98",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_set_mach_send",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4ba0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_set_string",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4ba8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_set_uint64",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4bb0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_dictionary_set_value",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4bb8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_fd_create",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4bc0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_fd_dup",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4bc8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_file_transfer_create_with_fd",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4bd0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_get_type",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4bd8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_int64_get_value",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4be0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_mach_send_copy_right",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4be8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_null_create",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4bf0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_pipe_create_from_port",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4bf8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_pipe_routine",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4c00",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_retain",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4c08",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_string_get_length",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4c10",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_string_get_string_ptr",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4c18",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_type_get_name",
+      "ordinal": 0
+    },
+    {
+      "address": "0x34b0f4c20",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_xpc_uint64_get_value",
+      "ordinal": 0
+    }
+  ],
+  "database_target": "89c7194f06b9"
+}

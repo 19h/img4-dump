@@ -1,0 +1,470 @@
+{
+  "count": 6,
+  "results": [
+    {
+      "address": "0x2438a743c",
+      "end_address": "0x2438a7464",
+      "input": "_property_get_from_identifier",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v1",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "char *"
+        }
+      ],
+      "name": "_property_get_from_identifier",
+      "prototype": "char *__fastcall property_get_from_identifier(__int64 a1)",
+      "pseudocode": "char *__fastcall property_get_from_identifier(__int64 a1)\n{\n  unsigned __int64 v1; // x8\n\n  v1 = 8 * a1 + 0x2691B8970LL;\n  if ( v1 >= (unsigned __int64)&_property_stng || v1 < (unsigned __int64)property_get_from_identifier.p_map )\n    __break(0x5519u);\n  return property_get_from_identifier.p_map[a1];\n}\n"
+    },
+    {
+      "address": "0x2438b7cdc",
+      "end_address": "0x2438b7d84",
+      "input": "_property_find_from_fourcc",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_DWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v3",
+          "type": "__int64 (__fastcall *)()"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v7",
+          "type": "_QWORD[3]"
+        }
+      ],
+      "name": "_property_find_from_fourcc",
+      "prototype": "unsigned __int64 __fastcall property_find_from_fourcc(_DWORD *a1, int a2)",
+      "pseudocode": "unsigned __int64 __fastcall property_find_from_fourcc(_DWORD *a1, int a2)\n{\n  __int64 (__fastcall *v3)(); // x16\n  __int64 v4; // x0\n  unsigned __int64 v5; // x20\n  _QWORD v7[3]; // [xsp+8h] [xbp-28h] BYREF\n\n  v7[0] = 0;\n  v7[1] = 0;\n  v7[2] = 0xFFFFFFFFFFFFFFFFLL;\n  v3 = _property_filter_manifest;\n  if ( a2 != 0 )\n  {\n    if ( a2 != 1 )\n      goto LABEL_5;\n    v3 = _property_filter_object;\n  }\n  v7[0] = v3;\nLABEL_5:\n  while ( 1 )\n  {\n    v4 = property_iterator_next(v7);\n    v5 = v4;\n    if ( v4 == 0 )\n      break;\n    if ( ((unsigned int)_property_filter_constraint(v4) == 0 || (unsigned int)_property_filter_anti_replay(v5) == 0)\n      && *(_DWORD *)(v5 + 0x18) == *a1 )\n    {\n      if ( v5 >= v5 + 0x68 )\n        __break(0x5519u);\n      return v5;\n    }\n  }\n  return v5;\n}\n"
+    },
+    {
+      "address": "0x2438b8dd0",
+      "end_address": "0x2438b8ebc",
+      "input": "_property_print_value",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_property_print_value",
+      "prototype": "__int64 __fastcall property_print_value(__int64 a1, unsigned __int64 a2, __int64 a3)",
+      "pseudocode": "__int64 __fastcall property_print_value(__int64 a1, unsigned __int64 a2, __int64 a3)\n{\n  __int64 v4; // x8\n  const char *v5; // x2\n\n  v4 = **(_QWORD **)(a1 + 0x28);\n  if ( v4 <= 1 )\n  {\n    if ( (unsigned __int64)v4 <= 1 )\n    {\n      v5 = \"0x%x\";\n      goto LABEL_11;\n    }\nLABEL_14:\n    __panic_npx(\"panic: unreachable case: %s = 0x%llx\", \"p->p_type->pt_switchable\", v4);\n  }\n  switch ( v4 )\n  {\n    case 2LL:\n      v5 = \"0x%llx\";\n      goto LABEL_11;\n    case 3LL:\n      if ( a2 >= a2 + 0x50 )\n        goto LABEL_15;\n      digest_print_cstr(a2, a3);\nLABEL_12:\n      if ( (property_print_value.cold.1(a3) & 1) != 0 )\nLABEL_15:\n        __break(0x5519u);\n      return a3;\n    case 4LL:\n      v5 = \"%s\";\nLABEL_11:\n      sub_2480FBB30(a3, 0x80, v5);\n      goto LABEL_12;\n    default:\n      goto LABEL_14;\n  }\n}\n"
+    },
+    {
+      "address": "0x2438d13d0",
+      "end_address": "0x2438d14b0",
+      "input": "_Img4DecodeGetPayloadVersionPropertyString",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v9",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v10",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v11",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v12",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v13",
+          "type": "_QWORD[6]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v15",
+          "type": "_QWORD[2]"
+        }
+      ],
+      "name": "_Img4DecodeGetPayloadVersionPropertyString",
+      "prototype": "void __fastcall Img4DecodeGetPayloadVersionPropertyString(__int64 a1, __int64 a2, _QWORD *a3, _QWORD *a4)",
+      "pseudocode": "void __fastcall Img4DecodeGetPayloadVersionPropertyString(__int64 a1, __int64 a2, _QWORD *a3, _QWORD *a4)\n{\n  int v7; // w0\n  __int64 v8; // x8\n  __int128 v9; // [xsp+0h] [xbp-C0h] BYREF\n  __int128 v10; // [xsp+10h] [xbp-B0h]\n  __int128 v11; // [xsp+20h] [xbp-A0h]\n  __int128 v12; // [xsp+30h] [xbp-90h] BYREF\n  _QWORD v13[6]; // [xsp+40h] [xbp-80h] BYREF\n  __int64 v14; // [xsp+78h] [xbp-48h] BYREF\n  _QWORD v15[2]; // [xsp+80h] [xbp-40h] BYREF\n\n  if ( a3 != nullptr && a4 != nullptr )\n  {\n    v14 = 0;\n    v15[0] = 0;\n    v15[1] = 0;\n    memset(v13, 0, sizeof(v13));\n    v12 = 0u;\n    v9 = 0u;\n    v10 = 0u;\n    v11 = 0u;\n    if ( (unsigned int)DERDecodeItem(a1, &v14) != 0\n      || (unsigned int)DERImg4DecodeProperty(v15, v14, (__int64)v13) != 0\n      || (DERImg4DecodeContentFindItemWithTag((__int64)&v13[3], a2, &v12), v7 != 0)\n      || (unsigned int)DERImg4DecodeProperty(&v12, a2, (__int64)&v9) != 0 )\n    {\n      v8 = 0;\n      *a3 = 0;\n    }\n    else\n    {\n      v8 = v11;\n      *a3 = *((_QWORD *)&v10 + 1);\n    }\n    *a4 = v8;\n  }\n}\n"
+    },
+    {
+      "address": "0x2438d0960",
+      "end_address": "0x2438d0a24",
+      "input": "_DERImg4DecodePropertyWithItem",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v17",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v18",
+          "type": "_BYTE[32]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v21",
+          "type": "__int64"
+        }
+      ],
+      "name": "_DERImg4DecodePropertyWithItem",
+      "prototype": "__int64 __fastcall DERImg4DecodePropertyWithItem(__int64 a1, __int64 a2, __int64 a3, __int64 a4)",
+      "pseudocode": "__int64 __fastcall DERImg4DecodePropertyWithItem(__int64 a1, __int64 a2, __int64 a3, __int64 a4)\n{\n  __int64 result; // x0\n  __int64 v8; // x1\n  __int64 v9; // x2\n  __int64 v10; // x3\n  __int64 v11; // x4\n  __int64 v12; // x5\n  __int64 v13; // x0\n  __int64 v14; // x1\n  __int64 v15; // x2\n  __int64 v16; // x3\n  unsigned int v17; // [xsp+Ch] [xbp-64h] BYREF\n  _BYTE v18[32]; // [xsp+10h] [xbp-60h] BYREF\n  __int64 v21; // [xsp+48h] [xbp-28h]\n\n  v21 = *MEMORY[0x268186AA8];\n  v17 = 0;\n  qmemcpy(v18, ymmword_2438E6B60, sizeof(v18));\n  result = DERParseSequenceToObject(a1, 2, v18, a4, 0x30, 0);\n  if ( (_DWORD)result == 0 )\n  {\n    result = DERParseInteger(a4, &v17);\n    if ( (_DWORD)result == 0 )\n    {\n      if ( (v17 | 0xE000000000000000LL) == a2 )\n      {\n        result = 0;\n        *(_QWORD *)(a4 + 0x10) = a2 | 0xE000000000000000LL;\n        *(_QWORD *)(a4 + 0x28) = a3;\n      }\n      else\n      {\n        result = 2;\n      }\n    }\n  }\n  if ( *MEMORY[0x268186AA8] != v21 )\n  {\n    v13 = sub_2480E56B0(result, v8, v9, v10, v11, v12);\n    return DERImg4DecodeFindProperty(v13, v14, v15, v16);\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2438d0a24",
+      "end_address": "0x2438d0a80",
+      "input": "_DERImg4DecodeFindProperty",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v8",
+          "type": "_QWORD[2]"
+        }
+      ],
+      "name": "_DERImg4DecodeFindProperty",
+      "prototype": "__int64 __fastcall DERImg4DecodeFindProperty(__int64 a1, __int64 a2, __int64 a3, __int64 a4)",
+      "pseudocode": "__int64 __fastcall DERImg4DecodeFindProperty(__int64 a1, __int64 a2, __int64 a3, __int64 a4)\n{\n  __int64 result; // x0\n  _QWORD v8[2]; // [xsp+0h] [xbp-30h] BYREF\n\n  v8[0] = 0;\n  v8[1] = 0;\n  result = DERDecodeSeqContentInit(a1, v8);\n  if ( (_DWORD)result == 0 )\n    return DERImg4DecodeFindPropertyInSequence(v8, a2, a3, a4);\n  return result;\n}\n"
+    }
+  ],
+  "database_target": "54bf8b211d08",
+  "requested": [
+    "_property_get_from_identifier",
+    "_property_find_from_fourcc",
+    "_property_print_value",
+    "_Img4DecodeGetPayloadVersionPropertyString",
+    "_DERImg4DecodePropertyWithItem",
+    "_DERImg4DecodeFindProperty"
+  ]
+}

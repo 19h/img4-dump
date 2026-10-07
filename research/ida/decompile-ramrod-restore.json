@@ -1,0 +1,166 @@
+{
+  "count": 4,
+  "results": [
+    {
+      "error": "Invalid address: _ramrod_load_int_from_im4r_tag_in_data",
+      "input": "_ramrod_load_int_from_im4r_tag_in_data"
+    },
+    {
+      "error": "Invalid address: _ramrod_load_ap_nonce_slot_from_data",
+      "input": "_ramrod_load_ap_nonce_slot_from_data"
+    },
+    {
+      "error": "Invalid address: _ramrod_load_sep_nonce_slot_from_data",
+      "input": "_ramrod_load_sep_nonce_slot_from_data"
+    },
+    {
+      "address": "0x2cd96ccb8",
+      "end_address": "0x2cd96ce08",
+      "input": "_ramrod_ticket_copy_manifest_signature_certificate",
+      "local_variables": [
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v0",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v7",
+          "type": "_QWORD[32]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v8",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v9",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v10",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v11",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v12",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v13",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v14",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v15",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v16",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v17",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v18",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v19",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v21",
+          "type": "__int64"
+        }
+      ],
+      "name": "_ramrod_ticket_copy_manifest_signature_certificate",
+      "prototype": "__int64 ramrod_ticket_copy_manifest_signature_certificate()",
+      "pseudocode": "__int64 ramrod_ticket_copy_manifest_signature_certificate()\n{\n  __int64 v0; // x19\n  __int64 v1; // x0\n  __int64 result; // x0\n  __int64 v3; // x19\n  __int64 v4; // x20\n  __int64 v5; // x0\n  __int64 v6; // x0\n  _QWORD v7[32]; // [xsp+10h] [xbp-1F0h] BYREF\n  __int128 v8; // [xsp+110h] [xbp-F0h]\n  __int128 v9; // [xsp+120h] [xbp-E0h]\n  __int64 v21; // [xsp+1D8h] [xbp-28h]\n\n  v21 = *MEMORY[0x2D80A64A8];\n  if ( qword_2E2BA1A60 == 0 )\n  {\n    ramrod_log_msg(\"%s: no ticket\\n\", 0x2CDA45008LL);\n    goto LABEL_5;\n  }\n  v8 = 0u;\n  v9 = 0u;\n  memset(v7, 0, sizeof(v7));\n  v0 = sub_2D0068890(qword_2E2BA1A60);\n  v1 = sub_2D007C0F0(qword_2E2BA1A60);\n  if ( (unsigned int)sub_2D007CAF0(v0, v1, v7) != 0 )\n  {\n    ramrod_log_msg(\"%s: failed to parse AP ticket as Img4 manifest\\n\", 0x2CDA45008LL);\nLABEL_5:\n    result = 0;\n    goto LABEL_6;\n  }\n  v3 = *((_QWORD *)&v8 + 1) + v9;\n  v4 = sub_2D0068890(qword_2E2BA1A60);\n  v5 = sub_2D007C0F0(qword_2E2BA1A60);\n  result = sub_2D007D170(*MEMORY[0x2D802CCA0], v3, v4 + v5 - v3);\n  if ( result == 0 )\n  {\n    ramrod_log_msg(\"%s: failed to create sigCertData\\n\", 0x2CDA45008LL);\n    goto LABEL_5;\n  }\nLABEL_6:\n  if ( *MEMORY[0x2D80A64A8] != v21 )\n  {\n    v6 = sub_2D0058F60(result);\n    return create_directory_recursively(v6);\n  }\n  return result;\n}\n"
+    }
+  ],
+  "database_target": "79ce35529ddc",
+  "requested": [
+    "_ramrod_load_int_from_im4r_tag_in_data",
+    "_ramrod_load_ap_nonce_slot_from_data",
+    "_ramrod_load_sep_nonce_slot_from_data",
+    "_ramrod_ticket_copy_manifest_signature_certificate"
+  ]
+}

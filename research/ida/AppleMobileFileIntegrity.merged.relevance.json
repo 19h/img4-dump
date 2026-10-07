@@ -1,0 +1,350 @@
+{
+  "binary": "AppleMobileFileIntegrity.merged",
+  "sha256": "f9bbe64ac18009c4a99be8e96865898b39ce5088183526f25d9dcccb9080084e",
+  "criteria": "img4|im4[pmrc]|image4|(?:^|_)DER|asn1|manifest|kbag|payload|payp|nonce|lzss|lzfse|compress|personaliz|ticket|digest|fourcc|fingerprint|trustcache",
+  "caller_depth": 2,
+  "selected": [
+    {
+      "function": {
+        "ea": "0x21a93c240",
+        "name": "_amfi_interface_cdhash_in_trustcache",
+        "size": 240,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93c2d4",
+          "string_ea": "0x21a9466dc",
+          "text": "AMFI"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93c330",
+        "name": "_amfi_interface_query_bootarg_state",
+        "size": 108,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93c354",
+          "string_ea": "0x21a9466dc",
+          "text": "AMFI"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93c39c",
+        "name": "_amfi_interface_get_local_signing_private_key",
+        "size": 208,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93c404",
+          "string_ea": "0x21a9466dc",
+          "text": "AMFI"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93c46c",
+        "name": "_amfi_interface_get_local_signing_public_key",
+        "size": 192,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93c4c4",
+          "string_ea": "0x21a9466dc",
+          "text": "AMFI"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93c52c",
+        "name": "_amfi_interface_set_local_signing_public_key",
+        "size": 196,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93c5a8",
+          "string_ea": "0x21a9466dc",
+          "text": "AMFI"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93c5f8",
+        "name": "_amfi_interface_authorize_local_signing_with_length",
+        "size": 184,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93c670",
+          "string_ea": "0x21a9466dc",
+          "text": "AMFI"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93c750",
+        "name": "_amfi_launch_constraint_set_spawnattr",
+        "size": 52,
+        "flags": 5120
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93c770",
+          "string_ea": "0x21a9466dc",
+          "text": "AMFI"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93c784",
+        "name": "_amfi_launch_constraint_matches_process",
+        "size": 324,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93c868",
+          "string_ea": "0x21a9466dc",
+          "text": "AMFI"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93c8c8",
+        "name": "_amfi_restricted_execution_mode_enable",
+        "size": 20,
+        "flags": 5121
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93c8c8",
+          "string_ea": "0x21a9466dc",
+          "text": "AMFI"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93c8dc",
+        "name": "_amfi_restricted_execution_mode_status",
+        "size": 48,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93c8e8",
+          "string_ea": "0x21a9466dc",
+          "text": "AMFI"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93cce4",
+        "name": "___LWCRTypeVerificationBackend_verifyLWCR_block_invoke",
+        "size": 444,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93cd14",
+          "string_ea": "0x21a946b54",
+          "text": "vers"
+        },
+        {
+          "ref_ea": "0x21a93cd28",
+          "string_ea": "0x21a946b59",
+          "text": "comp"
+        },
+        {
+          "ref_ea": "0x21a93cd3c",
+          "string_ea": "0x21a946b5e",
+          "text": "ccat"
+        },
+        {
+          "ref_ea": "0x21a93cdac",
+          "string_ea": "0x21a946b5e",
+          "text": "ccat"
+        },
+        {
+          "ref_ea": "0x21a93cd50",
+          "string_ea": "0x21a946b63",
+          "text": "reqs"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93cb4c",
+        "name": "_LWCRTypeVerificationBackend_verifyLWCR",
+        "size": 408,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93cc7c",
+          "string_ea": "0x21a946b5e",
+          "text": "ccat"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a936e4c",
+        "name": "-[AMFIPathValidator_macos initWithCode:withFlags:hasRestrictedEntitlements:hasOnlySoftRestrictedEntitlements:]",
+        "size": 360,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a936f88",
+          "callee": "0x21a93c330"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93a170",
+        "name": "-[AMFIPathValidator_ios initWithURL:withFileOffsetAsNumber:withFlags:]",
+        "size": 232,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93a228",
+          "callee": "0x21a93c330"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93adbc",
+        "name": "_AMFICopySwiftPlaygroundsSigningKey",
+        "size": 1704,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93aed8",
+          "callee": "0x21a93c39c"
+        },
+        {
+          "ref_ea": "0x21a93b1d0",
+          "callee": "0x21a93c52c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93c5f0",
+        "name": "_amfi_interface_authorize_local_signing",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93c5f4",
+          "callee": "0x21a93c5f8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a93fd6c",
+        "name": "_LWCRTypeVerificationNSDictionary",
+        "size": 276,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a93fe34",
+          "callee": "0x21a93cb4c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x21a9408a0",
+        "name": "_LWCRTypeVerificationXPCDictionary",
+        "size": 260,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x21a94096c",
+          "callee": "0x21a93cb4c"
+        }
+      ]
+    }
+  ]
+}

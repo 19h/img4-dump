@@ -1,0 +1,30 @@
+{
+  "table": {
+    "binary": "libImage4_V2.dylib",
+    "name": "DERIM4CItemSpecs",
+    "ea": "0x2cade1698",
+    "bytes": "000000000000000050545243000000e0000000000000000010000000000000004b425550000000e00000000000000000",
+    "entries": [
+      {
+        "offset": 0,
+        "tag": "0xe000000043525450",
+        "flags": 0
+      },
+      {
+        "offset": 16,
+        "tag": "0xe00000005055424b",
+        "flags": 0
+      }
+    ]
+  },
+  "references": [
+    {
+      "ea": "0x2caddae70",
+      "asm": "ADRL            X2, _DERIM4CItemSpecs"
+    },
+    {
+      "ea": "0x2caddaeb0",
+      "asm": "ADRL            X2, _DERCRTPSequenceItemSpecs"
+    }
+  ]
+}

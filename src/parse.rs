@@ -11,6 +11,7 @@ pub enum ContainerKind {
     Img4,
     Im4pStandalone,
     Im4mStandalone,
+    Im4rStandalone,
 }
 
 /// Fully-owned parse result (no lifetime ties to local parser temps)
@@ -49,7 +50,7 @@ impl From<&KbagEntry> for KbagEntryInfo {
 /// Human/JSON-facing compression descriptor.
 #[derive(Debug, Clone, Serialize)]
 pub struct CompressionInfo {
-    pub algorithm: String,                 // "lzss" | "lzfse" | "unknown(<id>)"
+    pub algorithm: String,                 // "lzfse" | "unknown(<id>)"
     pub method_id: u64,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub uncompressed_size: Option<u64>,
@@ -58,7 +59,6 @@ pub struct CompressionInfo {
 impl From<&Im4pCompression> for CompressionInfo {
     fn from(c: &Im4pCompression) -> Self {
         let algorithm = match c.method_id {
-            0 => "lzss".to_string(),
             1 => "lzfse".to_string(),
             other => format!("unknown({other})"),
         };
@@ -68,7 +68,9 @@ impl From<&Im4pCompression> for CompressionInfo {
 
 #[derive(Debug, Clone, Serialize)]
 pub struct Im4pCompression {
-    pub method_id: u64,                 // 0=LZSS, 1=LZFSE (A1)
+    // The native getter accepts 0 and 1. Method 1 has an interoperable LZFSE
+    // encoding; the semantics of 0 are unknown. LZSS is detected from complzss.
+    pub method_id: u64,
     pub uncompressed_len: Option<u64>,  // may be absent in some images
 }
 
@@ -166,7 +168,7 @@ pub struct Im4mInfoSummary {
     pub signature_len: Option<usize>,
 }
 
-/// Property metadata from XNU headers
+/// Property metadata from XNU headers and the audited libimage4 descriptors.
 struct PropertyMetadata {
     name: &'static str,
     description: &'static str,
@@ -179,41 +181,80 @@ enum ExpectedDerType {
     Integer,
     OctetString,
     Digest,
-    Ia5String,
 }
 
-/// Known Image4 properties from XNU headers
+/// Image4 property hints, including the audited native descriptors.
 static KNOWN_PROPERTIES: Lazy<HashMap<&'static str, PropertyMetadata>> = Lazy::new(|| {
     let mut m = HashMap::new();
-    m.insert("CEPO", PropertyMetadata { name: "ChipEpoch", description: "Chip Epoch", expected_type: ExpectedDerType::Integer });
+    m.insert("CEPO", PropertyMetadata { name: "CertificateEpoch", description: "Certificate Epoch", expected_type: ExpectedDerType::Integer });
     m.insert("BORD", PropertyMetadata { name: "BoardId", description: "Board Identifier", expected_type: ExpectedDerType::Integer });
     m.insert("CHIP", PropertyMetadata { name: "ChipId", description: "Chip Identifier", expected_type: ExpectedDerType::Integer });
     m.insert("SDOM", PropertyMetadata { name: "SecurityDomain", description: "Security Domain", expected_type: ExpectedDerType::Integer });
-    m.insert("ECID", PropertyMetadata { name: "ExclusiveChipId", description: "Unique Chip Identifier", expected_type: ExpectedDerType::Integer });
+    m.insert("ECID", PropertyMetadata { name: "UniqueChipIdentifier", description: "Unique Chip Identifier", expected_type: ExpectedDerType::Integer });
     m.insert("CPRO", PropertyMetadata { name: "CertificateProductionStatus", description: "Certificate Production Status", expected_type: ExpectedDerType::Boolean });
     m.insert("CSEC", PropertyMetadata { name: "CertificateSecurityMode", description: "Certificate Security Mode", expected_type: ExpectedDerType::Boolean });
     m.insert("EPRO", PropertyMetadata { name: "EffectiveProductionStatus", description: "Effective Production Status", expected_type: ExpectedDerType::Boolean });
     m.insert("ESEC", PropertyMetadata { name: "EffectiveSecurityMode", description: "Effective Security Mode", expected_type: ExpectedDerType::Boolean });
     m.insert("IUOU", PropertyMetadata { name: "InternalUseOnlyUnit", description: "Internal Use Only Unit", expected_type: ExpectedDerType::Boolean });
     m.insert("AMNM", PropertyMetadata { name: "AllowMixNMatch", description: "Allow Mix-n-Match", expected_type: ExpectedDerType::Boolean });
-    m.insert("UDID", PropertyMetadata { name: "UniqueDeviceIdentifier", description: "Unique Device Identifier (digest)", expected_type: ExpectedDerType::Digest });
-    m.insert("DGST", PropertyMetadata { name: "Digest", description: "Payload Digest", expected_type: ExpectedDerType::Digest });
+    m.insert("UDID", PropertyMetadata { name: "UniversalDeviceIdentifier", description: "Universal Device Identifier", expected_type: ExpectedDerType::OctetString });
+    m.insert("DGST", PropertyMetadata { name: "Digest", description: "Object Digest", expected_type: ExpectedDerType::Digest });
     m.insert("BNCN", PropertyMetadata { name: "BootNonce", description: "Boot Nonce", expected_type: ExpectedDerType::OctetString });
-    m.insert("love", PropertyMetadata { name: "LongOsVersion", description: "Long OS Version", expected_type: ExpectedDerType::Ia5String });
+    m.insert("love", PropertyMetadata { name: "LongOsVersion", description: "Long OS Version (encoded bytes)", expected_type: ExpectedDerType::OctetString });
     m.insert("augs", PropertyMetadata { name: "AugmentedManifest", description: "Augmented Manifest", expected_type: ExpectedDerType::Integer });
-    m.insert("clas", PropertyMetadata { name: "Class", description: "Manifest Class", expected_type: ExpectedDerType::Integer });
-    m.insert("fchp", PropertyMetadata { name: "FusingChip", description: "Fusing Chip", expected_type: ExpectedDerType::Integer });
+    m.insert("clas", PropertyMetadata { name: "Cryptex1ProductClass", description: "Cryptex1 Product Class", expected_type: ExpectedDerType::Integer });
+    m.insert("fchp", PropertyMetadata { name: "Cryptex1ChipId", description: "Cryptex1 Chip Identifier", expected_type: ExpectedDerType::Integer });
     m.insert("pave", PropertyMetadata { name: "PlatformVersion", description: "Platform Version", expected_type: ExpectedDerType::Integer });
     m.insert("srvn", PropertyMetadata { name: "SecurityRevision", description: "Security Revision", expected_type: ExpectedDerType::Integer });
-    m.insert("styp", PropertyMetadata { name: "SystemType", description: "System Type", expected_type: ExpectedDerType::Integer });
-    m.insert("type", PropertyMetadata { name: "Type", description: "Image Type", expected_type: ExpectedDerType::Ia5String });
+    m.insert("styp", PropertyMetadata { name: "Cryptex1ChipSubtype", description: "Cryptex1 Chip Subtype", expected_type: ExpectedDerType::Integer });
+    m.insert("type", PropertyMetadata { name: "Cryptex1ChipType", description: "Cryptex1 Chip Type", expected_type: ExpectedDerType::Integer });
     m.insert("upcl", PropertyMetadata { name: "UpgradeClaim", description: "Upgrade Claim", expected_type: ExpectedDerType::Integer });
-    m.insert("vnum", PropertyMetadata { name: "VersionNumber", description: "Version Number", expected_type: ExpectedDerType::Integer });
-    m.insert("gdmg", PropertyMetadata { name: "GlobalDigest", description: "Global Digest", expected_type: ExpectedDerType::Digest });
-    m.insert("ginc", PropertyMetadata { name: "GlobalIncrement", description: "Global Increment", expected_type: ExpectedDerType::Integer });
-    m.insert("ginf", PropertyMetadata { name: "GlobalInfo", description: "Global Info", expected_type: ExpectedDerType::Integer });
-    m.insert("gtcd", PropertyMetadata { name: "GlobalTrustedCode", description: "Global Trusted Code", expected_type: ExpectedDerType::Integer });
-    m.insert("gtgv", PropertyMetadata { name: "GlobalTrustGlobalVersion", description: "Global Trust Global Version", expected_type: ExpectedDerType::Integer });
+    m.insert("vnum", PropertyMetadata { name: "LongOsVersion", description: "Long OS Version (encoded bytes)", expected_type: ExpectedDerType::OctetString });
+
+    // Primary evidence: research/ida/libimage4.dylib.properties.json and
+    // __manifest_impose_property. Native "digest" values also carry UUIDs,
+    // nonces, and format identifiers; only explicitly named hashes get Digest.
+    // gdmg/ginc/ginf/gtcd/gtgv are image-object codes, not scalar properties.
+    for (key, name, description, expected_type) in [
+        ("data", "DataOnly", "Non-executable Privilege Level", ExpectedDerType::Boolean),
+        ("ndom", "NonceDomain", "Nonce Domain", ExpectedDerType::Integer),
+        ("lndm", "LiveNonceDomain", "Live Nonce Domain", ExpectedDerType::Integer),
+        ("pqvf", "PqcValidationFlags", "PQC Validation Flags", ExpectedDerType::Integer),
+        ("esdm", "ExtendedSecurityDomain", "Extended Security Domain", ExpectedDerType::Integer),
+        ("stng", "ProspectiveLocalPolicyGeneration", "Prospective Local Policy Generation", ExpectedDerType::Integer),
+        ("iuob", "InternalUseOnlyBuild", "Internal Use-only Build", ExpectedDerType::Boolean),
+        ("iuou", "InternalUseOnlyUnit", "Internal Use-only Unit", ExpectedDerType::Boolean),
+        ("euou", "EngineeringUseOnlyUnit", "Engineering Use-only Unit", ExpectedDerType::Boolean),
+        ("rsch", "ResearchMode", "Research Mode", ExpectedDerType::Boolean),
+        ("fpgt", "FactoryPreReleaseGlobalTrust", "Factory Pre-release Global Trust", ExpectedDerType::Boolean),
+        ("vmmp", "VirtualMachineMonitorPresent", "Virtual Machine Monitor Present", ExpectedDerType::Boolean),
+        ("uasb", "UseAvpSecureBoot", "Use AVP Secure Boot", ExpectedDerType::Boolean),
+        ("mpro", "X86CertificateProductionStatus", "x86 Certificate Production Status", ExpectedDerType::Boolean),
+        ("msec", "CertificateSecurityMode", "Certificate Security Mode", ExpectedDerType::Boolean),
+        ("BNCH", "BootNonceHash", "Boot Nonce Hash (context-dependent domain)", ExpectedDerType::Digest),
+        ("cnch", "Cryptex1BootNonceHash", "Cryptex1 Boot Nonce Hash", ExpectedDerType::Digest),
+        ("xnch", "Cryptex1AuxiliaryBootNonceHash", "Cryptex1 Auxiliary Boot Nonce Hash", ExpectedDerType::Digest),
+        ("lnch", "Cryptex1LiveNonceHash", "Cryptex1 Live Nonce Hash", ExpectedDerType::Digest),
+        ("CHMH", "ChainedManifestHash", "Chained Manifest Hash", ExpectedDerType::Digest),
+        ("bclh", "BootClosureHash", "Boot Closure Hash", ExpectedDerType::Digest),
+        ("bmfh", "BootManifestHash", "Boot Manifest Hash", ExpectedDerType::Digest),
+        ("nsph", "ProspectiveCryptex1ManifestHash", "Prospective Cryptex1 Manifest Hash", ExpectedDerType::Digest),
+        ("spih", "Cryptex1ManifestHash", "Cryptex1 Manifest Hash", ExpectedDerType::Digest),
+        ("cncn", "Cryptex1BootNonce", "Cryptex1 Boot Nonce", ExpectedDerType::OctetString),
+        ("cncx", "Cryptex1AuxiliaryBootNonce", "Cryptex1 Auxiliary Boot Nonce", ExpectedDerType::OctetString),
+        ("snuf", "SoftwareUpdateFreshnessNonce", "Software Update Freshness Nonce", ExpectedDerType::OctetString),
+        ("boid", "BootUuid", "Boot UUID", ExpectedDerType::OctetString),
+        ("vuid", "VolumeGroupUuid", "Volume Group UUID", ExpectedDerType::OctetString),
+        ("sbks", "SecureBootKeyScheme", "Secure Boot Key Scheme", ExpectedDerType::OctetString),
+        ("c1ks", "Cryptex1KeyScheme", "Cryptex1 Key Scheme", ExpectedDerType::OctetString),
+        ("sbcf", "SecureBootCertificateFormat", "Secure Boot Certificate Format", ExpectedDerType::OctetString),
+        ("c1cf", "Cryptex1CertificateFormat", "Cryptex1 Certificate Format", ExpectedDerType::OctetString),
+        ("anid", "ApNonceSlotId", "AP Nonce Slot Identifier", ExpectedDerType::Integer),
+        ("snid", "SepNonceSlotId", "SEP Nonce Slot Identifier", ExpectedDerType::Integer),
+        ("rddg", "RawDataDigest", "Raw Data Digest", ExpectedDerType::Digest),
+    ] {
+        m.insert(key, PropertyMetadata { name, description, expected_type });
+    }
     m
 });
 
@@ -239,6 +280,9 @@ fn extract_property_set(obj: &DerObject, expected_label: &str) -> Result<Vec<Typ
     let seq = obj
         .as_sequence()
         .map_err(|_| anyhow!("{expected_label}: not SEQUENCE"))?;
+    if seq.len() != 2 {
+        bail!("{expected_label}: expected label and property SET");
+    }
 
     let label = seq
         .get(0)
@@ -261,9 +305,22 @@ fn extract_property_set(obj: &DerObject, expected_label: &str) -> Result<Vec<Typ
     Ok(out)
 }
 
+/// Parse exactly one DER object. Image4's decoder rejects trailing bytes, so
+/// top-level and standalone components must not silently accept a valid prefix.
+fn parse_der_exact<'a>(raw: &'a [u8], context: &str) -> Result<DerObject<'a>> {
+    let (rest, obj) = parse_der(raw).map_err(|e| anyhow!("{context}: {e}"))?;
+    if !rest.is_empty() {
+        bail!(
+            "{context}: {} trailing byte(s) after DER object",
+            rest.len()
+        );
+    }
+    Ok(obj)
+}
+
 /// Extract properties from IM4R using formal structure: SEQUENCE { "IM4R", SET { properties } }
 pub fn extract_im4r_properties(raw: &[u8]) -> Result<Vec<TypedIm4mProperty>> {
-    let (_, obj) = parse_der(raw).map_err(|e| anyhow!("IM4R DER: {e}"))?;
+    let obj = parse_der_exact(raw, "IM4R DER")?;
     extract_property_set(&obj, "IM4R")
 }
 
@@ -284,7 +341,7 @@ pub fn extract_im4r_bncn_nonce(raw: &[u8]) -> Result<Option<Vec<u8>>> {
 
 pub fn parse_img4_like(bytes: &[u8]) -> Result<Parsed> {
     debug!("parse_img4_like: starting, input length {}", bytes.len());
-    let (_, obj) = parse_der(bytes).map_err(|e| anyhow!("DER: {}", e))?;
+    let obj = parse_der_exact(bytes, "DER")?;
     let seq = obj.as_sequence().map_err(|_| anyhow!("top-level not SEQUENCE"))?;
 
     let label_str = seq
@@ -352,6 +409,17 @@ pub fn parse_img4_like(bytes: &[u8]) -> Result<Parsed> {
             im4m: Some(im4m),
             im4r: None,
         })
+    } else if label_str == "IM4R" {
+        debug!("Detected standalone IM4R");
+        extract_property_set(&obj, "IM4R")?;
+        // Preserve the original restore-info DER. The normal output path parses
+        // its typed properties (including BNCN) just like embedded IM4R.
+        Ok(Parsed {
+            kind: ContainerKind::Im4rStandalone,
+            im4p: None,
+            im4m: None,
+            im4r: Some(bytes.to_vec()),
+        })
     } else {
         warn!("Unknown top-level label: {}", label_str);
         bail!("unknown top-level label: {label_str}");
@@ -398,8 +466,8 @@ fn parse_im4p_from_der_obj(obj: &DerObject) -> Result<Im4p> {
     debug!("IM4P payload size: {} bytes", data.len());
 
     // Optional trailing elements [4..] are matched by DER TAG/content, not by a
-    // fixed index — mirroring the spec's DERParseSequenceToObject, which keys off
-    // each item's tag. In particular, KBAG (OCTET STRING) may be absent while
+    // fixed index. Apple's decoder matches an ordered item specification and
+    // skips absent optional fields. KBAG (OCTET STRING) may be absent while
     // compression (SEQUENCE) is present (e.g. an unencrypted-but-compressed
     // kernelcache), in which case positional indexing would silently misread the
     // layout and drop the compression block.
@@ -410,7 +478,27 @@ fn parse_im4p_from_der_obj(obj: &DerObject) -> Result<Im4p> {
     for item in seq.iter().skip(4) {
         let tag = item.header.tag().0;
         let universal = item.header.class() == Class::Universal;
-        if universal && tag == 4 {
+        if item.header.class() == Class::ContextSpecific && tag == 0 {
+            // DERImg4PayloadWithPropertiesItemSpecs: [0] EXPLICIT PAYP.
+            // The wrapper contains the complete labeled SEQUENCE, not its SET.
+            let props = (|| {
+                if !item.header.is_constructed() {
+                    bail!("PAYP [0] wrapper is not constructed");
+                }
+                let bytes = item
+                    .as_slice()
+                    .map_err(|_| anyhow!("PAYP [0] content missing"))?;
+                let (rest, inner) = parse_der(bytes).map_err(|e| anyhow!("PAYP [0] DER: {e}"))?;
+                if !rest.is_empty() {
+                    bail!("PAYP [0] wrapper contains trailing bytes");
+                }
+                extract_property_set(&inner, "PAYP")
+            })();
+            match props {
+                Ok(props) => payload_properties = Some(props),
+                Err(e) => warn!("IM4P PAYP parse failed: {}", e),
+            }
+        } else if universal && tag == 4 {
             // OCTET STRING -> KBAG (DER-encoded keybag)
             match as_bytes(item) {
                 Some(b) if kbag_der_vec.is_none() => kbag_der_vec = Some(b.to_vec()),
@@ -492,7 +580,7 @@ fn parse_kbag_summary(kbag_der: &[u8]) -> Result<Vec<KbagEntry>> {
         "parse_kbag_summary: entering, KBAG DER size {} bytes",
         kbag_der.len()
     );
-    let (_, obj) = parse_der(kbag_der).map_err(|e| anyhow!("KBAG DER: {e}"))?;
+    let obj = parse_der_exact(kbag_der, "KBAG DER")?;
     let seq = obj.as_sequence().map_err(|_| anyhow!("KBAG not SEQUENCE"))?;
 
     let mut out = Vec::new();
@@ -528,7 +616,7 @@ fn im4m_from_bytes(bytes: &[u8]) -> Result<Im4m> {
         "im4m_from_bytes: entering, candidate DER size {} bytes",
         bytes.len()
     );
-    let (_, obj) = parse_der(bytes).map_err(|e| anyhow!("IM4M DER: {e}"))?;
+    let obj = parse_der_exact(bytes, "IM4M DER")?;
     let seq = obj.as_sequence().map_err(|_| anyhow!("IM4M not SEQUENCE"))?;
     let lbl = seq
         .get(0)
@@ -564,7 +652,7 @@ pub struct Im4mManifestData {
 /// Each node is located by its actual DER structure (private-tagged wrappers
 /// containing `SEQUENCE { IA5String(4cc), SET { properties } }`).
 pub fn extract_im4m_manifest(raw: &[u8]) -> Result<Im4mManifestData> {
-    let (_, obj) = parse_der(raw).map_err(|e| anyhow!("IM4M DER: {e}"))?;
+    let obj = parse_der_exact(raw, "IM4M DER")?;
     let seq = obj.as_sequence().map_err(|_| anyhow!("IM4M not SEQUENCE"))?;
 
     let mut manifest_properties = Vec::new();
@@ -580,8 +668,8 @@ pub fn extract_im4m_manifest(raw: &[u8]) -> Result<Im4mManifestData> {
             Ok(b) => b,
             Err(_) => continue,
         };
-        let manb_seq_obj = match parse_der(inner) {
-            Ok((_, o)) => o,
+        let manb_seq_obj = match parse_der_exact(inner, "MANB DER") {
+            Ok(o) => o,
             Err(_) => continue,
         };
         let manb_seq = match manb_seq_obj.as_sequence() {
@@ -602,8 +690,8 @@ pub fn extract_im4m_manifest(raw: &[u8]) -> Result<Im4mManifestData> {
                 Ok(b) => b,
                 Err(_) => continue,
             };
-            let cseq_obj = match parse_der(cinner) {
-                Ok((_, o)) => o,
+            let cseq_obj = match parse_der_exact(cinner, "image property DER") {
+                Ok(o) => o,
                 Err(_) => continue,
             };
             let cseq = match cseq_obj.as_sequence() {
@@ -642,7 +730,7 @@ pub fn summarize_im4m(im4m: &Im4m) -> Result<Im4mInfoSummary> {
     );
 
     // Decode top-level to extract version, signature, cert chain lengths (as before)
-    let (_, obj) = parse_der(&im4m.raw).map_err(|e| anyhow!("IM4M DER: {e}"))?;
+    let obj = parse_der_exact(&im4m.raw, "IM4M DER")?;
     let seq = obj.as_sequence().map_err(|_| anyhow!("IM4M not SEQUENCE"))?;
 
     let lbl = seq
@@ -738,8 +826,18 @@ pub fn extract_im4m_cert_chain(raw: &[u8]) -> anyhow::Result<Vec<Vec<u8>>> {
     let mut pos = 0usize;
     let (tag_len, _, _, _) = der_read_tag(at(pos)?).map_err(|e| anyhow!("IM4M tag: {e}"))?;
     pos = advance(pos, tag_len)?;
-    let (len_len, _) = der_read_len(at(pos)?).map_err(|e| anyhow!("IM4M len: {e}"))?;
+    let (len_len, seq_len) = der_read_len(at(pos)?).map_err(|e| anyhow!("IM4M len: {e}"))?;
     pos = advance(pos, len_len)?;
+    let seq_end = advance(pos, seq_len)?;
+    if seq_end > raw.len() {
+        bail!("IM4M SEQUENCE exceeds buffer");
+    }
+    if seq_end < raw.len() {
+        bail!(
+            "IM4M DER: {} trailing byte(s) after DER object",
+            raw.len() - seq_end
+        );
+    }
 
     // Skip to index 4 (the certificate chain) by walking elements 0..4.
     for idx in 0..5 {
@@ -751,8 +849,8 @@ pub fn extract_im4m_cert_chain(raw: &[u8]) -> anyhow::Result<Vec<Vec<u8>>> {
         pos = advance(pos, len_len)?;
 
         let elem_end = advance(pos, elem_len)?;
-        if elem_end > raw.len() {
-            bail!("elem[{idx}] content ({elem_len} bytes) exceeds buffer");
+        if elem_end > seq_end {
+            bail!("elem[{idx}] content ({elem_len} bytes) exceeds IM4M SEQUENCE");
         }
 
         if idx == 4 {
@@ -848,7 +946,7 @@ fn write_der_len(buf: &mut Vec<u8>, len: usize) {
 /// Returns the legacy untyped property structure for backwards compatibility.
 #[allow(dead_code)]
 pub fn extract_im4m_properties(raw: &[u8]) -> Result<Vec<Im4mProperty>> {
-    let (_, obj) = parse_der(raw).map_err(|e| anyhow!("IM4M DER: {e}"))?;
+    let obj = parse_der_exact(raw, "IM4M DER")?;
     let mut out = Vec::<Im4mProperty>::new();
     collect_props_from_obj(&obj, &mut out)?;
     Ok(out)
@@ -994,7 +1092,7 @@ fn decode_typed_value(o: &DerObject, key_hint: Option<&str>) -> Result<(Im4mProp
             }
         }
         Some(ExpectedDerType::Digest) => {
-            if let Ok(s) = o.as_slice() {
+            if let Some(s) = octet_bytes(o) {
                 Im4mPropertyValue::Digest { value: hex::encode(s) }
             } else {
                 anomaly = Some(format!("Expected OCTET STRING for Digest, got {:?}", o.header.tag()));
@@ -1006,22 +1104,10 @@ fn decode_typed_value(o: &DerObject, key_hint: Option<&str>) -> Result<(Im4mProp
             }
         }
         Some(ExpectedDerType::OctetString) => {
-            if let Ok(s) = o.as_slice() {
+            if let Some(s) = octet_bytes(o) {
                 Im4mPropertyValue::OctetString { value: hex::encode(s) }
             } else {
                 anomaly = Some(format!("Expected OCTET STRING, got {:?}", o.header.tag()));
-                Im4mPropertyValue::Unknown {
-                    der_type: format!("{:?}", o.header.tag()),
-                    hex_value: Some(hex::encode(o.as_slice().unwrap_or_default())),
-                    hex_values: None,
-                }
-            }
-        }
-        Some(ExpectedDerType::Ia5String) => {
-            if let Some(s) = ia5str(o) {
-                Im4mPropertyValue::String { value: s.to_string() }
-            } else {
-                anomaly = Some(format!("Expected IA5String, got {:?}", o.header.tag()));
                 Im4mPropertyValue::Unknown {
                     der_type: format!("{:?}", o.header.tag()),
                     hex_value: Some(hex::encode(o.as_slice().unwrap_or_default())),
@@ -1300,6 +1386,13 @@ fn der_read_len(i: &[u8]) -> Result<(usize, usize)> {
 fn as_bytes<'a>(o: &'a DerObject<'a>) -> Option<&'a [u8]> {
     o.as_slice().ok()
 }
+fn octet_bytes<'a>(o: &'a DerObject<'a>) -> Option<&'a [u8]> {
+    if o.header.class() == Class::Universal && o.header.tag().0 == 4 {
+        o.as_slice().ok()
+    } else {
+        None
+    }
+}
 fn ia5str<'a>(o: &'a DerObject<'a>) -> Option<&'a str> {
     o.as_slice().ok().and_then(|s| std::str::from_utf8(s).ok())
 }
@@ -1437,5 +1530,9 @@ mod tests {
         assert_eq!(certs.len(), 2);
         assert_eq!(certs[0], cert_a);
         assert_eq!(certs[1], cert_b);
+
+        let mut trailing = raw;
+        trailing.push(0x00);
+        assert!(extract_im4m_cert_chain(&trailing).is_err());
     }
 }

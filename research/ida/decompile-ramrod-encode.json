@@ -1,0 +1,850 @@
+{
+  "count": 4,
+  "results": [
+    {
+      "address": "0x2cd978248",
+      "end_address": "0x2cd978414",
+      "input": "_Img4EncodeCreatePayload",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "EncodedBuffer",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_Img4EncodeCreatePayload",
+      "prototype": "__int64 __fastcall Img4EncodeCreatePayload(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, __int64 a7, __int64 a8)",
+      "pseudocode": "__int64 __fastcall Img4EncodeCreatePayload(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7,\n        __int64 a8)\n{\n  __int64 v8; // x19\n  __int64 v9; // x25\n  __int64 v12; // x20\n  __int64 v18; // x0\n  __int64 v19; // x0\n  unsigned int EncodedBuffer; // w0\n\n  v8 = 0;\n  v9 = 0x65;\n  if ( a1 == 0 || a2 == 0 )\n  {\n    v12 = 0;\n    goto LABEL_16;\n  }\n  v12 = 0;\n  if ( a3 != 0 )\n  {\n    if ( sub_2D0059B20(a1) != 4 )\n    {\n      v8 = 0;\n      v12 = 0;\n      goto LABEL_16;\n    }\n    v8 = DEREncoderCreate(0);\n    if ( v8 != 0 )\n    {\n      v12 = DEREncoderCreate(0);\n      if ( v12 != 0 )\n      {\n        v18 = DEREncoderAddData(v8, 0, 0x16, \"IM4P\", 4, 0);\n        if ( (_DWORD)v18 != 0\n          || (_DWORD)(v18 = DEREncoderAddData(v8, 0, 0x16, a1, 4, 0)) != 0\n          || (v19 = sub_2D0059B20(a2), (_DWORD)(v18 = DEREncoderAddData(v8, 0, 0x16, a2, v19, 0)) != 0)\n          || (_DWORD)(v18 = DEREncoderAddDataNoCopy(v8, 0, 4, a3, a4, 0)) != 0\n          || a5 != 0 && (_DWORD)(v18 = DEREncoderAddDataNoCopy(v8, 0, 4, a5, a6, 0)) != 0\n          || (_DWORD)(v18 = DEREncoderAddDataFromEncoderNoCopy(v8, v12, 0, 0x10, 1)) != 0 )\n        {\n          v9 = v18;\n        }\n        else\n        {\n          EncodedBuffer = DEREncoderCreateEncodedBuffer(v12, a7, a8);\n          if ( EncodedBuffer != 0 )\n            v9 = EncodedBuffer;\n          else\n            v9 = 0x64;\n        }\n        goto LABEL_16;\n      }\n    }\n    else\n    {\n      v12 = 0;\n    }\n    v9 = 2;\n  }\nLABEL_16:\n  DEREncoderDestroy(v8);\n  DEREncoderDestroy(v12);\n  return v9;\n}\n"
+    },
+    {
+      "address": "0x2cd978414",
+      "end_address": "0x2cd978888",
+      "input": "_Img4EncodeCreateManifest",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64 (__fastcall *)(__int64 *, unsigned int *, __int64)"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64 (__fastcall *)(__int64 *, int *, __int64)"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64 (__fastcall *)(__int64, __int64, _QWORD, __int64 *, __int64 *, __int64)"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v30",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v31",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v32",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "EncodedBuffer",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v34",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v35",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v36",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v37",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v39",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v40",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v41",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v42",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v43",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v44",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v45",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v46",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v47",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v48",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v49",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v50",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v51",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v52",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v53",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v54",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v55",
+          "type": "__int64"
+        }
+      ],
+      "name": "_Img4EncodeCreateManifest",
+      "prototype": "__int64 __fastcall Img4EncodeCreateManifest(__int64 a1, __int64 (__fastcall *a2)(__int64 *, unsigned int *, __int64), __int64 (__fastcall *a3)(__int64 *, int *, __int64), __int64 (__fastcall *a4)(__int64, __int64, _QWORD, __int64 *, __int64 *, __int64), __int64 a5, unsigned int a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10)",
+      "pseudocode": "__int64 __fastcall Img4EncodeCreateManifest(\n        __int64 a1,\n        __int64 (__fastcall *a2)(__int64 *, unsigned int *, __int64),\n        __int64 (__fastcall *a3)(__int64 *, int *, __int64),\n        __int64 (__fastcall *a4)(__int64, __int64, _QWORD, __int64 *, __int64 *, __int64),\n        __int64 a5,\n        unsigned int a6,\n        __int64 a7,\n        __int64 a8,\n        __int64 a9,\n        __int64 a10)\n{\n  __int64 v10; // x19\n  __int64 v11; // x26\n  __int64 v15; // x28\n  __int64 v20; // x0\n  __int64 v21; // x0\n  __int64 v22; // x0\n  __int64 v24; // x0\n  __int64 v25; // x28\n  __int64 v26; // x0\n  __int64 v27; // x27\n  __int64 v28; // x0\n  __int64 v29; // x22\n  __int64 v30; // x0\n  __int64 v31; // x0\n  __int64 v32; // x0\n  unsigned int EncodedBuffer; // w0\n  __int64 v34; // x0\n  __int64 v35; // x1\n  __int64 v36; // x2\n  __int64 v37; // x3\n  __int64 v39; // [xsp+10h] [xbp-D0h] BYREF\n  __int64 v40; // [xsp+18h] [xbp-C8h] BYREF\n  __int64 v41; // [xsp+20h] [xbp-C0h] BYREF\n  __int64 v42; // [xsp+28h] [xbp-B8h] BYREF\n  int v43; // [xsp+34h] [xbp-ACh] BYREF\n  __int64 v44; // [xsp+38h] [xbp-A8h] BYREF\n  unsigned int v45; // [xsp+44h] [xbp-9Ch] BYREF\n  __int64 v46; // [xsp+48h] [xbp-98h] BYREF\n  __int64 v47; // [xsp+50h] [xbp-90h] BYREF\n  __int64 v48; // [xsp+58h] [xbp-88h] BYREF\n  int v49; // [xsp+64h] [xbp-7Ch] BYREF\n  unsigned int v50; // [xsp+68h] [xbp-78h] BYREF\n  int v51; // [xsp+6Ch] [xbp-74h] BYREF\n  __int64 v52; // [xsp+70h] [xbp-70h] BYREF\n  __int64 v53; // [xsp+78h] [xbp-68h] BYREF\n  __int64 v54; // [xsp+80h] [xbp-60h] BYREF\n  __int64 v55; // [xsp+88h] [xbp-58h]\n\n  v10 = 0;\n  v55 = *MEMORY[0x2D80A64A8];\n  v46 = 0;\n  v45 = 0;\n  v44 = 0;\n  v43 = 0x4D344D49;\n  v41 = 0;\n  v42 = 0;\n  v39 = 0;\n  v40 = 0;\n  v11 = 0x65;\n  if ( a2 == nullptr || a3 == nullptr || a7 == 0 )\n  {\n    v15 = 0;\n    goto LABEL_13;\n  }\n  v15 = 0;\n  if ( a8 == 0 )\n    goto LABEL_13;\n  v20 = DEREncoderCreate(0);\n  v10 = v20;\n  if ( v20 == 0 )\n  {\n    v15 = 0;\nLABEL_12:\n    v11 = 2;\n    goto LABEL_13;\n  }\n  v21 = DEREncoderAddData(v20, 0, 0x16, &v43, 4, 0);\n  if ( (_DWORD)v21 != 0 )\n    goto LABEL_8;\n  v21 = DEREncoderAddUInt32(v10, 0, 2, a1);\n  if ( (_DWORD)v21 != 0 )\n    goto LABEL_8;\n  v49 = 0;\n  v50 = 0;\n  v47 = 0;\n  v48 = 0;\n  v24 = a2(&v48, &v50, a9);\n  if ( (_DWORD)v24 != 0x64 || (_DWORD)(v24 = a3(&v47, &v49, a9)) != 0x64 )\n  {\n    v11 = v24;\n    v27 = 0;\n    goto LABEL_34;\n  }\n  v25 = v50 + v49;\n  if ( __CFADD__(v50, v49) )\n  {\n    v27 = 0;\n    v11 = 0x6A;\n    goto LABEL_34;\n  }\n  v26 = sub_2D007D130(1, v50 + v49);\n  v27 = v26;\n  if ( v26 == 0 )\n  {\n    v11 = 0x66;\n    goto LABEL_34;\n  }\n  sub_2D00594B0(v26, v48);\n  sub_2D00594B0(v27 + v50, v47);\n  v53 = 0;\n  v54 = 0;\n  v52 = 0;\n  if ( (_DWORD)a1 == 2 )\n  {\n    v51 = 0x424E414D;\n    v28 = DEREncoderCreate(0);\n    v29 = v28;\n    if ( v28 == 0 )\n    {\n      v11 = 0x66;\nLABEL_57:\n      if ( v29 != 0 )\n        DEREncoderDestroy(v29);\n      goto LABEL_59;\n    }\n    v30 = DEREncoderAddData(v28, 0, 0x16, &v51, 4, 0);\n    if ( (_DWORD)v30 != 0\n      || (_DWORD)(v30 = DEREncoderAddData(v29, 0, 0x10, v27, v25, 1)) != 0\n      || (_DWORD)(v30 = DEREncoderCreateEncodedBuffer(v29, &v53, (char *)&v54 + 4)) != 0 )\n    {\nLABEL_55:\n      v11 = v30;\n      goto LABEL_57;\n    }\nLABEL_53:\n    v30 = sub_2CD977A38(v53, HIDWORD(v54), &v52, &v54);\n    if ( (_DWORD)v30 == 0x64 )\n      v30 = sub_2CD977AEC(0x4D414E42, v52, (unsigned int)v54, &v42, (char *)&v46 + 4);\n    goto LABEL_55;\n  }\n  v11 = sub_2CD977928(0x4D414E42, v27, v25, &v53, (char *)&v54 + 4);\n  if ( (_DWORD)v11 == 0x64 )\n  {\n    v29 = 0;\n    goto LABEL_53;\n  }\nLABEL_59:\n  if ( v53 != 0 )\n  {\n    sub_2D00592B0(v53);\n    v53 = 0;\n  }\n  if ( v52 != 0 )\n    sub_2D00592B0(v52);\nLABEL_34:\n  if ( v48 != 0 )\n  {\n    sub_2D00592B0(v48);\n    v48 = 0;\n  }\n  if ( v47 != 0 )\n  {\n    sub_2D00592B0(v47);\n    v47 = 0;\n  }\n  if ( v27 != 0 )\n    sub_2D00592B0(v27);\n  if ( (_DWORD)v11 != 0x64 )\n    goto LABEL_9;\n  v21 = DEREncoderAddData(v10, 0, 0x11, v42, HIDWORD(v46), 1);\n  if ( (_DWORD)v21 != 0\n    || (_DWORD)(v21 = sub_2CD978888(v42, HIDWORD(v46), &v40, &v45)) != 0x64\n    || (_DWORD)(v21 = a4(a1, v40, v45, &v39, &v44, a10)) != 0x64\n    || (_DWORD)(v21 = DEREncoderAddData(v10, 0, 4, v39, (unsigned int)v44, 0)) != 0\n    || (_DWORD)(v21 = DEREncoderAddData(v10, 0, 0x10, a5, a6, 1)) != 0\n    || (_DWORD)(v21 = DEREncoderCreateEncodedBuffer(v10, &v41, &v46)) != 0 )\n  {\nLABEL_8:\n    v11 = v21;\nLABEL_9:\n    v15 = 0;\n    goto LABEL_13;\n  }\n  v31 = DEREncoderCreate(v21);\n  v15 = v31;\n  if ( v31 == 0 )\n    goto LABEL_12;\n  v32 = DEREncoderAddData(v31, 0, 0x10, v41, (unsigned int)v46, 1);\n  if ( (_DWORD)v32 != 0 )\n  {\n    v11 = v32;\n  }\n  else\n  {\n    EncodedBuffer = DEREncoderCreateEncodedBuffer(v15, a7, a8);\n    if ( EncodedBuffer != 0 )\n      v11 = EncodedBuffer;\n    else\n      v11 = 0x64;\n  }\nLABEL_13:\n  DEREncoderDestroy(v10);\n  DEREncoderDestroy(v15);\n  if ( v42 != 0 )\n  {\n    sub_2D00592B0(v42);\n    v42 = 0;\n  }\n  if ( v41 != 0 )\n  {\n    sub_2D00592B0(v41);\n    v41 = 0;\n  }\n  if ( v40 != 0 )\n  {\n    sub_2D00592B0(v40);\n    v40 = 0;\n  }\n  v22 = v39;\n  if ( v39 != 0 )\n    v22 = sub_2D00592B0(v39);\n  if ( *MEMORY[0x2D80A64A8] == v55 )\n    return v11;\n  v34 = sub_2D0058F60(v22);\n  return sub_2CD978888(v34, v35, v36, v37);\n}\n"
+    },
+    {
+      "address": "0x2cd978928",
+      "end_address": "0x2cd978af4",
+      "input": "_Img4EncodeStitch",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "EncodedBuffer",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v31",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v32",
+          "type": "__int64"
+        }
+      ],
+      "name": "_Img4EncodeStitch",
+      "prototype": "__int64 __fastcall Img4EncodeStitch(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, __int64 a7, __int64 a8)",
+      "pseudocode": "__int64 __fastcall Img4EncodeStitch(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7,\n        __int64 a8)\n{\n  __int64 v8; // x22\n  __int64 v9; // x23\n  __int64 v11; // x19\n  __int64 v18; // x0\n  __int64 v19; // x0\n  __int64 v20; // x0\n  __int64 v22; // x0\n  unsigned int EncodedBuffer; // w0\n  __int64 v24; // x0\n  __int64 v25; // x1\n  __int64 v26; // x2\n  __int64 v27; // x3\n  __int64 v28; // x4\n  __int64 v29; // x5\n  int v31; // [xsp+14h] [xbp-5Ch] BYREF\n  __int64 v32; // [xsp+18h] [xbp-58h]\n\n  v8 = 0;\n  v32 = *MEMORY[0x2D80A64A8];\n  v31 = 0x34474D49;\n  v9 = 0x65;\n  if ( a1 != 0 )\n  {\n    v11 = 0;\n    if ( a7 == 0 )\n      goto LABEL_10;\n    v18 = DEREncoderCreate(0);\n    v11 = v18;\n    if ( v18 != 0 )\n    {\n      v19 = DEREncoderAddData(v18, 0, 0x16, &v31, 4, 0);\n      if ( (_DWORD)v19 != 0\n        || (_DWORD)(v19 = DEREncoderAddDataNoCopy(v11, 0x103, 0, a1, a2, 0)) != 0\n        || a3 != 0 && (_DWORD)(v19 = DEREncoderAddData(v11, 2, 0, a3, a4, 1)) != 0\n        || a5 != 0 && (_DWORD)(v19 = DEREncoderAddData(v11, 2, 1, a5, a6, 1)) != 0 )\n      {\n        v9 = v19;\n        v8 = 0;\n        goto LABEL_10;\n      }\n      v8 = DEREncoderCreate(0);\n      if ( v8 != 0 )\n      {\n        v22 = DEREncoderAddDataFromEncoderNoCopy(v11, v8, 0, 0x10, 1);\n        if ( (_DWORD)v22 != 0 )\n        {\n          v9 = v22;\n        }\n        else\n        {\n          EncodedBuffer = DEREncoderCreateEncodedBuffer(v8, a7, a8);\n          if ( EncodedBuffer != 0 )\n            v9 = EncodedBuffer;\n          else\n            v9 = 0x64;\n        }\n        goto LABEL_10;\n      }\n    }\n    else\n    {\n      v8 = 0;\n    }\n    v9 = 0x66;\n  }\n  else\n  {\n    v11 = 0;\n  }\nLABEL_10:\n  DEREncoderDestroy(v11);\n  v20 = DEREncoderDestroy(v8);\n  if ( *MEMORY[0x2D80A64A8] == v32 )\n    return v9;\n  v24 = sub_2D0058F60(v20);\n  return Img4EncodeStitchManifest(v24, v25, v26, v27, v28, v29);\n}\n"
+    },
+    {
+      "address": "0x2cd96c3b0",
+      "end_address": "0x2cd96c5d8",
+      "input": "_ramrod_copy_manifest_digest_data_from_img4",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64 (__fastcall *)()"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v13",
+          "type": "__int64 (__fastcall *)()"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v14",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v15",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v16",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v17",
+          "type": "_QWORD[6]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v18",
+          "type": "_QWORD[56]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v20",
+          "type": "__int64"
+        }
+      ],
+      "name": "_ramrod_copy_manifest_digest_data_from_img4",
+      "prototype": "__int64 __fastcall ramrod_copy_manifest_digest_data_from_img4(__int64 a1)",
+      "pseudocode": "__int64 __fastcall ramrod_copy_manifest_digest_data_from_img4(__int64 a1)\n{\n  __int64 v2; // x20\n  __int64 v3; // x0\n  __int64 v4; // x22\n  __int64 v5; // x0\n  __int64 v6; // x20\n  __int64 (__fastcall *v7)(); // x21\n  __int64 v8; // x22\n  __int64 v9; // x0\n  __int64 v10; // x0\n  __int64 result; // x0\n  __int64 v12; // x0\n  __int64 (__fastcall *v13)(); // [xsp+18h] [xbp-278h] BYREF\n  _QWORD v17[6]; // [xsp+50h] [xbp-240h] BYREF\n  _QWORD v18[56]; // [xsp+80h] [xbp-210h] BYREF\n  __int64 v20; // [xsp+248h] [xbp-48h]\n\n  v20 = *MEMORY[0x2D80A64A8];\n  if ( a1 == 0 )\n  {\n    ramrod_log_msg(\"%s: no img4Data\\n\", 0x2CDA44DB7LL);\nLABEL_17:\n    result = 0;\n    goto LABEL_18;\n  }\n  v2 = sub_2D007CC50();\n  if ( v2 != sub_2D00583B0(a1) )\n  {\n    ramrod_log_msg(\"img4Data not CFData\\n\");\n    goto LABEL_17;\n  }\n  v3 = sub_2D005F2B0(CFSTR(\"Image4CryptoHashMethod\"), 0);\n  if ( v3 != 0 )\n  {\n    v4 = v3;\n    v5 = sub_2D0058600(v3, CFSTR(\"sha1\"), 1);\n    if ( v5 != 0 )\n      v6 = 0x30;\n    else\n      v6 = 0x14;\n    if ( v5 != 0 )\n      v7 = (__int64 (__fastcall *)())sub_2CD96C5D8;\n    else\n      v7 = sub_2CD96C650;\n    sub_2D0058520(v4);\n  }\n  else\n  {\n    ramrod_log_msg(\n      \"%s: unable to get img4 hash method, assuming SHA-384\\n\",\n      \"ramrod_copy_manifest_digest_data_from_img4\");\n    v7 = (__int64 (__fastcall *)())sub_2CD96C5D8;\n    v6 = 0x30;\n  }\n  memset(v18, 0, sizeof(v18));\n  memset(v17, 0, sizeof(v17));\n  v8 = sub_2D0068890(a1);\n  v9 = sub_2D007C0F0(a1);\n  if ( (unsigned int)sub_2D007CAE0(v8, v9, v18) != 0 )\n  {\n    ramrod_log_msg(\"%s: failed to parse img4Data as Img4\\n\", \"ramrod_copy_manifest_digest_data_from_img4\");\n    goto LABEL_17;\n  }\n  v13 = v7;\n  v10 = sub_2D009C5B0(v18, v17, v6, &v13);\n  if ( (_DWORD)v10 != 0 )\n  {\n    ramrod_log_msg(\n      \"%s: failed to get manifest from Img4 derstat=%d\\n\",\n      \"ramrod_copy_manifest_digest_data_from_img4\",\n      v10);\n    goto LABEL_17;\n  }\n  result = sub_2D007D170(*MEMORY[0x2D802CCA0], v17, v6);\n  if ( result == 0 )\n  {\n    ramrod_log_msg(\"%s: failed to allocated property data\\n\", \"ramrod_copy_manifest_digest_data_from_img4\");\n    goto LABEL_17;\n  }\nLABEL_18:\n  if ( *MEMORY[0x2D80A64A8] != v20 )\n  {\n    v12 = sub_2D0058F60(result);\n    return sub_2CD96C5D8(v12);\n  }\n  return result;\n}\n"
+    }
+  ],
+  "database_target": "79ce35529ddc",
+  "requested": [
+    "_Img4EncodeCreatePayload",
+    "_Img4EncodeCreateManifest",
+    "_Img4EncodeStitch",
+    "_ramrod_copy_manifest_digest_data_from_img4"
+  ]
+}

@@ -1,0 +1,1150 @@
+{
+  "count": 4,
+  "results": [
+    {
+      "address": "0x2cb801414",
+      "end_address": "0x2cb801b84",
+      "input": "_cryptex_signature_create",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "Error",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "j",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v30",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v31",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v33",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v34",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "i",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v36",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v37",
+          "type": "_DWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v38",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v39",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v40",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v41",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v42",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v43",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v44",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v45",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v46",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v47",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v48",
+          "type": "_WORD[8]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v49",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v50",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v51",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v52",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v53",
+          "type": "_QWORD[6]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v54",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v55",
+          "type": "_QWORD[32]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v56",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v57",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v58",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v59",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v60",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v61",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v62",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v63",
+          "type": "_QWORD[10]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v64",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v65",
+          "type": "_DWORD[3]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v66",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v67",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v68",
+          "type": "_DWORD[112]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v69",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v70",
+          "type": "__int64"
+        }
+      ],
+      "name": "_cryptex_signature_create",
+      "prototype": "__int64 __fastcall cryptex_signature_create(__int64 a1, __int64 a2, __int64 a3)",
+      "pseudocode": "__int64 __fastcall cryptex_signature_create(__int64 a1, __int64 a2, __int64 a3)\n{\n  _QWORD *v6; // x19\n  __int64 v7; // x0\n  __int64 v8; // x0\n  __int64 v9; // x0\n  __int64 v10; // x0\n  __int64 v11; // x20\n  __int64 v12; // x8\n  __int64 v13; // x9\n  __int64 v14; // x10\n  int v15; // w0\n  __int64 v16; // x21\n  __int64 v17; // x20\n  __int64 v18; // x0\n  const char *v19; // x1\n  const char *v20; // x3\n  __int64 v21; // x2\n  __int64 v22; // x4\n  __int64 v23; // x0\n  __int64 Error; // x21\n  __int64 v25; // x20\n  __int64 j; // x22\n  const char *v27; // x24\n  int v28; // w22\n  __int64 v29; // x20\n  __int64 v30; // x0\n  const char *v31; // x8\n  __int64 v33; // x21\n  __int64 v34; // x22\n  __int64 i; // x24\n  int v36; // w26\n  _DWORD *v37; // x4\n  int v38; // w0\n  int v39; // w20\n  int v40; // w0\n  __int64 v41; // x0\n  __int64 v42; // x0\n  __int64 v43; // x0\n  int v44; // w20\n  __int64 v45; // x0\n  __int64 v46; // x0\n  __int64 v47; // [xsp+8h] [xbp-488h]\n  _WORD v48[8]; // [xsp+10h] [xbp-480h] BYREF\n  __int64 v49; // [xsp+20h] [xbp-470h] BYREF\n  __int64 v50; // [xsp+28h] [xbp-468h]\n  unsigned int v51; // [xsp+34h] [xbp-45Ch] BYREF\n  __int64 v52; // [xsp+38h] [xbp-458h] BYREF\n  _QWORD v53[6]; // [xsp+40h] [xbp-450h] BYREF\n  _QWORD v55[32]; // [xsp+80h] [xbp-410h] BYREF\n  __int128 v56; // [xsp+180h] [xbp-310h]\n  __int128 v57; // [xsp+190h] [xbp-300h]\n  _QWORD v63[10]; // [xsp+1F0h] [xbp-2A0h] BYREF\n  _DWORD v65[3]; // [xsp+250h] [xbp-240h]\n  int v67; // [xsp+26Ch] [xbp-224h]\n  _DWORD v68[112]; // [xsp+270h] [xbp-220h] BYREF\n  __int64 v70; // [xsp+438h] [xbp-58h]\n\n  v70 = *MEMORY[0x2D80A64A8];\n  v6 = (_QWORD *)_cryptex_signature_alloc(0x170);\n  v6[5] = a2;\n  if ( a3 != 0 )\n    v7 = sub_2D007BE30(a3);\n  else\n    v7 = 0;\n  v6[0x2D] = v7;\n  v8 = buff_xfer(v6 + 7, a1);\n  if ( v6[0xC] == 0x2CB807FB8LL )\n    cryptex_signature_create.cold.1(v8);\n  v6[6] = sub_2D0081780(v8);\n  _cryptex_signature_compute_hash(v6);\n  object_proto_init(v6 + 2, \"com.apple.security.libcryptex.core\", \"signature\");\n  v9 = sub_2D0082430(\"com.apple.security.libcryptex.core\");\n  if ( (_DWORD)v9 != 0 )\n  {\n    memset(v68, 0, sizeof(v68));\n    memset(v53, 0, sizeof(v53));\n    v52 = 0;\n    v51 = 0;\n    v65[0] = _str24cc(\"c411\");\n    v65[1] = 0x67646D67;\n    v65[2] = _str24cc(\"ginc\");\n    v67 = _str24cc(\"pdmg\");\n    v10 = sub_2D0059470(8, 0x40, 0x10D20402FA6D3E5LL);\n    v49 = v10;\n    if ( v10 != 0 )\n    {\n      v11 = v10;\n      v12 = 0;\n      v13 = 8;\n      do\n      {\n        v14 = v10 + (v12++ << 6);\n        *(_QWORD *)(v14 + 0x38) = 0;\n        *(_OWORD *)(v14 + 0x28) = 0u;\n        *(_OWORD *)(v14 + 0x18) = 0u;\n        *(_OWORD *)(v14 + 8) = 0u;\n        --v13;\n      }\n      while ( v13 != 0 );\n      v15 = sub_2D007CAF0(v6[7], v6[8], v68);\n      if ( v15 != 0 )\n      {\n        v16 = v15;\n        LOWORD(v55[0]) = 0;\n        v17 = sub_2D007E7E0(\n                2,\n                0,\n                0,\n                0,\n                qword_2CB7F0000,\n                MEMORY[0x2D80A6B18],\n                0x10,\n                \"couldn't decode manifest for fingerprinting\",\n                v55,\n                2);\n        v18 = sub_2D0069120(\n                \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs\"\n                \"/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/signature.c\",\n                0x2F);\n        if ( v18 != 0 )\n          v19 = (const char *)(v18 + 1);\n        else\n          v19 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs\"\n                \"/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/signature.c\";\n        v20 = \"com.apple.security.cryptex.libder\";\n        v21 = 0x100;\n      }\n      else\n      {\n        v33 = 0;\n        v34 = 0;\n        for ( i = 8; i != 0; --i )\n        {\n          v36 = v65[v34];\n          v37 = (_DWORD *)(v11 + (v33 << 6));\n          *v37 = v36;\n          v38 = sub_2D007D0C0(v68, v36, 0x44475354, v37 + 2, v37 + 4);\n          if ( v38 != 1 )\n          {\n            if ( v38 != 0 )\n            {\n              v16 = v38;\n              LODWORD(v55[0]) = 0x4000100;\n              HIDWORD(v55[0]) = v36;\n              v17 = sub_2D007E7E0(\n                      2,\n                      0,\n                      0,\n                      0,\n                      qword_2CB7F0000,\n                      MEMORY[0x2D80A6B18],\n                      0x10,\n                      \"couldn't get object property %X for fingerprinting\",\n                      (unsigned int)v55);\n              v42 = sub_2D0069120(\n                      \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.app\"\n                      \"le.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/signature.c\",\n                      0x2F);\n              if ( v42 != 0 )\n                v19 = (const char *)(v42 + 1);\n              else\n                v19 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.app\"\n                      \"le.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/signature.c\";\n              v20 = \"com.apple.security.cryptex.libder\";\n              v21 = 0x10D;\n              goto LABEL_14;\n            }\n            v50 = ++v33;\n          }\n          ++v34;\n        }\n        v39 = sub_2D00821A0(0, 0x2CB8036A0LL, 0x2CB803758LL, 0x2CB803844LL, 0, 0, &v52, &v51, &v49, 0);\n        buff_init(v53, 0, 0x2CB807FB4LL, v52, v51);\n        if ( v39 == 0x64 )\n        {\n          memset(v63, 0, sizeof(v63));\n          v56 = 0u;\n          v57 = 0u;\n          memset(v55, 0, sizeof(v55));\n          v40 = sub_2D007CAF0(v53[0], v53[1], v55);\n          if ( v40 != 0 )\n          {\n            v16 = v40;\n            v48[0] = 0;\n            LODWORD(v47) = 2;\n            v17 = sub_2D007E7E0(\n                    2,\n                    0,\n                    0,\n                    0,\n                    qword_2CB7F0000,\n                    MEMORY[0x2D80A6B18],\n                    0x10,\n                    \"couldn't decode generated manifest for fingerprinting\",\n                    v48,\n                    v47);\n            v41 = sub_2D0069120(\n                    \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple\"\n                    \".xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/signature.c\",\n                    0x2F);\n            if ( v41 != 0 )\n              v19 = (const char *)(v41 + 1);\n            else\n              v19 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple\"\n                    \".xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/signature.c\";\n            v20 = \"com.apple.security.cryptex.libder\";\n            v21 = 0x126;\n          }\n          else\n          {\n            v44 = ((__int64 (__fastcall *)(_QWORD, _QWORD, _QWORD *, _QWORD))*MEMORY[0x2D80A28E0])(\n                    *((_QWORD *)&v56 + 1),\n                    v57,\n                    &v63[1],\n                    **(_QWORD **)(MEMORY[0x2D80A28E0] + 0x20LL));\n            _sprintdgst((char *)v6 + 0x101, &v63[1], 0x30);\n            if ( v44 == 0 )\n            {\n              Error = 0;\n              goto LABEL_20;\n            }\n            v16 = v44;\n            v48[0] = 0;\n            LODWORD(v47) = 2;\n            v17 = sub_2D007E7E0(\n                    2,\n                    0,\n                    0,\n                    0,\n                    qword_2CB7F0000,\n                    MEMORY[0x2D80A6B18],\n                    0x10,\n                    \"couldn't compute fingerprint digest\",\n                    v48,\n                    v47);\n            v45 = sub_2D0069120(\n                    \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple\"\n                    \".xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/signature.c\",\n                    0x2F);\n            if ( v45 != 0 )\n              v19 = (const char *)(v45 + 1);\n            else\n              v19 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple\"\n                    \".xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/signature.c\";\n            v20 = \"com.apple.security.cryptex.libder\";\n            v21 = 0x132;\n          }\n        }\n        else\n        {\n          v16 = v39;\n          LOWORD(v55[0]) = 0;\n          LODWORD(v47) = 2;\n          v17 = sub_2D007E7E0(\n                  2,\n                  0,\n                  0,\n                  0,\n                  qword_2CB7F0000,\n                  MEMORY[0x2D80A6B18],\n                  0x10,\n                  \"couldn't create manifest for fingerprinting\",\n                  v55,\n                  v47);\n          v43 = sub_2D0069120(\n                  \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.x\"\n                  \"bs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/signature.c\",\n                  0x2F);\n          if ( v43 != 0 )\n            v19 = (const char *)(v43 + 1);\n          else\n            v19 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.x\"\n                  \"bs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/core/signature.c\";\n          v20 = \"com.apple.security.cryptex.image4encode\";\n          v21 = 0x11E;\n        }\n      }\nLABEL_14:\n      v22 = v16;\n    }\n    else\n    {\n      v55[0] = 0xC04000100LL;\n      v17 = sub_2D007E7E0(\n              2,\n              0,\n              0,\n              0,\n              qword_2CB7F0000,\n              MEMORY[0x2D80A6B18],\n              0x10,\n              \"couldn't allocate object digests for fingerprinting %{darwin.errno}d\",\n              v55,\n              8);\n      v23 = sub_2D0069120(\n              \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/T\"\n              \"emporaryDirectory.ZfEZH4/Sources/libcryptex/core/signature.c\",\n              0x2F);\n      if ( v23 != 0 )\n        v19 = (const char *)(v23 + 1);\n      else\n        v19 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/T\"\n              \"emporaryDirectory.ZfEZH4/Sources/libcryptex/core/signature.c\";\n      v20 = \"com.apple.security.cryptex.posix\";\n      v21 = 0xF6;\n      v22 = 0xC;\n    }\n    Error = createError(\"cryptex_sigtool_fingerprint_create\", v19, v21, v20, v22, 0, v17);\n    sub_2D00592B0(v17);\nLABEL_20:\n    if ( v49 != 0 )\n    {\n      v25 = 0;\n      for ( j = 8; j != 0x208; j += 0x40 )\n        buff_destroy(v49 + (v25++ << 6) + 8);\n      sub_2D00592B0(v49);\n    }\n    v9 = buff_destroy(v53);\n    if ( Error != 0 )\n    {\n      v27 = (const char *)v6[2];\n      v28 = *(_DWORD *)sub_2D0058F40(v9);\n      v29 = v6[4];\n      v30 = sub_2D005A620(v29, 0x10);\n      if ( (_DWORD)v30 != 0 )\n      {\n        v31 = \"[anonymous]\";\n        if ( v27 != nullptr )\n          v31 = v27;\n        v68[0] = 0x8220102;\n        *(_QWORD *)&v68[1] = v31;\n        v30 = sub_2D005A5B0(qword_2CB7F0000, v29, 0x10, \"%{public}s: couldn't generate cryptex fingerprint\", v68, 0xC);\n      }\n      *(_DWORD *)sub_2D0058F40(v30) = v28;\n      v9 = sub_2D0058520(Error);\n    }\n  }\n  if ( *MEMORY[0x2D80A64A8] == v70 )\n    return (__int64)v6;\n  v46 = sub_2D0058F60(v9);\n  return _cryptex_signature_compute_hash(v46);\n}\n"
+    },
+    {
+      "address": "0x2cb801b84",
+      "end_address": "0x2cb801d8c",
+      "input": "__cryptex_signature_compute_hash",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "_DWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v23",
+          "type": "_BYTE[8]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v24",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v25",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v26",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v27",
+          "type": "_WORD[36]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v28",
+          "type": "__int64"
+        }
+      ],
+      "name": "__cryptex_signature_compute_hash",
+      "prototype": "_DWORD *__fastcall _cryptex_signature_compute_hash(_QWORD *a1)",
+      "pseudocode": "_DWORD *__fastcall _cryptex_signature_compute_hash(_QWORD *a1)\n{\n  _QWORD *v2; // x20\n  __int64 v3; // x8\n  char *v4; // x21\n  __int64 v5; // x0\n  const char *v6; // x24\n  int v7; // w23\n  __int64 v8; // x21\n  __int64 v9; // x0\n  __int64 v11; // x9\n  _QWORD *v12; // x21\n  __int64 v13; // x0\n  const char *v14; // x23\n  int v15; // w20\n  __int64 v16; // x19\n  __int64 v17; // x0\n  _DWORD *result; // x0\n  __int64 v20; // x8\n  __int64 v21; // x0\n  _BYTE v23[8]; // [xsp+8h] [xbp-98h] BYREF\n  int v24; // [xsp+10h] [xbp-90h] BYREF\n  _WORD v27[36]; // [xsp+1Eh] [xbp-82h]\n  __int64 v28; // [xsp+68h] [xbp-38h]\n\n  v28 = *MEMORY[0x2D80A64A8];\n  v2 = (_QWORD *)a1[6];\n  MEMORY[0x2DAA541B8]();\n  v4 = &v23[-v3 - 8];\n  sub_2D005A5D0(&v23[-v3 - 8]);\n  if ( *v2 >= 0x31u )\n    _cryptex_signature_compute_hash.cold.1(v23, &v24);\n  sub_2D0081520(v2, v4);\n  sub_2D0081530(a1[6], v4, a1[8], a1[7]);\n  v5 = (*(__int64 (**)(void))(a1[6] + 0x38LL))();\n  v6 = (const char *)a1[2];\n  v7 = *(_DWORD *)sub_2D0058F40(v5);\n  v8 = a1[4];\n  v9 = sub_2D005A620(v8, 2);\n  if ( (_DWORD)v9 != 0 )\n  {\n    if ( v6 != nullptr )\n    else\n    v11 = *(_QWORD *)a1[6];\n    v24 = 0x8220302;\n    *(_DWORD *)v27 = v11;\n    v27[2] = 0x830;\n    *(_QWORD *)&v27[3] = a1 + 0xE;\n    v9 = sub_2D005A5B0(qword_2CB7F0000, v8, 2, \"%{public}s: computed manifest hash: %.*P\", &v24, 0x1C);\n  }\n  v12 = a1 + 0x14;\n  *(_DWORD *)sub_2D0058F40(v9) = v7;\n  v13 = _sprintdgst(a1 + 0x14, a1 + 0xE, *(_QWORD *)a1[6]);\n  v14 = (const char *)a1[2];\n  v15 = *(_DWORD *)sub_2D0058F40(v13);\n  v16 = a1[4];\n  v17 = sub_2D005A620(v16, 2);\n  if ( (_DWORD)v17 != 0 )\n  {\n    if ( v14 != nullptr )\n    else\n    v24 = 0x8220202;\n    *(_QWORD *)v27 = v12;\n    v17 = sub_2D005A5B0(qword_2CB7F0000, v16, 2, \"%{public}s: manifest hash cstring: %s\", &v24, 0x16);\n  }\n  result = (_DWORD *)sub_2D0058F40(v17);\n  v20 = *MEMORY[0x2D80A64A8];\n  *result = v15;\n  if ( v20 != v28 )\n  {\n    v21 = sub_2D0058F60(result);\n    return (_DWORD *)cryptex_signature_write(v21);\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2cb7f2fa8",
+      "end_address": "0x2cb7f31a8",
+      "input": "_cryptex_core_get_nonce_domain_handle",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "_DWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "is_cryptex1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "_DWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v23",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v24",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v25",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v27",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v28",
+          "type": "int"
+        }
+      ],
+      "name": "_cryptex_core_get_nonce_domain_handle",
+      "prototype": "__int64 __fastcall cryptex_core_get_nonce_domain_handle(_QWORD *a1, _DWORD *a2)",
+      "pseudocode": "__int64 __fastcall cryptex_core_get_nonce_domain_handle(_QWORD *a1, _DWORD *a2)\n{\n  __int64 is_cryptex1; // x0\n  __int64 v5; // x8\n  __int64 result; // x0\n  const char *v7; // x21\n  int v8; // w20\n  __int64 v9; // x19\n  __int64 v10; // x0\n  _DWORD *v12; // x8\n  const char *v13; // x22\n  int v14; // w21\n  __int64 v15; // x20\n  __int64 v16; // x0\n  __int64 v18; // x9\n  const char *v19; // x21\n  __int64 v20; // x19\n  __int64 v21; // x0\n  int v23; // [xsp+0h] [xbp-40h] BYREF\n  __int64 v26; // [xsp+Eh] [xbp-32h]\n\n  if ( a2 == nullptr )\n  {\n    v7 = (const char *)a1[2];\n    v8 = *(_DWORD *)sub_2D0058F40(a1);\n    v9 = a1[4];\n    v10 = sub_2D005A620(v9, 0x10);\n    if ( (_DWORD)v10 != 0 )\n    {\n      if ( v7 != nullptr )\n      v23 = 0x8220202;\n      LODWORD(v26) = 0x16;\n      v10 = sub_2D005A5B0(qword_2CB7F0000, v9, 0x10, \"%{public}s: Invalid input.: %{darwin.errno}d\", &v23, 0x12);\n    }\n    v12 = (_DWORD *)sub_2D0058F40(v10);\n    result = 0x16;\nLABEL_20:\n    *v12 = v8;\n    return result;\n  }\n  is_cryptex1 = cryptex_core_is_cryptex1(a1);\n  if ( (_DWORD)is_cryptex1 != 0 )\n  {\n    v5 = a1[0x1C];\n    if ( v5 != 0 )\n    {\n      *a2 = *(_DWORD *)(v5 + 0x28);\n      return 0;\n    }\n    v19 = (const char *)a1[2];\n    v8 = *(_DWORD *)sub_2D0058F40(is_cryptex1);\n    v20 = a1[4];\n    v21 = sub_2D005A620(v20, 0x10);\n    if ( (_DWORD)v21 != 0 )\n    {\n      if ( v19 != nullptr )\n      v23 = 0x8220202;\n      LODWORD(v26) = 2;\n      v21 = sub_2D005A5B0(\n              qword_2CB7F0000,\n              v20,\n              0x10,\n              \"%{public}s: No Cryptex1 properties available.: %{darwin.errno}d\",\n              &v23,\n              0x12);\n    }\n    v12 = (_DWORD *)sub_2D0058F40(v21);\n    result = 2;\n    goto LABEL_20;\n  }\n  v13 = (const char *)a1[2];\n  v14 = *(_DWORD *)sub_2D0058F40(is_cryptex1);\n  v15 = a1[4];\n  v16 = sub_2D005A620(v15, 0x10);\n  if ( (_DWORD)v16 != 0 )\n  {\n    if ( v13 != nullptr )\n    v18 = *(_QWORD *)(a1[0x17] + 0x28LL);\n    v23 = 0x8220302;\n    v26 = v18;\n    v16 = sub_2D005A5B0(\n            qword_2CB7F0000,\n            v15,\n            0x10,\n            \"%{public}s: not supported image type: %s: %{darwin.errno}d\",\n            &v23,\n            0x1C);\n  }\n  *(_DWORD *)sub_2D0058F40(v16) = v14;\n  return 0x2D;\n}\n"
+    },
+    {
+      "address": "0x2cb800c94",
+      "end_address": "0x2cb8011a4",
+      "input": "__cryptex_magister_record_property_continue2",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "int"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v30",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v31",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v32",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v33",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v34",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v35",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v36",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v37",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v38",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v39",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v40",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "Error",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v43",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v44",
+          "type": "_QWORD[6]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v45",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v46",
+          "type": "_BYTE[8]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v47",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v48",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v49",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v50",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v51",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v52",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v53",
+          "type": "__int64"
+        }
+      ],
+      "name": "__cryptex_magister_record_property_continue2",
+      "prototype": "__int64 __fastcall _cryptex_magister_record_property_continue2(__int64 a1, __int64 a2, __int64 a3, int a4, __int64 *a5)",
+      "pseudocode": "__int64 __fastcall _cryptex_magister_record_property_continue2(__int64 a1, __int64 a2, __int64 a3, int a4, __int64 *a5)\n{\n  __int64 v6; // x20\n  __int64 v8; // x21\n  __int64 v9; // x23\n  __int64 v10; // x0\n  const char *v11; // x8\n  __int64 v12; // x0\n  __int64 v13; // x22\n  __int64 v14; // x21\n  __int64 v15; // x0\n  __int64 v16; // x0\n  __int64 v17; // x24\n  __int64 v18; // x23\n  __int64 v19; // x26\n  const char *v20; // x25\n  int v21; // w23\n  __int64 v22; // x21\n  __int64 v23; // x0\n  __int64 v25; // x9\n  const char *v26; // x8\n  __int64 v27; // x22\n  __int64 v28; // x0\n  const char *v29; // x1\n  const char *v30; // x3\n  __int64 v31; // x2\n  __int64 v32; // x4\n  __int64 v33; // x21\n  __int64 v34; // x0\n  const char *v35; // x8\n  __int64 v36; // x0\n  __int64 v38; // x9\n  const char *v39; // x8\n  __int64 v40; // x0\n  __int64 Error; // x21\n  __int64 result; // x0\n  __int64 v43; // x0\n  _QWORD v44[6]; // [xsp+10h] [xbp-F0h] BYREF\n  _BYTE v46[8]; // [xsp+48h] [xbp-B8h] BYREF\n  int v47; // [xsp+50h] [xbp-B0h] BYREF\n  __int64 v50; // [xsp+5Eh] [xbp-A2h]\n  __int64 v53; // [xsp+A8h] [xbp-58h]\n\n  v53 = *MEMORY[0x2D80A64A8];\n  memset(v44, 0, sizeof(v44));\n  v6 = *a5;\n  if ( a4 != 0 )\n  {\n    v8 = a4;\n    v9 = *(_QWORD *)(v6 + 0x48);\n    if ( v9 != 0 )\n    {\n      if ( (unsigned int)sub_2D005A620(*(_QWORD *)(v6 + 0x48), 0x10) != 0 )\n        v10 = 3;\n      else\n        v10 = 2;\n      v11 = *(const char **)(v6 + 0x38);\n      if ( v11 == nullptr )\n        v11 = \"[anonymous]\";\n      v47 = 0x8220202;\n      LODWORD(v50) = a4;\n      v12 = sub_2D007E7E0(\n              v10,\n              0,\n              0,\n              0,\n              qword_2CB7F0000,\n              v9,\n              0x10,\n              \"%{public}s: image4 trust evaluation failed %{darwin.errno}d\",\n              &v47,\n              0x12);\n    }\n    else\n    {\n      v26 = *(const char **)(v6 + 0x38);\n      if ( v26 == nullptr )\n        v26 = \"[anonymous]\";\n      v47 = 0x8220202;\n      LODWORD(v50) = a4;\n      v12 = sub_2D007E7E0(\n              2,\n              0,\n              0,\n              0,\n              qword_2CB7F0000,\n              MEMORY[0x2D80A6B18],\n              0x10,\n              \"%{public}s: image4 trust evaluation failed %{darwin.errno}d\",\n              &v47,\n              0x12);\n    }\n    v27 = v12;\n    v28 = sub_2D0069120(\n            \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/core/magister.c\",\n            0x2F);\n    if ( v28 != 0 )\n      v29 = (const char *)(v28 + 1);\n    else\n      v29 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/core/magister.c\";\n    v30 = \"com.apple.security.cryptex.posix\";\n    v31 = 0x18C;\n    v32 = v8;\n  }\n  else\n  {\n    v13 = a5[4];\n    v14 = *(_QWORD *)(v13 + 0x18);\n    if ( (unsigned int)sub_2D0081760() != 0 )\n    {\n      while ( 1 )\n      {\n        v15 = sub_2D0059470(1, v14, 0x8A375538LL);\n        if ( v15 != 0 )\n          break;\n        sub_2D0081740();\n      }\n    }\n    else\n    {\n      v15 = sub_2D0059470(1, v14, 0x8709206FLL);\n      if ( v15 == 0 )\n        _cryptex_magister_record_property_continue2.cold.1(v46, &v47, v14);\n    }\n    v16 = buff_init(v44, 0, 0x2CB807FB4LL, v15, *(_QWORD *)(v13 + 0x18));\n    v17 = a5[0xF];\n    v18 = *(_QWORD *)(v13 + 0x18);\n    if ( v17 == v18 )\n    {\n      v19 = a5[0xE];\n      v20 = *(const char **)(v6 + 0x38);\n      v21 = *(_DWORD *)sub_2D0058F40(v16);\n      v22 = *(_QWORD *)(v6 + 0x48);\n      v23 = sub_2D005A620(v22, 1);\n      if ( v17 != 0 && v19 != 0 )\n      {\n        if ( (_DWORD)v23 != 0 )\n        {\n          if ( v20 != nullptr )\n          v25 = *(_QWORD *)(v13 + 8);\n          v47 = 0x8220202;\n          v50 = v25;\n          v23 = sub_2D005A5B0(\n                  qword_2CB7F0000,\n                  v22,\n                  1,\n                  \"%{public}s: Successfully read property '%{public}s' from im4m\",\n                  &v47,\n                  0x16);\n        }\n        *(_DWORD *)sub_2D0058F40(v23) = v21;\n        sub_2D00594B0(v44[0], a5[0xE], a5[0xF]);\n        buff_xfer(a5 + 5, v44);\n      }\n      else\n      {\n        if ( (_DWORD)v23 != 0 )\n        {\n          if ( v20 != nullptr )\n          v38 = *(_QWORD *)(v13 + 8);\n          v47 = 0x8220202;\n          v50 = v38;\n          v23 = sub_2D005A5B0(\n                  qword_2CB7F0000,\n                  v22,\n                  1,\n                  \"%{public}s: Property '%{public}s' not found in im4m\",\n                  &v47,\n                  0x16);\n        }\n        *(_DWORD *)sub_2D0058F40(v23) = v21;\n      }\n      buff_destroy(v44);\n      goto LABEL_51;\n    }\n    v33 = *(_QWORD *)(v6 + 0x48);\n    if ( v33 != 0 )\n    {\n      if ( (unsigned int)sub_2D005A620(*(_QWORD *)(v6 + 0x48), 0x10) != 0 )\n        v34 = 3;\n      else\n        v34 = 2;\n      v35 = *(const char **)(v6 + 0x38);\n      if ( v35 == nullptr )\n        v35 = \"[anonymous]\";\n      v47 = 0x8220302;\n      v50 = v17;\n      v36 = sub_2D007E7E0(\n              v34,\n              0,\n              0,\n              0,\n              qword_2CB7F0000,\n              v33,\n              0x10,\n              \"%{public}s: Property size (%zu) is not the expected size (%zu).\",\n              &v47,\n              0x20);\n    }\n    else\n    {\n      v39 = *(const char **)(v6 + 0x38);\n      if ( v39 == nullptr )\n        v39 = \"[anonymous]\";\n      v47 = 0x8220302;\n      v50 = v17;\n      v36 = sub_2D007E7E0(\n              2,\n              0,\n              0,\n              0,\n              qword_2CB7F0000,\n              MEMORY[0x2D80A6B18],\n              0x10,\n              \"%{public}s: Property size (%zu) is not the expected size (%zu).\",\n              &v47,\n              0x20);\n    }\n    v27 = v36;\n    v40 = sub_2D0069120(\n            \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/core/magister.c\",\n            0x2F);\n    if ( v40 != 0 )\n      v29 = (const char *)(v40 + 1);\n    else\n      v29 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/core/magister.c\";\n    v30 = \"com.apple.security.cryptex\";\n    v31 = 0x194;\n    v32 = 0x18;\n  }\n  Error = createError(\"_cryptex_magister_record_property_continue2\", v29, v31, v30, v32, 0, v27);\n  sub_2D00592B0(v27);\n  buff_destroy(v44);\n  if ( Error != 0 )\n  {\n    a5[2] = sub_2D0058530(Error);\n    cryptex_target_async_f(v6, a5, 0x2CB8011A4LL);\n    result = sub_2D0058520(Error);\n    goto LABEL_52;\n  }\nLABEL_51:\n  a5[2] = 0;\n  result = cryptex_target_async_f(v6, a5, 0x2CB8011A4LL);\nLABEL_52:\n  if ( *MEMORY[0x2D80A64A8] != v53 )\n  {\n    v43 = sub_2D0058F60(result);\n    return _cryptex_magister_record_property_callback(v43);\n  }\n  return result;\n}\n"
+    }
+  ],
+  "database_target": "6882028eab8b",
+  "requested": [
+    "_cryptex_signature_create",
+    "__cryptex_signature_compute_hash",
+    "_cryptex_core_get_nonce_domain_handle",
+    "__cryptex_magister_record_property_continue2"
+  ]
+}

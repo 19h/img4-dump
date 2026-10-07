@@ -1,0 +1,126 @@
+{
+  "import_count": 20,
+  "imports": [
+    {
+      "address": "0x2e29a39b0",
+      "library": "/usr/lib/libcryptex_interface.dylib",
+      "name": "_cryptex_trampoline_upgrade_interface_wait",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a39b8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__NSConcreteGlobalBlock",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a39c0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "___error",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a39c8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "___os_temporary_resource_shortage",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a39d0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "___stack_chk_fail",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a39d8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "___stack_chk_guard",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a39e0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__dispatch_is_multithreaded",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a39e8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__os_crash_msg",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a39f0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__os_log_default",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a39f8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__os_log_impl",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a3a00",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__os_log_send_and_compose_impl",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a3a08",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_once",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a3a10",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_free",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a3a18",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_malloc_type_calloc",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a3a20",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_os_log_create",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a3a28",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_os_log_type_enabled",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a3a30",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_strdup",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a3a38",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_strerror",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a3a40",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_strlen",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e29a3a48",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_sysctlbyname",
+      "ordinal": 0
+    }
+  ],
+  "database_target": "677b8c997b14"
+}

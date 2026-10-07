@@ -1,0 +1,365 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "address": "0x2cb811d74",
+      "end_address": "0x2cb811e54",
+      "input": "0x2cb811e10",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "_OWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "unsigned int *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v10",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v11",
+          "type": "char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v12",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v14",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v15",
+          "type": "__int64"
+        }
+      ],
+      "name": "_cryptex_trampoline_upgrade_wait_options_create.cold.1",
+      "prototype": "void __fastcall __noreturn cryptex_trampoline_upgrade_wait_options_create.cold.1(_QWORD *a1, _OWORD *a2)",
+      "pseudocode": "void __fastcall __noreturn cryptex_trampoline_upgrade_wait_options_create.cold.1(_QWORD *a1, _OWORD *a2)\n{\n  __int64 v4; // x21\n  __int64 v5; // x0\n  __int64 v6; // x22\n  unsigned int *v7; // x0\n  __int64 v8; // x0\n  __int64 v9; // x0\n  int v10; // [xsp+10h] [xbp-40h] BYREF\n\n  *a1 = 0;\n  a2[3] = 0u;\n  a2[4] = 0u;\n  a2[1] = 0u;\n  a2[2] = 0u;\n  *a2 = 0u;\n  v4 = MEMORY[0x2D80A6B18];\n  v5 = sub_2D005A620(MEMORY[0x2D80A6B18], 0x10);\n  if ( (_DWORD)v5 != 0 )\n    v6 = 3;\n  else\n    v6 = 2;\n  v7 = (unsigned int *)sub_2D0058F40(v5);\n  v8 = sub_2D0059B10(*v7);\n  v10 = 0x8200302;\n  v9 = sub_2D007E7E0(\n         v6,\n         a1,\n         a2,\n         0x50,\n         qword_2CB811000,\n         v4,\n         0x10,\n         \"allocation failed: obj = %s, size = %lu, error = %s\",\n         (const char *)&v10,\n         0x20);\n  sub_2D007E7D0(*a1, v9);\n  __break(1u);\n}\n"
+    },
+    {
+      "address": "0x2cb811e54",
+      "end_address": "0x2cb811eac",
+      "input": "0x2cb811e58",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "_OWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "unsigned int *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v14",
+          "type": "_DWORD[3]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v15",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v17",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v18",
+          "type": "__int64"
+        }
+      ],
+      "name": "_cryptex_trampoline_upgrade_wait_options_set_cryptex_name.cold.1",
+      "prototype": "void __fastcall __noreturn cryptex_trampoline_upgrade_wait_options_set_cryptex_name.cold.1(__int64 a1, _QWORD *a2, _OWORD *a3)",
+      "pseudocode": "void __fastcall __noreturn cryptex_trampoline_upgrade_wait_options_set_cryptex_name.cold.1(\n        __int64 a1,\n        _QWORD *a2,\n        _OWORD *a3)\n{\n  __int64 v3; // x0\n  __int64 v4; // x21\n  __int64 v5; // x22\n  __int64 v6; // x30\n  __int64 v7; // x0\n  __int64 v10; // x23\n  unsigned int *v11; // x0\n  __int64 v12; // x0\n  __int64 v13; // x30\n  _DWORD v14[3]; // [xsp+10h] [xbp-50h] BYREF\n\n  v4 = sub_2D0059B20();\n  *a2 = 0;\n  *a3 = 0u;\n  a3[1] = 0u;\n  a3[2] = 0u;\n  a3[3] = 0u;\n  a3[4] = 0u;\n  v5 = MEMORY[0x2D80A6B18];\n  if ( ((v6 ^ (2 * v6)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  v7 = sub_2D005A620(MEMORY[0x2D80A6B18], 0x10);\n  if ( (_DWORD)v7 != 0 )\n    v10 = 3;\n  else\n    v10 = 2;\n  v11 = (unsigned int *)sub_2D0058F40(v7);\n  v12 = sub_2D0059B10(*v11);\n  v14[0] = 0x8200302;\n  *(_QWORD *)&v14[1] = 0x2CB811F38LL;\n  if ( ((v13 ^ (2 * v13)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  v3 = sub_2D007E7E0(\n         v10,\n         a2,\n         a3,\n         0x50,\n         qword_2CB811000,\n         v5,\n         0x10,\n         \"allocation failed: obj = %s, size = %lu, error = %s\",\n         (const char *)v14,\n         0x20,\n         *(const char **)v14);\n  sub_2D007E7D0(*a2, v3);\n  __break(1u);\n}\n"
+    },
+    {
+      "address": "0x2cb811e54",
+      "end_address": "0x2cb811eac",
+      "input": "0x2cb811e8c",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "_OWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "unsigned int *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v14",
+          "type": "_DWORD[3]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v15",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v17",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v18",
+          "type": "__int64"
+        }
+      ],
+      "name": "_cryptex_trampoline_upgrade_wait_options_set_cryptex_name.cold.1",
+      "prototype": "void __fastcall __noreturn cryptex_trampoline_upgrade_wait_options_set_cryptex_name.cold.1(__int64 a1, _QWORD *a2, _OWORD *a3)",
+      "pseudocode": "void __fastcall __noreturn cryptex_trampoline_upgrade_wait_options_set_cryptex_name.cold.1(\n        __int64 a1,\n        _QWORD *a2,\n        _OWORD *a3)\n{\n  __int64 v3; // x0\n  __int64 v4; // x21\n  __int64 v5; // x22\n  __int64 v6; // x30\n  __int64 v7; // x0\n  __int64 v10; // x23\n  unsigned int *v11; // x0\n  __int64 v12; // x0\n  __int64 v13; // x30\n  _DWORD v14[3]; // [xsp+10h] [xbp-50h] BYREF\n\n  v4 = sub_2D0059B20(a1);\n  *a2 = 0;\n  *a3 = 0u;\n  a3[1] = 0u;\n  a3[2] = 0u;\n  a3[3] = 0u;\n  a3[4] = 0u;\n  v5 = MEMORY[0x2D80A6B18];\n  if ( ((v6 ^ (2 * v6)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  v7 = sub_2D005A620(MEMORY[0x2D80A6B18], 0x10);\n  if ( (_DWORD)v7 != 0 )\n    v10 = 3;\n  else\n    v10 = 2;\n  v11 = (unsigned int *)sub_2D0058F40(v7);\n  v12 = sub_2D0059B10(*v11);\n  v14[0] = 0x8200302;\n  *(_QWORD *)&v14[1] = 0x2CB811F38LL;\n  if ( ((v13 ^ (2 * v13)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  v3 = sub_2D007E7E0(\n         v10,\n         a2,\n         a3,\n         0x50,\n         qword_2CB811000,\n         v5,\n         0x10,\n         \"allocation failed: obj = %s, size = %lu, error = %s\",\n         (const char *)v14,\n         0x20,\n         *(const char **)v14);\n  sub_2D007E7D0(*a2, v3);\n  __break(1u);\n}\n"
+    }
+  ],
+  "database_target": "677b8c997b14",
+  "requested": [
+    "0x2cb811e10",
+    "0x2cb811e58",
+    "0x2cb811e8c"
+  ]
+}

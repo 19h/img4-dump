@@ -1,0 +1,443 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "address": "0x288cb7b18",
+      "end_address": "0x288cb7b2c",
+      "input": "0x288cb7b18",
+      "local_variables": [
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "x8_0",
+          "type": "__int64"
+        }
+      ],
+      "name": "_$s10CryptexKit0A9NonceSpecO15cryptex1GenericACvgZ",
+      "prototype": "void __swiftcall static CryptexNonceSpec.cryptex1Generic.getter(__int64 x8_0)",
+      "pseudocode": "void __swiftcall static CryptexNonceSpec.cryptex1Generic.getter(__int64 x8_0)\n{\n  *(_DWORD *)x8_0 = 3;\n  *(_BYTE *)(x8_0 + 4) = 1;\n}\n"
+    },
+    {
+      "address": "0x288cb7b2c",
+      "end_address": "0x288cb7b40",
+      "input": "0x288cb7b2c",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        }
+      ],
+      "name": "_$s10CryptexKit0A9NonceSpecO24cryptex1GenericEphemeralACvgZ",
+      "prototype": "void __swiftcall static CryptexNonceSpec.cryptex1GenericEphemeral.getter(__int64 a1)",
+      "pseudocode": "void __swiftcall static CryptexNonceSpec.cryptex1GenericEphemeral.getter(__int64 a1)\n{\n  *(_DWORD *)a1 = 8;\n  *(_BYTE *)(a1 + 4) = 1;\n}\n"
+    },
+    {
+      "address": "0x288d21610",
+      "end_address": "0x288d21a64",
+      "input": "0x288d21610",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "void (*)(void)"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "void *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "value",
+          "type": "Swift::Metadata *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "void *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "bool"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v30",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v31",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v32",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v33",
+          "type": "void *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v34",
+          "type": "void *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v35",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v36",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v37",
+          "type": "Swift::Metadata *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v38",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v39",
+          "type": "void *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v40",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v41",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v42",
+          "type": "void *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v43",
+          "type": "void **"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v44",
+          "type": "Swift::Metadata *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v45",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v46",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v47",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v48",
+          "type": "Swift::Metadata *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v49",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v50",
+          "type": "void *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v51",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v52",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v53",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v54",
+          "type": "void (*)(void)"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v55",
+          "type": "_WORD[5]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v56",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v57",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v58",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v59",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v60",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v61",
+          "type": "void *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v62",
+          "type": "void *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v63",
+          "type": "__int64"
+        }
+      ],
+      "name": "_$s10CryptexKit10Image4AuthV8evaluate10ticketData4type9configurey10Foundation0G0V_s13OpaquePointerVSgyALKXEtKF",
+      "prototype": "__int64 __swiftcall __swiftthrows Image4Auth.evaluate(ticketData:type:configure:)(__int64 a1, unsigned __int64 a2, __int64 a3, void (*a4)(void))",
+      "pseudocode": "__int64 __swiftcall __swiftthrows Image4Auth.evaluate(ticketData:type:configure:)(\n        __int64 a1,\n        unsigned __int64 a2,\n        __int64 a3,\n        void (*a4)(void))\n{\n  void *v4; // x21\n  __int64 v9; // x0\n  unsigned __int64 v10; // x8\n  __int64 v11; // x3\n  __int64 v12; // x1\n  Swift::Metadata *value; // x20\n  __int64 v14; // x0\n  void *v15; // x19\n  __int64 v16; // x1\n  __int64 v17; // x0\n  __int64 result; // x0\n  __int64 v19; // x27\n  __int64 v20; // x19\n  __int64 v21; // x0\n  __int64 v22; // x28\n  __int64 v23; // x0\n  bool v24; // vf\n  __int64 v25; // x19\n  __int64 v26; // x2\n  __int64 v27; // x3\n  __int64 v28; // x0\n  __int64 v29; // x0\n  __int64 v30; // x28\n  __int64 v31; // x0\n  __int64 v32; // x19\n  void *v33; // x0\n  void *v34; // x24\n  __int64 v35; // x3\n  __int64 v36; // x0\n  Swift::Metadata *v37; // x20\n  __int64 v38; // x0\n  void *v39; // x22\n  __int64 v40; // x1\n  __int64 v41; // x0\n  void *v42; // x20\n  void **v43; // x0\n  Swift::Metadata *v44; // x20\n  __int64 v45; // x0\n  __int64 v46; // x1\n  __int64 v47; // x0\n  Swift::Metadata *v48; // x20\n  __int64 v49; // x0\n  void *v50; // x22\n  __int64 v51; // x1\n  __int64 v52; // x0\n  __int64 v53; // [xsp+0h] [xbp-90h]\n  void (*v54)(void); // [xsp+8h] [xbp-88h]\n  _WORD v55[5]; // [xsp+10h] [xbp-80h] BYREF\n  char v56; // [xsp+1Ah] [xbp-76h]\n  char v57; // [xsp+1Bh] [xbp-75h]\n  char v58; // [xsp+1Ch] [xbp-74h]\n  char v59; // [xsp+1Dh] [xbp-73h]\n  __int64 v60; // [xsp+20h] [xbp-70h] BYREF\n  void *v61; // [xsp+28h] [xbp-68h] BYREF\n  void *v62; // [xsp+30h] [xbp-60h] BYREF\n  __int64 v63; // [xsp+38h] [xbp-58h]\n\n  v63 = *MEMORY[0x2D80A64A8];\n  v9 = sub_290067290(MEMORY[0x2D80A32A8], 3);\n  if ( v9 == 0 )\n  {\n    value = type metadata accessor for CryptexError(MetadataRequest_Complete).value;\n    v14 = lazy protocol witness table accessor for type CryptexError and conformance CryptexError();\n    v15 = (void *)sub_290065900(value, v14, 0, 0);\n    v17 = sub_2900644B0(v16, value, 0x10);\n    __swift_set_error(v15);\n    result = sub_290064530(v17);\n    goto LABEL_39;\n  }\n  v60 = v9;\n  v10 = a2 >> 0x3E;\n  if ( (unsigned int)(a2 >> 0x3E) <= 1 )\n  {\n    if ( (_DWORD)v10 == 0 )\n    {\n      *(_QWORD *)v55 = a1;\n      v55[4] = a2;\n      v56 = BYTE2(a2);\n      v57 = BYTE3(a2);\n      v58 = BYTE4(a2);\n      v59 = BYTE5(a2);\n      if ( a3 == 0 )\n        goto LABEL_45;\n      v11 = BYTE6(a2);\n      v12 = a3;\nLABEL_22:\n      v33 = (void *)sub_2900672C0(v9, v12, v55, v11, 0);\n      if ( v33 != nullptr )\n      {\n        v62 = v33;\n        __swift_set_error(v4);\n        a4();\n        v15 = v4;\n        if ( v4 == nullptr )\n        {\nLABEL_31:\n          v37 = type metadata accessor for CryptexError(MetadataRequest_Complete).value;\n          v38 = lazy protocol witness table accessor for type CryptexError and conformance CryptexError();\n          v39 = (void *)sub_290065900(v37, v38, 0, 0);\n          sub_2900644B0(v40, v37, 0x10);\n          v61 = v39;\n          v41 = sub_2900672B0(v62, &v61, 0x288D21B08LL);\n          v42 = v61;\n          if ( v61 != nullptr )\n          {\n            __swift_set_error(v61);\n            sub_290064530(v41);\n            v43 = &v62;\nLABEL_37:\n            sub_2900672A0(v43);\n            v15 = v42;\n            goto LABEL_38;\n          }\n        }\nLABEL_34:\n        sub_2900672A0(&v62);\n        goto LABEL_38;\n      }\n      goto LABEL_33;\n    }\n    v53 = v9;\n    v54 = a4;\n    if ( (int)a1 > a1 >> 0x20 )\n      __break(1u);\n    v29 = sub_290063160();\n    if ( v29 != 0 )\n    {\n      v30 = v29;\n      v31 = sub_290063190();\n      v32 = (int)a1 - v31;\n      if ( __OFSUB__((int)a1, v31) )\n        __break(1u);\n      sub_290063180();\n      if ( a3 == 0 )\n        __break(1u);\n      v26 = v30 + v32;\n      v27 = HIDWORD(a1) - (int)a1;\n      v28 = v53;\n      goto LABEL_17;\n    }\n    *(_QWORD *)v55 = 0;\n    if ( a3 == 0 )\n      __break(1u);\n    v35 = HIDWORD(a1) - (int)a1;\n    v36 = v53;\nLABEL_29:\n    v33 = (void *)sub_2900672C0(v36, a3, v55, v35, 0);\n    if ( v33 != nullptr )\n    {\n      v62 = v33;\n      v54();\n      v15 = v4;\n      if ( v4 == nullptr )\n        goto LABEL_31;\n      goto LABEL_34;\n    }\n    goto LABEL_33;\n  }\n  if ( (_DWORD)v10 != 2 )\n  {\n    *(_QWORD *)v55 = 0;\n    if ( a3 == 0 )\n      __break(1u);\n    v12 = a3;\n    v11 = 0;\n    goto LABEL_22;\n  }\n  v54 = a4;\n  v19 = v9;\n  v20 = *(_QWORD *)(a1 + 0x10);\n  v21 = sub_290063160();\n  if ( v21 == 0 )\n  {\n    *(_QWORD *)v55 = 0;\n    if ( a3 == 0 )\n      __break(1u);\n    v35 = *(_QWORD *)(a1 + 0x18) - *(_QWORD *)(a1 + 0x10);\n    v36 = v19;\n    goto LABEL_29;\n  }\n  v22 = v21;\n  v23 = sub_290063190();\n  v24 = __OFSUB__(v20, v23);\n  v25 = v20 - v23;\n  if ( v24 )\n    __break(1u);\n  sub_290063180();\n  if ( a3 == 0 )\n    __break(1u);\n  v26 = v22 + v25;\n  v27 = *(_QWORD *)(a1 + 0x18) - *(_QWORD *)(a1 + 0x10);\n  v28 = v19;\nLABEL_17:\n  v33 = (void *)sub_2900672C0(v28, a3, v26, v27, 0);\n  if ( v33 == nullptr )\n  {\nLABEL_33:\n    v44 = type metadata accessor for CryptexError((Swift::MetadataRequest)v33).value;\n    v45 = lazy protocol witness table accessor for type CryptexError and conformance CryptexError();\n    v15 = (void *)sub_290065900(v44, v45, 0, 0);\n    v47 = sub_2900644B0(v46, v44, 0x10);\n    __swift_set_error(v15);\n    sub_290064530(v47);\n    goto LABEL_38;\n  }\n  *(_QWORD *)v55 = v33;\n  v34 = v33;\n  v54();\n  v15 = v4;\n  if ( v4 == nullptr )\n  {\n    v48 = type metadata accessor for CryptexError(MetadataRequest_Complete).value;\n    v49 = lazy protocol witness table accessor for type CryptexError and conformance CryptexError();\n    v50 = (void *)sub_290065900(v48, v49, 0, 0);\n    sub_2900644B0(v51, v48, 0x10);\n    v62 = v50;\n    v52 = sub_2900672B0(v34, &v62, 0x288D21B08LL);\n    v42 = v62;\n    if ( v62 != nullptr )\n    {\n      __swift_set_error(v62);\n      sub_290064530(v52);\n      v43 = (void **)v55;\n      goto LABEL_37;\n    }\n  }\n  sub_2900672A0(v55);\nLABEL_38:\n  result = sub_290067280(&v60);\nLABEL_39:\n  if ( *MEMORY[0x2D80A64A8] != v63 )\n  {\n    sub_290061D30(result);\nLABEL_45:\n    __break(1u);\n  }\n  __swift_set_error(v15);\n  return result;\n}\n"
+    }
+  ],
+  "database_target": "0d560b30c6c5",
+  "requested": [
+    "0x288cb7b18",
+    "0x288cb7b2c",
+    "0x288d21610"
+  ]
+}

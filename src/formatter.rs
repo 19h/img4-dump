@@ -50,6 +50,7 @@ pub fn format_summary(
         ContainerKind::Img4 => "IMG4 Container",
         ContainerKind::Im4pStandalone => "IM4P Payload (Standalone)",
         ContainerKind::Im4mStandalone => "IM4M Manifest (Standalone)",
+        ContainerKind::Im4rStandalone => "IM4R Restore Info (Standalone)",
     };
     
     if colors {

@@ -1,0 +1,143 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "address": "0x2cb8036a0",
+      "end_address": "0x2cb803758",
+      "input": "_generate_manifest",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v9",
+          "type": "__int64"
+        }
+      ],
+      "name": "_generate_manifest",
+      "prototype": "__int64 __fastcall generate_manifest(__int64 a1, __int64 a2)",
+      "pseudocode": "__int64 __fastcall generate_manifest(__int64 a1, __int64 a2)\n{\n  __int64 v4; // x0\n  __int64 v5; // x21\n  __int64 v6; // x0\n  __int64 v7; // x21\n  __int64 v9; // [xsp+8h] [xbp-28h] BYREF\n\n  v9 = 0;\n  v4 = sub_2D00821B0(&v9, 0x4D414E50);\n  if ( (_DWORD)v4 == 0x64 )\n  {\n    v5 = v9;\n    v6 = _str24cc(\"acdc\");\n    v4 = sub_2D00821F0(v5, 0x4D414E50, v6, 1);\n    if ( (_DWORD)v4 == 0x64 )\n    {\n      v4 = sub_2D00821E0(v9, 0x4D414E50);\n      if ( (_DWORD)v4 == 0x64 )\n        v4 = sub_2D00821C0(v9, a1, a2);\n    }\n  }\n  v7 = v4;\n  sub_2D00821D0(v9);\n  return v7;\n}\n"
+    },
+    {
+      "address": "0x2cb7f714c",
+      "end_address": "0x2cb7f7154",
+      "input": "_cryptex_asset_create_generic_digest",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_cryptex_asset_create_generic_digest",
+      "prototype": "__int64 __fastcall cryptex_asset_create_generic_digest(__int64 a1)",
+      "pseudocode": "__int64 __fastcall cryptex_asset_create_generic_digest(__int64 a1)\n{\n  return _digest_file(*(unsigned int *)(a1 + 0x10));\n}\n"
+    },
+    {
+      "address": "0x2cb7f7300",
+      "end_address": "0x2cb7f7338",
+      "input": "_cryptex_asset_type_is_cryptex1",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "void *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "_BOOL8"
+        }
+      ],
+      "name": "_cryptex_asset_type_is_cryptex1",
+      "prototype": "bool __fastcall cryptex_asset_type_is_cryptex1(void *a1)",
+      "pseudocode": "bool __fastcall cryptex_asset_type_is_cryptex1(void *a1)\n{\n  return a1 == &_cryptex_asset_type_gdmg\n      || a1 == &_cryptex_asset_type_gtgv\n      || a1 == &_cryptex_asset_type_gtcd\n      || a1 == &_cryptex_asset_type_ginf;\n}\n"
+    }
+  ],
+  "database_target": "6882028eab8b",
+  "requested": [
+    "_generate_manifest",
+    "_cryptex_asset_create_generic_digest",
+    "_cryptex_asset_type_is_cryptex1"
+  ]
+}

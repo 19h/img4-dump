@@ -1,0 +1,572 @@
+{
+  "count": 6,
+  "results": [
+    {
+      "address": "0x288d20ec4",
+      "end_address": "0x288d20ee8",
+      "input": "0x288d20ec4",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v1",
+          "type": "__int64"
+        }
+      ],
+      "name": "_$s10CryptexKit18Image4PropertySpecV4typeACys6UInt64VGvgZ",
+      "prototype": "void __swiftcall static Image4PropertySpec.type.getter(_QWORD *a1)",
+      "pseudocode": "void __swiftcall static Image4PropertySpec.type.getter(_QWORD *a1)\n{\n  __int64 v1; // x10\n\n  *a1 = 0x65707974;\n  a1[1] = 0xE400000000000000LL;\n  v1 = MEMORY[0x2D80A53A8];\n  a1[2] = 1;\n  a1[3] = v1;\n}\n"
+    },
+    {
+      "address": "0x288d20ee8",
+      "end_address": "0x288d20f0c",
+      "input": "0x288d20ee8",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v1",
+          "type": "__int64"
+        }
+      ],
+      "name": "_$s10CryptexKit18Image4PropertySpecV7subTypeACys6UInt64VGvgZ",
+      "prototype": "void __swiftcall static Image4PropertySpec.subType.getter(_QWORD *a1)",
+      "pseudocode": "void __swiftcall static Image4PropertySpec.subType.getter(_QWORD *a1)\n{\n  __int64 v1; // x10\n\n  *a1 = 0x70797473;\n  a1[1] = 0xE400000000000000LL;\n  v1 = MEMORY[0x2D80A53A8];\n  a1[2] = 1;\n  a1[3] = v1;\n}\n"
+    },
+    {
+      "address": "0x288d20f0c",
+      "end_address": "0x288d20f30",
+      "input": "0x288d20f0c",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v1",
+          "type": "__int64"
+        }
+      ],
+      "name": "_$s10CryptexKit18Image4PropertySpecV8dataOnlyACySbGvgZ",
+      "prototype": "void __swiftcall static Image4PropertySpec.dataOnly.getter(_QWORD *a1)",
+      "pseudocode": "void __swiftcall static Image4PropertySpec.dataOnly.getter(_QWORD *a1)\n{\n  __int64 v1; // x10\n\n  *a1 = 0x61746164;\n  a1[1] = 0xE400000000000000LL;\n  v1 = MEMORY[0x2D80A40E8];\n  a1[2] = 1;\n  a1[3] = v1;\n}\n"
+    },
+    {
+      "address": "0x288d2100c",
+      "end_address": "0x288d210b4",
+      "input": "0x288d2100c",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "error",
+          "type": "void *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v27",
+          "type": "__int64"
+        }
+      ],
+      "name": "_$s10CryptexKit10Image4AuthV4read8property4froms6UInt64VSgAA0C12PropertySpecVyAHG_10Foundation4DataVtKF",
+      "prototype": "__int64 __swiftcall __swiftthrows Image4Auth.read(property:from:)(__int64 *a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10, __int64 a11)",
+      "pseudocode": "__int64 __swiftcall __swiftthrows Image4Auth.read(property:from:)(\n        __int64 *a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7,\n        __int64 a8,\n        __int64 a9,\n        __int64 a10,\n        __int64 a11)\n{\n  __int64 v11; // x4\n  __int64 v12; // x5\n  __int64 v13; // x6\n  __int64 v14; // x7\n  __int64 result; // x0\n  void *error; // x21\n  __int64 v17; // x0\n  __int64 v18; // x1\n  __int64 v19; // x2\n  __int64 v20; // x3\n  __int64 v21; // x4\n  __int64 v22; // x5\n  __int64 v23; // x6\n  __int64 v24; // x7\n  __int64 v25; // [xsp+18h] [xbp-18h] BYREF\n  __int64 v26; // [xsp+20h] [xbp-10h] BYREF\n  __int64 v27; // [xsp+28h] [xbp-8h]\n\n  v27 = *MEMORY[0x2D80A64A8];\n  v11 = *a1;\n  v12 = a1[1];\n  v13 = a1[2];\n  v14 = a1[3];\n  v26 = 0;\n  v25 = 0;\n  result = specialized Image4Auth.evaluate(ticketData:type:configure:)(\n             a2,\n             a3,\n             MEMORY[0x2D80A32B8],\n             a4,\n             v11,\n             v12,\n             v13,\n             v14,\n             &v25,\n             &v26,\n             MEMORY[0x2D80A3328]);\n  error = __swift_get_error();\n  if ( error == nullptr )\n  {\n    if ( v26 != 0 )\n      result = v25;\n    else\n      result = 0;\n  }\n  if ( *MEMORY[0x2D80A64A8] != v27 )\n  {\n    v17 = sub_290061D30(result);\n    return specialized Image4Auth.evaluate(ticketData:type:configure:)(\n             v17,\n             v18,\n             v19,\n             v20,\n             v21,\n             v22,\n             v23,\n             v24,\n             a9,\n             a10,\n             a11);\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x288d21a64",
+      "end_address": "0x288d21b08",
+      "input": "0x288d21a64",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v10",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v12",
+          "type": "__int64"
+        }
+      ],
+      "name": "_$s10CryptexKit10Image4AuthV4read8property4fromSbSgAA0C12PropertySpecVySbG_10Foundation4DataVtKF",
+      "prototype": "__int64 __swiftcall __swiftthrows Image4Auth.read(property:from:)(__int64 *a1, __int64 a2, __int64 a3, __int64 a4)",
+      "pseudocode": "__int64 __swiftcall __swiftthrows Image4Auth.read(property:from:)(__int64 *a1, __int64 a2, __int64 a3, __int64 a4)\n{\n  __int64 v4; // x4\n  __int64 v5; // x5\n  __int64 v6; // x6\n  __int64 v7; // x7\n  __int64 result; // x0\n  __int64 v9; // x0\n  char v10; // [xsp+1Fh] [xbp-11h] BYREF\n  __int64 v11; // [xsp+20h] [xbp-10h] BYREF\n  __int64 v12; // [xsp+28h] [xbp-8h]\n\n  v12 = *MEMORY[0x2D80A64A8];\n  v4 = *a1;\n  v5 = a1[1];\n  v6 = a1[2];\n  v7 = a1[3];\n  v10 = 0;\n  v11 = 0;\n  specialized Image4Auth.evaluate(ticketData:type:configure:)(\n    a2,\n    a3,\n    MEMORY[0x2D80A32B8],\n    a4,\n    v4,\n    v5,\n    v6,\n    v7,\n    &v10,\n    &v11,\n    MEMORY[0x2D80A3320]);\n  result = 2;\n  if ( *MEMORY[0x2D80A64A8] != v12 )\n  {\n    v9 = sub_290061D30(2);\n    return @objc closure #1 in closure #1 in closure #1 in Image4Auth.evaluate(ticketData:type:configure:)(v9);\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x288d21b14",
+      "end_address": "0x288d21cfc",
+      "input": "0x288d21b14",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "void *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "bool"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v27",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v28",
+          "type": "void *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v30",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v31",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v32",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v33",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v34",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v35",
+          "type": "__int64"
+        }
+      ],
+      "name": "_$s10CryptexKit10Image4AuthV12authenticate8fileData7with4cc7againsty10Foundation0G0V_SSAJtKF",
+      "prototype": "__int64 __swiftcall __swiftthrows Image4Auth.authenticate(fileData:with4cc:against:)(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6)",
+      "pseudocode": "__int64 __swiftcall __swiftthrows Image4Auth.authenticate(fileData:with4cc:against:)(\n        __int64 a1,\n        unsigned __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6)\n{\n  void *v6; // x21\n  unsigned __int64 v13; // x8\n  __int64 v14; // x27\n  __int64 v15; // x0\n  __int64 v16; // x3\n  __int64 v17; // x28\n  __int64 v18; // x0\n  bool v19; // vf\n  __int64 v20; // x27\n  __int64 v21; // x0\n  __int64 v22; // x0\n  __int64 v23; // x2\n  __int64 *v24; // x6\n  __int64 result; // x0\n  __int64 v26; // x0\n  unsigned __int64 v27; // [xsp+0h] [xbp-80h]\n  void *v28; // [xsp+10h] [xbp-70h]\n  __int64 v29; // [xsp+18h] [xbp-68h] BYREF\n  char v31; // [xsp+22h] [xbp-5Eh]\n  char v32; // [xsp+23h] [xbp-5Dh]\n  char v33; // [xsp+24h] [xbp-5Ch]\n  char v34; // [xsp+25h] [xbp-5Bh]\n  __int64 v35; // [xsp+28h] [xbp-58h]\n\n  v35 = *MEMORY[0x2D80A64A8];\n  v13 = a2 >> 0x3E;\n  if ( (unsigned int)(a2 >> 0x3E) > 1 )\n  {\n    if ( (_DWORD)v13 != 2 )\n    {\n      v29 = 0;\n      goto LABEL_14;\n    }\n    v28 = v6;\n    v14 = *(_QWORD *)(a1 + 0x10);\n    v15 = sub_290063160();\n    if ( v15 != 0 )\n    {\n      v17 = v15;\n      v18 = sub_290063190();\n      v19 = __OFSUB__(v14, v18);\n      v20 = v14 - v18;\n      if ( v19 )\n        __break(1u);\n      goto LABEL_12;\n    }\nLABEL_15:\n    v29 = 0;\n    v27 = a2;\n    v23 = MEMORY[0x2D80A32B0];\n    v24 = &v29;\n    goto LABEL_16;\n  }\n  if ( (_DWORD)v13 == 0 )\n  {\n    v29 = a1;\n    v31 = BYTE2(a2);\n    v32 = BYTE3(a2);\n    v33 = BYTE4(a2);\n    v34 = BYTE5(a2);\nLABEL_14:\n    result = specialized Image4Auth.evaluate(ticketData:type:configure:)(\n               a5,\n               a6,\n               MEMORY[0x2D80A32B0],\n               a4,\n               a3,\n               a4,\n               &v29,\n               a1,\n               a2);\n    goto LABEL_17;\n  }\n  if ( (int)a1 > a1 >> 0x20 )\n    __break(1u);\n  v28 = v6;\n  v21 = sub_290063160();\n  if ( v21 == 0 )\n    goto LABEL_15;\n  v17 = v21;\n  v22 = sub_290063190();\n  v20 = (int)a1 - v22;\n  if ( __OFSUB__((int)a1, v22) )\n    __break(1u);\nLABEL_12:\n  sub_290063180();\n  v27 = a2;\n  v23 = MEMORY[0x2D80A32B0];\n  v24 = (__int64 *)(v20 + v17);\nLABEL_16:\n  __swift_set_error(v28);\n  result = specialized Image4Auth.evaluate(ticketData:type:configure:)(a5, a6, v23, v16, a3, a4, v24, a1, v27);\nLABEL_17:\n  if ( *MEMORY[0x2D80A64A8] != v35 )\n  {\n    v26 = sub_290061D30(result);\n    return ((__int64 (__swiftcall *)(__int64))protocol witness for AssetAuthenticatorProtocol.authenticate(fileData:with4cc:against:) in conformance Image4Auth)(v26);\n  }\n  return result;\n}\n"
+    }
+  ],
+  "database_target": "0d560b30c6c5",
+  "requested": [
+    "0x288d20ec4",
+    "0x288d20ee8",
+    "0x288d20f0c",
+    "0x288d2100c",
+    "0x288d21a64",
+    "0x288d21b14"
+  ]
+}

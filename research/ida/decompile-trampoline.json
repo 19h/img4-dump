@@ -1,0 +1,546 @@
+{
+  "count": 9,
+  "results": [
+    {
+      "address": "0x2cb8117e0",
+      "end_address": "0x2cb81184c",
+      "input": "0x2cb8117e0",
+      "local_variables": [
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v3",
+          "type": "_BYTE[80]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v4",
+          "type": "__int64"
+        }
+      ],
+      "name": "_cryptex_trampoline_upgrade_wait_options_create",
+      "prototype": "__int64 cryptex_trampoline_upgrade_wait_options_create()",
+      "pseudocode": "__int64 cryptex_trampoline_upgrade_wait_options_create()\n{\n  __int64 result; // x0\n  __int64 v1; // x0\n  __int64 v2; // [xsp+0h] [xbp-60h] BYREF\n  _BYTE v3[80]; // [xsp+8h] [xbp-58h] BYREF\n  __int64 v4; // [xsp+58h] [xbp-8h]\n\n  v4 = *MEMORY[0x2D80A64A8];\n  result = sub_2D0059470(1, 8, 0x8709206FLL);\n  if ( result == 0 )\n    cryptex_trampoline_upgrade_wait_options_create.cold.1(&v2, v3);\n  if ( *MEMORY[0x2D80A64A8] != v4 )\n  {\n    v1 = sub_2D0058F60();\n    return cryptex_trampoline_upgrade_wait_options_destroy(v1);\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2cb81184c",
+      "end_address": "0x2cb81188c",
+      "input": "0x2cb81184c",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "_18",
+          "type": "__int64"
+        }
+      ],
+      "name": "_cryptex_trampoline_upgrade_wait_options_destroy",
+      "prototype": "__int64 __fastcall cryptex_trampoline_upgrade_wait_options_destroy(_QWORD *a1)",
+      "pseudocode": "__int64 __fastcall cryptex_trampoline_upgrade_wait_options_destroy(_QWORD *a1)\n{\n  __int64 _18; // [xsp+18h] [xbp+8h]\n\n  if ( *a1 != 0 )\n    ((void (*)(void))sub_2D00592B0)();\n  if ( ((_18 ^ (2 * _18)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return sub_2D00592B0(a1);\n}\n"
+    },
+    {
+      "address": "0x2cb81188c",
+      "end_address": "0x2cb811944",
+      "input": "0x2cb81188c",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v7",
+          "type": "_BYTE[80]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v8",
+          "type": "__int64"
+        }
+      ],
+      "name": "_cryptex_trampoline_upgrade_wait_options_set_cryptex_name",
+      "prototype": "__int64 __fastcall cryptex_trampoline_upgrade_wait_options_set_cryptex_name(__int64 *a1, __int64 a2)",
+      "pseudocode": "__int64 __fastcall cryptex_trampoline_upgrade_wait_options_set_cryptex_name(__int64 *a1, __int64 a2)\n{\n  __int64 result; // x0\n  int v5; // w21\n  __int64 v6; // [xsp+0h] [xbp-80h] BYREF\n  _BYTE v7[80]; // [xsp+8h] [xbp-78h] BYREF\n  __int64 v8; // [xsp+58h] [xbp-28h]\n\n  v8 = *MEMORY[0x2D80A64A8];\n  result = *a1;\n  if ( result != 0 )\n  {\n    result = sub_2D00592B0(result);\n    *a1 = 0;\n  }\n  if ( a2 != 0 )\n  {\n    v5 = sub_2D0081760();\n    result = sub_2D0059B00(a2);\n    if ( v5 != 0 )\n    {\n      for ( ; result == 0; result = sub_2D0059B00(a2) )\n        sub_2D0081740();\n    }\n    else if ( result == 0 )\n    {\n      goto LABEL_12;\n    }\n    *a1 = result;\n  }\n  if ( *MEMORY[0x2D80A64A8] != v8 )\n  {\n    sub_2D0058F60();\nLABEL_12:\n    cryptex_trampoline_upgrade_wait_options_set_cryptex_name.cold.1(a2, &v6, v7);\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2cb811944",
+      "end_address": "0x2cb811bfc",
+      "input": "0x2cb811944",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "is_ongoing",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v17",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v18",
+          "type": "_BYTE[8]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v19",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v20",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v21",
+          "type": "__int64"
+        }
+      ],
+      "name": "_cryptex_trampoline_upgrade_wait",
+      "prototype": "__int64 __fastcall cryptex_trampoline_upgrade_wait(__int64 *a1)",
+      "pseudocode": "__int64 __fastcall cryptex_trampoline_upgrade_wait(__int64 *a1)\n{\n  __int64 is_ongoing; // x0\n  __int64 v3; // x20\n  int v4; // w22\n  __int64 v5; // x19\n  __int64 v6; // x0\n  __int64 v7; // x0\n  int v9; // w21\n  __int64 v10; // x0\n  __int64 v11; // x0\n  int v12; // w22\n  __int64 v13; // x20\n  __int64 v14; // x0\n  __int64 v15; // x21\n  __int64 v16; // x20\n  char v17; // [xsp+7h] [xbp-99h] BYREF\n  _BYTE v18[8]; // [xsp+8h] [xbp-98h] BYREF\n  int v19; // [xsp+10h] [xbp-90h] BYREF\n  __int64 *v20; // [xsp+14h] [xbp-8Ch]\n  __int64 v21; // [xsp+68h] [xbp-38h]\n\n  v21 = *MEMORY[0x2D80A64A8];\n  v17 = 0;\n  is_ongoing = sysctl_upgrade_is_ongoing(&v17);\n  if ( (_DWORD)is_ongoing != 0 )\n  {\n    v3 = is_ongoing;\n    v4 = *(_DWORD *)sub_2D0058F40(is_ongoing);\n    if ( cryptex_trampoline_osl.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n      cryptex_trampoline_upgrade_wait.cold.1();\n    v5 = cryptex_trampoline_osl.trampoline_log;\n    v6 = sub_2D005A620(cryptex_trampoline_osl.trampoline_log, 0x10);\n    if ( (_DWORD)v6 != 0 )\n    {\n      v19 = 0x4000100;\n      LODWORD(v20) = v3;\n      v6 = sub_2D005A5B0(qword_2CB811000, v5, 0x10, \"Failed to read upgrade sysctl.: %{darwin.errno}d\", &v19, 8);\n    }\n    a1 = nullptr;\nLABEL_7:\n    *(_DWORD *)sub_2D0058F40(v6) = v4;\n    goto LABEL_8;\n  }\n  if ( v17 == 1 )\n  {\n    if ( a1 != nullptr )\n    {\n      v3 = *a1;\n      if ( *a1 != 0 )\n      {\n        v9 = sub_2D0081760();\n        v10 = sub_2D0059B00(v3);\n        a1 = (__int64 *)v10;\n        if ( v9 != 0 )\n        {\n          if ( v10 == 0 )\n          {\n            do\n            {\n              sub_2D0081740();\n              v11 = sub_2D0059B00(v3);\n            }\n            while ( v11 == 0 );\n            a1 = (__int64 *)v11;\n          }\n        }\n        else if ( v10 == 0 )\n        {\n          goto LABEL_35;\n        }\n      }\n      else\n      {\n        a1 = nullptr;\n      }\n    }\n    v12 = *(_DWORD *)((__int64 (*)(void))sub_2D0058F40)();\n    if ( cryptex_trampoline_osl.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n      cryptex_trampoline_upgrade_wait.cold.1();\n    v13 = cryptex_trampoline_osl.trampoline_log;\n    v14 = sub_2D005A620(cryptex_trampoline_osl.trampoline_log, 1);\n    if ( (_DWORD)v14 != 0 )\n    {\n      v19 = 0x8220102;\n      v20 = a1;\n      v14 = sub_2D005A5B0(qword_2CB811000, v13, 1, \"Blocking on upgrade for cryptex '%{public}s.\", &v19, 0xC);\n    }\n    *(_DWORD *)sub_2D0058F40(v14) = v12;\n    v3 = sub_2D00824F0(a1);\n    v4 = *(_DWORD *)sub_2D0058F40(v3);\n    if ( (_DWORD)v3 != 0 )\n    {\n      if ( cryptex_trampoline_osl.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n        cryptex_trampoline_upgrade_wait.cold.1();\n      v15 = cryptex_trampoline_osl.trampoline_log;\n      v6 = sub_2D005A620(cryptex_trampoline_osl.trampoline_log, 0x10);\n      if ( (_DWORD)v6 != 0 )\n      {\n        v19 = 0x4000100;\n        LODWORD(v20) = v3;\n        v6 = sub_2D005A5B0(\n               qword_2CB811000,\n               v15,\n               0x10,\n               \"Error encountered blocking on cryptex upgrade.: %{darwin.errno}d\",\n               &v19,\n               8);\n      }\n    }\n    else\n    {\n      if ( cryptex_trampoline_osl.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n        cryptex_trampoline_upgrade_wait.cold.1();\n      v16 = cryptex_trampoline_osl.trampoline_log;\n      v6 = sub_2D005A620(cryptex_trampoline_osl.trampoline_log, 1);\n      if ( (_DWORD)v6 != 0 )\n      {\n        v19 = 0x8220102;\n        v20 = a1;\n        v6 = sub_2D005A5B0(qword_2CB811000, v16, 1, \"Unblocked after upgrade for cryptex '%{public}s.\", &v19, 0xC);\n      }\n      v3 = 0;\n    }\n    goto LABEL_7;\n  }\n  a1 = nullptr;\n  v3 = 0;\nLABEL_8:\n  v7 = sub_2D00592B0(a1);\n  if ( *MEMORY[0x2D80A64A8] != v21 )\n  {\n    sub_2D0058F60(v7);\nLABEL_35:\n    cryptex_trampoline_upgrade_wait_options_set_cryptex_name.cold.1(v3, v18, &v19);\n  }\n  return v3;\n}\n"
+    },
+    {
+      "address": "0x2cb811bfc",
+      "end_address": "0x2cb811c2c",
+      "input": "0x2cb811bfc",
+      "local_variables": [
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        }
+      ],
+      "name": "___cryptex_trampoline_osl_block_invoke",
+      "prototype": "__int64 __cryptex_trampoline_osl_block_invoke()",
+      "pseudocode": "__int64 __cryptex_trampoline_osl_block_invoke()\n{\n  __int64 result; // x0\n\n  result = sub_2D005EED0(\"com.apple.libcryptex\", \"trampoline\");\n  cryptex_trampoline_osl.trampoline_log = result;\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2cb811c2c",
+      "end_address": "0x2cb811ca4",
+      "input": "0x2cb811c2c",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a11",
+          "type": "__int128"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a12",
+          "type": "int"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a13",
+          "type": "__int16"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a14",
+          "type": "__int16"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_OUTLINED_FUNCTION_0",
+      "prototype": "__int64 __fastcall OUTLINED_FUNCTION_0(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10, __int128 a11, int a12, __int16 a13, __int16 a14, __int64 a15)",
+      "pseudocode": "// local variable allocation has failed, the output may be wrong!\n__int64 __fastcall OUTLINED_FUNCTION_0(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7,\n        __int64 a8,\n        __int64 a9,\n        __int64 a10,\n        __int128 a11,\n        int a12,\n        __int16 a13,\n        __int16 a14,\n        __int64 a15)\n{\n  __int64 v15; // x19\n  __int64 v16; // x20\n  __int64 v17; // x21\n  __int64 v18; // x22\n  __int64 v19; // x23\n  __int64 v20; // x30\n\n  LODWORD(a11) = 0x8200302;\n  *(_QWORD *)((char *)&a11 + 4) = 0x2CB811F38LL;\n  WORD6(a11) = 0x800;\n  *(_QWORD *)((char *)&a11 + 0xE) = v17;\n  a14 = 0x820;\n  a15 = a1;\n  LODWORD(a10) = 0x20;\n  if ( ((v20 ^ (2 * v20)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return sub_2D007E7E0(\n           v19,\n           v15,\n           v16,\n           0x50,\n           qword_2CB811000,\n           v18,\n           0x10,\n           \"allocation failed: obj = %s, size = %lu, error = %s\",\n           (const char *)&a11,\n           a10,\n           (const char *)a11);\n}\n"
+    },
+    {
+      "address": "0x2cb811ca4",
+      "end_address": "0x2cb811cc4",
+      "input": "0x2cb811ca4",
+      "local_variables": [
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v0",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_OUTLINED_FUNCTION_1",
+      "prototype": "__int64 OUTLINED_FUNCTION_1()",
+      "pseudocode": "__int64 OUTLINED_FUNCTION_1()\n{\n  __int64 v0; // x30\n\n  if ( ((v0 ^ (2 * v0)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return sub_2D0059190(&cryptex_trampoline_osl.onceToken, &__block_literal_global);\n}\n"
+    },
+    {
+      "address": "0x2cb811cc4",
+      "end_address": "0x2cb811cfc",
+      "input": "0x2cb811cc4",
+      "local_variables": [
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v0",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v1",
+          "type": "_OWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_OUTLINED_FUNCTION_2",
+      "prototype": "__int64 OUTLINED_FUNCTION_2()",
+      "pseudocode": "__int64 OUTLINED_FUNCTION_2()\n{\n  _QWORD *v0; // x19\n  _OWORD *v1; // x20\n  __int64 v2; // x30\n\n  *v0 = 0;\n  *v1 = 0u;\n  v1[1] = 0u;\n  v1[2] = 0u;\n  v1[3] = 0u;\n  v1[4] = 0u;\n  if ( ((v2 ^ (2 * v2)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return sub_2D005A620(MEMORY[0x2D80A6B18], 0x10);\n}\n"
+    },
+    {
+      "address": "0x2cb811cfc",
+      "end_address": "0x2cb811d74",
+      "input": "0x2cb811cfc",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "bool *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v5",
+          "type": "int"
+        }
+      ],
+      "name": "_sysctl_upgrade_is_ongoing",
+      "prototype": "__int64 __fastcall sysctl_upgrade_is_ongoing(bool *a1)",
+      "pseudocode": "__int64 __fastcall sysctl_upgrade_is_ongoing(bool *a1)\n{\n  __int64 v2; // x0\n  __int64 result; // x0\n  __int64 v4; // [xsp+0h] [xbp-20h] BYREF\n  int v5; // [xsp+Ch] [xbp-14h] BYREF\n\n  v5 = 0;\n  v4 = 4;\n  v2 = sub_2D0059B40(\"kern.proc_rsr_in_progress\", &v5, &v4, 0, 0);\n  if ( (_DWORD)v2 != 0 )\n    return *(unsigned int *)sub_2D0058F40(v2);\n  result = 0;\n  if ( a1 != nullptr )\n    *a1 = v5 != 0;\n  return result;\n}\n"
+    }
+  ],
+  "database_target": "677b8c997b14"
+}

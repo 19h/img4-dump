@@ -1,0 +1,2807 @@
+{
+  "binary": "libcryptex.dylib",
+  "sha256": "21908f3dcf46b75ff91af708513e9440f290f2dd089215bdbf50cd5a2cf2d475",
+  "criteria": "img4|im4[pmrc]|image4|(?:^|_)DER|asn1|manifest|kbag|payload|payp|nonce|lzss|lzfse|compress|personaliz|ticket|digest|fourcc|fingerprint|trustcache",
+  "caller_depth": 2,
+  "selected": [
+    {
+      "function": {
+        "ea": "0x2cb7be610",
+        "name": "_img4_chip_instance_from_xpc",
+        "size": 7148,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7be6e0",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7be76c",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7be828",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7be8dc",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7be994",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bea48",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7beb00",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bebb4",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bec6c",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bed20",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7beddc",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7beef4",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7befa8",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf060",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf114",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf1cc",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf284",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf340",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf3f8",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf4b0",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf568",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf620",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf6d8",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf790",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf848",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf900",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bf9b8",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bfa70",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bfb28",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bfbe0",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bfc98",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bfd50",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bfe08",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bfec0",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7bff78",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7c0030",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7c00e4",
+          "string_ea": "0x2cb7e81cc",
+          "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Sources/libcryptex/hlutil/img4_xpc.m"
+        },
+        {
+          "ref_ea": "0x2cb7be670",
+          "string_ea": "0x2cb7e8274",
+          "text": "img4_chip_omit"
+        },
+        {
+          "ref_ea": "0x2cb7be7b8",
+          "string_ea": "0x2cb7e8283",
+          "text": "img4_chip_cepo"
+        },
+        {
+          "ref_ea": "0x2cb7be924",
+          "string_ea": "0x2cb7e8292",
+          "text": "img4_chip_bord"
+        },
+        {
+          "ref_ea": "0x2cb7bea90",
+          "string_ea": "0x2cb7e82a1",
+          "text": "img4_chip_chip"
+        },
+        {
+          "ref_ea": "0x2cb7bebfc",
+          "string_ea": "0x2cb7e82b0",
+          "text": "img4_chip_sdom"
+        },
+        {
+          "ref_ea": "0x2cb7bed6c",
+          "string_ea": "0x2cb7e82bf",
+          "text": "img4_chip_ecid"
+        },
+        {
+          "ref_ea": "0x2cb7bee84",
+          "string_ea": "0x2cb7e82ce",
+          "text": "img4_chip_cpro"
+        },
+        {
+          "ref_ea": "0x2cb7beff0",
+          "string_ea": "0x2cb7e82dd",
+          "text": "img4_chip_csec"
+        },
+        {
+          "ref_ea": "0x2cb7bf15c",
+          "string_ea": "0x2cb7e82ec",
+          "text": "img4_chip_epro"
+        },
+        {
+          "ref_ea": "0x2cb7bf2d0",
+          "string_ea": "0x2cb7e82fb",
+          "text": "img4_chip_esec"
+        },
+        {
+          "ref_ea": "0x2cb7bf440",
+          "string_ea": "0x2cb7e830a",
+          "text": "img4_chip_iuou"
+        },
+        {
+          "ref_ea": "0x2cb7bf5b0",
+          "string_ea": "0x2cb7e8319",
+          "text": "img4_chip_rsch"
+        },
+        {
+          "ref_ea": "0x2cb7bf720",
+          "string_ea": "0x2cb7e8328",
+          "text": "img4_chip_euou"
+        },
+        {
+          "ref_ea": "0x2cb7bf890",
+          "string_ea": "0x2cb7e8337",
+          "text": "img4_chip_esdm"
+        },
+        {
+          "ref_ea": "0x2cb7bfa00",
+          "string_ea": "0x2cb7e8346",
+          "text": "img4_chip_fpgt"
+        },
+        {
+          "ref_ea": "0x2cb7bfb70",
+          "string_ea": "0x2cb7e8355",
+          "text": "img4_chip_fchp"
+        },
+        {
+          "ref_ea": "0x2cb7bfce0",
+          "string_ea": "0x2cb7e8364",
+          "text": "img4_chip_type"
+        },
+        {
+          "ref_ea": "0x2cb7bfe50",
+          "string_ea": "0x2cb7e8373",
+          "text": "img4_chip_styp"
+        },
+        {
+          "ref_ea": "0x2cb7bffc0",
+          "string_ea": "0x2cb7e8382",
+          "text": "img4_chip_clas"
+        },
+        {
+          "ref_ea": "0x2cb7be6fc",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7be788",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7be844",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7be8f8",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7be9b0",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bea64",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7beb1c",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bebd0",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bec88",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bed3c",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bedf8",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bef10",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7befc4",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf07c",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf130",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf1e8",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf2a0",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf35c",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf414",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf4cc",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf584",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf63c",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf6f4",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf7ac",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf864",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf91c",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bf9d4",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bfa8c",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bfb44",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bfbfc",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bfcb4",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bfd6c",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bfe24",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bfedc",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7bff94",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7c004c",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        },
+        {
+          "ref_ea": "0x2cb7c0100",
+          "string_ea": "0x2cb7e8391",
+          "text": "img4_chip_instance_from_xpc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c1ee8",
+        "name": "_cryptex_signing_service_set_sso_ticket",
+        "size": 220,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7cc5ac",
+        "name": "__cryptex_bundle_write_manifest",
+        "size": 1848,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7cc8f4",
+          "string_ea": "0x2cb7e8fc1",
+          "text": "_cryptex_bundle_write_manifest"
+        },
+        {
+          "ref_ea": "0x2cb7cc9b4",
+          "string_ea": "0x2cb7e8fc1",
+          "text": "_cryptex_bundle_write_manifest"
+        },
+        {
+          "ref_ea": "0x2cb7ccb2c",
+          "string_ea": "0x2cb7e8fc1",
+          "text": "_cryptex_bundle_write_manifest"
+        },
+        {
+          "ref_ea": "0x2cb7ccc1c",
+          "string_ea": "0x2cb7e8fc1",
+          "text": "_cryptex_bundle_write_manifest"
+        },
+        {
+          "ref_ea": "0x2cb7cc774",
+          "string_ea": "0x2cb7ec05c",
+          "text": "%{public}s: failed to create plist from manifest object: %s %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cc8b4",
+          "string_ea": "0x2cb7ec05c",
+          "text": "%{public}s: failed to create plist from manifest object: %s %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cc6d4",
+          "string_ea": "0x2cb7ec0e8",
+          "text": "%{public}s: failed to create manifest file"
+        },
+        {
+          "ref_ea": "0x2cb7cc974",
+          "string_ea": "0x2cb7ec0e8",
+          "text": "%{public}s: failed to create manifest file"
+        },
+        {
+          "ref_ea": "0x2cb7cc838",
+          "string_ea": "0x2cb7ec113",
+          "text": "%{public}s: failed to write manifest file %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7ccbdc",
+          "string_ea": "0x2cb7ec113",
+          "text": "%{public}s: failed to write manifest file %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7ccce4",
+        "name": "_cryptex_bundle_copy_build_manifest2",
+        "size": 448,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7cce24",
+          "string_ea": "0x2cb7e8e46",
+          "text": "cryptex_bundle_copy_build_manifest2"
+        },
+        {
+          "ref_ea": "0x2cb7ccd08",
+          "callee": "0x2cb7c967c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7ccea4",
+        "name": "_cryptex_bundle_update_build_manifest2",
+        "size": 780,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7cd074",
+          "string_ea": "0x2cb7e8e6a",
+          "text": "cryptex_bundle_update_build_manifest2"
+        },
+        {
+          "ref_ea": "0x2cb7cd128",
+          "string_ea": "0x2cb7e8e6a",
+          "text": "cryptex_bundle_update_build_manifest2"
+        },
+        {
+          "ref_ea": "0x2cb7ccf54",
+          "string_ea": "0x2cb7eb2f3",
+          "text": "%{public}s: failed to write bundle manifest"
+        },
+        {
+          "ref_ea": "0x2cb7cd0e8",
+          "string_ea": "0x2cb7eb2f3",
+          "text": "%{public}s: failed to write bundle manifest"
+        },
+        {
+          "ref_ea": "0x2cb7ccfd4",
+          "string_ea": "0x2cb7eb38c",
+          "text": "%{public}s: Bundle has no manifest"
+        },
+        {
+          "ref_ea": "0x2cb7cd034",
+          "string_ea": "0x2cb7eb38c",
+          "text": "%{public}s: Bundle has no manifest"
+        },
+        {
+          "ref_ea": "0x2cb7cceec",
+          "callee": "0x2cb7cc5ac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7cd344",
+        "name": "_cryptex_bundle_copy_build_manifest",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7cd360",
+          "callee": "0x2cb7ccce4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7cd3a4",
+        "name": "_cryptex_bundle_update_build_manifest",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7cd3c0",
+          "callee": "0x2cb7ccea4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7cfde8",
+        "name": "____cryptex_bundle_manifest_remove_build_identity_block_invoke",
+        "size": 728,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7cfe10",
+          "string_ea": "0x2cb7e8eff",
+          "text": "Info"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7d55f0",
+        "name": "_cryptex_personalize2",
+        "size": 5084,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7d58a0",
+          "string_ea": "0x2cb7e932b",
+          "text": "cryptex_personalize2"
+        },
+        {
+          "ref_ea": "0x2cb7d59dc",
+          "string_ea": "0x2cb7e932b",
+          "text": "cryptex_personalize2"
+        },
+        {
+          "ref_ea": "0x2cb7d5a8c",
+          "string_ea": "0x2cb7e932b",
+          "text": "cryptex_personalize2"
+        },
+        {
+          "ref_ea": "0x2cb7d5bd4",
+          "string_ea": "0x2cb7e932b",
+          "text": "cryptex_personalize2"
+        },
+        {
+          "ref_ea": "0x2cb7d63c8",
+          "string_ea": "0x2cb7e932b",
+          "text": "cryptex_personalize2"
+        },
+        {
+          "ref_ea": "0x2cb7d6478",
+          "string_ea": "0x2cb7e932b",
+          "text": "cryptex_personalize2"
+        },
+        {
+          "ref_ea": "0x2cb7d6540",
+          "string_ea": "0x2cb7e932b",
+          "text": "cryptex_personalize2"
+        },
+        {
+          "ref_ea": "0x2cb7d65f8",
+          "string_ea": "0x2cb7e932b",
+          "text": "cryptex_personalize2"
+        },
+        {
+          "ref_ea": "0x2cb7d67ac",
+          "string_ea": "0x2cb7e932b",
+          "text": "cryptex_personalize2"
+        },
+        {
+          "ref_ea": "0x2cb7d686c",
+          "string_ea": "0x2cb7e932b",
+          "text": "cryptex_personalize2"
+        },
+        {
+          "ref_ea": "0x2cb7d6994",
+          "string_ea": "0x2cb7e932b",
+          "text": "cryptex_personalize2"
+        },
+        {
+          "ref_ea": "0x2cb7d6328",
+          "string_ea": "0x2cb7ea675",
+          "text": "%{public}s: failed to get nonce domain from core %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d65b8",
+          "string_ea": "0x2cb7ea675",
+          "text": "%{public}s: failed to get nonce domain from core %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d6084",
+          "string_ea": "0x2cb7ea6b7",
+          "text": "%{public}s: failed to get nonce domain description from core %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d682c",
+          "string_ea": "0x2cb7ea6b7",
+          "text": "%{public}s: failed to get nonce domain description from core %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d5700",
+          "string_ea": "0x2cb7ecb1d",
+          "text": "%{public}s: this cryptex has already been personalized before, refuse to redo personalization %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d5a4c",
+          "string_ea": "0x2cb7ecb1d",
+          "text": "%{public}s: this cryptex has already been personalized before, refuse to redo personalization %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d5914",
+          "string_ea": "0x2cb7ecb8c",
+          "text": "%{public}s: Will personalize Cryptex1 dmg with a Cryptex1 TSS request."
+        },
+        {
+          "ref_ea": "0x2cb7d5fcc",
+          "string_ea": "0x2cb7ecbd3",
+          "text": "%{public}s: no .im4m signatures supplied, .im4m signatures are required for Diavlo personalization %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d6434",
+          "string_ea": "0x2cb7ecbd3",
+          "text": "%{public}s: no .im4m signatures supplied, .im4m signatures are required for Diavlo personalization %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d5de4",
+          "string_ea": "0x2cb7ecc47",
+          "text": "%{public}s: requesting Diavlo personalization with %lu signatures"
+        },
+        {
+          "ref_ea": "0x2cb7d6668",
+          "string_ea": "0x2cb7eccdb",
+          "text": "%{public}s: copying nonce from domain %s"
+        },
+        {
+          "ref_ea": "0x2cb7d670c",
+          "string_ea": "0x2cb7ecd04",
+          "text": "%{public}s: failed to copy nonce from domain %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d6954",
+          "string_ea": "0x2cb7ecd04",
+          "text": "%{public}s: failed to copy nonce from domain %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d68e8",
+          "string_ea": "0x2cb7ecd42",
+          "text": "%{public}s: personalizing with host nonce from %s"
+        },
+        {
+          "ref_ea": "0x2cb7d5f50",
+          "string_ea": "0x2cb7ecd74",
+          "text": "%{public}s: personalizing with client provided nonce"
+        },
+        {
+          "ref_ea": "0x2cb7d61a0",
+          "string_ea": "0x2cb7ecda9",
+          "text": "%{public}s: personalizing with zero nonce"
+        },
+        {
+          "ref_ea": "0x2cb7d5b34",
+          "string_ea": "0x2cb7ece2e",
+          "text": "%{public}s: Personalization failed"
+        },
+        {
+          "ref_ea": "0x2cb7d5b94",
+          "string_ea": "0x2cb7ece2e",
+          "text": "%{public}s: Personalization failed"
+        },
+        {
+          "ref_ea": "0x2cb7d5cec",
+          "callee": "0x2cb7e0d54"
+        },
+        {
+          "ref_ea": "0x2cb7d60c8",
+          "callee": "0x2cb7c1fcc"
+        },
+        {
+          "ref_ea": "0x2cb7d5e18",
+          "callee": "0x2cb7c19a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7d69cc",
+        "name": "__cryptex_personalize2_continue_tss",
+        "size": 2560,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7d6c18",
+          "string_ea": "0x2cb7e9422",
+          "text": "_cryptex_personalize2_continue_tss"
+        },
+        {
+          "ref_ea": "0x2cb7d6e50",
+          "string_ea": "0x2cb7e9422",
+          "text": "_cryptex_personalize2_continue_tss"
+        },
+        {
+          "ref_ea": "0x2cb7d6f08",
+          "string_ea": "0x2cb7e9422",
+          "text": "_cryptex_personalize2_continue_tss"
+        },
+        {
+          "ref_ea": "0x2cb7d7120",
+          "string_ea": "0x2cb7e9422",
+          "text": "_cryptex_personalize2_continue_tss"
+        },
+        {
+          "ref_ea": "0x2cb7d7204",
+          "string_ea": "0x2cb7e9422",
+          "text": "_cryptex_personalize2_continue_tss"
+        },
+        {
+          "ref_ea": "0x2cb7d7398",
+          "string_ea": "0x2cb7e9422",
+          "text": "_cryptex_personalize2_continue_tss"
+        },
+        {
+          "ref_ea": "0x2cb7d7034",
+          "string_ea": "0x2cb7ed1df",
+          "text": "%{public}s: openat [im4m] to write %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d71c4",
+          "string_ea": "0x2cb7ed1df",
+          "text": "%{public}s: openat [im4m] to write %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d6d94",
+          "string_ea": "0x2cb7ed213",
+          "text": "%{public}s: failed to write Image4 manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d70e0",
+          "string_ea": "0x2cb7ed213",
+          "text": "%{public}s: failed to write Image4 manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d72ec",
+          "string_ea": "0x2cb7ed250",
+          "text": "%{public}s: openat [im4m] to read %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d7358",
+          "string_ea": "0x2cb7ed250",
+          "text": "%{public}s: openat [im4m] to read %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7d73cc",
+        "name": "__cryptex_personalize2_continue",
+        "size": 2560,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7d7618",
+          "string_ea": "0x2cb7e9445",
+          "text": "_cryptex_personalize2_continue"
+        },
+        {
+          "ref_ea": "0x2cb7d7850",
+          "string_ea": "0x2cb7e9445",
+          "text": "_cryptex_personalize2_continue"
+        },
+        {
+          "ref_ea": "0x2cb7d7908",
+          "string_ea": "0x2cb7e9445",
+          "text": "_cryptex_personalize2_continue"
+        },
+        {
+          "ref_ea": "0x2cb7d7b20",
+          "string_ea": "0x2cb7e9445",
+          "text": "_cryptex_personalize2_continue"
+        },
+        {
+          "ref_ea": "0x2cb7d7c04",
+          "string_ea": "0x2cb7e9445",
+          "text": "_cryptex_personalize2_continue"
+        },
+        {
+          "ref_ea": "0x2cb7d7d98",
+          "string_ea": "0x2cb7e9445",
+          "text": "_cryptex_personalize2_continue"
+        },
+        {
+          "ref_ea": "0x2cb7d7a34",
+          "string_ea": "0x2cb7ed1df",
+          "text": "%{public}s: openat [im4m] to write %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d7bc4",
+          "string_ea": "0x2cb7ed1df",
+          "text": "%{public}s: openat [im4m] to write %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d7794",
+          "string_ea": "0x2cb7ed213",
+          "text": "%{public}s: failed to write Image4 manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d7ae0",
+          "string_ea": "0x2cb7ed213",
+          "text": "%{public}s: failed to write Image4 manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d7cec",
+          "string_ea": "0x2cb7ed250",
+          "text": "%{public}s: openat [im4m] to read %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d7d58",
+          "string_ea": "0x2cb7ed250",
+          "text": "%{public}s: openat [im4m] to read %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7d7dcc",
+        "name": "_cryptex_fcopy_personalized_manifest2",
+        "size": 1572,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7d8114",
+          "string_ea": "0x2cb7e9340",
+          "text": "cryptex_fcopy_personalized_manifest2"
+        },
+        {
+          "ref_ea": "0x2cb7d81e8",
+          "string_ea": "0x2cb7e9340",
+          "text": "cryptex_fcopy_personalized_manifest2"
+        },
+        {
+          "ref_ea": "0x2cb7d82bc",
+          "string_ea": "0x2cb7e9340",
+          "text": "cryptex_fcopy_personalized_manifest2"
+        },
+        {
+          "ref_ea": "0x2cb7d836c",
+          "string_ea": "0x2cb7e9340",
+          "text": "cryptex_fcopy_personalized_manifest2"
+        },
+        {
+          "ref_ea": "0x2cb7d7f44",
+          "string_ea": "0x2cb7ece51",
+          "text": "%{public}s: Cryptex does not have a personalization manifest. %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d80d4",
+          "string_ea": "0x2cb7ece51",
+          "text": "%{public}s: Cryptex does not have a personalization manifest. %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d8064",
+          "string_ea": "0x2cb7ecedb",
+          "text": "%{public}s: Invalid im4m fd. %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d832c",
+          "string_ea": "0x2cb7ecedb",
+          "text": "%{public}s: Invalid im4m fd. %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7d8824",
+        "name": "_cryptex_attach_personalized_manifest",
+        "size": 608,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7d88c8",
+          "string_ea": "0x2cb7ecfae",
+          "text": "%{public}s: This cryptex is already personalized.: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7d89d0",
+          "string_ea": "0x2cb7ecff2",
+          "text": "%{public}s: Failed to dup manifest fd.: %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7da7f8",
+        "name": "_cryptex_personalize",
+        "size": 180,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7da868",
+          "callee": "0x2cb7d55f0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7da8ac",
+        "name": "___cryptex_personalize_block_invoke",
+        "size": 76,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7da8f8",
+        "name": "_cryptex_fcopy_personalized_manifest",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7da908",
+          "callee": "0x2cb7d7dcc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7daa54",
+        "name": "__cryptex_personalize2_callback",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7daae8",
+        "name": "____cryptex_personalize2_callback_block_invoke",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc540",
+        "name": "-[CryptexRemoteServiceNonce initWithNonce:]",
+        "size": 184,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc5f8",
+        "name": "-[CryptexRemoteServiceNonce dealloc]",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc650",
+        "name": "-[CryptexRemoteServiceNonce nonce]",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc658",
+        "name": "-[CryptexRemoteServiceNonceAttr init]",
+        "size": 76,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc6a4",
+        "name": "-[CryptexRemoteServiceNonceAttr getNonceDomainIndex]",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc738",
+        "name": "-[CryptexRemoteServiceNonceAttr ndom_handle]",
+        "size": 116,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc7ac",
+        "name": "-[CryptexRemoteServiceNonceAttr image_type]",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc7b4",
+        "name": "-[CryptexRemoteServiceNonceAttr setImage_type:]",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc7bc",
+        "name": "-[CryptexRemoteServiceNonceAttr persistence]",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc7c4",
+        "name": "-[CryptexRemoteServiceNonceAttr setPersistence:]",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc7cc",
+        "name": "-[CryptexRemoteServiceNonceAttr setNdom_handle:]",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc7d4",
+        "name": "_cryptex_remote_service_nonce_get_nonce",
+        "size": 64,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7dc810",
+          "callee": "0x2cb7e6040"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc814",
+        "name": "_cryptex_remote_service_nonce_attr_create",
+        "size": 12,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc820",
+        "name": "_cryptex_remote_service_nonce_attr_set_image_type",
+        "size": 76,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc86c",
+        "name": "_cryptex_remote_service_nonce_attr_set_persistence",
+        "size": 76,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc8b8",
+        "name": "_cryptex_remote_service_nonce_attr_set_ndom_handle",
+        "size": 76,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc904",
+        "name": "_cryptex_remote_service_nonce_attr_set_cryptex",
+        "size": 196,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7dc9c4",
+          "callee": "0x2cb7e6070"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dc9c8",
+        "name": "_cryptex_remote_service_nonce_attr_get_nonce_domain",
+        "size": 240,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7dca58",
+          "string_ea": "0x2cb7ed7d6",
+          "text": "nonce attr [image_type = %llu, persistence = %llu] => domain index: %llu"
+        },
+        {
+          "ref_ea": "0x2cb7dca88",
+          "callee": "0x2cb7e2bb4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dd854",
+        "name": "_cryptex_remote_service_copy_nonce2",
+        "size": 1028,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7dda44",
+          "string_ea": "0x2cb7e9993",
+          "text": "nonce"
+        },
+        {
+          "ref_ea": "0x2cb7ddb84",
+          "string_ea": "0x2cb7e9999",
+          "text": "cryptex_remote_service_copy_nonce2"
+        },
+        {
+          "ref_ea": "0x2cb7dda08",
+          "string_ea": "0x2cb7ed8b7",
+          "text": "remote service copy nonce request failed: %@"
+        },
+        {
+          "ref_ea": "0x2cb7ddac0",
+          "string_ea": "0x2cb7ed8e4",
+          "text": "received a nonce with different version: %d"
+        },
+        {
+          "ref_ea": "0x2cb7ddb44",
+          "string_ea": "0x2cb7ed8e4",
+          "text": "received a nonce with different version: %d"
+        },
+        {
+          "ref_ea": "0x2cb7ddc54",
+          "callee": "0x2cb7e6040"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7ddc90",
+        "name": "___cryptex_remote_service_copy_nonce2_block_invoke",
+        "size": 108,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7ddcfc",
+        "name": "_cryptex_remote_service_roll_nonce2",
+        "size": 632,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7ddea4",
+          "string_ea": "0x2cb7ed910",
+          "text": "remote service roll nonce request failed: %@"
+        },
+        {
+          "ref_ea": "0x2cb7ddf70",
+          "callee": "0x2cb7e6164"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7ddfb0",
+        "name": "___cryptex_remote_service_roll_nonce2_block_invoke",
+        "size": 108,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7df3a8",
+        "name": "_cryptex_remote_service_copy_nonce",
+        "size": 160,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7df3f0",
+          "callee": "0x2cb7dd854"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7df464",
+        "name": "_cryptex_remote_service_roll_nonce",
+        "size": 152,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7df4a4",
+          "callee": "0x2cb7ddcfc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e0d54",
+        "name": "__cryptex_attr_get_nonce_persistence",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e0e70",
+        "name": "_cryptex_attr_set_nonce_persistence",
+        "size": 184,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e0ee8",
+          "string_ea": "0x2cb7ede97",
+          "text": "%{public}s: setting nonce persistence: %#llx"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e1084",
+        "name": "_cryptex_attr_set_personalization_flags",
+        "size": 184,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e10fc",
+          "string_ea": "0x2cb7edeee",
+          "text": "%{public}s: setting personalization flags: %#llx"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e187c",
+        "name": "_cryptex_su_preboot_bundle_create_with_directory_and_manifest",
+        "size": 128,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e2bb4",
+        "name": "__img4_get_nonce_domain_from_index",
+        "size": 44,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e2be0",
+        "name": "__img4_chip_instance_from_remote_device_properties",
+        "size": 1580,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e2c14",
+          "string_ea": "0x2cb7e949d",
+          "text": "sha1"
+        },
+        {
+          "ref_ea": "0x2cb7e2c00",
+          "string_ea": "0x2cb7e9d56",
+          "text": "Image4CryptoHashMethod"
+        },
+        {
+          "ref_ea": "0x2cb7e2cf8",
+          "string_ea": "0x2cb7ee557",
+          "text": "no image4 hash method advertised, falling back to use sha2-384 by default"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e320c",
+        "name": "____img4_log_block_invoke",
+        "size": 48,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e3220",
+          "string_ea": "0x2cb7e9e00",
+          "text": "img4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c1fcc",
+        "name": "_cryptex_signing_service_sign",
+        "size": 3548,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c2738",
+          "string_ea": "0x2cb7e8576",
+          "text": "acdc"
+        },
+        {
+          "ref_ea": "0x2cb7c283c",
+          "string_ea": "0x2cb7e857b",
+          "text": "Digest"
+        },
+        {
+          "ref_ea": "0x2cb7c2874",
+          "string_ea": "0x2cb7e8582",
+          "text": "EPRO"
+        },
+        {
+          "ref_ea": "0x2cb7c2894",
+          "string_ea": "0x2cb7e8587",
+          "text": "ESEC"
+        },
+        {
+          "ref_ea": "0x2cb7c26fc",
+          "string_ea": "0x2cb7e85fe",
+          "text": "ApNonce"
+        },
+        {
+          "ref_ea": "0x2cb7c2714",
+          "string_ea": "0x2cb7e8606",
+          "text": "SepNonce"
+        },
+        {
+          "ref_ea": "0x2cb7c254c",
+          "string_ea": "0x2cb7e8683",
+          "text": "Cryptex1,Nonce"
+        },
+        {
+          "ref_ea": "0x2cb7c256c",
+          "string_ea": "0x2cb7e8692",
+          "text": "Cryptex1,NonceDomain"
+        },
+        {
+          "ref_ea": "0x2cb7c2154",
+          "string_ea": "0x2cb7ea791",
+          "text": "%{public}s: failed to copy nonce %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7c2630",
+          "string_ea": "0x2cb7ea791",
+          "text": "%{public}s: failed to copy nonce %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7c2acc",
+          "string_ea": "0x2cb7ea840",
+          "text": "%{public}s: failed to get digest for asset %s %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7c2d4c",
+          "string_ea": "0x2cb7ea840",
+          "text": "%{public}s: failed to get digest for asset %s %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c2da8",
+        "name": "_cryptex_signing_service_trust",
+        "size": 1652,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c320c",
+          "string_ea": "0x2cb7e857b",
+          "text": "Digest"
+        },
+        {
+          "ref_ea": "0x2cb7c322c",
+          "string_ea": "0x2cb7e8582",
+          "text": "EPRO"
+        },
+        {
+          "ref_ea": "0x2cb7c324c",
+          "string_ea": "0x2cb7e8587",
+          "text": "ESEC"
+        },
+        {
+          "ref_ea": "0x2cb7c3028",
+          "string_ea": "0x2cb7e85fe",
+          "text": "ApNonce"
+        },
+        {
+          "ref_ea": "0x2cb7c3040",
+          "string_ea": "0x2cb7e8606",
+          "text": "SepNonce"
+        },
+        {
+          "ref_ea": "0x2cb7c2f14",
+          "string_ea": "0x2cb7ea8b8",
+          "text": "%{public}s: failed to copy nonce: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7c3398",
+          "string_ea": "0x2cb7ea950",
+          "text": "%{public}s: failed to compute digest: %s: %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7ca3a0",
+        "name": "_cryptex_bundle_set_cryptex2",
+        "size": 3652,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7caf24",
+          "string_ea": "0x2cb7e857b",
+          "text": "Digest"
+        },
+        {
+          "ref_ea": "0x2cb7ca978",
+          "string_ea": "0x2cb7e8692",
+          "text": "Cryptex1,NonceDomain"
+        },
+        {
+          "ref_ea": "0x2cb7cad40",
+          "string_ea": "0x2cb7e8e90",
+          "text": "Path"
+        },
+        {
+          "ref_ea": "0x2cb7cab30",
+          "string_ea": "0x2cb7e8eff",
+          "text": "Info"
+        },
+        {
+          "ref_ea": "0x2cb7cad54",
+          "string_ea": "0x2cb7e8eff",
+          "text": "Info"
+        },
+        {
+          "ref_ea": "0x2cb7cb010",
+          "string_ea": "0x2cb7e8f0c",
+          "text": "Manifest"
+        },
+        {
+          "ref_ea": "0x2cb7ca91c",
+          "string_ea": "0x2cb7ebde6",
+          "text": "%{public}s: skip adding generic identity to manifest"
+        },
+        {
+          "ref_ea": "0x2cb7cac04",
+          "string_ea": "0x2cb7ebe33",
+          "text": "%{public}s: skip adding generic variant to manifest"
+        },
+        {
+          "ref_ea": "0x2cb7cae0c",
+          "string_ea": "0x2cb7ebec0",
+          "text": "%{public}s: Failed to compute digest for asset %{public}s: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7ca3e8",
+          "callee": "0x2cb7c967c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7cf740",
+        "name": "__cryptex_populate_cryptex1_properties",
+        "size": 1704,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7cf7dc",
+          "string_ea": "0x2cb7e8692",
+          "text": "Cryptex1,NonceDomain"
+        },
+        {
+          "ref_ea": "0x2cb7cf870",
+          "string_ea": "0x2cb7e8692",
+          "text": "Cryptex1,NonceDomain"
+        },
+        {
+          "ref_ea": "0x2cb7cf894",
+          "string_ea": "0x2cb7ebc0e",
+          "text": "%{public}s: Manifest missing required key: %s: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cfa18",
+          "string_ea": "0x2cb7ebc0e",
+          "text": "%{public}s: Manifest missing required key: %s: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cfc10",
+          "string_ea": "0x2cb7ebc0e",
+          "text": "%{public}s: Manifest missing required key: %s: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cf800",
+          "string_ea": "0x2cb7ebc4e",
+          "text": "%{public}s: Manifest value is invalid at key: %s: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cf97c",
+          "string_ea": "0x2cb7ebc4e",
+          "text": "%{public}s: Manifest value is invalid at key: %s: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cfab0",
+          "string_ea": "0x2cb7ebc4e",
+          "text": "%{public}s: Manifest value is invalid at key: %s: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cfca8",
+          "string_ea": "0x2cb7ebc4e",
+          "text": "%{public}s: Manifest value is invalid at key: %s: %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c4270",
+        "name": "__hdi_copy_device_nodes",
+        "size": 1236,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c46e0",
+          "string_ea": "0x2cb7e8853",
+          "text": "apfs"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c7704",
+        "name": "___session_activate_endpoint_block_invoke",
+        "size": 528,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c77f8",
+          "string_ea": "0x2cb7e8c32",
+          "text": "code"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c8974",
+        "name": "__cryptex_bundle_new_asset_from_object",
+        "size": 576,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c8a94",
+          "string_ea": "0x2cb7e8e90",
+          "text": "Path"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c967c",
+        "name": "__cryptex_bundle_init",
+        "size": 2472,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c9af4",
+          "string_ea": "0x2cb7e8eaa",
+          "text": "_cryptex_bundle_read_manifest"
+        },
+        {
+          "ref_ea": "0x2cb7c9bec",
+          "string_ea": "0x2cb7e8eaa",
+          "text": "_cryptex_bundle_read_manifest"
+        },
+        {
+          "ref_ea": "0x2cb7c9ff8",
+          "string_ea": "0x2cb7e8eaa",
+          "text": "_cryptex_bundle_read_manifest"
+        },
+        {
+          "ref_ea": "0x2cb7c9ca8",
+          "string_ea": "0x2cb7eb3dd",
+          "text": "%{public}s: read build manifest"
+        },
+        {
+          "ref_ea": "0x2cb7c9d90",
+          "string_ea": "0x2cb7eb3dd",
+          "text": "%{public}s: read build manifest"
+        },
+        {
+          "ref_ea": "0x2cb7c985c",
+          "string_ea": "0x2cb7eb419",
+          "text": "%{public}s: Failed to open build manifest"
+        },
+        {
+          "ref_ea": "0x2cb7c9ab4",
+          "string_ea": "0x2cb7eb419",
+          "text": "%{public}s: Failed to open build manifest"
+        },
+        {
+          "ref_ea": "0x2cb7c99b0",
+          "string_ea": "0x2cb7eb443",
+          "text": "%{public}s: reading manifest: %s"
+        },
+        {
+          "ref_ea": "0x2cb7c9a54",
+          "string_ea": "0x2cb7eb464",
+          "text": "%{public}s: Failed to read BuildManifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7c9bac",
+          "string_ea": "0x2cb7eb464",
+          "text": "%{public}s: Failed to read BuildManifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7c9f48",
+          "string_ea": "0x2cb7eb49e",
+          "text": "%{public}s: Failed to parse BuildManifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7c9fb8",
+          "string_ea": "0x2cb7eb49e",
+          "text": "%{public}s: Failed to parse BuildManifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7c9cc8",
+          "callee": "0x2cb7cd404"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7cd404",
+        "name": "__cryptex_bundle_find_cryptexes",
+        "size": 9020,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7ceb2c",
+          "string_ea": "0x2cb7e8eff",
+          "text": "Info"
+        },
+        {
+          "ref_ea": "0x2cb7cee24",
+          "string_ea": "0x2cb7e8eff",
+          "text": "Info"
+        },
+        {
+          "ref_ea": "0x2cb7cf5f4",
+          "string_ea": "0x2cb7eb4d9",
+          "text": "%{public}s: malformed build manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cf674",
+          "string_ea": "0x2cb7eb4d9",
+          "text": "%{public}s: malformed build manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7ce3b0",
+          "string_ea": "0x2cb7eb6ba",
+          "text": "%{public}s: no manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7ce51c",
+          "string_ea": "0x2cb7eb6ba",
+          "text": "%{public}s: no manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cf380",
+          "string_ea": "0x2cb7eb87a",
+          "text": "%{public}s: nonce domain handle[%lu]: %u"
+        },
+        {
+          "ref_ea": "0x2cb7ced28",
+          "string_ea": "0x2cb7eb91a",
+          "text": "%{public}s: Failed to open signature file from BuildManifest %s %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cf194",
+          "string_ea": "0x2cb7eb91a",
+          "text": "%{public}s: Failed to open signature file from BuildManifest %s %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cdcd0",
+          "string_ea": "0x2cb7eb9b4",
+          "text": "%{public}s: payload too large: actual = %lu, expected <= %u %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cdf9c",
+          "string_ea": "0x2cb7eb9b4",
+          "text": "%{public}s: payload too large: actual = %lu, expected <= %u %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7cde1c",
+          "string_ea": "0x2cb7eba48",
+          "text": "%{public}s: added %{public}s to ccx_im4m_array"
+        },
+        {
+          "ref_ea": "0x2cb7cf290",
+          "callee": "0x2cb7cf740"
+        },
+        {
+          "ref_ea": "0x2cb7ce6ec",
+          "callee": "0x2cb7c8974"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e6040",
+        "name": "_cryptex_remote_service_nonce_get_nonce.cold.1",
+        "size": 28,
+        "flags": 5137
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e604c",
+          "string_ea": "0x2cb7e965a",
+          "text": "BUG IN CLIENT OF libcryptex: API called with NULL nonce argument"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e6070",
+        "name": "_cryptex_remote_service_nonce_attr_set_cryptex.cold.1",
+        "size": 28,
+        "flags": 5137
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e607c",
+          "string_ea": "0x2cb7e971e",
+          "text": "unexpected failure: Failed to read NonceDomain handle."
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e6164",
+        "name": "_cryptex_remote_service_roll_nonce2.cold.1",
+        "size": 28,
+        "flags": 5137
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e6170",
+          "string_ea": "0x2cb7e99bc",
+          "text": "BUG IN CLIENT OF libcryptex: API called with NULL nonce_attr argument"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e0030",
+        "name": "_session_send_message",
+        "size": 392,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e007c",
+          "string_ea": "0x2cb7e9b9d",
+          "text": "PAYLOAD"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e01b8",
+        "name": "_cryptex_pack_core_cryptex",
+        "size": 440,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e02f8",
+          "string_ea": "0x2cb7e9bd0",
+          "text": "TYPE"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e06a8",
+        "name": "_session_add_cryptex",
+        "size": 556,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e0744",
+          "string_ea": "0x2cb7e9bf2",
+          "text": "NAME"
+        },
+        {
+          "ref_ea": "0x2cb7e0790",
+          "callee": "0x2cb7e0030"
+        },
+        {
+          "ref_ea": "0x2cb7e06f4",
+          "callee": "0x2cb7e0370"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e0d74",
+        "name": "_cryptex_attr_create",
+        "size": 68,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e0d98",
+          "string_ea": "0x2cb7e9c26",
+          "text": "attr"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e4c2c",
+        "name": "__xpc_reply_get_argv",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e4c44",
+          "string_ea": "0x2cb7e9fd1",
+          "text": "argv"
+        },
+        {
+          "ref_ea": "0x2cb7e4c5c",
+          "string_ea": "0x2cb7e9fd1",
+          "text": "argv"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c19a4",
+        "name": "_cryptex_signing_service_set_cryptex_core",
+        "size": 924,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c1a74",
+          "string_ea": "0x2cb7ea675",
+          "text": "%{public}s: failed to get nonce domain from core %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7c1b84",
+          "string_ea": "0x2cb7ea675",
+          "text": "%{public}s: failed to get nonce domain from core %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7c1b18",
+          "string_ea": "0x2cb7ea6b7",
+          "text": "%{public}s: failed to get nonce domain description from core %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7c1ce8",
+          "string_ea": "0x2cb7ea6b7",
+          "text": "%{public}s: failed to get nonce domain description from core %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7c1c6c",
+          "string_ea": "0x2cb7ea705",
+          "text": "%{public}s: signing with nonce from %s"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c36dc",
+        "name": "__cryptex_signing_service_read_buff",
+        "size": 1084,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c37e8",
+          "string_ea": "0x2cb7eab73",
+          "text": "%{public}s: payload too large: actual = %lu, expected <= %u: %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7cb420",
+        "name": "_cryptex_bundle_write2",
+        "size": 3416,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7cb7f0",
+          "string_ea": "0x2cb7eb2f3",
+          "text": "%{public}s: failed to write bundle manifest"
+        },
+        {
+          "ref_ea": "0x2cb7cb9ac",
+          "string_ea": "0x2cb7eb2f3",
+          "text": "%{public}s: failed to write bundle manifest"
+        },
+        {
+          "ref_ea": "0x2cb7cb788",
+          "callee": "0x2cb7cc5ac"
+        },
+        {
+          "ref_ea": "0x2cb7cb480",
+          "callee": "0x2cb7c967c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7d0cf0",
+        "name": "_cryptex_mount",
+        "size": 6068,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7d10e4",
+          "string_ea": "0x2cb7ec315",
+          "text": "Cryptex is not personalized."
+        },
+        {
+          "ref_ea": "0x2cb7d1230",
+          "string_ea": "0x2cb7ec315",
+          "text": "Cryptex is not personalized."
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dcab8",
+        "name": "_cryptex_remote_service_copy_device_identifier2",
+        "size": 2444,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7dcc74",
+          "string_ea": "0x2cb7ed81f",
+          "text": "personalization identifier request failed: %@"
+        },
+        {
+          "ref_ea": "0x2cb7dcea0",
+          "string_ea": "0x2cb7ed84d",
+          "text": "failed to decode AppleImage4 chip instance.: %@"
+        },
+        {
+          "ref_ea": "0x2cb7dce4c",
+          "callee": "0x2cb7be610"
+        },
+        {
+          "ref_ea": "0x2cb7dcd04",
+          "callee": "0x2cb7e2be0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7de01c",
+        "name": "_cryptex_remote_service_install2",
+        "size": 2456,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7de2ac",
+          "string_ea": "0x2cb7ed985",
+          "text": "cryptex doesn't contain im4m"
+        },
+        {
+          "ref_ea": "0x2cb7de770",
+          "string_ea": "0x2cb7ed985",
+          "text": "cryptex doesn't contain im4m"
+        },
+        {
+          "ref_ea": "0x2cb7de3f0",
+          "callee": "0x2cb7e0d54"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e18fc",
+        "name": "_cryptex_su_preboot_bundle_copy_cryptex",
+        "size": 3884,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e1d00",
+          "string_ea": "0x2cb7ee12d",
+          "text": "%{public}s: Bad manifest file descriptor.: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7e1b88",
+          "string_ea": "0x2cb7ee169",
+          "text": "%{public}s: read build manifest: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7e1a78",
+          "string_ea": "0x2cb7ee1c8",
+          "text": "%{public}s: reading preboot manifest: %s"
+        },
+        {
+          "ref_ea": "0x2cb7e277c",
+          "string_ea": "0x2cb7ee244",
+          "text": "%{public}s: malformed build manifest: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7e269c",
+          "string_ea": "0x2cb7ee325",
+          "text": "%{public}s: no manifest: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7e2298",
+          "string_ea": "0x2cb7ee408",
+          "text": "%{public}s: no personalized dmg info: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7e23b4",
+          "string_ea": "0x2cb7ee478",
+          "text": "%{public}s: failed to read im4m: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7e244c",
+          "string_ea": "0x2cb7ee4aa",
+          "text": "%{public}s: Failed to load metadata for Image4 manifest.: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7e20fc",
+          "callee": "0x2cb7c8974"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c037c",
+        "name": "__cryptex_install_core",
+        "size": 1544,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c0504",
+          "callee": "0x2cb7e0d54"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7d3c2c",
+        "name": "_cryptex_install2",
+        "size": 4308,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7d44d8",
+          "callee": "0x2cb7e0d54"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c6e18",
+        "name": "_cryptex_install_4MSM",
+        "size": 444,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c6e88",
+          "callee": "0x2cb7e0e70"
+        },
+        {
+          "ref_ea": "0x2cb7c6e70",
+          "callee": "0x2cb7e0d74"
+        },
+        {
+          "ref_ea": "0x2cb7c6f5c",
+          "callee": "0x2cb7c037c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7cd284",
+        "name": "_cryptex_bundle_set_cryptex",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7cd2a0",
+          "callee": "0x2cb7ca3a0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c4744",
+        "name": "_hdi_copy_mounted",
+        "size": 1832,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c4b54",
+          "callee": "0x2cb7c4270"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c91ac",
+        "name": "_cryptex_bundle_copy_cryptex2",
+        "size": 1232,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c91e0",
+          "callee": "0x2cb7c967c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e061c",
+        "name": "_session_start",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e062c",
+          "callee": "0x2cb7e0030"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e0638",
+        "name": "_session_stop",
+        "size": 36,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e0650",
+          "callee": "0x2cb7e0030"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7e0370",
+        "name": "_cryptex_array_pack_from_path",
+        "size": 684,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7e048c",
+          "callee": "0x2cb7e01b8"
+        },
+        {
+          "ref_ea": "0x2cb7e0478",
+          "callee": "0x2cb7c91ac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c71f4",
+        "name": "_cryptex_uninstall_4MSM",
+        "size": 136,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c7210",
+          "callee": "0x2cb7e0d74"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7dbd18",
+        "name": "-[CryptexRemoteService sendRequestSync:response:]",
+        "size": 1788,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7dc1e8",
+          "callee": "0x2cb7e4c2c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7cd2e4",
+        "name": "_cryptex_bundle_write",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7cd300",
+          "callee": "0x2cb7cb420"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7df30c",
+        "name": "_cryptex_remote_service_copy_device_identifier",
+        "size": 128,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7df33c",
+          "callee": "0x2cb7dcab8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7df518",
+        "name": "_cryptex_remote_service_install",
+        "size": 196,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7df578",
+          "callee": "0x2cb7de01c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7da798",
+        "name": "_cryptex_install",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7da7b4",
+          "callee": "0x2cb7d3c2c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7c0984",
+        "name": "__cryptex_copy_list_lossy",
+        "size": 1100,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7c09e8",
+          "callee": "0x2cb7c4744"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7ca024",
+        "name": "_cryptex_bundle_copy_cryptex_for_chip2",
+        "size": 892,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7ca134",
+          "callee": "0x2cb7c91ac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7cd1b0",
+        "name": "_cryptex_bundle_copy_cryptex",
+        "size": 116,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7cd1e0",
+          "callee": "0x2cb7c91ac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7bdd58",
+        "name": "_simple_session_activate",
+        "size": 1036,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7bde48",
+          "callee": "0x2cb7e061c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7be198",
+        "name": "_simple_session_stop",
+        "size": 712,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7be1cc",
+          "callee": "0x2cb7e0638"
+        }
+      ]
+    }
+  ]
+}

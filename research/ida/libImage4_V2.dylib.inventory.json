@@ -1,0 +1,5278 @@
+{
+  "file": "/private/tmp/img4/libImage4_V2.dylib",
+  "sha256": "5d6548275c6715d0b0e04428ff4ccf330af5f566c56fabe82e011a1c5d5aee5d",
+  "primary": {
+    "name": "__TEXT",
+    "start": 11993358336,
+    "end": 11993603012,
+    "sections": [
+      {
+        "name": "__text",
+        "start": 11993360432,
+        "end": 11993468296,
+        "offset": 67632
+      },
+      {
+        "name": "__cstring",
+        "start": 11993468296,
+        "end": 11993477946,
+        "offset": 175496
+      },
+      {
+        "name": "__const",
+        "start": 11993477952,
+        "end": 11993601651,
+        "offset": 185152
+      },
+      {
+        "name": "__unwind_info",
+        "start": 11993601652,
+        "end": 11993603012,
+        "offset": 308852
+      },
+      {
+        "name": "__auth_stubs",
+        "start": 11993603012,
+        "end": 11993603012,
+        "offset": 0
+      }
+    ]
+  },
+  "function_count": 636,
+  "functions": [
+    {
+      "ea": "0x2cadc2830",
+      "name": "_selectDecode",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2848",
+      "name": "_chipEpoch",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2858",
+      "name": "_chipId",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2868",
+      "name": "_boardId",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2878",
+      "name": "_securityDomain",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2888",
+      "name": "_propertyMatchDataOnly",
+      "size": 164,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc292c",
+      "name": "_antiReplayCryptex1NonceDomain",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2934",
+      "name": "_antiReplayFirstStageInstall",
+      "size": 36,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc2958",
+      "name": "_antiReplayFirstStageLoad",
+      "size": 36,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc297c",
+      "name": "_antiReplayCryptex1NonceDomain_0",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2984",
+      "name": "_antiReplaySplatImageHash",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc298c",
+      "name": "_parseUniqueDeviceID",
+      "size": 44,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc29b8",
+      "name": "_parseVersion",
+      "size": 356,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc2b1c",
+      "name": "_logArgs",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc2b68",
+      "name": "_auxiliaryPolicyVersion",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2b70",
+      "name": "_antiReplayNextSplatImageHash",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2b78",
+      "name": "_image4NonceGetFromType",
+      "size": 116,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc2bec",
+      "name": "_image4NonceTypeToSigningAuthority",
+      "size": 56,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2c24",
+      "name": "_image4NonceTypeToDomain",
+      "size": 80,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2c74",
+      "name": "_image4NonceDomainToType",
+      "size": 60,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2cb0",
+      "name": "_image4NonceGetSeedFromType",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2cb4",
+      "name": "_image4NonceGetProposalSeedFromType",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2cb8",
+      "name": "_image4NonceGetProposalFromType",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2cbc",
+      "name": "_image4NonceRoll",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2cc0",
+      "name": "_manifestGetBoolean",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc2d28",
+      "name": "_manifestGetInteger32",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc2d90",
+      "name": "_manifestGetInteger64",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc2df8",
+      "name": "_manifestGetData",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc2e68",
+      "name": "_image4ManifestInit",
+      "size": 324,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc2fac",
+      "name": "_image4ManifestAttachRestoreInfo",
+      "size": 68,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc2ff0",
+      "name": "_image4ManifestGetBoolean",
+      "size": 32,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc3010",
+      "name": "_image4ManifestGetInteger32",
+      "size": 32,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc3030",
+      "name": "_image4ManifestGetInteger64",
+      "size": 32,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc3050",
+      "name": "_image4ManifestGetData",
+      "size": 32,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc3070",
+      "name": "_propertyMatchVolumeUuid",
+      "size": 216,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3148",
+      "name": "_propertyMatchLocalPolicyEpoch",
+      "size": 156,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc31e4",
+      "name": "_image4PayloadInit",
+      "size": 408,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc337c",
+      "name": "_image4PayloadGetBytes",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc33e8",
+      "name": "_image4PayloadGetBoolean",
+      "size": 160,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3488",
+      "name": "_image4PayloadGetInteger32",
+      "size": 156,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3524",
+      "name": "_image4PayloadGetInteger64",
+      "size": 160,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc35c4",
+      "name": "_image4PayloadGetData",
+      "size": 168,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc366c",
+      "name": "_expertGetSigningAuthorityEncoding",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc36ac",
+      "name": "_expertGetPlatform",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc36f0",
+      "name": "_expertGetRuntime",
+      "size": 44,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc371c",
+      "name": "_expertAllowsMixAndMatch",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3760",
+      "name": "_expertAllowsInternalUseOnlyBuilds",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc37a4",
+      "name": "_expertAllowsDataOnly",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc37e8",
+      "name": "_expertIsX86",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc382c",
+      "name": "_expertIsAVP",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3870",
+      "name": "_expertIsAVP3",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc38b4",
+      "name": "_expertDisablesPQC",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc38f8",
+      "name": "_expertBootedWithLocalPolicy",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc393c",
+      "name": "_expertBootedLocally",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3980",
+      "name": "_expertGetChipEpoch",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc39dc",
+      "name": "_expertGetChipId",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3a38",
+      "name": "_expertGetBoardId",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3a94",
+      "name": "_expertGetUniqueChipId",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3af0",
+      "name": "_expertGetSecurityDomain",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3b4c",
+      "name": "_expertGetCertificateProductionStatus",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3ba8",
+      "name": "_expertGetCertificateSecurityMode",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3c04",
+      "name": "_expertGetCurrentProductionStatus",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3c70",
+      "name": "_expertGetCurrentSecurityMode",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3cdc",
+      "name": "_expertGetUniqueDeviceId",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3d38",
+      "name": "_expertGetExtendedSecurityDomain",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3d94",
+      "name": "_expertGetOSVersion",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3df0",
+      "name": "_expertGetVolumeUuid",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3e4c",
+      "name": "_expertGetCryptex1ChipId",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3e98",
+      "name": "_expertGetCryptex1ProductClass",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3ee4",
+      "name": "_expertGetLocalPolicyEpoch",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc3f40",
+      "name": "_expertDump",
+      "size": 1248,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc4420",
+      "name": "_logArgs_0",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc4474",
+      "name": "_propertyMatchLocalBoot",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc44e0",
+      "name": "_environmentEvaluateManifest",
+      "size": 256,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc45e0",
+      "name": "_logArgs_1",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc4638",
+      "name": "_environmentEvaluateManifestWithContext",
+      "size": 372,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc47ac",
+      "name": "_coreTrustVerifyChain",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc480c",
+      "name": "_coreTrustVerifySignature",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc486c",
+      "name": "_environmentEvaluateManifestAuxiliary",
+      "size": 228,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc4950",
+      "name": "_environmentEvaluateAntiReplay",
+      "size": 336,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc4aa0",
+      "name": "_environmentEvaluatePayload",
+      "size": 272,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc4bb0",
+      "name": "_environmentEvaluatePayloadWithContext",
+      "size": 448,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc4d70",
+      "name": "_environmentEvaluatePayloadAuxiliary",
+      "size": 160,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc4e10",
+      "name": "_environmentGetChipEpoch",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4e28",
+      "name": "_environmentGetChipId",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4e40",
+      "name": "_environmentGetBoardId",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4e58",
+      "name": "_environmentGetUniqueChipId",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4e70",
+      "name": "_environmentGetSecurityDomain",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4e88",
+      "name": "_environmentGetCertificateProductionStatus",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4ea0",
+      "name": "_environmentGetCertificateSecurityMode",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4eb8",
+      "name": "_environmentGetCurrentProductionStatus",
+      "size": 32,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4ed8",
+      "name": "_environmentGetCurrentSecurityMode",
+      "size": 32,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4ef8",
+      "name": "_environmentGetUniqueDeviceId",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4f10",
+      "name": "_environmentGetExtendedSecurityDomain",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4f28",
+      "name": "_environmentGetOSVersion",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4f40",
+      "name": "_environmentGetVolumeUuid",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4f58",
+      "name": "_environmentGetCryptex1ChipId",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4f70",
+      "name": "_environmentGetCryptex1ProductClass",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc4f88",
+      "name": "_environmentGetCryptex1Type",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc4fdc",
+      "name": "_environmentGetCryptex1SubType",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc5030",
+      "name": "_environmentGetLocalPolicyEpoch",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc5048",
+      "name": "_evaluateManifestCallback",
+      "size": 988,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc5424",
+      "name": "_evaluatePayloadCallback",
+      "size": 244,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc5518",
+      "name": "_evaluateManifestHashCallback",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc5530",
+      "name": "_darwinGetSupplementaryRootCA",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc558c",
+      "name": "_darwinSetSupplementaryRootCA",
+      "size": 140,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc5618",
+      "name": "_darwinSetLocalPolicyEpoch",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc5668",
+      "name": "_darwinSetLocalPolicySplatImageHash",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc56d0",
+      "name": "_darwinBoot",
+      "size": 1400,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc5c48",
+      "name": "_darwinGetEnvironment",
+      "size": 608,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc5ee8",
+      "name": "_darwinGetSigningAuthorityEncoding",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc5f40",
+      "name": "_darwinAllowsMixAndMatch",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc5f94",
+      "name": "_darwinAllowsInternalUseOnlyBuilds",
+      "size": 176,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6044",
+      "name": "_darwinIsAVP",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6090",
+      "name": "_darwinIsAVP3",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc60dc",
+      "name": "_darwinDisablesPQC",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc612c",
+      "name": "_darwinBootedWithLocalPolicy",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc61a8",
+      "name": "_darwinBootedLocally",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6208",
+      "name": "_darwinGetChipEpoch",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc625c",
+      "name": "_darwinGetChipId",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc62b0",
+      "name": "_darwinGetBoardId",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6304",
+      "name": "_darwinGetUniqueChipId",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6354",
+      "name": "_darwinGetSecurityDomain",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc63a8",
+      "name": "_darwinGetCertificateProductionStatus",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6408",
+      "name": "_darwinGetCertificateSecurityMode",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6468",
+      "name": "_darwinGetCurrentProductionStatus",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc64c8",
+      "name": "_darwinGetCurrentSecurityMode",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6528",
+      "name": "_darwinGetUniqueDeviceId",
+      "size": 184,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc65e0",
+      "name": "_darwinGetOSVersion",
+      "size": 156,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc667c",
+      "name": "_darwinGetVolumeUuid",
+      "size": 320,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc67bc",
+      "name": "_darwinGetExtendedSecurityDomain",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6810",
+      "name": "_darwinGetCryptex1ChipId",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6864",
+      "name": "_darwinGetCryptex1ProductClass",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc68b8",
+      "name": "_darwinGetLocalPolicyEpoch",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6928",
+      "name": "_darwinGetPreviousStageDigest",
+      "size": 308,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6a5c",
+      "name": "_darwinSetMutableData",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6ab0",
+      "name": "_darwinGetFullSecurity",
+      "size": 160,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6b50",
+      "name": "_image4ContextInit",
+      "size": 276,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6c64",
+      "name": "_image4ContextAttachManifest",
+      "size": 68,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc6ca8",
+      "name": "_image4ContextAttachNonce",
+      "size": 116,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6d1c",
+      "name": "_image4ContextAttachPreviousStageDigest",
+      "size": 116,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6d90",
+      "name": "_image4ContextAttachAuxiliaryData",
+      "size": 116,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6e04",
+      "name": "_image4ContextEvaluateManifest",
+      "size": 404,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc6f98",
+      "name": "_image4ContextEvaluatePayload",
+      "size": 404,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc712c",
+      "name": "_image4RestoreInfoInit",
+      "size": 316,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc7268",
+      "name": "_image4RestoreInfoGetBoolean",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc72d8",
+      "name": "_image4RestoreInfoGetInteger32",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc7348",
+      "name": "_image4RestoreInfoGetInteger64",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc73b8",
+      "name": "_image4RestoreInfoGetData",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc7430",
+      "name": "_auxiliaryValidateLocalPolicyActivationPolicy",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc7490",
+      "name": "_logArgs_2",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc74dc",
+      "name": "_image4DeviceGetKeyAlgorithm",
+      "size": 324,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc7620",
+      "name": "_image4DeviceGetBootManifestHash",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc7680",
+      "name": "_image4DeviceGetSupplementaryRootCA",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc76e4",
+      "name": "_image4DeviceGetMixAndMatch",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc7718",
+      "name": "_image4DeviceGetInAvp",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc774c",
+      "name": "_image4DeviceGetBootedWithLocalPolicy",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc7780",
+      "name": "_image4DeviceGetChipEpoch",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc7784",
+      "name": "_image4DeviceGetChipId",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc7788",
+      "name": "_image4DeviceGetBoardId",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc778c",
+      "name": "_image4DeviceGetUniqueChipId",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc7790",
+      "name": "_image4DeviceGetSecurityDomain",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc7794",
+      "name": "_image4DeviceGetCertificateProductionStatus",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc7798",
+      "name": "_image4DeviceGetCertificateSecurityMode",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc779c",
+      "name": "_image4DeviceGetCurrentProductionStatus",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc77a0",
+      "name": "_image4DeviceGetCurrentSecurityMode",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc77a4",
+      "name": "_image4DeviceGetUniqueDeviceId",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc77a8",
+      "name": "_image4DeviceGetExtendedSecurityDomain",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc77ac",
+      "name": "_image4DeviceGetOSVersion",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc77b0",
+      "name": "_image4DeviceGetVolumeUuid",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc77b4",
+      "name": "_image4DeviceGetCryptex1ChipId",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc77b8",
+      "name": "_image4DeviceGetCryptex1ProductClass",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc77bc",
+      "name": "_image4DeviceGetCryptex1Type",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc7824",
+      "name": "_image4DeviceGetCryptex1SubType",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc788c",
+      "name": "_antiReplayEnforceFirstStage",
+      "size": 540,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc7ae4",
+      "name": "_antiReplayEnforceBootNonce",
+      "size": 428,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc7c90",
+      "name": "_antiReplayEnforceCryptex1Nonce",
+      "size": 496,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc7e80",
+      "name": "_antiReplayEnforceRestoreInfoNonce",
+      "size": 556,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc80ac",
+      "name": "_expertComputeNonce",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc8124",
+      "name": "_antiReplayEnforceSubsequentStage",
+      "size": 420,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc82c8",
+      "name": "_auxiliaryValidateVersionPolicy",
+      "size": 560,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc84f8",
+      "name": "_image4ObjectLoadDiavloRootCA",
+      "size": 48,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc8528",
+      "name": "_loadObject",
+      "size": 200,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc85f0",
+      "name": "_Image4ObjectLoadLocalPolicy",
+      "size": 40,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc8618",
+      "name": "_logArgs_3",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc8664",
+      "name": "_selectConstraintLocalPolicy",
+      "size": 68,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc86a8",
+      "name": "_selectDecodeImplementationLocalPolicy",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc86b8",
+      "name": "___selectDecodeImplementationBase",
+      "size": 384,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc8838",
+      "name": "_selectDecodeImplementationLocalPolicyTatsu",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc8848",
+      "name": "_auxiliaryValidateFusingPolicy",
+      "size": 356,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc89ac",
+      "name": "_validateFusingPolicy",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc8a80",
+      "name": "_propertyMatchChipEpoch",
+      "size": 156,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc8b1c",
+      "name": "_propertyMatchChipId",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc8bb0",
+      "name": "_propertyMatchBoardId",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc8c44",
+      "name": "_propertyMatchUniqueChipId",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc8cd8",
+      "name": "_propertyMatchSecurityDomain",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc8d6c",
+      "name": "_propertyMatchCertificateProductionStatus",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc8e00",
+      "name": "_propertyMatchCertificateSecurityMode",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc8e94",
+      "name": "_propertyMatchUniqueDeviceId",
+      "size": 216,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc8f6c",
+      "name": "_propertyMatchExtendedSecurityDomain",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9000",
+      "name": "_propertyMatchCryptex1ChipId",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9094",
+      "name": "_propertyMatchCryptex1ProductClass",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9128",
+      "name": "_propertyMatchCryptex1Type",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc91bc",
+      "name": "_antiReplayApSoftwareNonce",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc91c4",
+      "name": "_propertyMatchCryptex1SubType",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9258",
+      "name": "_propertyMatchBoolean",
+      "size": 236,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9344",
+      "name": "_propertyMatchImage4Boolean",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc939c",
+      "name": "_propertyMatchInteger32",
+      "size": 308,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc94d0",
+      "name": "_propertyMatchImage4Integer32",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9528",
+      "name": "_propertyMatchInteger64",
+      "size": 284,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9644",
+      "name": "_propertyMatchImage4Integer64",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc969c",
+      "name": "_propertyMatchData",
+      "size": 692,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9950",
+      "name": "_propertyMatchStaticData",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9988",
+      "name": "_propertyMatchImage4Data",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc99f4",
+      "name": "_antiReplayApBootNonce",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc99fc",
+      "name": "_antiReplayBootManifestHash",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9a04",
+      "name": "_propertyMatchDigest",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9a3c",
+      "name": "_propertyMatchInternalUseOnlyBuild",
+      "size": 164,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9ae0",
+      "name": "_selectConstraintAp",
+      "size": 64,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9b20",
+      "name": "_selectDecodeImplementationAp",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9b50",
+      "name": "___selectDecodeImplementationApBase",
+      "size": 512,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9d50",
+      "name": "_selectDecodeImplementationApGlobal",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9d60",
+      "name": "_antiReplayApFirstStage",
+      "size": 32,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9d80",
+      "name": "_antiReplayBootManifestHash_0",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9d88",
+      "name": "_userspaceGetMainPort",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9d98",
+      "name": "_userspaceBootBackdeploy",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9d9c",
+      "name": "_userspaceGetNonceBackdeploy",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9da4",
+      "name": "_userspaceGetNonceProposalBackdeploy",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9dac",
+      "name": "_userspaceRollNonceBackdeploy",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9db4",
+      "name": "_antiReplayApBootNonce_0",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9dbc",
+      "name": "_antiReplayRecoveryPolicy",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9dc4",
+      "name": "_antiReplayApEphemeralNonce",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9dcc",
+      "name": "_antiReplayApPersistentNonce",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9dd4",
+      "name": "_antiReplayApSecurityResearch",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9ddc",
+      "name": "_selectConstraintCryptex1",
+      "size": 64,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9e1c",
+      "name": "_selectConstraintCryptex1WithoutSubType",
+      "size": 88,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadc9e74",
+      "name": "_selectDecodeImplementationCryptex1",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadc9ea4",
+      "name": "___selectDecodeImplementationCryptex1Base",
+      "size": 352,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadca004",
+      "name": "_selectDecodeImplementationCryptex1Global",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca014",
+      "name": "_cryptex1GetChipEpoch",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca028",
+      "name": "_auxiliaryPolicyVersion_0",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca030",
+      "name": "_antiReplayFirstStage",
+      "size": 36,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadca054",
+      "name": "_antiReplaySubsequentStage",
+      "size": 36,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadca078",
+      "name": "_antiReplayCryptex1NonceDomain_1",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca080",
+      "name": "_auxiliaryPolicyVersion_1",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca088",
+      "name": "_auxiliaryPolicyLocalPolicyActivation",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca090",
+      "name": "_antiReplayLocalPolicy",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca098",
+      "name": "_antiReplayLocalPolicyLinkedHash",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca0a0",
+      "name": "_antiReplayCryptex1NonceDomain_2",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca0a8",
+      "name": "_auxiliaryPolicyVersion_2",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca0b0",
+      "name": "_antiReplayFirstStageInstall_0",
+      "size": 36,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadca0d4",
+      "name": "_antiReplayFirstStageLoad_0",
+      "size": 36,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadca0f8",
+      "name": "_selectDecode_0",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca110",
+      "name": "_chipEpoch_0",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca120",
+      "name": "_chipId_0",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca130",
+      "name": "_boardId_0",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca140",
+      "name": "_securityDomain_0",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca150",
+      "name": "_selectDecode_1",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca168",
+      "name": "_chipEpoch_1",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca178",
+      "name": "_chipId_1",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca188",
+      "name": "_boardId_1",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca198",
+      "name": "_securityDomain_1",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca1a8",
+      "name": "_auxiliaryPolicyVersion_3",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca1b0",
+      "name": "_productionFusingIdentityGlobal",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca1c4",
+      "name": "_selectDecodeImplementationSHA384",
+      "size": 172,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadca270",
+      "name": "_antiReplayApEphemeralNonce_0",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca278",
+      "name": "_antiReplayApPersistentNonce_0",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca280",
+      "name": "_antiReplayCryptex1NonceDomain_3",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca288",
+      "name": "_logArgs_4",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadca2dc",
+      "name": "_darwinExpertAllowsDevelopment",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca2e8",
+      "name": "_darwinExpertGetDarwinData",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca300",
+      "name": "_darwinExpertGetChosen",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca31c",
+      "name": "_userspaceGetNode",
+      "size": 288,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadca43c",
+      "name": "_darwinExpertGetProduct",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca458",
+      "name": "_darwinExpertGetDefaults",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca474",
+      "name": "_darwinExpertGetManifestProperties",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca490",
+      "name": "_darwinExpertGetASMB",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca4ac",
+      "name": "_image4UserGetKernelConnection",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadca4bc",
+      "name": "_image4UserGetNonceSeed",
+      "size": 296,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadca5e4",
+      "name": "_expertGetExpert",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadca650",
+      "name": "_logArgs_5",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadca6b4",
+      "name": "_image4UserGetNonceProposalSeed",
+      "size": 296,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadca7dc",
+      "name": "_image4UserGetNonceProposal",
+      "size": 352,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadca93c",
+      "name": "_image4UserRollNonce",
+      "size": 288,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcaa5c",
+      "name": "_userspaceLog",
+      "size": 144,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcaaec",
+      "name": "_userspaceGetEnvironment",
+      "size": 384,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcac6c",
+      "name": "_userspaceGetRuntime",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcac74",
+      "name": "_userspaceAllowsDataOnly",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcac7c",
+      "name": "_userspaceGetNonce",
+      "size": 312,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcadb4",
+      "name": "_userspaceGetSupplementaryRootCA",
+      "size": 536,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcafcc",
+      "name": "___userspaceBoot_block_invoke",
+      "size": 776,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb2d4",
+      "name": "_expertSetSupplementaryRootCA",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb344",
+      "name": "_Img4DecodeLocalRsa4kSha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb39c",
+      "name": "_Img4DecodeShamRsa4kSha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb3f4",
+      "name": "_Img4DecodeSecureBootG7Rsa4kSha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb44c",
+      "name": "_Img4DecodeLocalPolicyTatsuG8Rsa4kSha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb4a4",
+      "name": "_Img4DecodeSecureBootGlobalG1Rsa4kSha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb4fc",
+      "name": "_Img4DecodeCryptexG1Rsa4kSha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb554",
+      "name": "_Img4DecodeCryptexGlobalG1Rsa4kSha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb5ac",
+      "name": "_Img4DecodeAVPSecureBootG2Rsa4kSha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb604",
+      "name": "_Img4DecodeRepairG1Rsa4kSha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb65c",
+      "name": "_Img4DecodeLocalMLDSA87Sha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb6b4",
+      "name": "_Img4DecodeLocalHybridScheme3Sha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb70c",
+      "name": "_Img4DecodeLocalHybridScheme3Sha384IM4CNoPQC",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb764",
+      "name": "_Img4DecodeHybridScheme3Sha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb7bc",
+      "name": "_Img4DecodeHybridScheme3Sha384IM4CNoPQC",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb814",
+      "name": "_Img4DecodeAppleSecureBootGlobalG1Hybrid3Sha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb86c",
+      "name": "_Img4DecodeAppleSecureBootGlobalG1Hybrid3Sha384IM4CNoPQC",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb8c4",
+      "name": "_Img4DecodeAppleSecureBootG2HybridScheme3Sha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb91c",
+      "name": "_Img4DecodeAppleSecureBootG2HybridScheme3Sha384IM4CNoPQC",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb974",
+      "name": "_Img4DecodeAppleLocalPolicyG1HybridScheme3Sha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcb9cc",
+      "name": "_Img4DecodeAppleLocalPolicyG1HybridScheme3Sha384IM4CNoPQC",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcba24",
+      "name": "_Img4DecodeCryptex1G1HybridScheme3Sha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcba7c",
+      "name": "_Img4DecodeCryptex1G1HybridScheme3Sha384IM4CNoPQC",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcbad4",
+      "name": "_Img4DecodeCryptex1GlobalG1HybridScheme3Sha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcbb2c",
+      "name": "_Img4DecodeCryptex1GlobalG1HybridScheme3Sha384IM4CNoPQC",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcbb84",
+      "name": "_Img4DecodeWirelessG1HybridScheme3Sha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcbbdc",
+      "name": "_Img4DecodeWirelessG1HybridScheme3Sha384IM4CNoPQC",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcbc34",
+      "name": "_Img4DecodeSecureBootRsa4kSha384IM4C",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcbc8c",
+      "name": "_Img4DecodeEvaluateTrust",
+      "size": 56,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcbcc4",
+      "name": "_Img4DecodeCopyPayloadHash",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcbce0",
+      "name": "_Img4DecodeCopyManifestHash",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcbcfc",
+      "name": "_DERImg4DecodeFindInSequence",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcbd60",
+      "name": "_DERImg4DecodeManifest",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcbd7c",
+      "name": "_DERImg4DecodeProperty",
+      "size": 304,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcbeac",
+      "name": "_DERImg4DecodeFindPropertyInSequence",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcbf28",
+      "name": "_DERImg4DecodeParseManifestProperties",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcbf34",
+      "name": "_OUTLINED_FUNCTION_0",
+      "size": 8,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcbf3c",
+      "name": "_OUTLINED_FUNCTION_1",
+      "size": 20,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcbf50",
+      "name": "_OUTLINED_FUNCTION_2",
+      "size": 16,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcbf60",
+      "name": "_OUTLINED_FUNCTION_3",
+      "size": 20,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcbf74",
+      "name": "_Img4DecodeParseLengthFromBufferWithTag",
+      "size": 256,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcc074",
+      "name": "_Img4DecodeParseLengthFromBuffer",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc084",
+      "name": "_Img4DecodePayloadExists",
+      "size": 56,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc0bc",
+      "name": "_Img4DecodeGetPayload",
+      "size": 68,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc100",
+      "name": "_Img4DecodeGetPayloadType",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcc160",
+      "name": "_Img4DecodeGetPayloadVersion",
+      "size": 68,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc1a4",
+      "name": "_Img4DecodePayloadKeybagExists",
+      "size": 56,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc1dc",
+      "name": "_Img4DecodeGetPayloadKeybag",
+      "size": 68,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc220",
+      "name": "_Img4DecodePayloadCompressionInfoExists",
+      "size": 56,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc258",
+      "name": "_Img4DecodeGetPayloadCompressionInfo",
+      "size": 232,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcc340",
+      "name": "_Img4DecodeCopyPayloadHashWithCallback",
+      "size": 224,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcc420",
+      "name": "_Img4DecodeManifestExists",
+      "size": 40,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc448",
+      "name": "_Img4DecodeCopyManifestHashWithCallback",
+      "size": 220,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcc524",
+      "name": "_Img4DecodeSectionExists",
+      "size": 88,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc57c",
+      "name": "_Img4DecodeRestoreInfoExists",
+      "size": 56,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc5b4",
+      "name": "_Img4DecodeGetRestoreInfoBoolean",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc5c4",
+      "name": "_Img4DecodeGetBooleanFromSection",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcc634",
+      "name": "_Img4DecodeGetRestoreInfoInteger",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc644",
+      "name": "_Img4DecodeGetIntegerFromSection",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcc6bc",
+      "name": "_Img4DecodeGetRestoreInfoInteger64",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc6cc",
+      "name": "_Img4DecodeGetInteger64FromSection",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcc744",
+      "name": "_Img4DecodeGetRestoreInfoData",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc758",
+      "name": "_Img4DecodeGetDataFromSection",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcc7d4",
+      "name": "_Img4DecodePayloadProperty",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcc7dc",
+      "name": "_Img4DecodeGetObjectProperty",
+      "size": 188,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcc898",
+      "name": "_Img4DecodeGetObjectPropertyInteger",
+      "size": 116,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcc90c",
+      "name": "_Img4DecodeGetObjectPropertyInteger64",
+      "size": 116,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcc980",
+      "name": "_Img4DecodeGetObjectPropertyData",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcc9fc",
+      "name": "_Img4DecodeGetObjectPropertyString",
+      "size": 124,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcca78",
+      "name": "_Img4DecodeGetPropertyFromSection",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadccb4c",
+      "name": "_Img4DecodeGetPropertyData",
+      "size": 168,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadccbf4",
+      "name": "_Img4DecodeEvaluateCertificateProperties",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadccbfc",
+      "name": "_Img4DecodeEvaluateManifestProperties",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadccc10",
+      "name": "_Img4DecodeInit",
+      "size": 232,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcccf8",
+      "name": "_Img4DecodeInitPayload",
+      "size": 152,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadccd90",
+      "name": "_Img4DecodeInitManifest",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadccda4",
+      "name": "_Img4DecodeInitManifestCommon",
+      "size": 320,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadccee4",
+      "name": "_Img4DecodeInitUnsignedManifest",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadccef8",
+      "name": "_Img4DecodeInitCertificate",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadccf0c",
+      "name": "_Img4DecodeInitUnsignedCertificate",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadccf20",
+      "name": "_Img4DecodePerformTrustEvaluation",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadccf54",
+      "name": "_Img4DecodePerformTrustEvaluatationWithCallbacks",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadccf60",
+      "name": "_Img4DecodePerformTrustEvaluatation",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadccf94",
+      "name": "_Img4DecodePerformTrustEvaluationWithCallbacks",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadccfa0",
+      "name": "__Img4DecodeValidateManifestPropertyInterposer",
+      "size": 272,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcd0b0",
+      "name": "_OUTLINED_FUNCTION_1_0",
+      "size": 16,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcd0c0",
+      "name": "_OUTLINED_FUNCTION_2_0",
+      "size": 16,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcd0d0",
+      "name": "_OUTLINED_FUNCTION_3_0",
+      "size": 56,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcd108",
+      "name": "_OUTLINED_FUNCTION_4",
+      "size": 28,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcd124",
+      "name": "_OUTLINED_FUNCTION_5",
+      "size": 16,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcd134",
+      "name": "_OUTLINED_FUNCTION_6",
+      "size": 12,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcd140",
+      "name": "_OUTLINED_FUNCTION_7",
+      "size": 32,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcd160",
+      "name": "_OUTLINED_FUNCTION_8",
+      "size": 24,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcd178",
+      "name": "_sha1_digest",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcd190",
+      "name": "_verify_signature_rsa3k",
+      "size": 152,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcd228",
+      "name": "_verify_pkcs1_sig",
+      "size": 448,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcd3e8",
+      "name": "_verify_signature_rsa",
+      "size": 152,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcd480",
+      "name": "_verify_signature_rsa4096_fixed",
+      "size": 472,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcd658",
+      "name": "_ccrsa_pub_init",
+      "size": 116,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcd6cc",
+      "name": "_verify_signature_ecdsa",
+      "size": 148,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcd760",
+      "name": "_verify_ecdsa_sig",
+      "size": 368,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcd8d0",
+      "name": "_verify_chain_img4_v1",
+      "size": 724,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcdba4",
+      "name": "_parse_chain",
+      "size": 576,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcdde4",
+      "name": "_verify_chain_signatures",
+      "size": 416,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcdf84",
+      "name": "_verify_chain_img4_x86",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcdf98",
+      "name": "_verify_chain_img4_v2_with_crack_callback",
+      "size": 352,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce0f8",
+      "name": "_crack_chain_rsa4k_sha384_x86",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce130",
+      "name": "_verify_chain_img4_ddi",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadce144",
+      "name": "_crack_chain_rsa4k_sha384_ddi",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce17c",
+      "name": "_verify_chain_img4_ddi_global",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadce190",
+      "name": "_crack_chain_rsa4k_sha384_ddi_global",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce1c8",
+      "name": "_verify_chain_img4_ddi_fake",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadce1dc",
+      "name": "_crack_chain_rsa4k_sha384_ddi_fake",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce214",
+      "name": "_verify_chain_img4_ddi_fake_global",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadce228",
+      "name": "_crack_chain_rsa4k_sha384_ddi_fake_global",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce260",
+      "name": "_verify_chain_img4_avp",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadce274",
+      "name": "_crack_chain_rsa4k_sha384_avp",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce2ac",
+      "name": "_verify_chain_img4_tatsu_local_policy",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadce2c0",
+      "name": "_crack_chain_rsa4k_sha384_tatsu_local_policy",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce2f8",
+      "name": "_verify_chain_img4_tatsu_local_policy_hacktivate",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadce30c",
+      "name": "_crack_chain_rsa4k_sha384_tatsu_local_policy_hacktivate",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce344",
+      "name": "_verify_chain_img4_v2_rsa3k",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadce358",
+      "name": "_crack_chain_rsa3k_sha384",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce390",
+      "name": "_verify_chain_img4_v2",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadce3a4",
+      "name": "_crack_chain_rsa4k_sha384",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce3dc",
+      "name": "_verify_chain_img4_v2_AWG1",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadce3f0",
+      "name": "_crack_chain_rsa4k_sha384_AWG1",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce428",
+      "name": "_verify_chain_img4_v2_PED",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadce43c",
+      "name": "_crack_chain_rsa4k_sha384_PED",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce474",
+      "name": "_verify_chain_img4_ec_v1",
+      "size": 436,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce628",
+      "name": "_parse_ec_chain",
+      "size": 580,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce86c",
+      "name": "_verify_chain_img4_ecdsa256",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadce880",
+      "name": "_verify_chain_img4_ec_v2",
+      "size": 376,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadce9f8",
+      "name": "_crack_chain_ecdsa256_sha256",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcea30",
+      "name": "_verify_chain_img4_ecdsa384",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcea44",
+      "name": "_crack_chain_ecdsa384_sha384_hacktivate",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcea7c",
+      "name": "_verify_chain_img4_ecdsa384_local_policy",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadceaac",
+      "name": "_crack_chain_ecdsa384_sha384",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadceae4",
+      "name": "_verify_chain_img4_ecdsa384_hacktivate",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadceb14",
+      "name": "_verify_chain_img4_ecdsa384_qa",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadceb44",
+      "name": "_crack_chain_ecdsa384_sha384_qa",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadceb7c",
+      "name": "_img4_verify_signature_with_chain",
+      "size": 180,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcec30",
+      "name": "__crack_chain_with_anchor",
+      "size": 220,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadced0c",
+      "name": "_parse_extensions",
+      "size": 352,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcee6c",
+      "name": "_OUTLINED_FUNCTION_0_0",
+      "size": 16,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcee7c",
+      "name": "_OUTLINED_FUNCTION_1_1",
+      "size": 20,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cadcee90",
+      "name": "_hybrid_scheme3_pubkey_cast",
+      "size": 100,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadceef4",
+      "name": "_hybrid_scheme3_signature_cast",
+      "size": 108,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcef60",
+      "name": "_DERDecodeItem",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcef68",
+      "name": "_DERDecodeItemPartialBufferGetLength",
+      "size": 488,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcf150",
+      "name": "_DERDecodeItemPartialBuffer",
+      "size": 440,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcf308",
+      "name": "_DERParseBitString",
+      "size": 192,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcf3c8",
+      "name": "_DERParseBoolean",
+      "size": 60,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcf404",
+      "name": "_DERParseBooleanWithDefault",
+      "size": 64,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcf444",
+      "name": "_DERParseInteger",
+      "size": 132,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcf4c8",
+      "name": "_DERParseInteger64",
+      "size": 128,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcf548",
+      "name": "_DERParseIntegerSigned",
+      "size": 132,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcf5cc",
+      "name": "_DERParseInteger64Signed",
+      "size": 184,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcf684",
+      "name": "_DERDecodeSeqInit",
+      "size": 188,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcf740",
+      "name": "_DERDecodeSeqContentInit",
+      "size": 44,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcf76c",
+      "name": "_DERDecodeSeqNext",
+      "size": 192,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcf82c",
+      "name": "_DERParseSequenceToObject",
+      "size": 204,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcf8f8",
+      "name": "_DERParseSequenceContentToObject",
+      "size": 692,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcfbac",
+      "name": "_DERParseSequence",
+      "size": 32,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcfbcc",
+      "name": "_DERParseSequenceContent",
+      "size": 32,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcfbec",
+      "name": "_DERDecodeSequenceWithBlock",
+      "size": 160,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcfc8c",
+      "name": "_DERDecodeSequenceContentWithBlock",
+      "size": 200,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcfd54",
+      "name": "_DEROidCompare",
+      "size": 84,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadcfda8",
+      "name": "_X509PolicySetFlagsForCommonNames",
+      "size": 276,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcfebc",
+      "name": "_X509PolicySetFlagsForMFI",
+      "size": 280,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadcffd4",
+      "name": "_X509PolicySetFlagsForRoots",
+      "size": 560,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd0204",
+      "name": "_X509PolicySetFlagsForTestAnchor",
+      "size": 184,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd02bc",
+      "name": "_X509PolicyCheckForBlockedKeys",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd030c",
+      "name": "_CTImg4VerifyChain",
+      "size": 572,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd0548",
+      "name": "_CTImg4VerifySignatureWithPublicKey",
+      "size": 396,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd06d4",
+      "name": "_CTImg4CreateContext",
+      "size": 612,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd0938",
+      "name": "_find_digest",
+      "size": 140,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd09c4",
+      "name": "_find_digest_by_type",
+      "size": 72,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd0a0c",
+      "name": "_algorithmIsPQCComposite",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd0a84",
+      "name": "_find_digestOID_for_signingOID",
+      "size": 396,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd0c10",
+      "name": "_validateSignaturePQCComposite",
+      "size": 324,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd0d54",
+      "name": "_validateOIDs",
+      "size": 192,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd0e14",
+      "name": "_validateSignatureRSA",
+      "size": 636,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd1090",
+      "name": "_oidForPubKeyLength",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd10f0",
+      "name": "_validateSignatureEC",
+      "size": 596,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd1344",
+      "name": "_ccec_cp_for_oid",
+      "size": 156,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd13e0",
+      "name": "_compressECPublicKey",
+      "size": 408,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd1578",
+      "name": "_decompressECPublicKey",
+      "size": 416,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd1718",
+      "name": "_CMSParseContentInfoSignedDataWithOptions",
+      "size": 548,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd193c",
+      "name": "_ccder_blob_decode_ber_tl",
+      "size": 160,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd19dc",
+      "name": "_CMSParseSignedData",
+      "size": 976,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd1dac",
+      "name": "_ccder_blob_decode_eoc",
+      "size": 164,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd1e50",
+      "name": "_CMSParseContentInfoSignedData",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd1e58",
+      "name": "_CMSParseSignerInfos",
+      "size": 1600,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd2498",
+      "name": "_CMSBuildPath",
+      "size": 736,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd2778",
+      "name": "_validateSignerInfo",
+      "size": 1936,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd2f08",
+      "name": "_validateSignerInfoAndChain",
+      "size": 116,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd2f7c",
+      "name": "_CMSVerifySignedDataWithLeaf",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd2fd4",
+      "name": "_CMSVerify",
+      "size": 484,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd31b8",
+      "name": "_CMSVerifySignedData",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd321c",
+      "name": "_CMSVerifyAndReturnSignedData",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd3284",
+      "name": "_ccder_blob_decode_ber_len",
+      "size": 452,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd3448",
+      "name": "_CMSParseImplicitCertificateSet",
+      "size": 764,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd3744",
+      "name": "_CMSParseEncapsulatedContent",
+      "size": 428,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd38f0",
+      "name": "_ccder_blob_eat_ber_inner",
+      "size": 324,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd3a34",
+      "name": "_CMSGetCertificateUsingIssuerSerialNumber",
+      "size": 132,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd3ab8",
+      "name": "_CMSAttributeParseContentType",
+      "size": 184,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd3b70",
+      "name": "_CMSAttributeParseMessageDigest",
+      "size": 292,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd3c94",
+      "name": "_CMSAttributeParseAppleHashAgilityV2",
+      "size": 536,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd3eac",
+      "name": "_CMSAttributeParseSigningTime",
+      "size": 220,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd3f88",
+      "name": "_CMSAttributeParseAppleHashAgility",
+      "size": 184,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd4040",
+      "name": "_CMSAttributeParseSMIMECapabilities",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd40d4",
+      "name": "_compare_octet_string",
+      "size": 40,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd40fc",
+      "name": "_compare_octet_string_raw",
+      "size": 32,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd411c",
+      "name": "_compare_octet_string_partial",
+      "size": 40,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd4144",
+      "name": "_ccder_blob_decode_AlgorithmIdentifierNULL",
+      "size": 388,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd42c8",
+      "name": "_ccder_blob_decode_Time",
+      "size": 304,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd43f8",
+      "name": "_ccder_blob_decode_GeneralName",
+      "size": 840,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd4740",
+      "name": "_ccder_blob_check_null",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd47a4",
+      "name": "_CTParseCertificateSet",
+      "size": 296,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd48cc",
+      "name": "_CTParseExtensionValue",
+      "size": 240,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd49bc",
+      "name": "_CTParseKey",
+      "size": 204,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd4a88",
+      "name": "_CTGetSKIDFromCertificate",
+      "size": 256,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd4b88",
+      "name": "_CTGetAKIDFromCertificate",
+      "size": 256,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd4c88",
+      "name": "_CTParseLeafSPKI",
+      "size": 240,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd4d78",
+      "name": "_CTEvaluateSavageCertsWithUID",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd4db4",
+      "name": "_CTEvaluateCertifiedChip",
+      "size": 704,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd5074",
+      "name": "_CTEvaluateSavageCerts",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd50b4",
+      "name": "_CTEvaluateYonkersCerts",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd50f0",
+      "name": "_CTEvaluateSensorCerts",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd5140",
+      "name": "_CTEvaluateCertsForPolicy",
+      "size": 732,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd541c",
+      "name": "_CTEvaluateSatori",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd5460",
+      "name": "_CTEvaluateAcrt",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd54a8",
+      "name": "_CTEvaluateUcrt",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd54f0",
+      "name": "_CTEvaluateUcrtTestRoot",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd5530",
+      "name": "_CTEvaluatePragueSignatureCMS",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd55b0",
+      "name": "_CTEvaluateKDLSignatureCMS",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd5630",
+      "name": "_CTVerifyAppleMarkerExtension",
+      "size": 416,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd57d0",
+      "name": "_CTVerifyHostname",
+      "size": 180,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd5884",
+      "name": "_CTCompareGeneralNameToHostname",
+      "size": 564,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd5ab8",
+      "name": "_CTEvaluateAppleSSLWithOptionalTemporalCheck",
+      "size": 380,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd5c34",
+      "name": "_CTEvaluateAppleSSL",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd5c3c",
+      "name": "_CTEvaluateKeyTransparency",
+      "size": 472,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd5e14",
+      "name": "_CTGetSEKType",
+      "size": 236,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd5f00",
+      "name": "_CTEvaluateSEK",
+      "size": 208,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd5fd0",
+      "name": "_CTGetICDPFederationType",
+      "size": 288,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd60f0",
+      "name": "_CTEvaluateICDPFederation",
+      "size": 236,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd61dc",
+      "name": "_CTEvaluateVLTileSigning",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd6220",
+      "name": "_CTCopyUID",
+      "size": 328,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd6368",
+      "name": "_X509CertificateParseImplicit",
+      "size": 2480,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd6d18",
+      "name": "_der_get_boolean",
+      "size": 280,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd6e30",
+      "name": "_X509ExtensionParseKeyUsage",
+      "size": 208,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd6f00",
+      "name": "_X509ExtensionParseBasicConstraints",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd6fd4",
+      "name": "_X509ExtensionParseAuthorityKeyIdentifier",
+      "size": 288,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd70f4",
+      "name": "_X509ExtensionParseSubjectKeyIdentifier",
+      "size": 196,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd71b8",
+      "name": "_X509ExtensionParseExtendedKeyUsage",
+      "size": 272,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd72c8",
+      "name": "_X509ExtensionParseSubjectAltName",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd739c",
+      "name": "_X509CertificateVerifyOnlyOneAppleExtension",
+      "size": 136,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd7424",
+      "name": "_X509ExtensionParseAppleExtension",
+      "size": 3172,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd8088",
+      "name": "_X509CertificateParseWithExtension",
+      "size": 292,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd81ac",
+      "name": "_X509CertificateParse",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd81b8",
+      "name": "_X509CertificateParseSPKI",
+      "size": 516,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd83bc",
+      "name": "_X509CertificateParseKey",
+      "size": 176,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd846c",
+      "name": "_X509CertificateCheckSignatureDigest",
+      "size": 552,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd8694",
+      "name": "_X509CertificateCheckSignature",
+      "size": 196,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd8758",
+      "name": "_X509MatchSignatureAlgorithm",
+      "size": 460,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd8924",
+      "name": "_X509CertificateCheckSignatureWithPublicKey",
+      "size": 440,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd8adc",
+      "name": "_X509CertificateParseGeneralNamesContent",
+      "size": 216,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd8bb4",
+      "name": "_X509CertificateSubjectNameGetCommonName",
+      "size": 808,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd8edc",
+      "name": "_X509CertificateValidAtTime",
+      "size": 192,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd8f9c",
+      "name": "_X509CertificateGetNotBefore",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd9014",
+      "name": "_X509CertificateGetNotAfter",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd908c",
+      "name": "_X509CertificateIsValid",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd90cc",
+      "name": "_X509CertificateParseValidity",
+      "size": 192,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd918c",
+      "name": "_X509TimeConvert",
+      "size": 440,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd9344",
+      "name": "_X509ExtensionParseComponentAuth",
+      "size": 332,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd9490",
+      "name": "_X509ExtensionParseCertifiedChipIntermediate",
+      "size": 512,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd9690",
+      "name": "_X509ExtensionParseMFISWAuth",
+      "size": 228,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd9774",
+      "name": "_X509ExtensionParseGenericSSLMarker",
+      "size": 412,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd9910",
+      "name": "_X509ExtensionParseServerAuthMarker",
+      "size": 232,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd99f8",
+      "name": "_X509ExtensionParseKeyTransparencyLeaf",
+      "size": 264,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd9b00",
+      "name": "_X509ExtensionParseDeviceAttestationIdentity",
+      "size": 332,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd9c4c",
+      "name": "_X509ExtensionParseMFI4Properties",
+      "size": 96,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd9cac",
+      "name": "_X509ChainParseCertificateSet",
+      "size": 408,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd9e44",
+      "name": "_X509ChainGetCertificateUsingKeyIdentifier",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadd9eac",
+      "name": "_X509ChainResetChain",
+      "size": 72,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadd9ef4",
+      "name": "_X509ChainBuildPathPartial",
+      "size": 496,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadda0e4",
+      "name": "_X509ChainGetAppleRootUsingKeyIdentifier",
+      "size": 184,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadda19c",
+      "name": "_X509ChainGetBAARootUsingKeyIdentifier",
+      "size": 168,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadda244",
+      "name": "_X509ChainBuildPath",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadda24c",
+      "name": "_X509ChainCheckPathWithOptions",
+      "size": 1584,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadda87c",
+      "name": "_X509ChainCheckPath",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadda884",
+      "name": "_expertGetExpert.cold.1",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadda898",
+      "name": "_DERImg4DecodeContentFindItemWithTag",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cadda900",
+      "name": "_DERImg4DecodeTagCompare",
+      "size": 120,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2cadda978",
+      "name": "_DERImg4Decode",
+      "size": 220,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddaa54",
+      "name": "_DERImg4DecodePayloadCompression",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddaacc",
+      "name": "_DERImg4DecodePayloadWithProperties",
+      "size": 176,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddab7c",
+      "name": "_DERImg4DecodePayloadProperties",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddabfc",
+      "name": "_DERImg4DecodePayload",
+      "size": 248,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddacf4",
+      "name": "_DERImg4DecodeManifestCommon",
+      "size": 164,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddad98",
+      "name": "_DERImg4DecodeUnsignedManifest",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2caddadb0",
+      "name": "_DERImg4DecodeCertificate",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2caddadc8",
+      "name": "_DERImg4DecodeUnsignedCertificate",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2caddade0",
+      "name": "_DERImg4DecodeCertificatePropertiesAndPubKey",
+      "size": 344,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddaf38",
+      "name": "_DERImg4DecodeRestoreInfo",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddafb8",
+      "name": "_DERImg4DecodePropertyWithItem",
+      "size": 196,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb07c",
+      "name": "_DERImg4DecodeFindProperty",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb0d8",
+      "name": "_DERImg4DecodeParseManifestPropertiesInternal",
+      "size": 312,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb210",
+      "name": "_DERImg4DecodeParseCertificateProperties",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2caddb21c",
+      "name": "_Img4DecodeCopyPayloadDigest",
+      "size": 224,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb2fc",
+      "name": "_Img4DecodeCopyManifestDigest",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb3d0",
+      "name": "_Img4DecodeGetManifest",
+      "size": 72,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2caddb418",
+      "name": "_Img4DecodePayloadPropertiesExists",
+      "size": 140,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb4a4",
+      "name": "__Img4DecodePayloadPropertyExistsWithValue",
+      "size": 300,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb5d0",
+      "name": "_Img4DecodePayloadPropertyExistsByTag",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2caddb5e0",
+      "name": "_Img4DecodeGetPayloadProperties",
+      "size": 144,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb670",
+      "name": "_Img4DecodeCopyPayloadPropertiesDigest",
+      "size": 144,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb700",
+      "name": "_Img4DecodePayloadPropertiesFindItemWithTag",
+      "size": 436,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb8b4",
+      "name": "_Img4DecodeGetPayloadPropertiesBoolean",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb900",
+      "name": "_Img4DecodeGetPayloadPropertiesInteger",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb93c",
+      "name": "_Img4DecodeGetPayloadPropertiesInteger64",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb978",
+      "name": "_Img4DecodeGetPayloadPropertiesData",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddb9c8",
+      "name": "_Img4DecodeGetObjectPropertyBoolean",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddba28",
+      "name": "_Img4DecodeGetPayloadVersionPropertyString",
+      "size": 224,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddbb08",
+      "name": "_Img4DecodeGetPropertyInteger",
+      "size": 140,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddbb94",
+      "name": "_Img4DecodeGetPropertyInteger64",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddbbf8",
+      "name": "_Img4DecodeGetPropertyBoolean",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddbc4c",
+      "name": "_Img4DecodeEvaluateCertificatePropertiesInternal",
+      "size": 604,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddbea8",
+      "name": "_Img4DecodeCopyManifestTrustedBootPolicyMeasurement",
+      "size": 372,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddc01c",
+      "name": "_Img4DecodeEvaluateDictionaryProperties",
+      "size": 292,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddc140",
+      "name": "_Img4DecodeEvaluateObjectProperties",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2caddc154",
+      "name": "_Img4DecodeEvaluateCertificateChain",
+      "size": 608,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddc3b4",
+      "name": "_Img4DecodeEvaluateTrustWithCallbacks",
+      "size": 360,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddc51c",
+      "name": "_Img4DecodeVerifyChainIM4C",
+      "size": 324,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddc660",
+      "name": "__Img4DecodePerformTrustEvaluationWithCallbacksInternal",
+      "size": 640,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddc8e0",
+      "name": "_Img4DecodePerformManifestTrustEvaluationWithCallbacks",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2caddc8fc",
+      "name": "_verify_signature_ml_dsa_87",
+      "size": 368,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddca6c",
+      "name": "_verify_signature_hybrid_scheme3",
+      "size": 224,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddcb4c",
+      "name": "_verify_signature_hybrid_scheme3_no_pqc",
+      "size": 184,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddcc04",
+      "name": "_Img4DecodeDigestInit",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddcc44",
+      "name": "_Img4DecodeDigestUpdate",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddcc80",
+      "name": "_Img4DecodeDigestReturnHash",
+      "size": 80,
+      "flags": 5120
+    },
+    {
+      "ea": "0x2caddccd0",
+      "name": "_Img4DecodeDigestFinal",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2caddcd10",
+      "name": "_Img4DecodeComputeDigest",
+      "size": 120,
+      "flags": 5120
+    }
+  ],
+  "strings": [
+    {
+      "ea": "0x2caddcd88",
+      "text": "Software|FF01",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcd96",
+      "text": "Cryptex1|UpdateBrain",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcdab",
+      "text": "Cryptex1|SecureMobileAssetWithCodeInstall",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcdd5",
+      "text": "Cryptex1|SecureMobileAssetWithCodeLoad",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcdfc",
+      "text": "Cryptex1|Splat|FirstStage",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddce16",
+      "text": "Cryptex1|Splat|SubsequentStage",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddce35",
+      "text": "Cryptex1|Splat|AntiReplayNone",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddce53",
+      "text": "Cryptex1|Splat|AntiReplayNone|Global",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddce78",
+      "text": "manifest evaluation: %s: version: %s\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddce9e",
+      "text": "%u.%u.%u.%u.%u,%u",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddceb0",
+      "text": "Cryptex1|SemiSplat",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcec3",
+      "text": "Cryptex1|SemiSplatGlobal",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcedc",
+      "text": "expert: %s\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcee8",
+      "text": "platform: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcef6",
+      "text": "runtime: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcf03",
+      "text": "mix-and-match: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcf16",
+      "text": "allow internal-use-only-builds: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcf3a",
+      "text": "allow data-only: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcf4f",
+      "text": "avp: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcf58",
+      "text": "avp3: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcf62",
+      "text": "disable-pqc: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcf73",
+      "text": "booted-with-local-policy: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcf91",
+      "text": "booted-locally: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcfa5",
+      "text": "chip-epoch: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcfb5",
+      "text": "chip-epoch: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcfc6",
+      "text": "chip-id: 0x%04X\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcfd7",
+      "text": "chip-id: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcfe5",
+      "text": "board-id: 0x%02X\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddcff7",
+      "text": "board-id: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd006",
+      "text": "unique-chip-id: 0x%016llX\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd021",
+      "text": "unique-chip-id: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd036",
+      "text": "security-domain: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd04b",
+      "text": "security-domain: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd061",
+      "text": "certificate-production-status: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd084",
+      "text": "certificate-production-status: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd0a8",
+      "text": "certificate-security-mode: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd0c7",
+      "text": "certificate-security-mode: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd0e7",
+      "text": "current-production-status: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd106",
+      "text": "current-production-status: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd126",
+      "text": "current-security-mode: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd141",
+      "text": "current-security-mode: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd15d",
+      "text": "extended-security-domain: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd17b",
+      "text": "extended-security-domain: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd19a",
+      "text": "os-version: %.*s\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd1ac",
+      "text": "os-version: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd1bd",
+      "text": "volume-uuid: %s\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd1ce",
+      "text": "volume-uuid: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd1e0",
+      "text": "cryptex1-chip-id: 0x%04X\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd1fa",
+      "text": "cryptex1-product-class: 0x%02X\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd21a",
+      "text": "local-policy-epoch: %llu\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd234",
+      "text": "local-policy-epoch: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd24d",
+      "text": "secure-boot: %.*s | %.*s\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd267",
+      "text": "secure-boot: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd279",
+      "text": "cryptex1: %.*s | %.*s\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd290",
+      "text": "cryptex1: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd29f",
+      "text": "local-policy: %.*s | %.*s\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd2ba",
+      "text": "local-policy: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd2cd",
+      "text": "diavlo: %.*s | %.*s\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd2e2",
+      "text": "diavlo: n/a\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd2ef",
+      "text": "manifest evaluation: starting signature and identity evaluation: %s\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd334",
+      "text": "manifest evaluation: unable to resolve a valid decode implementation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd37a",
+      "text": "manifest evaluation: starting auxiliary evaluation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd3ae",
+      "text": "manifest evaluation: no environment specific auxiliary policy\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd3ed",
+      "text": "manifest evaluation: failed environment specific policy: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd42a",
+      "text": "manifest evaluation: environment specific policy successful\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd467",
+      "text": "manifest evaluation: auxiliary evaluation successful\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd49d",
+      "text": "manifest evaluation: starting anti-replay evaluation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd4d3",
+      "text": "manifest evaluation: failed first stage anti-replay: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd50c",
+      "text": "manifest evaluation: first stage anti-replay successful\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd545",
+      "text": "manifest evaluation: failed subsequent stage anti-replay: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd583",
+      "text": "manifest evaluation: subsequent stage anti-replay successful\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd5c1",
+      "text": "manifest evaluation: anti-replay evaluation successful\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd5f9",
+      "text": "payload evaluation: starting signature evaluation: %s\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd630",
+      "text": "payload evaluation: unable to resolve a valid decode implementation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd675",
+      "text": "payload evaluation: starting auxiliary evaluation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd6a8",
+      "text": "payload evaluation: failed fusing policy: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd6d6",
+      "text": "payload evaluation: fusing policy successful\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd704",
+      "text": "payload evaluation: auxiliary evaluation successful\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd739",
+      "text": "manifest evaluation: insufficient space for manifest hash\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd774",
+      "text": "manifest evaluation: failed: %d, %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd799",
+      "text": "manifest evaluation: failed to compute manifest digest: %d\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd7d5",
+      "text": "manifest evaluation: signature and identity evaluation successful\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd818",
+      "text": "manifest evaluation: '%c%c%c%c'\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd839",
+      "text": "manifest evaluation: unexpected property\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd863",
+      "text": "manifest evaluation: 'vuid' ignored for satellite evaluation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd8a1",
+      "text": "manifest evaluation: 'stng' ignored for satellite evaluation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd8df",
+      "text": "manifest evaluation: 'lobo' ignored for satellite evaluation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd91d",
+      "text": "manifest evaluation: 'iuob' ignored for satellite evaluation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd95b",
+      "text": "manifest evaluation: 'data' ignored for satellite evaluation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd999",
+      "text": "manifest evaluation: property ignored\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd9c0",
+      "text": "manifest evaluation: property matched\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddd9e7",
+      "text": "manifest evaluation: property mismatch: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddda13",
+      "text": "manifest evaluation: coreTrustVerifyChain failure: 0x%0X\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddda4d",
+      "text": "manifest evaluation: coreTrustVerifySignature failure: 0x%0X\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddda8b",
+      "text": "payload evaluation: failed to get payload type: %d\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddabf",
+      "text": "payload evaluation: payload type: '%c%c%c%c'\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddaed",
+      "text": "payload evaluation: insufficient space for payload hash\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddb26",
+      "text": "payload evaluation: failed to compute payload digest: %d\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddb60",
+      "text": "payload evaluation: failed: %d, %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddb84",
+      "text": "payload evaluation: signature evaluation successful\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddbb9",
+      "text": "payload evaluation: '%c%c%c%c'\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddbd9",
+      "text": "payload evaluation: property ignored\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddbff",
+      "text": "payload evaluation: property matched\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddc25",
+      "text": "payload evaluation: property mismatch: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddc50",
+      "text": "supplementary Root CA already exists: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddc7a",
+      "text": "darwin pseudo-expert: starting boot\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddc9f",
+      "text": "darwin pseudo-expert: boot complete\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddcc4",
+      "text": "lp-smb0",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddccc",
+      "text": "lp-smb1",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddcd4",
+      "text": "secureboot-certificate-format",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddcf2",
+      "text": "x509",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddcf7",
+      "text": "secureboot-key-scheme",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddd0d",
+      "text": "cryptex1-certificate-format",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddd29",
+      "text": "cryptex1-key-scheme",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddd3d",
+      "text": "mix-n-match-prevention-status",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddd5b",
+      "text": "internal-use-only-unit",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddd72",
+      "text": "engineering-use-only-unit",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddd8c",
+      "text": "factory-prerelease-global-trust",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddddac",
+      "text": "vmm-present",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddddb8",
+      "text": "uses-avp-root-ca",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddddc9",
+      "text": "pqc-validation-flags",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddddde",
+      "text": "name",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddde3",
+      "text": "boot-command",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddddf0",
+      "text": "chip-epoch",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddddfb",
+      "text": "chip-id",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddde03",
+      "text": "board-id",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddde0c",
+      "text": "unique-chip-id",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddde1b",
+      "text": "security-domain",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddde2b",
+      "text": "certificate-production-status",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddde49",
+      "text": "certificate-security-mode",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddde63",
+      "text": "effective-production-status-ap",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddde82",
+      "text": "effective-security-mode-ap",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddde9d",
+      "text": "darwin pseudo-expert: unable to provide UniqueDeviceID [ChipID]\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddede",
+      "text": "darwin pseudo-expert: unable to provide UniqueDeviceID [UniqueChipID]\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddf25",
+      "text": "love",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddf2a",
+      "text": "00000000-0000-0000-0000-000000000000",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddf4f",
+      "text": "apfs-preboot-uuid",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddf61",
+      "text": "darwin pseudo-expert: invalid VolumeUuid [Length]\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddf94",
+      "text": "darwin pseudo-expert: invalid VolumeUuid [Termination]\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadddfcc",
+      "text": "darwin pseudo-expert: invalid VolumeUuid [Encoding]\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde001",
+      "text": "esdm-fuses",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde00c",
+      "text": "cryptex1-chip-id",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde01d",
+      "text": "cryptex1-product-class",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde034",
+      "text": "lp-stng",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde03c",
+      "text": "boot-manifest-hash",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde04f",
+      "text": "lp-spih",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde057",
+      "text": "manifest evaluation: starting trust evaluation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde087",
+      "text": "manifest evaluation: trust evaluation successful\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde0b9",
+      "text": "payload evaluation: starting trust evaluation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde0e8",
+      "text": "payload evaluation: trust evaluation successful\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde119",
+      "text": "satellite trust evaluation disallowed with type: 0x%08X\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde152",
+      "text": "manifest evaluation: attempting 'rpnh' policy\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde181",
+      "text": "rsa1024",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde189",
+      "text": "rsa2048",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde191",
+      "text": "rsa3072",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde199",
+      "text": "rsa4096",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde1a1",
+      "text": "hybridscheme3",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde1af",
+      "text": "im4c",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde1b4",
+      "text": "manifest evaluation: no policy for first stage anti-replay\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde1f0",
+      "text": "manifest evaluation: attempting first stage anti-replay policy: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde234",
+      "text": "manifest evaluation: enforcing boot nonce\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde25f",
+      "text": "manifest evaluation: nonce tag: '%c%c%c%c'\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde28b",
+      "text": "manifest evaluation: nonce type: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde2b0",
+      "text": "manifest evaluation: manifest does not have anti-replay nonce\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde2ef",
+      "text": "manifest evaluation: unable to get nonce from manifest: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde32b",
+      "text": "manifest evaluation: using caller-provided nonce\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde35d",
+      "text": "manifest evaluation: unable to get nonce from expert: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde397",
+      "text": "manifest evaluation: '%c%c%c%c' mismatch\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde3c1",
+      "text": "manifest evaluation: enforcing cryptex1 nonce\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde3f0",
+      "text": "manifest evaluation: domain tag: '%c%c%c%c'\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde41d",
+      "text": "manifest evaluation: nonce tag:  '%c%c%c%c'\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde44a",
+      "text": "manifest evaluation: unable to get domain from manifest: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde487",
+      "text": "manifest evaluation: unable to get type from domain: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde4c0",
+      "text": "manifest evaluation: using nonce type:  %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde4ec",
+      "text": "manifest evaluation: enforcing restore-info nonce\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde51f",
+      "text": "manifest evaluation: signing-authority: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde54b",
+      "text": "manifest evaluation: restore-info tag: '%c%c%c%c'\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde57e",
+      "text": "manifest evaluation: manifest tag: '%c%c%c%c'\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde5ad",
+      "text": "manifest evaluation: manifest does not have an attached restore-info\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde5f3",
+      "text": "manifest evaluation: unable to get seed from restore-info: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde632",
+      "text": "manifest evaluation: restore-info seed too large: %lu\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde669",
+      "text": "manifest evaluation: unable to compute nonce with expert: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde6a7",
+      "text": "manifest evaluation: no policy for subsequent stage anti-replay\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde6e8",
+      "text": "manifest evaluation: attempting subsequent stage anti-replay policy: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde731",
+      "text": "manifest evaluation: enforcing subsequent stage policy: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde76d",
+      "text": "manifest evaluation: using caller-provided previous stage digest\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde7af",
+      "text": "manifest evaluation: unable to obtain previous stage digest: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde7f0",
+      "text": "manifest evaluation: previous stage digest mismatch\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde825",
+      "text": "manifest evaluation: manifest enables mix-and-match\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde85a",
+      "text": "manifest evaluation: environment enables mix-and-match\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde892",
+      "text": "manifest evaluation: attempting 'vnum' policy\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde8c1",
+      "text": "manifest evaluation: 'vnum' ignored for satellite evaluation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde8ff",
+      "text": "manifest evaluation: exempted 'vnum' policy due to sideloading\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde93f",
+      "text": "manifest evaluation: unable to obtain environment OS version: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde981",
+      "text": "manifest evaluation: unable to obtain manifest version: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde9bd",
+      "text": "manifest evaluation: exempted 'vnum' policy due to build group\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadde9fd",
+      "text": "manifest evaluation: 'vnum' mismatch: build tuple %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddea33",
+      "text": "manifest evaluation: 'vnum' policy successful\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddea62",
+      "text": "environment",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddea6e",
+      "text": "manifest",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddea77",
+      "text": "IOKit error for activating object: %u | %d\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddeaa3",
+      "text": "manifest evaluation: 'EPRO' and 'ESEC' ignored for satellite evaluation\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddeaec",
+      "text": "payload evaluation: failed production status check: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddeb24",
+      "text": "payload evaluation: failed security mode check: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddeb58",
+      "text": "payload evaluation: attempting fusing policy: '%c%c%c%c'\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddeb92",
+      "text": "payload evaluation: '%c%c%c%c' mismtch\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddebba",
+      "text": "Cryptex1|Generic|AntiReplayNone",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddebda",
+      "text": "LocalPolicy|AntiReplayNone",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddebf5",
+      "text": "AP|OSManifest",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddec03",
+      "text": "match boolean: value [%u] %s property [%u]\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddec2f",
+      "text": "==",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddec32",
+      "text": "<=",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddec35",
+      "text": ">=",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddec38",
+      "text": "[un]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddec3d",
+      "text": "[na]",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddec42",
+      "text": "match integer32: value [0x%X] %s property [0x%X]\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddec74",
+      "text": "match integer64: value [0x%llX] %s property [0x%llX]\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddecaa",
+      "text": "%02x%02x...%02x%02x",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddecbe",
+      "text": "<empty>",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddecc6",
+      "text": "%02x",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddeccb",
+      "text": "match data: value [%lub,%s] %s property [%lub,%s]\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddecfe",
+      "text": "AP|FirstStage",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadded0c",
+      "text": "AP|SubsequentStage",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadded1f",
+      "text": "AP|AntiReplayNone",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadded31",
+      "text": "AP|AntiReplayNone|Global",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadded4a",
+      "text": "AP",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadded4d",
+      "text": "AP|Global",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadded57",
+      "text": "LocalPolicyTatsu|LiveBoot",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadded71",
+      "text": "LocalPolicyTatsu|RecoveryBoot",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadded8f",
+      "text": "AP|PDI",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadded96",
+      "text": "AP|DDI",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cadded9d",
+      "text": "AP|SRDP",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddeda5",
+      "text": "Cryptex1|SafariDownlevel",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddedbe",
+      "text": "Cryptex1|Splat",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddedcd",
+      "text": "Cryptex1|SplatGlobal",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddede2",
+      "text": "Cryptex1|SecureMobileAssetBrain",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddee02",
+      "text": "Cryptex1|SecureMobileAssetBrainX86Global",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddee2b",
+      "text": "LocalPolicy",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddee37",
+      "text": "LocalPolicy|Linked",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddee4a",
+      "text": "Cryptex1|Generic",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddee5b",
+      "text": "Cryptex1|GenericX86Global",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddee75",
+      "text": "Cryptex1|SecureMobileAssetInstall",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddee97",
+      "text": "Cryptex1|SecureMobileAssetLoad",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddeeb6",
+      "text": "Cryptex1|SecureMobileAssetX86Global",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddeeda",
+      "text": "Software|FF00",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddeee8",
+      "text": "Software|FF06",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddeef6",
+      "text": "Ap|EphemeralDiavlo",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddef09",
+      "text": "Ap|PersistentDiavlo",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddef1d",
+      "text": "Cryptex1|GenericDiavlo",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddef34",
+      "text": "unable to acquire Diavlo Root CA from expert: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddef66",
+      "text": "unable to build decode implementation for Diavlo: %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddef9c",
+      "text": "Image4",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddefa3",
+      "text": "IOKit error when querying nonce seed: %d\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddefcd",
+      "text": "unable to query nonce seed: %u | %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddeff2",
+      "text": "IOKit error when querying proposed nonce seed: %d\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf025",
+      "text": "unable to query proposed nonce seed: %u | %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf053",
+      "text": "IOKit error when querying nonce proposal: %d\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf081",
+      "text": "unable to query nonce proposal: %u | %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf0aa",
+      "text": "IOKit error when rolling nonce: %d\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf0ce",
+      "text": "unable to roll nonce: %u | %llu\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf0ef",
+      "text": "Userspace",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf0f9",
+      "text": "v8@?0",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf0ff",
+      "text": "com.apple.Image4",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf110",
+      "text": "userspace",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf11a",
+      "text": "unable to find /chosen\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf132",
+      "text": "unable to find /product\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf14b",
+      "text": "unable to find /defaults\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf165",
+      "text": "unable to find /chosen/manifest-properties\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf191",
+      "text": "unable to find /chosen/asmb\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf1ae",
+      "text": "unable to find %s kernel service\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf1d0",
+      "text": "unable to connect with %s kernel service: %d\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf1fe",
+      "text": "IMAGE4_LOG_FILE",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf20e",
+      "text": "stdout",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf215",
+      "text": "stderr",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf21c",
+      "text": "IOKit error when querying nonce digest: %d\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf248",
+      "text": "IOKit error when querying supplemental Root CA length: %d\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf283",
+      "text": "IOKit error when querying supplemental Root CA: %d\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf2b7",
+      "text": "unable to query supplemental Root CA: %llu\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf2e3",
+      "text": "unable to set supplemental Root CA: %u | %u\n",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf310",
+      "text": "%F",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf313",
+      "text": "2006-05-31",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf31e",
+      "text": "%y%m%d%H%M%SZ",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2caddf32c",
+      "text": "%Y%m%d%H%M%SZ",
+      "section": "__cstring"
+    }
+  ],
+  "patched_bytes_primary": []
+}

@@ -1,0 +1,680 @@
+{
+  "count": 6,
+  "results": [
+    {
+      "address": "0x2caddade0",
+      "end_address": "0x2caddaf38",
+      "input": "_DERImg4DecodeCertificatePropertiesAndPubKey",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v13",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v14",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v18",
+          "type": "_QWORD[2]"
+        }
+      ],
+      "name": "_DERImg4DecodeCertificatePropertiesAndPubKey",
+      "prototype": "__int64 __fastcall DERImg4DecodeCertificatePropertiesAndPubKey(__int64 a1, __int64 a2, _QWORD *a3, _QWORD *a4, _QWORD *a5, _QWORD *a6)",
+      "pseudocode": "__int64 __fastcall DERImg4DecodeCertificatePropertiesAndPubKey(\n        __int64 a1,\n        __int64 a2,\n        _QWORD *a3,\n        _QWORD *a4,\n        _QWORD *a5,\n        _QWORD *a6)\n{\n  __int64 result; // x0\n  __int64 v12; // x9\n  __int128 v13; // [xsp+20h] [xbp-80h] BYREF\n  __int128 v14; // [xsp+30h] [xbp-70h] BYREF\n  __int64 v15; // [xsp+48h] [xbp-58h] BYREF\n  __int64 v16; // [xsp+50h] [xbp-50h] BYREF\n  __int64 v17; // [xsp+58h] [xbp-48h]\n  _QWORD v18[2]; // [xsp+60h] [xbp-40h] BYREF\n\n  result = 6;\n  v15 = 0;\n  v16 = 0;\n  v17 = 0;\n  if ( a1 != 0 && a2 != 0 && a3 != nullptr && a4 != nullptr && a5 != nullptr && a6 != nullptr )\n  {\n    v18[0] = a1;\n    v18[1] = a2;\n    v13 = 0u;\n    v14 = 0u;\n    result = DERDecodeItem(v18, &v15);\n    if ( (_DWORD)result == 0 )\n    {\n      if ( v15 != 0x2000000000000011LL )\n        return 2;\n      if ( (unsigned int)DERParseSequenceContentToObject(&v16) == 0 )\n      {\n        result = DERDecodeItem(&v13, &v15);\n        if ( (_DWORD)result != 0 )\n          return result;\n        if ( v15 != 0x2000000000000010LL )\n          return 2;\n        if ( (unsigned int)DERParseSequenceContentToObject(&v16) == 0 )\n        {\n          *a3 = 0;\n          *a4 = 0;\n          result = DERDecodeItem(&v14, &v15);\n          if ( (_DWORD)result != 0 )\n            return result;\n          if ( v15 == 4 )\n          {\n            result = 0;\n            v12 = v17;\n            *a5 = v16;\n            *a6 = v12;\n            return result;\n          }\n          return 2;\n        }\n      }\n      return 0xFFFFFFFFLL;\n    }\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2caddc51c",
+      "end_address": "0x2caddc660",
+      "input": "_Img4DecodeVerifyChainIM4C",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a8",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": true,
+          "name": "a10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v28",
+          "type": "_BYTE[264]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v30",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v31",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v32",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v33",
+          "type": "_BYTE[80]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v34",
+          "type": "__int64"
+        }
+      ],
+      "name": "_Img4DecodeVerifyChainIM4C",
+      "prototype": "__int64 __fastcall Img4DecodeVerifyChainIM4C(__int64 a1, __int64 a2, __int64 a3, __int64 a4, _QWORD *a5, _QWORD *a6, _QWORD *a7, _QWORD *a8, __int64 a9, __int64 a10)",
+      "pseudocode": "__int64 __fastcall Img4DecodeVerifyChainIM4C(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        _QWORD *a5,\n        _QWORD *a6,\n        _QWORD *a7,\n        _QWORD *a8,\n        __int64 a9,\n        __int64 a10)\n{\n  __int64 v18; // x1\n  __int64 v19; // x2\n  __int64 v20; // x3\n  __int64 result; // x0\n  __int64 v22; // x0\n  __int64 v23; // x1\n  __int64 v24; // x2\n  __int64 v25; // x3\n  __int64 v26; // x4\n  __int64 v27; // x5\n  _BYTE v28[264]; // [xsp+8h] [xbp-228h] BYREF\n  __int64 v29; // [xsp+110h] [xbp-120h]\n  __int64 v30; // [xsp+118h] [xbp-118h]\n  __int64 v31; // [xsp+120h] [xbp-110h]\n  __int64 v32; // [xsp+128h] [xbp-108h]\n  _BYTE v33[80]; // [xsp+180h] [xbp-B0h] BYREF\n  __int64 v34; // [xsp+1D0h] [xbp-60h]\n\n  v34 = *MEMORY[0x2D80A64A8];\n  sub_2D005A5D0(v28, 0x1C8);\n  result = 6;\n  if ( a3 != 0 && a4 != 0 && a5 != nullptr && a6 != nullptr && a7 != nullptr && a8 != nullptr && a9 != 0 )\n  {\n    if ( (unsigned int)Img4DecodeInitManifestCommon(a3, a4, 1, (__int64)v28, 0x494D3443) != 0\n      || (*(unsigned int (__fastcall **)(__int64, __int64, _BYTE *, _QWORD, __int64))a9)(\n           v29,\n           v30,\n           v33,\n           **(_QWORD **)(a9 + 0x20),\n           a9) != 0\n      || (*(unsigned int (__fastcall **)(__int64, __int64, __int64, __int64, _BYTE *, _QWORD, __int64, __int64))(a9 + 0x10))(\n           a1,\n           a2,\n           v31,\n           v32,\n           v33,\n           **(_QWORD **)(a9 + 0x20),\n           a9,\n           a10) != 0 )\n    {\n      result = 0xFFFFFFFFLL;\n    }\n    else if ( (unsigned int)DERImg4DecodeCertificatePropertiesAndPubKey(v29, v30, a7, a8, a5, a6) != 0 )\n    {\n      result = 0xFFFFFFFFLL;\n    }\n    else\n    {\n      result = 0;\n    }\n  }\n  if ( *MEMORY[0x2D80A64A8] != v34 )\n  {\n    v22 = sub_2D0058F60(result, v18, v19, v20);\n    return _Img4DecodePerformTrustEvaluationWithCallbacksInternal(v22, v23, v24, v25, v26, v27);\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2cadcb6b4",
+      "end_address": "0x2cadcb70c",
+      "input": "_Img4DecodeLocalHybridScheme3Sha384IM4C",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_Img4DecodeLocalHybridScheme3Sha384IM4C",
+      "prototype": "__int64 __fastcall Img4DecodeLocalHybridScheme3Sha384IM4C(__int64 a1, __int64 a2, _QWORD *a3, _QWORD *a4, _QWORD *a5, _QWORD *a6, __int64 a7, __int64 a8)",
+      "pseudocode": "__int64 __fastcall Img4DecodeLocalHybridScheme3Sha384IM4C(\n        __int64 a1,\n        __int64 a2,\n        _QWORD *a3,\n        _QWORD *a4,\n        _QWORD *a5,\n        _QWORD *a6,\n        __int64 a7,\n        __int64 a8)\n{\n  return Img4DecodeVerifyChainIM4C((__int64)&LocalHybridScheme3Sha384IM4C, 0xC39, a1, a2, a3, a4, a5, a6, a7, a8);\n}\n"
+    },
+    {
+      "address": "0x2cadcb65c",
+      "end_address": "0x2cadcb6b4",
+      "input": "_Img4DecodeLocalMLDSA87Sha384IM4C",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_Img4DecodeLocalMLDSA87Sha384IM4C",
+      "prototype": "__int64 __fastcall Img4DecodeLocalMLDSA87Sha384IM4C(__int64 a1, __int64 a2, _QWORD *a3, _QWORD *a4, _QWORD *a5, _QWORD *a6, __int64 a7, __int64 a8)",
+      "pseudocode": "__int64 __fastcall Img4DecodeLocalMLDSA87Sha384IM4C(\n        __int64 a1,\n        __int64 a2,\n        _QWORD *a3,\n        _QWORD *a4,\n        _QWORD *a5,\n        _QWORD *a6,\n        __int64 a7,\n        __int64 a8)\n{\n  return Img4DecodeVerifyChainIM4C((__int64)&LocalMLDSA87Sha384IM4C, 0xA20, a1, a2, a3, a4, a5, a6, a7, a8);\n}\n"
+    },
+    {
+      "address": "0x2cadccda4",
+      "end_address": "0x2cadccee4",
+      "input": "_Img4DecodeInitManifestCommon",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "int"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v16",
+          "type": "__int64"
+        }
+      ],
+      "name": "_Img4DecodeInitManifestCommon",
+      "prototype": "__int64 __fastcall Img4DecodeInitManifestCommon(__int64 a1, __int64 a2, int a3, __int64 a4, int a5)",
+      "pseudocode": "__int64 __fastcall Img4DecodeInitManifestCommon(__int64 a1, __int64 a2, int a3, __int64 a4, int a5)\n{\n  __int64 result; // x0\n  __int64 v9; // x1\n  __int64 v10; // x1\n  __int64 v11; // x8\n  __int64 v12; // [xsp+8h] [xbp-48h] BYREF\n  __int64 v13; // [xsp+10h] [xbp-40h]\n  __int64 v14; // [xsp+18h] [xbp-38h]\n  __int64 v15; // [xsp+20h] [xbp-30h] BYREF\n\n  result = 6;\n  if ( a1 != 0 && a4 != 0 )\n  {\n    v15 = a1;\n    *(_OWORD *)a4 = 0u;\n    *(_OWORD *)(a4 + 0x10) = 0u;\n    *(_OWORD *)(a4 + 0x20) = 0u;\n    *(_OWORD *)(a4 + 0x30) = 0u;\n    *(_OWORD *)(a4 + 0x40) = 0u;\n    *(_OWORD *)(a4 + 0x50) = 0u;\n    *(_OWORD *)(a4 + 0x60) = 0u;\n    *(_OWORD *)(a4 + 0x70) = 0u;\n    *(_OWORD *)(a4 + 0x80) = 0u;\n    *(_OWORD *)(a4 + 0x90) = 0u;\n    *(_OWORD *)(a4 + 0xA0) = 0u;\n    *(_OWORD *)(a4 + 0xB0) = 0u;\n    *(_OWORD *)(a4 + 0xC0) = 0u;\n    *(_OWORD *)(a4 + 0xD0) = 0u;\n    *(_OWORD *)(a4 + 0xE0) = 0u;\n    *(_OWORD *)(a4 + 0xF0) = 0u;\n    *(_OWORD *)(a4 + 0x100) = 0u;\n    *(_OWORD *)(a4 + 0x110) = 0u;\n    *(_OWORD *)(a4 + 0x120) = 0u;\n    *(_OWORD *)(a4 + 0x130) = 0u;\n    *(_OWORD *)(a4 + 0x140) = 0u;\n    *(_OWORD *)(a4 + 0x150) = 0u;\n    *(_OWORD *)(a4 + 0x160) = 0u;\n    *(_OWORD *)(a4 + 0x170) = 0u;\n    *(_OWORD *)(a4 + 0x180) = 0u;\n    *(_OWORD *)(a4 + 0x190) = 0u;\n    *(_OWORD *)(a4 + 0x1A0) = 0u;\n    *(_OWORD *)(a4 + 0x1B0) = 0u;\n    *(_QWORD *)(a4 + 0x1C0) = 0;\n    if ( a5 == 0x494D3443 )\n    {\n      v10 = a4 + 0xE8;\n      if ( a3 != 0 )\n        result = DERImg4DecodeCertificate(&v15, v10);\n      else\n        result = DERImg4DecodeUnsignedCertificate(&v15, v10);\n    }\n    else\n    {\n      if ( a5 != 0x494D344D )\n        return 2;\n      v9 = a4 + 0xE8;\n      if ( a3 != 0 )\n        result = DERImg4DecodeManifest(&v15, v9);\n      else\n        result = DERImg4DecodeUnsignedManifest(&v15, v9);\n    }\n    if ( (_DWORD)result == 0 )\n    {\n      if ( *(_QWORD *)(a4 + 0x108) != 0 )\n      {\n        v12 = 0;\n        v13 = 0;\n        v14 = 0;\n        v15 = a1;\n        result = DERDecodeItemPartialBufferGetLength(&v15, &v12, 0);\n        if ( (_DWORD)result == 0 )\n        {\n          *(_QWORD *)(a4 + 0x18) = a1;\n          v11 = v14 + v13 - a1;\n          if ( __CFADD__(v14, v13 - a1) )\n            __break(0x5500u);\n          *(_QWORD *)(a4 + 0x20) = v11;\n          if ( v11 == a2 )\n            return 0;\n          else\n            return 7;\n        }\n      }\n      else\n      {\n        return 3;\n      }\n    }\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2cadccc10",
+      "end_address": "0x2cadcccf8",
+      "input": "_Img4DecodeInit",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "double"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v7",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v8",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v9",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v10",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v11",
+          "type": "_QWORD[2]"
+        }
+      ],
+      "name": "_Img4DecodeInit",
+      "prototype": "double __fastcall Img4DecodeInit(__int64 a1, __int64 a2, __int64 a3)",
+      "pseudocode": "double __fastcall Img4DecodeInit(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v4; // x2\n  __int64 v5; // x3\n  double result; // d0\n  __int128 v7; // [xsp+0h] [xbp-70h] BYREF\n  __int128 v8; // [xsp+10h] [xbp-60h] BYREF\n  __int128 v9; // [xsp+20h] [xbp-50h] BYREF\n  __int128 v10; // [xsp+30h] [xbp-40h] BYREF\n  _QWORD v11[2]; // [xsp+40h] [xbp-30h] BYREF\n\n  if ( a1 != 0 && a3 != 0 )\n  {\n    v11[0] = a1;\n    v11[1] = a2;\n    v9 = 0u;\n    v10 = 0u;\n    v7 = 0u;\n    v8 = 0u;\n    *(_OWORD *)a3 = 0u;\n    *(_OWORD *)(a3 + 0x10) = 0u;\n    *(_OWORD *)(a3 + 0x20) = 0u;\n    *(_OWORD *)(a3 + 0x30) = 0u;\n    *(_OWORD *)(a3 + 0x40) = 0u;\n    *(_OWORD *)(a3 + 0x50) = 0u;\n    *(_OWORD *)(a3 + 0x60) = 0u;\n    *(_OWORD *)(a3 + 0x70) = 0u;\n    *(_OWORD *)(a3 + 0x80) = 0u;\n    *(_OWORD *)(a3 + 0x90) = 0u;\n    *(_OWORD *)(a3 + 0xA0) = 0u;\n    *(_OWORD *)(a3 + 0xB0) = 0u;\n    *(_OWORD *)(a3 + 0xC0) = 0u;\n    *(_OWORD *)(a3 + 0xD0) = 0u;\n    *(_OWORD *)(a3 + 0xE0) = 0u;\n    *(_OWORD *)(a3 + 0xF0) = 0u;\n    *(_OWORD *)(a3 + 0x100) = 0u;\n    *(_OWORD *)(a3 + 0x110) = 0u;\n    *(_OWORD *)(a3 + 0x120) = 0u;\n    *(_OWORD *)(a3 + 0x130) = 0u;\n    *(_OWORD *)(a3 + 0x140) = 0u;\n    *(_OWORD *)(a3 + 0x150) = 0u;\n    *(_OWORD *)(a3 + 0x160) = 0u;\n    *(_OWORD *)(a3 + 0x170) = 0u;\n    *(_OWORD *)(a3 + 0x180) = 0u;\n    *(_OWORD *)(a3 + 0x190) = 0u;\n    *(_OWORD *)(a3 + 0x1A0) = 0u;\n    *(_OWORD *)(a3 + 0x1B0) = 0u;\n    *(_QWORD *)(a3 + 0x1C0) = 0;\n    if ( (unsigned int)DERImg4Decode(v11, (__int64)&v7) == 0\n      && (unsigned int)DERImg4DecodePayload((__int64)&v8, a3 + 0x58, v4, v5) == 0\n      && (unsigned int)DERImg4DecodeManifest(&v9, a3 + 0xE8) == 0\n      && (unsigned int)DERImg4DecodeRestoreInfo((__int64)&v10, (_OWORD *)(a3 + 0x1A8)) == 0 )\n    {\n      *(_OWORD *)(a3 + 8) = v8;\n      result = *(double *)&v9;\n      *(_OWORD *)(a3 + 0x18) = v9;\n    }\n  }\n  return result;\n}\n"
+    }
+  ],
+  "database_target": "ed3cb4aaaff9",
+  "requested": [
+    "_DERImg4DecodeCertificatePropertiesAndPubKey",
+    "_Img4DecodeVerifyChainIM4C",
+    "_Img4DecodeLocalHybridScheme3Sha384IM4C",
+    "_Img4DecodeLocalMLDSA87Sha384IM4C",
+    "_Img4DecodeInitManifestCommon",
+    "_Img4DecodeInit"
+  ]
+}

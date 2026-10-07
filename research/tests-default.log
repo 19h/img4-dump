@@ -1,0 +1,94 @@
+warning: `package.homepage` is redundant with `package.repository`
+ --> Cargo.toml:8:12
+  |
+7 | repository = "https://github.com/19h/img4-dump"
+  |              ----------------------------------
+8 | homepage = "https://github.com/19h/img4-dump"
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `cargo::redundant_homepage` is set to `warn` by default
+help: consider removing `package.homepage`
+warning: `img4-dump` (manifest) generated 1 warning
+   Compiling img4-dump v3.1.0 (/Users/int/dev/img4-dump)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.36s
+     Running unittests src/main.rs (target/debug/build/img4-dump/7b96cfd0989c6b42/out/img4_dump-7b96cfd0989c6b42)
+
+running 33 tests
+test crypto::tests::cbc_rejects_unaligned_length ... ok
+test crypto::tests::rejects_bad_iv_length ... ok
+test crypto::tests::rejects_empty_ciphertext ... ok
+test formatter::tests::test_format_bytes ... ok
+test crypto::tests::rejects_bad_key_length ... ok
+test parse::tests::cert_chain_truncated_is_rejected ... ok
+test parse::tests::cert_chain_overrun_is_rejected ... ok
+test parse::tests::cert_chain_valid_two_certs ... ok
+test fourcc::tests::test_property_fallback ... ok
+test formatter::tests::test_group_images ... ok
+test crypto::tests::cbc_aes128_nist_vector ... ok
+test crypto::tests::ctr_aes128_nist_vector ... ok
+test parse::tests::len_indefinite_rejected ... ok
+test parse::tests::len_long_form ... ok
+test crypto::tests::ctr_round_trip_any_length ... ok
+test parse::tests::len_oversized_rejected_no_overflow ... ok
+test parse::tests::len_reserved_rejected ... ok
+test parse::tests::len_short_form ... ok
+test parse::tests::len_truncated_rejected ... ok
+test parse::tests::tag_high_form_ok ... ok
+test parse::tests::tag_high_form_overflow_rejected_no_panic ... ok
+test parse::tests::tag_high_form_truncated_rejected ... ok
+test parse::tests::tag_low_form ... ok
+test util::tests::entropy_of_uniform_is_max ... ok
+test util::tests::validate_flags_all_zero_invalid ... ok
+test util::tests::validate_flags_known_magic_valid ... ok
+test fourcc::tests::test_unknown_code ... ok
+test util::tests::validate_flags_structured_valid ... ok
+test fourcc::tests::test_get_known_codes ... ok
+test fourcc::tests::native_image_entries_preserve_aliases ... ok
+test util::tests::validate_small_payload_is_inconclusive_not_valid ... ok
+test util::tests::validate_moderate_entropy_structured_is_valid ... ok
+test util::tests::validate_flags_random_as_invalid ... ok
+
+test result: ok. 33 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/auto.rs (target/debug/build/img4-dump/c247337ea4705515/out/auto-c247337ea4705515)
+
+running 4 tests
+test auto_without_keys_or_kbag_errors ... ok
+test auto_without_im4p_errors ... ok
+test auto_cbc_writes_sibling_and_recovers ... ok
+test auto_json_reports_mode ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/cli.rs (target/debug/build/img4-dump/f747b05c6abf1b44/out/cli-f747b05c6abf1b44)
+
+running 26 tests
+test im4p_standalone_basic ... ok
+test im4p_keybag_and_compression ... ok
+test im4p_compression_oversized_size_degrades ... ok
+test im4p_compression_without_keybag ... ok
+test im4p_keybag_two_entries_redacted ... ok
+test im4p_stray_sequence_tolerated ... ok
+test im4m_standalone ... ok
+test im4m_version_out_of_range_tolerated ... ok
+test im4m_big_integer_property ... ok
+test im4p_bare_payp_compatibility ... ok
+test im4r_bncn_extracted ... ok
+test im4p_payp_properties ... ok
+test im4m_images_present_structural ... ok
+test im4m_structured_manifest_props ... ok
+test json_error_boundary ... ok
+test json_lists_output_files ... ok
+test json_includes_im4r_properties ... ok
+test img4_full_container ... ok
+test im4r_numeric_nonce_slots ... ok
+test im4r_standalone ... ok
+test rejects_garbage ... ok
+test im4p_malformed_payp_wrapper ... ok
+test native_property_types_and_anomalies ... ok
+test kbag_class_selection_enforced ... ok
+test im4p_payp_optional_fields ... ok
+test rejects_trailing_bytes_after_top_level_der ... ok
+
+test result: ok. 26 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+

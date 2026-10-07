@@ -1,0 +1,1048 @@
+{
+  "count": 4,
+  "results": [
+    {
+      "address": "0x242863aa4",
+      "end_address": "0x2428641d0",
+      "input": "_AMAuthInstallApImg4CreateMeasurementsWithTag",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "TypeForEntryName",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v30",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v31",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v32",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v33",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v34",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v35",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v36",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v37",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v38",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v39",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v40",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v41",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v42",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v43",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v44",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v45",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v46",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v47",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v49",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v50",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v51",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v52",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v53",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v54",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v55",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v56",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v57",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v59",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v60",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v61",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v62",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v63",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v64",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v65",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v66",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v67",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v68",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v69",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v70",
+          "type": "_BYTE[96]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v71",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v72",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v73",
+          "type": "__int64"
+        }
+      ],
+      "name": "_AMAuthInstallApImg4CreateMeasurementsWithTag",
+      "prototype": "__int64 __fastcall AMAuthInstallApImg4CreateMeasurementsWithTag(__int64 a1, __int64 a2, __int64 a3, unsigned int a4, _QWORD *a5)",
+      "pseudocode": "__int64 __fastcall AMAuthInstallApImg4CreateMeasurementsWithTag(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        unsigned int a4,\n        _QWORD *a5)\n{\n  int v5; // w0\n  __int64 v6; // x0\n  __int64 v7; // x19\n  __int64 v8; // x20\n  __int64 v9; // x21\n  __int64 v10; // x23\n  __int64 v11; // x0\n  __int64 v12; // x30\n  __int64 v13; // x0\n  __int64 v14; // x30\n  __int64 v15; // x26\n  __int64 v16; // x27\n  __int64 v21; // x0\n  __int64 v22; // x0\n  __int64 v23; // x0\n  __int64 TypeForEntryName; // x0\n  __int64 v25; // x30\n  __int64 v26; // x0\n  __int64 v27; // x30\n  __int64 v28; // x0\n  __int64 v29; // x30\n  __int64 v30; // x0\n  __int64 v31; // x0\n  __int64 v32; // x0\n  __int64 v33; // x0\n  __int64 v34; // x24\n  int v35; // w0\n  __int64 v36; // x30\n  __int64 v37; // x28\n  __int64 v38; // x1\n  __int64 v39; // x30\n  __int64 v40; // x0\n  __int64 v41; // x24\n  __int64 v42; // x0\n  __int64 v43; // x24\n  __int64 v44; // x30\n  __int64 v45; // x0\n  __int64 v46; // x24\n  __int64 v47; // x0\n  __int64 v49; // x0\n  __int64 v50; // x30\n  __int64 v51; // x0\n  __int64 v52; // x30\n  __int64 v53; // x0\n  __int64 v54; // x30\n  __int64 v55; // x0\n  int v56; // w0\n  int v57; // w0\n  __int64 v59; // [xsp+20h] [xbp-170h] BYREF\n  __int64 v60; // [xsp+28h] [xbp-168h] BYREF\n  __int64 v61; // [xsp+30h] [xbp-160h] BYREF\n  __int64 v62; // [xsp+38h] [xbp-158h] BYREF\n  __int128 v63; // [xsp+40h] [xbp-150h] BYREF\n  __int128 v64; // [xsp+50h] [xbp-140h]\n  __int128 v65; // [xsp+60h] [xbp-130h]\n  __int64 v66; // [xsp+70h] [xbp-120h] BYREF\n  __int64 v67; // [xsp+78h] [xbp-118h] BYREF\n  __int64 v68; // [xsp+80h] [xbp-110h]\n  __int64 v69; // [xsp+88h] [xbp-108h] BYREF\n  _BYTE v70[96]; // [xsp+90h] [xbp-100h] BYREF\n  __int64 v71; // [xsp+F0h] [xbp-A0h]\n  __int64 v72; // [xsp+F8h] [xbp-98h]\n  __int64 v73; // [xsp+130h] [xbp-60h]\n\n  v15 = 0;\n  v73 = *MEMORY[0x268186AA8];\n  v61 = 0;\n  v62 = 0;\n  v59 = 0;\n  v60 = 0;\n  v16 = 1;\n  if ( a2 == 0 )\n  {\n    v7 = 0;\n    v8 = 0;\n    v9 = 0;\n    v10 = 0;\n    goto LABEL_45;\n  }\n  v7 = 0;\n  v8 = 0;\n  v9 = 0;\n  v10 = 0;\n  if ( a5 == nullptr )\n    goto LABEL_45;\n  v21 = sub_248100530(a2, 0);\n  v7 = v21;\n  if ( v21 == 0 )\n  {\n    v15 = 0;\n    v8 = 0;\n    goto LABEL_89;\n  }\n  if ( sub_248100460(v21, CFSTR(\"=\"), 0) != 0xFFFFFFFFFFFFFFFFLL )\n  {\n    v22 = sub_2481003B0(a1, v7, CFSTR(\"=\"));\n    v8 = v22;\n    if ( v22 != 0 )\n    {\n      v23 = sub_2480FC6F0(v22, 0);\n      v10 = v23;\n      if ( v23 == 0 )\n      {\n        v15 = 0;\n        v9 = 0;\n        goto LABEL_91;\n      }\n      if ( a3 == 0 )\n      {\n        TypeForEntryName = AMAuthInstallApImg4GetTypeForEntryName(v23);\n        if ( TypeForEntryName == 0 )\n        {\nLABEL_85:\n          v15 = 0;\n          v9 = 0;\n          v10 = 0;\nLABEL_91:\n          v16 = 8;\n          goto LABEL_45;\n        }\n        a3 = TypeForEntryName;\n        if ( sub_2481003A0(TypeForEntryName, v10, 0) == 0 )\n        {\n          if ( ((v25 ^ (2 * v25)) & 0x4000000000000000LL) != 0 )\n            __break(0xC471u);\n          v13 = sub_2481003A0(a3, CFSTR(\"ftap\"), 0);\n          if ( v13 != 0 )\n          {\n            if ( ((v14 ^ (2 * v14)) & 0x4000000000000000LL) != 0 )\n              __break(0xC471u);\n            v49 = sub_2481003A0(a3, CFSTR(\"rfta\"), 0);\n            if ( v49 != 0 )\n            {\n              if ( ((v50 ^ (2 * v50)) & 0x4000000000000000LL) != 0 )\n                __break(0xC471u);\n              v51 = sub_2481003A0(a3, CFSTR(\"ftsp\"), 0);\n              if ( v51 != 0 )\n              {\n                if ( ((v52 ^ (2 * v52)) & 0x4000000000000000LL) != 0 )\n                  __break(0xC471u);\n                if ( sub_2481003A0(a3, CFSTR(\"rfts\"), 0) != 0 )\n                  a3 = 0;\n              }\n            }\n          }\n        }\n      }\n      if ( sub_2480FC6F0(v8, 1) != 0 )\n      {\n        v9 = sub_2480FCC40(*MEMORY[0x2680CF5F0]);\n        if ( v9 != 0 )\n        {\n          if ( a3 != 0 )\n            goto LABEL_13;\n          goto LABEL_28;\n        }\n        v15 = 0;\nLABEL_94:\n        v10 = 0;\n        goto LABEL_95;\n      }\n      goto LABEL_85;\n    }\n    v15 = 0;\nLABEL_89:\n    v9 = 0;\n    goto LABEL_94;\n  }\n  v9 = sub_2480FC030(a2);\n  v8 = 0;\n  if ( a3 != 0 )\n  {\nLABEL_13:\n    sub_2480FEFC0();\n    v26 = AMAuthInstallSupportCreateDataFromMappedFileURL(a1, &v62, v9);\n    if ( (_DWORD)v26 != 0 )\n    {\n      v16 = v26;\n    }\n    else\n    {\n      if ( ((v27 ^ (2 * v27)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      v6 = AMAuthInstallApImg4ReCreatePayloadWithProperties(v70, 0, v62, 0, 0, 0, 0, &v60);\n      if ( (_DWORD)v6 != 0 )\n      {\n        v16 = v6;\n        AMAuthInstallLog(3, \"AMAuthInstallApImg4CreateMeasurementsWithTag\", \"failed to create im4p with override tag\");\n      }\n      else\n      {\n        sub_2480FFEE0(v62);\n        v62 = 0;\n        if ( (unsigned int)AMAuthInstallCryptoCreateDigestForDataType(a1, v60, &v61, a4) != 1 )\n        {\n          v10 = sub_2480FFEF0(a3);\n          sub_2480FFEE0(v60);\n          v60 = 0;\n          goto LABEL_18;\n        }\n        v16 = 1;\n        AMAuthInstallLog(3, \"AMAuthInstallApImg4CreateMeasurementsWithTag\", \"Unsupported digestType\");\n      }\n    }\nLABEL_30:\n    v15 = 0;\n    v10 = 0;\n    goto LABEL_45;\n  }\nLABEL_28:\n  v31 = AMAuthInstallSupportCreateDataFromMappedFileURL(a1, &v62, v9);\n  if ( (_DWORD)v31 != 0 )\n  {\n    v16 = v31;\n    AMAuthInstallLog(3, \"AMAuthInstallApImg4CreateMeasurementsWithTag\", \"Failed to read file %@: error=%d\", v9, v31);\n    goto LABEL_30;\n  }\n  v10 = AMAuthInstallApImg4CopyPayloadType(a1, v62);\n  AMAuthInstallCryptoCreateDigestForDataType(a1, v62, &v61, a4);\n  if ( v61 == 0 )\n  {\n    v16 = 3;\n    AMAuthInstallLog(\n      3,\n      \"AMAuthInstallApImg4CreateMeasurementsWithTag\",\n      \"failed to create digest for %@ with error %d\",\n      v9,\n      3);\n    v15 = 0;\n    goto LABEL_45;\n  }\n  sub_2480FFEE0(v62);\n  v62 = 0;\nLABEL_18:\n  if ( v61 == 0 )\n  {\n    AMAuthInstallLog(3, \"AMAuthInstallApImg4CreateMeasurementsWithTag\", \"created digest is NULL\");\n    v15 = 0;\nLABEL_95:\n    v16 = 2;\n    goto LABEL_45;\n  }\n  v28 = sub_2481001C0(a1, 0, MEMORY[0x2680CF838], MEMORY[0x2680CF840]);\n  v15 = v28;\n  if ( v28 == 0 )\n  {\n    AMAuthInstallLog(3, \"AMAuthInstallApImg4CreateMeasurementsWithTag\", \"failed to create mutable dict measurementDict\");\n    goto LABEL_95;\n  }\n  sub_248100200(v28, 0x26D6865B0LL, v61);\n  if ( v10 == 0 )\n  {\nLABEL_44:\n    v16 = 0;\n    *a5 = sub_2480FC030(v15);\n    goto LABEL_45;\n  }\n  if ( ((v29 ^ (2 * v29)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  v11 = sub_2481003A0(v10, CFSTR(\"sepi\"), 0);\n  if ( v11 == 0 )\n  {\n    v32 = AMAuthInstallApImg4CopyPayloadVersionProperty(a1, v9, 1, &v59);\n    if ( (_DWORD)v32 != 0 )\n    {\n      AMAuthInstallLog(\n        3,\n        \"AMAuthInstallApImg4CreateMeasurementsWithTag\",\n        \"could not get tbms property, status:%d\\n\",\n        v32);\n      goto LABEL_36;\n    }\n    goto LABEL_35;\n  }\n  if ( ((v12 ^ (2 * v12)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  if ( sub_2481003A0(v10, CFSTR(\"rsep\"), 0) == 0 )\n  {\n    v30 = AMAuthInstallApImg4CopyPayloadVersionProperty(a1, v9, 2, &v59);\n    if ( (_DWORD)v30 != 0 )\n    {\n      AMAuthInstallLog(\n        3,\n        \"AMAuthInstallApImg4CreateMeasurementsWithTag\",\n        \"could not get tbmr property, status:%d\\n\",\n        v30);\n      goto LABEL_36;\n    }\nLABEL_35:\n    sub_248100200(v15, CFSTR(\"TBMDigests\"), v59);\n  }\nLABEL_36:\n  v68 = 0;\n  v69 = 0;\n  v67 = 0;\n  sub_2480E5720(v70, 0xA0);\n  v66 = 0;\n  if ( v9 == 0 )\n  {\n    v37 = 0;\n    v16 = 1;\n    goto LABEL_43;\n  }\n  v33 = AMAuthInstallApImg4CopyPayload(a1, v9, &v69);\n  if ( (_DWORD)v33 != 0 )\n  {\n    v16 = v33;\n    v37 = 0;\n    goto LABEL_43;\n  }\n  v34 = v69;\n  v67 = sub_2480FCB60(v69);\n  v68 = sub_2480FBEC0(v34);\n  sub_2480E5720(v70, 0xA0);\n  v35 = DERImg4DecodePayloadWithProperties(&v67, v70);\n  if ( v35 == 0 )\n  {\n    if ( v71 == 0 )\n      goto LABEL_41;\n    v64 = 0u;\n    v65 = 0u;\n    v63 = 0u;\n    if ( ((v36 ^ (2 * v36)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    v53 = sub_2481003A0(v10, CFSTR(\"sepi\"), 0);\n    if ( v53 != 0 )\n    {\n      if ( ((v54 ^ (2 * v54)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      v55 = sub_2481003A0(v10, CFSTR(\"rsep\"), 0);\n      if ( v55 != 0 )\n        goto LABEL_135;\n      if ( ((v39 ^ (2 * v39)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      v5 = AMAuthInstallApImg4DecodePayloadProperty(&v67, 0xE000000074626D72LL, &v63);\n      if ( v5 != 0 || (v38 = *((_QWORD *)&v64 + 1), *((_QWORD *)&v64 + 1) == 0) )\n      {\n        AMAuthInstallLog(\n          3,\n          \"AMAuthInstallCopyPayloadPropertiesToMeasurementDictionary\",\n          \"could not get tbmr payload property, status:%d\\n\",\n          0x17);\n        goto LABEL_135;\n      }\n    }\n    else if ( (unsigned int)AMAuthInstallApImg4DecodePayloadProperty(&v67, 0xE000000074626D73LL, &v63) != 0\n           || (v38 = *((_QWORD *)&v64 + 1), *((_QWORD *)&v64 + 1) == 0) )\n    {\n      AMAuthInstallLog(\n        3,\n        \"AMAuthInstallCopyPayloadPropertiesToMeasurementDictionary\",\n        \"could not get tbms payload property, status:%d\\n\",\n        0x17);\n      goto LABEL_135;\n    }\n    v40 = sub_2480FC750(a1, v38, v65);\n    if ( v40 == 0 )\n      goto LABEL_102;\n    v41 = v40;\n    sub_248100200(v15, CFSTR(\"TBMDigests\"), v40);\n    SafeRelease(v41);\nLABEL_135:\n    if ( ((v39 ^ (2 * v39)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    v56 = AMAuthInstallApImg4DecodePayloadProperty(&v67, 0xE00000006D6D6170LL, &v63);\n    if ( v56 == 0 && *((_QWORD *)&v64 + 1) != 0 )\n    {\n      v42 = sub_2480FC750(a1, *((_QWORD *)&v64 + 1), v65);\n      if ( v42 == 0 )\n        goto LABEL_102;\n      v43 = v42;\n      sub_248100200(v15, CFSTR(\"MemoryMap\"), v42);\n      SafeRelease(v43);\n    }\n    if ( ((v44 ^ (2 * v44)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    v57 = AMAuthInstallApImg4DecodePayloadProperty(&v67, 0xE000000072646467LL, &v63);\n    if ( v57 != 0 || *((_QWORD *)&v64 + 1) == 0 )\n      goto LABEL_81;\n    v45 = sub_2480FC750(a1, *((_QWORD *)&v64 + 1), v65);\n    if ( v45 != 0 )\n    {\n      v46 = v45;\n      sub_248100200(v15, CFSTR(\"RawDataDigest\"), v45);\n      SafeRelease(v46);\nLABEL_81:\n      v37 = sub_2480FC750(a1, v71, v72);\n      AMAuthInstallCryptoCreateDigestForDataType(a1, v37, &v66, a4);\n      if ( v66 != 0 )\n      {\n        sub_248100200(v15, 0x26D6865D0LL, v66);\n        goto LABEL_42;\n      }\n      AMAuthInstallLog(3, \"AMAuthInstallCopyPayloadPropertiesToMeasurementDictionary\", \"created digest is NULL\");\nLABEL_104:\n      v16 = 2;\n      goto LABEL_43;\n    }\nLABEL_102:\n    v37 = 0;\n    goto LABEL_104;\n  }\n  AMAuthInstallLog(\n    7,\n    \"AMAuthInstallCopyPayloadPropertiesToMeasurementDictionary\",\n    \"failed to decode img4 payload with properties (error=%d), assuming no properties\",\n    v35);\nLABEL_41:\n  v37 = 0;\nLABEL_42:\n  v16 = 0;\nLABEL_43:\n  SafeRelease(v66);\n  SafeRelease(v37);\n  SafeRelease(0);\n  SafeRelease(v69);\n  if ( (_DWORD)v16 == 0 )\n    goto LABEL_44;\n  AMAuthInstallLog(\n    3,\n    \"AMAuthInstallApImg4CreateMeasurementsWithTag\",\n    \"failed to copy payload properties to measurement dictionary.\");\nLABEL_45:\n  sub_2480FFEE0(v62);\n  sub_2480FFEE0(v61);\n  sub_2480FFEE0(v59);\n  sub_2480FFEE0(v10);\n  sub_2480FFEE0(v15);\n  sub_2480FFEE0(v7);\n  sub_2480FFEE0(v8);\n  sub_2480FFEE0(v9);\n  sub_2480FFEE0(v60);\n  sub_2480FFEE0(0);\n  if ( *MEMORY[0x268186AA8] == v73 )\n    return v16;\n  v47 = sub_2480E56B0();\n  return AMAuthInstallApImg4CreateServerRequestDictionary(v47);\n}\n"
+    },
+    {
+      "address": "0x242866050",
+      "end_address": "0x2428661e0",
+      "input": "_AMAuthInstallApImg4DecodePayloadProperty",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "ItemWithTag",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v12",
+          "type": "_QWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v13",
+          "type": "_QWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v14",
+          "type": "_QWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v15",
+          "type": "_QWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v16",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v17",
+          "type": "_QWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v18",
+          "type": "_QWORD[6]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v19",
+          "type": "__int64"
+        }
+      ],
+      "name": "_AMAuthInstallApImg4DecodePayloadProperty",
+      "prototype": "__int64 __fastcall AMAuthInstallApImg4DecodePayloadProperty(__int64 a1, __int64 a2, __int64 a3)",
+      "pseudocode": "__int64 __fastcall AMAuthInstallApImg4DecodePayloadProperty(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 ItemWithTag; // x0\n  __int64 v6; // x0\n  __int64 v7; // x0\n  __int64 v8; // x21\n  const char *v9; // x2\n  __int64 v10; // x0\n  _QWORD v12[2]; // [xsp+8h] [xbp-B8h] BYREF\n  _QWORD v13[2]; // [xsp+18h] [xbp-A8h] BYREF\n  _QWORD v14[2]; // [xsp+28h] [xbp-98h] BYREF\n  _QWORD v15[2]; // [xsp+38h] [xbp-88h] BYREF\n  unsigned int v16; // [xsp+4Ch] [xbp-74h] BYREF\n  _QWORD v17[2]; // [xsp+50h] [xbp-70h] BYREF\n  _QWORD v18[6]; // [xsp+60h] [xbp-60h] BYREF\n  __int64 v19; // [xsp+98h] [xbp-28h]\n\n  v19 = *MEMORY[0x268186AA8];\n  v15[0] = 0;\n  v15[1] = 0;\n  v14[0] = 0;\n  v14[1] = 0;\n  v13[0] = 0;\n  v13[1] = 0;\n  v12[0] = 0;\n  v12[1] = 0;\n  ItemWithTag = ((__int64 (*)(void))AMAuthInstallApImg4FindItemWithTag)();\n  if ( (_DWORD)ItemWithTag != 0\n    || (_DWORD)(ItemWithTag = AMAuthInstallApImg4FindItemWithTag(v15, 0xA000000000000000LL, v14)) != 0\n    || (_DWORD)(ItemWithTag = AMAuthInstallApImg4FindItemWithTag(v14, 0x2000000000000010LL, v13)) != 0\n    || (_DWORD)(ItemWithTag = AMAuthInstallApImg4FindItemWithTag(v13, 0x2000000000000011LL, v12)) != 0 )\n  {\nLABEL_13:\n    v8 = ItemWithTag;\n    goto LABEL_10;\n  }\n  v17[0] = 0;\n  v17[1] = 0;\n  v16 = 0;\n  v6 = AMAuthInstallApImg4FindItemWithTag(v12, a2, v17);\n  if ( (_DWORD)v6 != 0 )\n  {\n    v8 = v6;\n    v9 = \"failed to find property tag 0x%016llx\";\n  }\n  else\n  {\n    qmemcpy(v18, byte_2428BB800, sizeof(v18));\n    v7 = DERParseSequence(v17, 2, v18, a3, 0);\n    if ( (_DWORD)v7 == 0 )\n    {\n      ItemWithTag = DERParseInteger(a3, &v16);\n      if ( (_DWORD)ItemWithTag == 0 )\n      {\n        if ( (v16 | 0xE000000000000000LL) == a2 )\n        {\n          v8 = 0;\n          *(_QWORD *)(a3 + 0x10) = a2;\n          *(_QWORD *)(a3 + 0x28) = 4;\n        }\n        else\n        {\n          v8 = 2;\n        }\n        goto LABEL_10;\n      }\n      goto LABEL_13;\n    }\n    v8 = v7;\n    v9 = \"malformed Img4 Property (sequence parse fail)\";\n  }\n  ItemWithTag = sub_2480FFE20(3, \"AMAuthInstallApImg4FindProperty\", v9);\nLABEL_10:\n  if ( *MEMORY[0x268186AA8] == v19 )\n    return v8;\n  v10 = sub_2480E56B0(ItemWithTag);\n  return AMAuthInstallApImg4CopyPayloadType.cold.1(v10);\n}\n"
+    },
+    {
+      "address": "0x2428651a4",
+      "end_address": "0x2428655cc",
+      "input": "_AMAuthInstallApImg4EncodeRestoreDict",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v30",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v31",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v32",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v33",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v34",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v36",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v37",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v38",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v39",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v40",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v41",
+          "type": "_BYTE[256]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v42",
+          "type": "__int64"
+        }
+      ],
+      "name": "_AMAuthInstallApImg4EncodeRestoreDict",
+      "prototype": "__int64 __fastcall AMAuthInstallApImg4EncodeRestoreDict(__int64 a1, __int64 *a2)",
+      "pseudocode": "__int64 __fastcall AMAuthInstallApImg4EncodeRestoreDict(__int64 a1, __int64 *a2)\n{\n  __int64 v2; // x26\n  __int64 v3; // x22\n  __int64 v4; // x19\n  __int64 v5; // x20\n  __int64 v6; // x21\n  __int64 v7; // x24\n  __int64 v8; // x25\n  unsigned int v11; // w22\n  __int64 v12; // x20\n  __int64 v13; // x0\n  __int64 v14; // x26\n  __int64 v15; // x27\n  const char *v16; // x22\n  __int64 v17; // x24\n  __int64 v18; // x25\n  __int64 v19; // x0\n  __int64 v20; // x25\n  __int64 v21; // x25\n  __int64 v22; // x8\n  __int64 v23; // x0\n  __int64 v24; // x0\n  __int64 v25; // x25\n  __int64 v26; // x25\n  __int64 v27; // x0\n  __int64 v28; // x0\n  __int64 v29; // x0\n  __int64 v30; // x0\n  __int64 v31; // x0\n  const char *v32; // x2\n  const char *v33; // x2\n  __int64 v34; // x0\n  __int64 v36; // [xsp+0h] [xbp-190h]\n  __int64 v37; // [xsp+10h] [xbp-180h] BYREF\n  unsigned int v38; // [xsp+1Ch] [xbp-174h] BYREF\n  __int64 v39; // [xsp+20h] [xbp-170h] BYREF\n  unsigned int v40; // [xsp+2Ch] [xbp-164h] BYREF\n  _BYTE v41[256]; // [xsp+30h] [xbp-160h] BYREF\n  __int64 v42; // [xsp+130h] [xbp-60h]\n\n  v7 = 0;\n  v42 = *MEMORY[0x268186AA8];\n  v40 = 0;\n  v39 = 0;\n  v38 = 0;\n  v37 = 0;\n  v8 = 3;\n  if ( a1 == 0 )\n  {\n    v2 = 0;\n    v3 = 0;\n    v4 = 0;\n    v5 = 0;\n    v6 = 0;\n    goto LABEL_37;\n  }\n  v2 = 0;\n  v3 = 0;\n  v4 = 0;\n  v5 = 0;\n  v6 = 0;\n  if ( a2 == nullptr )\n    goto LABEL_37;\n  v4 = sub_248100680(1);\n  if ( v4 == 0 )\n  {\n    v7 = 0;\n    v2 = 0;\n    v3 = 0;\n    v5 = 0;\n    v6 = 0;\n    goto LABEL_37;\n  }\n  v11 = sub_2480FEEF0(a1);\n  v12 = 8LL * v11;\n  v6 = sub_2480FB8B0(v12);\n  v13 = sub_2480FB8B0(v12);\n  v5 = v13;\n  v7 = 0;\n  if ( v6 == 0 || v13 == 0 )\n  {\n    v2 = 0;\n    v3 = 0;\n    goto LABEL_37;\n  }\n  sub_2480FEF00(a1, v6, v13);\n  v14 = v11;\n  if ( v11 == 0 )\n  {\nLABEL_24:\n    v3 = sub_248100680(0);\n    if ( v3 == 0 )\n    {\n      v7 = 0;\n      goto LABEL_50;\n    }\n    if ( (unsigned int)sub_2480FEFC0() != 0\n      && (sub_2480E5910(v41), (unsigned int)((__int64 (*)(void))sub_2481005F0)() != 0) )\n    {\n      v36 = 0x26D67E3B0LL;\n      v33 = \"failed to add %@ string\";\n    }\n    else\n    {\n      v27 = sub_248100650(v4, v3);\n      if ( (_DWORD)v27 == 0 )\n      {\n        v7 = sub_248100680(v27);\n        if ( v7 == 0 )\n        {\n          v2 = 0;\n          goto LABEL_54;\n        }\n        if ( (unsigned int)sub_248100640(v3, v7) == 0 )\n        {\n          v28 = sub_248100690(v7, &v37, &v40);\n          if ( (_DWORD)v28 == 0 )\n          {\n            v29 = sub_248100680(v28);\n            v2 = v29;\n            if ( v29 != 0 )\n            {\n              if ( (unsigned int)sub_2481005F0(v29, 2, 1, v37, v40, 1) == 0\n                && (unsigned int)sub_248100690(v2, &v39, &v38) == 0 )\n              {\n                v30 = sub_2480FC750(*MEMORY[0x2680CF5F0], v39, v38);\n                *a2 = v30;\n                if ( v30 != 0 )\n                  v8 = 0;\n                else\n                  v8 = 2;\n                goto LABEL_37;\n              }\n              goto LABEL_51;\n            }\nLABEL_54:\n            v8 = 2;\n            goto LABEL_37;\n          }\nLABEL_50:\n          v2 = 0;\nLABEL_51:\n          v8 = 3;\n          goto LABEL_37;\n        }\n        v8 = 3;\n        AMAuthInstallLog(3, \"AMAuthInstallApImg4EncodeRestoreDict\", \"failed to encode restore info sequence\");\nLABEL_58:\n        v2 = 0;\n        goto LABEL_37;\n      }\n      v33 = \"failed to encode restore info properties as set\";\n    }\n    v8 = 3;\n    AMAuthInstallLog(3, \"AMAuthInstallApImg4EncodeRestoreDict\", v33, v36);\n    v7 = 0;\n    goto LABEL_58;\n  }\n  v15 = 0;\n  v16 = \"%s: unexpected restore property type\";\n  while ( 1 )\n  {\n    v17 = *(_QWORD *)(v6 + 8 * v15);\n    if ( v17 == 0 || (v18 = sub_2480F8970(*(_QWORD *)(v6 + 8 * v15))) != sub_2480FC770() )\n    {\n      v32 = \"invalid overridesKey\";\n      goto LABEL_43;\n    }\n    v19 = *(_QWORD *)(v5 + 8 * v15);\n    if ( v19 == 0 )\n      break;\n    v20 = sub_2480F8970(v19);\n    if ( v20 == sub_2480FC7B0() )\n    {\n      if ( (unsigned int)AMAuthInstallApImg4AddDataProperty(v4, v17, *(_QWORD *)(v5 + 8 * v15)) != 0 )\n        goto LABEL_42;\n    }\n    else\n    {\n      v21 = sub_2480F8970(*(_QWORD *)(v5 + 8 * v15));\n      v22 = sub_2480F8960();\n      v23 = *(_QWORD *)(v5 + 8 * v15);\n      if ( v21 == v22 )\n      {\n        v24 = sub_2480FD140(v23);\n        if ( (unsigned int)AMAuthInstallApImg4AddBooleanProperty(v4, v17, v24) != 0 )\n          goto LABEL_42;\n      }\n      else\n      {\n        v25 = sub_2480F8970(v23);\n        if ( v25 != sub_2480FC760() )\n          goto LABEL_41;\n        v26 = *(_QWORD *)(v5 + 8 * v15);\n        if ( sub_2481002E0(v26) == 3 )\n        {\n          if ( (unsigned int)AMAuthInstallApImg4AddInteger32Property(v4, v17, v26) != 0 )\n            goto LABEL_42;\n        }\n        else\n        {\n          if ( sub_2481002E0(v26) != 4 )\n          {\n            v16 = \"%s: unexpected integer type\";\nLABEL_41:\n            AMAuthInstallLog(3, \"AMAuthInstallApImg4EncodeRestoreDict\", v16, \"AMAuthInstallApImg4EncodeRestoreDict\");\nLABEL_42:\n            v32 = \"failed to encode restore property\";\n            goto LABEL_43;\n          }\n          if ( (unsigned int)AMAuthInstallApImg4AddInteger64Property(v4, *(_QWORD *)(v6 + 8 * v15), v26) != 0 )\n            goto LABEL_42;\n        }\n      }\n    }\n    ++v15;\n    if ( --v14 == 0 )\n      goto LABEL_24;\n  }\n  v32 = \"invalid overridesValue\";\nLABEL_43:\n  v8 = 3;\n  AMAuthInstallLog(3, \"AMAuthInstallApImg4EncodeRestoreDict\", v32);\n  v7 = 0;\n  v2 = 0;\n  v3 = 0;\nLABEL_37:\n  SafeFree(v6);\n  SafeFree(v5);\n  SafeFree(v37);\n  SafeFree(v39);\n  sub_2481006A0(v4);\n  sub_2481006A0(v3);\n  sub_2481006A0(v2);\n  v31 = sub_2481006A0(v7);\n  if ( *MEMORY[0x268186AA8] == v42 )\n    return v8;\n  v34 = sub_2480E56B0(v31);\n  return AMAuthInstallApImg4CopyURLAddingExtension(v34);\n}\n"
+    },
+    {
+      "address": "0x2428659f4",
+      "end_address": "0x242865cd4",
+      "input": "_AMAuthInstallApImg4CreatePayloadWithProperties",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v27",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v28",
+          "type": "unsigned int"
+        }
+      ],
+      "name": "_AMAuthInstallApImg4CreatePayloadWithProperties",
+      "prototype": "__int64 __fastcall AMAuthInstallApImg4CreatePayloadWithProperties(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, _QWORD *a7)",
+      "pseudocode": "__int64 __fastcall AMAuthInstallApImg4CreatePayloadWithProperties(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        _QWORD *a7)\n{\n  __int64 v7; // x4\n  __int64 v8; // x19\n  __int64 v9; // x25\n  __int64 v13; // x20\n  __int64 v18; // x25\n  __int64 v19; // x25\n  __int64 v20; // x24\n  __int64 v21; // x23\n  __int64 v22; // x0\n  __int64 v24; // x4\n  __int64 v25; // x4\n  __int64 v26; // x4\n  __int64 v27; // [xsp+0h] [xbp-60h] BYREF\n  unsigned int v28; // [xsp+Ch] [xbp-54h] BYREF\n\n  v8 = 0;\n  v9 = 1;\n  v28 = 0;\n  v27 = 0;\n  if ( a1 == 0 || a2 == 0 || a3 == 0 )\n  {\n    v13 = 0;\n    goto LABEL_21;\n  }\n  v13 = 0;\n  if ( a7 != nullptr )\n  {\n    if ( sub_2480E5910(a1) != 4 )\n    {\n      v8 = 0;\n      v13 = 0;\n      goto LABEL_21;\n    }\n    v8 = sub_248100680(0);\n    if ( v8 != 0 )\n    {\n      v13 = sub_248100680(0);\n      if ( v13 != 0 )\n      {\n        if ( (unsigned int)sub_2481005F0(v8, 0, 0x16, \"IM4P\", 4, 0) != 0 )\n        {\n          AMAuthInstallLog(\n            3,\n            \"AMAuthInstallApImg4CreatePayloadWithProperties\",\n            \"failed to add payload tag to DER file\",\n            v27);\n        }\n        else if ( (unsigned int)sub_2481005F0(v8, 0, 0x16, a1, 4, 0) != 0 )\n        {\n          AMAuthInstallLog(\n            3,\n            \"AMAuthInstallApImg4CreatePayloadWithProperties\",\n            \"failed to add payload type to DER file\",\n            v27);\n        }\n        else\n        {\n          v7 = sub_2480E5910(a2);\n          if ( (unsigned int)sub_2481005F0(v8, 0, 0x16, a2, v7, 0) != 0 )\n          {\n            AMAuthInstallLog(\n              3,\n              \"AMAuthInstallApImg4CreatePayloadWithProperties\",\n              \"failed to add payload version to DER file\",\n              v27);\n          }\n          else\n          {\n            v18 = sub_2480FCB60(a3);\n            v24 = sub_2480FBEC0(a3);\n            if ( (unsigned int)sub_248100610(v8, 0, 4, v18, v24, 0) != 0 )\n              goto LABEL_23;\n            if ( a4 != 0 )\n            {\n              v19 = sub_2480FCB60(a4);\n              v25 = sub_2480FBEC0(a4);\n              if ( (unsigned int)sub_2481005F0(v8, 0, 4, v19, v25, 0) != 0 )\n              {\n                AMAuthInstallLog(\n                  3,\n                  \"AMAuthInstallApImg4CreatePayloadWithProperties\",\n                  \"failed to add payloadKeybag to DER file\",\n                  v27);\n                goto LABEL_33;\n              }\n            }\n            if ( a5 != 0 )\n            {\n              v20 = sub_2480FCB60(a5);\n              v26 = sub_2480FBEC0(a5);\n              if ( (unsigned int)sub_2481005F0(v8, 0, 0x10, v20, v26, 1) != 0 )\n              {\n                AMAuthInstallLog(\n                  3,\n                  \"AMAuthInstallApImg4CreatePayloadWithProperties\",\n                  \"failed to add payloadCompression to DER file\",\n                  v27);\n                goto LABEL_33;\n              }\n            }\n            if ( a6 != 0\n              && (v21 = sub_2480FCB60(a6),\n                  v22 = sub_2480FBEC0(a6),\n                  (unsigned int)sub_2481005F0(v8, 2, 0, v21, v22, 1) != 0) )\n            {\nLABEL_23:\n              AMAuthInstallLog(\n                3,\n                \"AMAuthInstallApImg4CreatePayloadWithProperties\",\n                \"failed to add payload data to DER file\",\n                v27);\n            }\n            else if ( (unsigned int)sub_248100600(v8, v13, 0, 0x10, 1) != 0 )\n            {\n              AMAuthInstallLog(\n                3,\n                \"AMAuthInstallApImg4CreatePayloadWithProperties\",\n                \"failed to add payload to sequence\",\n                v27);\n            }\n            else\n            {\n              if ( (unsigned int)sub_248100690(v13, &v27, &v28) == 0 )\n              {\n                v9 = 0;\n                *a7 = sub_2480FD830(*MEMORY[0x2680CF5F0], v27, v28, *MEMORY[0x2680CF5F8]);\n                goto LABEL_21;\n              }\n              AMAuthInstallLog(\n                3,\n                \"AMAuthInstallApImg4CreatePayloadWithProperties\",\n                \"failed to create DER encoded buffer: sequenceEncoder\",\n                v27);\n            }\n          }\n        }\n      }\n    }\n    else\n    {\n      v13 = 0;\n    }\nLABEL_33:\n    v9 = 2;\n  }\nLABEL_21:\n  sub_2481006A0(v8);\n  sub_2481006A0(v13);\n  return v9;\n}\n"
+    }
+  ],
+  "database_target": "4cb2b5384360",
+  "requested": [
+    "_AMAuthInstallApImg4CreateMeasurementsWithTag",
+    "_AMAuthInstallApImg4DecodePayloadProperty",
+    "_AMAuthInstallApImg4EncodeRestoreDict",
+    "_AMAuthInstallApImg4CreatePayloadWithProperties"
+  ]
+}

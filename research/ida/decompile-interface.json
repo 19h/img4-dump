@@ -1,0 +1,982 @@
+{
+  "count": 4,
+  "results": [
+    {
+      "address": "0x24734420c",
+      "end_address": "0x247344264",
+      "input": "_remote_service_create_nonce_handle_request",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "request",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_remote_service_create_nonce_handle_request",
+      "prototype": "__int64 __fastcall remote_service_create_nonce_handle_request(unsigned int a1)",
+      "pseudocode": "__int64 __fastcall remote_service_create_nonce_handle_request(unsigned int a1)\n{\n  __int64 v2; // x20\n  __int64 request; // x19\n\n  v2 = sub_2480FFC30();\n  sub_2480FFCB0(v2, \"nonce-domain-handle\", a1);\n  request = _xpc_create_request(\"get-nonce\", v2);\n  sub_2480E5850(v2);\n  return request;\n}\n"
+    },
+    {
+      "address": "0x247344318",
+      "end_address": "0x247344860",
+      "input": "_remote_service_create_install_request",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "argv",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "request",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v30",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v31",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v32",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v33",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v34",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v35",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v36",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v37",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v38",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v39",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v40",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v41",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v42",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v43",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v44",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v45",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v46",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "Error",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v48",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v49",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v50",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v51",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v53",
+          "type": "__int16[8]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v54",
+          "type": "__int16[8]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v55",
+          "type": "__int16[8]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v56",
+          "type": "__int16[8]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v57",
+          "type": "__int16[8]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v58",
+          "type": "__int16[8]"
+        }
+      ],
+      "name": "_remote_service_create_install_request",
+      "prototype": "__int64 __fastcall remote_service_create_install_request(_QWORD *a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, __int64 a7, __int64 a8)",
+      "pseudocode": "__int64 __fastcall remote_service_create_install_request(\n        _QWORD *a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7,\n        __int64 a8)\n{\n  __int64 argv; // x0\n  __int64 v17; // x0\n  __int64 v18; // x19\n  __int64 v19; // x25\n  __int64 v20; // x24\n  __int64 v21; // x23\n  __int64 v22; // x22\n  __int64 v23; // x21\n  __int64 request; // x0\n  __int64 v25; // x21\n  __int64 v26; // x0\n  __int64 v27; // x20\n  __int64 v28; // x0\n  __int64 v29; // x0\n  __int64 v30; // x21\n  __int64 v31; // x0\n  __int64 v32; // x20\n  __int64 v33; // x0\n  __int64 v34; // x20\n  __int64 v35; // x0\n  __int64 v36; // x0\n  __int64 v37; // x21\n  __int64 v38; // x0\n  __int64 v39; // x0\n  __int64 v40; // x20\n  __int64 v41; // x0\n  __int64 v42; // x0\n  __int64 v43; // x21\n  __int64 v44; // x0\n  __int64 v45; // x0\n  const char *v46; // x1\n  __int64 Error; // x0\n  __int64 v48; // x0\n  const char *v49; // x1\n  __int64 v50; // x0\n  const char *v51; // x1\n  __int16 v53[8]; // [xsp+10h] [xbp-B0h] BYREF\n  __int16 v54[8]; // [xsp+20h] [xbp-A0h] BYREF\n  __int16 v55[8]; // [xsp+30h] [xbp-90h] BYREF\n  __int16 v56[8]; // [xsp+40h] [xbp-80h] BYREF\n  __int16 v57[8]; // [xsp+50h] [xbp-70h] BYREF\n  __int16 v58[8]; // [xsp+60h] [xbp-60h] BYREF\n\n  argv = _remote_service_create_argv();\n  v17 = sub_2480E5820(argv);\n  v18 = v17;\n  if ( (a2 & 0x80000000) != 0 )\n  {\n    v26 = ((__int64 (*)(void))_rsi_log)();\n    v27 = sub_2480E5820(v26);\n    v28 = sub_2480E5850(v27);\n    if ( v27 != 0 )\n    {\n      v29 = _rsi_log(v28);\n      v30 = sub_2480E5820(v29);\n      if ( (unsigned int)sub_2480E58B0(v30, 0x10) != 0 )\n        v31 = 3;\n      else\n        v31 = 2;\n      v58[0] = 0;\n      v32 = sub_2480FC3C0(v31, 0, 0, 0, qword_247342000, v30, 0x10, \"image fd is invalid\", v58, 2);\n      sub_2480E5850(v30);\n    }\n    else\n    {\n      v57[0] = 0;\n      v32 = sub_2480FC3C0(2, 0, 0, 0, qword_247342000, MEMORY[0x268186F00], 0x10, \"image fd is invalid\", v57, 2);\n    }\n    v45 = sub_248102A00(\n            \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/remote_service_interface.m\",\n            0x2F);\n    if ( v45 != 0 )\n      v46 = (const char *)(v45 + 1);\n    else\n      v46 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/remote_service_interface.m\";\n    Error = createError(\"remote_service_create_install_request\", v46, 0x6D, \"com.apple.security.cryptex\", 0xF, 0, v32);\n    goto LABEL_43;\n  }\n  if ( (a4 & 0x80000000) != 0 )\n  {\n    v33 = _rsi_log(v17);\n    v34 = sub_2480E5820(v33);\n    v35 = sub_2480E5850(v34);\n    if ( v34 != 0 )\n    {\n      v36 = _rsi_log(v35);\n      v37 = sub_2480E5820(v36);\n      if ( (unsigned int)sub_2480E58B0(v37, 0x10) != 0 )\n        v38 = 3;\n      else\n        v38 = 2;\n      v56[0] = 0;\n      v32 = sub_2480FC3C0(v38, 0, 0, 0, qword_247342000, v37, 0x10, \"trustcache fd is invalid\", v56, 2);\n      sub_2480E5850(v37);\n    }\n    else\n    {\n      v55[0] = 0;\n      v32 = sub_2480FC3C0(2, 0, 0, 0, qword_247342000, MEMORY[0x268186F00], 0x10, \"trustcache fd is invalid\", v55, 2);\n    }\n    v48 = sub_248102A00(\n            \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/remote_service_interface.m\",\n            0x2F);\n    if ( v48 != 0 )\n      v49 = (const char *)(v48 + 1);\n    else\n      v49 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/remote_service_interface.m\";\n    Error = createError(\"remote_service_create_install_request\", v49, 0x75, \"com.apple.security.cryptex\", 0xF, 0, v32);\n    goto LABEL_43;\n  }\n  if ( (a6 & 0x80000000) != 0 )\n  {\n    v39 = _rsi_log(v17);\n    v40 = sub_2480E5820(v39);\n    v41 = sub_2480E5850(v40);\n    if ( v40 != 0 )\n    {\n      v42 = _rsi_log(v41);\n      v43 = sub_2480E5820(v42);\n      if ( (unsigned int)sub_2480E58B0(v43, 0x10) != 0 )\n        v44 = 3;\n      else\n        v44 = 2;\n      v54[0] = 0;\n      v32 = sub_2480FC3C0(v44, 0, 0, 0, qword_247342000, v43, 0x10, \"im4m fd is invalid\", v54, 2);\n      sub_2480E5850(v43);\n    }\n    else\n    {\n      v53[0] = 0;\n      v32 = sub_2480FC3C0(2, 0, 0, 0, qword_247342000, MEMORY[0x268186F00], 0x10, \"im4m fd is invalid\", v53, 2);\n    }\n    v50 = sub_248102A00(\n            \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/remote_service_interface.m\",\n            0x2F);\n    if ( v50 != 0 )\n      v51 = (const char *)(v50 + 1);\n    else\n      v51 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/remote_service_interface.m\";\n    Error = createError(\"remote_service_create_install_request\", v51, 0x7D, \"com.apple.security.cryptex\", 0xF, 0, v32);\nLABEL_43:\n    v25 = Error;\n    sub_2480E5750(v32);\n    goto LABEL_44;\n  }\n  sub_2480FD2A0(v17, \"image-type-index\", a3);\n  sub_2480FFCB0(v18, \"auth\", *(_QWORD *)a8);\n  sub_2480FFCB0(v18, \"persistence\", *(_QWORD *)(a8 + 8));\n  sub_2480FFCB0(v18, \"nonce-persistence\", *(_QWORD *)(a8 + 0x10));\n  if ( *(_QWORD *)(a8 + 0x18) != 0 )\n    sub_24810B710(v18, \"cryptex1-properties\");\n  if ( *(_BYTE *)(a8 + 0x28) == 1 )\n    sub_2480FB9A0(v18, \"enable-install-events\", 1);\n  if ( (a5 & 0x80000000) == 0 )\n  {\n    v19 = sub_24812B550(a5, &__block_literal_global_1);\n    sub_24810B710(v18, \"info\");\n    sub_2480E5850(v19);\n  }\n  if ( (a7 & 0x80000000) == 0 )\n  {\n    v20 = sub_24812B550(a7, &__block_literal_global.16);\n    sub_24810B710(v18, \"volumehash\");\n    sub_2480E5850(v20);\n  }\n  v21 = sub_24812B550(a2, &__block_literal_global.20);\n  sub_24810B710(v18, \"image\");\n  v22 = sub_24812B550(a4, &__block_literal_global.24);\n  sub_24810B710(v18, \"trustcache\");\n  v23 = sub_24812B550(a6, &__block_literal_global.28);\n  sub_24810B710(v18, \"im4m\");\n  request = _xpc_create_request(\"install\", v18);\n  *a1 = sub_2480F8BA0(request);\n  sub_2480E5850(v23);\n  sub_2480E5850(v22);\n  sub_2480E5850(v21);\n  v25 = 0;\nLABEL_44:\n  sub_2480E5850(v18);\n  return v25;\n}\n"
+    },
+    {
+      "address": "0x247344cbc",
+      "end_address": "0x247344eec",
+      "input": "_remote_service_install_request_valid",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "argv",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "int *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "_BOOL4"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v15",
+          "type": "_DWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v16",
+          "type": "__int64"
+        }
+      ],
+      "name": "_remote_service_install_request_valid",
+      "prototype": "__int64 __fastcall remote_service_install_request_valid(__int64 a1)",
+      "pseudocode": "__int64 __fastcall remote_service_install_request_valid(__int64 a1)\n{\n  int argv; // w20\n  __int64 v2; // x0\n  __int64 v3; // x19\n  int *v4; // x0\n  int v5; // w22\n  __int64 v6; // x0\n  __int64 v7; // x21\n  __int64 v8; // x0\n  __int64 v9; // x20\n  __int64 v10; // x21\n  _BOOL4 v11; // w21\n  __int64 v12; // x0\n  _DWORD v15[2]; // [xsp+0h] [xbp-30h] BYREF\n  __int64 v16; // [xsp+8h] [xbp-28h] BYREF\n\n  v16 = 0;\n  argv = _xpc_request_get_argv(a1, &v16);\n  v2 = sub_2480E5860(v16);\n  v3 = v2;\n  if ( argv != 0 )\n  {\n    v4 = (int *)((__int64 (*)(void))sub_2480FC7D0)();\n    v5 = *v4;\n    v6 = _rsi_log(v4);\n    v7 = sub_2480E5820(v6);\n    if ( (unsigned int)sub_2480E58B0(v7, 0x10) != 0 )\n    {\n      v15[0] = 0x4000100;\n      v15[1] = argv;\n      sub_2480E56F0(qword_247342000, v7, 0x10, \"failed to get argv: %{darwin.errno}d\", v15, 8);\n    }\n    v8 = sub_2480E5850(v7);\n    v9 = 0;\n    v10 = 0;\n    *(_DWORD *)sub_2480FC7D0(v8) = v5;\n  }\n  else\n  {\n    v11 = (unsigned int)_xpc_dictionary_key_with_type_exists(v2, \"image\", MEMORY[0x268187118]) != 0\n       && (unsigned int)_xpc_dictionary_key_with_type_exists(v3, \"trustcache\", MEMORY[0x268187118]) != 0\n       && (unsigned int)_xpc_dictionary_key_with_type_exists(v3, \"im4m\", MEMORY[0x268187118]) != 0\n       && (unsigned int)_xpc_dictionary_key_with_type_exists(v3, \"image-type-index\", MEMORY[0x268187120]) != 0\n       && (unsigned int)_xpc_dictionary_key_with_type_exists(v3, \"persistence\", MEMORY[0x268187150]) != 0\n       && (unsigned int)_xpc_dictionary_key_with_type_exists(v3, \"nonce-persistence\", MEMORY[0x268187150]) != 0\n       && (unsigned int)_xpc_dictionary_key_with_type_exists(v3, \"auth\", MEMORY[0x268187150]) != 0\n       && (unsigned __int64)sub_2480FFC80(v3, \"auth\") <= 2\n       && (unsigned __int64)sub_2480FFC80(v3, \"persistence\") <= 2\n       && (unsigned __int64)sub_2480FFC80(v3, \"nonce-persistence\") < 2;\n    v12 = sub_2480F8D70(v3, \"info\");\n    v9 = sub_2480E5820(v12);\n    if ( v9 == 0 || !v11 )\n      v10 = (v9 == 0) & (unsigned __int8)v11;\n    else\n      v10 = _xpc_dictionary_key_with_type_exists(v3, \"info\", MEMORY[0x268187118]);\n  }\n  sub_2480E5850(v3);\n  sub_2480E5850(v9);\n  return v10;\n}\n"
+    },
+    {
+      "address": "0x2473473b0",
+      "end_address": "0x247347b5c",
+      "input": "_mount_interface_create_mount_request",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v30",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v31",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v32",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v33",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v34",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v35",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v36",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v37",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v38",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v39",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v40",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v41",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v42",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v43",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v44",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "Error",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v46",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v47",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v48",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v49",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v50",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v51",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v52",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v53",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "request",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v55",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v56",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v57",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v58",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v59",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v60",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v61",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v62",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v63",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v65",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v66",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v67",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v68",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v69",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v70",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v71",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v72",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v73",
+          "type": "_WORD[8]"
+        }
+      ],
+      "name": "_mount_interface_create_mount_request",
+      "prototype": "__int64 __fastcall mount_interface_create_mount_request(__int64 *a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, __int64 a7, __int64 a8)",
+      "pseudocode": "__int64 __fastcall mount_interface_create_mount_request(\n        __int64 *a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7,\n        __int64 a8)\n{\n  __int64 v15; // x0\n  __int64 v16; // x19\n  __int64 v17; // x0\n  __int64 v18; // x0\n  __int64 v19; // x20\n  __int64 v20; // x0\n  __int64 v21; // x0\n  __int64 v22; // x21\n  __int64 v23; // x0\n  __int64 v24; // x20\n  __int64 v25; // x0\n  __int64 v26; // x20\n  __int64 v27; // x0\n  __int64 v28; // x0\n  __int64 v29; // x21\n  __int64 v30; // x0\n  __int64 v31; // x0\n  __int64 v32; // x20\n  __int64 v33; // x0\n  __int64 v34; // x0\n  __int64 v35; // x21\n  __int64 v36; // x0\n  __int64 v37; // x0\n  __int64 v38; // x20\n  __int64 v39; // x0\n  __int64 v40; // x0\n  __int64 v41; // x21\n  __int64 v42; // x0\n  __int64 v43; // x0\n  const char *v44; // x1\n  __int64 Error; // x0\n  __int64 v46; // x0\n  __int64 v47; // x20\n  __int64 v48; // x0\n  __int64 v49; // x0\n  __int64 v50; // x21\n  __int64 v51; // x0\n  __int64 v52; // x0\n  const char *v53; // x1\n  __int64 request; // x0\n  __int64 v55; // x0\n  __int64 v56; // x22\n  __int64 v57; // x21\n  __int64 v58; // x0\n  const char *v59; // x1\n  __int64 v60; // x0\n  const char *v61; // x1\n  __int64 v62; // x0\n  const char *v63; // x1\n  __int64 v65; // x0\n  __int64 v66; // x20\n  __int64 v67; // x0\n  __int64 v68; // x0\n  __int64 v69; // x21\n  __int64 v70; // x0\n  __int64 v71; // x0\n  const char *v72; // x1\n  _WORD v73[8]; // [xsp+10h] [xbp-60h] BYREF\n\n  v15 = sub_2480E5860(a8);\n  v16 = v15;\n  if ( (a2 & 0x80000000) != 0 )\n  {\n    v25 = ((__int64 (*)(void))_mnt_intf_log)();\n    v26 = sub_2480E5820(v25);\n    v27 = sub_2480E5850(v26);\n    if ( v26 != 0 )\n    {\n      v28 = _mnt_intf_log(v27);\n      v29 = sub_2480E5820(v28);\n      if ( (unsigned int)sub_2480E58B0(v29, 0x10) != 0 )\n        v30 = 3;\n      else\n        v30 = 2;\n      v73[0] = 0;\n      v24 = sub_2480FC3C0(v30, 0, 0, 0, qword_247342000, v29, 0x10, \"Invalid image.\", v73, 2);\n      sub_2480E5850(v29);\n    }\n    else\n    {\n      v73[0] = 0;\n      v24 = sub_2480FC3C0(2, 0, 0, 0, qword_247342000, MEMORY[0x268186F00], 0x10, \"Invalid image.\", v73, 2);\n    }\n    v43 = sub_248102A00(\n            \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/mount_interface.m\",\n            0x2F);\n    if ( v43 != 0 )\n      v44 = (const char *)(v43 + 1);\n    else\n      v44 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/mount_interface.m\";\n    Error = createError(\"mount_interface_create_mount_request\", v44, 0x28, \"com.apple.security.cryptex\", 2, 0, v24);\n    goto LABEL_61;\n  }\n  if ( (a5 & 0x80000000) != 0 )\n  {\n    v31 = _mnt_intf_log(v15);\n    v32 = sub_2480E5820(v31);\n    v33 = sub_2480E5850(v32);\n    if ( v32 != 0 )\n    {\n      v34 = _mnt_intf_log(v33);\n      v35 = sub_2480E5820(v34);\n      if ( (unsigned int)sub_2480E58B0(v35, 0x10) != 0 )\n        v36 = 3;\n      else\n        v36 = 2;\n      v73[0] = 0;\n      v24 = sub_2480FC3C0(v36, 0, 0, 0, qword_247342000, v35, 0x10, \"Invalid trust cache.\", v73, 2);\n      sub_2480E5850(v35);\n    }\n    else\n    {\n      v73[0] = 0;\n      v24 = sub_2480FC3C0(2, 0, 0, 0, qword_247342000, MEMORY[0x268186F00], 0x10, \"Invalid trust cache.\", v73, 2);\n    }\n    v52 = sub_248102A00(\n            \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/mount_interface.m\",\n            0x2F);\n    if ( v52 != 0 )\n      v53 = (const char *)(v52 + 1);\n    else\n      v53 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/mount_interface.m\";\n    Error = createError(\"mount_interface_create_mount_request\", v53, 0x2E, \"com.apple.security.cryptex\", 2, 0, v24);\n    goto LABEL_61;\n  }\n  if ( (a6 & 0x80000000) != 0 )\n  {\n    v37 = _mnt_intf_log(v15);\n    v38 = sub_2480E5820(v37);\n    v39 = sub_2480E5850(v38);\n    if ( v38 != 0 )\n    {\n      v40 = _mnt_intf_log(v39);\n      v41 = sub_2480E5820(v40);\n      if ( (unsigned int)sub_2480E58B0(v41, 0x10) != 0 )\n        v42 = 3;\n      else\n        v42 = 2;\n      v73[0] = 0;\n      v24 = sub_2480FC3C0(v42, 0, 0, 0, qword_247342000, v41, 0x10, \"Invalid info plist.\", v73, 2);\n      sub_2480E5850(v41);\n    }\n    else\n    {\n      v73[0] = 0;\n      v24 = sub_2480FC3C0(2, 0, 0, 0, qword_247342000, MEMORY[0x268186F00], 0x10, \"Invalid info plist.\", v73, 2);\n    }\n    v58 = sub_248102A00(\n            \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/mount_interface.m\",\n            0x2F);\n    if ( v58 != 0 )\n      v59 = (const char *)(v58 + 1);\n    else\n      v59 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/mount_interface.m\";\n    Error = createError(\"mount_interface_create_mount_request\", v59, 0x34, \"com.apple.security.cryptex\", 2, 0, v24);\n    goto LABEL_61;\n  }\n  if ( (a7 & 0x80000000) != 0 )\n  {\n    v46 = _mnt_intf_log(v15);\n    v47 = sub_2480E5820(v46);\n    v48 = sub_2480E5850(v47);\n    if ( v47 != 0 )\n    {\n      v49 = _mnt_intf_log(v48);\n      v50 = sub_2480E5820(v49);\n      if ( (unsigned int)sub_2480E58B0(v50, 0x10) != 0 )\n        v51 = 3;\n      else\n        v51 = 2;\n      v73[0] = 0;\n      v24 = sub_2480FC3C0(v51, 0, 0, 0, qword_247342000, v50, 0x10, \"Invalid im4m.\", v73, 2);\n      sub_2480E5850(v50);\n    }\n    else\n    {\n      v73[0] = 0;\n      v24 = sub_2480FC3C0(2, 0, 0, 0, qword_247342000, MEMORY[0x268186F00], 0x10, \"Invalid im4m.\", v73, 2);\n    }\n    v62 = sub_248102A00(\n            \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/mount_interface.m\",\n            0x2F);\n    if ( v62 != 0 )\n      v63 = (const char *)(v62 + 1);\n    else\n      v63 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/mount_interface.m\";\n    Error = createError(\"mount_interface_create_mount_request\", v63, 0x3A, \"com.apple.security.cryptex\", 2, 0, v24);\n    goto LABEL_61;\n  }\n  v17 = sub_2480F8D90(v15);\n  if ( v17 != MEMORY[0x2681870F0] )\n  {\n    v18 = _mnt_intf_log(v17);\n    v19 = sub_2480E5820(v18);\n    v20 = sub_2480E5850(v19);\n    if ( v19 != 0 )\n    {\n      v21 = _mnt_intf_log(v20);\n      v22 = sub_2480E5820(v21);\n      if ( (unsigned int)sub_2480E58B0(v22, 0x10) != 0 )\n        v23 = 3;\n      else\n        v23 = 2;\n      v73[0] = 0;\n      v24 = sub_2480FC3C0(v23, 0, 0, 0, qword_247342000, v22, 0x10, \"Invalid Cryptex1 properties.\", v73, 2);\n      sub_2480E5850(v22);\n    }\n    else\n    {\n      v73[0] = 0;\n      v24 = sub_2480FC3C0(\n              2,\n              0,\n              0,\n              0,\n              qword_247342000,\n              MEMORY[0x268186F00],\n              0x10,\n              \"Invalid Cryptex1 properties.\",\n              v73,\n              2);\n    }\n    v60 = sub_248102A00(\n            \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/mount_interface.m\",\n            0x2F);\n    if ( v60 != 0 )\n      v61 = (const char *)(v60 + 1);\n    else\n      v61 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/mount_interface.m\";\n    Error = createError(\"mount_interface_create_mount_request\", v61, 0x40, \"com.apple.security.cryptex\", 2, 0, v24);\nLABEL_61:\n    v57 = Error;\n    sub_2480E5750(v24);\n    v56 = 0;\n    goto LABEL_62;\n  }\n  request = mount_interface_create_request(\"REQ:MOUNT\");\n  v55 = sub_2480E5820(request);\n  if ( v55 == 0 )\n  {\n    v65 = _mnt_intf_log(0);\n    v66 = sub_2480E5820(v65);\n    v67 = sub_2480E5850(v66);\n    if ( v66 != 0 )\n    {\n      v68 = _mnt_intf_log(v67);\n      v69 = sub_2480E5820(v68);\n      if ( (unsigned int)sub_2480E58B0(v69, 0x10) != 0 )\n        v70 = 3;\n      else\n        v70 = 2;\n      v73[0] = 0;\n      v24 = sub_2480FC3C0(v70, 0, 0, 0, qword_247342000, v69, 0x10, \"Failed to allocate dictionary.\", v73, 2);\n      sub_2480E5850(v69);\n    }\n    else\n    {\n      v73[0] = 0;\n      v24 = sub_2480FC3C0(\n              2,\n              0,\n              0,\n              0,\n              qword_247342000,\n              MEMORY[0x268186F00],\n              0x10,\n              \"Failed to allocate dictionary.\",\n              v73,\n              2);\n    }\n    v71 = sub_248102A00(\n            \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/mount_interface.m\",\n            0x2F);\n    if ( v71 != 0 )\n      v72 = (const char *)(v71 + 1);\n    else\n      v72 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/interface/mount_interface.m\";\n    Error = createError(\"mount_interface_create_mount_request\", v72, 0x47, \"com.apple.security.cryptex\", 2, 0, v24);\n    goto LABEL_61;\n  }\n  v56 = v55;\n  if ( (a4 & 0x80000000) == 0 )\n    sub_2480FD290(v55, \"MOUNT:VOLHASH_FD\", a4);\n  sub_2480FD290(v56, \"MOUNT:DMG_FD\", a2);\n  sub_2480FD290(v56, \"MOUNT:LTRS_FD\", a5);\n  sub_2480FD290(v56, \"MOUNT:INFO_FD\", a6);\n  sub_2480FD290(v56, \"MOUNT:IM4M_FD\", a7);\n  sub_24810B710(v56, \"MOUNT:CX1_PROPERTIES\");\n  sub_2480FD2A0(v56, \"MOUNT:DMG_ASSET_IDX_INT64\", a3);\n  if ( a1 != nullptr )\n  {\n    sub_2480E5870(v56);\n    v57 = 0;\n    *a1 = v56;\n  }\n  else\n  {\n    v57 = 0;\n  }\nLABEL_62:\n  sub_2480E5850(v56);\n  sub_2480E5850(v16);\n  return v57;\n}\n"
+    }
+  ],
+  "database_target": "89c7194f06b9",
+  "requested": [
+    "_remote_service_create_nonce_handle_request",
+    "_remote_service_create_install_request",
+    "_remote_service_install_request_valid",
+    "_mount_interface_create_mount_request"
+  ]
+}

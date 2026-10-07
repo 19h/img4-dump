@@ -1,0 +1,795 @@
+{
+  "count": 5,
+  "results": [
+    {
+      "address": "0x2438afb48",
+      "end_address": "0x2438b006c",
+      "input": "__manifest_impose_property",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "digest",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "constraint",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "double"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "__int64 (__fastcall *)(__int64 *, __int64, __int64, _QWORD, _QWORD, __int64)"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "PropertyInteger",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v31",
+          "type": "double"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v32",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "PropertyInteger64",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v34",
+          "type": "double"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v35",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "PropertyData",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v37",
+          "type": "double"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v38",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "PropertyBoolean",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v40",
+          "type": "double"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v41",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v42",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v43",
+          "type": "__int64 (__fastcall *)(__int64 *, __int64, __int64, __int64)"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v44",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v45",
+          "type": "__int64 (__fastcall *)(__int64 *, __int64, __int64, _QWORD *, _QWORD *, __int64)"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v47",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v48",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v49",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v50",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v51",
+          "type": "_QWORD[12]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v52",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v53",
+          "type": "_QWORD[12]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v54",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v55",
+          "type": "__int64"
+        }
+      ],
+      "name": "__manifest_impose_property",
+      "prototype": "__int64 __fastcall _manifest_impose_property(__int64 *a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5)",
+      "pseudocode": "__int64 __fastcall _manifest_impose_property(__int64 *a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5)\n{\n  __int64 v10; // x23\n  __int64 digest; // x27\n  __int64 v12; // x26\n  __int64 v13; // x2\n  __int64 constraint; // x0\n  __int64 v15; // x1\n  __int64 v16; // x3\n  __int64 v17; // x4\n  __int64 v18; // x5\n  __int64 v19; // x20\n  __int64 v20; // x8\n  __int64 v21; // x22\n  const char *v22; // x28\n  __int64 v23; // x0\n  double v24; // d0\n  __int64 v25; // x24\n  __int64 v26; // x0\n  __int64 v27; // x2\n  __int64 v28; // x8\n  __int64 (__fastcall *v29)(__int64 *, __int64, __int64, _QWORD, _QWORD, __int64); // x8\n  __int64 PropertyInteger; // x0\n  double v31; // d0\n  __int64 v32; // x24\n  __int64 PropertyInteger64; // x0\n  double v34; // d0\n  __int64 v35; // x24\n  __int64 PropertyData; // x0\n  double v37; // d0\n  __int64 v38; // x25\n  __int64 PropertyBoolean; // x0\n  double v40; // d0\n  __int64 v41; // x24\n  __int64 v42; // x8\n  __int64 (__fastcall *v43)(__int64 *, __int64, __int64, __int64); // x8\n  __int64 v44; // x8\n  __int64 (__fastcall *v45)(__int64 *, __int64, __int64, _QWORD *, _QWORD *, __int64); // x8\n  const char *v47; // x9\n  __int64 v48; // [xsp+0h] [xbp-170h]\n  __int64 v49; // [xsp+20h] [xbp-150h] BYREF\n  unsigned int v50; // [xsp+2Ch] [xbp-144h] BYREF\n  _QWORD v51[12]; // [xsp+30h] [xbp-140h] BYREF\n  _QWORD v53[12]; // [xsp+A0h] [xbp-D0h] BYREF\n  __int64 v55; // [xsp+110h] [xbp-60h]\n\n  v55 = *MEMORY[0x268186AA8];\n  v10 = *a1;\n  digest = chip_get_digest(a3);\n  memset(v53, 0, sizeof(v53));\n  memset(v51, 0, sizeof(v51));\n  v12 = *(unsigned int *)(a2 + 0x18);\n  v50 = 0;\n  v13 = *(_QWORD *)(a5 + 0x18);\n  v49 = 0;\n  constraint = chip_get_constraint(a3, a2, v13);\n  v19 = constraint;\n  if ( constraint != a2 )\n    constraint = expert_log(*a1, 1, \"chip has custom constraint for property: %s\", (const char *)(a2 + 0x1C));\n  v20 = *(unsigned int *)(v19 + 0x38);\n  if ( (_DWORD)v20 != 0 )\n  {\n    if ( (_DWORD)v20 == 6 )\n    {\n      v21 = 0;\nLABEL_54:\n      v27 = 1;\n      goto LABEL_55;\n    }\n    if ( (_DWORD)v20 != 1 )\n    {\n      v47 = \"p->p_container\";\n      goto LABEL_64;\n    }\n    v21 = 0x55;\n    v22 = \"object\";\n  }\n  else\n  {\n    v21 = 0xD;\n    v22 = \"manifest\";\n  }\n  if ( (unsigned int)property_imposable(v19, a3) == 0 )\n  {\n    constraint = expert_log(*a1, 1, \"%s property not imposable on chip: %s\", v22, (const char *)(v19 + 0x1C));\n    v28 = a1[1];\n    if ( v28 != 0 )\n    {\n      v29 = *(__int64 (__fastcall **)(__int64 *, __int64, __int64, _QWORD, _QWORD, __int64))(v28 + 0x30);\n      if ( v29 != nullptr )\n        constraint = v29(a1, v19, 3, 0, 0, a1[2]);\n    }\n    v21 = 0;\n    goto LABEL_59;\n  }\n  v20 = **(_QWORD **)(v19 + 0x28);\n  switch ( v20 )\n  {\n    case 0LL:\n      PropertyBoolean = Img4DecodeGetPropertyBoolean(a4, v12, v53);\n      if ( (_DWORD)PropertyBoolean != 0 )\n      {\n        v41 = PropertyBoolean;\n        v21 = posixdr(v40);\n        constraint = expert_log(*a1, 0, \"Img4DecodeGetPropertyBoolean: %d\", v41);\nLABEL_31:\n        if ( (_DWORD)v21 == 0 )\n          goto LABEL_54;\nLABEL_51:\n        v42 = a1[1];\n        if ( v42 != 0 )\n        {\n          v43 = *(__int64 (__fastcall **)(__int64 *, __int64, __int64, __int64))(v42 + 0x18);\n          if ( v43 != nullptr )\n            constraint = v43(a1, a3, v19, a1[2]);\n        }\n        goto LABEL_54;\n      }\n      constraint = expert_query_property_bool(v10, a3, v19, v51);\n      if ( (_DWORD)constraint != 0 )\n        goto LABEL_48;\n      if ( (unsigned int)property_constrain_bool(v19, v10, v53, v51) == 0 )\n        goto LABEL_35;\nLABEL_50:\n      constraint = expert_log(\n                     *a1,\n                     0,\n                     \"%s constraint violated: property = %s, type = %s: %d\",\n                     v22,\n                     (const char *)(v19 + 0x1C),\n                     *(const char **)(*(_QWORD *)(v19 + 0x28) + 8LL),\n                     v21);\n      goto LABEL_51;\n    case 1LL:\n      PropertyInteger = Img4DecodeGetPropertyInteger(a4, v12, v53);\n      if ( (_DWORD)PropertyInteger != 0 )\n      {\n        v32 = PropertyInteger;\n        v21 = posixdr(v31);\n        constraint = expert_log(*a1, 0, \"Img4DecodeGetPropertyInteger: %d\", v32);\n        goto LABEL_31;\n      }\n      constraint = expert_query_property_uint32(v10, a3, v19, v51);\n      if ( (_DWORD)constraint == 0 )\n      {\n        if ( (unsigned int)property_constrain_uint32(v19, v10, v53, v51) != 0 )\n          goto LABEL_50;\n        goto LABEL_35;\n      }\nLABEL_48:\n      v21 = constraint;\n      goto LABEL_51;\n    case 2LL:\n      PropertyInteger64 = Img4DecodeGetPropertyInteger64(a4, v12, v53);\n      if ( (_DWORD)PropertyInteger64 != 0 )\n      {\n        v35 = PropertyInteger64;\n        v21 = posixdr(v34);\n        constraint = expert_log(*a1, 0, \"Img4DecodeGetPropertyInteger64: %d\", v35);\n        goto LABEL_31;\n      }\n      constraint = expert_query_property_uint64(v10, a3, v19, v51);\n      if ( (_DWORD)constraint != 0 )\n        goto LABEL_48;\n      if ( (unsigned int)property_constrain_uint64(v19, v10, v53, v51) == 0 )\n        goto LABEL_35;\n      goto LABEL_50;\n    case 3LL:\n      PropertyData = Img4DecodeGetPropertyData(a4, v12, &v49, &v50);\n      if ( (_DWORD)PropertyData != 0 )\n      {\n        v38 = PropertyData;\n        v21 = posixdr(v37);\n        v26 = *a1;\n        v48 = v38;\n        goto LABEL_28;\n      }\n      digest_init(v53, v49, v50);\n      if ( (unsigned int)property_equal(v19, digest) != 0 )\n      {\n        expert_log(*a1, 1, \"imposing object digest\");\n        payload_measure(*(_QWORD *)(a5 + 0x10), a3, v51);\n      }\n      else\n      {\n        constraint = expert_query_property_digest(v10, a3, v19, v51);\n        if ( (_DWORD)constraint != 0 )\n          goto LABEL_48;\n      }\n      if ( (unsigned int)property_constrain_digest(v19, v10, v53, v51) == 0 )\n        goto LABEL_35;\n      goto LABEL_50;\n    case 4LL:\n      v23 = Img4DecodeGetPropertyData(a4, v12, &v49, &v50);\n      if ( (_DWORD)v23 != 0 )\n      {\n        v25 = v23;\n        v21 = posixdr(v24);\n        v26 = *a1;\n        v48 = v25;\nLABEL_28:\n        constraint = expert_log(v26, 0, \"Img4DecodeGetPropertyData: %d\", v48);\n        goto LABEL_31;\n      }\n      version_init(v53, v49, v50);\n      constraint = expert_query_property_version(v10, a3, (char *)v19, (__int64)v51);\n      if ( (_DWORD)constraint != 0 )\n        goto LABEL_48;\n      if ( (unsigned int)property_constrain_version(v19, v10, (const char *)v53, (const char *)v51) != 0 )\n        goto LABEL_50;\nLABEL_35:\n      constraint = expert_log(\n                     *a1,\n                     2,\n                     \"%s constraint satisfied: property = %s, type = %s\",\n                     v22,\n                     (const char *)(v19 + 0x1C),\n                     *(const char **)(*(_QWORD *)(v19 + 0x28) + 8LL));\n      v21 = 0;\n      v27 = 0;\nLABEL_55:\n      v44 = a1[1];\n      if ( v44 != 0 )\n      {\n        v45 = *(__int64 (__fastcall **)(__int64 *, __int64, __int64, _QWORD *, _QWORD *, __int64))(v44 + 0x30);\n        if ( v45 != nullptr )\n          constraint = v45(a1, v19, v27, v53, v51, a1[2]);\n      }\n      if ( (unsigned int)v21 >= 0x6B )\nLABEL_62:\n        __panic_npx(\"panic: error not set to valid posix code: %d\", v21);\nLABEL_59:\n      if ( *MEMORY[0x268186AA8] != v55 )\n      {\n        sub_2480E56B0(constraint, v15, v27, v16, v17, v18);\n        goto LABEL_62;\n      }\n      return v21;\n    default:\n      v47 = \"p->p_type->pt_switchable\";\nLABEL_64:\n      __panic_npx(\"panic: unreachable case: %s = 0x%llx\", v47, v20);\n  }\n}\n"
+    },
+    {
+      "address": "0x2438b9838",
+      "end_address": "0x2438b9998",
+      "input": "_version_init",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "i",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v18",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v19",
+          "type": "_QWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v20",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v21",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v22",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v23",
+          "type": "_QWORD[8]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v24",
+          "type": "__int64"
+        }
+      ],
+      "name": "_version_init",
+      "prototype": "__int64 __fastcall version_init(__int64 a1)",
+      "pseudocode": "__int64 __fastcall version_init(__int64 a1)\n{\n  __int64 v2; // x0\n  __int64 i; // x21\n  __int64 v4; // x0\n  int v5; // w0\n  __int64 v6; // x8\n  __int64 v7; // x0\n  __int64 v8; // x1\n  __int64 v9; // x2\n  __int64 v10; // x3\n  __int64 v11; // x4\n  __int64 v12; // x5\n  __int64 v14; // x0\n  __int64 v15; // x1\n  __int64 v16; // x2\n  __int64 v17; // [xsp+8h] [xbp-C8h] BYREF\n  _QWORD *v18; // [xsp+10h] [xbp-C0h] BYREF\n  _QWORD v19[2]; // [xsp+18h] [xbp-B8h]\n  __int128 v21; // [xsp+30h] [xbp-A0h]\n  int v22; // [xsp+40h] [xbp-90h]\n  _QWORD v23[8]; // [xsp+50h] [xbp-80h] BYREF\n  __int64 v24; // [xsp+98h] [xbp-38h]\n\n  v24 = *MEMORY[0x268186AA8];\n  memset(v23, 0, sizeof(v23));\n  v21 = xmmword_2438D4020;\n  v22 = 0;\n  v19[0] = 0xFFFFFFFFFFFFFFFFLL;\n  v19[1] = 0xFFFFFFFFFFFFFFFFLL;\n  v18 = v23;\n  cstring_init_with_buff();\n  *(_OWORD *)(a1 + 0x50) = xmmword_2438D4020;\n  *(_DWORD *)(a1 + 0x60) = v22;\n  *(_DWORD *)(a1 + 0x64) = 0xFADE2DED;\n  v2 = _boot_expert_init(a1);\n  sub_2480FD180(v23, v2, 0x40, 0x40);\n  v17 = strsep_npx(&v18, \",\");\n  if ( v18 != nullptr )\n    *(_DWORD *)(a1 + 0x64) = _strtou_bounded(v18, 0, 0);\n  for ( i = 0; i != 0x14; i += 4 )\n  {\n    v4 = strsep_npx(&v17, \".\");\n    if ( v4 == 0 )\n      break;\n    v5 = _strtou_bounded(v4, *(unsigned int *)((char *)&v21 + i), *(unsigned int *)((char *)v19 + i));\n    v6 = a1 + i;\n    *(_DWORD *)(v6 + 0x50) = v5;\n  }\n  v7 = sub_2480FC5D0();\n  if ( (_DWORD)v7 == 0 )\n    *(_DWORD *)(a1 + 0x50) = 0;\n  if ( *MEMORY[0x268186AA8] == v24 )\n    return a1;\n  v14 = sub_2480E56B0(v7, v8, v9, v10, v11, v12);\n  return _strtou_bounded(v14, v15, v16);\n}\n"
+    },
+    {
+      "address": "0x2438b1328",
+      "end_address": "0x2438b1450",
+      "input": "_CTImg4GetDigestType",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_CTImg4GetDigestType",
+      "prototype": "__int64 __fastcall CTImg4GetDigestType(_QWORD *a1)",
+      "pseudocode": "__int64 __fastcall CTImg4GetDigestType(_QWORD *a1)\n{\n  __int64 v2; // x19\n\n  v2 = a1[1];\n  if ( v2 == 5 && (unsigned int)sub_2480E5790(*a1, &_oidSha1, 5) == 0 )\n    return 1;\n  if ( v2 == 9 && (unsigned int)sub_2480E5790(*a1, &_oidSha224, 9) == 0 )\n    return 2;\n  if ( v2 == 9 && (unsigned int)sub_2480E5790(*a1, &_oidSha256, 9) == 0 )\n    return 4;\n  if ( v2 == 9 && (unsigned int)sub_2480E5790(*a1, &_oidSha384, 9) == 0 )\n    return 8;\n  if ( v2 != 9 || (unsigned int)sub_2480E5790(*a1, &_oidSha512, 9) != 0 )\n    __panic_npx(\"panic: unsupported digest type: oid len = %lu\", v2);\n  return 0x10;\n}\n"
+    },
+    {
+      "address": "0x2438d2414",
+      "end_address": "0x2438d24f4",
+      "input": "_verify_signature_hybrid_scheme3",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "_38",
+          "type": "__int64"
+        }
+      ],
+      "name": "_verify_signature_hybrid_scheme3",
+      "prototype": "__int64 __fastcall verify_signature_hybrid_scheme3(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, __int64 a7)",
+      "pseudocode": "__int64 __fastcall verify_signature_hybrid_scheme3(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7)\n{\n  __int64 result; // x0\n  __int64 _38; // [xsp+38h] [xbp+8h]\n\n  result = 6;\n  if ( a7 != 0 && a5 != 0 && a3 != 0 && a1 != 0 && a2 != 0 && a4 != 0 && a6 != 0 )\n  {\n    if ( hybrid_scheme3_pubkey_cast(a1) != 0 && hybrid_scheme3_signature_cast(a3, a4) != 0 )\n    {\n      result = verify_signature_rsa4096_fixed();\n      if ( (_DWORD)result == 0 )\n      {\n        if ( ((_38 ^ (2 * _38)) & 0x4000000000000000LL) != 0 )\n          __break(0xC471u);\n        return verify_signature_ml_dsa_87();\n      }\n    }\n    else\n    {\n      return 6;\n    }\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2438d22a4",
+      "end_address": "0x2438d2414",
+      "input": "_verify_signature_ml_dsa_87",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64 **"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "bool"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v22",
+          "type": "_BYTE[2600]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v23",
+          "type": "_QWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v24",
+          "type": "__int64"
+        }
+      ],
+      "name": "_verify_signature_ml_dsa_87",
+      "prototype": "__int64 __fastcall verify_signature_ml_dsa_87(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, __int64 a7)",
+      "pseudocode": "__int64 __fastcall verify_signature_ml_dsa_87(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7)\n{\n  __int64 result; // x0\n  __int64 v9; // x8\n  __int64 **v10; // x8\n  __int64 *v11; // x8\n  __int64 v12; // x8\n  bool v13; // zf\n  __int64 v14; // x24\n  __int64 v15; // x0\n  __int64 v16; // x1\n  __int64 v17; // x2\n  __int64 v18; // x3\n  __int64 v19; // x4\n  __int64 v20; // x5\n  __int64 v21; // x6\n  _BYTE v22[2600]; // [xsp+0h] [xbp-A80h] BYREF\n  _QWORD v23[2]; // [xsp+A28h] [xbp-58h] BYREF\n  __int64 v24; // [xsp+A38h] [xbp-48h]\n\n  v24 = *MEMORY[0x268186AA8];\n  v23[0] = 0;\n  v23[1] = 0;\n  result = 6;\n  if ( a1 == 0 )\n    goto LABEL_26;\n  if ( a2 == 0 )\n    goto LABEL_26;\n  if ( a3 == 0 )\n    goto LABEL_26;\n  if ( a4 == 0 )\n    goto LABEL_26;\n  if ( a5 == 0 )\n    goto LABEL_26;\n  if ( a6 == 0 )\n    goto LABEL_26;\n  if ( a7 == 0 )\n    goto LABEL_26;\n  v9 = *(_QWORD *)(a7 + 0x20);\n  if ( v9 == 0 )\n    goto LABEL_26;\n  v10 = *(__int64 ***)(v9 + 0x10);\n  if ( v10 == nullptr )\n    goto LABEL_26;\n  v11 = *v10;\n  if ( v11 == nullptr || ((v12 = *v11, a2 == 0xA20) ? (v13 = a6 == v12) : (v13 = false), !v13) )\n  {\nLABEL_23:\n    result = 0xFFFFFFFFLL;\n    goto LABEL_26;\n  }\n  if ( MEMORY[0x2697406E0] == 0 )\n    goto LABEL_28;\n  v14 = sub_248107C40(6);\n  sub_2480E5720(v22, 0xA28);\n  if ( MEMORY[0x2697406E8] == 0 )\n    goto LABEL_28;\n  result = sub_248107C50(v14, 0xA20, a1, v22);\n  if ( (_DWORD)result != 0 )\n    goto LABEL_26;\n  if ( MEMORY[0x2697406F0] != 0 )\n  {\n    if ( MEMORY[0x268186910] != 0 )\n    {\n      result = sub_248107C70();\n      if ( (_DWORD)result != 0 )\n        goto LABEL_26;\n      if ( (unsigned int)sub_248107AA0(0x10, MEMORY[0x268186910], v23) != 0 )\n        goto LABEL_23;\n    }\n    else\n    {\n      result = sub_248107C60();\n      if ( (_DWORD)result != 0 )\n        goto LABEL_26;\n    }\n    result = 0;\n  }\n  else\n  {\nLABEL_28:\n    result = 4;\n  }\nLABEL_26:\n  if ( *MEMORY[0x268186AA8] != v24 )\n  {\n    v15 = sub_2480E56B0(result, a2, a3, a4, a5, a6);\n    return verify_signature_hybrid_scheme3(v15, v16, v17, v18, v19, v20, v21);\n  }\n  return result;\n}\n"
+    }
+  ],
+  "database_target": "54bf8b211d08",
+  "requested": [
+    "__manifest_impose_property",
+    "_version_init",
+    "_CTImg4GetDigestType",
+    "_verify_signature_hybrid_scheme3",
+    "_verify_signature_ml_dsa_87"
+  ]
+}

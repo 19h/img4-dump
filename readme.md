@@ -14,7 +14,7 @@
 
 <br />
 
-`img4-dump` is a command-line utility for low-level analysis of Apple's IMG4 firmware format. It parses IMG4 containers and their standalone components (IM4P payloads, IM4M manifests), extracts all embedded data, and provides tools for decryption and decompression. Its primary function is to support security research and reverse engineering of firmware for Apple devices.
+`img4-dump` is a command-line utility for low-level analysis of Apple's IMG4 firmware format. It parses IMG4 containers and standalone IM4P payloads, IM4M manifests, and IM4R restore-info components. It extracts embedded data and provides tools for decryption and decompression. Its primary function is to support security research and reverse engineering of firmware for Apple devices.
 
 ### Installation
 
@@ -134,22 +134,29 @@ img4-dump --json my_firmware.img4 > summary.json
 
 ### Features
 
-*   **Comprehensive Parsing:** Handles `IMG4` containers, standalone `IM4P` payloads, and standalone `IM4M` manifests.
-*   **Component Extraction:** Dumps the raw DER-encoded bytes of the IM4P, IM4M, and IM4R components.
+*   **Comprehensive Parsing:** Handles `IMG4` containers, standalone `IM4P` payloads, `IM4M` manifests, and `IM4R` restore-info components.
+*   **Component Extraction:** Dumps IM4P payload bytes, KBAG DER, and requested IM4M/IM4R DER components.
 *   **AES Decryption:** Decrypts IM4P payloads using user-supplied IV and Key.
     *   Supports AES-128, AES-192, and AES-256.
     *   Supports Counter (CTR) and Cipher Block Chaining (CBC) modes.
     *   Automatically reads IV/Key from plaintext `KBAG` tags if present in the IM4P.
+*   **Payload Properties:** Parses the native `[0] EXPLICIT PAYP` optional field, including payloads with no KBAG or compression descriptor. The previously accepted bare PAYP form remains supported.
+*   **Native Metadata:** Adds the 223 image-entry aliases (203 distinct FourCCs) recovered from libauthinstall, retaining ambiguous mappings. Cryptex1 scalar fields and nonce-slot identifiers use the native property types; `love` and `vnum` preserve OCTET STRING bytes.
+*   **Complete Input Consumption:** Rejects trailing bytes after a top-level DER component. Parsing remains an inspection operation; it does not perform native trust evaluation or enforce every native schema constraint.
 *   **Decompression:** Optionally decompresses decrypted payloads (requires feature flags).
     *   LZFSE via the `lzfse` codec.
     *   LZSS via a self-contained, dependency-free implementation of Apple's `complzss`/Okumura format, with Adler-32 self-validation of the decompressed result.
 *   **Manifest Analysis:**
     *   Extracts a structured property list from an IM4M (global properties plus per-image groups) into JSON.
-    *   Dumps the full X.509 certificate chain used for signature validation.
+    *   Extracts embedded certificate items as DER and PEM; certificate-format classification and signature verification are not performed.
 *   **Flexible Output:** Provides verbose logging for detailed analysis and a machine-readable JSON summary for automation. In `--json` mode, errors are emitted as a structured `{"error": ...}` object so consumers always receive valid JSON.
 *   **Key Hygiene:** The JSON summary never serializes raw KBAG IV/key bytes — only the key class and lengths — so piping `--json` output to logs cannot leak plaintext key material.
 
 ### Technical Background
+
+The compression descriptor's method `1` is reported as LZFSE. Method `0` has unknown semantics and is reported as `unknown(0)`; LZSS detection uses the payload's `complzss` header. LZFSE detection recognizes `bvx1`, `bvx2`, `bvxn`, and `bvx-` block starts.
+
+The [ten-binary audit](research/binary-audit.md) records the native evidence, implemented changes, additional format opportunities, assumption register, and verification results.
 
 The IMG4 format is a container structure used by Apple for distributing and verifying firmware components. It is based on ASN.1 DER (Abstract Syntax Notation One, Distinguished Encoding Rules), a standard for encoding structured data.
 
@@ -164,7 +171,7 @@ A typical `IMG4` file contains three main components:
     *   **Structure:** An ASN.1 `SEQUENCE` containing properties like the payload's SHA hash (`DGST`), security domain (`SDOM`), and various other boot-time parameters.
     *   **Verification:** The manifest is signed by Apple, and the signature is verified by the device's Boot ROM or a preceding bootloader stage against a chain of trust rooted in an Apple hardware certificate. This tool can extract the certificate chain but does not perform signature validation.
 
-3.  **IM4R (Image Restore Info):** An opaque data blob related to the device restore process. This tool extracts it without further interpretation.
+3.  **IM4R (Image Restore Info):** Restore-time properties carried in a DER sequence. The tool preserves the raw component and extracts typed properties, including the `BNCN` boot nonce, from embedded or standalone IM4R.
 
 ### Output File Structure
 

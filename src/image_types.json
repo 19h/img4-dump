@@ -1,0 +1,631 @@
+{
+  "acfw": [
+    "AudioCodecFirmware"
+  ],
+  "acib": [
+    "ACIBT",
+    "AudioAP1,ACIBT"
+  ],
+  "acio": [
+    "AVISP1,ACIO"
+  ],
+  "aciw": [
+    "ACIWIFI"
+  ],
+  "almo": [
+    "Alamo"
+  ],
+  "alpm": [
+    "Ap,LowPowerMode"
+  ],
+  "ane1": [
+    "Ap,ANE1"
+  ],
+  "ane2": [
+    "Ap,ANE2"
+  ],
+  "ane3": [
+    "Ap,ANE3"
+  ],
+  "anef": [
+    "ANE"
+  ],
+  "ansf": [
+    "ANS"
+  ],
+  "aop2": [
+    "AOP2"
+  ],
+  "aopf": [
+    "AOP",
+    "AVISP1,AOP"
+  ],
+  "apmu": [
+    "Cellular1,PMUFW"
+  ],
+  "auac": [
+    "Ap,AudioAccessibilityBootChime"
+  ],
+  "aubt": [
+    "Ap,AudioBootChime"
+  ],
+  "audl": [
+    "AVISP1,AudioLeft"
+  ],
+  "audr": [
+    "AVISP1,AudioRight"
+  ],
+  "aupr": [
+    "Ap,AudioPowerAttachChime"
+  ],
+  "avdf": [
+    "Ap,AVD"
+  ],
+  "ave0": [
+    "Ap,AppleVideoEncoder0"
+  ],
+  "ave1": [
+    "Ap,AppleVideoEncoder1"
+  ],
+  "ave2": [
+    "Ap,AppleVideoEncoder2"
+  ],
+  "ave3": [
+    "Ap,AppleVideoEncoder3"
+  ],
+  "ave4": [
+    "Ap,AppleVideoEncoder4"
+  ],
+  "ave5": [
+    "Ap,AppleVideoEncoder5"
+  ],
+  "ave6": [
+    "Ap,AppleVideoEncoder6"
+  ],
+  "ave7": [
+    "Ap,AppleVideoEncoder7"
+  ],
+  "ave8": [
+    "Ap,AppleVideoEncoder8"
+  ],
+  "avef": [
+    "AVE"
+  ],
+  "bat0": [
+    "BatteryLow0"
+  ],
+  "bat1": [
+    "BatteryLow1"
+  ],
+  "batF": [
+    "BatteryFull"
+  ],
+  "bklc": [
+    "Baobab,BacklightController"
+  ],
+  "bstc": [
+    "Ap,BaseSystemTrustCache"
+  ],
+  "bsys": [
+    "BaseSystem"
+  ],
+  "butn": [
+    "Buttons1,ButtonsFirmware"
+  ],
+  "c411": [
+    "Ap,CryptexInfoPlist"
+  ],
+  "cabl": [
+    "Baobab,Cabal"
+  ],
+  "caos": [
+    "Cryptex1,AppOS"
+  ],
+  "casy": [
+    "Cryptex1,AppVolume"
+  ],
+  "cdpd": [
+    "Cellular1,CdpAscDl"
+  ],
+  "cdph": [
+    "Cellular1,CdpHost"
+  ],
+  "cdpu": [
+    "Cellular1,CdpAscUl"
+  ],
+  "cfel": [
+    "CFELoader"
+  ],
+  "chg0": [
+    "BatteryCharging0"
+  ],
+  "chg1": [
+    "BatteryCharging1"
+  ],
+  "ciof": [
+    "Ap,CIO"
+  ],
+  "cphy": [
+    "Ap,AppleTypeCPhyFirmware",
+    "Timer,AppleTypeCPhyFirmware,1"
+  ],
+  "cpxd": [
+    "CryptexDMG"
+  ],
+  "cros": [
+    "Cryptex1,RosettaOS"
+  ],
+  "crsy": [
+    "Cryptex1,RosettaVolume"
+  ],
+  "crwn": [
+    "CrownFirmware"
+  ],
+  "csos": [
+    "Cryptex1,SystemOS"
+  ],
+  "cssy": [
+    "Cryptex1,SystemVolume"
+  ],
+  "csys": [
+    "BaseSystemVolume"
+  ],
+  "dali": [
+    "Dali"
+  ],
+  "dbfw": [
+    "Ap,DebugCPUFirmware"
+  ],
+  "dcp2": [
+    "Ap,DCP2"
+  ],
+  "dcpf": [
+    "DCP"
+  ],
+  "dfw1": [
+    "DMC,Firmware1"
+  ],
+  "diag": [
+    "Diags"
+  ],
+  "disp": [
+    "AVISP1,Display"
+  ],
+  "diss": [
+    "AVISP1,DisplaySec"
+  ],
+  "drko": [
+    "AVISP1,DiagRTKitOS"
+  ],
+  "dtre": [
+    "DeviceTree"
+  ],
+  "dtrs": [
+    "EngineeringTrustCache"
+  ],
+  "duhf": [
+    "DMC,UsbHubFirmware"
+  ],
+  "dutf": [
+    "DMC,USBPDThunderboltFirmware"
+  ],
+  "dven": [
+    "Ap,DisplayVendorCalibration"
+  ],
+  "dvf1": [
+    "DMC,VCOMFirmware1"
+  ],
+  "edcp": [
+    "ExtDCP"
+  ],
+  "excl": [
+    "Ap,cL4"
+  ],
+  "exic": [
+    "Ap,ExclaveOSIntegrityCatalog"
+  ],
+  "exos": [
+    "Ap,ExclaveOS"
+  ],
+  "extc": [
+    "Ap,ExclaveOSTrustCache"
+  ],
+  "exvl": [
+    "Ap,ExclaveOSVolume"
+  ],
+  "ftap": [
+    "ftap"
+  ],
+  "ftsp": [
+    "ftsp"
+  ],
+  "gdmg": [
+    "Cryptex1,GenericDmg"
+  ],
+  "gf1f": [
+    "Ap,GFX1Firmware"
+  ],
+  "gfxf": [
+    "GFX"
+  ],
+  "ginc": [
+    "Cryptex1,GenericIntegrityCatalog"
+  ],
+  "ginf": [
+    "Cryptex1,CryptexInfoPlist"
+  ],
+  "glyC": [
+    "BatteryCharging"
+  ],
+  "glyP": [
+    "BatteryPlugin"
+  ],
+  "gtcd": [
+    "Cryptex1,GenericTrustCache"
+  ],
+  "gtgv": [
+    "Cryptex1,GenericVolume"
+  ],
+  "hamf": [
+    "Hamm"
+  ],
+  "hmmr": [
+    "PEHammer"
+  ],
+  "homr": [
+    "Homer"
+  ],
+  "hpas": [
+    "Ap,HapticAssets"
+  ],
+  "ibd1": [
+    "iBootDataStage1"
+  ],
+  "ibdt": [
+    "iBootData",
+    "Cellular1,iBootData"
+  ],
+  "ibec": [
+    "iBEC"
+  ],
+  "ibot": [
+    "iBoot"
+  ],
+  "ibss": [
+    "iBSS"
+  ],
+  "icnf": [
+    "Rap,RTKitIOConfig"
+  ],
+  "illb": [
+    "LLB",
+    "AVISP1,LLB",
+    "Cellular1,LLB"
+  ],
+  "ipdf": [
+    "InputDevice"
+  ],
+  "ispf": [
+    "ISP",
+    "AVISP1,ISP"
+  ],
+  "isys": [
+    "SystemVolume"
+  ],
+  "its1": [
+    "iBootTestStage1"
+  ],
+  "itst": [
+    "iBootTest"
+  ],
+  "kmpi": [
+    "AVISP1,kmpi"
+  ],
+  "krnl": [
+    "KernelCache"
+  ],
+  "lckr": [
+    "SystemLocker"
+  ],
+  "liqd": [
+    "Liquid"
+  ],
+  "lobo": [
+    "Ap,LocalBoot"
+  ],
+  "logo": [
+    "AppleLogo"
+  ],
+  "lpbt": [
+    "ACIBTLPEM"
+  ],
+  "lpda": [
+    "AVISP1,LeapBinsDigestsArray"
+  ],
+  "lphp": [
+    "LeapHaptics"
+  ],
+  "lpol": [
+    "Ap,LocalPolicy"
+  ],
+  "lpw0": [
+    "LowPowerWallet0"
+  ],
+  "lpw1": [
+    "LowPowerWallet1"
+  ],
+  "lpw2": [
+    "LowPowerWallet2"
+  ],
+  "ltrs": [
+    "LoadableTrustCache"
+  ],
+  "mefi": [
+    "MacEFI"
+  ],
+  "mndo": [
+    "Ap,MandoFW"
+  ],
+  "msrf": [
+    "Ap,MSRFirmware"
+  ],
+  "msys": [
+    "Ap,SystemVolumeCanonicalMetadata"
+  ],
+  "mtfw": [
+    "Multitouch"
+  ],
+  "mtpf": [
+    "MtpFirmware"
+  ],
+  "nsih": [
+    "Ap,NextStageIM4MHash"
+  ],
+  "nsrv": [
+    "NeedService"
+  ],
+  "osab": [
+    "Cryptex1,MobileAssetBrainOS"
+  ],
+  "osrd": [
+    "OSRamdisk"
+  ],
+  "pdmg": [
+    "PersonalizedDMG"
+  ],
+  "pert": [
+    "PERTOS",
+    "AVISP1,PERTOS"
+  ],
+  "phlt": [
+    "PHLEET"
+  ],
+  "phyb": [
+    "AudioAP1,PhyBlueTooth"
+  ],
+  "pmcf": [
+    "Ap,ApplePMCFirmware"
+  ],
+  "pmfw": [
+    "Cellular1,PMUFW2"
+  ],
+  "pmpf": [
+    "PMP"
+  ],
+  "ran1": [
+    "Ap,RestoreANE1"
+  ],
+  "ran2": [
+    "Ap,RestoreANE2"
+  ],
+  "ran3": [
+    "Ap,RestoreANE3"
+  ],
+  "rans": [
+    "RestoreANS"
+  ],
+  "raop": [
+    "RestoreAOP"
+  ],
+  "rbmt": [
+    "RBM"
+  ],
+  "rcio": [
+    "Ap,RestoreCIO"
+  ],
+  "rdc2": [
+    "Ap,RestoreDCP2"
+  ],
+  "rdcp": [
+    "RestoreDCP"
+  ],
+  "rdsk": [
+    "RestoreRamDisk"
+  ],
+  "rdtr": [
+    "RestoreDeviceTree"
+  ],
+  "recm": [
+    "RecoveryMode"
+  ],
+  "recp": [
+    "RestoreExtDCP"
+  ],
+  "rfta": [
+    "rfta"
+  ],
+  "rfts": [
+    "rfts"
+  ],
+  "rkof": [
+    "AudioAP1,RTKitOSFeature"
+  ],
+  "rkos": [
+    "AVISP1,RTKitOS",
+    "Audio1,RTKitOS",
+    "AudioAP1,RTKitOS",
+    "Cellular1,RTKitOS",
+    "Rap,RTKitOS",
+    "SE,RapRTKitOS",
+    "Wireless1,RTKitOS"
+  ],
+  "rkrn": [
+    "RestoreKernelCache"
+  ],
+  "rlg1": [
+    "Ap,rOSLogo1"
+  ],
+  "rlg2": [
+    "Ap,rOSLogo2"
+  ],
+  "rlgo": [
+    "RestoreLogo"
+  ],
+  "rmsr": [
+    "Ap,RestoreMSRFirmware"
+  ],
+  "ronh": [
+    "Ap,RecoveryOSPolicyNonceHash"
+  ],
+  "rosi": [
+    "OS"
+  ],
+  "rrko": [
+    "Rap,RestoreRTKitOS",
+    "Timer,RTKitOS,1"
+  ],
+  "rrtp": [
+    "RestoreRTP"
+  ],
+  "rsep": [
+    "RestoreSEP"
+  ],
+  "rsm3": [
+    "Ap,RestoreSecureM3Firmware"
+  ],
+  "rspt": [
+    "Ap,RestoreSecurePageTableMonitor"
+  ],
+  "rtmu": [
+    "Ap,RestoreTMU"
+  ],
+  "rtpf": [
+    "RTP"
+  ],
+  "rtrx": [
+    "Ap,RestoreTrustedExecutionMonitor"
+  ],
+  "rtsc": [
+    "RestoreTrustCache"
+  ],
+  "rxcl": [
+    "Ap,RestorecL4"
+  ],
+  "sbd1": [
+    "AudioAP1,SoftwareBinaryDsp1",
+    "Rap,SoftwareBinaryDsp1",
+    "SE,RapSwBinDsp"
+  ],
+  "sc1f": [
+    "SCE1Firmware"
+  ],
+  "scef": [
+    "SCE"
+  ],
+  "scpf": [
+    "Ap,Scorpius"
+  ],
+  "sebl": [
+    "SE,Bootloader"
+  ],
+  "sefw": [
+    "SE,Firmware"
+  ],
+  "semo": [
+    "SE,MigrationOS"
+  ],
+  "seos": [
+    "SE,OS"
+  ],
+  "seph": [
+    "SE,UpdatePayload"
+  ],
+  "sepi": [
+    "SEP",
+    "YonkersIR1,SepObject"
+  ],
+  "siof": [
+    "SIO"
+  ],
+  "sm3f": [
+    "Ap,SecureM3Firmware"
+  ],
+  "sptm": [
+    "Ap,SecurePageTableMonitor"
+  ],
+  "stg1": [
+    "SepStage1"
+  ],
+  "strc": [
+    "AVISP1,SCodec",
+    "Ap,SCodec"
+  ],
+  "syab": [
+    "Cryptex1,MobileAssetBrainVolume"
+  ],
+  "tasf": [
+    "Ap,TouchASICFW"
+  ],
+  "tcon": [
+    "Baobab,TCON"
+  ],
+  "thrd": [
+    "DMC,HarmonyDB"
+  ],
+  "tmuf": [
+    "Ap,TMU",
+    "AVISP1,TMU"
+  ],
+  "tprd": [
+    "DMC,BaobabTCONPresets"
+  ],
+  "trab": [
+    "Cryptex1,MobileAssetBrainTrustCache"
+  ],
+  "trbb": [
+    "Ap,BootabilityBrainTrustCache"
+  ],
+  "trca": [
+    "Cryptex1,AppTrustCache"
+  ],
+  "trcr": [
+    "Cryptex1,RosettaTrustCache"
+  ],
+  "trcs": [
+    "Cryptex1,SystemTrustCache"
+  ],
+  "trin": [
+    "Baobab,Trinity"
+  ],
+  "trst": [
+    "StaticTrustCache"
+  ],
+  "trxm": [
+    "Ap,TrustedExecutionMonitor"
+  ],
+  "ttld": [
+    "DMC,BaobabTCONTrinityCabalLUTs"
+  ],
+  "usbf": [
+    "USBPortController1,USBFirmware"
+  ],
+  "vuid": [
+    "Ap,VolumeUUID"
+  ],
+  "wchf": [
+    "WCHFirmwareUpdater"
+  ],
+  "xhcf": [
+    "Ap,XHC"
+  ]
+}

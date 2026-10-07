@@ -1,0 +1,460 @@
+{
+  "count": 4,
+  "results": [
+    {
+      "address": "0x21a93c240",
+      "end_address": "0x21a93c330",
+      "input": "_amfi_interface_cdhash_in_trustcache",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v11",
+          "type": "_BYTE *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v12",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v13",
+          "type": "_BYTE[64]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v14",
+          "type": "__int64"
+        }
+      ],
+      "name": "_amfi_interface_cdhash_in_trustcache",
+      "prototype": "__int64 __fastcall amfi_interface_cdhash_in_trustcache(__int64 a1, unsigned __int64 a2, _QWORD *a3)",
+      "pseudocode": "__int64 __fastcall amfi_interface_cdhash_in_trustcache(__int64 a1, unsigned __int64 a2, _QWORD *a3)\n{\n  __int64 result; // x0\n  unsigned __int64 v9; // x1\n  __int64 v10; // x0\n  _BYTE *v11; // [xsp+0h] [xbp-80h] BYREF\n  __int128 v12; // [xsp+8h] [xbp-78h]\n  _BYTE v13[64]; // [xsp+18h] [xbp-68h] BYREF\n  __int64 v14; // [xsp+58h] [xbp-28h]\n\n  v14 = *MEMORY[0x268186AA8];\n  if ( a2 - 0x41 < 0xFFFFFFFFFFFFFFD3LL || a1 == 0 || a3 == nullptr )\n  {\n    result = 0x16;\n  }\n  else\n  {\n    *a3 = 0;\n    if ( a2 <= 0x3F )\n      v9 = 0x40 - a2;\n    else\n      v9 = 0;\n    MEMORY[0x2200B8140](&v13[a2], v9);\n    MEMORY[0x2200B81C0](v13, a1, a2);\n    v11 = v13;\n    v12 = xmmword_21A9451B0;\n    LODWORD(v12) = a2;\n    result = MEMORY[0x2200F26F0](\"AMFI\", 0x5F, &v11);\n    if ( (_DWORD)result != 0 )\n      result = *(unsigned int *)MEMORY[0x2200B9400]();\n    else\n      *a3 = *((_QWORD *)&v12 + 1);\n  }\n  if ( *MEMORY[0x268186AA8] != v14 )\n  {\n    v10 = MEMORY[0x2200B80B0](result);\n    return amfi_interface_query_bootarg_state(v10);\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x21a93c5f8",
+      "end_address": "0x21a93c6b0",
+      "input": "_amfi_interface_authorize_local_signing_with_length",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v5",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v6",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v7",
+          "type": "_QWORD[8]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v8",
+          "type": "__int64"
+        }
+      ],
+      "name": "_amfi_interface_authorize_local_signing_with_length",
+      "prototype": "__int64 __fastcall amfi_interface_authorize_local_signing_with_length(__int64 a1, __int64 a2)",
+      "pseudocode": "__int64 __fastcall amfi_interface_authorize_local_signing_with_length(__int64 a1, __int64 a2)\n{\n  int v2; // w19\n  __int64 result; // x0\n  __int64 v4; // x0\n  _QWORD *v5; // [xsp+0h] [xbp-70h] BYREF\n  unsigned __int64 v6; // [xsp+8h] [xbp-68h]\n  _QWORD v7[8]; // [xsp+10h] [xbp-60h] BYREF\n  __int64 v8; // [xsp+58h] [xbp-18h]\n\n  v8 = *MEMORY[0x268186AA8];\n  v6 = 0xAAAAAAAAAAAAAAAALL;\n  memset(v7, 0, sizeof(v7));\n  if ( a1 != 0 )\n  {\n    v2 = a2;\n    if ( (unsigned __int64)(a2 - 0x41) >= 0xFFFFFFFFFFFFFFD3LL )\n    {\n      MEMORY[0x2200B81C0](v7, a1, a2);\n      v5 = v7;\n      LODWORD(v6) = v2;\n      result = MEMORY[0x2200F26F0](\"AMFI\", 0x64, &v5);\n    }\n    else\n    {\n      result = 0x22;\n    }\n  }\n  else\n  {\n    result = 0x16;\n  }\n  if ( *MEMORY[0x268186AA8] != v8 )\n  {\n    v4 = MEMORY[0x2200B80B0](result);\n    return amfi_developer_mode_status(v4);\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x21a937428",
+      "end_address": "0x21a93766c",
+      "input": "-[AMFIPathValidator_macos derCertChain]",
+      "local_variables": [
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v0",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "_128",
+          "type": "__int64"
+        }
+      ],
+      "name": "-[AMFIPathValidator_macos derCertChain]",
+      "prototype": "__int64 -[AMFIPathValidator_macos derCertChain]()",
+      "pseudocode": "__int64 -[AMFIPathValidator_macos derCertChain]()\n{\n  __int64 v0; // x0\n  __int64 v1; // x0\n  __int64 v2; // x19\n  __int64 v3; // x0\n  __int64 v4; // x20\n  __int64 v5; // x21\n  __int64 v6; // x0\n  __int64 v7; // x22\n  __int64 v8; // x25\n  __int64 v9; // x26\n  __int64 v10; // x23\n  __int64 v11; // x24\n  __int64 v12; // x0\n  __int64 v13; // x23\n  __int64 v14; // x0\n  __int64 v15; // x0\n  __int64 v16; // x22\n  __int64 v17; // x0\n  __int64 v18; // x0\n  __int64 v19; // x0\n  __int64 v21; // [xsp+C8h] [xbp-58h]\n  __int64 _128; // [xsp+128h] [xbp+8h]\n\n  v21 = *MEMORY[0x268186AA8];\n  v0 = MEMORY[0x220029AA0]();\n  v1 = MEMORY[0x2200B8220](v0);\n  v2 = v1;\n  if ( v1 == 0 )\n    goto LABEL_24;\n  MEMORY[0x2200015A0](v1);\n  v3 = MEMORY[0x220005460](MEMORY[0x2680CF350]);\n  v4 = MEMORY[0x2200B8220](v3);\n  if ( v4 == 0 )\n  {\n    v14 = MEMORY[0x220029B50](0x274C28CD8LL);\n    v5 = MEMORY[0x2200B8220](v14);\n    if ( (unsigned int)MEMORY[0x2200B82A0](v5, 0x10) != 0 )\n      -[AMFIPathValidator_macos derCertChain].cold.3(v5);\nLABEL_22:\n    MEMORY[0x2200B8250](v5);\n    goto LABEL_23;\n  }\n  v5 = MEMORY[0x2200B8260](v2);\n  v6 = MEMORY[0x220005CD0]();\n  if ( v6 == 0 )\n    goto LABEL_13;\n  v7 = v6;\n  v8 = MEMORY[0];\n  while ( 2 )\n  {\n    v9 = 0;\n    do\n    {\n      if ( MEMORY[0] != v8 )\n        MEMORY[0x2200B9910](v5);\n      v10 = *(_QWORD *)(8 * v9);\n      if ( v10 == 0 || (v11 = MEMORY[0x2200B8D40](*(_QWORD *)(8 * v9))) != MEMORY[0x2200F2620]() )\n      {\n        v15 = MEMORY[0x220029B50](0x274C28CD8LL);\n        v16 = MEMORY[0x2200B8220](v15);\n        if ( (unsigned int)MEMORY[0x2200B82A0](v16, 0x10) != 0 )\n          -[AMFIPathValidator_macos derCertChain].cold.2(v16);\n        goto LABEL_21;\n      }\n      v12 = MEMORY[0x2200F2610](v10);\n      if ( v12 == 0 )\n      {\n        v17 = MEMORY[0x220029B50](0x274C28CD8LL);\n        v16 = MEMORY[0x2200B8220](v17);\n        if ( (unsigned int)MEMORY[0x2200B82A0](v16, 0x10) != 0 )\n          -[AMFIPathValidator_macos derCertChain].cold.1(v16);\nLABEL_21:\n        MEMORY[0x2200B8250](v16);\n        goto LABEL_22;\n      }\n      v13 = v12;\n      MEMORY[0x2200051E0](v4);\n      MEMORY[0x2200B8250](v13);\n      ++v9;\n      --v7;\n    }\n    while ( v7 != 0 );\n    v7 = MEMORY[0x220005CD0](v5);\n    if ( v7 != 0 )\n      continue;\n    break;\n  }\nLABEL_13:\n  MEMORY[0x2200B8250](v5);\n  MEMORY[0x2200B8260](v4);\nLABEL_23:\n  MEMORY[0x2200B8250](v4);\nLABEL_24:\n  v18 = MEMORY[0x2200B8250](v2);\n  if ( *MEMORY[0x268186AA8] == v21 )\n  {\n    if ( ((_128 ^ (2 * _128)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    JUMPOUT(0x2200B8210LL);\n  }\n  v19 = MEMORY[0x2200B80B0](v18);\n  return -[AMFIPathValidator_macos codePath](v19);\n}\n"
+    },
+    {
+      "address": "0x21a93cb4c",
+      "end_address": "0x21a93cce4",
+      "input": "_LWCRTypeVerificationBackend_verifyLWCR",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "void (__fastcall *)(__int64, _QWORD *)"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v8",
+          "type": "_QWORD[8]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v10",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v12",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v14",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v18",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v20",
+          "type": "char"
+        }
+      ],
+      "name": "_LWCRTypeVerificationBackend_verifyLWCR",
+      "prototype": "__int64 __fastcall LWCRTypeVerificationBackend_verifyLWCR(__int64 a1, __int64 a2)",
+      "pseudocode": "__int64 __fastcall LWCRTypeVerificationBackend_verifyLWCR(__int64 a1, __int64 a2)\n{\n  void (__fastcall *v4)(__int64, _QWORD *); // x11\n  char v5; // w20\n  __int64 v6; // x8\n  _QWORD v8[8]; // [xsp+0h] [xbp-B0h] BYREF\n  __int64 v9; // [xsp+40h] [xbp-70h] BYREF\n  __int64 *v10; // [xsp+48h] [xbp-68h]\n  __int64 v13; // [xsp+60h] [xbp-50h] BYREF\n  __int64 *v14; // [xsp+68h] [xbp-48h]\n  __int64 v17; // [xsp+80h] [xbp-30h] BYREF\n  __int64 *v18; // [xsp+88h] [xbp-28h]\n\n  if ( (*(unsigned int (__fastcall **)(__int64))(a1 + 0x10))(a2) == 0x20 )\n  {\n    v17 = 0;\n    v18 = &v17;\n    v13 = 0;\n    v14 = &v13;\n    v9 = 0;\n    v10 = &v9;\n    v4 = *(void (__fastcall **)(__int64, _QWORD *))(a1 + 0x28);\n    v8[0] = MEMORY[0x268186A98];\n    v8[1] = 0x42000000;\n    v8[2] = 0x21A93CCE4LL;\n    v8[3] = 0x26B506CC8LL;\n    v8[4] = &v17;\n    v8[5] = &v13;\n    v8[6] = &v9;\n    v8[7] = a1;\n    v4(a2, v8);\n    v5 = 0;\n    if ( *((_BYTE *)v18 + 0x18) == 1 )\n    {\n      v6 = v14[3];\n      if ( v6 == 0 || (v5 = 1, v6 == 0x7F) && *(_DWORD *)a1 == 2 )\n      {\n        if ( (v10[3] & 1) != 0 )\n        {\n          v5 = 1;\n        }\n        else\n        {\n          (*(void (__fastcall **)(__int64, const char *))(a1 + 0x38))(a1, \"ccat\");\n          *((_BYTE *)v18 + 0x18) = 0;\n          (*(void (__fastcall **)(__int64, __int64))(a1 + 0x48))(a1, 0xC);\n          v5 = *((_BYTE *)v18 + 0x18);\n        }\n      }\n    }\n    MEMORY[0x2200B93B0](&v9, 8);\n    MEMORY[0x2200B93B0](&v13, 8);\n    MEMORY[0x2200B93B0](&v17, 8);\n  }\n  else\n  {\n    (*(void (__fastcall **)(__int64, __int64))(a1 + 0x48))(a1, 2);\n    v5 = 0;\n  }\n  return v5 & 1;\n}\n"
+    }
+  ],
+  "database_target": "9112d92f2593",
+  "requested": [
+    "_amfi_interface_cdhash_in_trustcache",
+    "_amfi_interface_authorize_local_signing_with_length",
+    "-[AMFIPathValidator_macos derCertChain]",
+    "_LWCRTypeVerificationBackend_verifyLWCR"
+  ]
+}

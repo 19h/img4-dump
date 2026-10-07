@@ -1,0 +1,5303 @@
+{
+  "AppleMobileFileIntegrity.merged": {
+    "segments": [
+      {
+        "name": "__TEXT",
+        "start": 9035792384,
+        "end": 9035877348,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 9035796536,
+            "end": 9035860480,
+            "offset": 36920
+          },
+          {
+            "name": "__objc_methlist",
+            "start": 9035860480,
+            "end": 9035862004,
+            "offset": 100864
+          },
+          {
+            "name": "__const",
+            "start": 9035862016,
+            "end": 9035862560,
+            "offset": 102400
+          },
+          {
+            "name": "__cstring",
+            "start": 9035862560,
+            "end": 9035870468,
+            "offset": 102944
+          },
+          {
+            "name": "__oslogstring",
+            "start": 9035870468,
+            "end": 9035875749,
+            "offset": 110852
+          },
+          {
+            "name": "__gcc_except_tab",
+            "start": 9035875752,
+            "end": 9035876284,
+            "offset": 116136
+          },
+          {
+            "name": "__unwind_info",
+            "start": 9035876284,
+            "end": 9035877348,
+            "offset": 116668
+          },
+          {
+            "name": "__objc_stubs",
+            "start": 9035877348,
+            "end": 9035877348,
+            "offset": 0
+          },
+          {
+            "name": "__auth_stubs",
+            "start": 9035877348,
+            "end": 9035877348,
+            "offset": 0
+          },
+          {
+            "name": "__objc_classname",
+            "start": 9035877348,
+            "end": 9035877348,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methname",
+            "start": 9035877348,
+            "end": 9035877348,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methtype",
+            "start": 9035877348,
+            "end": 9035877348,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_CONST",
+        "start": 10343492096,
+        "end": 10343495752,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 10343492096,
+            "end": 10343493792,
+            "offset": 131072
+          },
+          {
+            "name": "__objc_classlist",
+            "start": 10343493792,
+            "end": 10343493864,
+            "offset": 132768
+          },
+          {
+            "name": "__objc_protolist",
+            "start": 10343493864,
+            "end": 10343493872,
+            "offset": 132840
+          },
+          {
+            "name": "__objc_imageinfo",
+            "start": 10343493872,
+            "end": 10343493880,
+            "offset": 132848
+          },
+          {
+            "name": "__objc_selrefs",
+            "start": 10343493880,
+            "end": 10343495128,
+            "offset": 132856
+          },
+          {
+            "name": "__objc_protorefs",
+            "start": 10343495128,
+            "end": 10343495136,
+            "offset": 134104
+          },
+          {
+            "name": "__objc_superrefs",
+            "start": 10343495136,
+            "end": 10343495176,
+            "offset": 134112
+          },
+          {
+            "name": "__got",
+            "start": 10343495176,
+            "end": 10343495752,
+            "offset": 134152
+          }
+        ]
+      },
+      {
+        "name": "__AUTH_CONST",
+        "start": 10390366552,
+        "end": 10390375112,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 10390366552,
+            "end": 10390368296,
+            "offset": 147456
+          },
+          {
+            "name": "__cfstring",
+            "start": 10390368296,
+            "end": 10390370696,
+            "offset": 149200
+          },
+          {
+            "name": "__objc_const",
+            "start": 10390370696,
+            "end": 10390374208,
+            "offset": 151600
+          },
+          {
+            "name": "__auth_got",
+            "start": 10390374208,
+            "end": 10390375096,
+            "offset": 155112
+          },
+          {
+            "name": "__auth_ptr",
+            "start": 10390375112,
+            "end": 10390375112,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA",
+        "start": 10499216272,
+        "end": 10499216488,
+        "sections": [
+          {
+            "name": "__objc_ivar",
+            "start": 10499216272,
+            "end": 10499216464,
+            "offset": 163840
+          },
+          {
+            "name": "__bss",
+            "start": 10499216464,
+            "end": 10499216488,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_DIRTY",
+        "start": 10548841248,
+        "end": 10548842192,
+        "sections": [
+          {
+            "name": "__objc_data",
+            "start": 10548841248,
+            "end": 10548841968,
+            "offset": 180224
+          },
+          {
+            "name": "__data",
+            "start": 10548841968,
+            "end": 10548842160,
+            "offset": 180944
+          },
+          {
+            "name": "__bss",
+            "start": 10548842160,
+            "end": 10548842192,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__LINKEDIT",
+        "start": 12453183488,
+        "end": 12457558016,
+        "sections": []
+      },
+      {
+        "name": "__D0_TEXT",
+        "start": 10548854784,
+        "end": 10549255636,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 10548854784,
+            "end": 10549255636,
+            "offset": 196608
+          }
+        ]
+      },
+      {
+        "name": "__D0_DATA_CONST",
+        "start": 10618325736,
+        "end": 10618347448,
+        "sections": []
+      },
+      {
+        "name": "__D0_AUTH_CONST",
+        "start": 10733452304,
+        "end": 10733477392,
+        "sections": []
+      },
+      {
+        "name": "__D0_DATA",
+        "start": 10807555984,
+        "end": 10807559832,
+        "sections": []
+      },
+      {
+        "name": "__D0_DATA_DIRTY",
+        "start": 10830387648,
+        "end": 10830392552,
+        "sections": []
+      },
+      {
+        "name": "__D5_TEXT",
+        "start": 10830397440,
+        "end": 10830405736,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 10830397440,
+            "end": 10830405736,
+            "offset": 655360
+          }
+        ]
+      },
+      {
+        "name": "__D5_DATA_CONST",
+        "start": 10909958960,
+        "end": 10909959144,
+        "sections": []
+      },
+      {
+        "name": "__D5_AUTH_CONST",
+        "start": 10999321072,
+        "end": 10999321616,
+        "sections": []
+      },
+      {
+        "name": "__D5_DATA",
+        "start": 11093167832,
+        "end": 11093167864,
+        "sections": []
+      },
+      {
+        "name": "__D9_TEXT",
+        "start": 11093180416,
+        "end": 11097440084,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 11093180416,
+            "end": 11097440084,
+            "offset": 671744
+          }
+        ]
+      },
+      {
+        "name": "__D9_DATA_CONST",
+        "start": 12627210960,
+        "end": 12627343728,
+        "sections": []
+      },
+      {
+        "name": "__D9_AUTH_CONST",
+        "start": 12658550632,
+        "end": 12658823112,
+        "sections": []
+      },
+      {
+        "name": "__D9_AUTH",
+        "start": 12866845168,
+        "end": 12866858601,
+        "sections": []
+      },
+      {
+        "name": "__D9_DATA",
+        "start": 12805764224,
+        "end": 12805789232,
+        "sections": []
+      },
+      {
+        "name": "__D9_DATA_DIRTY",
+        "start": 12847649232,
+        "end": 12847651488,
+        "sections": []
+      },
+      {
+        "name": "__D15_TEXT",
+        "start": 12866863104,
+        "end": 12886507040,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 12866863104,
+            "end": 12886507040,
+            "offset": 5390336
+          }
+        ]
+      },
+      {
+        "name": "__D15_DATA_CONST",
+        "start": 14467193728,
+        "end": 14467369392,
+        "sections": []
+      },
+      {
+        "name": "__D15_AUTH_CONST",
+        "start": 14499905712,
+        "end": 14500687448,
+        "sections": []
+      },
+      {
+        "name": "__D15_AUTH",
+        "start": 14711082224,
+        "end": 14711150984,
+        "sections": []
+      },
+      {
+        "name": "__D15_DATA",
+        "start": 14649388976,
+        "end": 14649906481,
+        "sections": []
+      },
+      {
+        "name": "__D15_DATA_DIRTY",
+        "start": 14691954048,
+        "end": 14692041249,
+        "sections": []
+      },
+      {
+        "name": "__D21_TEXT",
+        "start": 14711160832,
+        "end": 14715958368,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 14711160832,
+            "end": 14715958368,
+            "offset": 26673152
+          }
+        ]
+      },
+      {
+        "name": "__D21_DATA_CONST",
+        "start": 16250213696,
+        "end": 16254088072,
+        "sections": []
+      },
+      {
+        "name": "__D21_AUTH_CONST",
+        "start": 16284329256,
+        "end": 16285296176,
+        "sections": []
+      },
+      {
+        "name": "__D21_AUTH",
+        "start": 16493753712,
+        "end": 16493757280,
+        "sections": []
+      },
+      {
+        "name": "__D21_DATA",
+        "start": 16432611432,
+        "end": 16432629400,
+        "sections": []
+      },
+      {
+        "name": "__D21_DATA_DIRTY",
+        "start": 16474539744,
+        "end": 16474553368,
+        "sections": []
+      },
+      {
+        "name": "__D27_TEXT",
+        "start": 16493772800,
+        "end": 16494097912,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 16493772800,
+            "end": 16494097912,
+            "offset": 36356096
+          }
+        ]
+      },
+      {
+        "name": "__D27_DATA_CONST",
+        "start": 18102168480,
+        "end": 18102171464,
+        "sections": []
+      },
+      {
+        "name": "__D27_AUTH_CONST",
+        "start": 18134765776,
+        "end": 18134769456,
+        "sections": []
+      },
+      {
+        "name": "__D27_AUTH",
+        "start": 18346042080,
+        "end": 18346042232,
+        "sections": []
+      },
+      {
+        "name": "__D27_DATA",
+        "start": 18284199936,
+        "end": 18284202040,
+        "sections": []
+      },
+      {
+        "name": "__D27_DATA_DIRTY",
+        "start": 18326748800,
+        "end": 18326774904,
+        "sections": []
+      },
+      {
+        "name": "__D27_OBJC_RO",
+        "start": 18442483624,
+        "end": 18566432808,
+        "sections": []
+      },
+      {
+        "name": "__D27_OBJC_RW",
+        "start": 18323947520,
+        "end": 18326748792,
+        "sections": []
+      },
+      {
+        "name": "__D35_TEXT",
+        "start": 18566447104,
+        "end": 18567057460,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 18566447104,
+            "end": 18567057460,
+            "offset": 163479552
+          }
+        ]
+      },
+      {
+        "name": "__D35_DATA_CONST",
+        "start": 20094412064,
+        "end": 20094415256,
+        "sections": []
+      },
+      {
+        "name": "__D35_AUTH_CONST",
+        "start": 20126062264,
+        "end": 20126079464,
+        "sections": []
+      },
+      {
+        "name": "__D35_AUTH",
+        "start": 20333916464,
+        "end": 20333916512,
+        "sections": []
+      },
+      {
+        "name": "__D35_DATA",
+        "start": 20272931200,
+        "end": 20272969496,
+        "sections": []
+      },
+      {
+        "name": "__D35_DATA_DIRTY",
+        "start": 20314723864,
+        "end": 20314730856,
+        "sections": []
+      },
+      {
+        "name": "__D41_TEXT",
+        "start": 20333920256,
+        "end": 20333926644,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 20333920256,
+            "end": 20333926644,
+            "offset": 164167680
+          }
+        ]
+      },
+      {
+        "name": "__D41_DATA_CONST",
+        "start": 20589093032,
+        "end": 20589093048,
+        "sections": []
+      },
+      {
+        "name": "__D41_AUTH_CONST",
+        "start": 20651493856,
+        "end": 20651494616,
+        "sections": []
+      },
+      {
+        "name": "__D41_DATA",
+        "start": 20729539264,
+        "end": 20729539272,
+        "sections": []
+      },
+      {
+        "name": "__D41_DATA_DIRTY",
+        "start": 20747600544,
+        "end": 20747600552,
+        "sections": []
+      },
+      {
+        "name": "__D46_TEXT",
+        "start": 20747616256,
+        "end": 20748558512,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 20747616256,
+            "end": 20748558512,
+            "offset": 164184064
+          }
+        ]
+      },
+      {
+        "name": "__D46_DATA_CONST",
+        "start": 22282582360,
+        "end": 22282592976,
+        "sections": []
+      },
+      {
+        "name": "__D46_AUTH_CONST",
+        "start": 22313882928,
+        "end": 22313932648,
+        "sections": []
+      },
+      {
+        "name": "__D46_AUTH",
+        "start": 22522226664,
+        "end": 22522227184,
+        "sections": []
+      },
+      {
+        "name": "__D46_DATA",
+        "start": 22461142784,
+        "end": 22461146240,
+        "sections": []
+      },
+      {
+        "name": "__D46_DATA_DIRTY",
+        "start": 22503030280,
+        "end": 22503031244,
+        "sections": []
+      },
+      {
+        "name": "__D52_TEXT",
+        "start": 22522232832,
+        "end": 22522458408,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 22522232832,
+            "end": 22522458408,
+            "offset": 165199872
+          }
+        ]
+      },
+      {
+        "name": "__D52_DATA_CONST",
+        "start": 23963592832,
+        "end": 23963594984,
+        "sections": []
+      },
+      {
+        "name": "__D52_AUTH_CONST",
+        "start": 23998920344,
+        "end": 23998926680,
+        "sections": []
+      },
+      {
+        "name": "__D52_AUTH",
+        "start": 24202569472,
+        "end": 24202569632,
+        "sections": []
+      },
+      {
+        "name": "__D52_DATA",
+        "start": 24144068000,
+        "end": 24144068296,
+        "sections": []
+      },
+      {
+        "name": "__D52_DATA_DIRTY",
+        "start": 24183191608,
+        "end": 24183191936,
+        "sections": []
+      },
+      {
+        "name": "__D58_TEXT",
+        "start": 24202575872,
+        "end": 24202579760,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 24202575872,
+            "end": 24202579760,
+            "offset": 165445632
+          }
+        ]
+      },
+      {
+        "name": "__D58_DATA_DIRTY",
+        "start": 24398691752,
+        "end": 24398691840,
+        "sections": []
+      },
+      {
+        "name": "__D60_TEXT",
+        "start": 24398692352,
+        "end": 24398696240,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 24398692352,
+            "end": 24398696240,
+            "offset": 165462016
+          }
+        ]
+      },
+      {
+        "name": "__D60_DATA_DIRTY",
+        "start": 24644559496,
+        "end": 24644559584,
+        "sections": []
+      },
+      {
+        "name": "__S4_DATA",
+        "start": 8759803904,
+        "end": 8759808000,
+        "sections": []
+      },
+      {
+        "name": "__S5_DATA",
+        "start": 8775008256,
+        "end": 8775012352,
+        "sections": []
+      },
+      {
+        "name": "__S7_DATA",
+        "start": 8875151360,
+        "end": 8875155456,
+        "sections": []
+      },
+      {
+        "name": "__S8_DATA",
+        "start": 8875163648,
+        "end": 8875167744,
+        "sections": []
+      },
+      {
+        "name": "__S9_DATA",
+        "start": 8875532288,
+        "end": 8875536384,
+        "sections": []
+      },
+      {
+        "name": "__S10_DATA",
+        "start": 8877105152,
+        "end": 8877109248,
+        "sections": []
+      },
+      {
+        "name": "__S11_DATA",
+        "start": 8877318144,
+        "end": 8877322240,
+        "sections": []
+      },
+      {
+        "name": "__S12_DATA",
+        "start": 8877760512,
+        "end": 8877764608,
+        "sections": []
+      },
+      {
+        "name": "__S13_DATA",
+        "start": 8955314176,
+        "end": 8955318272,
+        "sections": []
+      },
+      {
+        "name": "__S14_DATA",
+        "start": 8955322368,
+        "end": 8955338752,
+        "sections": []
+      },
+      {
+        "name": "__S15_DATA",
+        "start": 8955518976,
+        "end": 8955523072,
+        "sections": []
+      },
+      {
+        "name": "__S16_DATA",
+        "start": 8955527168,
+        "end": 8955531264,
+        "sections": []
+      },
+      {
+        "name": "__S17_DATA",
+        "start": 8992583680,
+        "end": 8992587776,
+        "sections": []
+      },
+      {
+        "name": "__S23_DATA",
+        "start": 10744061952,
+        "end": 10744066048,
+        "sections": []
+      },
+      {
+        "name": "__S24_DATA",
+        "start": 10744520704,
+        "end": 10744524800,
+        "sections": []
+      },
+      {
+        "name": "__S25_DATA",
+        "start": 10744651776,
+        "end": 10744655872,
+        "sections": []
+      },
+      {
+        "name": "__S26_DATA",
+        "start": 10744913920,
+        "end": 10744918016,
+        "sections": []
+      },
+      {
+        "name": "__S27_DATA",
+        "start": 10744979456,
+        "end": 10744987648,
+        "sections": []
+      },
+      {
+        "name": "__S28_DATA",
+        "start": 10745044992,
+        "end": 10745049088,
+        "sections": []
+      },
+      {
+        "name": "__S29_DATA",
+        "start": 11102810112,
+        "end": 11102814208,
+        "sections": []
+      },
+      {
+        "name": "__S30_DATA",
+        "start": 11184050176,
+        "end": 11184054272,
+        "sections": []
+      },
+      {
+        "name": "__S31_DATA",
+        "start": 11717074944,
+        "end": 11717079040,
+        "sections": []
+      },
+      {
+        "name": "__S32_DATA",
+        "start": 11717140480,
+        "end": 11717148672,
+        "sections": []
+      },
+      {
+        "name": "__S33_DATA",
+        "start": 11717664768,
+        "end": 11717668864,
+        "sections": []
+      },
+      {
+        "name": "__S34_DATA",
+        "start": 11718062080,
+        "end": 11718066176,
+        "sections": []
+      },
+      {
+        "name": "__S35_DATA",
+        "start": 11868987392,
+        "end": 11868991488,
+        "sections": []
+      },
+      {
+        "name": "__S36_DATA",
+        "start": 11885043712,
+        "end": 11885047808,
+        "sections": []
+      },
+      {
+        "name": "__S37_DATA",
+        "start": 11885113344,
+        "end": 11885117440,
+        "sections": []
+      },
+      {
+        "name": "__S38_DATA",
+        "start": 11885436928,
+        "end": 11885441024,
+        "sections": []
+      },
+      {
+        "name": "__S39_DATA",
+        "start": 11885764608,
+        "end": 11885768704,
+        "sections": []
+      },
+      {
+        "name": "__S40_DATA",
+        "start": 11885895680,
+        "end": 11885899776,
+        "sections": []
+      },
+      {
+        "name": "__S41_DATA",
+        "start": 11886227456,
+        "end": 11886231552,
+        "sections": []
+      },
+      {
+        "name": "__S42_DATA",
+        "start": 11918467072,
+        "end": 11918471168,
+        "sections": []
+      },
+      {
+        "name": "__S43_DATA",
+        "start": 11919118336,
+        "end": 11919122432,
+        "sections": []
+      },
+      {
+        "name": "__S44_DATA",
+        "start": 11919319040,
+        "end": 11919323136,
+        "sections": []
+      },
+      {
+        "name": "__S45_DATA",
+        "start": 11919450112,
+        "end": 11919454208,
+        "sections": []
+      },
+      {
+        "name": "__S46_DATA",
+        "start": 11935248384,
+        "end": 11935252480,
+        "sections": []
+      },
+      {
+        "name": "__S47_DATA",
+        "start": 11936555008,
+        "end": 11936559104,
+        "sections": []
+      },
+      {
+        "name": "__S48_DATA",
+        "start": 11952611328,
+        "end": 11952615424,
+        "sections": []
+      },
+      {
+        "name": "__S49_DATA",
+        "start": 11969650688,
+        "end": 11969654784,
+        "sections": []
+      },
+      {
+        "name": "__S69_DATA",
+        "start": 12453900288,
+        "end": 12453904384,
+        "sections": []
+      },
+      {
+        "name": "__S70_DATA",
+        "start": 12455403520,
+        "end": 12455407616,
+        "sections": []
+      },
+      {
+        "name": "__S71_DATA",
+        "start": 12455600128,
+        "end": 12455604224,
+        "sections": []
+      },
+      {
+        "name": "__S72_DATA",
+        "start": 12455604224,
+        "end": 12455608320,
+        "sections": []
+      },
+      {
+        "name": "__S73_DATA",
+        "start": 12455927808,
+        "end": 12455931904,
+        "sections": []
+      },
+      {
+        "name": "__S74_DATA",
+        "start": 12471853056,
+        "end": 12471857152,
+        "sections": []
+      },
+      {
+        "name": "__S75_DATA",
+        "start": 12472111104,
+        "end": 12472115200,
+        "sections": []
+      },
+      {
+        "name": "__S76_DATA",
+        "start": 12472377344,
+        "end": 12472381440,
+        "sections": []
+      },
+      {
+        "name": "__S77_DATA",
+        "start": 12472705024,
+        "end": 12472709120,
+        "sections": []
+      },
+      {
+        "name": "__S78_DATA",
+        "start": 12472967168,
+        "end": 12472971264,
+        "sections": []
+      },
+      {
+        "name": "__S79_DATA",
+        "start": 12486668288,
+        "end": 12486672384,
+        "sections": []
+      },
+      {
+        "name": "__S80_DATA",
+        "start": 12487778304,
+        "end": 12487782400,
+        "sections": []
+      },
+      {
+        "name": "__S81_DATA",
+        "start": 12487979008,
+        "end": 12487983104,
+        "sections": []
+      },
+      {
+        "name": "__S82_DATA",
+        "start": 12489875456,
+        "end": 12489879552,
+        "sections": []
+      },
+      {
+        "name": "__S83_DATA",
+        "start": 12499038208,
+        "end": 12499042304,
+        "sections": []
+      },
+      {
+        "name": "__S84_DATA",
+        "start": 12499050496,
+        "end": 12499058688,
+        "sections": []
+      },
+      {
+        "name": "__S85_DATA",
+        "start": 12504686592,
+        "end": 12504690688,
+        "sections": []
+      },
+      {
+        "name": "__S86_DATA",
+        "start": 12505604096,
+        "end": 12505608192,
+        "sections": []
+      },
+      {
+        "name": "__S87_DATA",
+        "start": 12506251264,
+        "end": 12506255360,
+        "sections": []
+      },
+      {
+        "name": "__S88_DATA",
+        "start": 12539092992,
+        "end": 12539097088,
+        "sections": []
+      },
+      {
+        "name": "__S89_DATA",
+        "start": 12553711616,
+        "end": 12553715712,
+        "sections": []
+      },
+      {
+        "name": "__S90_DATA",
+        "start": 12553773056,
+        "end": 12553777152,
+        "sections": []
+      },
+      {
+        "name": "__S91_DATA",
+        "start": 12553969664,
+        "end": 12553973760,
+        "sections": []
+      },
+      {
+        "name": "__S92_DATA",
+        "start": 12555735040,
+        "end": 12555743232,
+        "sections": []
+      },
+      {
+        "name": "__S93_DATA",
+        "start": 12555804672,
+        "end": 12555808768,
+        "sections": []
+      },
+      {
+        "name": "__S94_DATA",
+        "start": 12555935744,
+        "end": 12555939840,
+        "sections": []
+      },
+      {
+        "name": "__S95_DATA",
+        "start": 12556255232,
+        "end": 12556259328,
+        "sections": []
+      },
+      {
+        "name": "__S96_DATA",
+        "start": 12556263424,
+        "end": 12556267520,
+        "sections": []
+      },
+      {
+        "name": "__S97_DATA",
+        "start": 12556451840,
+        "end": 12556455936,
+        "sections": []
+      },
+      {
+        "name": "__S98_DATA",
+        "start": 12556460032,
+        "end": 12556464128,
+        "sections": []
+      },
+      {
+        "name": "__S99_DATA",
+        "start": 12556648448,
+        "end": 12556652544,
+        "sections": []
+      },
+      {
+        "name": "__S100_DATA",
+        "start": 12556722176,
+        "end": 12556730368,
+        "sections": []
+      },
+      {
+        "name": "__S101_DATA",
+        "start": 12557316096,
+        "end": 12557320192,
+        "sections": []
+      },
+      {
+        "name": "__S102_DATA",
+        "start": 12569964544,
+        "end": 12569968640,
+        "sections": []
+      },
+      {
+        "name": "__S103_DATA",
+        "start": 12570935296,
+        "end": 12570939392,
+        "sections": []
+      },
+      {
+        "name": "__S104_DATA",
+        "start": 12570943488,
+        "end": 12570947584,
+        "sections": []
+      },
+      {
+        "name": "__S105_DATA",
+        "start": 12572508160,
+        "end": 12572512256,
+        "sections": []
+      },
+      {
+        "name": "__S106_DATA",
+        "start": 12572782592,
+        "end": 12572786688,
+        "sections": []
+      },
+      {
+        "name": "__S107_DATA",
+        "start": 12573016064,
+        "end": 12573020160,
+        "sections": []
+      },
+      {
+        "name": "__S108_DATA",
+        "start": 12573302784,
+        "end": 12573306880,
+        "sections": []
+      },
+      {
+        "name": "__S109_DATA",
+        "start": 12573437952,
+        "end": 12573442048,
+        "sections": []
+      },
+      {
+        "name": "__S110_DATA",
+        "start": 12573630464,
+        "end": 12573634560,
+        "sections": []
+      },
+      {
+        "name": "__S111_DATA",
+        "start": 12587196416,
+        "end": 12587200512,
+        "sections": []
+      },
+      {
+        "name": "__S112_DATA",
+        "start": 12589162496,
+        "end": 12589166592,
+        "sections": []
+      },
+      {
+        "name": "__S113_DATA",
+        "start": 12589793280,
+        "end": 12589797376,
+        "sections": []
+      },
+      {
+        "name": "__S114_DATA",
+        "start": 12590145536,
+        "end": 12590149632,
+        "sections": []
+      },
+      {
+        "name": "__S115_DATA",
+        "start": 12590211072,
+        "end": 12590215168,
+        "sections": []
+      },
+      {
+        "name": "__S116_DATA",
+        "start": 12604039168,
+        "end": 12604047360,
+        "sections": []
+      },
+      {
+        "name": "__S117_DATA",
+        "start": 12604764160,
+        "end": 12604768256,
+        "sections": []
+      },
+      {
+        "name": "__S118_DATA",
+        "start": 12604956672,
+        "end": 12604960768,
+        "sections": []
+      },
+      {
+        "name": "__S119_DATA",
+        "start": 12605222912,
+        "end": 12605227008,
+        "sections": []
+      },
+      {
+        "name": "__S120_DATA",
+        "start": 12606136320,
+        "end": 12606140416,
+        "sections": []
+      },
+      {
+        "name": "__S121_DATA",
+        "start": 12607176704,
+        "end": 12607180800,
+        "sections": []
+      },
+      {
+        "name": "__S122_DATA",
+        "start": 12621930496,
+        "end": 12621938688,
+        "sections": []
+      },
+      {
+        "name": "__S123_DATA",
+        "start": 12623822848,
+        "end": 12623826944,
+        "sections": []
+      },
+      {
+        "name": "__S124_DATA",
+        "start": 12623831040,
+        "end": 12623835136,
+        "sections": []
+      },
+      {
+        "name": "__S125_DATA",
+        "start": 12624416768,
+        "end": 12624420864,
+        "sections": []
+      },
+      {
+        "name": "__S126_DATA",
+        "start": 12633243648,
+        "end": 12633247744,
+        "sections": []
+      },
+      {
+        "name": "__S127_DATA",
+        "start": 12639883264,
+        "end": 12639887360,
+        "sections": []
+      },
+      {
+        "name": "__S128_DATA",
+        "start": 12654637056,
+        "end": 12654641152,
+        "sections": []
+      },
+      {
+        "name": "__S129_DATA",
+        "start": 12654698496,
+        "end": 12654702592,
+        "sections": []
+      },
+      {
+        "name": "__S130_DATA",
+        "start": 12655288320,
+        "end": 12655292416,
+        "sections": []
+      },
+      {
+        "name": "__S131_DATA",
+        "start": 12656398336,
+        "end": 12656402432,
+        "sections": []
+      },
+      {
+        "name": "__S132_DATA",
+        "start": 12656402432,
+        "end": 12656406528,
+        "sections": []
+      },
+      {
+        "name": "__S133_DATA",
+        "start": 12656533504,
+        "end": 12656537600,
+        "sections": []
+      },
+      {
+        "name": "__S134_DATA",
+        "start": 12656664576,
+        "end": 12656672768,
+        "sections": []
+      },
+      {
+        "name": "__S135_DATA",
+        "start": 12657311744,
+        "end": 12657315840,
+        "sections": []
+      },
+      {
+        "name": "__S136_DATA",
+        "start": 12657319936,
+        "end": 12657324032,
+        "sections": []
+      },
+      {
+        "name": "__S137_DATA",
+        "start": 12657508352,
+        "end": 12657512448,
+        "sections": []
+      },
+      {
+        "name": "__S138_DATA",
+        "start": 12657643520,
+        "end": 12657647616,
+        "sections": []
+      },
+      {
+        "name": "__S139_DATA",
+        "start": 12657713152,
+        "end": 12657717248,
+        "sections": []
+      },
+      {
+        "name": "__S140_DATA",
+        "start": 12672397312,
+        "end": 12672401408,
+        "sections": []
+      },
+      {
+        "name": "__S141_DATA",
+        "start": 12673052672,
+        "end": 12673056768,
+        "sections": []
+      },
+      {
+        "name": "__S142_DATA",
+        "start": 12673310720,
+        "end": 12673314816,
+        "sections": []
+      },
+      {
+        "name": "__S143_DATA",
+        "start": 12673441792,
+        "end": 12673445888,
+        "sections": []
+      },
+      {
+        "name": "__S144_DATA",
+        "start": 12674031616,
+        "end": 12674035712,
+        "sections": []
+      },
+      {
+        "name": "__S145_DATA",
+        "start": 12674097152,
+        "end": 12674101248,
+        "sections": []
+      },
+      {
+        "name": "__S146_DATA",
+        "start": 12674293760,
+        "end": 12674297856,
+        "sections": []
+      },
+      {
+        "name": "__S147_DATA",
+        "start": 12674359296,
+        "end": 12674363392,
+        "sections": []
+      },
+      {
+        "name": "__S148_DATA",
+        "start": 12687405056,
+        "end": 12687409152,
+        "sections": []
+      },
+      {
+        "name": "__S149_DATA",
+        "start": 12688384000,
+        "end": 12688392192,
+        "sections": []
+      },
+      {
+        "name": "__S150_DATA",
+        "start": 12689948672,
+        "end": 12689952768,
+        "sections": []
+      },
+      {
+        "name": "__S151_DATA",
+        "start": 12689956864,
+        "end": 12689965056,
+        "sections": []
+      },
+      {
+        "name": "__S152_DATA",
+        "start": 12690079744,
+        "end": 12690083840,
+        "sections": []
+      },
+      {
+        "name": "__S153_DATA",
+        "start": 12690087936,
+        "end": 12690092032,
+        "sections": []
+      },
+      {
+        "name": "__S154_DATA",
+        "start": 12690276352,
+        "end": 12690280448,
+        "sections": []
+      },
+      {
+        "name": "__S155_DATA",
+        "start": 12690481152,
+        "end": 12690489344,
+        "sections": []
+      },
+      {
+        "name": "__S156_DATA",
+        "start": 12690800640,
+        "end": 12690804736,
+        "sections": []
+      },
+      {
+        "name": "__S157_DATA",
+        "start": 12690808832,
+        "end": 12690817024,
+        "sections": []
+      },
+      {
+        "name": "__S158_DATA",
+        "start": 12690874368,
+        "end": 12690878464,
+        "sections": []
+      },
+      {
+        "name": "__S159_DATA",
+        "start": 12690939904,
+        "end": 12690944000,
+        "sections": []
+      },
+      {
+        "name": "__S160_DATA",
+        "start": 12691136512,
+        "end": 12691140608,
+        "sections": []
+      },
+      {
+        "name": "__S161_DATA",
+        "start": 12691202048,
+        "end": 12691206144,
+        "sections": []
+      },
+      {
+        "name": "__S162_DATA",
+        "start": 12691267584,
+        "end": 12691271680,
+        "sections": []
+      },
+      {
+        "name": "__S163_DATA",
+        "start": 12691464192,
+        "end": 12691468288,
+        "sections": []
+      },
+      {
+        "name": "__S164_DATA",
+        "start": 12706865152,
+        "end": 12706869248,
+        "sections": []
+      },
+      {
+        "name": "__S165_DATA",
+        "start": 12707454976,
+        "end": 12707459072,
+        "sections": []
+      },
+      {
+        "name": "__S166_DATA",
+        "start": 12707782656,
+        "end": 12707786752,
+        "sections": []
+      },
+      {
+        "name": "__S167_DATA",
+        "start": 12724232192,
+        "end": 12724236288,
+        "sections": []
+      },
+      {
+        "name": "__S168_DATA",
+        "start": 12724355072,
+        "end": 12724359168,
+        "sections": []
+      },
+      {
+        "name": "__S169_DATA",
+        "start": 12724420608,
+        "end": 12724424704,
+        "sections": []
+      },
+      {
+        "name": "__S170_DATA",
+        "start": 12737732608,
+        "end": 12737736704,
+        "sections": []
+      },
+      {
+        "name": "__S171_DATA",
+        "start": 12740550656,
+        "end": 12740554752,
+        "sections": []
+      },
+      {
+        "name": "__S172_DATA",
+        "start": 12741206016,
+        "end": 12741210112,
+        "sections": []
+      },
+      {
+        "name": "__S173_DATA",
+        "start": 12757327872,
+        "end": 12757331968,
+        "sections": []
+      },
+      {
+        "name": "__S174_DATA",
+        "start": 12771663872,
+        "end": 12771667968,
+        "sections": []
+      },
+      {
+        "name": "__S175_DATA",
+        "start": 12772925440,
+        "end": 12772929536,
+        "sections": []
+      },
+      {
+        "name": "__S176_DATA",
+        "start": 12773834752,
+        "end": 12773838848,
+        "sections": []
+      },
+      {
+        "name": "__S177_DATA",
+        "start": 12791144448,
+        "end": 12791152640,
+        "sections": []
+      },
+      {
+        "name": "__S178_DATA",
+        "start": 12884901888,
+        "end": 12884905984,
+        "sections": []
+      },
+      {
+        "name": "__S179_DATA",
+        "start": 12884963328,
+        "end": 12884967424,
+        "sections": []
+      },
+      {
+        "name": "__S180_DATA",
+        "start": 12885032960,
+        "end": 12885037056,
+        "sections": []
+      },
+      {
+        "name": "__S181_DATA",
+        "start": 12886409216,
+        "end": 12886413312,
+        "sections": []
+      },
+      {
+        "name": "__S182_DATA",
+        "start": 13019250688,
+        "end": 13019254784,
+        "sections": []
+      },
+      {
+        "name": "__S183_DATA",
+        "start": 13156454400,
+        "end": 13156458496,
+        "sections": []
+      },
+      {
+        "name": "__S184_DATA",
+        "start": 13170180096,
+        "end": 13170184192,
+        "sections": []
+      },
+      {
+        "name": "__S185_DATA",
+        "start": 13170245632,
+        "end": 13170249728,
+        "sections": []
+      },
+      {
+        "name": "__S186_DATA",
+        "start": 13172826112,
+        "end": 13172830208,
+        "sections": []
+      },
+      {
+        "name": "__S187_DATA",
+        "start": 13250285568,
+        "end": 13250289664,
+        "sections": []
+      },
+      {
+        "name": "__S188_DATA",
+        "start": 13250293760,
+        "end": 13250306048,
+        "sections": []
+      },
+      {
+        "name": "__S189_DATA",
+        "start": 13572849664,
+        "end": 13572853760,
+        "sections": []
+      },
+      {
+        "name": "__S190_DATA",
+        "start": 13572861952,
+        "end": 13572866048,
+        "sections": []
+      },
+      {
+        "name": "__S191_DATA",
+        "start": 13572927488,
+        "end": 13572931584,
+        "sections": []
+      },
+      {
+        "name": "__S192_DATA",
+        "start": 13572980736,
+        "end": 13572984832,
+        "sections": []
+      },
+      {
+        "name": "__S193_DATA",
+        "start": 13572993024,
+        "end": 13572997120,
+        "sections": []
+      },
+      {
+        "name": "__S194_DATA",
+        "start": 13573046272,
+        "end": 13573050368,
+        "sections": []
+      },
+      {
+        "name": "__S195_DATA",
+        "start": 13573124096,
+        "end": 13573128192,
+        "sections": []
+      },
+      {
+        "name": "__S196_DATA",
+        "start": 13573242880,
+        "end": 13573246976,
+        "sections": []
+      },
+      {
+        "name": "__S197_DATA",
+        "start": 13585235968,
+        "end": 13585240064,
+        "sections": []
+      },
+      {
+        "name": "__S198_DATA",
+        "start": 13585313792,
+        "end": 13585317888,
+        "sections": []
+      },
+      {
+        "name": "__S199_DATA",
+        "start": 13589544960,
+        "end": 13589549056,
+        "sections": []
+      },
+      {
+        "name": "__S200_DATA",
+        "start": 13589741568,
+        "end": 13589745664,
+        "sections": []
+      },
+      {
+        "name": "__S201_DATA",
+        "start": 13590790144,
+        "end": 13590794240,
+        "sections": []
+      },
+      {
+        "name": "__S202_DATA",
+        "start": 13590855680,
+        "end": 13590859776,
+        "sections": []
+      },
+      {
+        "name": "__S203_DATA",
+        "start": 13590921216,
+        "end": 13590925312,
+        "sections": []
+      },
+      {
+        "name": "__S204_DATA",
+        "start": 13590986752,
+        "end": 13590990848,
+        "sections": []
+      },
+      {
+        "name": "__S205_DATA",
+        "start": 13591052288,
+        "end": 13591056384,
+        "sections": []
+      },
+      {
+        "name": "__S206_DATA",
+        "start": 13591314432,
+        "end": 13591318528,
+        "sections": []
+      },
+      {
+        "name": "__S207_DATA",
+        "start": 13693390848,
+        "end": 13693394944,
+        "sections": []
+      }
+    ],
+    "primary": {
+      "name": "__TEXT",
+      "start": 9035792384,
+      "end": 9035877348,
+      "sections": [
+        {
+          "name": "__text",
+          "start": 9035796536,
+          "end": 9035860480,
+          "offset": 36920
+        },
+        {
+          "name": "__objc_methlist",
+          "start": 9035860480,
+          "end": 9035862004,
+          "offset": 100864
+        },
+        {
+          "name": "__const",
+          "start": 9035862016,
+          "end": 9035862560,
+          "offset": 102400
+        },
+        {
+          "name": "__cstring",
+          "start": 9035862560,
+          "end": 9035870468,
+          "offset": 102944
+        },
+        {
+          "name": "__oslogstring",
+          "start": 9035870468,
+          "end": 9035875749,
+          "offset": 110852
+        },
+        {
+          "name": "__gcc_except_tab",
+          "start": 9035875752,
+          "end": 9035876284,
+          "offset": 116136
+        },
+        {
+          "name": "__unwind_info",
+          "start": 9035876284,
+          "end": 9035877348,
+          "offset": 116668
+        },
+        {
+          "name": "__objc_stubs",
+          "start": 9035877348,
+          "end": 9035877348,
+          "offset": 0
+        },
+        {
+          "name": "__auth_stubs",
+          "start": 9035877348,
+          "end": 9035877348,
+          "offset": 0
+        },
+        {
+          "name": "__objc_classname",
+          "start": 9035877348,
+          "end": 9035877348,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methname",
+          "start": 9035877348,
+          "end": 9035877348,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methtype",
+          "start": 9035877348,
+          "end": 9035877348,
+          "offset": 0
+        }
+      ]
+    }
+  },
+  "CryptexKit": {
+    "segments": [
+      {
+        "name": "__DYLEX_HDR",
+        "start": 6442385408,
+        "end": 6442450944,
+        "sections": []
+      },
+      {
+        "name": "__TEXT",
+        "start": 10884894720,
+        "end": 10885644784,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 10884901400,
+            "end": 10885500176,
+            "offset": 72216
+          },
+          {
+            "name": "__objc_methlist",
+            "start": 10885500176,
+            "end": 10885500468,
+            "offset": 670992
+          },
+          {
+            "name": "__const",
+            "start": 10885500480,
+            "end": 10885548344,
+            "offset": 671296
+          },
+          {
+            "name": "__cstring",
+            "start": 10885548352,
+            "end": 10885557158,
+            "offset": 719168
+          },
+          {
+            "name": "__info_plist",
+            "start": 10885557158,
+            "end": 10885558404,
+            "offset": 727974
+          },
+          {
+            "name": "__constg_swiftt",
+            "start": 10885558404,
+            "end": 10885567780,
+            "offset": 729220
+          },
+          {
+            "name": "__swift5_typeref",
+            "start": 10885567792,
+            "end": 10885575425,
+            "offset": 738608
+          },
+          {
+            "name": "__swift5_reflstr",
+            "start": 10885575440,
+            "end": 10885580736,
+            "offset": 746256
+          },
+          {
+            "name": "__swift5_fieldmd",
+            "start": 10885580736,
+            "end": 10885590804,
+            "offset": 751552
+          },
+          {
+            "name": "__swift5_types",
+            "start": 10885590804,
+            "end": 10885591692,
+            "offset": 761620
+          },
+          {
+            "name": "__swift5_proto",
+            "start": 10885591692,
+            "end": 10885594500,
+            "offset": 762508
+          },
+          {
+            "name": "__swift5_types2",
+            "start": 10885594500,
+            "end": 10885594524,
+            "offset": 765316
+          },
+          {
+            "name": "__swift5_capture",
+            "start": 10885594524,
+            "end": 10885595436,
+            "offset": 765340
+          },
+          {
+            "name": "__oslogstring",
+            "start": 10885595440,
+            "end": 10885597140,
+            "offset": 766256
+          },
+          {
+            "name": "__swift5_assocty",
+            "start": 10885597140,
+            "end": 10885599652,
+            "offset": 767956
+          },
+          {
+            "name": "__swift5_builtin",
+            "start": 10885599652,
+            "end": 10885600112,
+            "offset": 770468
+          },
+          {
+            "name": "__swift_as_entry",
+            "start": 10885600112,
+            "end": 10885600244,
+            "offset": 770928
+          },
+          {
+            "name": "__swift_as_ret",
+            "start": 10885600244,
+            "end": 10885600352,
+            "offset": 771060
+          },
+          {
+            "name": "__swift_as_cont",
+            "start": 10885600352,
+            "end": 10885600628,
+            "offset": 771168
+          },
+          {
+            "name": "__swift5_mpenum",
+            "start": 10885600628,
+            "end": 10885600712,
+            "offset": 771444
+          },
+          {
+            "name": "__swift5_protos",
+            "start": 10885600712,
+            "end": 10885600764,
+            "offset": 771528
+          },
+          {
+            "name": "__unwind_info",
+            "start": 10885600764,
+            "end": 10885614364,
+            "offset": 771580
+          },
+          {
+            "name": "__eh_frame",
+            "start": 10885614368,
+            "end": 10885644784,
+            "offset": 785184
+          },
+          {
+            "name": "__objc_stubs",
+            "start": 10885644784,
+            "end": 10885644784,
+            "offset": 0
+          },
+          {
+            "name": "__auth_stubs",
+            "start": 10885644784,
+            "end": 10885644784,
+            "offset": 0
+          },
+          {
+            "name": "__objc_classname",
+            "start": 10885644784,
+            "end": 10885644784,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methname",
+            "start": 10885644784,
+            "end": 10885644784,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methtype",
+            "start": 10885644784,
+            "end": 10885644784,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_CONST",
+        "start": 12214758760,
+        "end": 12214759560,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 12214758760,
+            "end": 12214759032,
+            "offset": 815600
+          },
+          {
+            "name": "__objc_classlist",
+            "start": 12214759032,
+            "end": 12214759200,
+            "offset": 815872
+          },
+          {
+            "name": "__objc_protolist",
+            "start": 12214759200,
+            "end": 12214759232,
+            "offset": 816040
+          },
+          {
+            "name": "__objc_imageinfo",
+            "start": 12214759232,
+            "end": 12214759240,
+            "offset": 816072
+          },
+          {
+            "name": "__objc_selrefs",
+            "start": 12214759240,
+            "end": 12214759544,
+            "offset": 816080
+          },
+          {
+            "name": "__objc_protorefs",
+            "start": 12214759544,
+            "end": 12214759560,
+            "offset": 816384
+          },
+          {
+            "name": "__got",
+            "start": 12214759560,
+            "end": 12214759560,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__AUTH_CONST",
+        "start": 12260111608,
+        "end": 12260159168,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 12260111608,
+            "end": 12260145120,
+            "offset": 816400
+          },
+          {
+            "name": "__objc_const",
+            "start": 12260145120,
+            "end": 12260149896,
+            "offset": 849912
+          },
+          {
+            "name": "__auth_got",
+            "start": 12260149896,
+            "end": 12260155152,
+            "offset": 854688
+          },
+          {
+            "name": "__auth_ptr",
+            "start": 12260155152,
+            "end": 12260159168,
+            "offset": 859944
+          }
+        ]
+      },
+      {
+        "name": "__AUTH",
+        "start": 12409990272,
+        "end": 12409997352,
+        "sections": [
+          {
+            "name": "__objc_data",
+            "start": 12409990272,
+            "end": 12409990744,
+            "offset": 863960
+          },
+          {
+            "name": "__data",
+            "start": 12409990752,
+            "end": 12409997352,
+            "offset": 864440
+          }
+        ]
+      },
+      {
+        "name": "__DATA",
+        "start": 12352849424,
+        "end": 12352927952,
+        "sections": [
+          {
+            "name": "__data",
+            "start": 12352849424,
+            "end": 12352854056,
+            "offset": 871040
+          },
+          {
+            "name": "__bss",
+            "start": 12352854064,
+            "end": 12352927920,
+            "offset": 0
+          },
+          {
+            "name": "__common",
+            "start": 12352927920,
+            "end": 12352927952,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_DIRTY",
+        "start": 12397227760,
+        "end": 12397229248,
+        "sections": [
+          {
+            "name": "__objc_data",
+            "start": 12397227760,
+            "end": 12397227960,
+            "offset": 949568
+          },
+          {
+            "name": "__data",
+            "start": 12397227968,
+            "end": 12397228888,
+            "offset": 949776
+          },
+          {
+            "name": "__bss",
+            "start": 12397228896,
+            "end": 12397229248,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__LINKEDIT",
+        "start": 12453183488,
+        "end": 12454178816,
+        "sections": []
+      },
+      {
+        "name": "__DSC_0",
+        "start": 6576668672,
+        "end": 6576672560,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 6576668672,
+            "end": 6576672560,
+            "offset": 1944536
+          }
+        ]
+      },
+      {
+        "name": "__DSC_1",
+        "start": 8395614332,
+        "end": 8412426094,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 8395614332,
+            "end": 8412426094,
+            "offset": 1948424
+          }
+        ]
+      },
+      {
+        "name": "__DSC_2",
+        "start": 11005853696,
+        "end": 11005858604,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 11005853696,
+            "end": 11005858604,
+            "offset": 18760186
+          }
+        ]
+      },
+      {
+        "name": "__DSC_3",
+        "start": 11006246928,
+        "end": 11006277440,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 11006246928,
+            "end": 11006277440,
+            "offset": 18765094
+          }
+        ]
+      },
+      {
+        "name": "__DSC_4",
+        "start": 12257233808,
+        "end": 12258005152,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 12257233808,
+            "end": 12258005152,
+            "offset": 18795606
+          }
+        ]
+      },
+      {
+        "name": "__EXTRA_OBJC",
+        "start": 14144192512,
+        "end": 14144202084,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 14144192512,
+            "end": 14144202084,
+            "offset": 19566950
+          }
+        ]
+      }
+    ],
+    "primary": {
+      "name": "__TEXT",
+      "start": 10884894720,
+      "end": 10885644784,
+      "sections": [
+        {
+          "name": "__text",
+          "start": 10884901400,
+          "end": 10885500176,
+          "offset": 72216
+        },
+        {
+          "name": "__objc_methlist",
+          "start": 10885500176,
+          "end": 10885500468,
+          "offset": 670992
+        },
+        {
+          "name": "__const",
+          "start": 10885500480,
+          "end": 10885548344,
+          "offset": 671296
+        },
+        {
+          "name": "__cstring",
+          "start": 10885548352,
+          "end": 10885557158,
+          "offset": 719168
+        },
+        {
+          "name": "__info_plist",
+          "start": 10885557158,
+          "end": 10885558404,
+          "offset": 727974
+        },
+        {
+          "name": "__constg_swiftt",
+          "start": 10885558404,
+          "end": 10885567780,
+          "offset": 729220
+        },
+        {
+          "name": "__swift5_typeref",
+          "start": 10885567792,
+          "end": 10885575425,
+          "offset": 738608
+        },
+        {
+          "name": "__swift5_reflstr",
+          "start": 10885575440,
+          "end": 10885580736,
+          "offset": 746256
+        },
+        {
+          "name": "__swift5_fieldmd",
+          "start": 10885580736,
+          "end": 10885590804,
+          "offset": 751552
+        },
+        {
+          "name": "__swift5_types",
+          "start": 10885590804,
+          "end": 10885591692,
+          "offset": 761620
+        },
+        {
+          "name": "__swift5_proto",
+          "start": 10885591692,
+          "end": 10885594500,
+          "offset": 762508
+        },
+        {
+          "name": "__swift5_types2",
+          "start": 10885594500,
+          "end": 10885594524,
+          "offset": 765316
+        },
+        {
+          "name": "__swift5_capture",
+          "start": 10885594524,
+          "end": 10885595436,
+          "offset": 765340
+        },
+        {
+          "name": "__oslogstring",
+          "start": 10885595440,
+          "end": 10885597140,
+          "offset": 766256
+        },
+        {
+          "name": "__swift5_assocty",
+          "start": 10885597140,
+          "end": 10885599652,
+          "offset": 767956
+        },
+        {
+          "name": "__swift5_builtin",
+          "start": 10885599652,
+          "end": 10885600112,
+          "offset": 770468
+        },
+        {
+          "name": "__swift_as_entry",
+          "start": 10885600112,
+          "end": 10885600244,
+          "offset": 770928
+        },
+        {
+          "name": "__swift_as_ret",
+          "start": 10885600244,
+          "end": 10885600352,
+          "offset": 771060
+        },
+        {
+          "name": "__swift_as_cont",
+          "start": 10885600352,
+          "end": 10885600628,
+          "offset": 771168
+        },
+        {
+          "name": "__swift5_mpenum",
+          "start": 10885600628,
+          "end": 10885600712,
+          "offset": 771444
+        },
+        {
+          "name": "__swift5_protos",
+          "start": 10885600712,
+          "end": 10885600764,
+          "offset": 771528
+        },
+        {
+          "name": "__unwind_info",
+          "start": 10885600764,
+          "end": 10885614364,
+          "offset": 771580
+        },
+        {
+          "name": "__eh_frame",
+          "start": 10885614368,
+          "end": 10885644784,
+          "offset": 785184
+        },
+        {
+          "name": "__objc_stubs",
+          "start": 10885644784,
+          "end": 10885644784,
+          "offset": 0
+        },
+        {
+          "name": "__auth_stubs",
+          "start": 10885644784,
+          "end": 10885644784,
+          "offset": 0
+        },
+        {
+          "name": "__objc_classname",
+          "start": 10885644784,
+          "end": 10885644784,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methname",
+          "start": 10885644784,
+          "end": 10885644784,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methtype",
+          "start": 10885644784,
+          "end": 10885644784,
+          "offset": 0
+        }
+      ]
+    }
+  },
+  "libauthinstall.dylib": {
+    "segments": [
+      {
+        "name": "__DYLEX_HDR",
+        "start": 6442385408,
+        "end": 6442450944,
+        "sections": []
+      },
+      {
+        "name": "__TEXT",
+        "start": 9705504768,
+        "end": 9706466156,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 9705510064,
+            "end": 9706239832,
+            "offset": 70832
+          },
+          {
+            "name": "__objc_methlist",
+            "start": 9706239832,
+            "end": 9706249604,
+            "offset": 800600
+          },
+          {
+            "name": "__cstring",
+            "start": 9706249604,
+            "end": 9706387415,
+            "offset": 810372
+          },
+          {
+            "name": "__const",
+            "start": 9706387424,
+            "end": 9706437281,
+            "offset": 948192
+          },
+          {
+            "name": "__gcc_except_tab",
+            "start": 9706437284,
+            "end": 9706452496,
+            "offset": 998052
+          },
+          {
+            "name": "__dlopen_cstrs",
+            "start": 9706452496,
+            "end": 9706452595,
+            "offset": 1013264
+          },
+          {
+            "name": "__oslogstring",
+            "start": 9706452595,
+            "end": 9706455368,
+            "offset": 1013363
+          },
+          {
+            "name": "__unwind_info",
+            "start": 9706455368,
+            "end": 9706466032,
+            "offset": 1016136
+          },
+          {
+            "name": "__eh_frame",
+            "start": 9706466032,
+            "end": 9706466156,
+            "offset": 1026800
+          },
+          {
+            "name": "__objc_stubs",
+            "start": 9706466156,
+            "end": 9706466156,
+            "offset": 0
+          },
+          {
+            "name": "__auth_stubs",
+            "start": 9706466156,
+            "end": 9706466156,
+            "offset": 0
+          },
+          {
+            "name": "__objc_classname",
+            "start": 9706466156,
+            "end": 9706466156,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methname",
+            "start": 9706466156,
+            "end": 9706466156,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methtype",
+            "start": 9706466156,
+            "end": 9706466156,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_CONST",
+        "start": 10353074528,
+        "end": 10353090328,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 10353074528,
+            "end": 10353086280,
+            "offset": 1026924
+          },
+          {
+            "name": "__objc_classlist",
+            "start": 10353086280,
+            "end": 10353086784,
+            "offset": 1038676
+          },
+          {
+            "name": "__objc_catlist",
+            "start": 10353086784,
+            "end": 10353086808,
+            "offset": 1039180
+          },
+          {
+            "name": "__objc_protolist",
+            "start": 10353086808,
+            "end": 10353086848,
+            "offset": 1039204
+          },
+          {
+            "name": "__objc_imageinfo",
+            "start": 10353086848,
+            "end": 10353086856,
+            "offset": 1039244
+          },
+          {
+            "name": "__weak_got",
+            "start": 10353086856,
+            "end": 10353086872,
+            "offset": 1039252
+          },
+          {
+            "name": "__objc_selrefs",
+            "start": 10353086872,
+            "end": 10353089936,
+            "offset": 1039268
+          },
+          {
+            "name": "__got",
+            "start": 10353089936,
+            "end": 10353090328,
+            "offset": 1042332
+          }
+        ]
+      },
+      {
+        "name": "__AUTH_CONST",
+        "start": 10425446592,
+        "end": 10425536272,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 10425446592,
+            "end": 10425452272,
+            "offset": 1042724
+          },
+          {
+            "name": "__cfstring",
+            "start": 10425452272,
+            "end": 10425514000,
+            "offset": 1048404
+          },
+          {
+            "name": "__objc_const",
+            "start": 10425514000,
+            "end": 10425532696,
+            "offset": 1110132
+          },
+          {
+            "name": "__weak_auth_got",
+            "start": 10425532696,
+            "end": 10425532728,
+            "offset": 1128828
+          },
+          {
+            "name": "__auth_got",
+            "start": 10425532728,
+            "end": 10425536216,
+            "offset": 1128860
+          },
+          {
+            "name": "__auth_ptr",
+            "start": 10425536272,
+            "end": 10425536272,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__AUTH",
+        "start": 10570674672,
+        "end": 10570679800,
+        "sections": [
+          {
+            "name": "__objc_data",
+            "start": 10570674672,
+            "end": 10570679712,
+            "offset": 1132404
+          },
+          {
+            "name": "__data",
+            "start": 10570679712,
+            "end": 10570679744,
+            "offset": 1137444
+          },
+          {
+            "name": "__thread_vars",
+            "start": 10570679744,
+            "end": 10570679768,
+            "offset": 1137476
+          },
+          {
+            "name": "__thread_bss",
+            "start": 10570679768,
+            "end": 10570679800,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA",
+        "start": 10515335264,
+        "end": 10515342632,
+        "sections": [
+          {
+            "name": "__objc_classrefs",
+            "start": 10515335264,
+            "end": 10515335816,
+            "offset": 1137532
+          },
+          {
+            "name": "__objc_superrefs",
+            "start": 10515335816,
+            "end": 10515336304,
+            "offset": 1138084
+          },
+          {
+            "name": "__objc_ivar",
+            "start": 10515336304,
+            "end": 10515337068,
+            "offset": 1138572
+          },
+          {
+            "name": "__data",
+            "start": 10515337072,
+            "end": 10515339032,
+            "offset": 1139340
+          },
+          {
+            "name": "__bss",
+            "start": 10515339032,
+            "end": 10515342616,
+            "offset": 0
+          },
+          {
+            "name": "__common",
+            "start": 10515342616,
+            "end": 10515342632,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_DIRTY",
+        "start": 10562468016,
+        "end": 10562468096,
+        "sections": [
+          {
+            "name": "__data",
+            "start": 10562468016,
+            "end": 10562468072,
+            "offset": 1144900
+          },
+          {
+            "name": "__bss",
+            "start": 10562468072,
+            "end": 10562468096,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__LINKEDIT",
+        "start": 12453183488,
+        "end": 12453621760,
+        "sections": []
+      },
+      {
+        "name": "__DSC_0",
+        "start": 6531769528,
+        "end": 6576672560,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 6531769528,
+            "end": 6576672560,
+            "offset": 1580568
+          }
+        ]
+      },
+      {
+        "name": "__DSC_1",
+        "start": 8280061368,
+        "end": 8280061384,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 8280061368,
+            "end": 8280061384,
+            "offset": 46483600
+          }
+        ]
+      },
+      {
+        "name": "__DSC_2",
+        "start": 8395525403,
+        "end": 8440988365,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 8395525403,
+            "end": 8440988365,
+            "offset": 46483616
+          }
+        ]
+      },
+      {
+        "name": "__DSC_3",
+        "start": 9797894144,
+        "end": 9798055020,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 9797894144,
+            "end": 9798055020,
+            "offset": 91946578
+          }
+        ]
+      },
+      {
+        "name": "__DSC_4",
+        "start": 9798832576,
+        "end": 9798945968,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 9798832576,
+            "end": 9798945968,
+            "offset": 92107454
+          }
+        ]
+      },
+      {
+        "name": "__DSC_5",
+        "start": 10357806736,
+        "end": 10425446592,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 10357806736,
+            "end": 10425446592,
+            "offset": 92220846
+          }
+        ]
+      },
+      {
+        "name": "__EXTRA_OBJC",
+        "start": 14144192512,
+        "end": 14144251218,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 14144192512,
+            "end": 14144251218,
+            "offset": 159860702
+          }
+        ]
+      }
+    ],
+    "primary": {
+      "name": "__TEXT",
+      "start": 9705504768,
+      "end": 9706466156,
+      "sections": [
+        {
+          "name": "__text",
+          "start": 9705510064,
+          "end": 9706239832,
+          "offset": 70832
+        },
+        {
+          "name": "__objc_methlist",
+          "start": 9706239832,
+          "end": 9706249604,
+          "offset": 800600
+        },
+        {
+          "name": "__cstring",
+          "start": 9706249604,
+          "end": 9706387415,
+          "offset": 810372
+        },
+        {
+          "name": "__const",
+          "start": 9706387424,
+          "end": 9706437281,
+          "offset": 948192
+        },
+        {
+          "name": "__gcc_except_tab",
+          "start": 9706437284,
+          "end": 9706452496,
+          "offset": 998052
+        },
+        {
+          "name": "__dlopen_cstrs",
+          "start": 9706452496,
+          "end": 9706452595,
+          "offset": 1013264
+        },
+        {
+          "name": "__oslogstring",
+          "start": 9706452595,
+          "end": 9706455368,
+          "offset": 1013363
+        },
+        {
+          "name": "__unwind_info",
+          "start": 9706455368,
+          "end": 9706466032,
+          "offset": 1016136
+        },
+        {
+          "name": "__eh_frame",
+          "start": 9706466032,
+          "end": 9706466156,
+          "offset": 1026800
+        },
+        {
+          "name": "__objc_stubs",
+          "start": 9706466156,
+          "end": 9706466156,
+          "offset": 0
+        },
+        {
+          "name": "__auth_stubs",
+          "start": 9706466156,
+          "end": 9706466156,
+          "offset": 0
+        },
+        {
+          "name": "__objc_classname",
+          "start": 9706466156,
+          "end": 9706466156,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methname",
+          "start": 9706466156,
+          "end": 9706466156,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methtype",
+          "start": 9706466156,
+          "end": 9706466156,
+          "offset": 0
+        }
+      ]
+    }
+  },
+  "libcryptex_core.dylib": {
+    "segments": [
+      {
+        "name": "__DYLEX_HDR",
+        "start": 6442385408,
+        "end": 6442450944,
+        "sections": []
+      },
+      {
+        "name": "__TEXT",
+        "start": 12004032512,
+        "end": 12004165984,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 12004037256,
+            "end": 12004140060,
+            "offset": 70280
+          },
+          {
+            "name": "__objc_methlist",
+            "start": 12004140064,
+            "end": 12004141156,
+            "offset": 173088
+          },
+          {
+            "name": "__const",
+            "start": 12004141168,
+            "end": 12004141512,
+            "offset": 174192
+          },
+          {
+            "name": "__cstring",
+            "start": 12004141512,
+            "end": 12004150217,
+            "offset": 174536
+          },
+          {
+            "name": "__oslogstring",
+            "start": 12004150217,
+            "end": 12004162532,
+            "offset": 183241
+          },
+          {
+            "name": "__gcc_except_tab",
+            "start": 12004162532,
+            "end": 12004163396,
+            "offset": 195556
+          },
+          {
+            "name": "__info_plist",
+            "start": 12004163396,
+            "end": 12004164662,
+            "offset": 196420
+          },
+          {
+            "name": "__unwind_info",
+            "start": 12004164664,
+            "end": 12004165984,
+            "offset": 197688
+          },
+          {
+            "name": "__objc_stubs",
+            "start": 12004165984,
+            "end": 12004165984,
+            "offset": 0
+          },
+          {
+            "name": "__auth_stubs",
+            "start": 12004165984,
+            "end": 12004165984,
+            "offset": 0
+          },
+          {
+            "name": "__objc_classname",
+            "start": 12004165984,
+            "end": 12004165984,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methname",
+            "start": 12004165984,
+            "end": 12004165984,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methtype",
+            "start": 12004165984,
+            "end": 12004165984,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_CONST",
+        "start": 12251166824,
+        "end": 12251172424,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 12251166824,
+            "end": 12251170608,
+            "offset": 199008
+          },
+          {
+            "name": "__objc_classlist",
+            "start": 12251170608,
+            "end": 12251170696,
+            "offset": 202792
+          },
+          {
+            "name": "__objc_nlclslist",
+            "start": 12251170696,
+            "end": 12251170760,
+            "offset": 202880
+          },
+          {
+            "name": "__objc_imageinfo",
+            "start": 12251170760,
+            "end": 12251170768,
+            "offset": 202944
+          },
+          {
+            "name": "__objc_selrefs",
+            "start": 12251170768,
+            "end": 12251171648,
+            "offset": 202952
+          },
+          {
+            "name": "__objc_superrefs",
+            "start": 12251171648,
+            "end": 12251171736,
+            "offset": 203832
+          },
+          {
+            "name": "__objc_arraydata",
+            "start": 12251171736,
+            "end": 12251171760,
+            "offset": 203920
+          },
+          {
+            "name": "__got",
+            "start": 12251171760,
+            "end": 12251172424,
+            "offset": 203944
+          }
+        ]
+      },
+      {
+        "name": "__AUTH_CONST",
+        "start": 12313626752,
+        "end": 12313634168,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 12313626752,
+            "end": 12313627816,
+            "offset": 204608
+          },
+          {
+            "name": "__cfstring",
+            "start": 12313627816,
+            "end": 12313629512,
+            "offset": 205672
+          },
+          {
+            "name": "__objc_const",
+            "start": 12313629512,
+            "end": 12313632248,
+            "offset": 207368
+          },
+          {
+            "name": "__objc_arrayobj",
+            "start": 12313632248,
+            "end": 12313632272,
+            "offset": 210104
+          },
+          {
+            "name": "__auth_got",
+            "start": 12313632272,
+            "end": 12313634136,
+            "offset": 210128
+          },
+          {
+            "name": "__auth_ptr",
+            "start": 12313634168,
+            "end": 12313634168,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__AUTH",
+        "start": 12416704712,
+        "end": 12416704792,
+        "sections": [
+          {
+            "name": "__objc_data",
+            "start": 12416704712,
+            "end": 12416704792,
+            "offset": 212024
+          }
+        ]
+      },
+      {
+        "name": "__DATA",
+        "start": 12391692296,
+        "end": 12391692656,
+        "sections": [
+          {
+            "name": "__objc_ivar",
+            "start": 12391692296,
+            "end": 12391692388,
+            "offset": 212104
+          },
+          {
+            "name": "__data",
+            "start": 12391692392,
+            "end": 12391692616,
+            "offset": 212200
+          },
+          {
+            "name": "__bss",
+            "start": 12391692616,
+            "end": 12391692656,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_DIRTY",
+        "start": 12409653344,
+        "end": 12409655240,
+        "sections": [
+          {
+            "name": "__objc_data",
+            "start": 12409653344,
+            "end": 12409654144,
+            "offset": 212464
+          },
+          {
+            "name": "__data",
+            "start": 12409654144,
+            "end": 12409654592,
+            "offset": 213264
+          },
+          {
+            "name": "__bss",
+            "start": 12409654592,
+            "end": 12409655240,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__LINKEDIT",
+        "start": 12453183488,
+        "end": 12453236736,
+        "sections": []
+      },
+      {
+        "name": "__DSC_0",
+        "start": 6531769528,
+        "end": 6576672560,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 6531769528,
+            "end": 6576672560,
+            "offset": 266372
+          }
+        ]
+      },
+      {
+        "name": "__DSC_1",
+        "start": 8280061368,
+        "end": 8280061376,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 8280061368,
+            "end": 8280061376,
+            "offset": 45169404
+          }
+        ]
+      },
+      {
+        "name": "__DSC_2",
+        "start": 8395577760,
+        "end": 8449108548,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 8395577760,
+            "end": 8449108548,
+            "offset": 45169412
+          }
+        ]
+      },
+      {
+        "name": "__DSC_3",
+        "start": 12079595520,
+        "end": 12079900140,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 12079595520,
+            "end": 12079900140,
+            "offset": 98700200
+          }
+        ]
+      },
+      {
+        "name": "__DSC_4",
+        "start": 12079956704,
+        "end": 12080129264,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 12079956704,
+            "end": 12080129264,
+            "offset": 99004820
+          }
+        ]
+      },
+      {
+        "name": "__DSC_5",
+        "start": 12257233224,
+        "end": 12258005152,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 12257233224,
+            "end": 12258005152,
+            "offset": 99177380
+          }
+        ]
+      },
+      {
+        "name": "__EXTRA_OBJC",
+        "start": 14144192512,
+        "end": 14144201700,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 14144192512,
+            "end": 14144201700,
+            "offset": 99949308
+          }
+        ]
+      }
+    ],
+    "primary": {
+      "name": "__TEXT",
+      "start": 12004032512,
+      "end": 12004165984,
+      "sections": [
+        {
+          "name": "__text",
+          "start": 12004037256,
+          "end": 12004140060,
+          "offset": 70280
+        },
+        {
+          "name": "__objc_methlist",
+          "start": 12004140064,
+          "end": 12004141156,
+          "offset": 173088
+        },
+        {
+          "name": "__const",
+          "start": 12004141168,
+          "end": 12004141512,
+          "offset": 174192
+        },
+        {
+          "name": "__cstring",
+          "start": 12004141512,
+          "end": 12004150217,
+          "offset": 174536
+        },
+        {
+          "name": "__oslogstring",
+          "start": 12004150217,
+          "end": 12004162532,
+          "offset": 183241
+        },
+        {
+          "name": "__gcc_except_tab",
+          "start": 12004162532,
+          "end": 12004163396,
+          "offset": 195556
+        },
+        {
+          "name": "__info_plist",
+          "start": 12004163396,
+          "end": 12004164662,
+          "offset": 196420
+        },
+        {
+          "name": "__unwind_info",
+          "start": 12004164664,
+          "end": 12004165984,
+          "offset": 197688
+        },
+        {
+          "name": "__objc_stubs",
+          "start": 12004165984,
+          "end": 12004165984,
+          "offset": 0
+        },
+        {
+          "name": "__auth_stubs",
+          "start": 12004165984,
+          "end": 12004165984,
+          "offset": 0
+        },
+        {
+          "name": "__objc_classname",
+          "start": 12004165984,
+          "end": 12004165984,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methname",
+          "start": 12004165984,
+          "end": 12004165984,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methtype",
+          "start": 12004165984,
+          "end": 12004165984,
+          "offset": 0
+        }
+      ]
+    }
+  },
+  "libcryptex_interface.dylib": {
+    "segments": [
+      {
+        "name": "__DYLEX_HDR",
+        "start": 6442385408,
+        "end": 6442450944,
+        "sections": []
+      },
+      {
+        "name": "__TEXT",
+        "start": 9784532992,
+        "end": 9784577364,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 9784536816,
+            "end": 9784568296,
+            "offset": 69360
+          },
+          {
+            "name": "__objc_methlist",
+            "start": 9784568296,
+            "end": 9784568568,
+            "offset": 100840
+          },
+          {
+            "name": "__const",
+            "start": 9784568568,
+            "end": 9784568904,
+            "offset": 101112
+          },
+          {
+            "name": "__cstring",
+            "start": 9784568904,
+            "end": 9784572373,
+            "offset": 101448
+          },
+          {
+            "name": "__oslogstring",
+            "start": 9784572373,
+            "end": 9784574729,
+            "offset": 104917
+          },
+          {
+            "name": "__gcc_except_tab",
+            "start": 9784574732,
+            "end": 9784575432,
+            "offset": 107276
+          },
+          {
+            "name": "__info_plist",
+            "start": 9784575432,
+            "end": 9784576705,
+            "offset": 107976
+          },
+          {
+            "name": "__unwind_info",
+            "start": 9784576708,
+            "end": 9784577364,
+            "offset": 109252
+          },
+          {
+            "name": "__objc_stubs",
+            "start": 9784577364,
+            "end": 9784577364,
+            "offset": 0
+          },
+          {
+            "name": "__auth_stubs",
+            "start": 9784577364,
+            "end": 9784577364,
+            "offset": 0
+          },
+          {
+            "name": "__objc_classname",
+            "start": 9784577364,
+            "end": 9784577364,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methname",
+            "start": 9784577364,
+            "end": 9784577364,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methtype",
+            "start": 9784577364,
+            "end": 9784577364,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_CONST",
+        "start": 10354374976,
+        "end": 10354375656,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 10354374976,
+            "end": 10354375248,
+            "offset": 109908
+          },
+          {
+            "name": "__objc_classlist",
+            "start": 10354375248,
+            "end": 10354375264,
+            "offset": 110180
+          },
+          {
+            "name": "__objc_nlclslist",
+            "start": 10354375264,
+            "end": 10354375272,
+            "offset": 110196
+          },
+          {
+            "name": "__objc_imageinfo",
+            "start": 10354375272,
+            "end": 10354375280,
+            "offset": 110204
+          },
+          {
+            "name": "__objc_selrefs",
+            "start": 10354375280,
+            "end": 10354375456,
+            "offset": 110212
+          },
+          {
+            "name": "__objc_superrefs",
+            "start": 10354375456,
+            "end": 10354375472,
+            "offset": 110388
+          },
+          {
+            "name": "__got",
+            "start": 10354375472,
+            "end": 10354375656,
+            "offset": 110404
+          }
+        ]
+      },
+      {
+        "name": "__AUTH_CONST",
+        "start": 10431088552,
+        "end": 10431089928,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 10431088552,
+            "end": 10431089272,
+            "offset": 110588
+          },
+          {
+            "name": "__cfstring",
+            "start": 10431089272,
+            "end": 10431089432,
+            "offset": 111308
+          },
+          {
+            "name": "__objc_const",
+            "start": 10431089432,
+            "end": 10431089928,
+            "offset": 111468
+          },
+          {
+            "name": "__auth_got",
+            "start": 10431089928,
+            "end": 10431089928,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__AUTH",
+        "start": 10571153112,
+        "end": 10571153192,
+        "sections": [
+          {
+            "name": "__objc_data",
+            "start": 10571153112,
+            "end": 10571153192,
+            "offset": 111964
+          }
+        ]
+      },
+      {
+        "name": "__DATA",
+        "start": 10517340032,
+        "end": 10517340280,
+        "sections": [
+          {
+            "name": "__objc_ivar",
+            "start": 10517340032,
+            "end": 10517340048,
+            "offset": 112044
+          },
+          {
+            "name": "__data",
+            "start": 10517340048,
+            "end": 10517340088,
+            "offset": 112060
+          },
+          {
+            "name": "__bss",
+            "start": 10517340088,
+            "end": 10517340280,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_DIRTY",
+        "start": 10563355912,
+        "end": 10563355992,
+        "sections": [
+          {
+            "name": "__objc_data",
+            "start": 10563355912,
+            "end": 10563355992,
+            "offset": 112292
+          }
+        ]
+      },
+      {
+        "name": "__LINKEDIT",
+        "start": 12453183488,
+        "end": 12453208064,
+        "sections": []
+      },
+      {
+        "name": "__DSC_0",
+        "start": 6576668672,
+        "end": 6576672560,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 6576668672,
+            "end": 6576672560,
+            "offset": 133684
+          }
+        ]
+      },
+      {
+        "name": "__DSC_1",
+        "start": 8395910944,
+        "end": 8441938726,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 8395910944,
+            "end": 8441938726,
+            "offset": 137572
+          }
+        ]
+      },
+      {
+        "name": "__DSC_2",
+        "start": 9797894144,
+        "end": 9798688524,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 9797894144,
+            "end": 9798688524,
+            "offset": 46165354
+          }
+        ]
+      },
+      {
+        "name": "__DSC_3",
+        "start": 9798833408,
+        "end": 9799120240,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 9798833408,
+            "end": 9799120240,
+            "offset": 46959734
+          }
+        ]
+      },
+      {
+        "name": "__DSC_4",
+        "start": 10357818600,
+        "end": 10358893664,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 10357818600,
+            "end": 10358893664,
+            "offset": 47246566
+          }
+        ]
+      },
+      {
+        "name": "__EXTRA_OBJC",
+        "start": 14144192512,
+        "end": 14144194441,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 14144192512,
+            "end": 14144194441,
+            "offset": 48321630
+          }
+        ]
+      }
+    ],
+    "primary": {
+      "name": "__TEXT",
+      "start": 9784532992,
+      "end": 9784577364,
+      "sections": [
+        {
+          "name": "__text",
+          "start": 9784536816,
+          "end": 9784568296,
+          "offset": 69360
+        },
+        {
+          "name": "__objc_methlist",
+          "start": 9784568296,
+          "end": 9784568568,
+          "offset": 100840
+        },
+        {
+          "name": "__const",
+          "start": 9784568568,
+          "end": 9784568904,
+          "offset": 101112
+        },
+        {
+          "name": "__cstring",
+          "start": 9784568904,
+          "end": 9784572373,
+          "offset": 101448
+        },
+        {
+          "name": "__oslogstring",
+          "start": 9784572373,
+          "end": 9784574729,
+          "offset": 104917
+        },
+        {
+          "name": "__gcc_except_tab",
+          "start": 9784574732,
+          "end": 9784575432,
+          "offset": 107276
+        },
+        {
+          "name": "__info_plist",
+          "start": 9784575432,
+          "end": 9784576705,
+          "offset": 107976
+        },
+        {
+          "name": "__unwind_info",
+          "start": 9784576708,
+          "end": 9784577364,
+          "offset": 109252
+        },
+        {
+          "name": "__objc_stubs",
+          "start": 9784577364,
+          "end": 9784577364,
+          "offset": 0
+        },
+        {
+          "name": "__auth_stubs",
+          "start": 9784577364,
+          "end": 9784577364,
+          "offset": 0
+        },
+        {
+          "name": "__objc_classname",
+          "start": 9784577364,
+          "end": 9784577364,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methname",
+          "start": 9784577364,
+          "end": 9784577364,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methtype",
+          "start": 9784577364,
+          "end": 9784577364,
+          "offset": 0
+        }
+      ]
+    }
+  },
+  "libcryptex_trampoline.dylib": {
+    "segments": [
+      {
+        "name": "__DYLEX_HDR",
+        "start": 6442385408,
+        "end": 6442450944,
+        "sections": []
+      },
+      {
+        "name": "__TEXT",
+        "start": 12004167680,
+        "end": 12004173824,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 12004169696,
+            "end": 12004171460,
+            "offset": 67552
+          },
+          {
+            "name": "__const",
+            "start": 12004171464,
+            "end": 12004171576,
+            "offset": 69320
+          },
+          {
+            "name": "__cstring",
+            "start": 12004171576,
+            "end": 12004172159,
+            "offset": 69432
+          },
+          {
+            "name": "__oslogstring",
+            "start": 12004172159,
+            "end": 12004172419,
+            "offset": 70015
+          },
+          {
+            "name": "__info_plist",
+            "start": 12004172419,
+            "end": 12004173687,
+            "offset": 70275
+          },
+          {
+            "name": "__unwind_info",
+            "start": 12004173688,
+            "end": 12004173824,
+            "offset": 71544
+          },
+          {
+            "name": "__auth_stubs",
+            "start": 12004173824,
+            "end": 12004173824,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_CONST",
+        "start": 12251172424,
+        "end": 12251172456,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 12251172424,
+            "end": 12251172456,
+            "offset": 71680
+          },
+          {
+            "name": "__got",
+            "start": 12251172456,
+            "end": 12251172456,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__AUTH_CONST",
+        "start": 12313634168,
+        "end": 12313634200,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 12313634168,
+            "end": 12313634200,
+            "offset": 71712
+          },
+          {
+            "name": "__auth_got",
+            "start": 12313634200,
+            "end": 12313634200,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA",
+        "start": 12391692656,
+        "end": 12391692712,
+        "sections": [
+          {
+            "name": "__data",
+            "start": 12391692656,
+            "end": 12391692696,
+            "offset": 71744
+          },
+          {
+            "name": "__bss",
+            "start": 12391692696,
+            "end": 12391692712,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__LINKEDIT",
+        "start": 12453183488,
+        "end": 12453187584,
+        "sections": []
+      },
+      {
+        "name": "__DSC_0",
+        "start": 12079959872,
+        "end": 12080129280,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 12079959872,
+            "end": 12080129280,
+            "offset": 74168
+          }
+        ]
+      },
+      {
+        "name": "__DSC_1",
+        "start": 12257934312,
+        "end": 12258003296,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 12257934312,
+            "end": 12258003296,
+            "offset": 243576
+          }
+        ]
+      }
+    ],
+    "primary": {
+      "name": "__TEXT",
+      "start": 12004167680,
+      "end": 12004173824,
+      "sections": [
+        {
+          "name": "__text",
+          "start": 12004169696,
+          "end": 12004171460,
+          "offset": 67552
+        },
+        {
+          "name": "__const",
+          "start": 12004171464,
+          "end": 12004171576,
+          "offset": 69320
+        },
+        {
+          "name": "__cstring",
+          "start": 12004171576,
+          "end": 12004172159,
+          "offset": 69432
+        },
+        {
+          "name": "__oslogstring",
+          "start": 12004172159,
+          "end": 12004172419,
+          "offset": 70015
+        },
+        {
+          "name": "__info_plist",
+          "start": 12004172419,
+          "end": 12004173687,
+          "offset": 70275
+        },
+        {
+          "name": "__unwind_info",
+          "start": 12004173688,
+          "end": 12004173824,
+          "offset": 71544
+        },
+        {
+          "name": "__auth_stubs",
+          "start": 12004173824,
+          "end": 12004173824,
+          "offset": 0
+        }
+      ]
+    }
+  },
+  "libcryptex.dylib": {
+    "segments": [
+      {
+        "name": "__DYLEX_HDR",
+        "start": 6442385408,
+        "end": 6442450944,
+        "sections": []
+      },
+      {
+        "name": "__TEXT",
+        "start": 12003819520,
+        "end": 12004029868,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 12003824448,
+            "end": 12003993160,
+            "offset": 70464
+          },
+          {
+            "name": "__objc_methlist",
+            "start": 12003993160,
+            "end": 12003994360,
+            "offset": 239176
+          },
+          {
+            "name": "__const",
+            "start": 12003994368,
+            "end": 12003996480,
+            "offset": 240384
+          },
+          {
+            "name": "__gcc_except_tab",
+            "start": 12003996480,
+            "end": 12003999776,
+            "offset": 242496
+          },
+          {
+            "name": "__cstring",
+            "start": 12003999776,
+            "end": 12004008362,
+            "offset": 245792
+          },
+          {
+            "name": "__oslogstring",
+            "start": 12004008362,
+            "end": 12004027043,
+            "offset": 254378
+          },
+          {
+            "name": "__info_plist",
+            "start": 12004027043,
+            "end": 12004028289,
+            "offset": 273059
+          },
+          {
+            "name": "__unwind_info",
+            "start": 12004028292,
+            "end": 12004029868,
+            "offset": 274308
+          },
+          {
+            "name": "__objc_stubs",
+            "start": 12004029868,
+            "end": 12004029868,
+            "offset": 0
+          },
+          {
+            "name": "__auth_stubs",
+            "start": 12004029868,
+            "end": 12004029868,
+            "offset": 0
+          },
+          {
+            "name": "__objc_classname",
+            "start": 12004029868,
+            "end": 12004029868,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methname",
+            "start": 12004029868,
+            "end": 12004029868,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methtype",
+            "start": 12004029868,
+            "end": 12004029868,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_CONST",
+        "start": 12251163744,
+        "end": 12251166824,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 12251163744,
+            "end": 12251165304,
+            "offset": 275884
+          },
+          {
+            "name": "__objc_classlist",
+            "start": 12251165304,
+            "end": 12251165424,
+            "offset": 277444
+          },
+          {
+            "name": "__objc_nlclslist",
+            "start": 12251165424,
+            "end": 12251165472,
+            "offset": 277564
+          },
+          {
+            "name": "__objc_imageinfo",
+            "start": 12251165472,
+            "end": 12251165480,
+            "offset": 277612
+          },
+          {
+            "name": "__objc_selrefs",
+            "start": 12251165480,
+            "end": 12251166216,
+            "offset": 277620
+          },
+          {
+            "name": "__objc_superrefs",
+            "start": 12251166216,
+            "end": 12251166336,
+            "offset": 278356
+          },
+          {
+            "name": "__got",
+            "start": 12251166336,
+            "end": 12251166824,
+            "offset": 278476
+          }
+        ]
+      },
+      {
+        "name": "__AUTH_CONST",
+        "start": 12313618864,
+        "end": 12313626752,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 12313618864,
+            "end": 12313619984,
+            "offset": 278964
+          },
+          {
+            "name": "__cfstring",
+            "start": 12313619984,
+            "end": 12313620400,
+            "offset": 280084
+          },
+          {
+            "name": "__objc_const",
+            "start": 12313620400,
+            "end": 12313624104,
+            "offset": 280500
+          },
+          {
+            "name": "__objc_intobj",
+            "start": 12313624104,
+            "end": 12313624224,
+            "offset": 284204
+          },
+          {
+            "name": "__auth_got",
+            "start": 12313624224,
+            "end": 12313626736,
+            "offset": 284324
+          },
+          {
+            "name": "__auth_ptr",
+            "start": 12313626752,
+            "end": 12313626752,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__AUTH",
+        "start": 12416704072,
+        "end": 12416704712,
+        "sections": [
+          {
+            "name": "__objc_data",
+            "start": 12416704072,
+            "end": 12416704712,
+            "offset": 286852
+          }
+        ]
+      },
+      {
+        "name": "__DATA",
+        "start": 12391692032,
+        "end": 12391692296,
+        "sections": [
+          {
+            "name": "__objc_ivar",
+            "start": 12391692032,
+            "end": 12391692148,
+            "offset": 287492
+          },
+          {
+            "name": "__data",
+            "start": 12391692152,
+            "end": 12391692200,
+            "offset": 287612
+          },
+          {
+            "name": "__bss",
+            "start": 12391692200,
+            "end": 12391692296,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_DIRTY",
+        "start": 12409652664,
+        "end": 12409653344,
+        "sections": [
+          {
+            "name": "__objc_data",
+            "start": 12409652664,
+            "end": 12409653224,
+            "offset": 287756
+          },
+          {
+            "name": "__data",
+            "start": 12409653224,
+            "end": 12409653304,
+            "offset": 288316
+          },
+          {
+            "name": "__bss",
+            "start": 12409653304,
+            "end": 12409653344,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__LINKEDIT",
+        "start": 12453183488,
+        "end": 12453253120,
+        "sections": []
+      },
+      {
+        "name": "__DSC_0",
+        "start": 6531769528,
+        "end": 6576672560,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 6531769528,
+            "end": 6576672560,
+            "offset": 354540
+          }
+        ]
+      },
+      {
+        "name": "__DSC_1",
+        "start": 8280061368,
+        "end": 8280061376,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 8280061368,
+            "end": 8280061376,
+            "offset": 45257572
+          }
+        ]
+      },
+      {
+        "name": "__DSC_2",
+        "start": 8395529624,
+        "end": 8449107825,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 8395529624,
+            "end": 8449107825,
+            "offset": 45257580
+          }
+        ]
+      },
+      {
+        "name": "__DSC_3",
+        "start": 12079595520,
+        "end": 12079899484,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 12079595520,
+            "end": 12079899484,
+            "offset": 98835781
+          }
+        ]
+      },
+      {
+        "name": "__DSC_4",
+        "start": 12079956736,
+        "end": 12080128272,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 12079956736,
+            "end": 12080128272,
+            "offset": 99139745
+          }
+        ]
+      },
+      {
+        "name": "__DSC_5",
+        "start": 12257233216,
+        "end": 12258005152,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 12257233216,
+            "end": 12258005152,
+            "offset": 99311281
+          }
+        ]
+      },
+      {
+        "name": "__EXTRA_OBJC",
+        "start": 14144192512,
+        "end": 14144203270,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 14144192512,
+            "end": 14144203270,
+            "offset": 100083217
+          }
+        ]
+      }
+    ],
+    "primary": {
+      "name": "__TEXT",
+      "start": 12003819520,
+      "end": 12004029868,
+      "sections": [
+        {
+          "name": "__text",
+          "start": 12003824448,
+          "end": 12003993160,
+          "offset": 70464
+        },
+        {
+          "name": "__objc_methlist",
+          "start": 12003993160,
+          "end": 12003994360,
+          "offset": 239176
+        },
+        {
+          "name": "__const",
+          "start": 12003994368,
+          "end": 12003996480,
+          "offset": 240384
+        },
+        {
+          "name": "__gcc_except_tab",
+          "start": 12003996480,
+          "end": 12003999776,
+          "offset": 242496
+        },
+        {
+          "name": "__cstring",
+          "start": 12003999776,
+          "end": 12004008362,
+          "offset": 245792
+        },
+        {
+          "name": "__oslogstring",
+          "start": 12004008362,
+          "end": 12004027043,
+          "offset": 254378
+        },
+        {
+          "name": "__info_plist",
+          "start": 12004027043,
+          "end": 12004028289,
+          "offset": 273059
+        },
+        {
+          "name": "__unwind_info",
+          "start": 12004028292,
+          "end": 12004029868,
+          "offset": 274308
+        },
+        {
+          "name": "__objc_stubs",
+          "start": 12004029868,
+          "end": 12004029868,
+          "offset": 0
+        },
+        {
+          "name": "__auth_stubs",
+          "start": 12004029868,
+          "end": 12004029868,
+          "offset": 0
+        },
+        {
+          "name": "__objc_classname",
+          "start": 12004029868,
+          "end": 12004029868,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methname",
+          "start": 12004029868,
+          "end": 12004029868,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methtype",
+          "start": 12004029868,
+          "end": 12004029868,
+          "offset": 0
+        }
+      ]
+    }
+  },
+  "libImage4_V2.dylib": {
+    "segments": [
+      {
+        "name": "__DYLEX_HDR",
+        "start": 6442385408,
+        "end": 6442450944,
+        "sections": []
+      },
+      {
+        "name": "__TEXT",
+        "start": 11993358336,
+        "end": 11993603012,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 11993360432,
+            "end": 11993468296,
+            "offset": 67632
+          },
+          {
+            "name": "__cstring",
+            "start": 11993468296,
+            "end": 11993477946,
+            "offset": 175496
+          },
+          {
+            "name": "__const",
+            "start": 11993477952,
+            "end": 11993601651,
+            "offset": 185152
+          },
+          {
+            "name": "__unwind_info",
+            "start": 11993601652,
+            "end": 11993603012,
+            "offset": 308852
+          },
+          {
+            "name": "__auth_stubs",
+            "start": 11993603012,
+            "end": 11993603012,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_CONST",
+        "start": 12251102104,
+        "end": 12251122840,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 12251102104,
+            "end": 12251122840,
+            "offset": 310212
+          },
+          {
+            "name": "__got",
+            "start": 12251122840,
+            "end": 12251122840,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__AUTH_CONST",
+        "start": 12313452088,
+        "end": 12313464008,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 12313452088,
+            "end": 12313463280,
+            "offset": 330948
+          },
+          {
+            "name": "__auth_got",
+            "start": 12313463280,
+            "end": 12313463952,
+            "offset": 342140
+          },
+          {
+            "name": "__auth_ptr",
+            "start": 12313464008,
+            "end": 12313464008,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_DIRTY",
+        "start": 12409650936,
+        "end": 12409651313,
+        "sections": [
+          {
+            "name": "__data",
+            "start": 12409650936,
+            "end": 12409651288,
+            "offset": 342868
+          },
+          {
+            "name": "__common",
+            "start": 12409651288,
+            "end": 12409651296,
+            "offset": 0
+          },
+          {
+            "name": "__bss",
+            "start": 12409651296,
+            "end": 12409651313,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__LINKEDIT",
+        "start": 12453183488,
+        "end": 12453273600,
+        "sections": []
+      },
+      {
+        "name": "__DSC_0",
+        "start": 6531769528,
+        "end": 6531769540,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 6531769528,
+            "end": 6531769540,
+            "offset": 429452
+          }
+        ]
+      },
+      {
+        "name": "__DSC_1",
+        "start": 8280061368,
+        "end": 8280061376,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 8280061368,
+            "end": 8280061376,
+            "offset": 429464
+          }
+        ]
+      },
+      {
+        "name": "__DSC_2",
+        "start": 12079956912,
+        "end": 12080109520,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 12079956912,
+            "end": 12080109520,
+            "offset": 429472
+          }
+        ]
+      },
+      {
+        "name": "__DSC_3",
+        "start": 12257233808,
+        "end": 12258003304,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 12257233808,
+            "end": 12258003304,
+            "offset": 582080
+          }
+        ]
+      }
+    ],
+    "primary": {
+      "name": "__TEXT",
+      "start": 11993358336,
+      "end": 11993603012,
+      "sections": [
+        {
+          "name": "__text",
+          "start": 11993360432,
+          "end": 11993468296,
+          "offset": 67632
+        },
+        {
+          "name": "__cstring",
+          "start": 11993468296,
+          "end": 11993477946,
+          "offset": 175496
+        },
+        {
+          "name": "__const",
+          "start": 11993477952,
+          "end": 11993601651,
+          "offset": 185152
+        },
+        {
+          "name": "__unwind_info",
+          "start": 11993601652,
+          "end": 11993603012,
+          "offset": 308852
+        },
+        {
+          "name": "__auth_stubs",
+          "start": 11993603012,
+          "end": 11993603012,
+          "offset": 0
+        }
+      ]
+    }
+  },
+  "libimage4.dylib": {
+    "segments": [
+      {
+        "name": "__DYLEX_HDR",
+        "start": 6442385408,
+        "end": 6442450944,
+        "sections": []
+      },
+      {
+        "name": "__TEXT",
+        "start": 9723076608,
+        "end": 9723418204,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 9723079168,
+            "end": 9723258672,
+            "offset": 68096
+          },
+          {
+            "name": "__const",
+            "start": 9723258672,
+            "end": 9723387056,
+            "offset": 247600
+          },
+          {
+            "name": "__cstring",
+            "start": 9723387056,
+            "end": 9723414254,
+            "offset": 375984
+          },
+          {
+            "name": "__oslogstring",
+            "start": 9723414254,
+            "end": 9723414380,
+            "offset": 403182
+          },
+          {
+            "name": "__info_plist",
+            "start": 9723414380,
+            "end": 9723415627,
+            "offset": 403308
+          },
+          {
+            "name": "__unwind_info",
+            "start": 9723415628,
+            "end": 9723418204,
+            "offset": 404556
+          },
+          {
+            "name": "__auth_stubs",
+            "start": 9723418204,
+            "end": 9723418204,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_CONST",
+        "start": 10353345912,
+        "end": 10353388176,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 10353345912,
+            "end": 10353387736,
+            "offset": 407132
+          },
+          {
+            "name": "__image4_chp",
+            "start": 10353387736,
+            "end": 10353388104,
+            "offset": 448956
+          },
+          {
+            "name": "__image4_coproc",
+            "start": 10353388104,
+            "end": 10353388176,
+            "offset": 449324
+          },
+          {
+            "name": "__got",
+            "start": 10353388176,
+            "end": 10353388176,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__AUTH_CONST",
+        "start": 10426769088,
+        "end": 10426801728,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 10426769088,
+            "end": 10426800672,
+            "offset": 449396
+          },
+          {
+            "name": "__auth_got",
+            "start": 10426800672,
+            "end": 10426801624,
+            "offset": 480980
+          },
+          {
+            "name": "__auth_ptr",
+            "start": 10426801728,
+            "end": 10426801728,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA",
+        "start": 10515655624,
+        "end": 10515655656,
+        "sections": [
+          {
+            "name": "__bss",
+            "start": 10515655624,
+            "end": 10515655648,
+            "offset": 0
+          },
+          {
+            "name": "__common",
+            "start": 10515655648,
+            "end": 10515655656,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_DIRTY",
+        "start": 10562752272,
+        "end": 10562753912,
+        "sections": [
+          {
+            "name": "__data",
+            "start": 10562752272,
+            "end": 10562753696,
+            "offset": 482068
+          },
+          {
+            "name": "__bss",
+            "start": 10562753696,
+            "end": 10562753912,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__LINKEDIT",
+        "start": 12453183488,
+        "end": 12453318656,
+        "sections": []
+      },
+      {
+        "name": "__DSC_0",
+        "start": 6531769528,
+        "end": 6531769540,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 6531769528,
+            "end": 6531769540,
+            "offset": 615824
+          }
+        ]
+      },
+      {
+        "name": "__DSC_1",
+        "start": 8280061368,
+        "end": 8280061376,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 8280061368,
+            "end": 8280061376,
+            "offset": 615836
+          }
+        ]
+      },
+      {
+        "name": "__DSC_2",
+        "start": 9798833840,
+        "end": 9798974976,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 9798833840,
+            "end": 9798974976,
+            "offset": 615844
+          }
+        ]
+      },
+      {
+        "name": "__DSC_3",
+        "start": 10357818368,
+        "end": 10358891760,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 10357818368,
+            "end": 10358891760,
+            "offset": 756980
+          }
+        ]
+      }
+    ],
+    "primary": {
+      "name": "__TEXT",
+      "start": 9723076608,
+      "end": 9723418204,
+      "sections": [
+        {
+          "name": "__text",
+          "start": 9723079168,
+          "end": 9723258672,
+          "offset": 68096
+        },
+        {
+          "name": "__const",
+          "start": 9723258672,
+          "end": 9723387056,
+          "offset": 247600
+        },
+        {
+          "name": "__cstring",
+          "start": 9723387056,
+          "end": 9723414254,
+          "offset": 375984
+        },
+        {
+          "name": "__oslogstring",
+          "start": 9723414254,
+          "end": 9723414380,
+          "offset": 403182
+        },
+        {
+          "name": "__info_plist",
+          "start": 9723414380,
+          "end": 9723415627,
+          "offset": 403308
+        },
+        {
+          "name": "__unwind_info",
+          "start": 9723415628,
+          "end": 9723418204,
+          "offset": 404556
+        },
+        {
+          "name": "__auth_stubs",
+          "start": 9723418204,
+          "end": 9723418204,
+          "offset": 0
+        }
+      ]
+    }
+  },
+  "libramrod.dylib": {
+    "segments": [
+      {
+        "name": "__DYLEX_HDR",
+        "start": 6442385408,
+        "end": 6442450944,
+        "sections": []
+      },
+      {
+        "name": "__TEXT",
+        "start": 12038795264,
+        "end": 12040621848,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 12038802112,
+            "end": 12039889124,
+            "offset": 72384
+          },
+          {
+            "name": "__objc_methlist",
+            "start": 12039889128,
+            "end": 12039895980,
+            "offset": 1159400
+          },
+          {
+            "name": "__cstring",
+            "start": 12039895980,
+            "end": 12040094749,
+            "offset": 1166252
+          },
+          {
+            "name": "__const",
+            "start": 12040094752,
+            "end": 12040594104,
+            "offset": 1365024
+          },
+          {
+            "name": "__gcc_except_tab",
+            "start": 12040594104,
+            "end": 12040597052,
+            "offset": 1864376
+          },
+          {
+            "name": "__oslogstring",
+            "start": 12040597052,
+            "end": 12040612461,
+            "offset": 1867324
+          },
+          {
+            "name": "__unwind_info",
+            "start": 12040612464,
+            "end": 12040620808,
+            "offset": 1882736
+          },
+          {
+            "name": "__eh_frame",
+            "start": 12040620808,
+            "end": 12040621848,
+            "offset": 1891080
+          },
+          {
+            "name": "__objc_stubs",
+            "start": 12040621848,
+            "end": 12040621848,
+            "offset": 0
+          },
+          {
+            "name": "__auth_stubs",
+            "start": 12040621848,
+            "end": 12040621848,
+            "offset": 0
+          },
+          {
+            "name": "__objc_classname",
+            "start": 12040621848,
+            "end": 12040621848,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methname",
+            "start": 12040621848,
+            "end": 12040621848,
+            "offset": 0
+          },
+          {
+            "name": "__objc_methtype",
+            "start": 12040621848,
+            "end": 12040621848,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__DATA_CONST",
+        "start": 12257119016,
+        "end": 12257135328,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 12257119016,
+            "end": 12257128848,
+            "offset": 1892120
+          },
+          {
+            "name": "__objc_classlist",
+            "start": 12257128848,
+            "end": 12257129072,
+            "offset": 1901952
+          },
+          {
+            "name": "__objc_catlist",
+            "start": 12257129072,
+            "end": 12257129080,
+            "offset": 1902176
+          },
+          {
+            "name": "__objc_protolist",
+            "start": 12257129080,
+            "end": 12257129096,
+            "offset": 1902184
+          },
+          {
+            "name": "__objc_imageinfo",
+            "start": 12257129096,
+            "end": 12257129104,
+            "offset": 1902200
+          },
+          {
+            "name": "__weak_got",
+            "start": 12257129104,
+            "end": 12257129112,
+            "offset": 1902208
+          },
+          {
+            "name": "__objc_selrefs",
+            "start": 12257129112,
+            "end": 12257133928,
+            "offset": 1902216
+          },
+          {
+            "name": "__objc_arraydata",
+            "start": 12257133928,
+            "end": 12257135328,
+            "offset": 1907032
+          },
+          {
+            "name": "__got",
+            "start": 12257135328,
+            "end": 12257135328,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__AUTH_CONST",
+        "start": 12315055960,
+        "end": 12315135416,
+        "sections": [
+          {
+            "name": "__const",
+            "start": 12315055960,
+            "end": 12315064560,
+            "offset": 1908432
+          },
+          {
+            "name": "__cfstring",
+            "start": 12315064560,
+            "end": 12315118384,
+            "offset": 1917032
+          },
+          {
+            "name": "__objc_const",
+            "start": 12315118384,
+            "end": 12315128008,
+            "offset": 1970856
+          },
+          {
+            "name": "__weak_auth_got",
+            "start": 12315128008,
+            "end": 12315128024,
+            "offset": 1980480
+          },
+          {
+            "name": "__objc_dictobj",
+            "start": 12315128024,
+            "end": 12315128464,
+            "offset": 1980496
+          },
+          {
+            "name": "__objc_intobj",
+            "start": 12315128464,
+            "end": 12315129016,
+            "offset": 1980936
+          },
+          {
+            "name": "__objc_arrayobj",
+            "start": 12315129016,
+            "end": 12315129160,
+            "offset": 1981488
+          },
+          {
+            "name": "__auth_got",
+            "start": 12315129160,
+            "end": 12315135128,
+            "offset": 1981632
+          },
+          {
+            "name": "__auth_ptr",
+            "start": 12315135416,
+            "end": 12315135416,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__AUTH",
+        "start": 12417275896,
+        "end": 12417278784,
+        "sections": [
+          {
+            "name": "__objc_data",
+            "start": 12417275896,
+            "end": 12417278136,
+            "offset": 1987888
+          },
+          {
+            "name": "__data",
+            "start": 12417278136,
+            "end": 12417278784,
+            "offset": 1990128
+          }
+        ]
+      },
+      {
+        "name": "__DATA",
+        "start": 12393768960,
+        "end": 12393782033,
+        "sections": [
+          {
+            "name": "__objc_classrefs",
+            "start": 12393768960,
+            "end": 12393769320,
+            "offset": 1990776
+          },
+          {
+            "name": "__objc_superrefs",
+            "start": 12393769320,
+            "end": 12393769512,
+            "offset": 1991136
+          },
+          {
+            "name": "__objc_ivar",
+            "start": 12393769512,
+            "end": 12393769924,
+            "offset": 1991328
+          },
+          {
+            "name": "__data",
+            "start": 12393769928,
+            "end": 12393779784,
+            "offset": 1991744
+          },
+          {
+            "name": "__bss",
+            "start": 12393779784,
+            "end": 12393782000,
+            "offset": 0
+          },
+          {
+            "name": "__common",
+            "start": 12393782000,
+            "end": 12393782033,
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "name": "__LINKEDIT",
+        "start": 12453183488,
+        "end": 12453285888,
+        "sections": []
+      },
+      {
+        "name": "__DSC_0",
+        "start": 6531769528,
+        "end": 6576672560,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 6531769528,
+            "end": 6576672560,
+            "offset": 2102160
+          }
+        ]
+      },
+      {
+        "name": "__DSC_1",
+        "start": 8280061368,
+        "end": 8280061384,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 8280061368,
+            "end": 8280061384,
+            "offset": 47005192
+          }
+        ]
+      },
+      {
+        "name": "__DSC_2",
+        "start": 8395519359,
+        "end": 8449141880,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 8395519359,
+            "end": 8449141880,
+            "offset": 47005208
+          }
+        ]
+      },
+      {
+        "name": "__DSC_3",
+        "start": 12079595520,
+        "end": 12079933708,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 12079595520,
+            "end": 12079933708,
+            "offset": 100627729
+          }
+        ]
+      },
+      {
+        "name": "__DSC_4",
+        "start": 12079956144,
+        "end": 12080237680,
+        "sections": [
+          {
+            "name": "__text",
+            "start": 12079956144,
+            "end": 12080237680,
+            "offset": 100965917
+          }
+        ]
+      },
+      {
+        "name": "__DSC_5",
+        "start": 12257232824,
+        "end": 12315055960,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 12257232824,
+            "end": 12315055960,
+            "offset": 101247453
+          }
+        ]
+      },
+      {
+        "name": "__EXTRA_OBJC",
+        "start": 14144192512,
+        "end": 14144241682,
+        "sections": [
+          {
+            "name": "__objc_const",
+            "start": 14144192512,
+            "end": 14144241682,
+            "offset": 159070589
+          }
+        ]
+      }
+    ],
+    "primary": {
+      "name": "__TEXT",
+      "start": 12038795264,
+      "end": 12040621848,
+      "sections": [
+        {
+          "name": "__text",
+          "start": 12038802112,
+          "end": 12039889124,
+          "offset": 72384
+        },
+        {
+          "name": "__objc_methlist",
+          "start": 12039889128,
+          "end": 12039895980,
+          "offset": 1159400
+        },
+        {
+          "name": "__cstring",
+          "start": 12039895980,
+          "end": 12040094749,
+          "offset": 1166252
+        },
+        {
+          "name": "__const",
+          "start": 12040094752,
+          "end": 12040594104,
+          "offset": 1365024
+        },
+        {
+          "name": "__gcc_except_tab",
+          "start": 12040594104,
+          "end": 12040597052,
+          "offset": 1864376
+        },
+        {
+          "name": "__oslogstring",
+          "start": 12040597052,
+          "end": 12040612461,
+          "offset": 1867324
+        },
+        {
+          "name": "__unwind_info",
+          "start": 12040612464,
+          "end": 12040620808,
+          "offset": 1882736
+        },
+        {
+          "name": "__eh_frame",
+          "start": 12040620808,
+          "end": 12040621848,
+          "offset": 1891080
+        },
+        {
+          "name": "__objc_stubs",
+          "start": 12040621848,
+          "end": 12040621848,
+          "offset": 0
+        },
+        {
+          "name": "__auth_stubs",
+          "start": 12040621848,
+          "end": 12040621848,
+          "offset": 0
+        },
+        {
+          "name": "__objc_classname",
+          "start": 12040621848,
+          "end": 12040621848,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methname",
+          "start": 12040621848,
+          "end": 12040621848,
+          "offset": 0
+        },
+        {
+          "name": "__objc_methtype",
+          "start": 12040621848,
+          "end": 12040621848,
+          "offset": 0
+        }
+      ]
+    }
+  }
+}

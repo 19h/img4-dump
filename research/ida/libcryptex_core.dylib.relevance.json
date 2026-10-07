@@ -1,0 +1,1407 @@
+{
+  "binary": "libcryptex_core.dylib",
+  "sha256": "6478a431043599f7e8e5f77624b665513f6ee698ff9944345b63c0fa4405b8f6",
+  "criteria": "img4|im4[pmrc]|image4|(?:^|_)DER|asn1|manifest|kbag|payload|payp|nonce|lzss|lzfse|compress|personaliz|ticket|digest|fourcc|fingerprint|trustcache",
+  "caller_depth": 2,
+  "selected": [
+    {
+      "function": {
+        "ea": "0x2cb7f2fa8",
+        "name": "_cryptex_core_get_nonce_domain_handle",
+        "size": 512,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f326c",
+        "name": "_cryptex_core_copy_nonce_domain_desc",
+        "size": 560,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f33e4",
+          "string_ea": "0x2cb80ab3c",
+          "text": "Cryptex1 nonce domain = %u"
+        },
+        {
+          "ref_ea": "0x2cb7f33f8",
+          "string_ea": "0x2cb80ab57",
+          "text": "nonce domain index %llu"
+        },
+        {
+          "ref_ea": "0x2cb7f3338",
+          "string_ea": "0x2cb80d0a9",
+          "text": "%{public}s: Failed to get nonce domain handle.: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7f33b4",
+          "string_ea": "0x2cb80d0ea",
+          "text": "%{public}s: Failed to get nonce domain index.: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7f32d8",
+          "callee": "0x2cb7f2fa8"
+        },
+        {
+          "ref_ea": "0x2cb7f3354",
+          "callee": "0x2cb7f349c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f349c",
+        "name": "_cryptex_core_get_nonce_domain_index",
+        "size": 300,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f35c8",
+        "name": "_cryptex_core_get_nonce_domain",
+        "size": 476,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f366c",
+          "string_ea": "0x2cb80d0a9",
+          "text": "%{public}s: Failed to get nonce domain handle.: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7f36e0",
+          "string_ea": "0x2cb80d0ea",
+          "text": "%{public}s: Failed to get nonce domain index.: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7f3768",
+          "string_ea": "0x2cb80d12a",
+          "text": "%{public}s: No such nonce domain exists.: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7f360c",
+          "callee": "0x2cb7f2fa8"
+        },
+        {
+          "ref_ea": "0x2cb7f3680",
+          "callee": "0x2cb7f349c"
+        },
+        {
+          "ref_ea": "0x2cb7f36fc",
+          "callee": "0x2cb7f7e38"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f37a4",
+        "name": "_cryptex_core_set_nonce_persistence",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f714c",
+        "name": "_cryptex_asset_create_generic_digest",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f7150",
+          "callee": "0x2cb807c58"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f7e38",
+        "name": "__img4_get_nonce_domain_from_index",
+        "size": 44,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f81d8",
+        "name": "-[CryptexTSS setManifestArray:]",
+        "size": 4,
+        "flags": 5312
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7fb24c",
+        "name": "-[CryptexTSS im4m_array]",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7fb254",
+        "name": "-[CryptexTSS setIm4m_array:]",
+        "size": 12,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7fb864",
+        "name": "_cryptex_tss_set_im4m_array",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7fbc9c",
+        "name": "_getSSOGetServiceTicketSymbolLoc",
+        "size": 212,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7fbd20",
+          "string_ea": "0x2cb80b90b",
+          "text": "SSOGetServiceTicket"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7fbd88",
+        "name": "___getSSOGetServiceTicketSymbolLoc_block_invoke",
+        "size": 80,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7fbda0",
+          "string_ea": "0x2cb80b90b",
+          "text": "SSOGetServiceTicket"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb8036a0",
+        "name": "_generate_manifest",
+        "size": 184,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb8036e0",
+          "string_ea": "0x2cb80c2a1",
+          "text": "acdc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb8059d4",
+        "name": "_cryptex_scrivener_set_nonce",
+        "size": 32,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb807c58",
+        "name": "__digest_file",
+        "size": 648,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f1c54",
+        "name": "_cryptex_core_cx1_read_from_file",
+        "size": 1676,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f2010",
+          "string_ea": "0x2cb80ab6f",
+          "text": "Cryptex1,NonceDomain"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f38f0",
+        "name": "_cryptex_core_cx1_properties_create_with_xpc_dictionary",
+        "size": 992,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f391c",
+          "string_ea": "0x2cb80ab6f",
+          "text": "Cryptex1,NonceDomain"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f3cd0",
+        "name": "_cryptex_core_cx1_copy_xpc_dictionary",
+        "size": 172,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f3cfc",
+          "string_ea": "0x2cb80ab6f",
+          "text": "Cryptex1,NonceDomain"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f50f4",
+        "name": "_cryptex_session_event_to_string",
+        "size": 192,
+        "flags": 5120
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f5178",
+          "string_ea": "0x2cb80ad39",
+          "text": "NONE"
+        },
+        {
+          "ref_ea": "0x2cb7f5184",
+          "string_ea": "0x2cb80ad52",
+          "text": "STOP"
+        },
+        {
+          "ref_ea": "0x2cb7f519c",
+          "string_ea": "0x2cb80ad62",
+          "text": "FAIL"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f5a88",
+        "name": "_cryptex_session_core_copy_xpc_object",
+        "size": 360,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f5b40",
+          "string_ea": "0x2cb80adec",
+          "text": "name"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f5bf0",
+        "name": "_cryptex_session_core_create_from_xpc",
+        "size": 468,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f5ce8",
+          "string_ea": "0x2cb80adec",
+          "text": "name"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb801414",
+        "name": "_cryptex_signature_create",
+        "size": 1904,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb801534",
+          "string_ea": "0x2cb80aff4",
+          "text": "c411"
+        },
+        {
+          "ref_ea": "0x2cb80156c",
+          "string_ea": "0x2cb80b041",
+          "text": "pdmg"
+        },
+        {
+          "ref_ea": "0x2cb801550",
+          "string_ea": "0x2cb80c22f",
+          "text": "ginc"
+        },
+        {
+          "ref_ea": "0x2cb801654",
+          "string_ea": "0x2cb80c234",
+          "text": "cryptex_sigtool_fingerprint_create"
+        },
+        {
+          "ref_ea": "0x2cb8016e0",
+          "string_ea": "0x2cb80c234",
+          "text": "cryptex_sigtool_fingerprint_create"
+        },
+        {
+          "ref_ea": "0x2cb801998",
+          "string_ea": "0x2cb80c234",
+          "text": "cryptex_sigtool_fingerprint_create"
+        },
+        {
+          "ref_ea": "0x2cb801a24",
+          "string_ea": "0x2cb80c234",
+          "text": "cryptex_sigtool_fingerprint_create"
+        },
+        {
+          "ref_ea": "0x2cb801aa4",
+          "string_ea": "0x2cb80c234",
+          "text": "cryptex_sigtool_fingerprint_create"
+        },
+        {
+          "ref_ea": "0x2cb801b5c",
+          "string_ea": "0x2cb80c234",
+          "text": "cryptex_sigtool_fingerprint_create"
+        },
+        {
+          "ref_ea": "0x2cb801aac",
+          "string_ea": "0x2cb80c279",
+          "text": "com.apple.security.cryptex.image4encode"
+        },
+        {
+          "ref_ea": "0x2cb80179c",
+          "string_ea": "0x2cb80e9ba",
+          "text": "%{public}s: couldn't generate cryptex fingerprint"
+        },
+        {
+          "ref_ea": "0x2cb8016a0",
+          "string_ea": "0x2cb80ed07",
+          "text": "couldn't allocate object digests for fingerprinting %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb801614",
+          "string_ea": "0x2cb80ed4c",
+          "text": "couldn't decode manifest for fingerprinting"
+        },
+        {
+          "ref_ea": "0x2cb8019e4",
+          "string_ea": "0x2cb80ed78",
+          "text": "couldn't get object property %X for fingerprinting"
+        },
+        {
+          "ref_ea": "0x2cb801a64",
+          "string_ea": "0x2cb80edab",
+          "text": "couldn't create manifest for fingerprinting"
+        },
+        {
+          "ref_ea": "0x2cb801958",
+          "string_ea": "0x2cb80edd7",
+          "text": "couldn't decode generated manifest for fingerprinting"
+        },
+        {
+          "ref_ea": "0x2cb801b1c",
+          "string_ea": "0x2cb80ee0d",
+          "text": "couldn't compute fingerprint digest"
+        },
+        {
+          "ref_ea": "0x2cb8014ac",
+          "callee": "0x2cb801b84"
+        },
+        {
+          "ref_ea": "0x2cb801aec",
+          "callee": "0x2cb80757c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb802594",
+        "name": "_cryptex_signature_secureconfig_add_entry",
+        "size": 2548,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb802b10",
+          "string_ea": "0x2cb80aff4",
+          "text": "c411"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f81e0",
+        "name": "-[CryptexTSS tssStampRequest]",
+        "size": 228,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f8270",
+          "string_ea": "0x2cb80b4e4",
+          "text": "@Cryptex1,Ticket"
+        },
+        {
+          "ref_ea": "0x2cb7f8278",
+          "string_ea": "0x2cb80b4f5",
+          "text": "@ApImg4Ticket"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f9f6c",
+        "name": "-[CryptexTSS tssSubmit]",
+        "size": 4304,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7fafc0",
+          "string_ea": "0x2cb80b91f",
+          "text": "int _SSOGetServiceTicket(CFStringRef _Nonnull, CFStringRef _Nonnull, CFStringRef _Nonnull, CFStringRef _Nonnull, CFStringRef _Nullable, SSOSignOffCallbackPtr _Nullable, CFDictionaryRef _Nullable, CFStringRef  _Nullable * _Nonnull, CFDataRef  _Nullable * _Nonnull, void * _Nullable * _Nonnull, CFDictionaryRef  _Nullable * _Nullable, CFStringRef  _Nullable * _Nullable)"
+        },
+        {
+          "ref_ea": "0x2cb7fa6d0",
+          "string_ea": "0x2cb80dd56",
+          "text": "Im4m response %@"
+        },
+        {
+          "ref_ea": "0x2cb7fa078",
+          "callee": "0x2cb7fbc9c"
+        },
+        {
+          "ref_ea": "0x2cb7fa084",
+          "callee": "0x2cb7fbc9c"
+        },
+        {
+          "ref_ea": "0x2cb7fa74c",
+          "callee": "0x2cb801414"
+        },
+        {
+          "ref_ea": "0x2cb7faf58",
+          "callee": "0x2cb809584"
+        },
+        {
+          "ref_ea": "0x2cb7faf60",
+          "callee": "0x2cb809384"
+        },
+        {
+          "ref_ea": "0x2cb7faf74",
+          "callee": "0x2cb809264"
+        },
+        {
+          "ref_ea": "0x2cb7faf84",
+          "callee": "0x2cb8092c0"
+        },
+        {
+          "ref_ea": "0x2cb7faf94",
+          "callee": "0x2cb809320"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb8099dc",
+        "name": "__cryptex_magister_init.cold.1",
+        "size": 28,
+        "flags": 5137
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb8099e8",
+          "string_ea": "0x2cb80be85",
+          "text": "unexpected failure: no im4m asset in core"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7ff13c",
+        "name": "__cryptex_magister_record_property_continue",
+        "size": 1460,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7ff6b4",
+          "string_ea": "0x2cb80c076",
+          "text": "_cryptex_magister_select_image4_coproc_and_handle"
+        },
+        {
+          "ref_ea": "0x2cb7ff1cc",
+          "string_ea": "0x2cb80e7c0",
+          "text": "%{public}s: im4m buff len: %zu"
+        },
+        {
+          "ref_ea": "0x2cb7ff478",
+          "string_ea": "0x2cb80e7df",
+          "text": "%{public}s: Unexpected im4m property type: %d"
+        },
+        {
+          "ref_ea": "0x2cb7ff4e4",
+          "string_ea": "0x2cb80e7df",
+          "text": "%{public}s: Unexpected im4m property type: %d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb803a30",
+        "name": "__AMAuthInstallSetAPParamsFromHost",
+        "size": 352,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb803a68",
+          "string_ea": "0x2cb80c2eb",
+          "text": "sha1"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb809e48",
+        "name": "__cryptex_scrivener_sign_continue.cold.2",
+        "size": 96,
+        "flags": 5137
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb809e8c",
+          "string_ea": "0x2cb80c7de",
+          "text": "AMAuthInstallApImg4CreateServerRequestDictionary"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f1618",
+        "name": "_cryptex_core_set_assets_from_directory",
+        "size": 1536,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f19e0",
+          "string_ea": "0x2cb80cc65",
+          "text": "%{public}s: failed to read im4m: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7f1a5c",
+          "string_ea": "0x2cb80cc97",
+          "text": "%{public}s: Failed to load metadata for Image4 manifest.: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7f17e4",
+          "callee": "0x2cb7f1c54"
+        },
+        {
+          "ref_ea": "0x2cb7f1a8c",
+          "callee": "0x2cb801414"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7fe6cc",
+        "name": "__cryptex_magister_init",
+        "size": 1660,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7fed00",
+          "string_ea": "0x2cb80cc97",
+          "text": "%{public}s: Failed to load metadata for Image4 manifest.: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7fea2c",
+          "string_ea": "0x2cb80e100",
+          "text": "%{public}s: failed to get nonce domain from core: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7feaa0",
+          "string_ea": "0x2cb80e143",
+          "text": "%{public}s: failed to get nonce domain description from core: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7feaf0",
+          "string_ea": "0x2cb80e192",
+          "text": "%{public}s: authenticating using nonce from %{public}s"
+        },
+        {
+          "ref_ea": "0x2cb7feb7c",
+          "string_ea": "0x2cb80e1c9",
+          "text": "%{public}s: copying cryptex nonce failed: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7fec8c",
+          "string_ea": "0x2cb80e204",
+          "text": "%{public}s: read im4m: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7fea40",
+          "callee": "0x2cb7f326c"
+        },
+        {
+          "ref_ea": "0x2cb7fe9c0",
+          "callee": "0x2cb7f35c8"
+        },
+        {
+          "ref_ea": "0x2cb7fed30",
+          "callee": "0x2cb801414"
+        },
+        {
+          "ref_ea": "0x2cb7fed44",
+          "callee": "0x2cb8099dc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb805ad4",
+        "name": "__cryptex_scrivener_read_continue",
+        "size": 1124,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb805de4",
+          "string_ea": "0x2cb80cc97",
+          "text": "%{public}s: Failed to load metadata for Image4 manifest.: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb805d60",
+          "string_ea": "0x2cb80f837",
+          "text": "%{public}s: reading im4m failed %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb805e78",
+          "string_ea": "0x2cb80f837",
+          "text": "%{public}s: reading im4m failed %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb805e18",
+          "callee": "0x2cb801414"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f2320",
+        "name": "_cryptex_core_set_assets_from_fds",
+        "size": 1720,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f2834",
+          "string_ea": "0x2cb80ceaa",
+          "text": "%{public}s: FD for im4m is invalid. Cryptex is not personalized."
+        },
+        {
+          "ref_ea": "0x2cb7f2944",
+          "string_ea": "0x2cb80ceaa",
+          "text": "%{public}s: FD for im4m is invalid. Cryptex is not personalized."
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f6458",
+        "name": "__cryptex1_asset_stamp",
+        "size": 664,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f6518",
+          "string_ea": "0x2cb80d85d",
+          "text": "%{public}s: Failed to compute digest.: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7f64b8",
+          "callee": "0x2cb807c58"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f82c4",
+        "name": "-[CryptexTSS generatePackedSignatures]",
+        "size": 1240,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f83a0",
+          "string_ea": "0x2cb80da17",
+          "text": "Manifest array not available %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7f8404",
+          "string_ea": "0x2cb80da17",
+          "text": "Manifest array not available %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb809584",
+        "name": "-[CryptexTSS tssSubmit].cold.13",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb8095b4",
+          "string_ea": "0x2cb80de2e",
+          "text": "Response plist %@ -> im4m: %@"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb809384",
+        "name": "-[CryptexTSS tssSubmit].cold.8",
+        "size": 68,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb8093a4",
+          "string_ea": "0x2cb80debb",
+          "text": "SSO framework service ticket support not available"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb809264",
+        "name": "-[CryptexTSS tssSubmit].cold.3",
+        "size": 92,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb809298",
+          "string_ea": "0x2cb80deee",
+          "text": "SSOGetServiceTicket: ret = %d, error = %@"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb8092c0",
+        "name": "-[CryptexTSS tssSubmit].cold.4",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb809300",
+          "string_ea": "0x2cb80df18",
+          "text": "sso ticket: username = %@, bytes = %@"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb809320",
+        "name": "-[CryptexTSS tssSubmit].cold.5",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb809360",
+          "string_ea": "0x2cb80df3e",
+          "text": "stamped AppleConnect ticket: %.*P"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb80416c",
+        "name": "__cryptex_scrivener_init",
+        "size": 2088,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb80480c",
+          "string_ea": "0x2cb80e100",
+          "text": "%{public}s: failed to get nonce domain from core: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb804618",
+          "string_ea": "0x2cb80e143",
+          "text": "%{public}s: failed to get nonce domain description from core: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb8042bc",
+          "string_ea": "0x2cb80f1a3",
+          "text": "%{public}s: using personalized chip environment"
+        },
+        {
+          "ref_ea": "0x2cb8048cc",
+          "string_ea": "0x2cb80f20c",
+          "text": "%{public}s: signing using nonce from %{public}s"
+        },
+        {
+          "ref_ea": "0x2cb804958",
+          "string_ea": "0x2cb80f23c",
+          "text": "%{public}s: img4_nonce_domain_copy_nonce: %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb8045b8",
+          "callee": "0x2cb7f326c"
+        },
+        {
+          "ref_ea": "0x2cb80459c",
+          "callee": "0x2cb7f35c8"
+        },
+        {
+          "ref_ea": "0x2cb804568",
+          "callee": "0x2cb803a30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb800004",
+        "name": "__cryptex_magister_firmware_execute_cferr",
+        "size": 2356,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb800320",
+          "string_ea": "0x2cb80e422",
+          "text": "Manifest no longer valid. %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb800704",
+          "string_ea": "0x2cb80e422",
+          "text": "Manifest no longer valid. %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb800094",
+          "string_ea": "0x2cb80e487",
+          "text": "The firmware data is not valid Image4 data %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb800794",
+          "string_ea": "0x2cb80e487",
+          "text": "The firmware data is not valid Image4 data %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb8001f0",
+          "string_ea": "0x2cb80e4c3",
+          "text": "The attached manifest is not a valid Image4 manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb800558",
+          "string_ea": "0x2cb80e4c3",
+          "text": "The attached manifest is not a valid Image4 manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb800108",
+          "string_ea": "0x2cb80e509",
+          "text": "The attached manifest does not authenticate this type firmware %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb800438",
+          "string_ea": "0x2cb80e509",
+          "text": "The attached manifest does not authenticate this type firmware %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb8002bc",
+          "string_ea": "0x2cb80e559",
+          "text": "The attached manifest is not authentic %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb800674",
+          "string_ea": "0x2cb80e559",
+          "text": "The attached manifest is not authentic %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb80017c",
+          "string_ea": "0x2cb80e591",
+          "text": "The given chip does not satisfy the constraints of attached manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb8004c8",
+          "string_ea": "0x2cb80e591",
+          "text": "The given chip does not satisfy the constraints of attached manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb800258",
+          "string_ea": "0x2cb80e5e7",
+          "text": "The firmware has been corrupted, or the given chip does not satisfy the constraints of the corresponding object in attached manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb8005e4",
+          "string_ea": "0x2cb80e5e7",
+          "text": "The firmware has been corrupted, or the given chip does not satisfy the constraints of the corresponding object in attached manifest %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb8003e8",
+          "string_ea": "0x2cb80e67d",
+          "text": "Other AppleImage4 error %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb8008b0",
+          "string_ea": "0x2cb80e67d",
+          "text": "Other AppleImage4 error %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7ff8d0",
+        "name": "__cryptex_magister_authenticate",
+        "size": 1064,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7ffad8",
+          "string_ea": "0x2cb80e6a6",
+          "text": "%{public}s: Image4 manifest is empty."
+        },
+        {
+          "ref_ea": "0x2cb7ffc50",
+          "string_ea": "0x2cb80e6a6",
+          "text": "%{public}s: Image4 manifest is empty."
+        },
+        {
+          "ref_ea": "0x2cb7ffa60",
+          "string_ea": "0x2cb80e708",
+          "text": "%{public}s: read im4p failed %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb7ffbb0",
+          "string_ea": "0x2cb80e708",
+          "text": "%{public}s: read im4p failed %{darwin.errno}d"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb800938",
+        "name": "__cryptex_magister_firmware_execute",
+        "size": 860,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb800c64",
+          "string_ea": "0x2cb80e736",
+          "text": "unexpected failure: bogus authenticated bytes pointer: off = %lld, im4p = %p, im4p len = %lu, authenticated = %p, authenticated len = %lu"
+        },
+        {
+          "ref_ea": "0x2cb800984",
+          "callee": "0x2cb800004"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb800c94",
+        "name": "__cryptex_magister_record_property_continue2",
+        "size": 1296,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb800d54",
+          "string_ea": "0x2cb80e88d",
+          "text": "%{public}s: image4 trust evaluation failed %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb800eec",
+          "string_ea": "0x2cb80e88d",
+          "text": "%{public}s: image4 trust evaluation failed %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb801010",
+          "string_ea": "0x2cb80e909",
+          "text": "%{public}s: Property '%{public}s' not found in im4m"
+        },
+        {
+          "ref_ea": "0x2cb800e5c",
+          "string_ea": "0x2cb80e93d",
+          "text": "%{public}s: Successfully read property '%{public}s' from im4m"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb80129c",
+        "name": "_cryptex_signature_seal",
+        "size": 376,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb801394",
+          "string_ea": "0x2cb80e996",
+          "text": "aks_seal_cryptex_manifest_lock: %#x"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb802f88",
+        "name": "_cryptex_signature_lock_with_sep",
+        "size": 1816,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb8030e4",
+          "string_ea": "0x2cb80eb56",
+          "text": "%{public}s: successfully sealed im4m."
+        },
+        {
+          "ref_ea": "0x2cb803298",
+          "string_ea": "0x2cb80eb7c",
+          "text": "%{public}s: sealing im4m with SEP is unsupported on this device."
+        },
+        {
+          "ref_ea": "0x2cb80306c",
+          "string_ea": "0x2cb80ebbd",
+          "text": "%{public}s: failed to verify cryptex manifest: %#x"
+        },
+        {
+          "ref_ea": "0x2cb803460",
+          "string_ea": "0x2cb80ebbd",
+          "text": "%{public}s: failed to verify cryptex manifest: %#x"
+        },
+        {
+          "ref_ea": "0x2cb803338",
+          "string_ea": "0x2cb80ebf0",
+          "text": "%{public}s: failed to write cryptex manifest hash: %#x"
+        },
+        {
+          "ref_ea": "0x2cb803514",
+          "string_ea": "0x2cb80ebf0",
+          "text": "%{public}s: failed to write cryptex manifest hash: %#x"
+        },
+        {
+          "ref_ea": "0x2cb803230",
+          "string_ea": "0x2cb80ec27",
+          "text": "%{public}s: aks_measure_and_seal_cryptex_manifest: %#x %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb8033b4",
+          "string_ea": "0x2cb80ec27",
+          "text": "%{public}s: aks_measure_and_seal_cryptex_manifest: %#x %{darwin.errno}d"
+        },
+        {
+          "ref_ea": "0x2cb803128",
+          "callee": "0x2cb802594"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb801b84",
+        "name": "__cryptex_signature_compute_hash",
+        "size": 520,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb801ca0",
+          "string_ea": "0x2cb80ecb8",
+          "text": "%{public}s: computed manifest hash: %.*P"
+        },
+        {
+          "ref_ea": "0x2cb801d28",
+          "string_ea": "0x2cb80ece1",
+          "text": "%{public}s: manifest hash cstring: %s"
+        },
+        {
+          "ref_ea": "0x2cb801cd8",
+          "callee": "0x2cb80757c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb80a070",
+        "name": "__sprintdgst.cold.1",
+        "size": 84,
+        "flags": 5137
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb80a0b0",
+          "string_ea": "0x2cb80f8ca",
+          "text": "unexpected failure: bogus digest length: %lu"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7f53a8",
+        "name": "_cryptex_session_core_transition",
+        "size": 384,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7f5494",
+          "callee": "0x2cb7f50f4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb804a70",
+        "name": "__cryptex_scrivener_sign_continue",
+        "size": 3940,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb80563c",
+          "callee": "0x2cb801414"
+        },
+        {
+          "ref_ea": "0x2cb8059d0",
+          "callee": "0x2cb809e48"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb801f48",
+        "name": "_cryptex_signature_lock",
+        "size": 1612,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb80204c",
+          "callee": "0x2cb802594"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb7ffd8c",
+        "name": "__cryptex_magister_firmware_execute_toutoc",
+        "size": 632,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb7ffdd8",
+          "callee": "0x2cb800004"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cb80757c",
+        "name": "__sprintdgst",
+        "size": 216,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cb80764c",
+          "callee": "0x2cb80a070"
+        }
+      ]
+    }
+  ]
+}

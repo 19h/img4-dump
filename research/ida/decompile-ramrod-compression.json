@@ -1,0 +1,1504 @@
+{
+  "count": 4,
+  "results": [
+    {
+      "address": "0x2cd9bd98c",
+      "end_address": "0x2cd9bdb80",
+      "input": "_lzfse_decode_buffer_output_size",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v3",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v11",
+          "type": "_DWORD[196]"
+        }
+      ],
+      "name": "_lzfse_decode_buffer_output_size",
+      "prototype": "__int64 __fastcall lzfse_decode_buffer_output_size(unsigned __int64 a1, __int64 a2)",
+      "pseudocode": "__int64 __fastcall lzfse_decode_buffer_output_size(unsigned __int64 a1, __int64 a2)\n{\n  unsigned __int64 v2; // x19\n  unsigned __int64 v3; // x20\n  __int64 v4; // x21\n  int v5; // w8\n  __int64 v6; // x8\n  __int64 v7; // x9\n  __int64 v8; // x9\n  __int64 v9; // x27\n  _DWORD v11[196]; // [xsp+0h] [xbp-360h] BYREF\n\n  v2 = a1 + a2;\n  if ( a2 != 0 )\n  {\n    v3 = a1;\n    v4 = 0;\n    do\n    {\n      if ( v3 + 4 > v2 )\n        return 0;\n      v5 = *(_DWORD *)v3;\n      if ( *(int *)v3 > 0x32787661 )\n      {\n        if ( v5 == 0x32787662 )\n          goto LABEL_13;\n        if ( v5 != 0x6E787662 )\n          return 0;\n        if ( v3 + 0xC > v2 )\n          return 0;\n        v6 = *(unsigned int *)(v3 + 8) + 0xCLL;\n        if ( v6 > (__int64)(v2 - v3) )\n          return 0;\n        v7 = *(unsigned int *)(v3 + 4);\n      }\n      else\n      {\n        switch ( v5 )\n        {\n          case 0x24787662:\n            return v4;\n          case 0x2D787662:\n            if ( v3 + 8 > v2 )\n              return 0;\n            v7 = *(unsigned int *)(v3 + 4);\n            v6 = v7 + 8;\n            if ( v7 + 8 > (__int64)(v2 - v3) )\n              return 0;\n            break;\n          case 0x31787662:\nLABEL_13:\n            memset(v11, 0, 0x200);\n            if ( v5 == 0x32787662 )\n            {\n              if ( v3 + 0x20 > v2 )\n                return 0;\n              v8 = *(_QWORD *)(v3 + 0x18);\n              v9 = (unsigned int)v8;\n              if ( (v8 & 0xFFFFFFE0) == 0 || v3 + (unsigned int)v8 > v2 || (unsigned int)sub_2CD9BDB80(v11, v3, v2) != 0 )\n                return 0;\n            }\n            else\n            {\n              if ( v3 + 0x304 > v2 )\n                return 0;\n              sub_2D00594B0(v11, v3);\n              v9 = 0x304;\n            }\n            v6 = v9 + v11[2];\n            if ( v6 > (__int64)(v2 - v3) )\n              return 0;\n            v7 = v11[1];\n            break;\n          default:\n            return 0;\n        }\n      }\n      v4 += v7;\n      v3 += v6;\n    }\n    while ( v3 < v2 );\n  }\n  return 0;\n}\n"
+    },
+    {
+      "address": "0x2cd9bdd38",
+      "end_address": "0x2cd9be8e4",
+      "input": "_lzfse_decode_buffer_iboot",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "unsigned int *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "unsigned int *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "i",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "j",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "int64x2_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "int64x2_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "int64x2_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "int64x2_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v30",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v31",
+          "type": "uint16x8_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v32",
+          "type": "uint32x4_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v33",
+          "type": "uint32x4_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v34",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v35",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v36",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v37",
+          "type": "int64x2_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v38",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v39",
+          "type": "int64x2_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v40",
+          "type": "int64x2_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v41",
+          "type": "int64x2_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v42",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v43",
+          "type": "uint16x8_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v44",
+          "type": "uint32x4_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v45",
+          "type": "uint32x4_t"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v46",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v47",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v48",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v49",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v50",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v51",
+          "type": "signed int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v52",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v53",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v54",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v55",
+          "type": "signed int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v56",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v57",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v58",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v59",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v60",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v61",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v62",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v63",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v64",
+          "type": "signed int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v65",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v66",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v67",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v68",
+          "type": "signed int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v69",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v70",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v71",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v72",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v73",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v74",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v75",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v76",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v77",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v78",
+          "type": "signed int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v79",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v80",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v81",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v82",
+          "type": "signed int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v83",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v84",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v85",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v86",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v87",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v88",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v89",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v90",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v91",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v92",
+          "type": "signed int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v93",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v94",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v95",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v96",
+          "type": "signed int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v97",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v98",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v99",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v100",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v101",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v102",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v103",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v104",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v105",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v106",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v107",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v108",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v109",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v110",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v111",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v112",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v113",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v114",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v115",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v116",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v117",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v118",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v119",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v120",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v121",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v122",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v123",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v124",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v125",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v126",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v127",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v128",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v129",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v130",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v131",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v132",
+          "type": "signed int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v133",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v134",
+          "type": "unsigned __int8 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v135",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v136",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v137",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v138",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v139",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v140",
+          "type": "unsigned __int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v141",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v142",
+          "type": "unsigned __int8 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v143",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v144",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v145",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v146",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v147",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v148",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v149",
+          "type": "unsigned __int8 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v150",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v151",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v152",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v153",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v154",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v155",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v156",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v157",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v158",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v159",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v160",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v161",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v162",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v163",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v164",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v165",
+          "type": "unsigned int *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v166",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v167",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v168",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v169",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v170",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v171",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v172",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v173",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v174",
+          "type": "unsigned __int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v175",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v176",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v177",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v178",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v179",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v180",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v181",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v182",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v183",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v184",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v185",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v186",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v187",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v188",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v189",
+          "type": "unsigned int *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v190",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v191",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v192",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v193",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v194",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v195",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v196",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v197",
+          "type": "char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v198",
+          "type": "char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v199",
+          "type": "unsigned int *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v200",
+          "type": "unsigned __int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v201",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v202",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v203",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v204",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v205",
+          "type": "__int128"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v206",
+          "type": "__int128"
+        }
+      ],
+      "name": "_lzfse_decode_buffer_iboot",
+      "prototype": "char *__fastcall lzfse_decode_buffer_iboot(unsigned int *a1, __int64 a2, unsigned __int64 a3, unsigned __int64 a4, unsigned __int64 a5)",
+      "pseudocode": "char *__fastcall lzfse_decode_buffer_iboot(\n        unsigned int *a1,\n        __int64 a2,\n        unsigned __int64 a3,\n        unsigned __int64 a4,\n        unsigned __int64 a5)\n{\n  char *result; // x0\n  unsigned __int64 v10; // x21\n  unsigned int *v11; // x8\n  int v12; // w9\n  __int64 v13; // x19\n  __int64 v14; // x9\n  __int64 v15; // x25\n  __int64 v16; // x8\n  unsigned __int64 v17; // x11\n  __int64 v18; // x10\n  __int64 i; // x9\n  __int64 v20; // x8\n  unsigned __int64 v21; // x5\n  __int64 v22; // x9\n  __int64 j; // x0\n  __int64 v24; // x8\n  int64x2_t v25; // q0\n  __int64 v26; // x2\n  int64x2_t v27; // q1\n  int64x2_t v28; // q2\n  int64x2_t v29; // q3\n  __int64 v30; // x7\n  uint16x8_t v31; // q4\n  uint32x4_t v32; // q5\n  uint32x4_t v33; // q4\n  __int64 v34; // x0\n  unsigned __int64 v35; // x7\n  __int64 v36; // x2\n  int64x2_t v37; // q0\n  __int64 v38; // x30\n  int64x2_t v39; // q1\n  int64x2_t v40; // q2\n  int64x2_t v41; // q3\n  __int64 v42; // x26\n  uint16x8_t v43; // q4\n  uint32x4_t v44; // q5\n  uint32x4_t v45; // q4\n  __int64 v46; // x11\n  int v47; // w12\n  __int64 v48; // x20\n  __int64 v49; // x13\n  unsigned int v50; // w14\n  signed int v51; // w15\n  char v52; // w0\n  char v53; // w16\n  unsigned int v54; // w1\n  signed int v55; // w17\n  char v56; // w0\n  unsigned int v57; // w1\n  int v58; // w3\n  char v59; // w5\n  __int64 v60; // x11\n  __int64 v61; // x30\n  __int64 v62; // x12\n  unsigned int v63; // w13\n  signed int v64; // w14\n  char v65; // w1\n  char v66; // w15\n  unsigned int v67; // w2\n  signed int v68; // w16\n  char v69; // w17\n  int v70; // w0\n  char v71; // w1\n  unsigned int v72; // w2\n  int v73; // w3\n  char v74; // w5\n  __int64 v75; // x10\n  __int64 v76; // x11\n  unsigned int v77; // w12\n  signed int v78; // w13\n  char v79; // w0\n  char v80; // w14\n  unsigned int v81; // w1\n  signed int v82; // w15\n  char v83; // w16\n  int v84; // w17\n  char v85; // w0\n  unsigned int v86; // w1\n  int v87; // w2\n  char v88; // w4\n  __int64 v89; // x9\n  __int64 v90; // x10\n  unsigned int v91; // w11\n  signed int v92; // w12\n  char v93; // w17\n  char v94; // w13\n  unsigned int v95; // w0\n  signed int v96; // w14\n  char v97; // w15\n  int v98; // w16\n  char v99; // w17\n  unsigned int v100; // w0\n  int v101; // w1\n  char v102; // w3\n  int v103; // w8\n  __int64 v104; // x12\n  unsigned __int64 v105; // x9\n  unsigned __int64 v106; // x17\n  unsigned int v107; // w16\n  unsigned int v108; // w15\n  unsigned int v109; // w14\n  unsigned int v110; // w13\n  unsigned int v111; // w0\n  unsigned __int64 v112; // x17\n  char v113; // w1\n  __int64 v114; // x19\n  int v115; // w0\n  int v116; // w13\n  __int64 v117; // x14\n  __int64 v118; // x17\n  unsigned __int64 v119; // x15\n  unsigned int v120; // w14\n  unsigned int v121; // w11\n  unsigned int v122; // w10\n  unsigned int v123; // w16\n  unsigned __int64 v124; // x12\n  char v125; // w15\n  int v126; // w12\n  unsigned int v127; // w21\n  __int64 v128; // x19\n  int v129; // w8\n  unsigned int v130; // w9\n  _QWORD *v131; // x10\n  signed int v132; // w11\n  unsigned __int64 v133; // x9\n  unsigned __int8 *v134; // x11\n  int v135; // w10\n  __int64 v136; // x13\n  __int16 v137; // w14\n  int v138; // w11\n  unsigned __int64 v139; // x12\n  unsigned __int16 v140; // w17\n  int v141; // w13\n  unsigned __int8 *v142; // x9\n  __int64 v143; // x16\n  int v144; // w1\n  int v145; // w8\n  __int64 v146; // x9\n  int v147; // w14\n  int v148; // w10\n  unsigned __int8 *v149; // x1\n  __int64 v150; // x3\n  int v151; // w4\n  __int64 v152; // x2\n  unsigned int v153; // w16\n  int v154; // w17\n  int v155; // w15\n  unsigned int v156; // w17\n  int v157; // w11\n  int v158; // w3\n  __int64 v159; // x16\n  __int64 v160; // x12\n  __int64 v161; // x15\n  __int64 v162; // x0\n  __int64 v163; // x1\n  unsigned __int64 v164; // x2\n  unsigned int *v165; // x13\n  unsigned __int64 v166; // x17\n  unsigned __int64 v167; // x14\n  unsigned int v168; // w5\n  int v169; // w3\n  unsigned int v170; // w6\n  _QWORD *v171; // x5\n  int v172; // w6\n  int v173; // w3\n  unsigned __int16 v174; // w5\n  unsigned __int64 v175; // x2\n  int v176; // w5\n  unsigned __int64 v177; // x15\n  unsigned __int64 v178; // x2\n  __int16 v179; // w7\n  unsigned int v180; // w0\n  unsigned int v181; // w6\n  unsigned __int64 v182; // x7\n  unsigned __int64 v183; // x2\n  unsigned int v184; // w1\n  unsigned int v185; // w6\n  unsigned __int64 v186; // x7\n  unsigned int v187; // w4\n  __int64 v188; // x25\n  unsigned int *v189; // x9\n  __int64 v190; // x8\n  int v191; // [xsp+8h] [xbp-108h]\n  __int64 v192; // [xsp+10h] [xbp-100h]\n  __int64 v193; // [xsp+18h] [xbp-F8h]\n  unsigned __int64 v194; // [xsp+20h] [xbp-F0h] BYREF\n  unsigned __int64 v195; // [xsp+28h] [xbp-E8h]\n  unsigned __int64 v196; // [xsp+30h] [xbp-E0h]\n  char *v197; // [xsp+38h] [xbp-D8h] BYREF\n  char *v198; // [xsp+40h] [xbp-D0h]\n  unsigned int *v199; // [xsp+48h] [xbp-C8h]\n  unsigned __int64 v200; // [xsp+50h] [xbp-C0h]\n  __int128 v201; // [xsp+58h] [xbp-B8h]\n  __int128 v202; // [xsp+68h] [xbp-A8h]\n  __int128 v203; // [xsp+78h] [xbp-98h]\n  __int128 v204; // [xsp+88h] [xbp-88h]\n  __int128 v205; // [xsp+98h] [xbp-78h]\n  __int128 v206; // [xsp+A8h] [xbp-68h]\n\n  v206 = 0u;\n  v205 = 0u;\n  v204 = 0u;\n  v203 = 0u;\n  v201 = 0u;\n  v202 = a5;\n  sub_2D005A5D0(a5, 0x1F08);\n  result = nullptr;\n  v194 = a3;\n  v195 = a3;\n  v10 = a3 + a4;\n  v199 = a1;\n  v200 = 0;\n  v196 = a3 + a4;\n  v197 = (char *)a1;\n  v198 = (char *)a1 + a2;\n  if ( ((unsigned __int8)a1 & 3) != 0 || (((_BYTE)a1 + (_BYTE)a2) & 3) != 0 || a4 < 4 )\n    return result;\n  v11 = (unsigned int *)(a3 + 4);\n  while ( 1 )\n  {\n    result = nullptr;\n    v12 = *(_DWORD *)a3;\n    LODWORD(v201) = v12;\n    if ( v12 <= 0x32787661 )\n      break;\n    if ( v12 == 0x32787662 )\n      goto LABEL_13;\n    if ( v12 != 0x6E787662 )\n      return result;\n    if ( (sub_2CD9BE8E4(&v194) & 0x80000000) != 0 )\n      return nullptr;\n    a3 = v194;\nLABEL_138:\n    result = nullptr;\n    v10 = v196;\n    if ( a3 < v196 )\n    {\n      v11 = (unsigned int *)(a3 + 4);\n      if ( a3 + 4 <= v196 )\n        continue;\n    }\n    return result;\n  }\n  switch ( v12 )\n  {\n    case 0x24787662:\n      if ( HIDWORD(v200) != 0 )\n      {\n        v189 = v199;\n        *v199 = v200;\n        v190 = HIDWORD(v200);\n      }\n      else\n      {\n        v190 = 0;\n        v189 = v199;\n      }\n      return (char *)((char *)v189 + v190 - v197);\n    case 0x2D787662:\n      if ( a3 + 8 > v10 )\n        return nullptr;\n      v114 = *v11 + 8LL;\n      if ( v114 > (__int64)(v10 - a3) || (sub_2CD9BEAB0(&v197) & 0x80000000) != 0 )\n        return nullptr;\n      a3 = v194 + v114;\n      goto LABEL_137;\n    case 0x31787662:\nLABEL_13:\n      v13 = v202;\n      if ( v12 == 0x32787662 )\n      {\n        if ( a3 + 0x20 > v10 )\n          return nullptr;\n        result = nullptr;\n        v14 = *(_QWORD *)(a3 + 0x18);\n        v15 = (unsigned int)v14;\n        DWORD1(v201) = v14;\n        if ( (unsigned int)v14 < 0x20 || a3 + (unsigned int)v14 > v10 )\n          return result;\n        if ( (unsigned int)sub_2CD9BDB80(v202, a3, v10) != 0 )\n          return nullptr;\n      }\n      else\n      {\n        if ( a3 + 0x304 > v10 )\n          return nullptr;\n        sub_2D00594B0(v202, a3);\n        DWORD1(v201) = 0x304;\n        v15 = 0x304;\n      }\n      v16 = 0;\n      v17 = 0;\n      v18 = v13 + 0x32;\n      for ( i = 0x14; i != 0; --i )\n        v17 += *(unsigned __int16 *)(v18 + 2 * v16++);\n      v20 = 0;\n      v21 = 0;\n      v22 = v13 + 0x5A;\n      for ( j = 0x14; j != 0; --j )\n        v21 += *(unsigned __int16 *)(v22 + 2 * v20++);\n      v24 = v13 + 0x82;\n      v25 = 0u;\n      v26 = 0x40;\n      v27 = 0u;\n      v28 = 0u;\n      v29 = 0u;\n      do\n      {\n        v30 = 2 * j;\n        j += 8;\n        v31 = *(uint16x8_t *)(v24 + v30);\n        v32 = vmovl_u16(*(uint16x4_t *)v31.i8);\n        v33 = vmovl_high_u16(v31);\n        v29 = (int64x2_t)vaddw_high_u32((uint64x2_t)v29, v33);\n        v28 = (int64x2_t)vaddw_u32((uint64x2_t)v28, *(uint32x2_t *)v33.i8);\n        v27 = (int64x2_t)vaddw_high_u32((uint64x2_t)v27, v32);\n        v25 = (int64x2_t)vaddw_u32((uint64x2_t)v25, *(uint32x2_t *)v32.i8);\n        v26 -= 8;\n      }\n      while ( v26 != 0 );\n      v34 = 0;\n      v35 = vaddvq_s64(vaddq_s64(vaddq_s64(v25, v28), vaddq_s64(v27, v29)));\n      v36 = v13 + 0x102;\n      v37 = 0u;\n      v38 = 0x100;\n      v39 = 0u;\n      v40 = 0u;\n      v41 = 0u;\n      do\n      {\n        v42 = 2 * v34;\n        v34 += 8;\n        v43 = *(uint16x8_t *)(v36 + v42);\n        v44 = vmovl_u16(*(uint16x4_t *)v43.i8);\n        v45 = vmovl_high_u16(v43);\n        v41 = (int64x2_t)vaddw_high_u32((uint64x2_t)v41, v45);\n        v40 = (int64x2_t)vaddw_u32((uint64x2_t)v40, *(uint32x2_t *)v45.i8);\n        v39 = (int64x2_t)vaddw_high_u32((uint64x2_t)v39, v44);\n        v37 = (int64x2_t)vaddw_u32((uint64x2_t)v37, *(uint32x2_t *)v44.i8);\n        v38 -= 8;\n      }\n      while ( v38 != 0 );\n      result = nullptr;\n      if ( *(unsigned __int16 *)(v13 + 0x30) > 0xFFu\n        || *(_DWORD *)v13 != 0x31787662\n        || *(_DWORD *)(v13 + 0xC) > 0x9C40u\n        || *(_DWORD *)(v13 + 0x10) > 0x2710u\n        || (*(unsigned __int16 *)(v13 + 0x22)\n          | *(unsigned __int16 *)(v13 + 0x20)\n          | *(unsigned __int16 *)(v13 + 0x24)\n          | (unsigned int)*(unsigned __int16 *)(v13 + 0x26)) > 0x3FF\n        || (*(unsigned __int16 *)(v13 + 0x2E) | (unsigned int)*(unsigned __int16 *)(v13 + 0x2C)) > 0x3F\n        || v17 > 0x40\n        || v21 > 0x40\n        || v35 > 0x100\n        || (unsigned __int64)vaddvq_s64(vaddq_s64(vaddq_s64(v37, v40), vaddq_s64(v39, v41))) > 0x400 )\n      {\n        return result;\n      }\n      if ( v15 + *(unsigned int *)(v13 + 8) > (__int64)(v10 - a3) )\n        return nullptr;\n      v191 = *(_DWORD *)(v13 + 8);\n      v46 = 0;\n      v47 = 0;\n      v48 = v13 + 0xF08;\n      v49 = v13 + 0xF08;\n      do\n      {\n        v50 = *(unsigned __int16 *)(v36 + 2 * v46);\n        if ( *(_WORD *)(v36 + 2 * v46) != 0 )\n        {\n          v47 += v50;\n          if ( v47 > 0x400 )\n            return nullptr;\n          v51 = 0;\n          v52 = __clz(v50);\n          v53 = v52 - 0x15;\n          v54 = 0x800u >> (v52 - 0x15);\n          v55 = v54 - v50;\n          v56 = v52 - 0x16;\n          v57 = v50 - v54;\n          do\n          {\n            v58 = (v57 + v51) << v56;\n            if ( v51 < v55 )\n              v59 = v53;\n            else\n              v59 = v56;\n            if ( v51 < v55 )\n              LOWORD(v58) = (((_WORD)v50 + (_WORD)v51) << v53) - 0x400;\n            *(_BYTE *)v49 = v59;\n            *(_BYTE *)(v49 + 1) = v46;\n            *(_WORD *)(v49 + 2) = v58;\n            v49 += 4;\n            ++v51;\n          }\n          while ( v50 != v51 );\n        }\n        ++v46;\n      }\n      while ( v46 != 0x100 );\n      v60 = 0;\n      v61 = v13 + 0x308;\n      v62 = v13 + 0x308;\n      do\n      {\n        v63 = *(unsigned __int16 *)(v18 + 2 * v60);\n        if ( *(_WORD *)(v18 + 2 * v60) != 0 )\n        {\n          v64 = 0;\n          v65 = __clz(v63);\n          v66 = v65 - 0x19;\n          v67 = 0x80u >> (v65 - 0x19);\n          v68 = v67 - v63;\n          v69 = byte_2CDABD36C[v60];\n          v70 = dword_2CDABD380[v60];\n          v71 = v65 - 0x1A;\n          v72 = v63 - v67;\n          do\n          {\n            v73 = (v72 + v64) << v71;\n            if ( v64 < v68 )\n              v74 = v66;\n            else\n              v74 = v71;\n            if ( v64 < v68 )\n              LOWORD(v73) = (((_WORD)v63 + (_WORD)v64) << v66) - 0x40;\n            *(_BYTE *)v62 = v69 + v74;\n            *(_BYTE *)(v62 + 1) = v69;\n            *(_WORD *)(v62 + 2) = v73;\n            *(_DWORD *)(v62 + 4) = v70;\n            v62 += 8;\n            ++v64;\n          }\n          while ( v63 != v64 );\n        }\n        ++v60;\n      }\n      while ( v60 != 0x14 );\n      v75 = 0;\n      v76 = v13 + 0x508;\n      v193 = v13 + 0x508;\n      do\n      {\n        v77 = *(unsigned __int16 *)(v22 + 2 * v75);\n        if ( *(_WORD *)(v22 + 2 * v75) != 0 )\n        {\n          v78 = 0;\n          v79 = __clz(v77);\n          v80 = v79 - 0x19;\n          v81 = 0x80u >> (v79 - 0x19);\n          v82 = v81 - v77;\n          v83 = byte_2CDABD3D0[v75];\n          v84 = dword_2CDABD3E4[v75];\n          v85 = v79 - 0x1A;\n          v86 = v77 - v81;\n          do\n          {\n            v87 = (v86 + v78) << v85;\n            if ( v78 < v82 )\n              v88 = v80;\n            else\n              v88 = v85;\n            if ( v78 < v82 )\n              LOWORD(v87) = (((_WORD)v77 + (_WORD)v78) << v80) - 0x40;\n            *(_BYTE *)v76 = v83 + v88;\n            *(_BYTE *)(v76 + 1) = v83;\n            *(_WORD *)(v76 + 2) = v87;\n            *(_DWORD *)(v76 + 4) = v84;\n            v76 += 8;\n            ++v78;\n          }\n          while ( v77 != v78 );\n        }\n        ++v75;\n      }\n      while ( v75 != 0x14 );\n      v89 = 0;\n      v90 = v13 + 0x708;\n      v192 = v13 + 0x708;\n      do\n      {\n        v91 = *(unsigned __int16 *)(v24 + 2 * v89);\n        if ( *(_WORD *)(v24 + 2 * v89) != 0 )\n        {\n          v92 = 0;\n          v93 = __clz(v91);\n          v94 = v93 - 0x17;\n          v95 = 0x200u >> (v93 - 0x17);\n          v96 = v95 - v91;\n          v97 = byte_2CDABD434[v89];\n          v98 = dword_2CDABD474[v89];\n          v99 = v93 - 0x18;\n          v100 = v91 - v95;\n          do\n          {\n            v101 = (v100 + v92) << v99;\n            if ( v92 < v96 )\n              v102 = v94;\n            else\n              v102 = v99;\n            if ( v92 < v96 )\n              LOWORD(v101) = (((_WORD)v91 + (_WORD)v92) << v94) - 0x100;\n            *(_BYTE *)v90 = v97 + v102;\n            *(_BYTE *)(v90 + 1) = v97;\n            *(_WORD *)(v90 + 2) = v101;\n            *(_DWORD *)(v90 + 4) = v98;\n            v90 += 8;\n            ++v92;\n          }\n          while ( v91 != v92 );\n        }\n        ++v89;\n      }\n      while ( v89 != 0x40 );\n      HIDWORD(v201) = *(_DWORD *)(v13 + 0xC);\n      v103 = DWORD1(v201);\n      v104 = *(unsigned int *)(v13 + 0x14);\n      v105 = v194;\n      if ( v104 + DWORD1(v201) > (__int64)(v196 - v194) )\n        return nullptr;\n      v106 = v194 + DWORD1(v201) + v104;\n      *((_QWORD *)&v205 + 1) = v106;\n      *((_QWORD *)&v206 + 1) = 0;\n      v107 = *(unsigned __int16 *)(v13 + 0x20);\n      LOWORD(v206) = *(_WORD *)(v13 + 0x20);\n      v108 = *(unsigned __int16 *)(v13 + 0x22);\n      WORD1(v206) = *(_WORD *)(v13 + 0x22);\n      v109 = *(unsigned __int16 *)(v13 + 0x24);\n      WORD2(v206) = *(_WORD *)(v13 + 0x24);\n      v110 = *(unsigned __int16 *)(v13 + 0x26);\n      WORD3(v206) = *(_WORD *)(v13 + 0x26);\n      v111 = *(_DWORD *)(v13 + 0x1C);\n      if ( v111 != 0 )\n      {\n        if ( v106 < v195 + 8 )\n          return nullptr;\n        *((_QWORD *)&v205 + 1) = v106 - 8;\n        v112 = *(_QWORD *)(v106 - 8);\n        *((_QWORD *)&v204 + 1) = v112;\n        v113 = v111 + 0x40;\n        LODWORD(v205) = v111 + 0x40;\n        if ( v111 < 0xFFFFFFF8 )\n          return nullptr;\n      }\n      else\n      {\n        if ( v106 < v195 + 7 )\n          return nullptr;\n        *((_QWORD *)&v205 + 1) = v106 - 7;\n        v115 = *(_DWORD *)(v106 - 7);\n        *(_DWORD *)((char *)&v204 + 0xB) = *(_DWORD *)(v106 - 4);\n        DWORD2(v204) = v115;\n        v112 = *((_QWORD *)&v204 + 1) & 0xFFFFFFFFFFFFFFLL;\n        *((_QWORD *)&v204 + 1) &= 0xFFFFFFFFFFFFFFuLL;\n        v113 = 0x38;\n        LODWORD(v205) = 0x38;\n      }\n      result = nullptr;\n      if ( v112 >> v113 != 0 || v107 > 0x3FF || v108 > 0x3FF || v109 > 0x3FF || v110 > 0x3FF )\n        return result;\n      v116 = *(_DWORD *)(v13 + 0x10);\n      v117 = *(unsigned int *)(v13 + 0x14);\n      DWORD2(v201) = v116;\n      v118 = *(unsigned int *)(v13 + 0x18);\n      if ( v117 + v118 + (unsigned __int64)DWORD1(v201) > v196 - v194 )\n        return nullptr;\n      v119 = v194 + DWORD1(v201) + v117 + v118;\n      v120 = *(unsigned __int16 *)(v13 + 0x2C);\n      LOWORD(v204) = *(_WORD *)(v13 + 0x2C);\n      v121 = *(unsigned __int16 *)(v13 + 0x2E);\n      WORD1(v204) = *(_WORD *)(v13 + 0x2E);\n      v122 = *(unsigned __int16 *)(v13 + 0x30);\n      WORD2(v204) = *(_WORD *)(v13 + 0x30);\n      v123 = *(_DWORD *)(v13 + 0x28);\n      if ( v123 != 0 )\n      {\n        if ( v119 < v195 + 8 )\n          return nullptr;\n        *((_QWORD *)&v203 + 1) = v119 - 8;\n        v124 = *(_QWORD *)(v119 - 8);\n        *((_QWORD *)&v202 + 1) = v124;\n        v125 = v123 + 0x40;\n        LODWORD(v203) = v123 + 0x40;\n        if ( v123 < 0xFFFFFFF8 )\n          return nullptr;\n      }\n      else\n      {\n        if ( v119 < v195 + 7 )\n          return nullptr;\n        *((_QWORD *)&v203 + 1) = v119 - 7;\n        v126 = *(_DWORD *)(v119 - 7);\n        *(_DWORD *)((char *)&v202 + 0xB) = *(_DWORD *)(v119 - 4);\n        DWORD2(v202) = v126;\n        v124 = *((_QWORD *)&v202 + 1) & 0xFFFFFFFFFFFFFFLL;\n        *((_QWORD *)&v202 + 1) &= 0xFFFFFFFFFFFFFFuLL;\n        v125 = 0x38;\n        LODWORD(v203) = 0x38;\n      }\n      result = nullptr;\n      if ( v124 >> v125 != 0 || v120 > 0x3F || v121 > 0x3F || v122 > 0xFF )\n        return result;\n      if ( v116 == 0 )\n      {\nLABEL_136:\n        a3 = v105 + (unsigned int)(v103 + v191);\nLABEL_137:\n        v194 = a3;\n        goto LABEL_138;\n      }\n      v127 = 0;\n      LODWORD(v128) = 0;\n      while ( 1 )\n      {\n        v129 = v203;\n        if ( (int)v203 >= 0x38 )\n        {\n          v133 = *((_QWORD *)&v202 + 1);\n        }\n        else\n        {\n          v130 = 0x3F - v203;\n          v131 = (_QWORD *)(*((_QWORD *)&v203 + 1) - ((unsigned int)(0x3F - v203) >> 3));\n          if ( (unsigned __int64)v131 < v195 )\n            return nullptr;\n          v132 = v130 & 0xFFFFFFF8;\n          *((_QWORD *)&v203 + 1) -= v130 >> 3;\n          v133 = qword_2CDABD5C0[v132] & *v131 | (*((_QWORD *)&v202 + 1) << v132);\n          *((_QWORD *)&v202 + 1) = v133;\n          v129 = v132 + v203;\n          LODWORD(v203) = v132 + v203;\n        }\n        result = nullptr;\n        v134 = (unsigned __int8 *)(v61 + 8LL * (unsigned __int16)v204);\n        v135 = *v134;\n        v136 = v134[1];\n        v137 = *((_WORD *)v134 + 1);\n        v138 = *((_DWORD *)v134 + 1);\n        LODWORD(v203) = v129 - v135;\n        v139 = v133 >> ((unsigned __int8)v129 - (unsigned __int8)v135);\n        *((_QWORD *)&v202 + 1) = qword_2CDABD5C0[v129 - v135] & v133;\n        v140 = v137 + ((unsigned int)v139 >> v136);\n        LOWORD(v204) = v140;\n        v141 = qword_2CDABD5C0[v136];\n        v142 = (unsigned __int8 *)(v193 + 8LL * WORD1(v204));\n        v143 = v142[1];\n        v144 = *((unsigned __int16 *)v142 + 1);\n        v145 = *((_DWORD *)v142 + 1);\n        LODWORD(v203) = v203 - *v142;\n        v146 = *((_QWORD *)&v202 + 1) >> v203;\n        *((_QWORD *)&v202 + 1) &= qword_2CDABD5C0[(int)v203];\n        v147 = v144 + ((unsigned int)v146 >> v143);\n        WORD1(v204) = v144 + ((unsigned int)v146 >> v143);\n        v148 = qword_2CDABD5C0[v143];\n        v149 = (unsigned __int8 *)(v192 + 8LL * WORD2(v204));\n        v150 = v149[1];\n        v151 = *((_DWORD *)v149 + 1);\n        LODWORD(v203) = v203 - *v149;\n        v152 = *((_QWORD *)&v202 + 1) >> v203;\n        v153 = v140;\n        v154 = *((unsigned __int16 *)v149 + 1);\n        *((_QWORD *)&v202 + 1) &= qword_2CDABD5C0[(int)v203];\n        v155 = v154 + ((unsigned int)v152 >> v150);\n        WORD2(v204) = v154 + ((unsigned int)v152 >> v150);\n        v156 = v151 + (LODWORD(qword_2CDABD5C0[v150]) & v152);\n        v128 = v156 != 0 ? v156 : (unsigned int)v128;\n        if ( v153 > 0x3F || (unsigned __int16)v147 > 0x3Fu || (unsigned __int16)v155 > 0xFFu )\n          return result;\n        v157 = v138 + (v141 & v139);\n        if ( v157 != 0 )\n        {\n          v158 = HIDWORD(v206);\n          v159 = *((_QWORD *)&v205 + 1);\n          v160 = (unsigned __int16)v206;\n          v161 = WORD1(v206);\n          v162 = WORD2(v206);\n          v163 = WORD3(v206);\n          v164 = *((_QWORD *)&v204 + 1);\n          v166 = (unsigned __int64)v198;\n          v165 = v199;\n          v167 = v195;\n          do\n          {\n            if ( v158 != 0 )\n            {\n              v168 = DWORD2(v206);\n            }\n            else\n            {\n              if ( HIDWORD(v201) < 4 )\n                return nullptr;\n              DWORD2(v206) = 0;\n              v169 = v205;\n              if ( (int)v205 <= 0x37 )\n              {\n                v170 = 0x3F - v205;\n                v171 = (_QWORD *)(v159 - ((unsigned int)(0x3F - v205) >> 3));\n                if ( (unsigned __int64)v171 < v167 )\n                  return nullptr;\n                *((_QWORD *)&v205 + 1) = v159 - (v170 >> 3);\n                v164 = qword_2CDABD5C0[v170 & 0xFFFFFFF8] & *v171 | (v164 << (v170 & 0xF8));\n                v169 = (v170 & 0xFFFFFFF8) + v205;\n                LODWORD(v205) = v169;\n                v159 = *((_QWORD *)&v205 + 1);\n              }\n              v172 = *(_DWORD *)(v48 + 4 * v160);\n              v173 = v169 - (unsigned __int8)v172;\n              v174 = (v164 >> v173) + HIWORD(v172);\n              v160 = v174;\n              LODWORD(v205) = v173;\n              v175 = qword_2CDABD5C0[v173] & v164;\n              LOWORD(v206) = v174;\n              DWORD2(v206) = BYTE1(v172);\n              v176 = *(_DWORD *)(v48 + 4 * v161);\n              LODWORD(v205) = v173 - (unsigned __int8)v176;\n              v177 = v175 >> v205;\n              v178 = qword_2CDABD5C0[(int)v205] & v175;\n              v179 = v177 + HIWORD(v176);\n              v161 = (unsigned __int16)(v177 + HIWORD(v176));\n              WORD1(v206) = v179;\n              DWORD2(v206) = v176 & 0xFF00 | BYTE1(v172);\n              v180 = *(_DWORD *)(v48 + 4 * v162);\n              v181 = v180 >> 8;\n              LODWORD(v205) = v205 - (unsigned __int8)v180;\n              v182 = v178 >> v205;\n              v183 = qword_2CDABD5C0[(int)v205] & v178;\n              LOWORD(v182) = v182 + HIWORD(v180);\n              v162 = (unsigned __int16)v182;\n              WORD2(v206) = v182;\n              DWORD2(v206) = WORD4(v206) | ((unsigned __int8)v181 << 0x10);\n              v184 = *(_DWORD *)(v48 + 4 * v163);\n              v185 = v184 >> 8;\n              LODWORD(v205) = v205 - (unsigned __int8)v184;\n              v186 = v183 >> v205;\n              v164 = qword_2CDABD5C0[(int)v205] & v183;\n              *((_QWORD *)&v204 + 1) = v164;\n              LOWORD(v173) = v186 + HIWORD(v184);\n              v163 = (unsigned __int16)(v186 + HIWORD(v184));\n              WORD3(v206) = v173;\n              v168 = DWORD2(v206) | ((unsigned __int8)v185 << 0x18);\n              v158 = 4;\n              *((_QWORD *)&v206 + 1) = v168 | 0x400000000LL;\n              HIDWORD(v201) -= 4;\n            }\n            if ( (unsigned __int64)v165 >= v166 )\n              return nullptr;\n            v187 = ((unsigned __int8)v168 << (8 * BYTE4(v200))) | v200;\n            v200 = __PAIR64__(HIDWORD(v200), v187) + 0x100000000LL;\n            if ( HIDWORD(v200) == 4 )\n            {\n              *v165++ = v187;\n              v199 = v165;\n              v200 = 0;\n              v168 = DWORD2(v206);\n              v158 = HIDWORD(v206);\n            }\n            --v158;\n            DWORD2(v206) = v168 >> 8;\n            HIDWORD(v206) = v158;\n          }\n          while ( --v157 != 0 );\n        }\n        v188 = v61;\n        if ( (sub_2CD9BEBD4(&v197, v145 + (v148 & (unsigned int)v146), v128) & 0x80000000) != 0 )\n          return nullptr;\n        ++v127;\n        v61 = v188;\n        if ( v127 >= DWORD2(v201) )\n        {\n          v103 = DWORD1(v201);\n          v105 = v194;\n          goto LABEL_136;\n        }\n      }\n    default:\n      return result;\n  }\n}\n"
+    },
+    {
+      "address": "0x2cd923100",
+      "end_address": "0x2cd9231b4",
+      "input": "_ramrod_manifest_tag_is_valid",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "char"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_ramrod_manifest_tag_is_valid",
+      "prototype": "__int64 __fastcall ramrod_manifest_tag_is_valid(__int64 a1)",
+      "pseudocode": "__int64 __fastcall ramrod_manifest_tag_is_valid(__int64 a1)\n{\n  __int64 v2; // x0\n  __int64 v3; // x8\n  __int64 v4; // x9\n  __int64 v5; // x10\n  int v6; // w8\n  unsigned int v7; // w11\n  unsigned int v8; // w8\n\n  if ( a1 == 0 )\n    return 0;\n  v2 = sub_2D0069110(a1, 0x41);\n  if ( (unsigned __int64)(v2 - 0x41) < 0xFFFFFFFFFFFFFFC0LL )\n    return 0;\n  v4 = 0;\n  v5 = 0;\n  do\n  {\n    v6 = *(unsigned __int8 *)(a1 + v5);\n    if ( (unsigned int)(v6 - 0x2B) < 4 || v6 == 0x5F )\n    {\n      v3 = 0;\n      if ( v4 == 0 || v2 == 1 )\n        return v3;\n    }\n    else\n    {\n      v7 = (v6 & 0xFFFFFFDF) - 0x41;\n      v8 = v6 - 0x30;\n      if ( v7 >= 0x1A && v8 >= 0xA )\n        return 0;\n    }\n    ++v5;\n    --v4;\n    --v2;\n  }\n  while ( v2 != 0 );\n  return 1;\n}\n"
+    },
+    {
+      "address": "0x2cd96af74",
+      "end_address": "0x2cd96b058",
+      "input": "_ramrod_ticket_copy_hash_data",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__CFString *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "unsigned __int64"
+        }
+      ],
+      "name": "_ramrod_ticket_copy_hash_data",
+      "prototype": "__int64 __fastcall ramrod_ticket_copy_hash_data(__int64 a1, __int64 a2)",
+      "pseudocode": "__int64 __fastcall ramrod_ticket_copy_hash_data(__int64 a1, __int64 a2)\n{\n  __int64 v4; // x0\n  __int64 v5; // x21\n  __int64 v6; // x19\n  __int64 v8; // x1\n  __CFString *v9; // x4\n  __int64 v10; // x0\n  unsigned __int64 v11; // x2\n\n  ramrod_log_msg(\"entering %s\\n\", \"ramrod_ticket_copy_hash_data\");\n  if ( a1 != 0 )\n  {\n    v4 = sub_2D007C1A0((unsigned int)*MEMORY[0x2D8037280], \"IODeviceTree:/chosen\");\n    if ( (_DWORD)v4 != 0 )\n    {\n      v5 = v4;\n      v6 = sub_2CD96B058(a1, v4, a2);\n      sub_2D00688A0(v5);\n      return v6;\n    }\n    v8 = *MEMORY[0x2D802CDF0];\n    v9 = CFSTR(\"%s: uanble to find chosen node\");\n    v10 = a2;\n    v11 = 0xFFFFFFFFE0000001LL;\n  }\n  else\n  {\n    v8 = 0x2DE099050LL;\n    v9 = CFSTR(\"%s: no ticket available\");\n    v10 = a2;\n    v11 = 8;\n  }\n  ramrod_create_error_cf(v10, v8, v11, 0, v9);\n  return 0;\n}\n"
+    }
+  ],
+  "database_target": "79ce35529ddc",
+  "requested": [
+    "_lzfse_decode_buffer_output_size",
+    "_lzfse_decode_buffer_iboot",
+    "_ramrod_manifest_tag_is_valid",
+    "_ramrod_ticket_copy_hash_data"
+  ]
+}

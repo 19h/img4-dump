@@ -1,0 +1,31 @@
+{
+  "count": 1,
+  "results": [
+    {
+      "address": "0x2cb811eac",
+      "end_address": "0x2cb811ec4",
+      "input": "0x2cb811eac",
+      "local_variables": [
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v1",
+          "type": "__int64"
+        }
+      ],
+      "name": "_cryptex_trampoline_upgrade_wait.cold.1",
+      "prototype": "__int64 cryptex_trampoline_upgrade_wait.cold.1()",
+      "pseudocode": "__int64 cryptex_trampoline_upgrade_wait.cold.1()\n{\n  __int64 v1; // x30\n\n  if ( ((v1 ^ (2 * v1)) & 0x4000000000000000LL) != 0 )\n    __break(0xC471u);\n  return sub_2D0059190(&cryptex_trampoline_osl.onceToken, &__block_literal_global);\n}\n"
+    }
+  ],
+  "database_target": "677b8c997b14",
+  "requested": [
+    "0x2cb811eac"
+  ]
+}

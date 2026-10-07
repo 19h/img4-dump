@@ -1,0 +1,137 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "address": "0x2cd942d44",
+      "end_address": "0x2cd942e24",
+      "input": "0x2cd942d44",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "_38",
+          "type": "__int64"
+        }
+      ],
+      "name": "_ramrod_force_load_nonce_slots",
+      "prototype": "__int64 __fastcall ramrod_force_load_nonce_slots(__int64 a1, __int64 a2)",
+      "pseudocode": "__int64 __fastcall ramrod_force_load_nonce_slots(__int64 a1, __int64 a2)\n{\n  __int64 result; // x0\n  __int64 v5; // x21\n  __int64 v6; // x19\n  __int64 _38; // [xsp+38h] [xbp+8h]\n\n  result = _ramrod_device_has_sandcat();\n  if ( (_DWORD)result != 0 )\n  {\n    v5 = (*(__int64 (__fastcall **)(__int64))(a1 + 0x30))(a2);\n    sub_2CD94BCE8(v5, &dword_2E2B9F0E0);\n    sub_2D007C9A0(v5);\n    v6 = (*(__int64 (__fastcall **)(__int64))(a1 + 0x10))(a2);\n    ramrod_log_msg(\"Entering: %s\\n\", \"Boolean _ramrod_load_ap_nonce_slot_from_data(CFDataRef, int *)\");\n    if ( v6 != 0 )\n      sub_2CD959F04(v6, (__int64)CFSTR(\"anid\"), &dword_2E2BA1998);\n    else\n      ramrod_log_msg(\n        \"WARNING: sep_data == NULL in %s. Will return default.\\n\",\n        \"Boolean _ramrod_load_ap_nonce_slot_from_data(CFDataRef, int *)\");\n    if ( ((_38 ^ (2 * _38)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return sub_2D007C9A0(v6);\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2cd94bce8",
+      "end_address": "0x2cd94bd80",
+      "input": "0x2cd94bce8",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "_DWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "_38",
+          "type": "__int64"
+        }
+      ],
+      "name": "sub_2CD94BCE8",
+      "prototype": "__int64 __fastcall sub_2CD94BCE8(__int64 a1, _DWORD *a2)",
+      "pseudocode": "__int64 __fastcall sub_2CD94BCE8(__int64 a1, _DWORD *a2)\n{\n  __int64 _38; // [xsp+38h] [xbp+8h]\n\n  ramrod_log_msg(\"Entering: %s\\n\", \"Boolean _ramrod_load_sep_nonce_slot_from_data(CFDataRef, int *)\");\n  if ( a1 != 0 )\n  {\n    if ( ((_38 ^ (2 * _38)) & 0x4000000000000000LL) != 0 )\n      __break(0xC471u);\n    return sub_2CD959F04(a1, (__int64)CFSTR(\"snid\"), a2);\n  }\n  else\n  {\n    ramrod_log_msg(\n      \"WARNING: sep_data == NULL in %s. Will return default.\\n\",\n      \"Boolean _ramrod_load_sep_nonce_slot_from_data(CFDataRef, int *)\");\n    return 0;\n  }\n}\n"
+    },
+    {
+      "address": "0x2cda18a44",
+      "end_address": "0x2cda18a70",
+      "input": "0x2cda18a44",
+      "local_variables": [
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v0",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "sub_2CDA18A44",
+      "prototype": "__int64 sub_2CDA18A44()",
+      "pseudocode": "__int64 sub_2CDA18A44()\n{\n  __int64 v0; // x0\n\n  v0 = sub_2D005E910(\"_ramrod_load_int_from_im4r_tag_in_data\", \"ramrod_update.c\", 0x2E6, \"outValue\");\n  return sub_2CDA18A70(v0);\n}\n"
+    }
+  ],
+  "database_target": "79ce35529ddc",
+  "requested": [
+    "0x2cd942d44",
+    "0x2cd94bce8",
+    "0x2cda18a44"
+  ]
+}

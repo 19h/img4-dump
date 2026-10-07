@@ -86,7 +86,7 @@ fn im4p_keybag_and_compression() {
 
     let v = run_json(&["-o", out.to_str().unwrap(), "-f", input.to_str().unwrap()]);
     assert_eq!(v["im4p"]["kbag"].as_array().unwrap().len(), 1);
-    assert_eq!(v["im4p"]["compression"]["algorithm"], "lzss");
+    assert_eq!(v["im4p"]["compression"]["algorithm"], "unknown(0)");
     assert_eq!(v["im4p"]["compression"]["uncompressed_size"], 9999);
 }
 
@@ -142,6 +142,67 @@ fn im4p_payp_properties() {
     // side file written
     let payp = std::fs::read_to_string(out.join("im4p.payp.json")).expect("payp json");
     assert!(payp.contains("DGST"));
+}
+
+/// Apple's [0] PAYP arm is independent of the optional KBAG and compression.
+#[test]
+fn im4p_payp_optional_fields() {
+    for with_kbag in [false, true] {
+        for with_compression in [false, true] {
+            let dir = tmpdir("payp-optional");
+            let mut builder = Im4pBuilder::new("krnl", "v", &[0xBB; 16]);
+            if with_kbag {
+                builder = builder.keybag_raw(kbag(&[(1, vec![0x11; 16], vec![0x22; 32])]));
+            }
+            if with_compression {
+                builder = builder.compression(1, 4096);
+            }
+            let input = write_fixture(&dir, "in.im4p", &builder.payp(&[
+                property("DGST", octet(&[0x99; 48])),
+            ]).build());
+            let out = dir.join("out");
+            let v = run_json(&["-o", out.to_str().unwrap(), input.to_str().unwrap()]);
+            assert_eq!(v["im4p"]["payload_properties"][0]["key"], "DGST");
+            assert_eq!(v["im4p"]["kbag"].is_array(), with_kbag);
+            assert_eq!(v["im4p"]["compression"].is_object(), with_compression);
+        }
+    }
+}
+
+/// Keep accepting the bare PAYP variant accepted by earlier img4-dump releases.
+#[test]
+fn im4p_bare_payp_compatibility() {
+    let dir = tmpdir("payp-bare");
+    let im4p = seq(&[
+        ia5("IM4P"), ia5("krnl"), ia5("v"), octet(&[0xAA; 16]),
+        seq(&[ia5("PAYP"), set(&[property("DGST", octet(&[0x99; 48]))])]),
+    ]);
+    let input = write_fixture(&dir, "in.im4p", &im4p);
+    let out = dir.join("out");
+    let v = run_json(&["-o", out.to_str().unwrap(), input.to_str().unwrap()]);
+    assert_eq!(v["im4p"]["payload_properties"][0]["key"], "DGST");
+}
+
+/// Invalid optional wrappers must not fabricate properties or lose payload data.
+#[test]
+fn im4p_malformed_payp_wrapper() {
+    let payp = seq(&[ia5("PAYP"), set(&[property("DGST", octet(&[0x99; 48]))])]);
+    let mut trailing = payp.clone();
+    trailing.extend(integer(1));
+    for wrapper in [
+        tlv(0x80, &payp),
+        ctx_explicit(0, &trailing),
+        ctx_explicit(0, &seq(&[ia5("IM4R"), set(&[])])),
+    ] {
+        let dir = tmpdir("payp-malformed");
+        let input = write_fixture(&dir, "in.im4p", &seq(&[
+            ia5("IM4P"), ia5("krnl"), ia5("v"), octet(&[0xAA; 16]), wrapper,
+        ]));
+        let out = dir.join("out");
+        let v = run_json(&["-o", out.to_str().unwrap(), input.to_str().unwrap()]);
+        assert!(v["im4p"]["payload_properties"].is_null());
+        assert_eq!(std::fs::read(out.join("im4p.bin")).unwrap(), [0xAA; 16]);
+    }
 }
 
 /// Full IMG4 container with IM4M + IM4R is fully detected.
@@ -294,6 +355,24 @@ fn im4r_bncn_extracted() {
     assert_eq!(nonce, vec![0xab; 8]);
 }
 
+/// Standalone IM4R is recognized and uses the same property extraction as an
+/// embedded restore-info component.
+#[test]
+fn im4r_standalone() {
+    let dir = tmpdir("im4r-standalone");
+    let nonce = vec![0xAB; 8];
+    let im4r = seq(&[ia5("IM4R"), set(&[property("BNCN", octet(&nonce))])]);
+    let input = write_fixture(&dir, "in.im4r", &im4r);
+    let out = dir.join("out");
+
+    let v = run_json(&["--dump-im4r", "-o", out.to_str().unwrap(), "-f", input.to_str().unwrap()]);
+    assert_eq!(v["container"], "Im4rStandalone");
+    assert_eq!(v["im4r_len"], im4r.len());
+    assert!(v["im4r_properties"].as_array().unwrap().iter().any(|p| p["key"] == "BNCN"));
+    assert_eq!(std::fs::read(out.join("im4r.der")).unwrap(), im4r);
+    assert_eq!(std::fs::read(out.join("im4r.bncn.bin")).unwrap(), nonce);
+}
+
 /// Standalone IM4M reports version / cert chain / signature.
 #[test]
 fn im4m_standalone() {
@@ -347,6 +426,48 @@ fn kbag_class_selection_enforced() {
     assert!(outdev.join("im4p.decrypted").exists());
 }
 
+/// Apple Image4 decoders require exact DER consumption. A valid component or
+/// container followed by unrelated bytes must not be accepted as a valid file.
+#[test]
+fn rejects_trailing_bytes_after_top_level_der() {
+    let im4p = Im4pBuilder::new("krnl", "K", &[0xCC; 16]).build();
+    let img4 = seq(&[ia5("IMG4"), im4p.clone()]);
+    let im4m = build_im4m(&[], &[], 0);
+    let im4r = seq(&[ia5("IM4R"), set(&[property("BNCN", octet(&[0xAB; 8]))])]);
+
+    for (label, mut bytes) in [
+        ("IM4P", im4p),
+        ("IMG4", img4),
+        ("IM4M", im4m),
+        ("IM4R", im4r),
+    ] {
+        bytes.push(0x00);
+        let dir = tmpdir("trailing-der");
+        let input = write_fixture(&dir, "in.der", &bytes);
+        let out_dir = dir.join("out");
+        let result = run(&[
+            "--json",
+            "-o",
+            out_dir.to_str().unwrap(),
+            "-f",
+            input.to_str().unwrap(),
+        ]);
+        assert!(
+            !result.status.success(),
+            "{label} with trailing bytes must be rejected"
+        );
+        let value: serde_json::Value =
+            serde_json::from_slice(&result.stdout).expect("failure output must remain valid JSON");
+        assert!(
+            value["error"]
+                .as_str()
+                .unwrap_or_default()
+                .contains("trailing byte"),
+            "{label} error should identify trailing DER bytes: {value}"
+        );
+    }
+}
+
 /// Garbage input is rejected with a non-zero exit (no panic).
 #[test]
 fn rejects_garbage() {
@@ -395,4 +516,68 @@ fn json_includes_im4r_properties() {
     let v = run_json(&["-o", out.to_str().unwrap(), "-f", input.to_str().unwrap()]);
     let props = v["im4r_properties"].as_array().expect("im4r_properties");
     assert!(props.iter().any(|p| p["key"] == "BNCN"));
+}
+
+/// Native Cryptex1 fields use INTEGER/BOOLEAN; version values are OCTET STRING.
+/// Wrong tags retain their bytes and expose an anomaly rather than a false digest.
+#[test]
+fn native_property_types_and_anomalies() {
+    let dir = tmpdir("native-props");
+    let im4m = build_im4m(&[
+        property("type", integer(0xFFFF_FFFF)),
+        property("data", boolean(true)),
+        property("ndom", integer(0x1234)),
+        property("pqvf", integer(3)),
+        property("stng", integer(u64::MAX)),
+        property("cnch", octet(&[0xAA; 48])),
+        property("love", octet(b"26.1.0,123")),
+        property("vnum", octet(b"26.1.0,123")),
+        property("boid", octet(&[0xBB; 16])),
+    ], &[("gdmg", vec![property("DGST", octet(&[0xCC; 48]))])], 2);
+    let input = write_fixture(&dir, "in.im4m", &im4m);
+    let out = dir.join("out");
+    run_json(&["--dump-im4m-props", "-o", out.to_str().unwrap(), input.to_str().unwrap()]);
+    let v: serde_json::Value = serde_json::from_slice(&std::fs::read(out.join("im4m.props.json")).unwrap()).unwrap();
+    let props = v["manifest_properties"].as_array().unwrap();
+    let find = |key: &str| props.iter().find(|p| p["key"] == key).unwrap();
+    assert_eq!(find("type")["value"]["value"], 0xFFFF_FFFFu64);
+    assert_eq!(find("data")["value"]["value"], true);
+    assert_eq!(find("stng")["value"]["value"], u64::MAX);
+    assert_eq!(find("cnch")["value"]["type"], "Digest");
+    for key in ["love", "vnum", "boid"] {
+        assert_eq!(find(key)["value"]["type"], "OctetString");
+    }
+    assert_eq!(find("love")["value"]["value"], hex::encode(b"26.1.0,123"));
+    assert!(props.iter().all(|p| p.get("anomaly").is_none()));
+    assert_eq!(v["images"][0]["fourcc"], "gdmg");
+
+    let wrong = build_im4m(&[
+        property("type", ia5("gdmg")),
+        property("data", integer(1)),
+        property("DGST", ia5("abcd")),
+        property("vnum", integer(26)),
+    ], &[], 0);
+    let input = write_fixture(&dir, "wrong.im4m", &wrong);
+    let wrong_out = dir.join("wrong");
+    run_json(&["--dump-im4m-props", "-o", wrong_out.to_str().unwrap(), input.to_str().unwrap()]);
+    let v: serde_json::Value = serde_json::from_slice(&std::fs::read(wrong_out.join("im4m.props.json")).unwrap()).unwrap();
+    let props = v["manifest_properties"].as_array().unwrap();
+    assert!(props.iter().all(|p| p["anomaly"].is_string() && p["value"]["type"] == "Unknown"));
+    assert_eq!(props.iter().find(|p| p["key"] == "DGST").unwrap()["value"]["hex_value"], "61626364");
+}
+
+#[test]
+fn im4r_numeric_nonce_slots() {
+    let dir = tmpdir("im4r-slots");
+    let im4r = seq(&[ia5("IM4R"), set(&[
+        property("anid", integer(0x1234)), property("snid", integer(0xFFFF_FFFF)),
+    ])]);
+    let input = write_fixture(&dir, "in.im4r", &im4r);
+    let out = dir.join("out");
+    let v = run_json(&["--dump-im4r", "-o", out.to_str().unwrap(), input.to_str().unwrap()]);
+    let props = v["im4r_properties"].as_array().unwrap();
+    assert_eq!(props[0]["value"]["value"], 0x1234);
+    assert_eq!(props[1]["value"]["value"], 0xFFFF_FFFFu64);
+    assert!(props.iter().all(|p| p.get("anomaly").is_none()));
+    assert_eq!(std::fs::read(out.join("im4r.der")).unwrap(), im4r);
 }

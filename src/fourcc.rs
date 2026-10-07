@@ -1,6 +1,13 @@
 use once_cell::sync::Lazy;
 use std::collections::HashMap;
 
+// Exact entry aliases from libauthinstall's 223-entry kImg4Types table.
+// Several FourCCs have multiple entries; never collapse those to one identity.
+static IMAGE_ENTRY_NAMES: Lazy<HashMap<String, Vec<String>>> = Lazy::new(|| {
+    serde_json::from_str(include_str!("image_types.json"))
+        .expect("checked-in image entry table must be valid JSON")
+});
+
 static FOURCC_MAP: Lazy<HashMap<&'static str, &'static str>> = Lazy::new(|| {
     let mut map = HashMap::new();
     
@@ -175,7 +182,13 @@ static FOURCC_MAP: Lazy<HashMap<&'static str, &'static str>> = Lazy::new(|| {
 
 /// Get description for any 4CC code (image or property)
 pub fn get_description(code: &str) -> Option<String> {
+    if let Some(names) = IMAGE_ENTRY_NAMES.get(code) {
+        if names.len() > 1 {
+            return Some(names.join(" / "));
+        }
+    }
     FOURCC_MAP.get(code).map(|s| s.to_string())
+        .or_else(|| IMAGE_ENTRY_NAMES.get(code).map(|names| names.join(" / ")))
 }
 
 /// Get description for an image type code
@@ -186,14 +199,11 @@ pub fn get_image_description(code: &str) -> Option<String> {
 
 /// Get description for a manifest property code
 pub fn get_property_description(code: &str) -> Option<String> {
-    // Try FOURCC_MAP first
-    if let Some(desc) = get_description(code) {
+    // Native property descriptors take precedence over older informal labels.
+    if let Some(desc) = crate::parse::get_property_metadata(code) {
         return Some(desc);
     }
-    
-    // Fallback to KNOWN_PROPERTIES from parse.rs
-    // Import the metadata from parse module
-    crate::parse::get_property_metadata(code)
+    FOURCC_MAP.get(code).map(|s| s.to_string())
 }
 
 /// Format a 4CC code with its description if available
@@ -217,14 +227,30 @@ mod tests {
         assert_eq!(get_description("krnl"), Some("KernelCache".to_string()));
         assert_eq!(get_description("MANB"), Some("Manifest Body".to_string()));
         // Common firmware/boot images must be recognized (not "Unknown").
-        assert_eq!(get_description("sepi"), Some("SEP Firmware (Secure Enclave Processor)".to_string()));
-        assert_eq!(get_description("illb"), Some("LLB (Low-Level Bootloader)".to_string()));
+        assert_eq!(get_description("sepi"), Some("SEP / YonkersIR1,SepObject".to_string()));
+        assert_eq!(get_description("illb"), Some("LLB / AVISP1,LLB / Cellular1,LLB".to_string()));
         assert!(get_description("logo").is_some());
     }
     
     #[test]
     fn test_unknown_code() {
         assert!(get_description("ZZZZ").is_none());
+    }
+
+    #[test]
+    fn native_image_entries_preserve_aliases() {
+        assert_eq!(IMAGE_ENTRY_NAMES.len(), 203);
+        assert_eq!(IMAGE_ENTRY_NAMES.values().map(Vec::len).sum::<usize>(), 223);
+        assert_eq!(get_image_description("gdmg").as_deref(), Some("Cryptex1,GenericDmg"));
+        let names = IMAGE_ENTRY_NAMES.get("rkos").unwrap();
+        assert!(names.len() > 1);
+        let description = get_image_description("rkos").unwrap();
+        assert!(names.iter().all(|name| description.contains(name)));
+        for (code, names) in IMAGE_ENTRY_NAMES.iter().filter(|(_, names)| names.len() > 1) {
+            let description = get_image_description(code).unwrap();
+            assert!(names.iter().all(|name| description.contains(name)), "{code}: {description}");
+        }
+        assert!(get_property_description("gdmg").is_none());
     }
     
     #[test]

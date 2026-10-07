@@ -1,11 +1,11 @@
 #![cfg(feature = "lzfse")]
 
-/// LZFSE frame magics: `bvx2`/`bvxn` (compressed blocks) and `bvx-` (uncompressed
+/// LZFSE frame magics: `bvx1`/`bvx2`/`bvxn` (compressed blocks) and `bvx-` (uncompressed
 /// block). The end-of-stream marker `bvx$` is intentionally not treated as a
 /// stream start.
 #[cfg(feature = "lzfse")]
 pub fn looks_like_lzfse(buf: &[u8]) -> bool {
-    buf.len() >= 4 && matches!(&buf[0..4], b"bvx2" | b"bvxn" | b"bvx-")
+    buf.len() >= 4 && matches!(&buf[0..4], b"bvx1" | b"bvx2" | b"bvxn" | b"bvx-")
 }
 
 /// Decompress an LZFSE buffer. The output size is unknown up front, so we size
@@ -50,6 +50,7 @@ mod tests {
 
     #[test]
     fn magic_detection() {
+        assert!(looks_like_lzfse(b"bvx1\x00\x00"));
         assert!(looks_like_lzfse(b"bvx2\x00\x00"));
         assert!(looks_like_lzfse(b"bvxn...."));
         assert!(looks_like_lzfse(b"bvx-...."));

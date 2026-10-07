@@ -116,7 +116,7 @@ pub fn property(fourcc: &str, value: Vec<u8>) -> Vec<u8> {
 
 // ---- High-level Image4 component builders ----
 
-/// Classic IM4P: SEQUENCE { "IM4P", type, version, data, [keybag], [compression], [PAYP] }
+/// IM4P: SEQUENCE { "IM4P", type, version, data, keybag?, compression?, [0] PAYP? }
 pub struct Im4pBuilder {
     pub r#type: String,
     pub version: String,
@@ -146,7 +146,7 @@ impl Im4pBuilder {
         self
     }
     pub fn payp(mut self, properties: &[Vec<u8>]) -> Self {
-        self.payp = Some(seq(&[ia5("PAYP"), set(properties)]));
+        self.payp = Some(ctx_explicit(0, &seq(&[ia5("PAYP"), set(properties)])));
         self
     }
     pub fn build(&self) -> Vec<u8> {

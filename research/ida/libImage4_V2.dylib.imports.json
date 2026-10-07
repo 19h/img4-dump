@@ -1,0 +1,588 @@
+{
+  "import_count": 97,
+  "imports": [
+    {
+      "address": "0x2e3ac4080",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_CCMLDSA_FAULT_CANARY",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4088",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_CCRSA_PKCS1_FAULT_CANARY",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4090",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_cc_cmp_safe",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4098",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccder_blob_decode_bitstring",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac40a0",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccder_blob_decode_tag",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac40a8",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccder_blob_decode_tl",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac40b0",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccder_blob_decode_uint64",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac40b8",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccder_blob_encode_tl",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac40c0",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccder_decode_rsa_pub_n",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac40c8",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccder_sizeof_len",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac40d0",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccder_sizeof_tag",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac40d8",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccdigest",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac40e0",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccdigest_init",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac40e8",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccdigest_update",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac40f0",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccec_compressed_x962_export_pub",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac40f8",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccec_compressed_x962_export_pub_size",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4100",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccec_compressed_x962_import_pub",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4108",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccec_cp_256",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4110",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccec_cp_384",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4118",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccec_cp_521",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4120",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccec_export_pub",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4128",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccec_get_cp",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4130",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccec_import_pub",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4138",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccec_keysize_is_supported",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4140",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccec_verify",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4148",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccec_verify_composite",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4150",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccec_x963_import_pub_size",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4158",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_cchybridsig_import_pubkey",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4160",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_cchybridsig_lamps13_mldsa87_rsa3072_pub_ctx_init",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4168",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_cchybridsig_mldsa87_rsa3072_pub_ctx_init",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4170",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_cchybridsig_verify_prehashed_with_context",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4178",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccmd5_ltc_di",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4180",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccmldsa87",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4188",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccmldsa_import_pubkey",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4190",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccmldsa_verify",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4198",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccmldsa_verify_with_canary",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac41a0",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccrsa_import_pub",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac41a8",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccrsa_make_pub",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac41b0",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccrsa_verify_pkcs1v15",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac41b8",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccrsa_verify_pkcs1v15_allowshortsigs",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac41c0",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccrsa_verify_pkcs1v15_digest",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac41c8",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccsha1_di",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac41d0",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccsha1_ltc_di",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac41d8",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccsha224_di",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac41e0",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccsha256_di",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac41e8",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccsha256_ltc_di",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac41f0",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccsha384_di",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac41f8",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccsha384_ltc_di",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4200",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccsha512_di",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4208",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_ccsha512_ltc_di",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4210",
+      "library": "/usr/lib/system/libcorecrypto.dylib",
+      "name": "_cczp_bitlen",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4218",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "__NSConcreteGlobalBlock",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4220",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "___chkstk_darwin",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4228",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "___memcpy_chk",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4230",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "___stack_chk_fail",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4238",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "___stack_chk_guard",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4240",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "___strlcpy_chk",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4248",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_bzero",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4250",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_difftime",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4258",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_dispatch_once",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4260",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_free",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4268",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_getenv",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4270",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_mach_task_self_",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4278",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_malloc_type_calloc",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4280",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_malloc_type_malloc",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4288",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_memcmp",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4290",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_memcpy",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4298",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_memset",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac42a0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_open",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac42a8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_os_log_create",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac42b0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_os_log_with_args",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac42b8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_os_variant_allows_internal_security_policies",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac42c0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_pthread_equal",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac42c8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_pthread_self",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac42d0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_snprintf",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac42d8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_sscanf",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac42e0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_strcmp",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac42e8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_strptime",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac42f0",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_time",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac42f8",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_timegm",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4300",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_uuid_parse",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4308",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_uuid_unparse",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4310",
+      "library": "/usr/lib/libSystem.B.dylib",
+      "name": "_vdprintf",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4318",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFDataGetBytePtr",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4320",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFDataGetLength",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4328",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFDataGetTypeID",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4330",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFGetTypeID",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4338",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFRelease",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4340",
+      "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "name": "_CFStringCreateWithCString",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4348",
+      "library": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+      "name": "_IOConnectCallMethod",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4350",
+      "library": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+      "name": "_IOObjectRelease",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4358",
+      "library": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+      "name": "_IORegistryEntryCreateCFProperty",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4360",
+      "library": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+      "name": "_IORegistryEntryFromPath",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4368",
+      "library": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+      "name": "_IOServiceGetMatchingService",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4370",
+      "library": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+      "name": "_IOServiceMatching",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4378",
+      "library": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+      "name": "_IOServiceOpen",
+      "ordinal": 0
+    },
+    {
+      "address": "0x2e3ac4380",
+      "library": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+      "name": "_kIOMainPortDefault",
+      "ordinal": 0
+    }
+  ],
+  "database_target": "ed3cb4aaaff9"
+}

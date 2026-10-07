@@ -1,0 +1,6494 @@
+{
+  "binary": "CryptexKit",
+  "sha256": "d06d4d57bca4d44ed9b5457e89f08d5ce0f642da55e1b08a5763800aedf6f0ac",
+  "criteria": "img4|im4[pmrc]|image4|(?:^|_)DER|asn1|manifest|kbag|payload|payp|nonce|lzss|lzfse|compress|personaliz|ticket|digest|fourcc|fingerprint|trustcache",
+  "caller_depth": 2,
+  "selected": [
+    {
+      "function": {
+        "ea": "0x288ca6cc8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO16SignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs0H3KeyAAsAIP8intValuexSgSi_tcfCTW",
+        "size": 12,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288ca95b0",
+        "name": "_$s10CryptexKit8PkgSliceV7measureSDyAA0C9AssetTypeO06CryptoB06Digest_pGyKF",
+        "size": 608,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ca97f0",
+          "callee": "0x288ca9e38"
+        },
+        {
+          "ref_ea": "0x288ca96f4",
+          "callee": "0x288cac934"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ca9810",
+        "name": "_$s10CryptexKit8PkgSliceV7measureSDyAA0C9AssetTypeO06CryptoB06Digest_pGyKFyAF_SSSg6System14FileDescriptorVtKXEfU_",
+        "size": 980,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ca9b48",
+          "callee": "0x288ca9be4"
+        },
+        {
+          "ref_ea": "0x288ca9a88",
+          "callee": "0x288cad1a4"
+        },
+        {
+          "ref_ea": "0x288ca9abc",
+          "callee": "0x288cab5c8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ca9be4",
+        "name": "_$sSDyq_Sgxcis10CryptexKit12PkgAssetTypeO_06CryptoB012SHA384DigestVTB5",
+        "size": 596,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ca9d58",
+          "callee": "0x288cac260"
+        },
+        {
+          "ref_ea": "0x288ca9dac",
+          "callee": "0x288cac438"
+        },
+        {
+          "ref_ea": "0x288ca9e2c",
+          "callee": "0x288cac644"
+        },
+        {
+          "ref_ea": "0x288ca9df0",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288ca9e08",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ca9e38",
+        "name": "_$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lF10CryptexKit12PkgAssetTypeO_06CryptoE012SHA384DigestVAfG0K0_pTg5",
+        "size": 992,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ca9fc8",
+          "callee": "0x288cacfa4"
+        },
+        {
+          "ref_ea": "0x288caa104",
+          "callee": "0x288cacfa4"
+        },
+        {
+          "ref_ea": "0x288caa114",
+          "callee": "0x288cacfa4"
+        },
+        {
+          "ref_ea": "0x288caa080",
+          "callee": "0x288cad030"
+        },
+        {
+          "ref_ea": "0x288caa0c4",
+          "callee": "0x288cad1a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288caa218",
+        "name": "_$s10CryptexKit8PkgSliceV7measureSDySS06CryptoB06Digest_pGyKF",
+        "size": 172,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288caa238",
+          "callee": "0x288ca95b0"
+        },
+        {
+          "ref_ea": "0x288caa248",
+          "callee": "0x288caa2c4"
+        },
+        {
+          "ref_ea": "0x288caa2a0",
+          "callee": "0x288cacb58"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288caa2c4",
+        "name": "_$sSlsE3mapySayqd__Gqd__7ElementQzqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lFSDy10CryptexKit12PkgAssetTypeO06CryptoE06Digest_pG_SS_AiJ_pts5NeverOTg504$s10d4Kit8f21SliceV7measureSDySS06i3B06j20_pGyKFSS_AeF_ptAA0C9gh6O3key_U17F_p5valuet_tXEfU_Tf1cn_n",
+        "size": 668,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288caa314",
+          "callee": "0x288cab368"
+        },
+        {
+          "ref_ea": "0x288caa518",
+          "callee": "0x288cab368"
+        },
+        {
+          "ref_ea": "0x288caa3d4",
+          "callee": "0x288cacfa4"
+        },
+        {
+          "ref_ea": "0x288caa3bc",
+          "callee": "0x288cacfbc"
+        },
+        {
+          "ref_ea": "0x288caa3f0",
+          "callee": "0x288cacfbc"
+        },
+        {
+          "ref_ea": "0x288caa4dc",
+          "callee": "0x288cad018"
+        },
+        {
+          "ref_ea": "0x288caa4f0",
+          "callee": "0x288cad018"
+        },
+        {
+          "ref_ea": "0x288caa408",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cab368",
+        "name": "_$ss15ContiguousArrayV16_createNewBuffer14bufferIsUnique15minimumCapacity13growForAppendySb_SiSbtFSS_9CryptoKit6Digest_pt_Tg5",
+        "size": 32,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cab378",
+          "callee": "0x288cab47c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cab47c",
+        "name": "_$ss22_ContiguousArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSS_9CryptoKit6Digest_pt_Tg5",
+        "size": 332,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cabc0c",
+        "name": "_$ss17_NativeDictionaryV20_copyOrMoveAndResize8capacity12moveElementsySi_SbtF10CryptexKit12PkgAssetTypeO_06CryptoL012SHA384DigestVTg5",
+        "size": 912,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cabf9c",
+        "name": "_$ss17_NativeDictionaryV20_copyOrMoveAndResize8capacity12moveElementsySi_SbtFSS_9CryptoKit6Digest_pTg5",
+        "size": 708,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cac0a0",
+          "callee": "0x288cacfa4"
+        },
+        {
+          "ref_ea": "0x288cac118",
+          "callee": "0x288cacfa4"
+        },
+        {
+          "ref_ea": "0x288cac124",
+          "callee": "0x288cacfbc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cac260",
+        "name": "_$ss17_NativeDictionaryV7_delete2atys10_HashTableV6BucketV_tF10CryptexKit12PkgAssetTypeO_06CryptoI012SHA384DigestVTg5",
+        "size": 472,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cac438",
+        "name": "_$ss17_NativeDictionaryV8setValue_6forKey8isUniqueyq_n_xSbtF10CryptexKit12PkgAssetTypeO_06CryptoJ012SHA384DigestVTB5",
+        "size": 344,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cac49c",
+          "callee": "0x288cabc0c"
+        },
+        {
+          "ref_ea": "0x288cac58c",
+          "callee": "0x288cac590"
+        },
+        {
+          "ref_ea": "0x288cac554",
+          "callee": "0x288cac644"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cac590",
+        "name": "_$ss17_NativeDictionaryV7_insert2at3key5valueys10_HashTableV6BucketV_xnq_ntF10CryptexKit12PkgAssetTypeO_06CryptoK012SHA384DigestVTB5",
+        "size": 180,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cac644",
+        "name": "_$ss17_NativeDictionaryV4copyyyF10CryptexKit12PkgAssetTypeO_06CryptoE012SHA384DigestVTg5",
+        "size": 624,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cac934",
+        "name": "_$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfC10CryptexKit12PkgAssetTypeO_06CryptoD012SHA384DigestVTt0g5Tf4g_n",
+        "size": 432,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cacae4",
+        "name": "_$s10CryptexKit8PkgSliceV7measureSDyAA0C9AssetTypeO06CryptoB06Digest_pGyKFyAF_SSSg6System14FileDescriptorVtKXEfU_TA",
+        "size": 32,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cacaf8",
+          "callee": "0x288ca9810"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cacb58",
+        "name": "_$ss17_NativeDictionaryV5merge20trappingOnDuplicatesyqd__n_tSTRd__x_q_t7ElementRtd__lFSS_9CryptoKit6Digest_pSaySS_AgH_ptGTg5Tf4gn_n",
+        "size": 504,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cacbf0",
+          "callee": "0x288cabf9c"
+        },
+        {
+          "ref_ea": "0x288cacba8",
+          "callee": "0x288cacf3c"
+        },
+        {
+          "ref_ea": "0x288cacc50",
+          "callee": "0x288cacfa4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cacf3c",
+        "name": "_$sSS_9CryptoKit6Digest_ptWOc",
+        "size": 104,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cacfa4",
+        "name": "_$s9CryptoKit6Digest_pWOb",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cacfbc",
+        "name": "_$s9CryptoKit6Digest_pWOc",
+        "size": 92,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cad018",
+        "name": "_$sSD5IndexV8_VariantOy10CryptexKit12PkgAssetTypeO06CryptoD06Digest_p__GWOe",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cad030",
+        "name": "_$s10CryptexKit12PkgAssetTypeO3key_06CryptoB012SHA384DigestV5valuetWOb",
+        "size": 104,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cad1a4",
+        "name": "_$s9CryptoKit12SHA384DigestVAcA0D0AAWlTm",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cad240",
+        "name": "_$s10CryptexKit12PkgAssetTypeO3key_06CryptoB06Digest_p5valuetWOhTm",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cad2b0",
+        "name": "_$sSo15OS_cryptex_attrC10CryptexKitE4fromyAbC0D0C18PersonalizeOptionsVFZ",
+        "size": 420,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cad2dc",
+          "callee": "0x288cdbc7c"
+        },
+        {
+          "ref_ea": "0x288cad2f0",
+          "callee": "0x288d2f8a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cae340",
+        "name": "_$sSo19_img4_chip_instanceV10CryptexKitEABycfC",
+        "size": 144,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cae3d0",
+        "name": "_$sSo19_img4_chip_instanceV10CryptexKitE27certificateProductionStatusAC0D8IdentityV0gH0OSgvg",
+        "size": 36,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cae3f4",
+        "name": "_$sSo19_img4_chip_instanceV10CryptexKitE25effectiveProductionStatusAC0D8IdentityV0gH0OSgvg",
+        "size": 36,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cae5c4",
+        "name": "_$s10CryptexKit0A0C20personalizedIdentityAA0aD0VSgvpACTK",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cae600",
+        "name": "_$s10CryptexKit0A0C20personalizedIdentityAA0aD0VSgvpACTk",
+        "size": 120,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cae678",
+        "name": "_$s10CryptexKit0A0C20personalizedIdentityAA0aD0VSgvg",
+        "size": 116,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cae6ec",
+        "name": "_$s10CryptexKit0A0C20personalizedIdentityAA0aD0VSgvs",
+        "size": 116,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cae760",
+        "name": "_$s10CryptexKit0A0C17personalizedNonceAA0aD4SpecOSgvpACTK",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cae79c",
+        "name": "_$s10CryptexKit0A0C17personalizedNonceAA0aD4SpecOSgvpACTk",
+        "size": 84,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cae7f0",
+        "name": "_$s10CryptexKit0A0C17personalizedNonceAA0aD4SpecOSgvg",
+        "size": 76,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cae83c",
+        "name": "_$s10CryptexKit0A0C17personalizedNonceAA0aD4SpecOSgvs",
+        "size": 80,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288caf4b4",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFfA0_",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288caf4bc",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFfA1_",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288caf4bc",
+          "callee": "0x288cdbe90"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288caf4c0",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKF",
+        "size": 200,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288caf588",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTY0_",
+        "size": 300,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288caf6b4",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTQ1_",
+        "size": 264,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288caf7bc",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTY2_",
+        "size": 220,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288caf894",
+          "callee": "0x288cb7b48"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288caf898",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTQ3_",
+        "size": 264,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288caf9a0",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTY4_",
+        "size": 360,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288caf9ec",
+          "callee": "0x288cb82a8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cafb08",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTQ5_",
+        "size": 264,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cafc10",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTY6_",
+        "size": 380,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cafd8c",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTQ7_",
+        "size": 264,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cafe94",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTY8_",
+        "size": 104,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cafefc",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTY9_",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288caff14",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTY10_",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288caff2c",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTY11_",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288caff44",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTY12_",
+        "size": 104,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288caffac",
+        "name": "_$s10CryptexKit0A0C11personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFfA0_",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288caffb4",
+        "name": "_$s10CryptexKit0A0C11personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKF",
+        "size": 332,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb0100",
+        "name": "_$s10CryptexKit0A0C11personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTQ0_",
+        "size": 376,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb0278",
+        "name": "_$s10CryptexKit0A0C11personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTY1_",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb0290",
+        "name": "_$s10CryptexKit0A0C11personalize3for5nonce7optionsyAA0A8IdentityV_AA0A5NonceVAC18PersonalizeOptionsVtYaKF",
+        "size": 436,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb0444",
+        "name": "_$s10CryptexKit0A0C11personalize3for5nonce7optionsyAA0A8IdentityV_AA0A5NonceVAC18PersonalizeOptionsVtYaKFTY0_",
+        "size": 1268,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb058c",
+          "string_ea": "0x288d44c90",
+          "text": "personalize(for:nonce:options:)"
+        },
+        {
+          "ref_ea": "0x288cb0858",
+          "string_ea": "0x288d50170",
+          "text": "Failed to kick off personalization: %@"
+        },
+        {
+          "ref_ea": "0x288cb04a0",
+          "callee": "0x288d293ac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb0938",
+        "name": "_$s10CryptexKit0A0C11personalize3for5nonce7optionsyAA0A8IdentityV_AA0A5NonceVAC18PersonalizeOptionsVtYaKFTQ1_",
+        "size": 328,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb0a80",
+        "name": "_$s10CryptexKit0A0C11personalize3for5nonce7optionsyAA0A8IdentityV_AA0A5NonceVAC18PersonalizeOptionsVtYaKFTY2_",
+        "size": 408,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb0c18",
+        "name": "_$s10CryptexKit0A0C11personalize3for5nonce7optionsyAA0A8IdentityV_AA0A5NonceVAC18PersonalizeOptionsVtYaKFTY3_",
+        "size": 160,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb0cb8",
+        "name": "_$s10CryptexKit0A0C11personalize3for5nonce7optionsyAA0A8IdentityV_AA0A5NonceVAC18PersonalizeOptionsVtYaKFyScCySo10OS_cryptexCs5Error_pGXEfU_SbAOXEfU_",
+        "size": 552,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb0da0",
+          "callee": "0x288cad2b0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb143c",
+        "name": "_$s10CryptexKit0A0C26attachPersonalizedManifest4pathy6System8FilePathV_tKF",
+        "size": 1388,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb1924",
+          "string_ea": "0x288d501a0",
+          "text": "Reconstructed nonce spec %s after attaching manifest"
+        },
+        {
+          "ref_ea": "0x288cb1724",
+          "string_ea": "0x288d501e0",
+          "text": "Failed to attach personalized manifest: %@"
+        },
+        {
+          "ref_ea": "0x288cb178c",
+          "callee": "0x288cb19a8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb19a8",
+        "name": "_$s10CryptexKit0A0C20reconstructNonceSpec33_D48535450040CB46D43707EB9129BBEFLL11persistenceAA0adE0OAA0A11PersistenceO_tKF",
+        "size": 648,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb1b68",
+          "string_ea": "0x288d50280",
+          "text": "Failed to get nonce domain handle: %@"
+        },
+        {
+          "ref_ea": "0x288cb1b30",
+          "callee": "0x288cb4a98"
+        },
+        {
+          "ref_ea": "0x288cb1bb4",
+          "callee": "0x288cb4a98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb1c30",
+        "name": "_$s10CryptexKit0A0C25writePersonalizedManifest2toy6System8FilePathV_tKF",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb1c3c",
+          "string_ea": "0x288d50210",
+          "text": "Failed to copy personalized manifest: %@"
+        },
+        {
+          "ref_ea": "0x288cb1c6c",
+          "callee": "0x288cb1cd8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb1c78",
+        "name": "_$s10CryptexKit0A0C25fcopyPersonalizedManifest4pathy6System8FilePathV_tKF",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb1c84",
+          "callee": "0x288cb4828"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb1cd8",
+        "name": "_$s10CryptexKit0A0C25writePersonalizedManifest2toy6System8FilePathV_tKFTm",
+        "size": 624,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb38c8",
+        "name": "_$s10CryptexKit0A0C11personalize3for5nonce7optionsyAA0A8IdentityV_AA0A5NonceVAC18PersonalizeOptionsVtYaKFyScCySo10OS_cryptexCs5Error_pGXEfU_SbAOXEfU_TA",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb38e8",
+          "callee": "0x288cb0cb8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb3db0",
+        "name": "_$s10CryptexKit0A0C26attachPersonalizedManifest4pathy6System8FilePathV_tKFs5Int32VSo10OS_cryptexCXEfU_TA",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb3ee0",
+        "name": "_$s10CryptexKit0A0C25writePersonalizedManifest2toy6System8FilePathV_tKFs9UnmanagedVySo10CFErrorRefaGSgSo10OS_cryptexCXEfU_TA",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb40e0",
+        "name": "_$s10CryptexKit0A0C20personalizedIdentityAA0aD0VSgvgTj",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb40fc",
+        "name": "_$s10CryptexKit0A0C17personalizedNonceAA0aD4SpecOSgvgTj",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb4224",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTj",
+        "size": 320,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb4364",
+        "name": "_$s10CryptexKit0A0C11personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTj",
+        "size": 320,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb44a4",
+        "name": "_$s10CryptexKit0A0C11personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTjTQ0_",
+        "size": 220,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb4580",
+        "name": "_$s10CryptexKit0A0C11personalize3for5nonce7optionsyAA0A8IdentityV_AA0A5NonceVAC18PersonalizeOptionsVtYaKFTj",
+        "size": 320,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb47f0",
+        "name": "_$s10CryptexKit0A0C26attachPersonalizedManifest4pathy6System8FilePathV_tKFTj",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb4828",
+        "name": "_$s10CryptexKit0A0C25fcopyPersonalizedManifest4pathy6System8FilePathV_tKFTm",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb4860",
+        "name": "_$s10CryptexKit0A0C25fcopyPersonalizedManifest4pathy6System8FilePathV_tKFTj",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb4a64",
+        "name": "_$s10CryptexKit0A0C20reconstructNonceSpec33_D48535450040CB46D43707EB9129BBEFLL11persistenceAA0adE0OAA0A11PersistenceO_tKFs5Int32VSo15OS_cryptex_coreCXEfU_TA",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb4a98",
+        "name": "_$s10CryptexKit16AppleImage4ErrorOACs0E0AAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb4c04",
+        "name": "_$s10CryptexKit0A0C11personalize3for5nonce7optionsyAA0A8IdentityV_AA0A5NonceVAC18PersonalizeOptionsVtYaKFyScCySo10OS_cryptexCs5Error_pGXEfU_SbAOXEfU_ySo10CFErrorRefaSg_AOSgtcfU_TA",
+        "size": 888,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb4d84",
+          "string_ea": "0x288d502b0",
+          "text": "Personalization failed: %{public}@"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb52c0",
+        "name": "_$sSo19_img4_chip_instanceVwet",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb5314",
+        "name": "_$sSo19_img4_chip_instanceVwst",
+        "size": 104,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb537c",
+        "name": "_$sSo19_img4_chip_instanceVMa",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb5418",
+        "name": "_$sSo10_img4_dgstVwet",
+        "size": 32,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb5438",
+        "name": "_$sSo10_img4_dgstVwst",
+        "size": 60,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb5474",
+        "name": "_$sSo10_img4_dgstVMa",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb5488",
+        "name": "_$sSo25img4_chip_instance_omit_taMa",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb54e8",
+        "name": "_$s10CryptexKit0A0C12_personalize3for11persistence7optionsyAA0A6Device_p_AA0A11PersistenceOAC18PersonalizeOptionsVtYaKFTjTQ0_",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb54e8",
+          "callee": "0x288cb44a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb5508",
+        "name": "_$s10CryptexKit0A0C25writePersonalizedManifest2toy6System8FilePathV_tKFTj",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb5514",
+          "callee": "0x288cb1c78"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb7964",
+        "name": "_$s10CryptexKit0A5NonceV4data10Foundation4DataVvg",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb7998",
+        "name": "_$s10CryptexKit0A5NonceV4specAA0aC4SpecOvg",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb79ac",
+        "name": "_$s10CryptexKit0A5NonceV4data4specAC10Foundation4DataV_AA0aC4SpecOtcfC",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb7ab0",
+        "name": "_$s10CryptexKit0A9NonceSpecO6logger33_116873F7EA16F4080E2E988766D028BCLL_WZ",
+        "size": 104,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb7b18",
+        "name": "_$s10CryptexKit0A9NonceSpecO15cryptex1GenericACvgZ",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb7b2c",
+        "name": "_$s10CryptexKit0A9NonceSpecO24cryptex1GenericEphemeralACvgZ",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb7b40",
+        "name": "_$s10CryptexKit0A9NonceSpecO03forA011persistenceAcA0A0C_AA0A11PersistenceOtYaKcfcfA0_",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb7b48",
+        "name": "_$s10CryptexKit0A9NonceSpecO03forA011persistenceAcA0A0C_AA0A11PersistenceOtYaKcfC",
+        "size": 352,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb7ca8",
+        "name": "_$s10CryptexKit0A9NonceSpecO03forA011persistenceAcA0A0C_AA0A11PersistenceOtYaKcfCTY0_",
+        "size": 156,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb7d44",
+        "name": "_$s10CryptexKit0A9NonceSpecO03forA011persistenceAcA0A0C_AA0A11PersistenceOtYaKcfCTY1_",
+        "size": 912,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb7f3c",
+          "string_ea": "0x288d50280",
+          "text": "Failed to get nonce domain handle: %@"
+        },
+        {
+          "ref_ea": "0x288cb7f04",
+          "callee": "0x288cb4a98"
+        },
+        {
+          "ref_ea": "0x288cb8018",
+          "callee": "0x288cb4a98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb812c",
+        "name": "_$s10CryptexKit0A9NonceSpecO11isEphemeralSbSgyF",
+        "size": 40,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb8154",
+        "name": "_$s10CryptexKit0A9NonceSpecO23getDomainAndDescriptions13OpaquePointerVSg_SStyF",
+        "size": 248,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb824c",
+        "name": "_$s10CryptexKit0A16ReadNonceOptionsV9nonceSpecAA0adG0Ovg",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb8260",
+        "name": "_$s10CryptexKit0A16ReadNonceOptionsV9nonceSpecAA0adG0Ovs",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb8274",
+        "name": "_$s10CryptexKit0A16ReadNonceOptionsV9nonceSpecAA0adG0OvM",
+        "size": 32,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb8294",
+        "name": "_$s10CryptexKit0A16ReadNonceOptionsVACycfC",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb82a8",
+        "name": "_$s10CryptexKit0A16ReadNonceOptionsV9nonceSpecAcA0adG0OSg_tcfC",
+        "size": 56,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb8368",
+        "name": "_$s10CryptexKit0A5NonceVwet",
+        "size": 72,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb83b0",
+        "name": "_$s10CryptexKit0A5NonceVwst",
+        "size": 68,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb83f4",
+        "name": "_$s10CryptexKit0A5NonceVMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb8428",
+        "name": "_$s10CryptexKit0A9NonceSpecOwug",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb8440",
+        "name": "_$s10CryptexKit0A9NonceSpecOwui",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb8458",
+        "name": "_$s10CryptexKit0A9NonceSpecOMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb8468",
+        "name": "_$s10CryptexKit0A16ReadNonceOptionsVwet",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb8468",
+          "callee": "0x288cb846c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb846c",
+        "name": "_$s10CryptexKit0A9NonceSpecOwetTm",
+        "size": 72,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb84b4",
+        "name": "_$s10CryptexKit0A16ReadNonceOptionsVwst",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb84b4",
+          "callee": "0x288cb84b8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb84b8",
+        "name": "_$s10CryptexKit0A9NonceSpecOwstTm",
+        "size": 68,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb84fc",
+        "name": "_$s10CryptexKit0A16ReadNonceOptionsVMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cb850c",
+        "name": "_$s10CryptexKit0A9NonceSpecOwst",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb850c",
+          "callee": "0x288cb84b4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb8514",
+        "name": "_$s10CryptexKit0A9NonceSpecOwet",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb8514",
+          "callee": "0x288cb8468"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cc16d8",
+        "name": "_$s10CryptexKit0A6DeviceP9readNonce7optionsAA0aE0VAA0a4ReadE7OptionsV_tYaKF",
+        "size": 192,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cc1794",
+          "callee": "0x288cc188c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cc1798",
+        "name": "_$s10CryptexKit0A6DeviceP9readNonce7optionsAA0aE0VAA0a4ReadE7OptionsV_tYaKFTQ0_",
+        "size": 244,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc188c",
+        "name": "_$s10CryptexKit0A6DevicePAAE9readNonce7optionsAA0aE0VAA0a4ReadE7OptionsV_tYaKF",
+        "size": 324,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc19d0",
+        "name": "_$s10CryptexKit0A6DevicePAAE9readNonce7optionsAA0aE0VAA0a4ReadE7OptionsV_tYaKFTQ0_",
+        "size": 288,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc1af0",
+        "name": "_$s10CryptexKit0A6DevicePAAE9readNonce7optionsAA0aE0VAA0a4ReadE7OptionsV_tYaKFTY1_",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc1b08",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at0D7Options07installI0y6System8FilePathV_AA0A0C011PersonalizeI0VAL0fI0VtYaKF",
+        "size": 204,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cc1bd0",
+          "callee": "0x288cc1bd4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cc1bd4",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKF",
+        "size": 204,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc1ca0",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKFTY0_",
+        "size": 432,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cc1d10",
+          "callee": "0x288cd212c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cc1e50",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKFTQ1_",
+        "size": 256,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc1f50",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKFTY2_",
+        "size": 332,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc209c",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKFTQ3_",
+        "size": 260,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc21a0",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKFTY4_",
+        "size": 560,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cc2228",
+          "callee": "0x288caffac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cc23d0",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKFTQ5_",
+        "size": 264,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc24d8",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKFTY6_",
+        "size": 376,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc2650",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKFTQ7_",
+        "size": 264,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc2758",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKFTY8_",
+        "size": 120,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc27d0",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKFTY9_",
+        "size": 108,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc283c",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKFTY10_",
+        "size": 108,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc28a8",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKFTY11_",
+        "size": 128,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc2928",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at11withVariant0D7Options07installK0y6System8FilePathV_SSSgAA0A0C011PersonalizeK0VAN0fK0VtYaKFTY12_",
+        "size": 128,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc2ad4",
+        "name": "_$s10CryptexKit0A6DeviceP9readNonce7optionsAA0aE0VAA0a4ReadE7OptionsV_tYaKFTj",
+        "size": 308,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cc2c08",
+        "name": "_$s10CryptexKit0A6DevicePAAE27personalizeAndInstallBundle2at0D7Options07installI0y6System8FilePathV_AA0A0C011PersonalizeI0VAL0fI0VtYaKFTQ0_",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cc2c08",
+          "callee": "0x288cc1798"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cc2c0c",
+        "name": "_$sSo29CryptexRemoteServiceNonceAttrC0A3KitE4fromAbC0a4ReadD7OptionsV_tcfC",
+        "size": 212,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cc2c4c",
+          "callee": "0x288cb812c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd1f4c",
+        "name": "_$s10CryptexKit0A6BundleC13buildManifestSDySSypGvpACTK",
+        "size": 68,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cd1f90",
+        "name": "_$s10CryptexKit0A6BundleC13buildManifestSDySSypGvpACTk",
+        "size": 84,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cd1fe4",
+        "name": "_$s10CryptexKit0A6BundleC13buildManifestSDySSypGvg",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cd201c",
+        "name": "_$s10CryptexKit0A6BundleC13buildManifestSDySSypGvs",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cd2064",
+        "name": "_$s10CryptexKit0A6BundleC13buildManifestSDySSypGvM",
+        "size": 80,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cd4250",
+        "name": "_$s10CryptexKit0A6BundleC13buildManifestSDySSypGvgTj",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cd426c",
+        "name": "_$s10CryptexKit0A6BundleC13buildManifestSDySSypGvsTj",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cd4288",
+        "name": "_$s10CryptexKit0A6BundleC13buildManifestSDySSypGvMTj",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cd466c",
+        "name": "_$sSo25CryptexRemoteServiceNonceC0A3KitE4data10Foundation4DataVvg",
+        "size": 76,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd46a4",
+          "callee": "0x288d29978"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd4914",
+        "name": "_$s10CryptexKit0A0C14InstallOptionsV6serverAA0A22PersonalizationServiceVSgvg",
+        "size": 68,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd4954",
+          "callee": "0x288cd49a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd49a4",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVSgWOc",
+        "size": 104,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cd4a0c",
+        "name": "_$s10CryptexKit0A0C14InstallOptionsV6serverAA0A22PersonalizationServiceVSgvs",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd4a50",
+          "callee": "0x288cd4a54"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd4a54",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVSgWOd",
+        "size": 104,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cd4abc",
+        "name": "_$s10CryptexKit0A0C14InstallOptionsV6serverAA0A22PersonalizationServiceVSgvM",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cd5a54",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVACSEAAWlTm",
+        "size": 68,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd5a78",
+          "callee": "0x288d2f8a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd5a98",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVWOcTm",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cd5d14",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVSgMa",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd5d40",
+          "callee": "0x288d2f8a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cdb4e4",
+        "name": "_$s10CryptexKit16AppleImage4ErrorOwet",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdb538",
+        "name": "_$s10CryptexKit16AppleImage4ErrorOwst",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdb58c",
+        "name": "_$s10CryptexKit16AppleImage4ErrorOwug",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdb5a8",
+        "name": "_$s10CryptexKit16AppleImage4ErrorOwup",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdb5c0",
+        "name": "_$s10CryptexKit16AppleImage4ErrorOwui",
+        "size": 52,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdb5f4",
+        "name": "_$s10CryptexKit16AppleImage4ErrorOMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdbb78",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsV3ssoSbvg",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdbb80",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsV3ssoSbvs",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdbb88",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsV3ssoSbvM",
+        "size": 32,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdbba8",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsV16allowMixAndMatchSbvg",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdbbb0",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsV16allowMixAndMatchSbvs",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdbbb8",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsV16allowMixAndMatchSbvM",
+        "size": 32,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdbbd8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVWOc",
+        "size": 92,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cdbbf4",
+          "callee": "0x288d2f8a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cdbc34",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsV6serverAA0A22PersonalizationServiceVSgvg",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cdbc4c",
+          "callee": "0x288cdbc7c"
+        },
+        {
+          "ref_ea": "0x288cdbc6c",
+          "callee": "0x288cdbf64"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cdbc7c",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsVMa",
+        "size": 76,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdbcc8",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsV6serverAA0A22PersonalizationServiceVSgvs",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cdbce0",
+          "callee": "0x288cdbc7c"
+        },
+        {
+          "ref_ea": "0x288cdbd00",
+          "callee": "0x288cdbde8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cdbd10",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsV6serverAA0A22PersonalizationServiceVSgvM",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cdbd28",
+          "callee": "0x288cdbc7c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cdbd58",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsV10socksProxy10Foundation3URLV4host_s5Int32V4porttSgvg",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cdbd70",
+          "callee": "0x288cdbc7c"
+        },
+        {
+          "ref_ea": "0x288cdbd90",
+          "callee": "0x288cdbf64"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cdbda0",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsV10socksProxy10Foundation3URLV4host_s5Int32V4porttSgvs",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cdbdb8",
+          "callee": "0x288cdbc7c"
+        },
+        {
+          "ref_ea": "0x288cdbdd8",
+          "callee": "0x288cdbde8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cdbde8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVSgWOdTm",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdbe48",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsV10socksProxy10Foundation3URLV4host_s5Int32V4porttSgvM",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cdbe60",
+          "callee": "0x288cdbc7c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cdbe90",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsVAEycfC",
+        "size": 212,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cdbec4",
+          "callee": "0x288cdbbd8"
+        },
+        {
+          "ref_ea": "0x288cdbeb0",
+          "callee": "0x288cdbc7c"
+        },
+        {
+          "ref_ea": "0x288cdbecc",
+          "callee": "0x288d2f8a4"
+        },
+        {
+          "ref_ea": "0x288cdbebc",
+          "callee": "0x288d302e8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cdbf64",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVSgWOcTm",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdbfc4",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsVwet",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdbfd8",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsVwst",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cdbfec",
+        "name": "_$s10CryptexKit0A0C18PersonalizeOptionsVMr",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cdc018",
+          "callee": "0x288cd5d14"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cf8880",
+        "name": "_$s10CryptexKit0A8IdentityV12chipInstanceSo06_img4_D9_instanceVvg",
+        "size": 44,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cf9858",
+        "name": "_$s10CryptexKit0A8IdentityV12chipInstanceACSo06_img4_D9_instanceV_tcfC",
+        "size": 44,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cf99a4",
+        "name": "_$sSo25img4_chip_instance_omit_tas25ExpressibleByArrayLiteralSCsACP05arrayH0x0gH7ElementQzd_tcfCTW",
+        "size": 204,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cfa8e4",
+        "name": "_$sSo25img4_chip_instance_omit_tas10SetAlgebraSCSQWb",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cfa90c",
+          "callee": "0x288cfa94c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cfa918",
+        "name": "_$sSo25img4_chip_instance_omit_tas10SetAlgebraSCs25ExpressibleByArrayLiteralPWb",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cfa940",
+          "callee": "0x288cfa94c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cfa94c",
+        "name": "_$sSo25img4_chip_instance_omit_taABSQSCWlTm",
+        "size": 68,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cfa970",
+          "callee": "0x288cb5488"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cfa990",
+        "name": "_$sSo25img4_chip_instance_omit_tas9OptionSetSCSYWb",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cfa9b8",
+          "callee": "0x288cfa94c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cfa9c4",
+        "name": "_$sSo25img4_chip_instance_omit_tas9OptionSetSCs0F7AlgebraPWb",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cfa9ec",
+          "callee": "0x288cfa94c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cfff94",
+        "name": "_$s10CryptexKit0A4CoreC12image4TicketAA0A5AssetCSgvg",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d09e54",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOs0K3KeyAAsAGP11stringValueSSvgTW",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d09e6c",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOs0K3KeyAAsAGP11stringValuexSgSS_tcfCTW",
+        "size": 136,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d09ef4",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOs23CustomStringConvertibleAAsAGP11descriptionSSvgTW",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d09f08",
+          "callee": "0x288d0bbfc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d09f30",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOs28CustomDebugStringConvertibleAAsAGP16debugDescriptionSSvgTW",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d09f44",
+          "callee": "0x288d0bbfc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d09f6c",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLVSeAASe4fromxs7Decoder_p_tKcfCTW",
+        "size": 352,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0a02c",
+          "callee": "0x288d0bbfc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0a0cc",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV6encode2toys7Encoder_p_tKF",
+        "size": 432,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0a190",
+          "callee": "0x288d0bc50"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0a27c",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV4fromADs7Decoder_p_tKcfC",
+        "size": 444,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0a340",
+          "callee": "0x288d0bc50"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0a438",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOs0M3KeyAAsAGP11stringValueSSvgTW",
+        "size": 52,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0a46c",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOs0M3KeyAAsAGP11stringValuexSgSS_tcfCTW",
+        "size": 220,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0a548",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOs23CustomStringConvertibleAAsAGP11descriptionSSvgTW",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0a55c",
+          "callee": "0x288d0bc50"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0a584",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOs28CustomDebugStringConvertibleAAsAGP16debugDescriptionSSvgTW",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0a598",
+          "callee": "0x288d0bc50"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0a5c0",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLVSeAASe4fromxs7Decoder_p_tKcfCTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0a5cc",
+          "callee": "0x288d0a27c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0a5d8",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLVSEAASE6encode2toys7Encoder_p_tKFTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0a5e4",
+          "callee": "0x288d0a0cc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0b75c",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLVADSeAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0b7b0",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLVADSeAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0b868",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLVADSEAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0bbdc",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLVMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0bbec",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLVMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0bbfc",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOAFs0K3KeyAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0bc50",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOAFs0M3KeyAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0bde8",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0bdf8",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0be08",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOSHAASQWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0be08",
+          "callee": "0x288d0be0c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0be0c",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOAFSQAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0be60",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOSHAASQWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0be60",
+          "callee": "0x288d0be64"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0be64",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOAFSQAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0beb8",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOs0M3KeyAAs28CustomDebugStringConvertiblePWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0beb8",
+          "callee": "0x288d0bebc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0bebc",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOAFs28CustomDebugStringConvertibleAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0bf10",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOs0M3KeyAAs23CustomStringConvertiblePWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0bf10",
+          "callee": "0x288d0bf14"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0bf14",
+        "name": "_$s10CryptexKit23PkgEnvDirectoryManifest33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOAFs23CustomStringConvertibleAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0bf68",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOs0K3KeyAAs28CustomDebugStringConvertiblePWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0bf68",
+          "callee": "0x288d0bf6c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0bf6c",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOAFs28CustomDebugStringConvertibleAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0bfc0",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOs0K3KeyAAs23CustomStringConvertiblePWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0bfc0",
+          "callee": "0x288d0bfc4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0bfc4",
+        "name": "_$s10CryptexKit15ManifestVersion33_3260555C80D36684DA8F2BFE271598ABLLV10CodingKeysOAFs23CustomStringConvertibleAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d0c018",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV6diavlo_WZ",
+        "size": 284,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0c080",
+          "callee": "0x288d2f8a4"
+        },
+        {
+          "ref_ea": "0x288d0c118",
+          "callee": "0x288d2f8f0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0c134",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV6diavloACvgZ",
+        "size": 120,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0c188",
+          "callee": "0x288cdbbd8"
+        },
+        {
+          "ref_ea": "0x288d0c15c",
+          "callee": "0x288d2f8a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d20e1c",
+        "name": "_$s10CryptexKit18Image4PropertySpecV7_4ccStrSSvg",
+        "size": 48,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d20e4c",
+        "name": "_$s10CryptexKit18Image4PropertySpecV12trustSectionSo07image4_F10_section_tavg",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d20e54",
+        "name": "_$s10CryptexKit18Image4PropertySpecV4typexmvg",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d20e5c",
+        "name": "_$s10CryptexKit18Image4PropertySpecV4_4ccs6UInt32Vvg",
+        "size": 64,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d20e9c",
+        "name": "_$s10CryptexKit18Image4PropertySpecV4sizeSivg",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d20eb8",
+        "name": "_$s10CryptexKit18Image4PropertySpecV7_4ccStr12trustSectionACyxGSS_So07image4_H10_section_tatcfC",
+        "size": 12,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d20ec4",
+        "name": "_$s10CryptexKit18Image4PropertySpecV4typeACys6UInt64VGvgZ",
+        "size": 36,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d20ee8",
+        "name": "_$s10CryptexKit18Image4PropertySpecV7subTypeACys6UInt64VGvgZ",
+        "size": 36,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d20f0c",
+        "name": "_$s10CryptexKit18Image4PropertySpecV8dataOnlyACySbGvgZ",
+        "size": 36,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d20f30",
+        "name": "_$s10CryptexKit18Image4PropertySpecV2eeoiySbACyxG_AEtFZ",
+        "size": 108,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d20f9c",
+        "name": "_$s10CryptexKit18Image4PropertySpecVyxGSQAASQ2eeoiySbx_xtFZTW",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d20f9c",
+          "callee": "0x288d20f30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d21008",
+        "name": "_$s10CryptexKit10Image4AuthVACycfC",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2100c",
+        "name": "_$s10CryptexKit10Image4AuthV4read8property4froms6UInt64VSgAA0C12PropertySpecVyAHG_10Foundation4DataVtKF",
+        "size": 168,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2106c",
+          "callee": "0x288d210b4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d210b4",
+        "name": "_$s10CryptexKit10Image4AuthV8evaluate10ticketData4type9configurey10Foundation0G0V_s13OpaquePointerVSgyALKXEtKF04$s10a5Kit10cd68V4read8property4froms6UInt64VSgAA0C12PropertySpecVyAHG_10Foundation4g40VtKFySpyAHGKXEfU_ySpySPyAHGSgGKXEfU_ys13kL6VXEfU_AA0ctU0Vys0P0VGSpyARGSpySPyARGSgGTf1nncn_nTm",
+        "size": 1372,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d21610",
+        "name": "_$s10CryptexKit10Image4AuthV8evaluate10ticketData4type9configurey10Foundation0G0V_s13OpaquePointerVSgyALKXEtKF",
+        "size": 1108,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d21a64",
+        "name": "_$s10CryptexKit10Image4AuthV4read8property4fromSbSgAA0C12PropertySpecVySbG_10Foundation4DataVtKF",
+        "size": 164,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d21ac8",
+          "callee": "0x288d210b4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d21b08",
+        "name": "_$s10CryptexKit10Image4AuthV8evaluate10ticketData4type9configurey10Foundation0G0V_s13OpaquePointerVSgyALKXEtKFySWKXEfU_ySpys5Error_pSgGXEfU_yAL_SVSgSis5Int32VSvSgtcfU_To",
+        "size": 12,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d21b10",
+          "callee": "0x288d22458"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d21b14",
+        "name": "_$s10CryptexKit10Image4AuthV12authenticate8fileData7with4cc7againsty10Foundation0G0V_SSAJtKF",
+        "size": 488,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d21cb4",
+          "callee": "0x288d21e20"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d21cfc",
+        "name": "_$s10CryptexKit10Image4AuthVAA26AssetAuthenticatorProtocolA2aDP12authenticate8fileData7with4cc7againsty10Foundation0J0V_SSALtKFTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d21d08",
+          "callee": "0x288d21b14"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d21d14",
+        "name": "_$s10CryptexKit10Image4AuthVAA26AssetAuthenticatorProtocolA2aDP4read8property4froms6UInt64VSgAA0C12PropertySpecVyAJG_10Foundation4DataVtKFTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d21d20",
+          "callee": "0x288d2100c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d21d2c",
+        "name": "_$s10CryptexKit10Image4AuthVAA26AssetAuthenticatorProtocolA2aDP4read8property4fromSbSgAA0C12PropertySpecVySbG_10Foundation4DataVtKFTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d21d38",
+          "callee": "0x288d21a64"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d21d44",
+        "name": "_$sSo22image4_trust_section_taSYSCSY8rawValuexSg03RawE0Qz_tcfCTW",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d21d60",
+        "name": "_$s10CryptexKit10Image4AuthV12authenticate8fileData7with4cc7againsty10Foundation0G0V_SSAJtKFySWKXEfU_ys13OpaquePointerVXEfU_Tf4nnxn_n",
+        "size": 192,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d21e20",
+        "name": "_$s10CryptexKit10Image4AuthV8evaluate10ticketData4type9configurey10Foundation0G0V_s13OpaquePointerVSgyALKXEtKF04$s10a5Kit10cd78V12authenticate8fileData7with4cc7againsty10Foundation0G0V_SSAJtKFySWKXEfU_ys13kL6VXEfU_SSSWAJTf1nncn_nTf4nnnnxn_n",
+        "size": 1156,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d22034",
+          "callee": "0x288d21d60"
+        },
+        {
+          "ref_ea": "0x288d2207c",
+          "callee": "0x288d21d60"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d222cc",
+        "name": "_$s10CryptexKit26AssetAuthenticatorProtocolP4read8property4froms6UInt64VSgAA18Image4PropertySpecVyAHG_10Foundation4DataVtKFTj",
+        "size": 40,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d222f4",
+        "name": "_$s10CryptexKit26AssetAuthenticatorProtocolP4read8property4fromSbSgAA18Image4PropertySpecVySbG_10Foundation4DataVtKFTj",
+        "size": 40,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2231c",
+        "name": "_$s10CryptexKit18Image4PropertySpecVMi",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d22358",
+        "name": "_$s10CryptexKit18Image4PropertySpecVwet",
+        "size": 72,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d223a0",
+        "name": "_$s10CryptexKit18Image4PropertySpecVwst",
+        "size": 64,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d223e0",
+        "name": "_$s10CryptexKit18Image4PropertySpecVMa",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d223f8",
+        "name": "_$s10CryptexKit10Image4AuthVMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d22408",
+        "name": "_$sSo22image4_trust_section_taMa",
+        "size": 80,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d22458",
+        "name": "_$s10CryptexKit10Image4AuthV8evaluate10ticketData4type9configurey10Foundation0G0V_s13OpaquePointerVSgyALKXEtKFySWKXEfU_ySpys5Error_pSgGXEfU_yAL_SVSgSis5Int32VSvSgtcfU_Tf4dddnn_n",
+        "size": 724,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d22f58",
+        "name": "_$s10CryptexKit0A11LocalDeviceC9readNonce7optionsAA0aF0VAA0a4ReadF7OptionsV_tYaKF",
+        "size": 252,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d23054",
+        "name": "_$s10CryptexKit0A11LocalDeviceC9readNonce7optionsAA0aF0VAA0a4ReadF7OptionsV_tYaKFTY0_",
+        "size": 1200,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d232b0",
+          "string_ea": "0x288d50640",
+          "text": "Failed to get nonce domain: %@"
+        },
+        {
+          "ref_ea": "0x288d23394",
+          "string_ea": "0x288d50660",
+          "text": "Failed to read nonce: %@"
+        },
+        {
+          "ref_ea": "0x288d231b0",
+          "string_ea": "0x288d50680",
+          "text": "Reading nonce for spec '%s' => domain '%s'"
+        },
+        {
+          "ref_ea": "0x288d233c4",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288d23274",
+          "callee": "0x288cb4a98"
+        },
+        {
+          "ref_ea": "0x288d23358",
+          "callee": "0x288cb4a98"
+        },
+        {
+          "ref_ea": "0x288d2346c",
+          "callee": "0x288cb4a98"
+        },
+        {
+          "ref_ea": "0x288d2342c",
+          "callee": "0x288cb79ac"
+        },
+        {
+          "ref_ea": "0x288d230c4",
+          "callee": "0x288cb8154"
+        },
+        {
+          "ref_ea": "0x288d23418",
+          "callee": "0x288d29978"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d27a0c",
+        "name": "_$s10CryptexKit0A11LocalDeviceCAA0aD0A2aDP9readNonce7optionsAA0aF0VAA0a4ReadF7OptionsV_tYaKFTW",
+        "size": 304,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2840c",
+        "name": "_$s10CryptexKit0A11LocalDeviceC9readNonce7optionsAA0aF0VAA0a4ReadF7OptionsV_tYaKFTj",
+        "size": 300,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d293ac",
+        "name": "_$sSo11_img4_nonceV10CryptexKitE4fromAB10Foundation4DataV_tKcfC",
+        "size": 1068,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d296b4",
+          "string_ea": "0x288d507b0",
+          "text": "Nonce length (%ld) != expected (%u)"
+        },
+        {
+          "ref_ea": "0x288d2964c",
+          "callee": "0x288d297d8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d297d8",
+        "name": "_$sSo11_img4_nonceV10CryptexKitE4fromAB10Foundation4DataV_tKcfcySpys5UInt8V_A47ItGXEfU_",
+        "size": 416,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d29978",
+        "name": "_$sSo11_img4_nonceV10CryptexKitE4data10Foundation4DataVvg",
+        "size": 108,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2ecbc",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO2eeoiySbAE_AEtFZ",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2ecd0",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs0G3KeyAAsAIP11stringValueSSvgTW",
+        "size": 60,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2ed0c",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs0G3KeyAAsAIP11stringValuexSgSS_tcfCTW",
+        "size": 224,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2edec",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs23CustomStringConvertibleAAsAIP11descriptionSSvgTW",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2ee00",
+          "callee": "0x288d2f204"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2ee28",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs28CustomDebugStringConvertibleAAsAIP16debugDescriptionSSvgTW",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2ee3c",
+          "callee": "0x288d2f204"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2ee64",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO19NotSignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs23CustomStringConvertibleAAsAIP11descriptionSSvgTW",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2ee78",
+          "callee": "0x288d2f2ac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2eea0",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO19NotSignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs28CustomDebugStringConvertibleAAsAIP16debugDescriptionSSvgTW",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2eeb4",
+          "callee": "0x288d2f2ac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2eedc",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO16SignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs23CustomStringConvertibleAAsAIP11descriptionSSvgTW",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2eef0",
+          "callee": "0x288d2f258"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2ef18",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO16SignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs28CustomDebugStringConvertibleAAsAIP16debugDescriptionSSvgTW",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2ef2c",
+          "callee": "0x288d2f258"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2ef54",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO6encode2toys7Encoder_p_tKF",
+        "size": 688,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2f114",
+          "callee": "0x288d2f204"
+        },
+        {
+          "ref_ea": "0x288d2f14c",
+          "callee": "0x288d2f258"
+        },
+        {
+          "ref_ea": "0x288d2f188",
+          "callee": "0x288d2f2ac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2f204",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAHs0G3KeyAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2f258",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO16SignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAHs0H3KeyAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2f2ac",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO19NotSignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAHs0I3KeyAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2f300",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO4hash4intoys6HasherVz_tF",
+        "size": 44,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2f32c",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO9hashValueSivg",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2f374",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO4fromAEs7Decoder_p_tKcfC",
+        "size": 1128,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2f534",
+          "callee": "0x288d2f204"
+        },
+        {
+          "ref_ea": "0x288d2f68c",
+          "callee": "0x288d2f258"
+        },
+        {
+          "ref_ea": "0x288d2f708",
+          "callee": "0x288d2f2ac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2f7dc",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyOSeAASe4fromxs7Decoder_p_tKcfCTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2f7e8",
+          "callee": "0x288d2f374"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2f7f4",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyOSEAASE6encode2toys7Encoder_p_tKFTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2f800",
+          "callee": "0x288d2ef54"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2f80c",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV3url10Foundation3URLVvg",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2f86c",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13signingPolicyAC07SigningF0Ovg",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2f884",
+          "callee": "0x288d2f8a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2f8a4",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVMa",
+        "size": 76,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2f8f0",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV3url13signingPolicyAC10Foundation3URLV_AC07SigningG0OtcfC",
+        "size": 120,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2f948",
+          "callee": "0x288d2f8a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2f968",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs0E3KeyAAsAGP11stringValueSSvgTW",
+        "size": 64,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2f9a8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs0E3KeyAAsAGP11stringValuexSgSS_tcfCTW",
+        "size": 228,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2fa8c",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs23CustomStringConvertibleAAsAGP11descriptionSSvgTW",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2faa0",
+          "callee": "0x288d2fcb8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2fac8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs28CustomDebugStringConvertibleAAsAGP16debugDescriptionSSvgTW",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2fadc",
+          "callee": "0x288d2fcb8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2fb04",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV6encode2toys7Encoder_p_tKF",
+        "size": 436,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2fc44",
+          "callee": "0x288d2f8a4"
+        },
+        {
+          "ref_ea": "0x288d2fbc4",
+          "callee": "0x288d2fcb8"
+        },
+        {
+          "ref_ea": "0x288d2fc54",
+          "callee": "0x288d2fd0c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2fcb8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAFs0E3KeyAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2fd0c",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyOAESEAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d2fd60",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV4fromACs7Decoder_p_tKcfC",
+        "size": 796,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d30064",
+          "callee": "0x288cdbbd8"
+        },
+        {
+          "ref_ea": "0x288d2fe88",
+          "callee": "0x288d2f8a4"
+        },
+        {
+          "ref_ea": "0x288d2fee4",
+          "callee": "0x288d2fcb8"
+        },
+        {
+          "ref_ea": "0x288d2ffd8",
+          "callee": "0x288d300c0"
+        },
+        {
+          "ref_ea": "0x288d30074",
+          "callee": "0x288d30114"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d300c0",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyOAESeAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d30114",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVWOh",
+        "size": 84,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d3012c",
+          "callee": "0x288d2f8a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d30168",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVSeAASe4fromxs7Decoder_p_tKcfCTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d30174",
+          "callee": "0x288d2fd60"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d30180",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVSEAASE6encode2toys7Encoder_p_tKFTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d3018c",
+          "callee": "0x288d2fb04"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d30198",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV5tatsu_WZ",
+        "size": 336,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d30200",
+          "callee": "0x288d2f8a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d302e8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV5tatsuACvau",
+        "size": 100,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d30308",
+          "callee": "0x288d2f8a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d3034c",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV5tatsuACvgZ",
+        "size": 120,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d303a0",
+          "callee": "0x288cdbbd8"
+        },
+        {
+          "ref_ea": "0x288d30374",
+          "callee": "0x288d2f8a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d303c4",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyOSHAASQWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d303c4",
+          "callee": "0x288d303c8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d303c8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyOAESQAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d3041c",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVwet",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d30430",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVwst",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d30444",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceVMr",
+        "size": 116,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d304b8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyOMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d304c8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d304d8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d304e8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO19NotSignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d304f8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO16SignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOMa",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d30508",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOSHAASQWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d30508",
+          "callee": "0x288d3050c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d3050c",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAHSQAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d30560",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOSHAASQWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d30560",
+          "callee": "0x288d30564"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d30564",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAFSQAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d305b8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs0E3KeyAAs28CustomDebugStringConvertiblePWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d305b8",
+          "callee": "0x288d305bc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d305bc",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAFs28CustomDebugStringConvertibleAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d30610",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs0E3KeyAAs23CustomStringConvertiblePWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d30610",
+          "callee": "0x288d30614"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d30614",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAFs23CustomStringConvertibleAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d30668",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO19NotSignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs0I3KeyAAs28CustomDebugStringConvertiblePWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d30668",
+          "callee": "0x288d3066c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d3066c",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO19NotSignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAHs28CustomDebugStringConvertibleAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d306c0",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO19NotSignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs0I3KeyAAs23CustomStringConvertiblePWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d306c0",
+          "callee": "0x288d306c4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d306c4",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO19NotSignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAHs23CustomStringConvertibleAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d30718",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO16SignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs0H3KeyAAs28CustomDebugStringConvertiblePWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d30718",
+          "callee": "0x288d3071c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d3071c",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO16SignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAHs28CustomDebugStringConvertibleAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d30770",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO16SignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs0H3KeyAAs23CustomStringConvertiblePWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d30770",
+          "callee": "0x288d30774"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d30774",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO16SignedCodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAHs23CustomStringConvertibleAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d307c8",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs0G3KeyAAs28CustomDebugStringConvertiblePWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d307c8",
+          "callee": "0x288d307cc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d307cc",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAHs28CustomDebugStringConvertibleAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288d30820",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOs0G3KeyAAs23CustomStringConvertiblePWb",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d30820",
+          "callee": "0x288d30824"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d30824",
+        "name": "_$s10CryptexKit0A22PersonalizationServiceV13SigningPolicyO10CodingKeys33_7151A4EF5315F8208038AC07DA5B4806LLOAHs23CustomStringConvertibleAAWl",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x288cd94ac",
+        "name": "_$s10CryptexKit10TatsuErrorO16errorDescriptionSSSgvg",
+        "size": 440,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd95b8",
+          "string_ea": "0x288d452a0",
+          "text": "Trust signing service response is missing required ticket tags"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cda144",
+        "name": "_$s10CryptexKit0A5ErrorO16errorDescriptionSSSgvg",
+        "size": 1724,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cda414",
+          "string_ea": "0x288d456e0",
+          "text": "Failed to attach personalized manifest"
+        },
+        {
+          "ref_ea": "0x288cda2ac",
+          "string_ea": "0x288d45850",
+          "text": "Cryptex is missing personalization ticket asset"
+        },
+        {
+          "ref_ea": "0x288cda200",
+          "string_ea": "0x288d45880",
+          "text": "Cryptex is already personalized and cannot be re-personalized"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cec0dc",
+        "name": "_$s10CryptexKit15PkgSliceEncoderV06encodeD05sliceSo13OS_xpc_object_pAA0cD0V_tKFZTf4nd_n",
+        "size": 760,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cec14c",
+          "string_ea": "0x288d46150",
+          "text": "type"
+        },
+        {
+          "ref_ea": "0x288cec364",
+          "string_ea": "0x288d46150",
+          "text": "type"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd2178",
+        "name": "_$s10CryptexKit0A6BundleC4pathAC6System8FilePathV_tKcfc",
+        "size": 2352,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd28ec",
+          "string_ea": "0x288d50380",
+          "text": "Failed to copy BuildManifest: %@"
+        },
+        {
+          "ref_ea": "0x288cd2760",
+          "string_ea": "0x288d503b0",
+          "text": "BuildManifest conversion failed: %@"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d24d70",
+        "name": "_$s10CryptexKit0A11LocalDeviceC12readIdentityAA0aF0VyYaKFTY0_",
+        "size": 916,
+        "flags": 5120
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d24eec",
+          "string_ea": "0x288d506b0",
+          "text": "Failed to read identity from AppleImage4: %@"
+        },
+        {
+          "ref_ea": "0x288d24f1c",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288d24e28",
+          "callee": "0x288cae340"
+        },
+        {
+          "ref_ea": "0x288d24eb4",
+          "callee": "0x288cb4a98"
+        },
+        {
+          "ref_ea": "0x288d24f48",
+          "callee": "0x288cb4a98"
+        },
+        {
+          "ref_ea": "0x288d25004",
+          "callee": "0x288cf9858"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cbba34",
+        "name": "_$s10CryptexKit20PkgEnvCreateResponseV10CodingKeysOs0G3KeyAAsAFP8intValuexSgSi_tcfCTW",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cbba34",
+          "callee": "0x288ca6cc8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cc9340",
+        "name": "_$s10CryptexKit8PkgValueO4fromACs7Decoder_p_tKcfC",
+        "size": 836,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cc93c0",
+          "callee": "0x288cacfa4"
+        },
+        {
+          "ref_ea": "0x288cc93a4",
+          "callee": "0x288cc9684"
+        },
+        {
+          "ref_ea": "0x288cc9468",
+          "callee": "0x288cc9874"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d25a64",
+        "name": "_$s10CryptexKit0A11LocalDeviceC5parse8replyXpc6ofTypes6ResultOyxAA0A12ErrorMessageVGSo13OS_xpc_object_p_xmtAA8ResponseRzlF",
+        "size": 932,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d25c68",
+          "callee": "0x288cacfa4"
+        },
+        {
+          "ref_ea": "0x288d25c74",
+          "callee": "0x288cacfbc"
+        },
+        {
+          "ref_ea": "0x288d25c38",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288d25cc4",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288d25db8",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb105c",
+        "name": "_$s10CryptexKit0A0C7install4onto7optionsyAA0A6Device_p_AC14InstallOptionsVtYaKFTY0_",
+        "size": 472,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb1094",
+          "callee": "0x288cacfbc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cc9684",
+        "name": "_$s10CryptexKit8PkgValueO15decodeIfMatches33_BBEA6B597910C0749CEC59DA552A9513LL_4fromxSgxm_s7Decoder_ptKSeRzlFZSayACG_Tt0t2g5",
+        "size": 496,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cc9728",
+          "callee": "0x288cacfbc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cc9874",
+        "name": "_$s10CryptexKit8PkgValueO15decodeIfMatches33_BBEA6B597910C0749CEC59DA552A9513LL_4fromxSgxm_s7Decoder_ptKSeRzlFZSDySSACG_Tt0t2g5",
+        "size": 520,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cc9918",
+          "callee": "0x288cacfbc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cfc378",
+        "name": "_$s10CryptexKit7PkgTreeV5EntryO4fromAEs7Decoder_p_tKcfC",
+        "size": 832,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cfc584",
+          "callee": "0x288cacfbc"
+        },
+        {
+          "ref_ea": "0x288cfc5f0",
+          "callee": "0x288cacfbc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d15e18",
+        "name": "_$sSlsE3mapySayqd__Gqd__7ElementQzqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lFSDy10CryptexKit7PkgMetaV6SchemaVAF0F5ValueOG_AH4SpecVs5NeverOTg504$s10d4Kit6f5EnvV4j38V8packages6parent4metaAESayAA0C3RefVG_r20C8ObjectIdVyACGSgSDyr2C4g2V6h6VAA0C5I34OGtcfcAqDVAS3key_AU5valuet_tXEfU0_Tf1cn_n",
+        "size": 828,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d160d4",
+          "callee": "0x288cad018"
+        },
+        {
+          "ref_ea": "0x288d160e4",
+          "callee": "0x288cad018"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cab5c8",
+        "name": "_$s9CryptoKit12HashFunctionPAAE6update4datayqd___t10Foundation12DataProtocolRd__lFAA6SHA384V_AF0H0VTg5",
+        "size": 872,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cab6c0",
+          "callee": "0x288cad1a4"
+        },
+        {
+          "ref_ea": "0x288cab7c4",
+          "callee": "0x288cad1a4"
+        },
+        {
+          "ref_ea": "0x288cab86c",
+          "callee": "0x288cad1a4"
+        },
+        {
+          "ref_ea": "0x288cab8c0",
+          "callee": "0x288cad1a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ccc634",
+        "name": "_$s10CryptexKit0A13BulkInstallerC7install4ontoAA18InstallationResultVAA0A6Device_p_tYaKFTY4_",
+        "size": 1056,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ccc6e8",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288ccc8d8",
+          "callee": "0x288cd529c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ccca54",
+        "name": "_$s10CryptexKit0A13BulkInstallerC7install4ontoAA18InstallationResultVAA0A6Device_p_tYaKFTY5_",
+        "size": 1164,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cccbc4",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288cccd68",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288ccce4c",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cdaaf0",
+        "name": "_$s10CryptexKit0A5ErrorO2eeoiySbAC_ACtFZTf4nnd_n",
+        "size": 2092,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cdaee0",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288cdaf10",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288cdb190",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288cdb200",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288cdb218",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288cdb300",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288cdb310",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ce2008",
+        "name": "_$s10CryptexKit15PkgValueDecoderC6decode_4fromxxm_AA0cD0OtKSeRzlF",
+        "size": 1188,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ce2190",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ce42e8",
+        "name": "_$s10CryptexKit20SingleValueContainer33_321C0C1DAEAC292436A10CB42CDEE3CDLLV6decodeyxxmKSeRzlF",
+        "size": 1968,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ce4570",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288ce46cc",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d02d14",
+        "name": "_$s10CryptexKit0A14SigningServiceV18rootCertificatePEM3urlAC10Foundation4DataV_AF3URLVSgtKcfC",
+        "size": 2904,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d030bc",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288d0323c",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288d033cc",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288d0357c",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288d03628",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288d036c8",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288d0376c",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d1f1a0",
+        "name": "_$s10CryptexKit18TemporaryDirectoryV7mkdtemp2at6prefix6System8FilePathVAI_SStKFZ",
+        "size": 1872,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d1f484",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288d1f444",
+          "callee": "0x288d1f8f0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d1f8f0",
+        "name": "_$s6System8FilePathV9ComponentV14platformStringAESgSays4Int8VG_tcfC",
+        "size": 612,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d1fabc",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d1fcfc",
+        "name": "_$s10CryptexKit18TemporaryDirectoryV8_cleanup33_1B63274363107EA2B2C786847E1F9B28LLyyF",
+        "size": 2112,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d20368",
+          "callee": "0x288cad240"
+        },
+        {
+          "ref_ea": "0x288d204e4",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d25214",
+        "name": "_$s10CryptexKit0A11LocalDeviceC5trust14signingService7optionsyAA0a7SigningG0V_AA0A12TrustOptionsVtYaKFTY0_",
+        "size": 860,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d25414",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d266cc",
+        "name": "_$s10CryptexKit0A11LocalDeviceC11sendRequestys6ResultOy12ResponseTypeQzAA0A12ErrorMessageVGxYaKAA0F0RzlFyScCyAKs0J0_pGXEfU_ySo13OS_xpc_object_pYbcfU_",
+        "size": 940,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d26a4c",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d26f14",
+        "name": "_$s10CryptexKit0A11LocalDeviceC09uninstallA08withName7version7optionsySS_AA0A7VersionVSgAA0A0C16UninstallOptionsVtYaKFTY0_",
+        "size": 908,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d271f4",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d273d8",
+        "name": "_$s10CryptexKit0A11LocalDeviceC8lockdownyyYaKFTY0_",
+        "size": 988,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d275fc",
+          "callee": "0x288cad240"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cf994c",
+        "name": "_$s10CryptexKit0A8IdentityV8wildcardACyFZ",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cf9968",
+          "callee": "0x288cae340"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cf8990",
+        "name": "_$s10CryptexKit0A8IdentityV27certificateProductionStatusAC0eF0OSgvg",
+        "size": 84,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cf89d0",
+          "callee": "0x288cae3d0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cf9328",
+        "name": "_$s10CryptexKit0A8IdentityV4hash4intoys6HasherVz_tF",
+        "size": 1328,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cf9628",
+          "callee": "0x288cae3d0"
+        },
+        {
+          "ref_ea": "0x288cf968c",
+          "callee": "0x288cae3f4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cfa1b8",
+        "name": "_$s10CryptexKit0A8IdentityV2eeoiySbAC_ACtFZTf4nnd_n",
+        "size": 1524,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cfa560",
+          "callee": "0x288cae3d0"
+        },
+        {
+          "ref_ea": "0x288cfa56c",
+          "callee": "0x288cae3d0"
+        },
+        {
+          "ref_ea": "0x288cfa5b0",
+          "callee": "0x288cae3f4"
+        },
+        {
+          "ref_ea": "0x288cfa5bc",
+          "callee": "0x288cae3f4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cf89fc",
+        "name": "_$s10CryptexKit0A8IdentityV25effectiveProductionStatusAC0eF0OSgvg",
+        "size": 84,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cf8a3c",
+          "callee": "0x288cae3f4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cbd914",
+        "name": "_$s10CryptexKit8PkgIndexV10publishersShySSGvg",
+        "size": 144,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cbd948",
+          "callee": "0x288caffac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cb1c90",
+        "name": "_$s10CryptexKit0A0C14writeInfoPlist2toy6System8FilePathV_tKF",
+        "size": 72,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cb1ccc",
+          "callee": "0x288cb1cd8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d22848",
+        "name": "_$s10CryptexKit0A0C14installLocally7optionsyAC14InstallOptionsV_tYaKFTY0_",
+        "size": 1480,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d22900",
+          "callee": "0x288cb812c"
+        },
+        {
+          "ref_ea": "0x288d22934",
+          "callee": "0x288cad454"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ce1f3c",
+        "name": "_$s10CryptexKit15PkgValueDecoderC8userInfoSDys010CodingUserG3KeyVypGvg",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ce1f3c",
+          "callee": "0x288cd1fe4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ce1f40",
+        "name": "_$s10CryptexKit15PkgValueDecoderC8userInfoSDys010CodingUserG3KeyVypGvs",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ce1f40",
+          "callee": "0x288cd201c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd5624",
+        "name": "_$s10CryptexKit0A0C14InstallOptionsV4fromAEs7Decoder_p_tKcfC",
+        "size": 988,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd59d8",
+          "callee": "0x288cd4a54"
+        },
+        {
+          "ref_ea": "0x288cd597c",
+          "callee": "0x288cd5a54"
+        },
+        {
+          "ref_ea": "0x288cd579c",
+          "callee": "0x288cd5a98"
+        },
+        {
+          "ref_ea": "0x288cd59f8",
+          "callee": "0x288cd5a98"
+        },
+        {
+          "ref_ea": "0x288cd57a4",
+          "callee": "0x288d2f8a4"
+        },
+        {
+          "ref_ea": "0x288cd5780",
+          "callee": "0x288d302e8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd5350",
+        "name": "_$s10CryptexKit0A0C14InstallOptionsV6encode2toys7Encoder_p_tKF",
+        "size": 640,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd5588",
+          "callee": "0x288cd5a54"
+        },
+        {
+          "ref_ea": "0x288cd5564",
+          "callee": "0x288d2f8a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd529c",
+        "name": "_$s10CryptexKit0A0C14InstallOptionsVAEycfC",
+        "size": 180,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd52f8",
+          "callee": "0x288cd5a98"
+        },
+        {
+          "ref_ea": "0x288cd5300",
+          "callee": "0x288d2f8a4"
+        },
+        {
+          "ref_ea": "0x288cd52dc",
+          "callee": "0x288d302e8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd5bb8",
+        "name": "_$s10CryptexKit0A0C14InstallOptionsVMr",
+        "size": 268,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd5c5c",
+          "callee": "0x288cd5d14"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cfa9f8",
+        "name": "_$s10CryptexKit0A4CoreC4typeAA0A4TypeVSgvg",
+        "size": 680,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cfaa24",
+          "callee": "0x288cfff94"
+        },
+        {
+          "ref_ea": "0x288cfabd4",
+          "callee": "0x288d20ec4"
+        },
+        {
+          "ref_ea": "0x288cfaa40",
+          "callee": "0x288d20ee8"
+        },
+        {
+          "ref_ea": "0x288cfaa30",
+          "callee": "0x288d21008"
+        },
+        {
+          "ref_ea": "0x288cfaae8",
+          "callee": "0x288d2100c"
+        },
+        {
+          "ref_ea": "0x288cfac00",
+          "callee": "0x288d2100c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0a724",
+        "name": "_$s10CryptexKit15PkgEnvDirectoryV4open2atAC6System8FilePathV_tKFZ",
+        "size": 1448,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0a8fc",
+          "callee": "0x288d0b75c"
+        },
+        {
+          "ref_ea": "0x288d0a99c",
+          "callee": "0x288d0b7b0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d0accc",
+        "name": "_$s10CryptexKit15PkgEnvDirectoryV6create4spec2atAcA0cD0V4SpecV_6System8FilePathVtKFZ",
+        "size": 1216,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d0afac",
+          "callee": "0x288d0b868"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cad454",
+        "name": "_$sSo15OS_cryptex_attrC10CryptexKitE4fromyAbC0D0C14InstallOptionsVFZ",
+        "size": 564,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cad4a8",
+          "callee": "0x288d2f8a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cf7584",
+        "name": "_$s10CryptexKit0A12TrustOptionsVACycfC",
+        "size": 128,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cf75ac",
+          "callee": "0x288d302e8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd9664",
+        "name": "_$s10CryptexKit10TatsuErrorO10Foundation09LocalizedD0AadEP16errorDescriptionSSSgvgTW",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd9664",
+          "callee": "0x288cd94ac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cda8e8",
+        "name": "_$s10CryptexKit0A5ErrorO10Foundation09LocalizedC0AadEP16errorDescriptionSSSgvgTW",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cda8e8",
+          "callee": "0x288cda144"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ceb3d4",
+        "name": "_$s10CryptexKit15PkgSliceEncoderV06encodeD05sliceSo13OS_xpc_object_pAA0cD0V_tKFZ",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ceb3e0",
+          "callee": "0x288cec0dc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cebbdc",
+        "name": "_$s10CryptexKit16PkgImportRequestC8populate7xpcDictySo03OS_G7_object_pz_tKF",
+        "size": 124,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cebbf8",
+          "callee": "0x288cec0dc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cebf98",
+        "name": "_$s10CryptexKit16PkgImportRequestCAA14XpcDictCodableA2aDP8populate03xpcG0ySo03OS_J7_object_pz_tKFTW",
+        "size": 128,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cebfb8",
+          "callee": "0x288cec0dc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd212c",
+        "name": "_$s10CryptexKit0A6BundleC4pathAC6System8FilePathV_tKcfC",
+        "size": 76,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd2164",
+          "callee": "0x288cd2178"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cca0c8",
+        "name": "_$s10CryptexKit8PkgValueOSeAASe4fromxs7Decoder_p_tKcfCTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cca0d4",
+          "callee": "0x288cc9340"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cfcf0c",
+        "name": "_$s10CryptexKit7PkgTreeV5EntryOSeAASe4fromxs7Decoder_p_tKcfCTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cfcf18",
+          "callee": "0x288cfc378"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d1714c",
+        "name": "_$s10CryptexKit6PkgEnvV4SpecV8packages6parent4metaAESayAA0C3RefVG_AA0C8ObjectIdVyACGSgSDyAA0C4MetaV6SchemaVAA0C5ValueOGtcfC",
+        "size": 556,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d17314",
+          "callee": "0x288d15e18"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd99ec",
+        "name": "_$s10CryptexKit0A5ErrorO2eeoiySbAC_ACtFZ",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd99ec",
+          "callee": "0x288cdaaf0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cbd778",
+        "name": "_$s10CryptexKit8PkgIndexV7PackageV8metadatayxxmKSeRzlF",
+        "size": 252,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cbd7f4",
+          "callee": "0x288ce2008"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ce4de8",
+        "name": "_$s10CryptexKit20SingleValueContainer33_321C0C1DAEAC292436A10CB42CDEE3CDLLVs0cd8DecodingE0AAsAEP6decodeyqd__qd__mKSeRd__lFTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ce4df4",
+          "callee": "0x288ce42e8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ce5250",
+        "name": "_$s10CryptexKit16UnkeyedContainer33_321C0C1DAEAC292436A10CB42CDEE3CDLLV6decodeyxxmKSeRzlF",
+        "size": 144,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ce529c",
+          "callee": "0x288ce42e8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ce6dec",
+        "name": "_$s10CryptexKit14KeyedContainer33_321C0C1DAEAC292436A10CB42CDEE3CDLLV6decode_6forKeyqd__qd__m_xtKSeRd__lF",
+        "size": 156,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ce6e48",
+          "callee": "0x288ce42e8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d1fb54",
+        "name": "_$s10CryptexKit18TemporaryDirectoryV2at6prefixAC6System8FilePathV_SStKcfC",
+        "size": 316,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d1fc24",
+          "callee": "0x288d1f1a0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d1fcbc",
+        "name": "_$s10CryptexKit18TemporaryDirectoryV7cleanupyyF",
+        "size": 64,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d1fce4",
+          "callee": "0x288d1fcfc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2053c",
+        "name": "_$s10CryptexKit18TemporaryDirectoryVfD",
+        "size": 108,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d20560",
+          "callee": "0x288d1fcfc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d28ea4",
+        "name": "_$s10CryptexKit0A11LocalDeviceC11sendRequestys6ResultOy12ResponseTypeQzAA0A12ErrorMessageVGxYaKAA0F0RzlFyScCyAKs0J0_pGXEfU_ySo13OS_xpc_object_pYbcfU_TA",
+        "size": 248,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d28f98",
+          "callee": "0x288d266cc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cf9884",
+        "name": "_$s10CryptexKit0A8IdentityV9hashValueSivg",
+        "size": 64,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cf98a8",
+          "callee": "0x288cf9328"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cf98c8",
+        "name": "_$s10CryptexKit0A8IdentityVSHAASH9hashValueSivgTW",
+        "size": 64,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cf98ec",
+          "callee": "0x288cf9328"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cf9908",
+        "name": "_$s10CryptexKit0A8IdentityVSHAASH4hash4intoys6HasherVz_tFTW",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cf9908",
+          "callee": "0x288cf9328"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cf990c",
+        "name": "_$s10CryptexKit0A8IdentityVSHAASH13_rawHashValue4seedS2i_tFTW",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cf992c",
+          "callee": "0x288cf9328"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cf9324",
+        "name": "_$s10CryptexKit0A8IdentityV2eeoiySbAC_ACtFZ",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cf9324",
+          "callee": "0x288cfa1b8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cf98c4",
+        "name": "_$s10CryptexKit0A8IdentityVSQAASQ2eeoiySbx_xtFZTW",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cf98c4",
+          "callee": "0x288cfa1b8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ceaf98",
+        "name": "_$s10CryptexKit15PkgValueEncoderC8userInfoSDys010CodingUserG3KeyVypGvg",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ceaf98",
+          "callee": "0x288ce1f3c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ceaf60",
+        "name": "_$s10CryptexKit15PkgValueEncoderC8userInfoSDys010CodingUserG3KeyVypGvs",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ceaf60",
+          "callee": "0x288ce1f40"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd5b50",
+        "name": "_$s10CryptexKit0A0C14InstallOptionsVSeAASe4fromxs7Decoder_p_tKcfCTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd5b5c",
+          "callee": "0x288cd5624"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288cd5b68",
+        "name": "_$s10CryptexKit0A0C14InstallOptionsVSEAASE6encode2toys7Encoder_p_tKFTW",
+        "size": 24,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288cd5b74",
+          "callee": "0x288cd5350"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288ccc1d0",
+        "name": "_$s10CryptexKit0A13BulkInstallerC7install4ontoAA18InstallationResultVAA0A6Device_p_tYaKFTY2_",
+        "size": 840,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288ccc3e0",
+          "callee": "0x288cd529c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d2272c",
+        "name": "_$s10CryptexKit0A0C14installLocally7optionsyAC14InstallOptionsV_tYaKFfA_",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d2272c",
+          "callee": "0x288cd529c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x288d14790",
+        "name": "_$s10CryptexKit17PkgExportResponseC8populate7xpcDictySo03OS_G7_object_pz_tKF",
+        "size": 568,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x288d1482c",
+          "callee": "0x288ceb3d4"
+        }
+      ]
+    }
+  ]
+}

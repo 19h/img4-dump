@@ -1,0 +1,118 @@
+{
+  "binaries": [
+    {
+      "binary": "AppleMobileFileIntegrity.merged",
+      "sha256": "f9bbe64ac18009c4a99be8e96865898b39ce5088183526f25d9dcccb9080084e",
+      "install_name": "/System/Library/PrivateFrameworks/AppleMobileFileIntegrity.framework/Versions/A/AppleMobileFileIntegrity",
+      "current_version": "1.0.0",
+      "compatibility_version": "1.0.0",
+      "uuid": "533d4887-f284-3999-b826-0cbd838b15f9",
+      "build_platform": 1,
+      "minimum_os": "27.2.0",
+      "sdk": "27.2.0"
+    },
+    {
+      "binary": "CryptexKit",
+      "sha256": "d06d4d57bca4d44ed9b5457e89f08d5ce0f642da55e1b08a5763800aedf6f0ac",
+      "install_name": "/System/Library/PrivateFrameworks/CryptexKit.framework/Versions/A/CryptexKit",
+      "current_version": "761.40.23",
+      "compatibility_version": "1.0.0",
+      "uuid": "d302b9fe-e4be-3816-b42c-f69bf4dad44e",
+      "build_platform": 1,
+      "minimum_os": "27.2.0",
+      "sdk": "27.2.0"
+    },
+    {
+      "binary": "libImage4_V2.dylib",
+      "sha256": "5d6548275c6715d0b0e04428ff4ccf330af5f566c56fabe82e011a1c5d5aee5d",
+      "install_name": "/usr/lib/libImage4_V2.dylib",
+      "current_version": "1.0.0",
+      "compatibility_version": "1.0.0",
+      "uuid": "5c8db3e4-670a-3185-b05f-6167637800ad",
+      "build_platform": 1,
+      "minimum_os": "27.2.0",
+      "sdk": "27.2.0"
+    },
+    {
+      "binary": "libauthinstall.dylib",
+      "sha256": "dfb8b9e883f19903676eeadf8f4ba368ab811b9232fc00f736b70a1655866b48",
+      "install_name": "/usr/lib/libauthinstall.dylib",
+      "current_version": "1.0.0",
+      "compatibility_version": "1.0.0",
+      "uuid": "45cbe30c-3cc0-3498-a915-c7a6832f4bc0",
+      "build_platform": 6,
+      "minimum_os": "27.2.0",
+      "sdk": "27.2.0"
+    },
+    {
+      "binary": "libcryptex.dylib",
+      "sha256": "21908f3dcf46b75ff91af708513e9440f290f2dd089215bdbf50cd5a2cf2d475",
+      "install_name": "/usr/lib/libcryptex.dylib",
+      "current_version": "761.40.23",
+      "compatibility_version": "1.0.0",
+      "uuid": "6ba7525c-b2c0-3e6b-b84c-50fe2b8db6b4",
+      "build_platform": 1,
+      "minimum_os": "27.2.0",
+      "sdk": "27.2.0"
+    },
+    {
+      "binary": "libcryptex_core.dylib",
+      "sha256": "6478a431043599f7e8e5f77624b665513f6ee698ff9944345b63c0fa4405b8f6",
+      "install_name": "/usr/lib/libcryptex_core.dylib",
+      "current_version": "761.40.23",
+      "compatibility_version": "1.0.0",
+      "uuid": "fbdd1e00-2708-3b65-832b-3243e46d6d44",
+      "build_platform": 1,
+      "minimum_os": "27.2.0",
+      "sdk": "27.2.0"
+    },
+    {
+      "binary": "libcryptex_interface.dylib",
+      "sha256": "451f099afbbf7e4fb02e74c05bfc33447d745e0b3585af5cb6f991c4f8e3c8d1",
+      "install_name": "/usr/lib/libcryptex_interface.dylib",
+      "current_version": "761.40.23",
+      "compatibility_version": "1.0.0",
+      "uuid": "df58322a-3783-331e-bf04-38c78905921c",
+      "build_platform": 1,
+      "minimum_os": "27.2.0",
+      "sdk": "27.2.0"
+    },
+    {
+      "binary": "libcryptex_trampoline.dylib",
+      "sha256": "c85438b1089104a9fd3d09c1fd8aa68122e2feef50d81caf1e93dbfeca3b5005",
+      "install_name": "/usr/lib/libcryptex_trampoline.dylib",
+      "current_version": "761.40.23",
+      "compatibility_version": "1.0.0",
+      "uuid": "3405379c-0ab2-3e06-8e02-20d1d3c14ead",
+      "build_platform": 1,
+      "minimum_os": "27.2.0",
+      "sdk": "27.2.0"
+    },
+    {
+      "binary": "libimage4.dylib",
+      "sha256": "251aa2964367d445cb5432d155e96972da17e591794f0fedab68e731980b5888",
+      "install_name": "/usr/lib/libimage4.dylib",
+      "current_version": "374.0.0",
+      "compatibility_version": "1.0.0",
+      "uuid": "e905f296-fa1f-3f83-9a23-095b04e40710",
+      "build_platform": 1,
+      "minimum_os": "27.2.0",
+      "sdk": "27.2.0"
+    },
+    {
+      "binary": "libramrod.dylib",
+      "sha256": "4afd52789c4bcb9550e4e85440a7811c5126641030ec6b2223fce9fa475ca03f",
+      "install_name": "/usr/lib/libramrod.dylib",
+      "current_version": "1.0.0",
+      "compatibility_version": "1.0.0",
+      "uuid": "8343a1c8-2c5f-36de-a354-39aaaf1823c8",
+      "build_platform": 1,
+      "minimum_os": "11.0.0",
+      "sdk": "27.2.0"
+    }
+  ],
+  "der_spec_tables": 13,
+  "property_records": 62,
+  "image_entries": 223,
+  "distinct_image_codes": 203
+}

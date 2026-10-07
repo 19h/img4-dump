@@ -1,0 +1,263 @@
+{
+  "results": [
+    {
+      "address": "0x2caddaacc",
+      "end_address": "0x2caddab7c",
+      "input": "_DERImg4DecodePayloadWithProperties",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v7",
+          "type": "_BYTE[32]"
+        }
+      ],
+      "name": "_DERImg4DecodePayloadWithProperties",
+      "prototype": "__int64 __fastcall DERImg4DecodePayloadWithProperties(__int64 a1, __int64 a2)",
+      "pseudocode": "__int64 __fastcall DERImg4DecodePayloadWithProperties(__int64 a1, __int64 a2)\n{\n  __int64 result; // x0\n  __int64 v5; // x19\n  __int64 v6; // t1\n  _BYTE v7[32]; // [xsp+0h] [xbp-30h] BYREF\n\n  result = 6;\n  if ( a1 != 0 && a2 != 0 )\n  {\n    result = DERParseSequenceToObject(a1, 7, &DERImg4PayloadWithPropertiesItemSpecs, a2, 0xA0, 0);\n    if ( (_DWORD)result == 0 )\n    {\n      if ( (unsigned int)DERImg4DecodeTagCompare(a2, 0x494D3450) != 0 )\n      {\n        return 2;\n      }\n      else if ( *(_QWORD *)(a2 + 0x50) == 0\n             || (memset(v7, 0, sizeof(v7)), (_DWORD)(result = DERImg4DecodePayloadCompression(a2 + 0x50, v7)) == 0) )\n      {\n        v6 = *(_QWORD *)(a2 + 0x60);\n        v5 = a2 + 0x60;\n        if ( v6 == 0 )\n          return 0;\n        memset(v7, 0, sizeof(v7));\n        result = DERImg4DecodePayloadProperties(v5, v7, (__n128)0);\n        if ( (_DWORD)result == 0 )\n          return 0;\n      }\n    }\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2caddab7c",
+      "end_address": "0x2caddabfc",
+      "input": "_DERImg4DecodePayloadProperties",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "_OWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_DERImg4DecodePayloadProperties",
+      "prototype": "__int64 __fastcall DERImg4DecodePayloadProperties(__int64 result, _OWORD *a2)",
+      "pseudocode": "__int64 __fastcall DERImg4DecodePayloadProperties(__int64 result, _OWORD *a2)\n{\n  if ( result != 0 )\n  {\n    if ( a2 == nullptr )\n      return 6;\n    *a2 = 0u;\n    a2[1] = 0u;\n    if ( *(_QWORD *)result != 0 && *(_QWORD *)(result + 8) != 0 )\n    {\n      result = DERParseSequenceToObject(result, 2, &DERImg4PayloadPropertiesItemSpecs, a2, 0x20, 0);\n      if ( (_DWORD)result != 0 )\n        return result;\n      if ( (unsigned int)DERImg4DecodeTagCompare(a2, 0x50415950) != 0 )\n        return 2;\n    }\n    return 0;\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2caddaa54",
+      "end_address": "0x2caddaacc",
+      "input": "_DERImg4DecodePayloadCompression",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v5",
+          "type": "unsigned int"
+        }
+      ],
+      "name": "_DERImg4DecodePayloadCompression",
+      "prototype": "__int64 __fastcall DERImg4DecodePayloadCompression(__int64 a1, __int64 a2)",
+      "pseudocode": "__int64 __fastcall DERImg4DecodePayloadCompression(__int64 a1, __int64 a2)\n{\n  __int64 result; // x0\n  unsigned int v5; // [xsp+Ch] [xbp-14h] BYREF\n\n  v5 = 2;\n  result = 6;\n  if ( a1 != 0 && a2 != 0 )\n  {\n    result = DERParseSequenceContentToObject(a1);\n    if ( (_DWORD)result == 0 )\n    {\n      result = DERParseInteger(a2, &v5);\n      if ( (_DWORD)result == 0 )\n      {\n        if ( v5 <= 1 )\n          return 0;\n        else\n          return 6;\n      }\n    }\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2caddaf38",
+      "end_address": "0x2caddafb8",
+      "input": "_DERImg4DecodeRestoreInfo",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "_OWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_DERImg4DecodeRestoreInfo",
+      "prototype": "__int64 __fastcall DERImg4DecodeRestoreInfo(__int64 result, _OWORD *a2)",
+      "pseudocode": "__int64 __fastcall DERImg4DecodeRestoreInfo(__int64 result, _OWORD *a2)\n{\n  if ( result != 0 )\n  {\n    if ( a2 == nullptr )\n      return 6;\n    *a2 = 0u;\n    a2[1] = 0u;\n    if ( *(_QWORD *)result != 0 && *(_QWORD *)(result + 8) != 0 )\n    {\n      result = DERParseSequenceToObject(result, 2, &DERImg4RestoreInfoItemSpecs, a2, 0x20, 0);\n      if ( (_DWORD)result != 0 )\n        return result;\n      if ( (unsigned int)DERImg4DecodeTagCompare(a2, 0x494D3452) != 0 )\n        return 2;\n    }\n    return 0;\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2caddacf4",
+      "end_address": "0x2caddad98",
+      "input": "_DERImg4DecodeManifestCommon",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v9",
+          "type": "unsigned int"
+        }
+      ],
+      "name": "_DERImg4DecodeManifestCommon",
+      "prototype": "__int64 __fastcall DERImg4DecodeManifestCommon(_QWORD *a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5)",
+      "pseudocode": "__int64 __fastcall DERImg4DecodeManifestCommon(_QWORD *a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5)\n{\n  __int64 result; // x0\n  unsigned int v9; // [xsp+Ch] [xbp-14h] BYREF\n\n  result = 6;\n  if ( a1 != nullptr && a4 != 0 )\n  {\n    if ( *a1 != 0 && a1[1] != 0 )\n    {\n      result = DERParseSequenceToObject(a1, a2, a3, a4, 0xC0, 0);\n      if ( (_DWORD)result != 0 )\n        return result;\n      if ( (unsigned int)DERImg4DecodeTagCompare(a4, a5) != 0 )\n        return 2;\n      v9 = 0;\n      result = DERParseInteger(a4 + 0x10, &v9);\n      if ( (_DWORD)result != 0 )\n        return result;\n      if ( v9 > 2 )\n        return 2;\n    }\n    return 0;\n  }\n  return result;\n}\n"
+    },
+    {
+      "address": "0x2caddadb0",
+      "end_address": "0x2caddadc8",
+      "input": "_DERImg4DecodeCertificate",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_DERImg4DecodeCertificate",
+      "prototype": "__int64 __fastcall DERImg4DecodeCertificate(_QWORD *a1, __int64 a2)",
+      "pseudocode": "__int64 __fastcall DERImg4DecodeCertificate(_QWORD *a1, __int64 a2)\n{\n  return DERImg4DecodeManifestCommon(a1, 4, (__int64)&DERImg4CertificateItemSpecs, a2, 0x494D3443);\n}\n"
+    }
+  ],
+  "database_target": "ed3cb4aaaff9"
+}

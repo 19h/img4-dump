@@ -1,0 +1,109 @@
+{
+  "count": 1,
+  "results": [
+    {
+      "address": "0x2cd959f04",
+      "end_address": "0x2cd95a054",
+      "input": "0x2cd959f04",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "_DWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v14",
+          "type": "__int64"
+        }
+      ],
+      "name": "sub_2CD959F04",
+      "prototype": "__int64 __fastcall sub_2CD959F04(__int64 a1, __int64 a2, _DWORD *a3)",
+      "pseudocode": "__int64 __fastcall sub_2CD959F04(__int64 a1, __int64 a2, _DWORD *a3)\n{\n  __int64 v6; // x22\n  __int64 v7; // x0\n  const char *v8; // x23\n  __int64 v9; // x0\n  __int64 v10; // x20\n  __int64 v11; // x21\n  __int64 v12; // x19\n  __int64 v14; // [xsp+18h] [xbp-38h] BYREF\n\n  v6 = sub_2D0058300(*MEMORY[0x2D802CCA0], 0);\n  v14 = v6;\n  v7 = sub_2D00586A0(a2, 0x8000100);\n  if ( v7 != 0 )\n    v8 = (const char *)v7;\n  else\n    v8 = \"????\";\n  if ( a3 == nullptr )\n  {\n    sub_2CDA18A44();\n  }\n  else if ( v6 != 0 )\n  {\n    if ( (unsigned int)sub_2D009BFD0(a1, &v14) != 0 )\n    {\n      ramrod_log_msg(\"WARNING: failed to read IM4R.\\n\");\nLABEL_13:\n      v12 = 0;\n      goto LABEL_14;\n    }\n    v9 = sub_2D0058350(v14, a2);\n    if ( v9 == 0 || (v10 = v9, (v11 = sub_2D00583B0(v9)) != sub_2D007BAC0()) )\n    {\n      ramrod_log_msg(\"WARNING: %s is missing or of invalid type.\\n\", v8);\n      goto LABEL_13;\n    }\n    if ( (unsigned int)sub_2D0058510(v10, 3, a3) == 0 )\n    {\n      ramrod_log_msg(\"WARNING: failed to read %s cf number.\\n\", v8);\n      goto LABEL_13;\n    }\n    ramrod_log_msg(\"INFO: %s == %d\\n\", v8, *a3);\n    v12 = 1;\nLABEL_14:\n    sub_2D0058520(v14);\n    return v12;\n  }\n  ramrod_log_msg(\"restoreInfo failed to alloc\\n\");\n  return 0;\n}\n"
+    }
+  ],
+  "database_target": "79ce35529ddc",
+  "requested": [
+    "0x2cd959f04"
+  ]
+}

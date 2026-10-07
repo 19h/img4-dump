@@ -24,11 +24,11 @@ pub enum KbagClass {
     Any,    // first entry
 }
 
-/// IMG4 / IM4P / IM4M dumper & decryptor.
+/// IMG4 / IM4P / IM4M / IM4R dumper & decryptor.
 #[derive(Parser, Debug)]
 #[command(name = "img4-dump", version)]
 struct Cli {
-    /// Input: .img4, .im4p, or .im4m
+    /// Input: .img4, .im4p, .im4m, or .im4r
     #[arg(value_name = "INPUT", required = true)]
     input: PathBuf,
 

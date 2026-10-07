@@ -1,0 +1,7207 @@
+{
+  "binary": "libImage4_V2.dylib",
+  "sha256": "5d6548275c6715d0b0e04428ff4ccf330af5f566c56fabe82e011a1c5d5aee5d",
+  "criteria": "img4|im4[pmrc]|image4|(?:^|_)DER|asn1|manifest|kbag|payload|payp|nonce|lzss|lzfse|compress|personaliz|ticket|digest|fourcc|fingerprint|trustcache",
+  "caller_depth": 2,
+  "selected": [
+    {
+      "function": {
+        "ea": "0x2cadc292c",
+        "name": "_antiReplayCryptex1NonceDomain",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc297c",
+        "name": "_antiReplayCryptex1NonceDomain_0",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2b78",
+        "name": "_image4NonceGetFromType",
+        "size": 116,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2bec",
+        "name": "_image4NonceTypeToSigningAuthority",
+        "size": 56,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2c24",
+        "name": "_image4NonceTypeToDomain",
+        "size": 80,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2c74",
+        "name": "_image4NonceDomainToType",
+        "size": 60,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2cb0",
+        "name": "_image4NonceGetSeedFromType",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc2cb0",
+          "callee": "0x2cadca4bc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2cb4",
+        "name": "_image4NonceGetProposalSeedFromType",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc2cb4",
+          "callee": "0x2cadca6b4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2cb8",
+        "name": "_image4NonceGetProposalFromType",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc2cb8",
+          "callee": "0x2cadca7dc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2cbc",
+        "name": "_image4NonceRoll",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc2cbc",
+          "callee": "0x2cadca93c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2cc0",
+        "name": "_manifestGetBoolean",
+        "size": 104,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc2ce8",
+          "callee": "0x2cadcc5c4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2d28",
+        "name": "_manifestGetInteger32",
+        "size": 104,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc2d50",
+          "callee": "0x2cadcc644"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2d90",
+        "name": "_manifestGetInteger64",
+        "size": 104,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc2db8",
+          "callee": "0x2cadcc6cc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2df8",
+        "name": "_manifestGetData",
+        "size": 112,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc2e28",
+          "callee": "0x2cadcc758"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2e68",
+        "name": "_image4ManifestInit",
+        "size": 324,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc2f58",
+          "callee": "0x2cadccc10"
+        },
+        {
+          "ref_ea": "0x2cadc2f44",
+          "callee": "0x2cadccd90"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2fac",
+        "name": "_image4ManifestAttachRestoreInfo",
+        "size": 68,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2ff0",
+        "name": "_image4ManifestGetBoolean",
+        "size": 32,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc2ffc",
+          "callee": "0x2cadc2cc0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc3010",
+        "name": "_image4ManifestGetInteger32",
+        "size": 32,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc301c",
+          "callee": "0x2cadc2d28"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc3030",
+        "name": "_image4ManifestGetInteger64",
+        "size": 32,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc303c",
+          "callee": "0x2cadc2d90"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc3050",
+        "name": "_image4ManifestGetData",
+        "size": 32,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc305c",
+          "callee": "0x2cadc2df8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc31e4",
+        "name": "_image4PayloadInit",
+        "size": 408,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc3304",
+          "callee": "0x2cadcc100"
+        },
+        {
+          "ref_ea": "0x2cadc32ec",
+          "callee": "0x2cadccc10"
+        },
+        {
+          "ref_ea": "0x2cadc32d8",
+          "callee": "0x2cadcccf8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc337c",
+        "name": "_image4PayloadGetBytes",
+        "size": 108,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc33a8",
+          "callee": "0x2cadcc0bc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc33e8",
+        "name": "_image4PayloadGetBoolean",
+        "size": 160,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc3420",
+          "callee": "0x2cadcc100"
+        },
+        {
+          "ref_ea": "0x2cadc3434",
+          "callee": "0x2caddb9c8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc3488",
+        "name": "_image4PayloadGetInteger32",
+        "size": 156,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc34bc",
+          "callee": "0x2cadcc100"
+        },
+        {
+          "ref_ea": "0x2cadc34d0",
+          "callee": "0x2cadcc898"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc3524",
+        "name": "_image4PayloadGetInteger64",
+        "size": 160,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc355c",
+          "callee": "0x2cadcc100"
+        },
+        {
+          "ref_ea": "0x2cadc3570",
+          "callee": "0x2cadcc90c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc35c4",
+        "name": "_image4PayloadGetData",
+        "size": 168,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc3600",
+          "callee": "0x2cadcc100"
+        },
+        {
+          "ref_ea": "0x2cadc3618",
+          "callee": "0x2cadcc980"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc44e0",
+        "name": "_environmentEvaluateManifest",
+        "size": 256,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc4530",
+          "string_ea": "0x2caddd2ef",
+          "text": "manifest evaluation: starting signature and identity evaluation: %s\n"
+        },
+        {
+          "ref_ea": "0x2cadc456c",
+          "string_ea": "0x2caddd334",
+          "text": "manifest evaluation: unable to resolve a valid decode implementation\n"
+        },
+        {
+          "ref_ea": "0x2cadc45cc",
+          "callee": "0x2cadc4638"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc4638",
+        "name": "_environmentEvaluateManifestWithContext",
+        "size": 372,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc4690",
+          "string_ea": "0x2caddd739",
+          "text": "manifest evaluation: insufficient space for manifest hash\n"
+        },
+        {
+          "ref_ea": "0x2cadc4700",
+          "string_ea": "0x2caddd774",
+          "text": "manifest evaluation: failed: %d, %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc4760",
+          "string_ea": "0x2caddd799",
+          "text": "manifest evaluation: failed to compute manifest digest: %d\n"
+        },
+        {
+          "ref_ea": "0x2cadc4778",
+          "string_ea": "0x2caddd7d5",
+          "text": "manifest evaluation: signature and identity evaluation successful\n"
+        },
+        {
+          "ref_ea": "0x2cadc4754",
+          "callee": "0x2caddb2fc"
+        },
+        {
+          "ref_ea": "0x2cadc46dc",
+          "callee": "0x2caddc8e0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc486c",
+        "name": "_environmentEvaluateManifestAuxiliary",
+        "size": 228,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc4890",
+          "string_ea": "0x2caddd37a",
+          "text": "manifest evaluation: starting auxiliary evaluation\n"
+        },
+        {
+          "ref_ea": "0x2cadc48d0",
+          "string_ea": "0x2caddd3ae",
+          "text": "manifest evaluation: no environment specific auxiliary policy\n"
+        },
+        {
+          "ref_ea": "0x2cadc4900",
+          "string_ea": "0x2caddd3ed",
+          "text": "manifest evaluation: failed environment specific policy: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc4914",
+          "string_ea": "0x2caddd42a",
+          "text": "manifest evaluation: environment specific policy successful\n"
+        },
+        {
+          "ref_ea": "0x2cadc4924",
+          "string_ea": "0x2caddd467",
+          "text": "manifest evaluation: auxiliary evaluation successful\n"
+        },
+        {
+          "ref_ea": "0x2cadc48c8",
+          "callee": "0x2cadc82c8"
+        },
+        {
+          "ref_ea": "0x2cadc48f0",
+          "callee": "0x2cadc7430"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc4aa0",
+        "name": "_environmentEvaluatePayload",
+        "size": 272,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc4af8",
+          "string_ea": "0x2caddd5f9",
+          "text": "payload evaluation: starting signature evaluation: %s\n"
+        },
+        {
+          "ref_ea": "0x2cadc4b34",
+          "string_ea": "0x2caddd630",
+          "text": "payload evaluation: unable to resolve a valid decode implementation\n"
+        },
+        {
+          "ref_ea": "0x2cadc4b9c",
+          "callee": "0x2cadc4bb0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc4bb0",
+        "name": "_environmentEvaluatePayloadWithContext",
+        "size": 448,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc4c18",
+          "string_ea": "0x2caddda8b",
+          "text": "payload evaluation: failed to get payload type: %d\n"
+        },
+        {
+          "ref_ea": "0x2cadc4c4c",
+          "string_ea": "0x2cadddabf",
+          "text": "payload evaluation: payload type: '%c%c%c%c'\n"
+        },
+        {
+          "ref_ea": "0x2cadc4c68",
+          "string_ea": "0x2cadddaed",
+          "text": "payload evaluation: insufficient space for payload hash\n"
+        },
+        {
+          "ref_ea": "0x2cadc4ca0",
+          "string_ea": "0x2cadddb26",
+          "text": "payload evaluation: failed to compute payload digest: %d\n"
+        },
+        {
+          "ref_ea": "0x2cadc4d10",
+          "string_ea": "0x2cadddb60",
+          "text": "payload evaluation: failed: %d, %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc4d54",
+          "string_ea": "0x2cadddb84",
+          "text": "payload evaluation: signature evaluation successful\n"
+        },
+        {
+          "ref_ea": "0x2cadc4c0c",
+          "callee": "0x2cadcc100"
+        },
+        {
+          "ref_ea": "0x2cadc4cec",
+          "callee": "0x2cadccf94"
+        },
+        {
+          "ref_ea": "0x2cadc4c94",
+          "callee": "0x2caddb21c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc4d70",
+        "name": "_environmentEvaluatePayloadAuxiliary",
+        "size": 160,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc4d98",
+          "string_ea": "0x2caddd675",
+          "text": "payload evaluation: starting auxiliary evaluation\n"
+        },
+        {
+          "ref_ea": "0x2cadc4dc8",
+          "string_ea": "0x2caddd6a8",
+          "text": "payload evaluation: failed fusing policy: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc4dd8",
+          "string_ea": "0x2caddd6d6",
+          "text": "payload evaluation: fusing policy successful\n"
+        },
+        {
+          "ref_ea": "0x2cadc4de8",
+          "string_ea": "0x2caddd704",
+          "text": "payload evaluation: auxiliary evaluation successful\n"
+        },
+        {
+          "ref_ea": "0x2cadc4db8",
+          "callee": "0x2cadc8848"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc5048",
+        "name": "_evaluateManifestCallback",
+        "size": 988,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc5098",
+          "string_ea": "0x2caddd818",
+          "text": "manifest evaluation: '%c%c%c%c'\n"
+        },
+        {
+          "ref_ea": "0x2cadc50ac",
+          "string_ea": "0x2caddd839",
+          "text": "manifest evaluation: unexpected property\n"
+        },
+        {
+          "ref_ea": "0x2cadc5188",
+          "string_ea": "0x2caddd863",
+          "text": "manifest evaluation: 'vuid' ignored for satellite evaluation\n"
+        },
+        {
+          "ref_ea": "0x2cadc52c8",
+          "string_ea": "0x2caddd8a1",
+          "text": "manifest evaluation: 'stng' ignored for satellite evaluation\n"
+        },
+        {
+          "ref_ea": "0x2cadc5368",
+          "string_ea": "0x2caddd8df",
+          "text": "manifest evaluation: 'lobo' ignored for satellite evaluation\n"
+        },
+        {
+          "ref_ea": "0x2cadc5268",
+          "string_ea": "0x2caddd91d",
+          "text": "manifest evaluation: 'iuob' ignored for satellite evaluation\n"
+        },
+        {
+          "ref_ea": "0x2cadc52e8",
+          "string_ea": "0x2caddd95b",
+          "text": "manifest evaluation: 'data' ignored for satellite evaluation\n"
+        },
+        {
+          "ref_ea": "0x2cadc537c",
+          "string_ea": "0x2caddd999",
+          "text": "manifest evaluation: property ignored\n"
+        },
+        {
+          "ref_ea": "0x2cadc5410",
+          "string_ea": "0x2caddd9c0",
+          "text": "manifest evaluation: property matched\n"
+        },
+        {
+          "ref_ea": "0x2cadc53e4",
+          "string_ea": "0x2caddd9e7",
+          "text": "manifest evaluation: property mismatch: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc53c4",
+          "callee": "0x2cadc4474"
+        },
+        {
+          "ref_ea": "0x2cadc523c",
+          "callee": "0x2cadc8d6c"
+        },
+        {
+          "ref_ea": "0x2cadc535c",
+          "callee": "0x2cadc8e00"
+        },
+        {
+          "ref_ea": "0x2cadc51cc",
+          "callee": "0x2cadc8a80"
+        },
+        {
+          "ref_ea": "0x2cadc52fc",
+          "callee": "0x2cadc8b1c"
+        },
+        {
+          "ref_ea": "0x2cadc52dc",
+          "callee": "0x2cadc8bb0"
+        },
+        {
+          "ref_ea": "0x2cadc533c",
+          "callee": "0x2cadc8cd8"
+        },
+        {
+          "ref_ea": "0x2cadc520c",
+          "callee": "0x2cadc8f6c"
+        },
+        {
+          "ref_ea": "0x2cadc530c",
+          "callee": "0x2cadc9000"
+        },
+        {
+          "ref_ea": "0x2cadc512c",
+          "callee": "0x2cadc9094"
+        },
+        {
+          "ref_ea": "0x2cadc532c",
+          "callee": "0x2cadc9128"
+        },
+        {
+          "ref_ea": "0x2cadc534c",
+          "callee": "0x2cadc91c4"
+        },
+        {
+          "ref_ea": "0x2cadc53d4",
+          "callee": "0x2cadc3148"
+        },
+        {
+          "ref_ea": "0x2cadc529c",
+          "callee": "0x2cadc8c44"
+        },
+        {
+          "ref_ea": "0x2cadc53b4",
+          "callee": "0x2cadc3070"
+        },
+        {
+          "ref_ea": "0x2cadc531c",
+          "callee": "0x2cadc8e94"
+        },
+        {
+          "ref_ea": "0x2cadc5394",
+          "callee": "0x2cadc2888"
+        },
+        {
+          "ref_ea": "0x2cadc53a4",
+          "callee": "0x2cadc9a3c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc5424",
+        "name": "_evaluatePayloadCallback",
+        "size": 244,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc5470",
+          "string_ea": "0x2cadddbb9",
+          "text": "payload evaluation: '%c%c%c%c'\n"
+        },
+        {
+          "ref_ea": "0x2cadc54e0",
+          "string_ea": "0x2cadddbd9",
+          "text": "payload evaluation: property ignored\n"
+        },
+        {
+          "ref_ea": "0x2cadc54f0",
+          "string_ea": "0x2cadddbff",
+          "text": "payload evaluation: property matched\n"
+        },
+        {
+          "ref_ea": "0x2cadc54b8",
+          "string_ea": "0x2cadddc25",
+          "text": "payload evaluation: property mismatch: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc54a8",
+          "callee": "0x2cadc9a04"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc5518",
+        "name": "_evaluateManifestHashCallback",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc6928",
+        "name": "_darwinGetPreviousStageDigest",
+        "size": 308,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc69ec",
+          "string_ea": "0x2cadde03c",
+          "text": "boot-manifest-hash"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc6b50",
+        "name": "_image4ContextInit",
+        "size": 276,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc6c64",
+        "name": "_image4ContextAttachManifest",
+        "size": 68,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc6ca8",
+        "name": "_image4ContextAttachNonce",
+        "size": 116,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc6d1c",
+        "name": "_image4ContextAttachPreviousStageDigest",
+        "size": 116,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc6d90",
+        "name": "_image4ContextAttachAuxiliaryData",
+        "size": 116,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc6e04",
+        "name": "_image4ContextEvaluateManifest",
+        "size": 404,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc6e7c",
+          "string_ea": "0x2cadde057",
+          "text": "manifest evaluation: starting trust evaluation\n"
+        },
+        {
+          "ref_ea": "0x2cadc6f48",
+          "string_ea": "0x2cadde087",
+          "text": "manifest evaluation: trust evaluation successful\n"
+        },
+        {
+          "ref_ea": "0x2cadc6f18",
+          "callee": "0x2cadc44e0"
+        },
+        {
+          "ref_ea": "0x2cadc6f2c",
+          "callee": "0x2cadc486c"
+        },
+        {
+          "ref_ea": "0x2cadc6f40",
+          "callee": "0x2cadc4950"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc6f98",
+        "name": "_image4ContextEvaluatePayload",
+        "size": 404,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc7044",
+          "string_ea": "0x2cadde0b9",
+          "text": "payload evaluation: starting trust evaluation\n"
+        },
+        {
+          "ref_ea": "0x2cadc7104",
+          "string_ea": "0x2cadde0e8",
+          "text": "payload evaluation: trust evaluation successful\n"
+        },
+        {
+          "ref_ea": "0x2cadc70e4",
+          "callee": "0x2cadc4aa0"
+        },
+        {
+          "ref_ea": "0x2cadc70fc",
+          "callee": "0x2cadc4d70"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc712c",
+        "name": "_image4RestoreInfoInit",
+        "size": 316,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc7208",
+          "callee": "0x2cadccc10"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7268",
+        "name": "_image4RestoreInfoGetBoolean",
+        "size": 112,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc7290",
+          "callee": "0x2cadcc5b4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc72d8",
+        "name": "_image4RestoreInfoGetInteger32",
+        "size": 112,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc7300",
+          "callee": "0x2cadcc634"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7348",
+        "name": "_image4RestoreInfoGetInteger64",
+        "size": 112,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc7370",
+          "callee": "0x2cadcc6bc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc73b8",
+        "name": "_image4RestoreInfoGetData",
+        "size": 120,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc73e8",
+          "callee": "0x2cadcc744"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc74dc",
+        "name": "_image4DeviceGetKeyAlgorithm",
+        "size": 324,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc75c4",
+          "string_ea": "0x2cadddcf2",
+          "text": "x509"
+        },
+        {
+          "ref_ea": "0x2cadc75d8",
+          "string_ea": "0x2cadde1af",
+          "text": "im4c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7620",
+        "name": "_image4DeviceGetBootManifestHash",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7680",
+        "name": "_image4DeviceGetSupplementaryRootCA",
+        "size": 100,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc76e4",
+        "name": "_image4DeviceGetMixAndMatch",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7718",
+        "name": "_image4DeviceGetInAvp",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc774c",
+        "name": "_image4DeviceGetBootedWithLocalPolicy",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7780",
+        "name": "_image4DeviceGetChipEpoch",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7784",
+        "name": "_image4DeviceGetChipId",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7788",
+        "name": "_image4DeviceGetBoardId",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc778c",
+        "name": "_image4DeviceGetUniqueChipId",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7790",
+        "name": "_image4DeviceGetSecurityDomain",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7794",
+        "name": "_image4DeviceGetCertificateProductionStatus",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7798",
+        "name": "_image4DeviceGetCertificateSecurityMode",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc779c",
+        "name": "_image4DeviceGetCurrentProductionStatus",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc77a0",
+        "name": "_image4DeviceGetCurrentSecurityMode",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc77a4",
+        "name": "_image4DeviceGetUniqueDeviceId",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc77a8",
+        "name": "_image4DeviceGetExtendedSecurityDomain",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc77ac",
+        "name": "_image4DeviceGetOSVersion",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc77b0",
+        "name": "_image4DeviceGetVolumeUuid",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc77b4",
+        "name": "_image4DeviceGetCryptex1ChipId",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc77b8",
+        "name": "_image4DeviceGetCryptex1ProductClass",
+        "size": 4,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc77bc",
+        "name": "_image4DeviceGetCryptex1Type",
+        "size": 104,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7824",
+        "name": "_image4DeviceGetCryptex1SubType",
+        "size": 104,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7ae4",
+        "name": "_antiReplayEnforceBootNonce",
+        "size": 428,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc7b40",
+          "string_ea": "0x2cadde234",
+          "text": "manifest evaluation: enforcing boot nonce\n"
+        },
+        {
+          "ref_ea": "0x2cadc7b6c",
+          "string_ea": "0x2cadde25f",
+          "text": "manifest evaluation: nonce tag: '%c%c%c%c'\n"
+        },
+        {
+          "ref_ea": "0x2cadc7b80",
+          "string_ea": "0x2cadde28b",
+          "text": "manifest evaluation: nonce type: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc7bb0",
+          "string_ea": "0x2cadde2b0",
+          "text": "manifest evaluation: manifest does not have anti-replay nonce\n"
+        },
+        {
+          "ref_ea": "0x2cadc7bcc",
+          "string_ea": "0x2cadde2ef",
+          "text": "manifest evaluation: unable to get nonce from manifest: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc7be8",
+          "string_ea": "0x2cadde32b",
+          "text": "manifest evaluation: using caller-provided nonce\n"
+        },
+        {
+          "ref_ea": "0x2cadc7c80",
+          "string_ea": "0x2cadde35d",
+          "text": "manifest evaluation: unable to get nonce from expert: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc7c1c",
+          "string_ea": "0x2cadde397",
+          "text": "manifest evaluation: '%c%c%c%c' mismatch\n"
+        },
+        {
+          "ref_ea": "0x2cadc7c74",
+          "callee": "0x2cadc2b78"
+        },
+        {
+          "ref_ea": "0x2cadc7b9c",
+          "callee": "0x2cadc2df8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7c90",
+        "name": "_antiReplayEnforceCryptex1Nonce",
+        "size": 496,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc7d68",
+          "string_ea": "0x2cadde2ef",
+          "text": "manifest evaluation: unable to get nonce from manifest: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc7db4",
+          "string_ea": "0x2cadde32b",
+          "text": "manifest evaluation: using caller-provided nonce\n"
+        },
+        {
+          "ref_ea": "0x2cadc7e70",
+          "string_ea": "0x2cadde35d",
+          "text": "manifest evaluation: unable to get nonce from expert: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc7de8",
+          "string_ea": "0x2cadde397",
+          "text": "manifest evaluation: '%c%c%c%c' mismatch\n"
+        },
+        {
+          "ref_ea": "0x2cadc7cf0",
+          "string_ea": "0x2cadde3c1",
+          "text": "manifest evaluation: enforcing cryptex1 nonce\n"
+        },
+        {
+          "ref_ea": "0x2cadc7d18",
+          "string_ea": "0x2cadde3f0",
+          "text": "manifest evaluation: domain tag: '%c%c%c%c'\n"
+        },
+        {
+          "ref_ea": "0x2cadc7d40",
+          "string_ea": "0x2cadde41d",
+          "text": "manifest evaluation: nonce tag:  '%c%c%c%c'\n"
+        },
+        {
+          "ref_ea": "0x2cadc7e18",
+          "string_ea": "0x2cadde44a",
+          "text": "manifest evaluation: unable to get domain from manifest: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc7e38",
+          "string_ea": "0x2cadde487",
+          "text": "manifest evaluation: unable to get type from domain: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc7e4c",
+          "string_ea": "0x2cadde4c0",
+          "text": "manifest evaluation: using nonce type:  %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc7e64",
+          "callee": "0x2cadc2b78"
+        },
+        {
+          "ref_ea": "0x2cadc7e2c",
+          "callee": "0x2cadc2c74"
+        },
+        {
+          "ref_ea": "0x2cadc7e0c",
+          "callee": "0x2cadc2d28"
+        },
+        {
+          "ref_ea": "0x2cadc7d5c",
+          "callee": "0x2cadc2df8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7e80",
+        "name": "_antiReplayEnforceRestoreInfoNonce",
+        "size": 556,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc7f7c",
+          "string_ea": "0x2cadde2ef",
+          "text": "manifest evaluation: unable to get nonce from manifest: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc7fcc",
+          "string_ea": "0x2cadde32b",
+          "text": "manifest evaluation: using caller-provided nonce\n"
+        },
+        {
+          "ref_ea": "0x2cadc8000",
+          "string_ea": "0x2cadde397",
+          "text": "manifest evaluation: '%c%c%c%c' mismatch\n"
+        },
+        {
+          "ref_ea": "0x2cadc7ee8",
+          "string_ea": "0x2cadde4ec",
+          "text": "manifest evaluation: enforcing restore-info nonce\n"
+        },
+        {
+          "ref_ea": "0x2cadc7f00",
+          "string_ea": "0x2cadde51f",
+          "text": "manifest evaluation: signing-authority: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc7f28",
+          "string_ea": "0x2cadde54b",
+          "text": "manifest evaluation: restore-info tag: '%c%c%c%c'\n"
+        },
+        {
+          "ref_ea": "0x2cadc7f54",
+          "string_ea": "0x2cadde57e",
+          "text": "manifest evaluation: manifest tag: '%c%c%c%c'\n"
+        },
+        {
+          "ref_ea": "0x2cadc8040",
+          "string_ea": "0x2cadde5ad",
+          "text": "manifest evaluation: manifest does not have an attached restore-info\n"
+        },
+        {
+          "ref_ea": "0x2cadc8034",
+          "string_ea": "0x2cadde5f3",
+          "text": "manifest evaluation: unable to get seed from restore-info: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc805c",
+          "string_ea": "0x2cadde632",
+          "text": "manifest evaluation: restore-info seed too large: %lu\n"
+        },
+        {
+          "ref_ea": "0x2cadc809c",
+          "string_ea": "0x2cadde669",
+          "text": "manifest evaluation: unable to compute nonce with expert: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc7f70",
+          "callee": "0x2cadc2df8"
+        },
+        {
+          "ref_ea": "0x2cadc8028",
+          "callee": "0x2cadc73b8"
+        },
+        {
+          "ref_ea": "0x2cadc8090",
+          "callee": "0x2cadc80ac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc80ac",
+        "name": "_expertComputeNonce",
+        "size": 120,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc84f8",
+        "name": "_image4ObjectLoadDiavloRootCA",
+        "size": 48,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc851c",
+          "callee": "0x2cadc8528"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc85f0",
+        "name": "_Image4ObjectLoadLocalPolicy",
+        "size": 40,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc860c",
+          "callee": "0x2cadc8528"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc91bc",
+        "name": "_antiReplayApSoftwareNonce",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9344",
+        "name": "_propertyMatchImage4Boolean",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc936c",
+          "callee": "0x2caddbbf8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc94d0",
+        "name": "_propertyMatchImage4Integer32",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc94f8",
+          "callee": "0x2caddbb08"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9644",
+        "name": "_propertyMatchImage4Integer64",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc966c",
+          "callee": "0x2caddbb94"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9988",
+        "name": "_propertyMatchImage4Data",
+        "size": 108,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc99b8",
+          "callee": "0x2cadccb4c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc99f4",
+        "name": "_antiReplayApBootNonce",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc99fc",
+        "name": "_antiReplayBootManifestHash",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9a04",
+        "name": "_propertyMatchDigest",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc9a24",
+          "callee": "0x2cadc9988"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9d80",
+        "name": "_antiReplayBootManifestHash_0",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9d9c",
+        "name": "_userspaceGetNonceBackdeploy",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9da4",
+        "name": "_userspaceGetNonceProposalBackdeploy",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9dac",
+        "name": "_userspaceRollNonceBackdeploy",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9db4",
+        "name": "_antiReplayApBootNonce_0",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9dc4",
+        "name": "_antiReplayApEphemeralNonce",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9dcc",
+        "name": "_antiReplayApPersistentNonce",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadca078",
+        "name": "_antiReplayCryptex1NonceDomain_1",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadca0a0",
+        "name": "_antiReplayCryptex1NonceDomain_2",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadca270",
+        "name": "_antiReplayApEphemeralNonce_0",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadca278",
+        "name": "_antiReplayApPersistentNonce_0",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadca280",
+        "name": "_antiReplayCryptex1NonceDomain_3",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadca474",
+        "name": "_darwinExpertGetManifestProperties",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadca4ac",
+        "name": "_image4UserGetKernelConnection",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadca4bc",
+        "name": "_image4UserGetNonceSeed",
+        "size": 296,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadca554",
+          "string_ea": "0x2caddefa3",
+          "text": "IOKit error when querying nonce seed: %d\n"
+        },
+        {
+          "ref_ea": "0x2cadca580",
+          "string_ea": "0x2caddefcd",
+          "text": "unable to query nonce seed: %u | %u\n"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadca6b4",
+        "name": "_image4UserGetNonceProposalSeed",
+        "size": 296,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadca74c",
+          "string_ea": "0x2caddeff2",
+          "text": "IOKit error when querying proposed nonce seed: %d\n"
+        },
+        {
+          "ref_ea": "0x2cadca778",
+          "string_ea": "0x2caddf025",
+          "text": "unable to query proposed nonce seed: %u | %u\n"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadca7dc",
+        "name": "_image4UserGetNonceProposal",
+        "size": 352,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadca874",
+          "string_ea": "0x2caddf053",
+          "text": "IOKit error when querying nonce proposal: %d\n"
+        },
+        {
+          "ref_ea": "0x2cadca8d8",
+          "string_ea": "0x2caddf081",
+          "text": "unable to query nonce proposal: %u | %u\n"
+        },
+        {
+          "ref_ea": "0x2cadca8c8",
+          "callee": "0x2cadc9da4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadca93c",
+        "name": "_image4UserRollNonce",
+        "size": 288,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadca9b8",
+          "string_ea": "0x2caddf0aa",
+          "text": "IOKit error when rolling nonce: %d\n"
+        },
+        {
+          "ref_ea": "0x2cadcaa18",
+          "string_ea": "0x2caddf0ce",
+          "text": "unable to roll nonce: %u | %llu\n"
+        },
+        {
+          "ref_ea": "0x2cadcaa08",
+          "callee": "0x2cadc9dac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcac7c",
+        "name": "_userspaceGetNonce",
+        "size": 312,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcad10",
+          "string_ea": "0x2caddf21c",
+          "text": "IOKit error when querying nonce digest: %d\n"
+        },
+        {
+          "ref_ea": "0x2cadcad60",
+          "callee": "0x2cadc9d9c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb344",
+        "name": "_Img4DecodeLocalRsa4kSha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb38c",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb39c",
+        "name": "_Img4DecodeShamRsa4kSha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb3e4",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb3f4",
+        "name": "_Img4DecodeSecureBootG7Rsa4kSha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb43c",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb44c",
+        "name": "_Img4DecodeLocalPolicyTatsuG8Rsa4kSha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb494",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb4a4",
+        "name": "_Img4DecodeSecureBootGlobalG1Rsa4kSha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb4ec",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb4fc",
+        "name": "_Img4DecodeCryptexG1Rsa4kSha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb544",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb554",
+        "name": "_Img4DecodeCryptexGlobalG1Rsa4kSha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb59c",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb5ac",
+        "name": "_Img4DecodeAVPSecureBootG2Rsa4kSha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb5f4",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb604",
+        "name": "_Img4DecodeRepairG1Rsa4kSha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb64c",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb65c",
+        "name": "_Img4DecodeLocalMLDSA87Sha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb6a4",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb6b4",
+        "name": "_Img4DecodeLocalHybridScheme3Sha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb6fc",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb70c",
+        "name": "_Img4DecodeLocalHybridScheme3Sha384IM4CNoPQC",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb754",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb764",
+        "name": "_Img4DecodeHybridScheme3Sha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb7ac",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb7bc",
+        "name": "_Img4DecodeHybridScheme3Sha384IM4CNoPQC",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb804",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb814",
+        "name": "_Img4DecodeAppleSecureBootGlobalG1Hybrid3Sha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb85c",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb86c",
+        "name": "_Img4DecodeAppleSecureBootGlobalG1Hybrid3Sha384IM4CNoPQC",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb8b4",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb8c4",
+        "name": "_Img4DecodeAppleSecureBootG2HybridScheme3Sha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb90c",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb91c",
+        "name": "_Img4DecodeAppleSecureBootG2HybridScheme3Sha384IM4CNoPQC",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb964",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb974",
+        "name": "_Img4DecodeAppleLocalPolicyG1HybridScheme3Sha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb9bc",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcb9cc",
+        "name": "_Img4DecodeAppleLocalPolicyG1HybridScheme3Sha384IM4CNoPQC",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcba14",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcba24",
+        "name": "_Img4DecodeCryptex1G1HybridScheme3Sha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcba6c",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcba7c",
+        "name": "_Img4DecodeCryptex1G1HybridScheme3Sha384IM4CNoPQC",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbac4",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbad4",
+        "name": "_Img4DecodeCryptex1GlobalG1HybridScheme3Sha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbb1c",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbb2c",
+        "name": "_Img4DecodeCryptex1GlobalG1HybridScheme3Sha384IM4CNoPQC",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbb74",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbb84",
+        "name": "_Img4DecodeWirelessG1HybridScheme3Sha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbbcc",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbbdc",
+        "name": "_Img4DecodeWirelessG1HybridScheme3Sha384IM4CNoPQC",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbc24",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbc34",
+        "name": "_Img4DecodeSecureBootRsa4kSha384IM4C",
+        "size": 88,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbc7c",
+          "callee": "0x2caddc51c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbc8c",
+        "name": "_Img4DecodeEvaluateTrust",
+        "size": 56,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbcc0",
+          "callee": "0x2caddc3b4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbcc4",
+        "name": "_Img4DecodeCopyPayloadHash",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbcdc",
+          "callee": "0x2cadcc340"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbce0",
+        "name": "_Img4DecodeCopyManifestHash",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbcf8",
+          "callee": "0x2cadcc448"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbcfc",
+        "name": "_DERImg4DecodeFindInSequence",
+        "size": 100,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbd30",
+          "callee": "0x2cadcf76c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbd60",
+        "name": "_DERImg4DecodeManifest",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbd78",
+          "callee": "0x2caddacf4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbd7c",
+        "name": "_DERImg4DecodeProperty",
+        "size": 304,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbe14",
+          "callee": "0x2cadcf444"
+        },
+        {
+          "ref_ea": "0x2cadcbdd0",
+          "callee": "0x2cadcf684"
+        },
+        {
+          "ref_ea": "0x2cadcbdf4",
+          "callee": "0x2cadcf76c"
+        },
+        {
+          "ref_ea": "0x2cadcbe40",
+          "callee": "0x2cadcf76c"
+        },
+        {
+          "ref_ea": "0x2cadcbe60",
+          "callee": "0x2cadcf76c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbeac",
+        "name": "_DERImg4DecodeFindPropertyInSequence",
+        "size": 124,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbee4",
+          "callee": "0x2cadcf76c"
+        },
+        {
+          "ref_ea": "0x2cadcbf10",
+          "callee": "0x2caddafb8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbf28",
+        "name": "_DERImg4DecodeParseManifestProperties",
+        "size": 12,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbf30",
+          "callee": "0x2caddb0d8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbf74",
+        "name": "_Img4DecodeParseLengthFromBufferWithTag",
+        "size": 256,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbfc4",
+          "callee": "0x2cadcef68"
+        },
+        {
+          "ref_ea": "0x2cadcbff8",
+          "callee": "0x2cadcef68"
+        },
+        {
+          "ref_ea": "0x2cadcc014",
+          "callee": "0x2cadda900"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc074",
+        "name": "_Img4DecodeParseLengthFromBuffer",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc080",
+          "callee": "0x2cadcbf74"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc084",
+        "name": "_Img4DecodePayloadExists",
+        "size": 56,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc0bc",
+        "name": "_Img4DecodeGetPayload",
+        "size": 68,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc100",
+        "name": "_Img4DecodeGetPayloadType",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc13c",
+          "callee": "0x2cadcf444"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc160",
+        "name": "_Img4DecodeGetPayloadVersion",
+        "size": 68,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc1a4",
+        "name": "_Img4DecodePayloadKeybagExists",
+        "size": 56,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc1dc",
+        "name": "_Img4DecodeGetPayloadKeybag",
+        "size": 68,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc220",
+        "name": "_Img4DecodePayloadCompressionInfoExists",
+        "size": 56,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc258",
+        "name": "_Img4DecodeGetPayloadCompressionInfo",
+        "size": 232,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc2f4",
+          "callee": "0x2cadcf444"
+        },
+        {
+          "ref_ea": "0x2cadcc304",
+          "callee": "0x2cadcf444"
+        },
+        {
+          "ref_ea": "0x2cadcc2e0",
+          "callee": "0x2cadcf8f8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc340",
+        "name": "_Img4DecodeCopyPayloadHashWithCallback",
+        "size": 224,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc420",
+        "name": "_Img4DecodeManifestExists",
+        "size": 40,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc448",
+        "name": "_Img4DecodeCopyManifestHashWithCallback",
+        "size": 220,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc524",
+        "name": "_Img4DecodeSectionExists",
+        "size": 88,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc57c",
+        "name": "_Img4DecodeRestoreInfoExists",
+        "size": 56,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc5b4",
+        "name": "_Img4DecodeGetRestoreInfoBoolean",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc5c0",
+          "callee": "0x2cadcc5c4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc5c4",
+        "name": "_Img4DecodeGetBooleanFromSection",
+        "size": 112,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc604",
+          "callee": "0x2cadcca78"
+        },
+        {
+          "ref_ea": "0x2cadcc618",
+          "callee": "0x2cadcf3c8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc634",
+        "name": "_Img4DecodeGetRestoreInfoInteger",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc640",
+          "callee": "0x2cadcc644"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc644",
+        "name": "_Img4DecodeGetIntegerFromSection",
+        "size": 120,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc68c",
+          "callee": "0x2cadcca78"
+        },
+        {
+          "ref_ea": "0x2cadcc69c",
+          "callee": "0x2cadcf444"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc6bc",
+        "name": "_Img4DecodeGetRestoreInfoInteger64",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc6c8",
+          "callee": "0x2cadcc6cc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc6cc",
+        "name": "_Img4DecodeGetInteger64FromSection",
+        "size": 120,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc714",
+          "callee": "0x2cadcca78"
+        },
+        {
+          "ref_ea": "0x2cadcc724",
+          "callee": "0x2cadcf4c8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc744",
+        "name": "_Img4DecodeGetRestoreInfoData",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc754",
+          "callee": "0x2cadcc758"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc758",
+        "name": "_Img4DecodeGetDataFromSection",
+        "size": 124,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc7a4",
+          "callee": "0x2cadcca78"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc7d4",
+        "name": "_Img4DecodePayloadProperty",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc7d8",
+          "callee": "0x2caddb4a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc7dc",
+        "name": "_Img4DecodeGetObjectProperty",
+        "size": 188,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc834",
+          "callee": "0x2cadcbf28"
+        },
+        {
+          "ref_ea": "0x2cadcc854",
+          "callee": "0x2caddb07c"
+        },
+        {
+          "ref_ea": "0x2cadcc86c",
+          "callee": "0x2caddb07c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc898",
+        "name": "_Img4DecodeGetObjectPropertyInteger",
+        "size": 116,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc8e0",
+          "callee": "0x2cadcc7dc"
+        },
+        {
+          "ref_ea": "0x2cadcc8f0",
+          "callee": "0x2cadcf444"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc90c",
+        "name": "_Img4DecodeGetObjectPropertyInteger64",
+        "size": 116,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc954",
+          "callee": "0x2cadcc7dc"
+        },
+        {
+          "ref_ea": "0x2cadcc964",
+          "callee": "0x2cadcf4c8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc980",
+        "name": "_Img4DecodeGetObjectPropertyData",
+        "size": 124,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcc9cc",
+          "callee": "0x2cadcc7dc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcc9fc",
+        "name": "_Img4DecodeGetObjectPropertyString",
+        "size": 124,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcca48",
+          "callee": "0x2cadcc7dc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcca78",
+        "name": "_Img4DecodeGetPropertyFromSection",
+        "size": 212,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadccb00",
+          "callee": "0x2cadcbf28"
+        },
+        {
+          "ref_ea": "0x2cadccacc",
+          "callee": "0x2cadcc524"
+        },
+        {
+          "ref_ea": "0x2cadccb18",
+          "callee": "0x2caddb07c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccb4c",
+        "name": "_Img4DecodeGetPropertyData",
+        "size": 168,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadccb9c",
+          "callee": "0x2cadcbd7c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccbf4",
+        "name": "_Img4DecodeEvaluateCertificateProperties",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadccbf8",
+          "callee": "0x2caddbc4c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccbfc",
+        "name": "_Img4DecodeEvaluateManifestProperties",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadccc0c",
+          "callee": "0x2caddc01c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccc10",
+        "name": "_Img4DecodeInit",
+        "size": 232,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcccb8",
+          "callee": "0x2cadcbd60"
+        },
+        {
+          "ref_ea": "0x2cadccc94",
+          "callee": "0x2cadda978"
+        },
+        {
+          "ref_ea": "0x2cadccca4",
+          "callee": "0x2caddabfc"
+        },
+        {
+          "ref_ea": "0x2cadcccc8",
+          "callee": "0x2caddaf38"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcccf8",
+        "name": "_Img4DecodeInitPayload",
+        "size": 152,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadccd6c",
+          "callee": "0x2caddabfc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccd90",
+        "name": "_Img4DecodeInitManifest",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadccda0",
+          "callee": "0x2cadccda4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccda4",
+        "name": "_Img4DecodeInitManifestCommon",
+        "size": 320,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcce44",
+          "callee": "0x2cadcbd60"
+        },
+        {
+          "ref_ea": "0x2cadcce98",
+          "callee": "0x2cadcef68"
+        },
+        {
+          "ref_ea": "0x2cadcce68",
+          "callee": "0x2caddad98"
+        },
+        {
+          "ref_ea": "0x2cadcce58",
+          "callee": "0x2caddadb0"
+        },
+        {
+          "ref_ea": "0x2cadcce70",
+          "callee": "0x2caddadc8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccee4",
+        "name": "_Img4DecodeInitUnsignedManifest",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadccef4",
+          "callee": "0x2cadccda4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccef8",
+        "name": "_Img4DecodeInitCertificate",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadccf08",
+          "callee": "0x2cadccda4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccf0c",
+        "name": "_Img4DecodeInitUnsignedCertificate",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadccf1c",
+          "callee": "0x2cadccda4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccf20",
+        "name": "_Img4DecodePerformTrustEvaluation",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadccf44",
+          "callee": "0x2caddc660"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccf54",
+        "name": "_Img4DecodePerformTrustEvaluatationWithCallbacks",
+        "size": 12,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadccf5c",
+          "callee": "0x2caddc660"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccf60",
+        "name": "_Img4DecodePerformTrustEvaluatation",
+        "size": 52,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadccf84",
+          "callee": "0x2caddc660"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccf94",
+        "name": "_Img4DecodePerformTrustEvaluationWithCallbacks",
+        "size": 12,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadccf9c",
+          "callee": "0x2caddc660"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadccfa0",
+        "name": "__Img4DecodeValidateManifestPropertyInterposer",
+        "size": 272,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcd008",
+          "callee": "0x2cadcbd7c"
+        },
+        {
+          "ref_ea": "0x2cadcd02c",
+          "callee": "0x2cadcf740"
+        },
+        {
+          "ref_ea": "0x2cadcd044",
+          "callee": "0x2cadcf76c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcd178",
+        "name": "_sha1_digest",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcd8d0",
+        "name": "_verify_chain_img4_v1",
+        "size": 724,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcda30",
+          "callee": "0x2cadcf740"
+        },
+        {
+          "ref_ea": "0x2cadcdaa0",
+          "callee": "0x2cadcf740"
+        },
+        {
+          "ref_ea": "0x2cadcda6c",
+          "callee": "0x2cadcf76c"
+        },
+        {
+          "ref_ea": "0x2cadcdab0",
+          "callee": "0x2cadcf76c"
+        },
+        {
+          "ref_ea": "0x2cadcdadc",
+          "callee": "0x2cadcf8f8"
+        },
+        {
+          "ref_ea": "0x2cadcdaec",
+          "callee": "0x2cadcfd54"
+        },
+        {
+          "ref_ea": "0x2cadcdb38",
+          "callee": "0x2cadcfd54"
+        },
+        {
+          "ref_ea": "0x2cadcd960",
+          "callee": "0x2cadcec30"
+        },
+        {
+          "ref_ea": "0x2cadcd990",
+          "callee": "0x2cadcdba4"
+        },
+        {
+          "ref_ea": "0x2cadcd9f4",
+          "callee": "0x2cadcdde4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcdf84",
+        "name": "_verify_chain_img4_x86",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcdf94",
+          "callee": "0x2cadcdf98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcdf98",
+        "name": "_verify_chain_img4_v2_with_crack_callback",
+        "size": 352,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce03c",
+          "callee": "0x2cadcdba4"
+        },
+        {
+          "ref_ea": "0x2cadce074",
+          "callee": "0x2cadcdde4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce130",
+        "name": "_verify_chain_img4_ddi",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce140",
+          "callee": "0x2cadcdf98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce17c",
+        "name": "_verify_chain_img4_ddi_global",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce18c",
+          "callee": "0x2cadcdf98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce1c8",
+        "name": "_verify_chain_img4_ddi_fake",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce1d8",
+          "callee": "0x2cadcdf98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce214",
+        "name": "_verify_chain_img4_ddi_fake_global",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce224",
+          "callee": "0x2cadcdf98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce260",
+        "name": "_verify_chain_img4_avp",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce270",
+          "callee": "0x2cadcdf98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce2ac",
+        "name": "_verify_chain_img4_tatsu_local_policy",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce2bc",
+          "callee": "0x2cadcdf98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce2f8",
+        "name": "_verify_chain_img4_tatsu_local_policy_hacktivate",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce308",
+          "callee": "0x2cadcdf98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce344",
+        "name": "_verify_chain_img4_v2_rsa3k",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce354",
+          "callee": "0x2cadcdf98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce390",
+        "name": "_verify_chain_img4_v2",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce3a0",
+          "callee": "0x2cadcdf98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce3dc",
+        "name": "_verify_chain_img4_v2_AWG1",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce3ec",
+          "callee": "0x2cadcdf98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce428",
+        "name": "_verify_chain_img4_v2_PED",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce438",
+          "callee": "0x2cadcdf98"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce474",
+        "name": "_verify_chain_img4_ec_v1",
+        "size": 436,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce520",
+          "callee": "0x2cadce628"
+        },
+        {
+          "ref_ea": "0x2cadce580",
+          "callee": "0x2cadcdde4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce86c",
+        "name": "_verify_chain_img4_ecdsa256",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce87c",
+          "callee": "0x2cadce880"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce880",
+        "name": "_verify_chain_img4_ec_v2",
+        "size": 376,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce930",
+          "callee": "0x2cadce628"
+        },
+        {
+          "ref_ea": "0x2cadce978",
+          "callee": "0x2cadcdde4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcea30",
+        "name": "_verify_chain_img4_ecdsa384",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcea40",
+          "callee": "0x2cadce880"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcea7c",
+        "name": "_verify_chain_img4_ecdsa384_local_policy",
+        "size": 48,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcea9c",
+          "callee": "0x2cadce474"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadceae4",
+        "name": "_verify_chain_img4_ecdsa384_hacktivate",
+        "size": 48,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadceb04",
+          "callee": "0x2cadce474"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadceb14",
+        "name": "_verify_chain_img4_ecdsa384_qa",
+        "size": 48,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadceb34",
+          "callee": "0x2cadce474"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadceb7c",
+        "name": "_img4_verify_signature_with_chain",
+        "size": 180,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcebd4",
+          "callee": "0x2cadcd8d0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcef60",
+        "name": "_DERDecodeItem",
+        "size": 8,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcef64",
+          "callee": "0x2cadcef68"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcef68",
+        "name": "_DERDecodeItemPartialBufferGetLength",
+        "size": 488,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcf150",
+        "name": "_DERDecodeItemPartialBuffer",
+        "size": 440,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcf308",
+        "name": "_DERParseBitString",
+        "size": 192,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcf3c8",
+        "name": "_DERParseBoolean",
+        "size": 60,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcf404",
+        "name": "_DERParseBooleanWithDefault",
+        "size": 64,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcf444",
+        "name": "_DERParseInteger",
+        "size": 132,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcf478",
+          "callee": "0x2cadcf4c8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcf4c8",
+        "name": "_DERParseInteger64",
+        "size": 128,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcf548",
+        "name": "_DERParseIntegerSigned",
+        "size": 132,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcf57c",
+          "callee": "0x2cadcf5cc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcf5cc",
+        "name": "_DERParseInteger64Signed",
+        "size": 184,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcf684",
+        "name": "_DERDecodeSeqInit",
+        "size": 188,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcf6c4",
+          "callee": "0x2cadcef68"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcf740",
+        "name": "_DERDecodeSeqContentInit",
+        "size": 44,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadcf76c",
+        "name": "_DERDecodeSeqNext",
+        "size": 192,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcf7b8",
+          "callee": "0x2cadcef68"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcf82c",
+        "name": "_DERParseSequenceToObject",
+        "size": 204,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcf884",
+          "callee": "0x2cadcef68"
+        },
+        {
+          "ref_ea": "0x2cadcf8b8",
+          "callee": "0x2cadcf8f8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcf8f8",
+        "name": "_DERParseSequenceContentToObject",
+        "size": 692,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcf9c4",
+          "callee": "0x2cadcf76c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcfbac",
+        "name": "_DERParseSequence",
+        "size": 32,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcfbc4",
+          "callee": "0x2cadcf82c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcfbcc",
+        "name": "_DERParseSequenceContent",
+        "size": 32,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcfbe4",
+          "callee": "0x2cadcf8f8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcfbec",
+        "name": "_DERDecodeSequenceWithBlock",
+        "size": 160,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcfc2c",
+          "callee": "0x2cadcef68"
+        },
+        {
+          "ref_ea": "0x2cadcfc5c",
+          "callee": "0x2cadcfc8c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcfc8c",
+        "name": "_DERDecodeSequenceContentWithBlock",
+        "size": 200,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcfcf0",
+          "callee": "0x2cadcf76c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcfd54",
+        "name": "_DEROidCompare",
+        "size": 84,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadd030c",
+        "name": "_CTImg4VerifyChain",
+        "size": 572,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadd0548",
+        "name": "_CTImg4VerifySignatureWithPublicKey",
+        "size": 396,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadd05d8",
+          "callee": "0x2cadd0a84"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadd06d4",
+        "name": "_CTImg4CreateContext",
+        "size": 612,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadd0938",
+        "name": "_find_digest",
+        "size": 140,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadd09c4",
+        "name": "_find_digest_by_type",
+        "size": 72,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadd0a84",
+        "name": "_find_digestOID_for_signingOID",
+        "size": 396,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadd13e0",
+        "name": "_compressECPublicKey",
+        "size": 408,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadd1578",
+        "name": "_decompressECPublicKey",
+        "size": 416,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadd3b70",
+        "name": "_CMSAttributeParseMessageDigest",
+        "size": 292,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadd3bf0",
+          "callee": "0x2cadd0938"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadd6d18",
+        "name": "_der_get_boolean",
+        "size": 280,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadd846c",
+        "name": "_X509CertificateCheckSignatureDigest",
+        "size": 552,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadda898",
+        "name": "_DERImg4DecodeContentFindItemWithTag",
+        "size": 104,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadda8bc",
+          "callee": "0x2cadcf740"
+        },
+        {
+          "ref_ea": "0x2cadda8d4",
+          "callee": "0x2cadcf76c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadda900",
+        "name": "_DERImg4DecodeTagCompare",
+        "size": 120,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadda938",
+          "callee": "0x2cadcf444"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadda978",
+        "name": "_DERImg4Decode",
+        "size": 220,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadda9b0",
+          "callee": "0x2cadcef60"
+        },
+        {
+          "ref_ea": "0x2caddaa10",
+          "callee": "0x2cadcf8f8"
+        },
+        {
+          "ref_ea": "0x2caddaa24",
+          "callee": "0x2cadda900"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddaa54",
+        "name": "_DERImg4DecodePayloadCompression",
+        "size": 120,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddaaa4",
+          "callee": "0x2cadcf444"
+        },
+        {
+          "ref_ea": "0x2caddaa94",
+          "callee": "0x2cadcf8f8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddaacc",
+        "name": "_DERImg4DecodePayloadWithProperties",
+        "size": 176,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddab10",
+          "callee": "0x2cadcf82c"
+        },
+        {
+          "ref_ea": "0x2caddab24",
+          "callee": "0x2cadda900"
+        },
+        {
+          "ref_ea": "0x2caddab3c",
+          "callee": "0x2caddaa54"
+        },
+        {
+          "ref_ea": "0x2caddab54",
+          "callee": "0x2caddab7c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddab7c",
+        "name": "_DERImg4DecodePayloadProperties",
+        "size": 128,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddabbc",
+          "callee": "0x2cadcf82c"
+        },
+        {
+          "ref_ea": "0x2caddabd0",
+          "callee": "0x2cadda900"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddabfc",
+        "name": "_DERImg4DecodePayload",
+        "size": 248,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddac6c",
+          "callee": "0x2cadcf82c"
+        },
+        {
+          "ref_ea": "0x2caddac80",
+          "callee": "0x2cadda900"
+        },
+        {
+          "ref_ea": "0x2caddac98",
+          "callee": "0x2caddaa54"
+        },
+        {
+          "ref_ea": "0x2caddac48",
+          "callee": "0x2caddaacc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddacf4",
+        "name": "_DERImg4DecodeManifestCommon",
+        "size": 164,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddad64",
+          "callee": "0x2cadcf444"
+        },
+        {
+          "ref_ea": "0x2caddad40",
+          "callee": "0x2cadcf82c"
+        },
+        {
+          "ref_ea": "0x2caddad50",
+          "callee": "0x2cadda900"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddad98",
+        "name": "_DERImg4DecodeUnsignedManifest",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddadac",
+          "callee": "0x2cadcbf34"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddadb0",
+        "name": "_DERImg4DecodeCertificate",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddadc4",
+          "callee": "0x2cadcbf34"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddadc8",
+        "name": "_DERImg4DecodeUnsignedCertificate",
+        "size": 24,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddaddc",
+          "callee": "0x2cadcbf34"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddade0",
+        "name": "_DERImg4DecodeCertificatePropertiesAndPubKey",
+        "size": 344,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddae4c",
+          "callee": "0x2cadcef60"
+        },
+        {
+          "ref_ea": "0x2caddae9c",
+          "callee": "0x2cadcef60"
+        },
+        {
+          "ref_ea": "0x2caddaeec",
+          "callee": "0x2cadcef60"
+        },
+        {
+          "ref_ea": "0x2caddae8c",
+          "callee": "0x2cadcf8f8"
+        },
+        {
+          "ref_ea": "0x2caddaecc",
+          "callee": "0x2cadcf8f8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddaf38",
+        "name": "_DERImg4DecodeRestoreInfo",
+        "size": 128,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddaf78",
+          "callee": "0x2cadcf82c"
+        },
+        {
+          "ref_ea": "0x2caddaf8c",
+          "callee": "0x2cadda900"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddafb8",
+        "name": "_DERImg4DecodePropertyWithItem",
+        "size": 196,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddb028",
+          "callee": "0x2cadcf444"
+        },
+        {
+          "ref_ea": "0x2caddb018",
+          "callee": "0x2cadcf82c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddb07c",
+        "name": "_DERImg4DecodeFindProperty",
+        "size": 92,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddb0c0",
+          "callee": "0x2cadcbeac"
+        },
+        {
+          "ref_ea": "0x2caddb0a8",
+          "callee": "0x2cadcf740"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddb0d8",
+        "name": "_DERImg4DecodeParseManifestPropertiesInternal",
+        "size": 312,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddb138",
+          "callee": "0x2cadcef60"
+        },
+        {
+          "ref_ea": "0x2caddb15c",
+          "callee": "0x2cadcf444"
+        },
+        {
+          "ref_ea": "0x2caddb1a0",
+          "callee": "0x2caddb07c"
+        },
+        {
+          "ref_ea": "0x2caddb1d4",
+          "callee": "0x2caddb07c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddb210",
+        "name": "_DERImg4DecodeParseCertificateProperties",
+        "size": 12,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddb218",
+          "callee": "0x2caddb0d8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddb21c",
+        "name": "_Img4DecodeCopyPayloadDigest",
+        "size": 224,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2caddb2fc",
+        "name": "_Img4DecodeCopyManifestDigest",
+        "size": 212,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2caddb3d0",
+        "name": "_Img4DecodeGetManifest",
+        "size": 72,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2caddb418",
+        "name": "_Img4DecodePayloadPropertiesExists",
+        "size": 140,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddb464",
+          "callee": "0x2caddaacc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddb4a4",
+        "name": "__Img4DecodePayloadPropertyExistsWithValue",
+        "size": 300,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddb538",
+          "callee": "0x2cadda898"
+        },
+        {
+          "ref_ea": "0x2caddb54c",
+          "callee": "0x2cadda898"
+        },
+        {
+          "ref_ea": "0x2caddb564",
+          "callee": "0x2cadda898"
+        },
+        {
+          "ref_ea": "0x2caddb510",
+          "callee": "0x2caddaacc"
+        },
+        {
+          "ref_ea": "0x2caddb590",
+          "callee": "0x2caddb07c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddb5d0",
+        "name": "_Img4DecodePayloadPropertyExistsByTag",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddb5dc",
+          "callee": "0x2caddb4a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddb5e0",
+        "name": "_Img4DecodeGetPayloadProperties",
+        "size": 144,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddb62c",
+          "callee": "0x2caddaacc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddb670",
+        "name": "_Img4DecodeCopyPayloadPropertiesDigest",
+        "size": 144,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2caddb700",
+        "name": "_Img4DecodePayloadPropertiesFindItemWithTag",
+        "size": 436,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddb818",
+          "callee": "0x2cadcef60"
+        },
+        {
+          "ref_ea": "0x2caddb7e4",
+          "callee": "0x2cadcf740"
+        },
+        {
+          "ref_ea": "0x2caddb84c",
+          "callee": "0x2cadcf740"
+        },
+        {
+          "ref_ea": "0x2caddb7fc",
+          "callee": "0x2cadcf76c"
+        },
+        {
+          "ref_ea": "0x2caddb85c",
+          "callee": "0x2cadcf76c"
+        },
+        {
+          "ref_ea": "0x2caddb878",
+          "callee": "0x2cadcf76c"
+        },
+        {
+          "ref_ea": "0x2caddb780",
+          "callee": "0x2cadda898"
+        },
+        {
+          "ref_ea": "0x2caddb79c",
+          "callee": "0x2cadda898"
+        },
+        {
+          "ref_ea": "0x2caddb7d4",
+          "callee": "0x2cadda898"
+        },
+        {
+          "ref_ea": "0x2caddb82c",
+          "callee": "0x2cadda898"
+        },
+        {
+          "ref_ea": "0x2caddb7b0",
+          "callee": "0x2cadda900"
+        },
+        {
+          "ref_ea": "0x2caddb83c",
+          "callee": "0x2cadda900"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddb8b4",
+        "name": "_Img4DecodeGetPayloadPropertiesBoolean",
+        "size": 76,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddb8ec",
+          "callee": "0x2cadcf3c8"
+        },
+        {
+          "ref_ea": "0x2caddb8e0",
+          "callee": "0x2caddb4a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddb900",
+        "name": "_Img4DecodeGetPayloadPropertiesInteger",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddb928",
+          "callee": "0x2cadcf444"
+        },
+        {
+          "ref_ea": "0x2caddb91c",
+          "callee": "0x2cadcd140"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddb93c",
+        "name": "_Img4DecodeGetPayloadPropertiesInteger64",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddb964",
+          "callee": "0x2cadcf4c8"
+        },
+        {
+          "ref_ea": "0x2caddb958",
+          "callee": "0x2cadcd140"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddb978",
+        "name": "_Img4DecodeGetPayloadPropertiesData",
+        "size": 80,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddb9a4",
+          "callee": "0x2caddb4a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddb9c8",
+        "name": "_Img4DecodeGetObjectPropertyBoolean",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddba00",
+          "callee": "0x2cadcc7dc"
+        },
+        {
+          "ref_ea": "0x2caddba0c",
+          "callee": "0x2cadcf3c8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddba28",
+        "name": "_Img4DecodeGetPayloadVersionPropertyString",
+        "size": 224,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddbaa4",
+          "callee": "0x2cadcbd7c"
+        },
+        {
+          "ref_ea": "0x2caddbacc",
+          "callee": "0x2cadcbd7c"
+        },
+        {
+          "ref_ea": "0x2caddba8c",
+          "callee": "0x2cadcef60"
+        },
+        {
+          "ref_ea": "0x2caddbab8",
+          "callee": "0x2cadda898"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddbb08",
+        "name": "_Img4DecodeGetPropertyInteger",
+        "size": 140,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddbb44",
+          "callee": "0x2cadcbd7c"
+        },
+        {
+          "ref_ea": "0x2caddbb60",
+          "callee": "0x2cadcf444"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddbb94",
+        "name": "_Img4DecodeGetPropertyInteger64",
+        "size": 100,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddbbc4",
+          "callee": "0x2cadcf4c8"
+        },
+        {
+          "ref_ea": "0x2caddbba8",
+          "callee": "0x2cadcd0d0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddbbf8",
+        "name": "_Img4DecodeGetPropertyBoolean",
+        "size": 84,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddbc28",
+          "callee": "0x2cadcf3c8"
+        },
+        {
+          "ref_ea": "0x2caddbc0c",
+          "callee": "0x2cadcd0d0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddbc4c",
+        "name": "_Img4DecodeEvaluateCertificatePropertiesInternal",
+        "size": 604,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddbd70",
+          "callee": "0x2cadcbd7c"
+        },
+        {
+          "ref_ea": "0x2caddbdb0",
+          "callee": "0x2cadcbd7c"
+        },
+        {
+          "ref_ea": "0x2caddbcc4",
+          "callee": "0x2cadcf684"
+        },
+        {
+          "ref_ea": "0x2caddbd8c",
+          "callee": "0x2cadcf740"
+        },
+        {
+          "ref_ea": "0x2caddbd14",
+          "callee": "0x2cadcf76c"
+        },
+        {
+          "ref_ea": "0x2caddbd9c",
+          "callee": "0x2cadcf76c"
+        },
+        {
+          "ref_ea": "0x2caddbdc4",
+          "callee": "0x2cadda898"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddbea8",
+        "name": "_Img4DecodeCopyManifestTrustedBootPolicyMeasurement",
+        "size": 372,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddbf58",
+          "callee": "0x2caddbc4c"
+        },
+        {
+          "ref_ea": "0x2caddbfb4",
+          "callee": "0x2caddc01c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddc01c",
+        "name": "_Img4DecodeEvaluateDictionaryProperties",
+        "size": 292,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddc0a8",
+          "callee": "0x2cadcbd7c"
+        },
+        {
+          "ref_ea": "0x2caddc06c",
+          "callee": "0x2cadcf740"
+        },
+        {
+          "ref_ea": "0x2caddc08c",
+          "callee": "0x2cadcf76c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddc140",
+        "name": "_Img4DecodeEvaluateObjectProperties",
+        "size": 20,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddc150",
+          "callee": "0x2caddc01c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddc154",
+        "name": "_Img4DecodeEvaluateCertificateChain",
+        "size": 608,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddc2b0",
+          "callee": "0x2cadcbd7c"
+        },
+        {
+          "ref_ea": "0x2caddc2f8",
+          "callee": "0x2cadcbd7c"
+        },
+        {
+          "ref_ea": "0x2caddc224",
+          "callee": "0x2cadcf684"
+        },
+        {
+          "ref_ea": "0x2caddc2d0",
+          "callee": "0x2cadcf740"
+        },
+        {
+          "ref_ea": "0x2caddc270",
+          "callee": "0x2cadcf76c"
+        },
+        {
+          "ref_ea": "0x2caddc2e0",
+          "callee": "0x2cadcf76c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddc3b4",
+        "name": "_Img4DecodeEvaluateTrustWithCallbacks",
+        "size": 360,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddc454",
+          "callee": "0x2cadcbf28"
+        },
+        {
+          "ref_ea": "0x2caddc474",
+          "callee": "0x2caddb07c"
+        },
+        {
+          "ref_ea": "0x2caddc4c8",
+          "callee": "0x2caddc01c"
+        },
+        {
+          "ref_ea": "0x2caddc4e4",
+          "callee": "0x2caddc01c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddc51c",
+        "name": "_Img4DecodeVerifyChainIM4C",
+        "size": 324,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddc5b4",
+          "callee": "0x2cadccda4"
+        },
+        {
+          "ref_ea": "0x2caddc61c",
+          "callee": "0x2caddade0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddc660",
+        "name": "__Img4DecodePerformTrustEvaluationWithCallbacksInternal",
+        "size": 640,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddc7d0",
+          "callee": "0x2cadcbf28"
+        },
+        {
+          "ref_ea": "0x2caddc80c",
+          "callee": "0x2caddb07c"
+        },
+        {
+          "ref_ea": "0x2caddc884",
+          "callee": "0x2caddc01c"
+        },
+        {
+          "ref_ea": "0x2caddc8a0",
+          "callee": "0x2caddc01c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddc8e0",
+        "name": "_Img4DecodePerformManifestTrustEvaluationWithCallbacks",
+        "size": 28,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2caddc8f8",
+          "callee": "0x2caddc660"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2caddcc04",
+        "name": "_Img4DecodeDigestInit",
+        "size": 64,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2caddcc44",
+        "name": "_Img4DecodeDigestUpdate",
+        "size": 60,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2caddcc80",
+        "name": "_Img4DecodeDigestReturnHash",
+        "size": 80,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2caddccd0",
+        "name": "_Img4DecodeDigestFinal",
+        "size": 64,
+        "flags": 5136
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2caddcd10",
+        "name": "_Img4DecodeComputeDigest",
+        "size": 120,
+        "flags": 5120
+      },
+      "reasons": [
+        "symbol"
+      ],
+      "anchors": []
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2b1c",
+        "name": "_logArgs",
+        "size": 76,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc2b48",
+          "string_ea": "0x2caddce78",
+          "text": "manifest evaluation: %s: version: %s\n"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc4950",
+        "name": "_environmentEvaluateAntiReplay",
+        "size": 336,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc4978",
+          "string_ea": "0x2caddd49d",
+          "text": "manifest evaluation: starting anti-replay evaluation\n"
+        },
+        {
+          "ref_ea": "0x2cadc4a04",
+          "string_ea": "0x2caddd4d3",
+          "text": "manifest evaluation: failed first stage anti-replay: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc4a18",
+          "string_ea": "0x2caddd50c",
+          "text": "manifest evaluation: first stage anti-replay successful\n"
+        },
+        {
+          "ref_ea": "0x2cadc4a50",
+          "string_ea": "0x2caddd545",
+          "text": "manifest evaluation: failed subsequent stage anti-replay: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc4a7c",
+          "string_ea": "0x2caddd583",
+          "text": "manifest evaluation: subsequent stage anti-replay successful\n"
+        },
+        {
+          "ref_ea": "0x2cadc4a8c",
+          "string_ea": "0x2caddd5c1",
+          "text": "manifest evaluation: anti-replay evaluation successful\n"
+        },
+        {
+          "ref_ea": "0x2cadc49f4",
+          "callee": "0x2cadc788c"
+        },
+        {
+          "ref_ea": "0x2cadc4a40",
+          "callee": "0x2cadc8124"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc47ac",
+        "name": "_coreTrustVerifyChain",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc47e8",
+          "string_ea": "0x2caddda13",
+          "text": "manifest evaluation: coreTrustVerifyChain failure: 0x%0X\n"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc480c",
+        "name": "_coreTrustVerifySignature",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc4848",
+          "string_ea": "0x2caddda4d",
+          "text": "manifest evaluation: coreTrustVerifySignature failure: 0x%0X\n"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc8848",
+        "name": "_auxiliaryValidateFusingPolicy",
+        "size": 356,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc88a8",
+          "string_ea": "0x2caddda8b",
+          "text": "payload evaluation: failed to get payload type: %d\n"
+        },
+        {
+          "ref_ea": "0x2cadc887c",
+          "string_ea": "0x2caddeaa3",
+          "text": "manifest evaluation: 'EPRO' and 'ESEC' ignored for satellite evaluation\n"
+        },
+        {
+          "ref_ea": "0x2cadc8918",
+          "string_ea": "0x2caddeaec",
+          "text": "payload evaluation: failed production status check: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc8998",
+          "string_ea": "0x2caddeb24",
+          "text": "payload evaluation: failed security mode check: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc889c",
+          "callee": "0x2cadcc100"
+        },
+        {
+          "ref_ea": "0x2cadc88f8",
+          "callee": "0x2cadc89ac"
+        },
+        {
+          "ref_ea": "0x2cadc8978",
+          "callee": "0x2cadc89ac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc86b8",
+        "name": "___selectDecodeImplementationBase",
+        "size": 384,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc873c",
+          "string_ea": "0x2cadddcf2",
+          "text": "x509"
+        },
+        {
+          "ref_ea": "0x2cadc8790",
+          "string_ea": "0x2cadde1af",
+          "text": "im4c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9b50",
+        "name": "___selectDecodeImplementationApBase",
+        "size": 512,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc9be8",
+          "string_ea": "0x2cadddcf2",
+          "text": "x509"
+        },
+        {
+          "ref_ea": "0x2cadc9bfc",
+          "string_ea": "0x2cadde1af",
+          "text": "im4c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9ea4",
+        "name": "___selectDecodeImplementationCryptex1Base",
+        "size": 352,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc9f30",
+          "string_ea": "0x2cadddcf2",
+          "text": "x509"
+        },
+        {
+          "ref_ea": "0x2cadc9f44",
+          "string_ea": "0x2cadde1af",
+          "text": "im4c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc612c",
+        "name": "_darwinBootedWithLocalPolicy",
+        "size": 124,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc6164",
+          "string_ea": "0x2caddddde",
+          "text": "name"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc65e0",
+        "name": "_darwinGetOSVersion",
+        "size": 156,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc6620",
+          "string_ea": "0x2cadddf25",
+          "text": "love"
+        },
+        {
+          "ref_ea": "0x2cadc6630",
+          "callee": "0x2cadca474"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7490",
+        "name": "_logArgs_2",
+        "size": 76,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc74bc",
+          "string_ea": "0x2cadde152",
+          "text": "manifest evaluation: attempting 'rpnh' policy\n"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc788c",
+        "name": "_antiReplayEnforceFirstStage",
+        "size": 540,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc7900",
+          "string_ea": "0x2cadde1b4",
+          "text": "manifest evaluation: no policy for first stage anti-replay\n"
+        },
+        {
+          "ref_ea": "0x2cadc78b8",
+          "string_ea": "0x2cadde1f0",
+          "text": "manifest evaluation: attempting first stage anti-replay policy: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc7a14",
+          "callee": "0x2cadc7ae4"
+        },
+        {
+          "ref_ea": "0x2cadc7aa4",
+          "callee": "0x2cadc7c90"
+        },
+        {
+          "ref_ea": "0x2cadc7a68",
+          "callee": "0x2cadc7e80"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc8124",
+        "name": "_antiReplayEnforceSubsequentStage",
+        "size": 420,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc81c0",
+          "string_ea": "0x2cadde6a7",
+          "text": "manifest evaluation: no policy for subsequent stage anti-replay\n"
+        },
+        {
+          "ref_ea": "0x2cadc8174",
+          "string_ea": "0x2cadde6e8",
+          "text": "manifest evaluation: attempting subsequent stage anti-replay policy: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc8228",
+          "string_ea": "0x2cadde731",
+          "text": "manifest evaluation: enforcing subsequent stage policy: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc823c",
+          "string_ea": "0x2cadde76d",
+          "text": "manifest evaluation: using caller-provided previous stage digest\n"
+        },
+        {
+          "ref_ea": "0x2cadc82ac",
+          "string_ea": "0x2cadde7af",
+          "text": "manifest evaluation: unable to obtain previous stage digest: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc8260",
+          "string_ea": "0x2cadde7f0",
+          "text": "manifest evaluation: previous stage digest mismatch\n"
+        },
+        {
+          "ref_ea": "0x2cadc81b4",
+          "string_ea": "0x2cadde825",
+          "text": "manifest evaluation: manifest enables mix-and-match\n"
+        },
+        {
+          "ref_ea": "0x2cadc81e4",
+          "string_ea": "0x2cadde85a",
+          "text": "manifest evaluation: environment enables mix-and-match\n"
+        },
+        {
+          "ref_ea": "0x2cadc81a4",
+          "callee": "0x2cadc2cc0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc82c8",
+        "name": "_auxiliaryValidateVersionPolicy",
+        "size": 560,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc830c",
+          "string_ea": "0x2cadde892",
+          "text": "manifest evaluation: attempting 'vnum' policy\n"
+        },
+        {
+          "ref_ea": "0x2cadc832c",
+          "string_ea": "0x2cadde8c1",
+          "text": "manifest evaluation: 'vnum' ignored for satellite evaluation\n"
+        },
+        {
+          "ref_ea": "0x2cadc8378",
+          "string_ea": "0x2cadde8ff",
+          "text": "manifest evaluation: exempted 'vnum' policy due to sideloading\n"
+        },
+        {
+          "ref_ea": "0x2cadc8394",
+          "string_ea": "0x2cadde93f",
+          "text": "manifest evaluation: unable to obtain environment OS version: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc8424",
+          "string_ea": "0x2cadde981",
+          "text": "manifest evaluation: unable to obtain manifest version: %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc84cc",
+          "string_ea": "0x2cadde9bd",
+          "text": "manifest evaluation: exempted 'vnum' policy due to build group\n"
+        },
+        {
+          "ref_ea": "0x2cadc84dc",
+          "string_ea": "0x2cadde9fd",
+          "text": "manifest evaluation: 'vnum' mismatch: build tuple %u\n"
+        },
+        {
+          "ref_ea": "0x2cadc84c0",
+          "string_ea": "0x2caddea33",
+          "text": "manifest evaluation: 'vnum' policy successful\n"
+        },
+        {
+          "ref_ea": "0x2cadc8404",
+          "string_ea": "0x2caddea6e",
+          "text": "manifest"
+        },
+        {
+          "ref_ea": "0x2cadc83f4",
+          "callee": "0x2cadc2df8"
+        },
+        {
+          "ref_ea": "0x2cadc83d4",
+          "callee": "0x2cadc29b8"
+        },
+        {
+          "ref_ea": "0x2cadc8414",
+          "callee": "0x2cadc29b8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc89ac",
+        "name": "_validateFusingPolicy",
+        "size": 212,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc8a00",
+          "string_ea": "0x2caddeb58",
+          "text": "payload evaluation: attempting fusing policy: '%c%c%c%c'\n"
+        },
+        {
+          "ref_ea": "0x2cadc8a5c",
+          "string_ea": "0x2caddeb92",
+          "text": "payload evaluation: '%c%c%c%c' mismtch\n"
+        },
+        {
+          "ref_ea": "0x2cadc89d4",
+          "callee": "0x2caddb9c8"
+        },
+        {
+          "ref_ea": "0x2cadc8a20",
+          "callee": "0x2caddb9c8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadca2dc",
+        "name": "_darwinExpertAllowsDevelopment",
+        "size": 12,
+        "flags": 5120
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadca2dc",
+          "string_ea": "0x2caddef9c",
+          "text": "Image4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcafcc",
+        "name": "___userspaceBoot_block_invoke",
+        "size": 776,
+        "flags": 5136
+      },
+      "reasons": [
+        "string"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcb178",
+          "string_ea": "0x2caddef9c",
+          "text": "Image4"
+        },
+        {
+          "ref_ea": "0x2cadcb200",
+          "string_ea": "0x2caddef9c",
+          "text": "Image4"
+        },
+        {
+          "ref_ea": "0x2cadcb08c",
+          "string_ea": "0x2caddf0ff",
+          "text": "com.apple.Image4"
+        },
+        {
+          "ref_ea": "0x2cadcb144",
+          "string_ea": "0x2caddf165",
+          "text": "unable to find /chosen/manifest-properties\n"
+        },
+        {
+          "ref_ea": "0x2cadcb210",
+          "string_ea": "0x2caddf1fe",
+          "text": "IMAGE4_LOG_FILE"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc4474",
+        "name": "_propertyMatchLocalBoot",
+        "size": 108,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc44c4",
+          "callee": "0x2cadc9344"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc8d6c",
+        "name": "_propertyMatchCertificateProductionStatus",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc8ddc",
+          "callee": "0x2cadc9344"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc8e00",
+        "name": "_propertyMatchCertificateSecurityMode",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc8e70",
+          "callee": "0x2cadc9344"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc8a80",
+        "name": "_propertyMatchChipEpoch",
+        "size": 156,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc8af8",
+          "callee": "0x2cadc94d0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc8b1c",
+        "name": "_propertyMatchChipId",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc8b8c",
+          "callee": "0x2cadc94d0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc8bb0",
+        "name": "_propertyMatchBoardId",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc8c20",
+          "callee": "0x2cadc94d0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc8cd8",
+        "name": "_propertyMatchSecurityDomain",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc8d48",
+          "callee": "0x2cadc94d0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc8f6c",
+        "name": "_propertyMatchExtendedSecurityDomain",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc8fdc",
+          "callee": "0x2cadc94d0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9000",
+        "name": "_propertyMatchCryptex1ChipId",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc9070",
+          "callee": "0x2cadc94d0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9094",
+        "name": "_propertyMatchCryptex1ProductClass",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc9104",
+          "callee": "0x2cadc94d0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9128",
+        "name": "_propertyMatchCryptex1Type",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc9198",
+          "callee": "0x2cadc94d0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc91c4",
+        "name": "_propertyMatchCryptex1SubType",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc9234",
+          "callee": "0x2cadc94d0"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc3148",
+        "name": "_propertyMatchLocalPolicyEpoch",
+        "size": 156,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc31c0",
+          "callee": "0x2cadc9644"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc8c44",
+        "name": "_propertyMatchUniqueChipId",
+        "size": 148,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc8cb4",
+          "callee": "0x2cadc9644"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc3070",
+        "name": "_propertyMatchVolumeUuid",
+        "size": 216,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc3108",
+          "callee": "0x2cadc9988"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc8e94",
+        "name": "_propertyMatchUniqueDeviceId",
+        "size": 216,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc8f2c",
+          "callee": "0x2cadc9988"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc8528",
+        "name": "_loadObject",
+        "size": 200,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc8570",
+          "callee": "0x2cadca4ac"
+        },
+        {
+          "ref_ea": "0x2cadc8578",
+          "callee": "0x2cadca4ac"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcd0d0",
+        "name": "_OUTLINED_FUNCTION_3_0",
+        "size": 56,
+        "flags": 136192
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcd104",
+          "callee": "0x2cadcbd7c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce628",
+        "name": "_parse_ec_chain",
+        "size": 580,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce808",
+          "callee": "0x2cadcef60"
+        },
+        {
+          "ref_ea": "0x2cadce7e4",
+          "callee": "0x2cadcf308"
+        },
+        {
+          "ref_ea": "0x2cadce708",
+          "callee": "0x2cadcf82c"
+        },
+        {
+          "ref_ea": "0x2cadce748",
+          "callee": "0x2cadcf82c"
+        },
+        {
+          "ref_ea": "0x2cadce794",
+          "callee": "0x2cadcf8f8"
+        },
+        {
+          "ref_ea": "0x2cadce7b8",
+          "callee": "0x2cadcf8f8"
+        },
+        {
+          "ref_ea": "0x2cadce7cc",
+          "callee": "0x2cadcfd54"
+        },
+        {
+          "ref_ea": "0x2cadce828",
+          "callee": "0x2cadced0c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcec30",
+        "name": "__crack_chain_with_anchor",
+        "size": 220,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcec74",
+          "callee": "0x2cadcef60"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadced0c",
+        "name": "_parse_extensions",
+        "size": 352,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcee04",
+          "callee": "0x2cadcef60"
+        },
+        {
+          "ref_ea": "0x2cadced60",
+          "callee": "0x2cadcf684"
+        },
+        {
+          "ref_ea": "0x2cadcedac",
+          "callee": "0x2cadcf76c"
+        },
+        {
+          "ref_ea": "0x2cadcedd8",
+          "callee": "0x2cadcf8f8"
+        },
+        {
+          "ref_ea": "0x2cadcede8",
+          "callee": "0x2cadcfd54"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcdba4",
+        "name": "_parse_chain",
+        "size": 576,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcdd80",
+          "callee": "0x2cadcf308"
+        },
+        {
+          "ref_ea": "0x2cadcdc7c",
+          "callee": "0x2cadcf82c"
+        },
+        {
+          "ref_ea": "0x2cadcdcbc",
+          "callee": "0x2cadcf82c"
+        },
+        {
+          "ref_ea": "0x2cadcdd00",
+          "callee": "0x2cadcf8f8"
+        },
+        {
+          "ref_ea": "0x2cadcdd24",
+          "callee": "0x2cadcf8f8"
+        },
+        {
+          "ref_ea": "0x2cadcdd38",
+          "callee": "0x2cadcfd54"
+        },
+        {
+          "ref_ea": "0x2cadcdda0",
+          "callee": "0x2cadced0c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcdde4",
+        "name": "_verify_chain_signatures",
+        "size": 416,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcdf10",
+          "callee": "0x2cadcf308"
+        },
+        {
+          "ref_ea": "0x2cadcde84",
+          "callee": "0x2cadcf8f8"
+        },
+        {
+          "ref_ea": "0x2cadcdea0",
+          "callee": "0x2cadcfd54"
+        },
+        {
+          "ref_ea": "0x2cadcdedc",
+          "callee": "0x2cadcfd54"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcd228",
+        "name": "_verify_pkcs1_sig",
+        "size": 448,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcd300",
+          "callee": "0x2cadcf82c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadca1c4",
+        "name": "_selectDecodeImplementationSHA384",
+        "size": 172,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadca248",
+          "callee": "0x2cadd06d4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadd1e58",
+        "name": "_CMSParseSignerInfos",
+        "size": 1600,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadd2168",
+          "callee": "0x2cadd0938"
+        },
+        {
+          "ref_ea": "0x2cadd22b4",
+          "callee": "0x2cadd0938"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadd2778",
+        "name": "_validateSignerInfo",
+        "size": 1936,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadd27d4",
+          "callee": "0x2cadd0938"
+        },
+        {
+          "ref_ea": "0x2cadd2aec",
+          "callee": "0x2cadd3b70"
+        },
+        {
+          "ref_ea": "0x2cadd2e3c",
+          "callee": "0x2cadd846c"
+        },
+        {
+          "ref_ea": "0x2cadd2b18",
+          "callee": "0x2cadd3c94"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadd3c94",
+        "name": "_CMSAttributeParseAppleHashAgilityV2",
+        "size": 536,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadd3ddc",
+          "callee": "0x2cadd0938"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadd6368",
+        "name": "_X509CertificateParseImplicit",
+        "size": 2480,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadd68e4",
+          "callee": "0x2cadd6d18"
+        },
+        {
+          "ref_ea": "0x2cadd6ab4",
+          "callee": "0x2cadd6f00"
+        },
+        {
+          "ref_ea": "0x2cadd6af4",
+          "callee": "0x2cadd7424"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadd6f00",
+        "name": "_X509ExtensionParseBasicConstraints",
+        "size": 212,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadd6f5c",
+          "callee": "0x2cadd6d18"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadd7424",
+        "name": "_X509ExtensionParseAppleExtension",
+        "size": 3172,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadd7b58",
+          "callee": "0x2cadd6d18"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadd8694",
+        "name": "_X509CertificateCheckSignature",
+        "size": 196,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadd8724",
+          "callee": "0x2cadd846c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcbf34",
+        "name": "_OUTLINED_FUNCTION_0",
+        "size": 8,
+        "flags": 136192
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcbf38",
+          "callee": "0x2caddacf4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcd140",
+        "name": "_OUTLINED_FUNCTION_7",
+        "size": 32,
+        "flags": 136192
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcd15c",
+          "callee": "0x2caddb4a4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc2888",
+        "name": "_propertyMatchDataOnly",
+        "size": 164,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc28e0",
+          "callee": "0x2caddbbf8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9a3c",
+        "name": "_propertyMatchInternalUseOnlyBuild",
+        "size": 164,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc9a94",
+          "callee": "0x2caddbbf8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc29b8",
+        "name": "_parseVersion",
+        "size": 356,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc2a88",
+          "callee": "0x2cadc2b1c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc86a8",
+        "name": "_selectDecodeImplementationLocalPolicy",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc86b4",
+          "callee": "0x2cadc86b8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc8838",
+        "name": "_selectDecodeImplementationLocalPolicyTatsu",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc8844",
+          "callee": "0x2cadc86b8"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9b20",
+        "name": "_selectDecodeImplementationAp",
+        "size": 48,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc9b40",
+          "callee": "0x2cadc9b50"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9d50",
+        "name": "_selectDecodeImplementationApGlobal",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc9d5c",
+          "callee": "0x2cadc9b50"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc9e74",
+        "name": "_selectDecodeImplementationCryptex1",
+        "size": 48,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc9e94",
+          "callee": "0x2cadc9ea4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadca004",
+        "name": "_selectDecodeImplementationCryptex1Global",
+        "size": 16,
+        "flags": 5120
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadca010",
+          "callee": "0x2cadc9ea4"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc7430",
+        "name": "_auxiliaryValidateLocalPolicyActivationPolicy",
+        "size": 96,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc7460",
+          "callee": "0x2cadc7490"
+        },
+        {
+          "ref_ea": "0x2cadc7470",
+          "callee": "0x2cadc788c"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadc558c",
+        "name": "_darwinSetSupplementaryRootCA",
+        "size": 140,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadc55c4",
+          "callee": "0x2cadca2dc"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce0f8",
+        "name": "_crack_chain_rsa4k_sha384_x86",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce11c",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce144",
+        "name": "_crack_chain_rsa4k_sha384_ddi",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce168",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce190",
+        "name": "_crack_chain_rsa4k_sha384_ddi_global",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce1b4",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce1dc",
+        "name": "_crack_chain_rsa4k_sha384_ddi_fake",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce200",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce228",
+        "name": "_crack_chain_rsa4k_sha384_ddi_fake_global",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce24c",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce274",
+        "name": "_crack_chain_rsa4k_sha384_avp",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce298",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce2c0",
+        "name": "_crack_chain_rsa4k_sha384_tatsu_local_policy",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce2e4",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce30c",
+        "name": "_crack_chain_rsa4k_sha384_tatsu_local_policy_hacktivate",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce330",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce358",
+        "name": "_crack_chain_rsa3k_sha384",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce37c",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce3a4",
+        "name": "_crack_chain_rsa4k_sha384",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce3c8",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce3f0",
+        "name": "_crack_chain_rsa4k_sha384_AWG1",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce414",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce43c",
+        "name": "_crack_chain_rsa4k_sha384_PED",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadce460",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadce9f8",
+        "name": "_crack_chain_ecdsa256_sha256",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcea1c",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcea44",
+        "name": "_crack_chain_ecdsa384_sha384_hacktivate",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcea68",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadceaac",
+        "name": "_crack_chain_ecdsa384_sha384",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcead0",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadceb44",
+        "name": "_crack_chain_ecdsa384_sha384_qa",
+        "size": 56,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadceb68",
+          "callee": "0x2cadcec30"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcd190",
+        "name": "_verify_signature_rsa3k",
+        "size": 152,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcd20c",
+          "callee": "0x2cadcd228"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadcd3e8",
+        "name": "_verify_signature_rsa",
+        "size": 152,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadcd464",
+          "callee": "0x2cadcd228"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadd2fd4",
+        "name": "_CMSVerify",
+        "size": 484,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadd3118",
+          "callee": "0x2cadd1e58"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadd2f08",
+        "name": "_validateSignerInfoAndChain",
+        "size": 116,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadd2f24",
+          "callee": "0x2cadd2778"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadd3448",
+        "name": "_CMSParseImplicitCertificateSet",
+        "size": 764,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadd36b8",
+          "callee": "0x2cadd6368"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadd8088",
+        "name": "_X509CertificateParseWithExtension",
+        "size": 292,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadd8108",
+          "callee": "0x2cadd6368"
+        }
+      ]
+    },
+    {
+      "function": {
+        "ea": "0x2cadda24c",
+        "name": "_X509ChainCheckPathWithOptions",
+        "size": 1584,
+        "flags": 5136
+      },
+      "reasons": [
+        "caller"
+      ],
+      "anchors": [
+        {
+          "ref_ea": "0x2cadda470",
+          "callee": "0x2cadd8694"
+        },
+        {
+          "ref_ea": "0x2cadda6f8",
+          "callee": "0x2cadd8694"
+        }
+      ]
+    }
+  ]
+}

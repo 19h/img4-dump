@@ -1,0 +1,909 @@
+{
+  "count": 5,
+  "results": [
+    {
+      "address": "0x2427e7d34",
+      "end_address": "0x2427e7db4",
+      "input": "_AMAuthInstallApImg4GetTypeForEntryName",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_AMAuthInstallApImg4GetTypeForEntryName",
+      "prototype": "__int64 __fastcall AMAuthInstallApImg4GetTypeForEntryName(__int64 a1)",
+      "pseudocode": "__int64 __fastcall AMAuthInstallApImg4GetTypeForEntryName(__int64 a1)\n{\n  __int64 v2; // x20\n  __int64 v3; // x22\n  __int64 v4; // x23\n  __int64 v5; // x8\n\n  v2 = 0;\n  v3 = 0xDF;\n  v4 = 0x269176518LL;\n  while ( sub_2481003A0(a1, kImg4Types[2 * v2], 0) != 0 )\n  {\n    ++v2;\n    v4 += 0x10;\n    if ( --v3 == 0 )\n    {\n      v5 = 0;\n      goto LABEL_6;\n    }\n  }\n  v5 = *(_QWORD *)(v4 + 8);\nLABEL_6:\n  if ( v5 != 0 )\n    return v5;\n  else\n    return a1;\n}\n"
+    },
+    {
+      "address": "0x2428656a4",
+      "end_address": "0x2428659f4",
+      "input": "_AMAuthInstallApImg4ReCreatePayloadWithProperties",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a8",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "PayloadWithProperties",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v30",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v31",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v32",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v33",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v34",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v35",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v36",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v37",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v38",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v39",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v41",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v42",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v43",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v44",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v45",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v46",
+          "type": "_BYTE[96]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v47",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v48",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v49",
+          "type": "_BYTE[16]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v50",
+          "type": "_QWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v51",
+          "type": "_QWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v52",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v53",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v54",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v55",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v56",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v57",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v58",
+          "type": "__int64"
+        }
+      ],
+      "name": "_AMAuthInstallApImg4ReCreatePayloadWithProperties",
+      "prototype": "__int64 __fastcall AMAuthInstallApImg4ReCreatePayloadWithProperties(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, __int64 a7, _QWORD *a8)",
+      "pseudocode": "__int64 __fastcall AMAuthInstallApImg4ReCreatePayloadWithProperties(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        __int64 a6,\n        __int64 a7,\n        _QWORD *a8)\n{\n  __int64 v8; // x21\n  __int64 v9; // x23\n  __int64 v10; // x27\n  __int64 v11; // x28\n  __int64 v12; // x0\n  __int64 v13; // x25\n  __int64 PayloadWithProperties; // x22\n  __int64 v15; // x19\n  int v24; // w0\n  __int64 v25; // x26\n  __int64 v26; // x30\n  _QWORD *v27; // x20\n  __int64 v28; // x19\n  __int64 v29; // x30\n  int v30; // w0\n  __int64 v31; // x30\n  __int64 v32; // x0\n  __int64 v33; // x0\n  __int64 v34; // x1\n  __int64 v35; // x2\n  __int64 v36; // x3\n  __int64 v37; // x4\n  __int64 v38; // x5\n  _QWORD *v39; // x6\n  __int64 v41; // x0\n  __int64 v42; // x0\n  __int64 v43; // x0\n  __int64 v44; // [xsp+10h] [xbp-1A0h] BYREF\n  __int64 v45; // [xsp+18h] [xbp-198h]\n  _BYTE v46[96]; // [xsp+20h] [xbp-190h] BYREF\n  __int64 v47; // [xsp+80h] [xbp-130h]\n  __int64 v48; // [xsp+88h] [xbp-128h]\n  _BYTE v49[16]; // [xsp+C0h] [xbp-F0h] BYREF\n  _QWORD v50[2]; // [xsp+D0h] [xbp-E0h] BYREF\n  _QWORD v51[2]; // [xsp+E0h] [xbp-D0h] BYREF\n  __int64 v52; // [xsp+F0h] [xbp-C0h]\n  __int64 v53; // [xsp+F8h] [xbp-B8h]\n  __int64 v54; // [xsp+100h] [xbp-B0h]\n  __int64 v55; // [xsp+108h] [xbp-A8h]\n  __int64 v56; // [xsp+110h] [xbp-A0h]\n  __int64 v57; // [xsp+118h] [xbp-98h]\n  __int64 v58; // [xsp+150h] [xbp-60h]\n\n  v13 = 0;\n  v58 = *MEMORY[0x268186AA8];\n  v44 = 0;\n  PayloadWithProperties = 1;\n  v15 = 0;\n  v8 = 0;\n  v9 = 0;\n  v10 = 0;\n  v11 = 0;\n  if ( a3 == 0 || a8 == nullptr )\n    goto LABEL_49;\n  v44 = sub_2480FCB60(a3);\n  v45 = sub_2480FBEC0(a3);\n  sub_2480E5720(v49, 0x90);\n  v24 = DERImg4DecodePayload(&v44, v49);\n  if ( v24 == 0 )\n  {\n    if ( a1 != 0 && (unsigned int)_DERItemEqualsCString(v50, a1) == 0 )\n    {\n      v13 = sub_2480FE6A0(a1);\n      if ( v13 == 0 )\n        goto LABEL_16;\n    }\n    else\n    {\n      if ( v50[0] == 0 )\n      {\n        v13 = 0;\n        goto LABEL_16;\n      }\n      v13 = sub_248100C00(v50[0], v50[1]);\n      LOBYTE(PayloadWithProperties) = 0;\n      if ( v13 == 0 )\n        goto LABEL_16;\n    }\n    if ( a2 == 0 || (unsigned int)_DERItemEqualsCString(v51, a2) != 0 )\n    {\n      if ( v51[0] == 0 )\n        goto LABEL_16;\n      v25 = sub_248100C00(v51[0], v51[1]);\n      if ( v25 == 0 )\n        goto LABEL_16;\nLABEL_18:\n      v27 = (_QWORD *)MEMORY[0x2680CF608];\n      if ( a4 != 0 )\n      {\n        v28 = sub_2480FC030(a4);\n        LOBYTE(PayloadWithProperties) = 1;\n        if ( v28 == 0 )\n        {\nLABEL_65:\n          v8 = 0;\n          v9 = 0;\n          v10 = 0;\n          v11 = 0;\n          PayloadWithProperties = 2;\n          goto LABEL_48;\n        }\n      }\n      else\n      {\n        if ( v52 == 0 )\n          goto LABEL_65;\n        if ( ((v26 ^ (2 * v26)) & 0x4000000000000000LL) != 0 )\n          __break(0xC471u);\n        v12 = sub_2480FD830(0, v52, v53, *MEMORY[0x2680CF608]);\n        v28 = v12;\n        if ( v12 == 0 )\n          goto LABEL_65;\n      }\n      if ( a5 != 0 )\n      {\n        v9 = sub_2480FC030(a5);\n        LOBYTE(PayloadWithProperties) = 1;\n        if ( a6 == 0 )\n          goto LABEL_35;\n      }\n      else if ( v54 != 0 )\n      {\n        if ( ((v29 ^ (2 * v29)) & 0x4000000000000000LL) != 0 )\n          __break(0xC471u);\n        v41 = sub_2480FD830(0, v54, v55, *v27);\n        v9 = v41;\n        if ( v41 == 0 )\n        {\n          v10 = 0;\n          goto LABEL_57;\n        }\n        if ( a6 == 0 )\n        {\nLABEL_35:\n          if ( v56 == 0 )\n          {\n            v10 = 0;\n            if ( a7 == 0 )\n              goto LABEL_39;\n            goto LABEL_53;\n          }\n          if ( ((v29 ^ (2 * v29)) & 0x4000000000000000LL) != 0 )\n            __break(0xC471u);\n          v42 = sub_2480FD830(0, v56, v57, *v27);\n          v10 = v42;\n          if ( v42 != 0 )\n          {\n            if ( a7 == 0 )\n              goto LABEL_39;\n            goto LABEL_53;\n          }\nLABEL_57:\n          v11 = 0;\n          goto LABEL_58;\n        }\n      }\n      else\n      {\n        v9 = 0;\n        if ( a6 == 0 )\n          goto LABEL_35;\n      }\n      v10 = sub_2480FC030(a6);\n      LOBYTE(PayloadWithProperties) = 1;\n      if ( a7 == 0 )\n      {\nLABEL_39:\n        sub_2480E5720(v46, 0xA0);\n        v30 = DERImg4DecodePayloadWithProperties(&v44, v46);\n        if ( v30 != 0 )\n        {\n          AMAuthInstallLog(\n            7,\n            \"AMAuthInstallApImg4ReCreatePayloadWithProperties\",\n            \"failed to decode img4 payload with properties (error=%d), assuming no properties\",\n            v30);\nLABEL_41:\n          v11 = 0;\n          goto LABEL_45;\n        }\n        if ( v47 == 0 )\n          goto LABEL_41;\n        if ( ((v31 ^ (2 * v31)) & 0x4000000000000000LL) != 0 )\n          __break(0xC471u);\n        v43 = sub_2480FD830(0, v47, v48, *v27);\n        v11 = v43;\n        if ( v43 != 0 )\n        {\nLABEL_45:\n          if ( (PayloadWithProperties & 1) == 0 )\n          {\n            PayloadWithProperties = 0;\n            *a8 = sub_2480FC030(a3);\nLABEL_47:\n            v8 = v28;\nLABEL_48:\n            v15 = v25;\n            goto LABEL_49;\n          }\nLABEL_54:\n          PayloadWithProperties = AMAuthInstallApImg4CreatePayloadWithProperties(v13, v25, v28, v9, v10, v11, a8);\n          goto LABEL_47;\n        }\nLABEL_58:\n        PayloadWithProperties = 2;\n        goto LABEL_47;\n      }\nLABEL_53:\n      v11 = sub_2480FC030(a7);\n      goto LABEL_54;\n    }\n    v25 = sub_2480FE6A0(a2);\n    LOBYTE(PayloadWithProperties) = 1;\n    if ( v25 != 0 )\n      goto LABEL_18;\nLABEL_16:\n    v15 = 0;\n    v8 = 0;\n    v9 = 0;\n    v10 = 0;\n    v11 = 0;\n    PayloadWithProperties = 2;\n    goto LABEL_49;\n  }\n  AMAuthInstallLog(\n    3,\n    \"AMAuthInstallApImg4ReCreatePayloadWithProperties\",\n    \"failed to decode img4 payload, error:%d\",\n    v24);\n  v13 = 0;\n  v15 = 0;\n  v8 = 0;\n  v9 = 0;\n  v10 = 0;\n  v11 = 0;\n  PayloadWithProperties = 0x63;\nLABEL_49:\n  SafeFree(v13);\n  SafeFree(v15);\n  SafeRelease(v8);\n  SafeRelease(v9);\n  SafeRelease(v10);\n  v32 = SafeRelease(v11);\n  if ( *MEMORY[0x268186AA8] == v58 )\n    return PayloadWithProperties;\n  v33 = sub_2480E56B0(v32);\n  return AMAuthInstallApImg4CreatePayloadWithProperties(v33, v34, v35, v36, v37, v38, v39);\n}\n"
+    },
+    {
+      "address": "0x2427f5374",
+      "end_address": "0x2427f5418",
+      "input": "_AMAuthInstallCryptoCreateDigestForDataType",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a4",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        }
+      ],
+      "name": "_AMAuthInstallCryptoCreateDigestForDataType",
+      "prototype": "__int64 __fastcall AMAuthInstallCryptoCreateDigestForDataType(__int64 a1, __int64 a2, __int64 a3, int a4)",
+      "pseudocode": "__int64 __fastcall AMAuthInstallCryptoCreateDigestForDataType(__int64 a1, __int64 a2, __int64 a3, int a4)\n{\n  __int64 v4; // x30\n\n  switch ( a4 )\n  {\n    case 1:\n      if ( ((v4 ^ (2 * v4)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return AMAuthInstallCryptoCreateDigestForData();\n    case 0x100:\n      if ( ((v4 ^ (2 * v4)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return AMAuthInstallCryptoCreateDigestForData_SHA256();\n    case 0x180:\n      if ( ((v4 ^ (2 * v4)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return AMAuthInstallCryptoCreateDigestForData_SHA384();\n    case 0xD38:\n      if ( ((v4 ^ (2 * v4)) & 0x4000000000000000LL) != 0 )\n        __break(0xC471u);\n      return AMAuthInstallCryptoCreateDigestForData_SHA3_384();\n    default:\n      AMAuthInstallLog(3, \"AMAuthInstallCryptoCreateDigestForDataType\", \"unsupported digest type: %d\\n\", a4);\n      return 1;\n  }\n}\n"
+    },
+    {
+      "address": "0x2427e88f4",
+      "end_address": "0x2427e8c60",
+      "input": "_AMAuthInstallApImg4EncodeRestoreInfo",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a3",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "EncodingWithTag",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v27",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v28",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v30",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v31",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v32",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v33",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v34",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v35",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v36",
+          "type": "_QWORD[2]"
+        }
+      ],
+      "name": "_AMAuthInstallApImg4EncodeRestoreInfo",
+      "prototype": "__int64 __fastcall AMAuthInstallApImg4EncodeRestoreInfo(__int64 a1, __int64 a2, __int64 *a3)",
+      "pseudocode": "__int64 __fastcall AMAuthInstallApImg4EncodeRestoreInfo(__int64 a1, __int64 a2, __int64 *a3)\n{\n  __int64 v6; // x0\n  __int64 v7; // x20\n  __int64 v8; // x0\n  int EncodingWithTag; // w23\n  __int64 v10; // x24\n  __int64 v11; // x20\n  __int64 v12; // x0\n  __int64 v13; // x21\n  __int64 v14; // x22\n  __int64 v15; // x24\n  __int64 v16; // x0\n  __int64 v17; // x0\n  __int64 v18; // x22\n  __int64 v19; // x23\n  __int64 v20; // x0\n  __int64 v21; // x0\n  __int64 v22; // x24\n  __int64 v24; // x0\n  const char *v25; // x0\n  __int64 v26; // [xsp+8h] [xbp-88h] BYREF\n  __int64 v27; // [xsp+10h] [xbp-80h] BYREF\n  __int64 v28; // [xsp+18h] [xbp-78h] BYREF\n  __int64 v29; // [xsp+20h] [xbp-70h] BYREF\n  unsigned int v30; // [xsp+2Ch] [xbp-64h] BYREF\n  __int64 v31; // [xsp+30h] [xbp-60h] BYREF\n  __int64 v32; // [xsp+38h] [xbp-58h] BYREF\n  __int64 v33; // [xsp+40h] [xbp-50h] BYREF\n  int v34; // [xsp+48h] [xbp-48h] BYREF\n  int v35; // [xsp+4Ch] [xbp-44h] BYREF\n  _QWORD v36[2]; // [xsp+50h] [xbp-40h] BYREF\n\n  v36[0] = 0;\n  v36[1] = 0;\n  v35 = 0;\n  v34 = 0;\n  v32 = 0;\n  v33 = 0;\n  v31 = 0;\n  v30 = 0;\n  v28 = 0;\n  v29 = 0;\n  v27 = 0;\n  if ( a1 == 0 || a2 == 0 || (v6 = sub_2480FEEF0(a2), a3 == nullptr) || v6 < 1 )\n  {\n    v18 = 0;\n    if ( a3 == nullptr )\n    {\n      v22 = 3;\n      v13 = 0;\n      v11 = 0;\n      goto LABEL_20;\n    }\n    v11 = 0;\n    v13 = 0;\n    goto LABEL_33;\n  }\n  v7 = sub_2480FBEC0(a1);\n  v35 = v7;\n  v8 = sub_2480FCB60(a1);\n  if ( (unsigned int)DERDecoderInitialize(v36, v8, &v35, v7) != 0 )\n  {\n    v25 = \"DERDecoderInitialize top level failed\";\n    goto LABEL_32;\n  }\n  if ( (unsigned int)DERDecoderGetDataWithTag(v36, 0, 0x10, 1, &v33, (char *)&v31 + 4, &v34) != 0 )\n  {\n    v25 = \"could not find im4p top level sequence\";\n    goto LABEL_32;\n  }\n  if ( (unsigned int)DERDecoderInitialize(v36, v33, (char *)&v31 + 4, HIDWORD(v31)) != 0 )\n  {\n    v25 = \"DERDecoderInitialize sequence failed\";\n    goto LABEL_32;\n  }\n  v34 = 3;\n  EncodingWithTag = DERDecoderGetEncodingWithTag(v36, 2, 1, 1, &v32, &v31, &v34);\n  if ( EncodingWithTag != 0 )\n  {\n    if ( (unsigned int)AMAuthInstallApImg4EncodeRestoreDict(a2, &v28) == 0 )\n    {\n      v11 = 0;\n      goto LABEL_13;\n    }\n    v25 = \"AMAuthInstallApImg4EncodeRestoreDict failed\";\nLABEL_32:\n    AMAuthInstallApImg4EncodeRestoreInfo.cold.1(v25);\n    v11 = 0;\n    v13 = 0;\n    v18 = 0;\n    goto LABEL_33;\n  }\n  HIDWORD(v31) -= v31;\n  v10 = *MEMORY[0x2680CF5F0];\n  v11 = sub_2481001C0(*MEMORY[0x2680CF5F0], 0, MEMORY[0x2680CF838], MEMORY[0x2680CF840]);\n  v29 = v11;\n  if ( (unsigned int)AMAuthInstallApImg4DecodeRestoreInfo(a1, &v29) == 0 )\n  {\n    v26 = 0;\n    sub_2480FFD90(v10, v11, a2, &v26);\n    v22 = 0;\n    AMAuthInstallLog(3, \"AMAuthInstallApImg4EncodeRestoreInfo\", \"failed to create merged restore Info dictionary\");\n    goto LABEL_35;\n  }\n  v24 = AMAuthInstallApImg4EncodeRestoreDict(a2, &v28);\n  if ( (_DWORD)v24 != 0 )\n  {\n    v22 = v24;\n    AMAuthInstallApImg4EncodeRestoreInfo.cold.2();\nLABEL_35:\n    v18 = 0;\n    v13 = 0;\n    goto LABEL_20;\n  }\nLABEL_13:\n  v12 = sub_2480FC000(0, 0);\n  v13 = v12;\n  if ( v12 == 0\n    || (sub_248100110(v12, v33, HIDWORD(v31)),\n        v14 = v28,\n        v15 = sub_2480FCB60(v28),\n        v16 = sub_2480FBEC0(v14),\n        sub_248100110(v13, v15, v16),\n        (v17 = sub_248100680(0)) == 0) )\n  {\n    v18 = 0;\n    if ( EncodingWithTag == 0 )\n    {\n      v22 = 2;\n      goto LABEL_20;\n    }\nLABEL_33:\n    *a3 = 0;\n    v22 = 3;\n    goto LABEL_20;\n  }\n  v18 = v17;\n  v19 = sub_2480FCB60(v13);\n  v20 = sub_2480FBEC0(v13);\n  if ( (unsigned int)sub_2481005F0(v18, 0, 0x10, v19, v20, 1) != 0 || (unsigned int)sub_248100690(v18, &v27, &v30) != 0 )\n    goto LABEL_33;\n  v21 = sub_2480FC750(0, v27, v30);\n  *a3 = v21;\n  if ( v21 != 0 )\n    v22 = 0;\n  else\n    v22 = 2;\nLABEL_20:\n  SafeRelease(v11);\n  SafeRelease(v28);\n  SafeFree(v27);\n  SafeRelease(v13);\n  sub_2481006A0(v18);\n  return v22;\n}\n"
+    },
+    {
+      "address": "0x242864eec",
+      "end_address": "0x2428651a4",
+      "input": "_AMAuthInstallApImg4DecodeRestoreInfo",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64 *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v23",
+          "type": "_QWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v24",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v25",
+          "type": "_QWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v27",
+          "type": "_QWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v28",
+          "type": "_QWORD[2]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v29",
+          "type": "_BYTE[440]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v30",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v31",
+          "type": "__int64"
+        }
+      ],
+      "name": "_AMAuthInstallApImg4DecodeRestoreInfo",
+      "prototype": "__int64 __fastcall AMAuthInstallApImg4DecodeRestoreInfo(__int64 a1, _QWORD *a2)",
+      "pseudocode": "__int64 __fastcall AMAuthInstallApImg4DecodeRestoreInfo(__int64 a1, _QWORD *a2)\n{\n  __int64 v4; // x21\n  unsigned int v5; // w0\n  __int64 v6; // x20\n  __int64 v7; // x26\n  __int64 v8; // x27\n  int v9; // w0\n  __int64 v10; // x21\n  __int64 v11; // x0\n  __int64 v12; // x0\n  __int64 v13; // x2\n  __int64 v14; // x22\n  __int64 v15; // x0\n  __int64 result; // x0\n  __int64 v17; // x0\n  __int64 *v18; // x1\n  __int64 v19; // [xsp+0h] [xbp-290h] BYREF\n  __int64 v20; // [xsp+8h] [xbp-288h] BYREF\n  __int64 v21; // [xsp+10h] [xbp-280h] BYREF\n  __int64 v22; // [xsp+18h] [xbp-278h]\n  _QWORD v23[2]; // [xsp+20h] [xbp-270h] BYREF\n  __int64 v24; // [xsp+30h] [xbp-260h] BYREF\n  _QWORD v25[2]; // [xsp+38h] [xbp-258h] BYREF\n  __int64 v26; // [xsp+48h] [xbp-248h] BYREF\n  _QWORD v27[2]; // [xsp+50h] [xbp-240h] BYREF\n  _QWORD v28[2]; // [xsp+60h] [xbp-230h] BYREF\n  _BYTE v29[440]; // [xsp+70h] [xbp-220h] BYREF\n  __int64 v30; // [xsp+228h] [xbp-68h] BYREF\n  __int64 v31; // [xsp+238h] [xbp-58h]\n\n  v31 = *MEMORY[0x268186AA8];\n  if ( a1 != 0 && *a2 != 0 )\n  {\n    sub_2480E5720(v29, 0x1C8);\n    v28[0] = 0;\n    v28[1] = 0;\n    v27[0] = 0;\n    v27[1] = 0;\n    v26 = 0;\n    v4 = sub_2480FCB60(a1);\n    v5 = sub_2480FBEC0(a1);\n    if ( (unsigned int)Img4DecodeInit(v4, v5, v29) != 0 )\n    {\n      AMAuthInstallLog(3, \"AMAuthInstallApImg4DecodeRestoreInfo\", \"Img4DecodeInit img4 decode failed.\");\n    }\n    else\n    {\n      if ( (unsigned int)DERDecodeSeqContentInit(&v30, v28) == 0 )\n      {\n        v6 = *MEMORY[0x2680CF5F0];\n        v7 = *MEMORY[0x2680CF618];\n        v8 = *MEMORY[0x2680CF620];\n        while ( 1 )\n        {\n          do\n          {\n            while ( 1 )\n            {\n              v9 = DERDecodeSeqNext(v28, &v26);\n              if ( v9 == 0 )\n                break;\n              if ( v9 == 1 )\n              {\n                result = 0;\n                goto LABEL_36;\n              }\n            }\n            v24 = 0;\n            v25[0] = 0;\n            v25[1] = 0;\n            v23[0] = 0;\n            v23[1] = 0;\n            v20 = 0;\n            v21 = 0;\n            v22 = 0;\n          }\n          while ( (unsigned int)DERDecodeItem(v27, &v24) != 0\n               || (unsigned int)DERDecodeSeqContentInit(v25, v23) != 0\n               || (unsigned int)DERDecodeSeqNext(v23, &v20) != 0\n               || v20 != 0x16 );\n          v10 = sub_2480FCBE0(v6, v21, v22, 0x8000100, 0);\n          if ( v10 != 0 && (unsigned int)DERDecodeSeqNext(v23, &v20) == 0 )\n            break;\nLABEL_35:\n          SafeRelease(v10);\n        }\n        if ( v20 == 1 )\n        {\n          LOBYTE(v19) = 0;\n          if ( (unsigned int)DERParseBoolean(&v21, &v19) != 0 )\n          {\nLABEL_39:\n            result = 0x17;\n            goto LABEL_36;\n          }\n          if ( (_BYTE)v19 != 0 )\n            v13 = v7;\n          else\n            v13 = v8;\n          if ( v13 == 0 )\n            goto LABEL_33;\n        }\n        else\n        {\n          if ( v20 != 2 )\n          {\n            if ( v20 == 4 )\n            {\n              v11 = sub_2480FC750(v6, v21, v22);\n            }\n            else\n            {\n              if ( v20 != 0x16 )\n                goto LABEL_35;\n              v11 = sub_2480FCBE0(v6, v21, v22, 0x8000100, 0);\n            }\n            v14 = v11;\n            if ( v11 != 0 )\n              sub_248100200(*a2, v10, v11);\n            v15 = v14;\n            goto LABEL_34;\n          }\n          v19 = 0;\n          if ( (unsigned int)DERParseInteger64(&v21, &v19) != 0 )\n            goto LABEL_39;\n          v12 = sub_2480FCBA0(v6, 4, &v19);\n          if ( v12 == 0 )\n          {\nLABEL_33:\n            v15 = 0;\nLABEL_34:\n            SafeRelease(v15);\n            goto LABEL_35;\n          }\n          v13 = v12;\n        }\n        sub_248100200(*a2, v10, v13);\n        goto LABEL_33;\n      }\n      sub_2480FFE20(3, \"AMAuthInstallApImg4DecodeRestoreInfo\", \"can't parse top-level restoreinfo sequence\");\n    }\n    result = 0x63;\n  }\n  else\n  {\n    result = 1;\n  }\nLABEL_36:\n  if ( *MEMORY[0x268186AA8] != v31 )\n  {\n    v17 = sub_2480E56B0(result);\n    return AMAuthInstallApImg4EncodeRestoreDict(v17, v18);\n  }\n  return result;\n}\n"
+    }
+  ],
+  "database_target": "4cb2b5384360",
+  "requested": [
+    "_AMAuthInstallApImg4GetTypeForEntryName",
+    "_AMAuthInstallApImg4ReCreatePayloadWithProperties",
+    "_AMAuthInstallCryptoCreateDigestForDataType",
+    "_AMAuthInstallApImg4EncodeRestoreInfo",
+    "_AMAuthInstallApImg4DecodeRestoreInfo"
+  ]
+}

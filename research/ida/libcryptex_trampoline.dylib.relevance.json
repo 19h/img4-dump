@@ -1,0 +1,7 @@
+{
+  "binary": "libcryptex_trampoline.dylib",
+  "sha256": "c85438b1089104a9fd3d09c1fd8aa68122e2feef50d81caf1e93dbfeca3b5005",
+  "criteria": "img4|im4[pmrc]|image4|(?:^|_)DER|asn1|manifest|kbag|payload|payp|nonce|lzss|lzfse|compress|personaliz|ticket|digest|fourcc|fingerprint|trustcache",
+  "caller_depth": 2,
+  "selected": []
+}

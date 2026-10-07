@@ -1,0 +1,803 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "address": "0x2cb7d8824",
+      "end_address": "0x2cb7d8a84",
+      "input": "_cryptex_attach_personalized_manifest",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "_DWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v22",
+          "type": "unsigned int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v24",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v25",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v26",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v27",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v28",
+          "type": "__int64"
+        }
+      ],
+      "name": "_cryptex_attach_personalized_manifest",
+      "prototype": "__int64 __fastcall cryptex_attach_personalized_manifest(_QWORD *a1, __int64 a2)",
+      "pseudocode": "__int64 __fastcall cryptex_attach_personalized_manifest(_QWORD *a1, __int64 a2)\n{\n  __int64 v4; // x0\n  const char *v5; // x22\n  int v6; // w21\n  __int64 v7; // x19\n  __int64 v8; // x0\n  _DWORD *v10; // x0\n  __int64 v11; // x19\n  const char *v13; // x22\n  __int64 v14; // x20\n  __int64 v15; // x0\n  const char *v17; // x22\n  __int64 v18; // x19\n  __int64 v19; // x0\n  __int64 v21; // x0\n  unsigned int v22; // [xsp+4h] [xbp-8Ch] BYREF\n  __int64 v23; // [xsp+8h] [xbp-88h] BYREF\n  int v24; // [xsp+10h] [xbp-80h] BYREF\n  __int64 v28; // [xsp+68h] [xbp-28h]\n\n  v28 = *MEMORY[0x2D80A64A8];\n  v22 = 0xFFFFFFFF;\n  v4 = sub_2D0081980(a1[6], MEMORY[0x2D80A3070]);\n  if ( v4 != 0 )\n  {\n    v5 = (const char *)a1[2];\n    v6 = *(_DWORD *)sub_2D0058F40(v4);\n    v7 = a1[4];\n    v8 = sub_2D005A620(v7, 0x10);\n    if ( (_DWORD)v8 != 0 )\n    {\n      if ( v5 != nullptr )\n      v24 = 0x8220202;\n      v8 = sub_2D005A5B0(\n             qword_2CB7BC000,\n             v7,\n             0x10,\n             \"%{public}s: This cryptex is already personalized.: %{darwin.errno}d\",\n             &v24,\n             0x12);\n    }\n    v10 = (_DWORD *)sub_2D0058F40(v8);\n    v11 = 0x11;\n  }\n  else\n  {\n    v22 = sub_2D0059240(a2);\n    if ( (v22 & 0x80000000) != 0 )\n    {\n      v11 = *(unsigned int *)((__int64 (*)(void))sub_2D0058F40)();\n      v13 = (const char *)a1[2];\n      v6 = *(_DWORD *)((__int64 (*)(void))sub_2D0058F40)();\n      v14 = a1[4];\n      v15 = sub_2D005A620(v14, 0x10);\n      if ( (_DWORD)v15 != 0 )\n      {\n        if ( v13 != nullptr )\n        v24 = 0x8220202;\n        v15 = sub_2D005A5B0(\n                qword_2CB7BC000,\n                v14,\n                0x10,\n                \"%{public}s: Failed to dup manifest fd.: %{darwin.errno}d\",\n                &v24,\n                0x12);\n      }\n      v10 = (_DWORD *)sub_2D0058F40(v15);\n    }\n    else\n    {\n      v23 = sub_2D00818F0(MEMORY[0x2D80A3070], &v22);\n      if ( v23 != 0 )\n      {\n        sub_2D0081A60(a1[6], &v23);\n        v11 = 0;\n        goto LABEL_8;\n      }\n      v17 = (const char *)a1[2];\n      v6 = *(_DWORD *)sub_2D0058F40(0);\n      v18 = a1[4];\n      v19 = sub_2D005A620(v18, 0x10);\n      if ( (_DWORD)v19 != 0 )\n      {\n        if ( v17 != nullptr )\n        v24 = 0x8220202;\n        v19 = sub_2D005A5B0(\n                qword_2CB7BC000,\n                v18,\n                0x10,\n                \"%{public}s: Failed to create new asset.: %{darwin.errno}d\",\n                &v24,\n                0x12);\n      }\n      v10 = (_DWORD *)sub_2D0058F40(v19);\n      v11 = 0xC;\n    }\n  }\n  *v10 = v6;\nLABEL_8:\n  if ( v22 != 0xFFFFFFFF && (unsigned int)sub_2D0058FF0() == 0xFFFFFFFF )\n    _cryptex_bundle_new_asset_from_object.cold.1(&v23, &v24);\n  if ( *MEMORY[0x2D80A64A8] == v28 )\n    return v11;\n  v21 = sub_2D0058F60();\n  return cryptex_copy_installed_cryptex(v21);\n}\n"
+    },
+    {
+      "address": "0x2cb7d7dcc",
+      "end_address": "0x2cb7d83f0",
+      "input": "_cryptex_fcopy_personalized_manifest2",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "_QWORD *"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "int *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v11",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "int *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v30",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v31",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v32",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v33",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v34",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v35",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v36",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "Error",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v38",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v39",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v40",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v41",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v42",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v43",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v44",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v45",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v46",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v47",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v48",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v49",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v50",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v51",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v52",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v54",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v55",
+          "type": "_BYTE[8]"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v56",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v57",
+          "type": "const char *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v58",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v59",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v60",
+          "type": "__int64"
+        }
+      ],
+      "name": "_cryptex_fcopy_personalized_manifest2",
+      "prototype": "__int64 __fastcall cryptex_fcopy_personalized_manifest2(_QWORD *a1, __int64 a2)",
+      "pseudocode": "__int64 __fastcall cryptex_fcopy_personalized_manifest2(_QWORD *a1, __int64 a2)\n{\n  __int64 v4; // x0\n  __int64 v5; // x22\n  __int64 v6; // x0\n  __int64 v7; // x19\n  __int64 v8; // x0\n  int *v9; // x0\n  __int64 v10; // x20\n  __int64 v11; // x22\n  __int64 v12; // x0\n  __int64 v13; // x23\n  const char *v14; // x21\n  int v15; // w8\n  __int64 v16; // x0\n  __int64 v17; // x19\n  __int64 v18; // x0\n  const char *v19; // x9\n  __int64 v20; // x0\n  int *v21; // x0\n  __int64 v22; // x20\n  __int64 v23; // x22\n  __int64 v24; // x0\n  __int64 v25; // x23\n  const char *v26; // x21\n  int v27; // w8\n  __int64 v28; // x0\n  __int64 v29; // x20\n  __int64 v30; // x0\n  const char *v31; // x8\n  __int64 v32; // x0\n  const char *v33; // x8\n  __int64 v34; // x19\n  __int64 v35; // x0\n  const char *v36; // x1\n  __int64 Error; // x20\n  __int64 v38; // x0\n  const char *v39; // x21\n  int v40; // w8\n  __int64 v41; // x21\n  __int64 v42; // x0\n  const char *v43; // x1\n  const char *v44; // x21\n  int v45; // w8\n  __int64 v46; // x21\n  __int64 v47; // x0\n  const char *v48; // x1\n  __int64 v49; // x2\n  __int64 v50; // x4\n  const char *v51; // x8\n  __int64 v52; // x0\n  __int64 v54; // x0\n  _BYTE v55[8]; // [xsp+18h] [xbp-98h] BYREF\n  int v56; // [xsp+20h] [xbp-90h] BYREF\n  __int64 v60; // [xsp+78h] [xbp-38h]\n\n  v60 = *MEMORY[0x2D80A64A8];\n  v4 = sub_2D0081980(a1[6], MEMORY[0x2D80A3070]);\n  if ( v4 != 0 )\n  {\n    v5 = v4;\n    v6 = sub_2D0059240(a2);\n    v7 = v6;\n    if ( (v6 & 0x80000000) == 0 )\n    {\n      if ( (*(_DWORD *)(v5 + 0x10) & 0x80000000) != 0 )\n      {\n        v29 = a1[4];\n        if ( v29 != 0 )\n        {\n          if ( (unsigned int)sub_2D005A620(a1[4], 0x10) != 0 )\n            v30 = 3;\n          else\n            v30 = 2;\n          v31 = (const char *)a1[2];\n          if ( v31 == nullptr )\n            v31 = \"[anonymous]\";\n          v56 = 0x8220202;\n          v32 = sub_2D007E7E0(\n                  v30,\n                  0,\n                  0,\n                  0,\n                  qword_2CB7BC000,\n                  v29,\n                  0x10,\n                  \"%{public}s: Invalid im4m fd. %{darwin.errno}d\",\n                  &v56,\n                  0x12);\n        }\n        else\n        {\n          v51 = (const char *)a1[2];\n          if ( v51 == nullptr )\n            v51 = \"[anonymous]\";\n          v56 = 0x8220202;\n          v32 = sub_2D007E7E0(\n                  2,\n                  0,\n                  0,\n                  0,\n                  qword_2CB7BC000,\n                  MEMORY[0x2D80A6B18],\n                  0x10,\n                  \"%{public}s: Invalid im4m fd. %{darwin.errno}d\",\n                  &v56,\n                  0x12);\n        }\n        v46 = v32;\n        v52 = sub_2D0069120(\n                \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs\"\n                \"/TemporaryDirectory.ZfEZH4/Sources/libcryptex/src/cryptex.c\",\n                0x2F);\n        if ( v52 != 0 )\n          v48 = (const char *)(v52 + 1);\n        else\n          v48 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs\"\n                \"/TemporaryDirectory.ZfEZH4/Sources/libcryptex/src/cryptex.c\";\n        v49 = 0x516;\n        v50 = 9;\n      }\n      else\n      {\n        v8 = sub_2D0081D00();\n        if ( (_DWORD)v8 == 0 )\n        {\n          Error = 0;\n          goto LABEL_68;\n        }\n        v9 = (int *)sub_2D0058F40(v8);\n        v10 = *v9;\n        v11 = a1[4];\n        if ( v11 != 0 )\n        {\n          v12 = sub_2D005A620(a1[4], 0x10);\n          if ( (_DWORD)v12 != 0 )\n            v13 = 3;\n          else\n            v13 = 2;\n          if ( a1[2] != 0 )\n            v14 = (const char *)a1[2];\n          else\n          v15 = *(_DWORD *)sub_2D0058F40(v12);\n          v56 = 0x8220202;\n          v16 = sub_2D007E7E0(\n                  v13,\n                  0,\n                  0,\n                  0,\n                  qword_2CB7BC000,\n                  v11,\n                  0x10,\n                  \"%{public}s: fcopyfile failed. %{darwin.errno}d\",\n                  &v56,\n                  0x12);\n        }\n        else\n        {\n          if ( a1[2] != 0 )\n            v44 = (const char *)a1[2];\n          else\n          v45 = *(_DWORD *)sub_2D0058F40(v9);\n          v56 = 0x8220202;\n          v16 = sub_2D007E7E0(\n                  2,\n                  0,\n                  0,\n                  0,\n                  qword_2CB7BC000,\n                  MEMORY[0x2D80A6B18],\n                  0x10,\n                  \"%{public}s: fcopyfile failed. %{darwin.errno}d\",\n                  &v56,\n                  0x12);\n        }\n        v46 = v16;\n        v47 = sub_2D0069120(\n                \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs\"\n                \"/TemporaryDirectory.ZfEZH4/Sources/libcryptex/src/cryptex.c\",\n                0x2F);\n        if ( v47 != 0 )\n          v48 = (const char *)(v47 + 1);\n        else\n          v48 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs\"\n                \"/TemporaryDirectory.ZfEZH4/Sources/libcryptex/src/cryptex.c\";\n        v49 = 0x51C;\n        v50 = v10;\n      }\n      Error = createError(\n                \"cryptex_fcopy_personalized_manifest2\",\n                v48,\n                v49,\n                \"com.apple.security.cryptex.posix\",\n                v50,\n                0,\n                v46);\n      sub_2D00592B0(v46);\nLABEL_68:\n      v38 = sub_2D0058FF0(v7);\n      if ( (_DWORD)v38 == 0xFFFFFFFF )\n        _cryptex_bundle_new_asset_from_object.cold.1(v55, &v56);\n      goto LABEL_69;\n    }\n    v21 = (int *)sub_2D0058F40(v6);\n    v22 = *v21;\n    v23 = a1[4];\n    if ( v23 != 0 )\n    {\n      v24 = sub_2D005A620(a1[4], 0x10);\n      if ( (_DWORD)v24 != 0 )\n        v25 = 3;\n      else\n        v25 = 2;\n      if ( a1[2] != 0 )\n        v26 = (const char *)a1[2];\n      else\n      v27 = *(_DWORD *)sub_2D0058F40(v24);\n      v56 = 0x8220202;\n      v28 = sub_2D007E7E0(\n              v25,\n              0,\n              0,\n              0,\n              qword_2CB7BC000,\n              v23,\n              0x10,\n              \"%{public}s: Failed to dup destination fd. %{darwin.errno}d\",\n              &v56,\n              0x12);\n    }\n    else\n    {\n      if ( a1[2] != 0 )\n        v39 = (const char *)a1[2];\n      else\n      v40 = *(_DWORD *)sub_2D0058F40(v21);\n      v56 = 0x8220202;\n      v28 = sub_2D007E7E0(\n              2,\n              0,\n              0,\n              0,\n              qword_2CB7BC000,\n              MEMORY[0x2D80A6B18],\n              0x10,\n              \"%{public}s: Failed to dup destination fd. %{darwin.errno}d\",\n              &v56,\n              0x12);\n    }\n    v41 = v28;\n    v42 = sub_2D0069120(\n            \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/src/cryptex.c\",\n            0x2F);\n    if ( v42 != 0 )\n      v43 = (const char *)(v42 + 1);\n    else\n      v43 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/src/cryptex.c\";\n    Error = createError(\n              \"cryptex_fcopy_personalized_manifest2\",\n              v43,\n              0x510,\n              \"com.apple.security.cryptex.posix\",\n              v22,\n              0,\n              v41);\n    v38 = sub_2D00592B0(v41);\n    if ( (_DWORD)v7 != 0xFFFFFFFF )\n      goto LABEL_68;\n  }\n  else\n  {\n    v17 = a1[4];\n    if ( v17 != 0 )\n    {\n      if ( (unsigned int)sub_2D005A620(a1[4], 0x10) != 0 )\n        v18 = 3;\n      else\n        v18 = 2;\n      v19 = (const char *)a1[2];\n      if ( v19 == nullptr )\n        v19 = \"[anonymous]\";\n      v56 = 0x8220202;\n      v20 = sub_2D007E7E0(\n              v18,\n              0,\n              0,\n              0,\n              qword_2CB7BC000,\n              v17,\n              0x10,\n              \"%{public}s: Cryptex does not have a personalization manifest. %{darwin.errno}d\",\n              &v56,\n              0x12);\n    }\n    else\n    {\n      v33 = (const char *)a1[2];\n      if ( v33 == nullptr )\n        v33 = \"[anonymous]\";\n      v56 = 0x8220202;\n      v20 = sub_2D007E7E0(\n              2,\n              0,\n              0,\n              0,\n              qword_2CB7BC000,\n              MEMORY[0x2D80A6B18],\n              0x10,\n              \"%{public}s: Cryptex does not have a personalization manifest. %{darwin.errno}d\",\n              &v56,\n              0x12);\n    }\n    v34 = v20;\n    v35 = sub_2D0069120(\n            \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/src/cryptex.c\",\n            0x2F);\n    if ( v35 != 0 )\n      v36 = (const char *)(v35 + 1);\n    else\n      v36 = \"/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/Tem\"\n            \"poraryDirectory.ZfEZH4/Sources/libcryptex/src/cryptex.c\";\n    Error = createError(\n              \"cryptex_fcopy_personalized_manifest2\",\n              v36,\n              0x509,\n              \"com.apple.security.cryptex.posix\",\n              2,\n              0,\n              v34);\n    v38 = sub_2D00592B0(v34);\n  }\nLABEL_69:\n  if ( *MEMORY[0x2D80A64A8] == v60 )\n    return Error;\n  v54 = sub_2D0058F60(v38);\n  return cryptex_fcopy_info_plist(v54);\n}\n"
+    },
+    {
+      "address": "0x2cb7e2be0",
+      "end_address": "0x2cb7e320c",
+      "input": "__img4_chip_instance_from_remote_device_properties",
+      "local_variables": [
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a1",
+          "type": "__int64"
+        },
+        {
+          "is_arg": true,
+          "is_stk_var": false,
+          "name": "a2",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v4",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v5",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v6",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v7",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v8",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v9",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v10",
+          "type": "_DWORD *"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "result",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v12",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v13",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v14",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v15",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v16",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v17",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v18",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v19",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v20",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v21",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v22",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v23",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v24",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v25",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v26",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v27",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v28",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v29",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v30",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v31",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": false,
+          "name": "v32",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v33",
+          "type": "int"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v34",
+          "type": "__int64"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v35",
+          "type": "__int16"
+        },
+        {
+          "is_arg": false,
+          "is_stk_var": true,
+          "name": "v36",
+          "type": "int"
+        }
+      ],
+      "name": "__img4_chip_instance_from_remote_device_properties",
+      "prototype": "__int64 __fastcall _img4_chip_instance_from_remote_device_properties(__int64 a1, __int64 a2)",
+      "pseudocode": "__int64 __fastcall _img4_chip_instance_from_remote_device_properties(__int64 a1, __int64 a2)\n{\n  __int64 v4; // x0\n  __int64 v5; // x21\n  __int64 v6; // x0\n  int v7; // w20\n  __int64 v8; // x19\n  __int64 v9; // x0\n  _DWORD *v10; // x8\n  __int64 result; // x0\n  int v12; // w22\n  __int64 v13; // x21\n  __int64 v14; // x0\n  __int64 v15; // x8\n  __int64 v16; // x0\n  __int64 v17; // x0\n  __int64 v18; // x0\n  __int64 v19; // x0\n  __int64 v20; // x0\n  __int64 v21; // x0\n  __int64 v22; // x0\n  __int64 v23; // x0\n  __int64 v24; // x19\n  __int64 v25; // x0\n  __int64 v26; // x19\n  __int64 v27; // x19\n  __int64 v28; // x19\n  __int64 v29; // x19\n  __int64 v30; // x19\n  __int64 v31; // x19\n  __int64 v32; // x19\n  int v33; // [xsp+0h] [xbp-40h] BYREF\n  __int64 v34; // [xsp+4h] [xbp-3Ch]\n\n  v4 = sub_2D007BD80(a1, \"Image4CryptoHashMethod\");\n  if ( v4 != 0 )\n  {\n    v5 = v4;\n    if ( (unsigned int)sub_2D0059AF0() == 0 )\n    {\n      v15 = MEMORY[0x2D80A32C8];\n      goto LABEL_16;\n    }\n    v6 = sub_2D0059AF0();\n    if ( (_DWORD)v6 != 0 )\n    {\n      v7 = *(_DWORD *)sub_2D0058F40(v6);\n      if ( _img4_log.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n        _img4_chip_instance_from_remote_device_properties.cold.1();\n      v8 = _img4_log.osl;\n      v9 = sub_2D005A620(_img4_log.osl, 0x10);\n      if ( (_DWORD)v9 != 0 )\n      {\n        v33 = 0x8200202;\n        v34 = v5;\n        v9 = sub_2D005A5B0(qword_2CB7BC000, v8, 0x10, \"invalid crypto hash method: %s: %{darwin.errno}d\", &v33, 0x12);\n      }\n      v10 = (_DWORD *)sub_2D0058F40(v9);\n      result = 0x16;\n      goto LABEL_58;\n    }\n  }\n  else\n  {\n    v12 = *(_DWORD *)sub_2D0058F40(0);\n    if ( _img4_log.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n      _img4_chip_instance_from_remote_device_properties.cold.1();\n    v13 = _img4_log.osl;\n    v14 = sub_2D005A620(_img4_log.osl, 1);\n    if ( (_DWORD)v14 != 0 )\n    {\n      LOWORD(v33) = 0;\n      v14 = sub_2D005A5B0(\n              qword_2CB7BC000,\n              v13,\n              1,\n              \"no image4 hash method advertised, falling back to use sha2-384 by default\",\n              &v33,\n              2);\n    }\n    *(_DWORD *)sub_2D0058F40(v14) = v12;\n  }\n  v15 = MEMORY[0x2D80A32D0];\nLABEL_16:\n  *(_QWORD *)(a2 + 8) = v15;\n  v16 = _xpc_dictionary_key_with_type_exists(a1, \"BoardId\", MEMORY[0x2D80A6CA0]);\n  if ( (_DWORD)v16 != 0 )\n  {\n    *(_DWORD *)(a2 + 0x1C) = sub_2D007BD90(a1, \"BoardId\");\n    v17 = _xpc_dictionary_key_with_type_exists(a1, \"ChipID\", MEMORY[0x2D80A6CA0]);\n    if ( (v17 & 1) != 0 )\n    {\n      *(_DWORD *)(a2 + 0x20) = sub_2D007BD90(a1, \"ChipID\");\n      v18 = _xpc_dictionary_key_with_type_exists(a1, \"SecurityDomain\", MEMORY[0x2D80A6CA0]);\n      if ( (v18 & 1) != 0 )\n      {\n        *(_DWORD *)(a2 + 0x24) = sub_2D007BD90(a1, \"SecurityDomain\");\n        v19 = _xpc_dictionary_key_with_type_exists(a1, \"UniqueChipID\", MEMORY[0x2D80A6CA0]);\n        if ( (v19 & 1) != 0 )\n        {\n          *(_QWORD *)(a2 + 0x28) = sub_2D007BD90(a1, \"UniqueChipID\");\n          v20 = _xpc_dictionary_key_with_type_exists(a1, \"CertificateProductionStatus\", MEMORY[0x2D80A6C40]);\n          if ( (v20 & 1) != 0 )\n          {\n            *(_BYTE *)(a2 + 0x30) = sub_2D00814C0(a1, \"CertificateProductionStatus\");\n            v21 = _xpc_dictionary_key_with_type_exists(a1, \"CertificateSecurityMode\", MEMORY[0x2D80A6C40]);\n            if ( (v21 & 1) != 0 )\n            {\n              *(_BYTE *)(a2 + 0x31) = sub_2D00814C0(a1, \"CertificateSecurityMode\");\n              v22 = _xpc_dictionary_key_with_type_exists(a1, \"EffectiveProductionStatusAp\", MEMORY[0x2D80A6C40]);\n              if ( (v22 & 1) != 0 )\n              {\n                *(_BYTE *)(a2 + 0x32) = sub_2D00814C0(a1, \"EffectiveProductionStatusAp\");\n                v23 = _xpc_dictionary_key_with_type_exists(a1, \"EffectiveSecurityModeAp\", MEMORY[0x2D80A6C40]);\n                if ( (v23 & 1) != 0 )\n                {\n                  *(_BYTE *)(a2 + 0x33) = sub_2D00814C0(a1, \"EffectiveSecurityModeAp\");\n                  *(_DWORD *)(a2 + 0x18) = 1;\n                  return 0;\n                }\n                v7 = *(_DWORD *)sub_2D0058F40(v23);\n                if ( _img4_log.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n                  _img4_chip_instance_from_remote_device_properties.cold.3();\n                v32 = _img4_log.osl;\n                v25 = sub_2D005A620(_img4_log.osl, 0x10);\n                if ( (_DWORD)v25 != 0 )\n                {\n                  v33 = 0x4000100;\n                  LODWORD(v34) = 2;\n                  v25 = sub_2D005A5B0(\n                          qword_2CB7BC000,\n                          v32,\n                          0x10,\n                          \"effective security mode not found: %{darwin.errno}d\",\n                          &v33,\n                          8);\n                }\n              }\n              else\n              {\n                v7 = *(_DWORD *)sub_2D0058F40(v22);\n                if ( _img4_log.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n                  _img4_chip_instance_from_remote_device_properties.cold.3();\n                v31 = _img4_log.osl;\n                v25 = sub_2D005A620(_img4_log.osl, 0x10);\n                if ( (_DWORD)v25 != 0 )\n                {\n                  v33 = 0x4000100;\n                  LODWORD(v34) = 2;\n                  v25 = sub_2D005A5B0(\n                          qword_2CB7BC000,\n                          v31,\n                          0x10,\n                          \"effective production status not found: %{darwin.errno}d\",\n                          &v33,\n                          8);\n                }\n              }\n            }\n            else\n            {\n              v7 = *(_DWORD *)sub_2D0058F40(v21);\n              if ( _img4_log.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n                _img4_chip_instance_from_remote_device_properties.cold.3();\n              v30 = _img4_log.osl;\n              v25 = sub_2D005A620(_img4_log.osl, 0x10);\n              if ( (_DWORD)v25 != 0 )\n              {\n                v33 = 0x4000100;\n                LODWORD(v34) = 2;\n                v25 = sub_2D005A5B0(qword_2CB7BC000, v30, 0x10, \"security mode not found: %{darwin.errno}d\", &v33, 8);\n              }\n            }\n          }\n          else\n          {\n            v7 = *(_DWORD *)sub_2D0058F40(v20);\n            if ( _img4_log.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n              _img4_chip_instance_from_remote_device_properties.cold.3();\n            v29 = _img4_log.osl;\n            v25 = sub_2D005A620(_img4_log.osl, 0x10);\n            if ( (_DWORD)v25 != 0 )\n            {\n              v33 = 0x4000100;\n              LODWORD(v34) = 2;\n              v25 = sub_2D005A5B0(qword_2CB7BC000, v29, 0x10, \"production status not found: %{darwin.errno}d\", &v33, 8);\n            }\n          }\n        }\n        else\n        {\n          v7 = *(_DWORD *)sub_2D0058F40(v19);\n          if ( _img4_log.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n            _img4_chip_instance_from_remote_device_properties.cold.3();\n          v28 = _img4_log.osl;\n          v25 = sub_2D005A620(_img4_log.osl, 0x10);\n          if ( (_DWORD)v25 != 0 )\n          {\n            v33 = 0x4000100;\n            LODWORD(v34) = 2;\n            v25 = sub_2D005A5B0(qword_2CB7BC000, v28, 0x10, \"ecid not found: %{darwin.errno}d\", &v33, 8);\n          }\n        }\n      }\n      else\n      {\n        v7 = *(_DWORD *)sub_2D0058F40(v18);\n        if ( _img4_log.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n          _img4_chip_instance_from_remote_device_properties.cold.3();\n        v27 = _img4_log.osl;\n        v25 = sub_2D005A620(_img4_log.osl, 0x10);\n        if ( (_DWORD)v25 != 0 )\n        {\n          v33 = 0x4000100;\n          LODWORD(v34) = 2;\n          v25 = sub_2D005A5B0(qword_2CB7BC000, v27, 0x10, \"security domain not found: %{darwin.errno}d\", &v33, 8);\n        }\n      }\n    }\n    else\n    {\n      v7 = *(_DWORD *)sub_2D0058F40(v17);\n      if ( _img4_log.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n        _img4_chip_instance_from_remote_device_properties.cold.3();\n      v26 = _img4_log.osl;\n      v25 = sub_2D005A620(_img4_log.osl, 0x10);\n      if ( (_DWORD)v25 != 0 )\n      {\n        v33 = 0x4000100;\n        LODWORD(v34) = 2;\n        v25 = sub_2D005A5B0(qword_2CB7BC000, v26, 0x10, \"chip id not found: %{darwin.errno}d\", &v33, 8);\n      }\n    }\n  }\n  else\n  {\n    v7 = *(_DWORD *)sub_2D0058F40(v16);\n    if ( _img4_log.onceToken != 0xFFFFFFFFFFFFFFFFLL )\n      _img4_chip_instance_from_remote_device_properties.cold.3();\n    v24 = _img4_log.osl;\n    v25 = sub_2D005A620(_img4_log.osl, 0x10);\n    if ( (_DWORD)v25 != 0 )\n    {\n      v33 = 0x4000100;\n      LODWORD(v34) = 2;\n      v25 = sub_2D005A5B0(qword_2CB7BC000, v24, 0x10, \"board id not found: %{darwin.errno}d\", &v33, 8);\n    }\n  }\n  v10 = (_DWORD *)sub_2D0058F40(v25);\n  result = 2;\nLABEL_58:\n  *v10 = v7;\n  return result;\n}\n"
+    }
+  ],
+  "database_target": "c7bcdb863eb7",
+  "requested": [
+    "_cryptex_attach_personalized_manifest",
+    "_cryptex_fcopy_personalized_manifest2",
+    "__img4_chip_instance_from_remote_device_properties"
+  ]
+}

@@ -1,0 +1,4207 @@
+{
+  "file": "/private/tmp/img4/AppleMobileFileIntegrity.merged",
+  "sha256": "f9bbe64ac18009c4a99be8e96865898b39ce5088183526f25d9dcccb9080084e",
+  "primary": {
+    "name": "__TEXT",
+    "start": 9035792384,
+    "end": 9035877348,
+    "sections": [
+      {
+        "name": "__text",
+        "start": 9035796536,
+        "end": 9035860480,
+        "offset": 36920
+      },
+      {
+        "name": "__objc_methlist",
+        "start": 9035860480,
+        "end": 9035862004,
+        "offset": 100864
+      },
+      {
+        "name": "__const",
+        "start": 9035862016,
+        "end": 9035862560,
+        "offset": 102400
+      },
+      {
+        "name": "__cstring",
+        "start": 9035862560,
+        "end": 9035870468,
+        "offset": 102944
+      },
+      {
+        "name": "__oslogstring",
+        "start": 9035870468,
+        "end": 9035875749,
+        "offset": 110852
+      },
+      {
+        "name": "__gcc_except_tab",
+        "start": 9035875752,
+        "end": 9035876284,
+        "offset": 116136
+      },
+      {
+        "name": "__unwind_info",
+        "start": 9035876284,
+        "end": 9035877348,
+        "offset": 116668
+      },
+      {
+        "name": "__objc_stubs",
+        "start": 9035877348,
+        "end": 9035877348,
+        "offset": 0
+      },
+      {
+        "name": "__auth_stubs",
+        "start": 9035877348,
+        "end": 9035877348,
+        "offset": 0
+      },
+      {
+        "name": "__objc_classname",
+        "start": 9035877348,
+        "end": 9035877348,
+        "offset": 0
+      },
+      {
+        "name": "__objc_methname",
+        "start": 9035877348,
+        "end": 9035877348,
+        "offset": 0
+      },
+      {
+        "name": "__objc_methtype",
+        "start": 9035877348,
+        "end": 9035877348,
+        "offset": 0
+      }
+    ]
+  },
+  "function_count": 398,
+  "functions": [
+    {
+      "ea": "0x21a935038",
+      "name": "+[AMFIRequirementsManager sharedManager]",
+      "size": 160,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9350d8",
+      "name": "___40+[AMFIRequirementsManager sharedManager]_block_invoke",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a935114",
+      "name": "-[AMFIRequirementsManager init]",
+      "size": 756,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a935408",
+      "name": "-[AMFIRequirementsManager dealloc]",
+      "size": 180,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9354bc",
+      "name": "-[AMFIRequirementsManager preferenceQueue]",
+      "size": 8,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a9354c4",
+      "name": "-[AMFIRequirementsManager resetRestrictedRequirement]",
+      "size": 148,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a935558",
+      "name": "-[AMFIRequirementsManager restrictedRequirement]",
+      "size": 196,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93561c",
+      "name": "___48-[AMFIRequirementsManager restrictedRequirement]_block_invoke",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a935630",
+      "name": "___copy_helper_block_e8_32s40r",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a935678",
+      "name": "___destroy_helper_block_e8_32s40r",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9356b8",
+      "name": "-[AMFIRequirementsManager checkCodeRequirementsPreferenceUnsynchronized]",
+      "size": 248,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a9357b0",
+      "name": "-[AMFIRequirementsManager checkCodeRequirementsPreference]",
+      "size": 132,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a935834",
+      "name": "___58-[AMFIRequirementsManager checkCodeRequirementsPreference]_block_invoke",
+      "size": 8,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93583c",
+      "name": "___copy_helper_block_e8_32s",
+      "size": 8,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a935844",
+      "name": "___destroy_helper_block_e8_32s",
+      "size": 8,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93584c",
+      "name": "-[AMFIRequirementsManager developerRequirement]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a935854",
+      "name": "-[AMFIRequirementsManager basicRequirement]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93585c",
+      "name": "-[AMFIRequirementsManager dyldSimRequirement]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a935864",
+      "name": "-[AMFIRequirementsManager appleRequirement]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93586c",
+      "name": "-[AMFIRequirementsManager legacyDebuggerRequirement]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a935874",
+      "name": "-[AMFIRequirementsManager qaMacAppStoreRequirement]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93587c",
+      "name": "-[AMFIRequirementsManager allowUnsafeDynamicLinking]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a935884",
+      "name": "-[AMFIRequirementsManager isRunningInternalBuild]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93588c",
+      "name": "-[AMFIRequirementsManager .cxx_destruct]",
+      "size": 12,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a935898",
+      "name": "_OUTLINED_FUNCTION_0",
+      "size": 20,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a9358ac",
+      "name": "_OUTLINED_FUNCTION_1",
+      "size": 28,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a9358c8",
+      "name": "_AMFIExecutionPreflight",
+      "size": 2472,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a936270",
+      "name": "_validateOptions",
+      "size": 1152,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9366f0",
+      "name": "_OUTLINED_FUNCTION_0_0",
+      "size": 32,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a936710",
+      "name": "_OUTLINED_FUNCTION_1_0",
+      "size": 16,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a936720",
+      "name": "_OUTLINED_FUNCTION_2",
+      "size": 16,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a936730",
+      "name": "_OUTLINED_FUNCTION_3",
+      "size": 20,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a936744",
+      "name": "-[AMFIPathValidator_macos dealloc]",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a936798",
+      "name": "-[AMFIPathValidator_macos initWithURL:]",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a936800",
+      "name": "_createWithURL",
+      "size": 160,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9368a0",
+      "name": "-[AMFIPathValidator_macos initWithURL:withFlags:]",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93690c",
+      "name": "-[AMFIPathValidator_macos initWithURL:withFileOffset:]",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a936978",
+      "name": "_createWithUrlAndOffset",
+      "size": 308,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a936aac",
+      "name": "-[AMFIPathValidator_macos initWithURL:withFileOffset:withFlags:]",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a936b1c",
+      "name": "-[AMFIPathValidator_macos initWithURL:withFileOffset:withFlags:hasRestrictedEntitlements:hasOnlySoftRestrictedEntitlements:]",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a936b9c",
+      "name": "-[AMFIPathValidator_macos initWithURL:withCpuType:withCpuSubType:]",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a936c0c",
+      "name": "_createWithUrlAndArchitecture",
+      "size": 360,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a936d74",
+      "name": "-[AMFIPathValidator_macos initWithURL:withCpuType:withCpuSubType:withFlags:]",
+      "size": 112,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a936de4",
+      "name": "-[AMFIPathValidator_macos initWithURL:withCpuType:withCpuSubType:withFlags:hasRestrictedEntitlements:hasOnlySoftRestrictedEntitlements:]",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a936e4c",
+      "name": "-[AMFIPathValidator_macos initWithCode:withFlags:hasRestrictedEntitlements:hasOnlySoftRestrictedEntitlements:]",
+      "size": 360,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a936fb4",
+      "name": "-[AMFIPathValidator_macos cdhashAsData]",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a937088",
+      "name": "-[AMFIPathValidator_macos mainExecutable]",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93715c",
+      "name": "-[AMFIPathValidator_macos signingIdentifier]",
+      "size": 388,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9372e0",
+      "name": "-[AMFIPathValidator_macos certChain]",
+      "size": 328,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a937428",
+      "name": "-[AMFIPathValidator_macos derCertChain]",
+      "size": 580,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93766c",
+      "name": "-[AMFIPathValidator_macos codePath]",
+      "size": 252,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a937768",
+      "name": "-[AMFIPathValidator_macos computedCdHash:withLength:]",
+      "size": 132,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9377ec",
+      "name": "-[AMFIPathValidator_macos splitEntitlementsIntoUnrestricted:andSoftRestricted:andRestricted:andApplicationIdentifier:]",
+      "size": 1304,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a937d04",
+      "name": "-[AMFIPathValidator_macos validateUsingMacOSProvisioningProfileWithRestrictedEntitlements:andSoftRestrictedEntitlements:andApplicationIdentifier:]",
+      "size": 1548,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a938310",
+      "name": "_configProfileValidate",
+      "size": 984,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9386e8",
+      "name": "_copyUnsatisfiedEntitlements",
+      "size": 248,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9387e0",
+      "name": "-[AMFIPathValidator_macos validateUsingMacOSProvisioningProfile]",
+      "size": 948,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a938b94",
+      "name": "-[AMFIPathValidator_macos macAppStoreQASigned]",
+      "size": 212,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a938c68",
+      "name": "-[AMFIPathValidator_macos validateWithError:]",
+      "size": 2544,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a939658",
+      "name": "-[AMFIPathValidator_macos sendMetrics]",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9396d0",
+      "name": "___38-[AMFIPathValidator_macos sendMetrics]_block_invoke",
+      "size": 780,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9399dc",
+      "name": "-[AMFIPathValidator_macos isSigned]",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a939a14",
+      "name": "-[AMFIPathValidator_macos isValid]",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a939a4c",
+      "name": "-[AMFIPathValidator_macos areEntitlementsValidated]",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a939a84",
+      "name": "-[AMFIPathValidator_macos isApple]",
+      "size": 240,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a939b74",
+      "name": "-[AMFIPathValidator_macos isDevelopment]",
+      "size": 240,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a939c64",
+      "name": "-[AMFIPathValidator_macos shouldUnrestrict]",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a939c9c",
+      "name": "-[AMFIPathValidator_macos allowsLegacyDebug]",
+      "size": 240,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a939d8c",
+      "name": "-[AMFIPathValidator_macos unsatisfiedEntitlements]",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a939dd4",
+      "name": "-[AMFIPathValidator_macos sdkVersion]",
+      "size": 220,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a939eb0",
+      "name": "-[AMFIPathValidator_macos teamIdentifier]",
+      "size": 132,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a939f34",
+      "name": "-[AMFIPathValidator_macos infoPlist]",
+      "size": 132,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a939fb8",
+      "name": "-[AMFIPathValidator_macos error]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a939fc0",
+      "name": "-[AMFIPathValidator_macos hasRestrictedEntitlements]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a939fc8",
+      "name": "-[AMFIPathValidator_macos hasOnlySoftRestrictedEntitlements]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a939fd0",
+      "name": "-[AMFIPathValidator_macos signerType]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a939fd8",
+      "name": "-[AMFIPathValidator_macos .cxx_destruct]",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93a058",
+      "name": "_OUTLINED_FUNCTION_1_1",
+      "size": 20,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a93a06c",
+      "name": "_OUTLINED_FUNCTION_2_0",
+      "size": 32,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a93a08c",
+      "name": "_OUTLINED_FUNCTION_4",
+      "size": 12,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a93a098",
+      "name": "_OUTLINED_FUNCTION_5",
+      "size": 28,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a93a0b4",
+      "name": "-[AMFIDeveloperModeSettingVisibilityManager settingsShouldBeVisible]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93a0bc",
+      "name": "-[AMFIDeveloperModeSettingVisibilityManager invalidate]",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93a0c0",
+      "name": "-[AMFIDeveloperModeSettingVisibilityManager startMonitoringVisibilityChangesOnQueue:withBlock:]",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93a0c4",
+      "name": "-[AMFIPathValidator_ios initWithURL:]",
+      "size": 12,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93a0d0",
+      "name": "-[AMFIPathValidator_ios initWithURL:withFlags:]",
+      "size": 12,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93a0dc",
+      "name": "-[AMFIPathValidator_ios initWithURL:withFileOffset:]",
+      "size": 8,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93a0e4",
+      "name": "-[AMFIPathValidator_ios initWithURL:withFileOffset:withFlags:]",
+      "size": 140,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93a170",
+      "name": "-[AMFIPathValidator_ios initWithURL:withFileOffsetAsNumber:withFlags:]",
+      "size": 232,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93a258",
+      "name": "-[AMFIPathValidator_ios computedCdHash:withLength:]",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93a2c4",
+      "name": "-[AMFIPathValidator_ios validateWithError:]",
+      "size": 1636,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93a928",
+      "name": "-[AMFIPathValidator_ios isValid]",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93a960",
+      "name": "-[AMFIPathValidator_ios areEntitlementsValidated]",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93a998",
+      "name": "-[AMFIPathValidator_ios isSignerType]",
+      "size": 56,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93a9d0",
+      "name": "-[AMFIPathValidator_ios profileData]",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93aa18",
+      "name": "-[AMFIPathValidator_ios profileAuxSig]",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93aa60",
+      "name": "-[AMFIPathValidator_ios profileID]",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93aaa8",
+      "name": "-[AMFIPathValidator_ios error]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93aab0",
+      "name": "-[AMFIPathValidator_ios signerType]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93aab8",
+      "name": "-[AMFIPathValidator_ios .cxx_destruct]",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93ab38",
+      "name": "_hexStringForData",
+      "size": 240,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93ac28",
+      "name": "_NSErrorToAMFIReturn",
+      "size": 268,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93ad34",
+      "name": "_matchIn",
+      "size": 136,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93adbc",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey",
+      "size": 1704,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93b464",
+      "name": "_OUTLINED_FUNCTION_1_2",
+      "size": 12,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a93b470",
+      "name": "_OUTLINED_FUNCTION_3_0",
+      "size": 32,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a93b490",
+      "name": "_errorStringForAMFIErrorCode",
+      "size": 40,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93b4b8",
+      "name": "_errorCodeForMISError",
+      "size": 140,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93b544",
+      "name": "_errorCodeForProfileManagerError",
+      "size": 168,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93b5ec",
+      "name": "-[AMFIError initWithAMFIErrorCode:withURL:]",
+      "size": 204,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93b6b8",
+      "name": "-[AMFIError initWithMISError:withURL:]",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93b718",
+      "name": "-[AMFIError initWithProfileManagerError:withURL:]",
+      "size": 320,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93b858",
+      "name": "+[ValidationMetrics dispatchMetrics:]",
+      "size": 252,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93b954",
+      "name": "sub_21A93B954",
+      "size": 4,
+      "flags": 5248
+    },
+    {
+      "ea": "0x21a93b958",
+      "name": "___37+[ValidationMetrics dispatchMetrics:]_block_invoke",
+      "size": 160,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93b9f8",
+      "name": "___37+[ValidationMetrics dispatchMetrics:]_block_invoke_2",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93ba34",
+      "name": "___copy_helper_block_e8_32b",
+      "size": 16,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93ba44",
+      "name": "+[ValidationMetrics sendSHA1CodeDirectoryMetricWithFilename:withSigningID:withCDHash:withTeamID:withBundleID:withVersion:withIsApple:withSigningYear:withExecutableFormat:withHasRestrictedEntitlements:]",
+      "size": 532,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93bc58",
+      "name": "___201+[ValidationMetrics sendSHA1CodeDirectoryMetricWithFilename:withSigningID:withCDHash:withTeamID:withBundleID:withVersion:withIsApple:withSigningYear:withExecutableFormat:withHasRestrictedEntitlements:]_block_invoke",
+      "size": 780,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93bf64",
+      "name": "___copy_helper_block_e8_32s40s48s56s64s72s80s88s",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93bfd0",
+      "name": "___destroy_helper_block_e8_32s40s48s56s64s72s80s88s",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c03c",
+      "name": "_AMFIShouldShowDeveloperModeSettings",
+      "size": 260,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c140",
+      "name": "sub_21A93C140",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93c158",
+      "name": "___AMFIShouldShowDeveloperModeSettings_block_invoke",
+      "size": 60,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93c194",
+      "name": "___copy_helper_block_e8_32r",
+      "size": 16,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93c1a4",
+      "name": "___destroy_helper_block_e8_32r",
+      "size": 12,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93c1b0",
+      "name": "_AMFIIsDeveloperModeEnabled",
+      "size": 4,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93c1b4",
+      "name": "+[AMFIFMKLog generic]",
+      "size": 56,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93c1ec",
+      "name": "sub_21A93C1EC",
+      "size": 12,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93c1f8",
+      "name": "___21+[AMFIFMKLog generic]_block_invoke",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c240",
+      "name": "_amfi_interface_cdhash_in_trustcache",
+      "size": 240,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c330",
+      "name": "_amfi_interface_query_bootarg_state",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c39c",
+      "name": "_amfi_interface_get_local_signing_private_key",
+      "size": 208,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c46c",
+      "name": "_amfi_interface_get_local_signing_public_key",
+      "size": 192,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c52c",
+      "name": "_amfi_interface_set_local_signing_public_key",
+      "size": 196,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c5f0",
+      "name": "_amfi_interface_authorize_local_signing",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93c5f8",
+      "name": "_amfi_interface_authorize_local_signing_with_length",
+      "size": 184,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c6b0",
+      "name": "_amfi_developer_mode_status",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c700",
+      "name": "_amfi_developer_mode_resolved",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c750",
+      "name": "_amfi_launch_constraint_set_spawnattr",
+      "size": 52,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93c784",
+      "name": "_amfi_launch_constraint_matches_process",
+      "size": 324,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c8c8",
+      "name": "_amfi_restricted_execution_mode_enable",
+      "size": 20,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93c8dc",
+      "name": "_amfi_restricted_execution_mode_status",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c90c",
+      "name": "_validateCodeSigningFlags",
+      "size": 116,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93c980",
+      "name": "_LWCRTypeVerificationBackend_errorStringForCode",
+      "size": 40,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93c9a8",
+      "name": "_LWCRTypeVerificationBackend_verifyRequirements",
+      "size": 36,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93c9cc",
+      "name": "_verifyAndOrDictionary",
+      "size": 384,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93cb4c",
+      "name": "_LWCRTypeVerificationBackend_verifyLWCR",
+      "size": 408,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93cce4",
+      "name": "___LWCRTypeVerificationBackend_verifyLWCR_block_invoke",
+      "size": 444,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93cea0",
+      "name": "___copy_helper_block_8_32r40r48r",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93cf00",
+      "name": "___destroy_helper_block_8_32r40r48r",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93cf50",
+      "name": "___verifyAndOrDictionary_block_invoke",
+      "size": 204,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93d01c",
+      "name": "_verifyFactLessOperator",
+      "size": 616,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93d284",
+      "name": "_verifyFactName",
+      "size": 768,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93d584",
+      "name": "___copy_helper_block_8_32r40r",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93d5d4",
+      "name": "___destroy_helper_block_8_32r40r",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93d618",
+      "name": "_keyIsKnownBooleanOperator",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93d684",
+      "name": "_verifyOptionalDictionary",
+      "size": 548,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93d8a8",
+      "name": "_keyIsKnownOperatorArrayOperator",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93d914",
+      "name": "_keyIsKnownForCategory",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93d958",
+      "name": "_keyIsKnownFactlessDictOperator",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93d9a0",
+      "name": "___verifyOptionalDictionary_block_invoke",
+      "size": 236,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93da8c",
+      "name": "_keyIsKnownOperator",
+      "size": 168,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93db34",
+      "name": "_verifyFactOperatorDictionary",
+      "size": 356,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93dc98",
+      "name": "___verifyOptionalDictionary_block_invoke.60",
+      "size": 240,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93dd88",
+      "name": "_keyIsKnownNumericOnlyOperator",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93ddf4",
+      "name": "___verifyFactOperatorDictionary_block_invoke",
+      "size": 980,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93e1c8",
+      "name": "___verifyInArray_block_invoke",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93e224",
+      "name": "___copy_helper_block_8_32r",
+      "size": 16,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93e234",
+      "name": "___destroy_helper_block_8_32r",
+      "size": 12,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93e240",
+      "name": "___verifyOperatorArray_block_invoke",
+      "size": 336,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93e390",
+      "name": "___verifyOperatorArrayTuple_block_invoke",
+      "size": 396,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93e51c",
+      "name": "_factIsKnownForCategory",
+      "size": 176,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93e5cc",
+      "name": "___verifyQueryTypeFact_block_invoke",
+      "size": 464,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93e79c",
+      "name": "___verifyQueryArray_block_invoke",
+      "size": 440,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93e954",
+      "name": "___verifyQueryTuple_block_invoke",
+      "size": 172,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93ea00",
+      "name": "_AMFIInitiateDataMigration",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93ea5c",
+      "name": "_AMFIGetSEPDeviceState",
+      "size": 256,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93eb5c",
+      "name": "_AMFIProfileRequiresReboot",
+      "size": 380,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93ecd8",
+      "name": "_AMFIProfileScheduleTrust",
+      "size": 468,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93eeac",
+      "name": "_AMFIProfileGetScheduledProfile",
+      "size": 620,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93f118",
+      "name": "sub_21A93F118",
+      "size": 48,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93f148",
+      "name": "_AMFIProfileCommitProfile",
+      "size": 368,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93f2b8",
+      "name": "_AMFIProfileSetTrust",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93f300",
+      "name": "_AMFIProfileSetTrustWithOptions",
+      "size": 160,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93f3a0",
+      "name": "sub_21A93F3A0",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93f3b8",
+      "name": "_AMFIProfileSetTeamIDTrustWithOptions",
+      "size": 976,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93f788",
+      "name": "sub_21A93F788",
+      "size": 36,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93f7ac",
+      "name": "_AMFIProfileRemoveTrust",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93f824",
+      "name": "_AMFIProfileRemoveTeamIDTrust",
+      "size": 336,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93f974",
+      "name": "_AMFISupervisedModeSetState",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93f9c8",
+      "name": "_AMFIDemoModeSetState",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93fa1c",
+      "name": "_AMFIMDMModeEnroll",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93fa70",
+      "name": "_AMFIMDMModeRemove",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93fac4",
+      "name": "_OUTLINED_FUNCTION_0_1",
+      "size": 28,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a93fae0",
+      "name": "_OUTLINED_FUNCTION_1_3",
+      "size": 20,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a93faf4",
+      "name": "_OUTLINED_FUNCTION_2_1",
+      "size": 16,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a93fb04",
+      "name": "-[LWCRTypeErrorContext init]",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93fb70",
+      "name": "-[LWCRTypeErrorContext pushKey:]",
+      "size": 8,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93fb78",
+      "name": "-[LWCRTypeErrorContext popKey]",
+      "size": 8,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93fb80",
+      "name": "-[LWCRTypeErrorContext setError:]",
+      "size": 8,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a93fb88",
+      "name": "-[LWCRTypeErrorContext synthesizeError]",
+      "size": 472,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93fd60",
+      "name": "-[LWCRTypeErrorContext .cxx_destruct]",
+      "size": 12,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93fd6c",
+      "name": "_LWCRTypeVerificationNSDictionary",
+      "size": 276,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93fe80",
+      "name": "_typeMaskForNSType",
+      "size": 248,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93ff78",
+      "name": "_integerValueForNSNumber",
+      "size": 4,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a93ff7c",
+      "name": "_stringValueForNSString",
+      "size": 40,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a93ffa4",
+      "name": "_iterateDictionary",
+      "size": 156,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a940040",
+      "name": "_iterateArray",
+      "size": 300,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94016c",
+      "name": "_pushKeyContext",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9401e4",
+      "name": "_popKeyContext",
+      "size": 8,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a9401ec",
+      "name": "_setError",
+      "size": 12,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a9401f8",
+      "name": "_LWCRTypeVerificationNSDictionary_RequirementsOnly",
+      "size": 276,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94030c",
+      "name": "___iterateDictionary_block_invoke",
+      "size": 152,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9403a4",
+      "name": "___AMFIGetSecurityBootModeWithPath",
+      "size": 180,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a940458",
+      "name": "_AMFICompleteSecurityBootMode",
+      "size": 268,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a940564",
+      "name": "_AMFIArmSecurityBootMode",
+      "size": 196,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a940628",
+      "name": "_AMFIGetSecurityBootMode",
+      "size": 160,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9406c8",
+      "name": "_AMFIGetSecurityBootModeArmed",
+      "size": 260,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9407cc",
+      "name": "_AMFIDeveloperModeCommit",
+      "size": 212,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9408a0",
+      "name": "_LWCRTypeVerificationXPCDictionary",
+      "size": 260,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9409a4",
+      "name": "_typeMaskForXPCObj",
+      "size": 156,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a940a40",
+      "name": "_integerValueForXPCObj",
+      "size": 4,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a940a44",
+      "name": "_stringValueForXPCObj",
+      "size": 4,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a940a48",
+      "name": "_iterateDictionary_0",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a940ab4",
+      "name": "_iterateArray_0",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a940b20",
+      "name": "_pushKeyContext_0",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a940b7c",
+      "name": "_popKeyContext_0",
+      "size": 28,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a940b98",
+      "name": "_setError_0",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a940ba8",
+      "name": "_LWCRTypeErrorContextSynthesizeError",
+      "size": 252,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a940ca4",
+      "name": "_LWCRTypeVerificationXPCDictionary_RequirementsOnly",
+      "size": 260,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a940da8",
+      "name": "___iterateDictionary_block_invoke_0",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a940db8",
+      "name": "___copy_helper_block_8_32b",
+      "size": 16,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a940dc8",
+      "name": "___destroy_helper_block_8_32b",
+      "size": 12,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a940dd4",
+      "name": "___iterateArray_block_invoke",
+      "size": 20,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a940de8",
+      "name": "-[AMFIConnection init]",
+      "size": 176,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a940e98",
+      "name": "-[AMFIConnection dealloc]",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a940ef0",
+      "name": "+[AMFIConnection newConnection]",
+      "size": 12,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a940efc",
+      "name": "-[AMFIConnection initiateDataMigration]",
+      "size": 332,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a941048",
+      "name": "sub_21A941048",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a941060",
+      "name": "___Block_byref_object_copy_",
+      "size": 16,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a941070",
+      "name": "___Block_byref_object_dispose_",
+      "size": 8,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a941078",
+      "name": "___39-[AMFIConnection initiateDataMigration]_block_invoke",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9410f8",
+      "name": "___39-[AMFIConnection initiateDataMigration]_block_invoke.32",
+      "size": 132,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94117c",
+      "name": "-[AMFIConnection initiateDeveloperModeDaemons]",
+      "size": 332,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9412c8",
+      "name": "sub_21A9412C8",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a9412e0",
+      "name": "___46-[AMFIConnection initiateDeveloperModeDaemons]_block_invoke",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a941360",
+      "name": "___46-[AMFIConnection initiateDeveloperModeDaemons]_block_invoke.33",
+      "size": 132,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9413e4",
+      "name": "-[AMFIConnection getSEPStateWithError:]",
+      "size": 516,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9415e8",
+      "name": "___39-[AMFIConnection getSEPStateWithError:]_block_invoke",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a941668",
+      "name": "___39-[AMFIConnection getSEPStateWithError:]_block_invoke.34",
+      "size": 52,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a94169c",
+      "name": "___copy_helper_block_e8_32r40r",
+      "size": 80,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9416ec",
+      "name": "___destroy_helper_block_e8_32r40r",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a941730",
+      "name": "-[AMFIConnection signTeamID:withSignType:withLAContext:withError:]",
+      "size": 516,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a941934",
+      "name": "sub_21A941934",
+      "size": 36,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a941958",
+      "name": "___66-[AMFIConnection signTeamID:withSignType:withLAContext:withError:]_block_invoke",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9419d8",
+      "name": "___66-[AMFIConnection signTeamID:withSignType:withLAContext:withError:]_block_invoke.36",
+      "size": 144,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a941a68",
+      "name": "-[AMFIConnection stageProfileForUuid:]",
+      "size": 360,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a941bd0",
+      "name": "sub_21A941BD0",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a941be8",
+      "name": "___38-[AMFIConnection stageProfileForUuid:]_block_invoke",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a941c68",
+      "name": "___38-[AMFIConnection stageProfileForUuid:]_block_invoke.40",
+      "size": 16,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a941c78",
+      "name": "-[AMFIConnection getStagedProfileWithError:]",
+      "size": 444,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a941e34",
+      "name": "sub_21A941E34",
+      "size": 36,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a941e58",
+      "name": "___44-[AMFIConnection getStagedProfileWithError:]_block_invoke",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a941ed8",
+      "name": "___44-[AMFIConnection getStagedProfileWithError:]_block_invoke.41",
+      "size": 144,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a941f68",
+      "name": "-[AMFIConnection commitProfileForUuid:]",
+      "size": 360,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9420d0",
+      "name": "sub_21A9420D0",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a9420e8",
+      "name": "___39-[AMFIConnection commitProfileForUuid:]_block_invoke",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942168",
+      "name": "___39-[AMFIConnection commitProfileForUuid:]_block_invoke.45",
+      "size": 16,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a942178",
+      "name": "-[AMFIConnection setTrustForTeamID:withSignature:withSignType:]",
+      "size": 404,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94230c",
+      "name": "sub_21A94230C",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a942324",
+      "name": "___63-[AMFIConnection setTrustForTeamID:withSignature:withSignType:]_block_invoke",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9423a4",
+      "name": "___63-[AMFIConnection setTrustForTeamID:withSignature:withSignType:]_block_invoke.46",
+      "size": 16,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a9423b4",
+      "name": "-[AMFIConnection removeTrustforTeamID:]",
+      "size": 360,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94251c",
+      "name": "sub_21A94251C",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a942534",
+      "name": "___39-[AMFIConnection removeTrustforTeamID:]_block_invoke",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9425b4",
+      "name": "___39-[AMFIConnection removeTrustforTeamID:]_block_invoke.47",
+      "size": 16,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a9425c4",
+      "name": "-[AMFIConnection setSupervisedState:]",
+      "size": 340,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942718",
+      "name": "sub_21A942718",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a942730",
+      "name": "___37-[AMFIConnection setSupervisedState:]_block_invoke",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9427b0",
+      "name": "___37-[AMFIConnection setSupervisedState:]_block_invoke.48",
+      "size": 16,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a9427c0",
+      "name": "-[AMFIConnection setDemoState:]",
+      "size": 340,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942914",
+      "name": "sub_21A942914",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a94292c",
+      "name": "___31-[AMFIConnection setDemoState:]_block_invoke",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9429ac",
+      "name": "___31-[AMFIConnection setDemoState:]_block_invoke.49",
+      "size": 16,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a9429bc",
+      "name": "-[AMFIConnection setManagedState:]",
+      "size": 360,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942b24",
+      "name": "sub_21A942B24",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a942b3c",
+      "name": "___34-[AMFIConnection setManagedState:]_block_invoke",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942bbc",
+      "name": "___34-[AMFIConnection setManagedState:]_block_invoke.50",
+      "size": 16,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a942bcc",
+      "name": "-[AMFIConnection removeManagedState]",
+      "size": 332,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942d18",
+      "name": "sub_21A942D18",
+      "size": 24,
+      "flags": 5120
+    },
+    {
+      "ea": "0x21a942d30",
+      "name": "___36-[AMFIConnection removeManagedState]_block_invoke",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942db0",
+      "name": "___36-[AMFIConnection removeManagedState]_block_invoke.51",
+      "size": 16,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a942dc0",
+      "name": "-[AMFIConnection .cxx_destruct]",
+      "size": 12,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a942dcc",
+      "name": "_OUTLINED_FUNCTION_1_4",
+      "size": 28,
+      "flags": 136192
+    },
+    {
+      "ea": "0x21a942de8",
+      "name": "-[AMFIRequirementsManager init].cold.1",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942e1c",
+      "name": "-[AMFIRequirementsManager init].cold.2",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942e50",
+      "name": "-[AMFIRequirementsManager init].cold.3",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942e84",
+      "name": "-[AMFIRequirementsManager init].cold.4",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942eb8",
+      "name": "-[AMFIRequirementsManager init].cold.5",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942eec",
+      "name": "-[AMFIRequirementsManager init].cold.6",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942f20",
+      "name": "-[AMFIRequirementsManager resetRestrictedRequirement].cold.1",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942f54",
+      "name": "_AMFIExecutionPreflight.cold.1",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a942fb8",
+      "name": "_AMFIExecutionPreflight.cold.4",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943004",
+      "name": "_AMFIExecutionPreflight.cold.5",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943044",
+      "name": "_AMFIExecutionPreflight.cold.6",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9430c4",
+      "name": "_validateOptions.cold.1",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943128",
+      "name": "_validateOptions.cold.2",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94318c",
+      "name": "_validateOptions.cold.3",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9431f0",
+      "name": "_validateOptions.cold.4",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943254",
+      "name": "_createWithURL.cold.1",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9432a8",
+      "name": "-[AMFIPathValidator_macos initWithCode:withFlags:hasRestrictedEntitlements:hasOnlySoftRestrictedEntitlements:].cold.1",
+      "size": 84,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9432fc",
+      "name": "-[AMFIPathValidator_macos cdhashAsData].cold.1",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943338",
+      "name": "-[AMFIPathValidator_macos mainExecutable].cold.1",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943374",
+      "name": "-[AMFIPathValidator_macos signingIdentifier].cold.1",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9433b0",
+      "name": "-[AMFIPathValidator_macos derCertChain].cold.1",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9433e4",
+      "name": "-[AMFIPathValidator_macos derCertChain].cold.2",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943418",
+      "name": "-[AMFIPathValidator_macos derCertChain].cold.3",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94344c",
+      "name": "-[AMFIPathValidator_macos splitEntitlementsIntoUnrestricted:andSoftRestricted:andRestricted:andApplicationIdentifier:].cold.1",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943488",
+      "name": "-[AMFIPathValidator_macos splitEntitlementsIntoUnrestricted:andSoftRestricted:andRestricted:andApplicationIdentifier:].cold.2",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9434c4",
+      "name": "-[AMFIPathValidator_macos splitEntitlementsIntoUnrestricted:andSoftRestricted:andRestricted:andApplicationIdentifier:].cold.3",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943500",
+      "name": "-[AMFIPathValidator_macos validateUsingMacOSProvisioningProfileWithRestrictedEntitlements:andSoftRestrictedEntitlements:andApplicationIdentifier:].cold.1",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94355c",
+      "name": "-[AMFIPathValidator_macos validateUsingMacOSProvisioningProfileWithRestrictedEntitlements:andSoftRestrictedEntitlements:andApplicationIdentifier:].cold.2",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943598",
+      "name": "-[AMFIPathValidator_macos validateUsingMacOSProvisioningProfileWithRestrictedEntitlements:andSoftRestrictedEntitlements:andApplicationIdentifier:].cold.3",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9435cc",
+      "name": "-[AMFIPathValidator_macos validateUsingMacOSProvisioningProfileWithRestrictedEntitlements:andSoftRestrictedEntitlements:andApplicationIdentifier:].cold.4",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943600",
+      "name": "-[AMFIPathValidator_macos validateUsingMacOSProvisioningProfileWithRestrictedEntitlements:andSoftRestrictedEntitlements:andApplicationIdentifier:].cold.5",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943634",
+      "name": "_configProfileValidate.cold.1",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943668",
+      "name": "_copyUnsatisfiedEntitlements.cold.1",
+      "size": 60,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9436a4",
+      "name": "-[AMFIPathValidator_macos macAppStoreQASigned].cold.1",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9436d8",
+      "name": "-[AMFIPathValidator_macos validateWithError:].cold.1",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943730",
+      "name": "-[AMFIPathValidator_macos validateWithError:].cold.2",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94378c",
+      "name": "-[AMFIPathValidator_macos validateWithError:].cold.3",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9437c0",
+      "name": "-[AMFIPathValidator_macos validateWithError:].cold.4",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9437f4",
+      "name": "-[AMFIPathValidator_macos validateWithError:].cold.5",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943840",
+      "name": "-[AMFIPathValidator_macos validateWithError:].cold.6",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943874",
+      "name": "-[AMFIPathValidator_macos validateWithError:].cold.7",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9438a8",
+      "name": "-[AMFIPathValidator_macos validateWithError:].cold.8",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9438dc",
+      "name": "-[AMFIPathValidator_macos isApple].cold.1",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943910",
+      "name": "-[AMFIPathValidator_macos isDevelopment].cold.1",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943944",
+      "name": "-[AMFIPathValidator_macos allowsLegacyDebug].cold.1",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943978",
+      "name": "-[AMFIPathValidator_ios validateWithError:].cold.1",
+      "size": 140,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943a04",
+      "name": "-[AMFIPathValidator_ios validateWithError:].cold.2",
+      "size": 116,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943a78",
+      "name": "-[AMFIPathValidator_ios validateWithError:].cold.3",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943abc",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey.cold.1",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943b24",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey.cold.2",
+      "size": 88,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943b7c",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey.cold.3",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943bc0",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey.cold.4",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943bf4",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey.cold.5",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943c28",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey.cold.6",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943c5c",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey.cold.7",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943ca0",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey.cold.8",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943cd4",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey.cold.9",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943d18",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey.cold.10",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943d5c",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey.cold.11",
+      "size": 104,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943dc4",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey.cold.12",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943df8",
+      "name": "_AMFICopySwiftPlaygroundsSigningKey.cold.13",
+      "size": 52,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943e2c",
+      "name": "_errorCodeForMISError.cold.1",
+      "size": 128,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943eac",
+      "name": "_errorCodeForProfileManagerError.cold.1",
+      "size": 136,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943f34",
+      "name": "+[ValidationMetrics dispatchMetrics:].cold.1",
+      "size": 20,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a943f48",
+      "name": "+[ValidationMetrics dispatchMetrics:].cold.2",
+      "size": 68,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943f8c",
+      "name": "+[AMFIFMKLog generic].cold.1",
+      "size": 20,
+      "flags": 5121
+    },
+    {
+      "ea": "0x21a943fa0",
+      "name": "_AMFIProfileRequiresReboot.cold.1",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a943fec",
+      "name": "_AMFIProfileRequiresReboot.cold.2",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944038",
+      "name": "_AMFIProfileScheduleTrust.cold.1",
+      "size": 100,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94409c",
+      "name": "_AMFIProfileScheduleTrust.cold.2",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9440e4",
+      "name": "_AMFIProfileScheduleTrust.cold.3",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94412c",
+      "name": "_AMFIProfileScheduleTrust.cold.4",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944178",
+      "name": "_AMFIProfileGetScheduledProfile.cold.1",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9441c0",
+      "name": "_AMFIProfileGetScheduledProfile.cold.2",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944208",
+      "name": "_AMFIProfileGetScheduledProfile.cold.3",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944250",
+      "name": "_AMFIProfileGetScheduledProfile.cold.4",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944298",
+      "name": "_AMFIProfileGetScheduledProfile.cold.5",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9442e4",
+      "name": "_AMFIProfileCommitProfile.cold.1",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94432c",
+      "name": "_AMFIProfileSetTeamIDTrustWithOptions.cold.1",
+      "size": 92,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944388",
+      "name": "_AMFIProfileSetTeamIDTrustWithOptions.cold.2",
+      "size": 96,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9443e8",
+      "name": "_AMFIProfileSetTeamIDTrustWithOptions.cold.3",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944430",
+      "name": "_AMFIProfileSetTeamIDTrustWithOptions.cold.4",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94447c",
+      "name": "_AMFIProfileRemoveTeamIDTrust.cold.1",
+      "size": 72,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9444c4",
+      "name": "_AMFIProfileRemoveTeamIDTrust.cold.2",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944510",
+      "name": "_AMFISupervisedModeSetState.cold.1",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a94455c",
+      "name": "_AMFIDemoModeSetState.cold.1",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9445a8",
+      "name": "_AMFIMDMModeEnroll.cold.1",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9445f4",
+      "name": "_AMFIMDMModeRemove.cold.1",
+      "size": 76,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944640",
+      "name": "___39-[AMFIConnection initiateDataMigration]_block_invoke.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944680",
+      "name": "___39-[AMFIConnection initiateDataMigration]_block_invoke.32.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9446c0",
+      "name": "___46-[AMFIConnection initiateDeveloperModeDaemons]_block_invoke.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944700",
+      "name": "___46-[AMFIConnection initiateDeveloperModeDaemons]_block_invoke.33.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944740",
+      "name": "___39-[AMFIConnection getSEPStateWithError:]_block_invoke.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944780",
+      "name": "___66-[AMFIConnection signTeamID:withSignType:withLAContext:withError:]_block_invoke.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9447c0",
+      "name": "___38-[AMFIConnection stageProfileForUuid:]_block_invoke.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944800",
+      "name": "___44-[AMFIConnection getStagedProfileWithError:]_block_invoke.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944840",
+      "name": "___39-[AMFIConnection commitProfileForUuid:]_block_invoke.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944880",
+      "name": "___63-[AMFIConnection setTrustForTeamID:withSignature:withSignType:]_block_invoke.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9448c0",
+      "name": "___39-[AMFIConnection removeTrustforTeamID:]_block_invoke.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944900",
+      "name": "___37-[AMFIConnection setSupervisedState:]_block_invoke.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944940",
+      "name": "___31-[AMFIConnection setDemoState:]_block_invoke.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a944980",
+      "name": "___34-[AMFIConnection setManagedState:]_block_invoke.cold.1",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x21a9449c0",
+      "name": "___36-[AMFIConnection removeManagedState]_block_invoke.cold.1",
+      "size": 64,
+      "flags": 5136
+    }
+  ],
+  "strings": [
+    {
+      "ea": "0x21a945220",
+      "text": "/Library/Preferences/com.apple.security.coderequirements.plist",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94525f",
+      "text": "v8@?0",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945266",
+      "text": "com.apple.MobileFileIntegrity.requirementQueue",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945295",
+      "text": "(anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.12] exists) or (anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.2] exists) or (anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.7] exists) or (anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.4] exists)",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9453eb",
+      "text": "(anchor apple) or (anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.9] exists) or (anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] exists and certificate leaf[field.1.2.840.113635.100.6.1.13] exists) or (anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.9.1] exists) or ((anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.12] exists) or (anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.2] exists) or (anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.7] exists) or (anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.4] exists))",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945693",
+      "text": "anchor apple and identifier \"com.apple.dyld_sim\"",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9456c4",
+      "text": "anchor apple",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9456d1",
+      "text": "anchor trusted and info[SecTaskAccess] = allowed",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945702",
+      "text": "anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.9.1] exists",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945755",
+      "text": "anchor apple or (anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.9] exists)",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9457b8",
+      "text": "Entitlements",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9457c5",
+      "text": "AllowUnsafeDynamicLinking",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9457df",
+      "text": "\u0001",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9457e1",
+      "text": "sliceOffset",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9457ed",
+      "text": "cpuType",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9457f5",
+      "text": "cpuSubType",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945800",
+      "text": "flags",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945806",
+      "text": "com.apple.application-identifier",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945827",
+      "text": "beta-reports-active",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94583b",
+      "text": "%ld",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94583f",
+      "text": "!6",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945842",
+      "text": "security.mac.amfi.qa_root_certs_allowed",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94586a",
+      "text": "CPInstalledProvisioningProfilesApplicationIdentifierKey",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9458a2",
+      "text": "CPInstalledProvisioningProfilesBundlePathKey",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9458cf",
+      "text": "CPInstalledProvisioningProfilesEntitlementsKey",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9458fe",
+      "text": "CPInstalledProvisioningProfilesCertChainKey",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94592a",
+      "text": "CPInstalledProvisioningProfilesCodeInfoIdentifierKey",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94595f",
+      "text": "CPInstalledProvisioningProfilesCDHashKey",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945988",
+      "text": "unsatisfiedEntitlements",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9459a0",
+      "text": "\u0002\u00114",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9459a4",
+      "text": "Error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9459aa",
+      "text": "An unknown error has occured",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9459c7",
+      "text": "Request is not a dictionary",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9459e3",
+      "text": "Device has a passcode set",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9459fd",
+      "text": "%2.2x",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945a03",
+      "text": "AppleMobileFileIntegrityError",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945a21",
+      "text": "com.apple.security.application-groups",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945a47",
+      "text": "com.apple.security.app-protection",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945a69",
+      "text": "com.apple.security.app-sandbox",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945a88",
+      "text": "com.apple.developer.",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945a9d",
+      "text": "keychain-access-groups",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945ab4",
+      "text": "com.apple.private.dark-wake-",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945ad1",
+      "text": "com.apple.private.aps-connection-initiate",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945afb",
+      "text": "com.apple.private.icloud-account-access",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945b23",
+      "text": "com.apple.private.cloudkit.masquerade",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945b49",
+      "text": "com.apple.private.mailservice.delivery",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945b70",
+      "text": "com.apple.tcc.delegated-services",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945b91",
+      "text": "com.apple.private.signing-identifier",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945bb6",
+      "text": "com.apple.security.",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945bca",
+      "text": "com.apple.developer.hardened-process",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945bef",
+      "text": "com.apple.developer.hardened-process.",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945c15",
+      "text": "com.apple.developer.system-extension",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945c3a",
+      "text": "com.apple.developer.endpoint-security",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945c60",
+      "text": "com.apple.developer.networking.networkextension",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945c90",
+      "text": "com.apple.developer.driverkit",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945cae",
+      "text": "com.apple.developer.system-extension.",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945cd4",
+      "text": "com.apple.developer.endpoint-security.",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945cfb",
+      "text": "com.apple.developer.networking.networkextension.",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945d2c",
+      "text": "com.apple.developer.driverkit.",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945d4b",
+      "text": "com.apple.uikitsystemapp.nonui-client",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945d71",
+      "text": "com.apple.private.security.clear-library-validation",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945da5",
+      "text": "com.apple.private.codesignkit.signer-source-host",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945dd6",
+      "text": "com.apple.rootless.",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945dea",
+      "text": "com.apple.private.security.",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945e06",
+      "text": "com.apple.system-task-ports",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945e22",
+      "text": "com.apple.hid.manager.user-access-keyboard",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945e4d",
+      "text": "com.apple.hid.manager.user-access-privileged",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945e7a",
+      "text": "com.apple.private.host-exception-port-override",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945ea9",
+      "text": "com.apple.security.cs.disable-library-validation",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945eda",
+      "text": "com.apple.private.cs.automator-plugins",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945f01",
+      "text": "com.apple.security.cs.allow-unsigned-executable-memory",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945f38",
+      "text": "com.apple.security.cs.disable-executable-page-protection",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945f71",
+      "text": "com.apple.security.cs.allow-relative-library-loads",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945fa4",
+      "text": "com.apple.security.cs.allow-dyld-environment-variables",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945fdb",
+      "text": "com.apple.security.cs.allow-jit",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a945ffb",
+      "text": "get-task-allow",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94600a",
+      "text": "task_for_pid-allow",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94601d",
+      "text": "com.apple.system-task-ports.control",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946041",
+      "text": "com.apple.system-task-ports.token.control",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94606b",
+      "text": "com.apple.private.cs.debugger",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946089",
+      "text": "com.apple.private.tcc.allow",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9460a5",
+      "text": "com.apple.private.tcc.manager",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9460c3",
+      "text": "An internal error has occured",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9460e1",
+      "text": "Profile matching service is unavailable",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946109",
+      "text": "Caller requested validation of an unknown platform",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94613c",
+      "text": "Caller requested validation with an invalid option",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94616f",
+      "text": "Caller provided an option that is not supported for the requested platform",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9461ba",
+      "text": "Caller provided invalid parameters",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9461dd",
+      "text": "Profile requested is not currently staged",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946207",
+      "text": "LocalAuthentication call failed",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946227",
+      "text": "The best matching profile has expired",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94624d",
+      "text": "The best matching profile is not valid for this device",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946284",
+      "text": "The best matching profile is not validly signed",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9462b4",
+      "text": "No matching profile found",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9462ce",
+      "text": "The best matching profile does not provision the certificates used to sign this file",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946323",
+      "text": "The best matching profile does not match the entitlements of this file",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94636a",
+      "text": "The signature on the file is invalid",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94638f",
+      "text": "The file is unsigned",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9463a4",
+      "text": "The entitlements in this file are malformed",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9463d0",
+      "text": "The file is adhoc signed or signed by an unknown certificate chain",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946413",
+      "text": "The file is adhoc signed but contains restricted entitlements",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946451",
+      "text": "Unable to retrieve code path information",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94647a",
+      "text": "Unable to retrieve signing identifier",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9464a0",
+      "text": "Unable to retrieve certificate chain",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9464c5",
+      "text": "Unable to retrieve executable path",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9464e8",
+      "text": "Unable to create code directory hash",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94650d",
+      "text": "This file does not meet dyld_sim policy for this platform",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946547",
+      "text": "An unknown error was encountered",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946568",
+      "text": "amfid.validation.metrics",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946581",
+      "text": "com.apple.sha1.code_directory.usage",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9465a5",
+      "text": "filename",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9465ae",
+      "text": "signing_identifier",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9465c1",
+      "text": "cdhash",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9465c8",
+      "text": "team_identifier",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9465d8",
+      "text": "bundle_identifier",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9465ea",
+      "text": "version",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9465f2",
+      "text": "is_apple",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9465fb",
+      "text": "signing_timestamp",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94660d",
+      "text": "executable_format",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94661f",
+      "text": "has_restricted_entitlements",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94663b",
+      "text": "@\"NSDictionary\"8@?0",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94664f",
+      "text": "/private/var/tmp/show_dev_mode",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94666e",
+      "text": "B16@?0r^{MISMatchedProfile=^{__CFString}^{__CFString}BBBBB@}8",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9466ac",
+      "text": "com.apple.MobileFileIntegrity.framework",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9466d4",
+      "text": "default",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9466dc",
+      "text": "AMFI",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9466e1",
+      "text": "security.mac.amfi.developer_mode_status",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946709",
+      "text": "security.mac.amfi.developer_mode_resolved",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946733",
+      "text": "No Constraint provided",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94674a",
+      "text": "Constraint too large",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94675f",
+      "text": "apple-internal",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94676e",
+      "text": "developer-mode",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94677d",
+      "text": "info-plist-hash",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94678d",
+      "text": "in-tc-with-constraint-category",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9467ac",
+      "text": "is-init-proc",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9467b9",
+      "text": "is-main-binary",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9467c8",
+      "text": "is-sip-protected",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9467d9",
+      "text": "is-kernel-proc",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9467e8",
+      "text": "on-authorized-authapfs-volume",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946806",
+      "text": "on-system-volume",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946817",
+      "text": "sip-enabled",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946823",
+      "text": "cdhash-full",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94682f",
+      "text": "entitlements",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94683c",
+      "text": "signing-identifier",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94684f",
+      "text": "team-identifier",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94685f",
+      "text": "team-identifier-for-current-process",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946883",
+      "text": "launch-type",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94688f",
+      "text": "platform-identifier",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9468a3",
+      "text": "platform-identifier-for-current-process",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9468cb",
+      "text": "validation-category",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9468df",
+      "text": "os-environment",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9468ee",
+      "text": "platform",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9468f7",
+      "text": "code-signing-flags",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94690a",
+      "text": "$lt",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94690e",
+      "text": "$lte",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946913",
+      "text": "$gt",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946917",
+      "text": "$gte",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94691c",
+      "text": "$flag-check",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946928",
+      "text": "$in",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94692c",
+      "text": "$optional",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946936",
+      "text": "$and",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94693b",
+      "text": "$or",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94693f",
+      "text": "$and-array",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94694a",
+      "text": "$or-array",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946954",
+      "text": "Success",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94695c",
+      "text": "Unknown Key",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946968",
+      "text": "Unexpected Type",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946978",
+      "text": "Unexpected type for key",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946990",
+      "text": "Unexpected key",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94699f",
+      "text": "Unexpected type for array",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9469b9",
+      "text": "Sub dictionary violated a precondition set by the parent dictionary",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9469fd",
+      "text": "Too many elements in array",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946a18",
+      "text": "Too many keys for dictionary",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946a35",
+      "text": "Internal error",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946a44",
+      "text": "Key not supported for the specified category",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946a71",
+      "text": "Constraint category is disallowed for specified LWCR category",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946aaf",
+      "text": "Dictionary does not specify any constraints",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946adb",
+      "text": "Constraint is too deeply nested",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946afb",
+      "text": "Flag value is invalid for this fact/category combination",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946b34",
+      "text": "Unknown Category for validation",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946b54",
+      "text": "vers",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946b59",
+      "text": "comp",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946b5e",
+      "text": "ccat",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946b63",
+      "text": "reqs",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946b68",
+      "text": "B24@?0r*8^v16",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946b76",
+      "text": "$query",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946b7d",
+      "text": "Array",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946b83",
+      "text": "B16@?0^v8",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946b8d",
+      "text": "Query Array",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946b99",
+      "text": "Query Tuple",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946ba5",
+      "text": "AMFIProfileRequiresReboot",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946bbf",
+      "text": "AMFIProfileScheduleTrust",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946bd8",
+      "text": "AMFIProfileGetScheduledProfile",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946bf7",
+      "text": "TeamName",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946c00",
+      "text": "AMFIProfileCommitProfile",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946c19",
+      "text": "AMFIProfileSetTeamIDTrustWithOptions",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946c3e",
+      "text": "AMFIProfileRemoveTeamIDTrust",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946c5b",
+      "text": "AMFISupervisedModeSetState",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946c76",
+      "text": "AMFIDemoModeSetState",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946c8b",
+      "text": "AMFIMDMModeEnroll",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946c9d",
+      "text": "AMFIMDMModeRemove",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946caf",
+      "text": "_getTeamIDAuxiliarySignature",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946ccc",
+      "text": "_createAuxiliarySignature",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946ce6",
+      "text": "Error: %s, Context: ",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946cfb",
+      "text": " -> %@",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946d02",
+      "text": "LWCRVerificationError",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946d18",
+      "text": "v32@?0@8@16^B24",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946d28",
+      "text": "security-mode-change-enable",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946d44",
+      "text": "AppleMobileFileIntegrity",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946d5d",
+      "text": "IODeviceTree:/chosen",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946d72",
+      "text": "IODeviceTree:/options",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946d88",
+      "text": "B24@?0Q8^v16",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946d95",
+      "text": " -> ",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946d9a",
+      "text": "com.apple.amfi.nsxpc",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946daf",
+      "text": "-[AMFIConnection initiateDataMigration]_block_invoke",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946de4",
+      "text": "v16@?0@\"NSError\"8",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946df6",
+      "text": "-[AMFIConnection initiateDeveloperModeDaemons]_block_invoke",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946e32",
+      "text": "-[AMFIConnection getSEPStateWithError:]_block_invoke",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946e67",
+      "text": "v65@?0{?=III{?=C{?=I[32C]}}}8@\"NSError\"57",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946e91",
+      "text": "-[AMFIConnection signTeamID:withSignType:withLAContext:withError:]_block_invoke",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946ee1",
+      "text": "v24@?0@\"NSData\"8@\"NSError\"16",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946efe",
+      "text": "-[AMFIConnection stageProfileForUuid:]_block_invoke",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946f32",
+      "text": "-[AMFIConnection getStagedProfileWithError:]_block_invoke",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946f6c",
+      "text": "v24@?0@\"NSString\"8@\"NSError\"16",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946f8b",
+      "text": "-[AMFIConnection commitProfileForUuid:]_block_invoke",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a946fc0",
+      "text": "-[AMFIConnection setTrustForTeamID:withSignature:withSignType:]_block_invoke",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a94700d",
+      "text": "-[AMFIConnection removeTrustforTeamID:]_block_invoke",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a947042",
+      "text": "-[AMFIConnection setSupervisedState:]_block_invoke",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a947075",
+      "text": "-[AMFIConnection setDemoState:]_block_invoke",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9470a2",
+      "text": "-[AMFIConnection setManagedState:]_block_invoke",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a9470d2",
+      "text": "-[AMFIConnection removeManagedState]_block_invoke",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x21a947104",
+      "text": "Failed to generate the 'developer' requirement (error = %d)",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947140",
+      "text": "Failed to generate the 'basic' requirement (error = %d)",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947178",
+      "text": "Failed to generate the 'dyld sim' requirement (error = %d)",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9471b3",
+      "text": "Failed to generate the 'apple' requirement (error = %d)",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9471eb",
+      "text": "Failed to generate the 'legacy Debugger' requirement (error = %d)",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94722d",
+      "text": "Failed to generate the 'QA Mac App store' requirement (error = %d)",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947270",
+      "text": "Failed to generate the 'restricted' requirement (error = %d)",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9472ad",
+      "text": "Error cannot evaluate unknown platform (%d) for: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9472e1",
+      "text": "Unexpected option(s) in dictionary: %@ for: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947310",
+      "text": "Failed to create validator for: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947333",
+      "text": "Allowing unsigned code: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94734e",
+      "text": "Unknown signer with team identifier disallowed, sdkVersion: %lx",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94738e",
+      "text": "Unknown signer with team identifier and old/missing sdkVersion: %lx",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9473d2",
+      "text": "Allowing code signed with unknown signer without restricted entitlements: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94741f",
+      "text": "Invalid slice offset (%@) for: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947441",
+      "text": "Invalid cpu type (%@) for: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94745f",
+      "text": "Invalid cpu sub type (%@) for: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947481",
+      "text": "Invalid flags (%@) for: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94749c",
+      "text": "Invalid options combination cpuType: (%@) cpuSubType: (%@) sliceOffset: (%@) for: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9474f1",
+      "text": "kSecCodeInfoUnique is not an NSData object: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947520",
+      "text": "kSecCodeInfoMainExecutable is not a NSURL: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94754e",
+      "text": "Unsigned code: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947560",
+      "text": "kSecCodeInfoIdentifier is not a NSString: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94758d",
+      "text": "No certificate chain found",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9475a8",
+      "text": "Certificate chain is not an array",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9475ca",
+      "text": "Failed to create der cert chain, this should not happen",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947602",
+      "text": "Failure getting cert from cert chain",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947627",
+      "text": "Failure getting cert data for certificate",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947651",
+      "text": "Failure bundle path",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947665",
+      "text": "kSecCodeInfoEntitlementsDict is not an NSDictionary object: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9476a4",
+      "text": "Encountered an entitlement key that isn't a string: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9476db",
+      "text": "Application identifier is not a string: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947706",
+      "text": "No Configuration profile bridge, not checking against provisioning profile(s)",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947754",
+      "text": "Failure getting signing identifier",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947777",
+      "text": "Failure getting cert chain",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947792",
+      "text": "Failure getting executable path",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9477b2",
+      "text": "Failed to create cdhash for path",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9477d3",
+      "text": "Failure validating against provisioning profiles: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947808",
+      "text": "Soft-restriction provisioning profile validation failure: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947845",
+      "text": "MAS QA Requirement not created",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947864",
+      "text": "Allowed by amfi_get_out_of_my_way: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94788a",
+      "text": "Code failed basic validity check (error: %d): %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9478bb",
+      "text": "Error validating dyld_sim against requirement: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9478ed",
+      "text": "Dyld sim requirement not created",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94790e",
+      "text": "Restricted requirement not created",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947931",
+      "text": "Requested evaluation with restricted entitlements, but no restricted entitlements found",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947989",
+      "text": "Requested evaluation with only soft restricted entitlements, but no soft restricted entitlements found",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9479f0",
+      "text": "Restricted entitlements allowed by QA Mac App Store signing",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947a2c",
+      "text": "Requirements for restricted entitlements failed to validate, error %d, requirements: '%@'",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947a86",
+      "text": "Restricted entitlements not validated, bailing out. Error: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947ac4",
+      "text": "Adhoc signed app with restricted entitlements detected",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947afb",
+      "text": "Basic requirement validation failed, error: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947b2a",
+      "text": "Failed to create the basic requirement",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947b51",
+      "text": "Reporting metrics for SHA1 signed software %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947b7f",
+      "text": "Not validated as platform binary against requirement: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947bb8",
+      "text": "Not validated as developer signed against requirement: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947bf2",
+      "text": "Not validated as legacy debugger against requirement: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947c2b",
+      "text": "%s: Failure creating SecStaticCode, error %d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947c58",
+      "text": "Failed to check security.mac.amfi.qa_root_certs_allowed: %s",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947c94",
+      "text": "Invalid call to configProfileValidate, null cdhash",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947cc7",
+      "text": "Config profiles result: %{public}@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947cea",
+      "text": "Unsatisfied entitlements key is not an NSArray: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947d1d",
+      "text": "Missing libmis.dylib to perform validation.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947d49",
+      "text": "MIS Validation successful, but unexpected info? path: '%@', options: %@, info: %@, cdhash: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947da7",
+      "text": "Unable to extract signer type? path: '%@', info: '%@'",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947ddd",
+      "text": "%@ not valid: 0x%x: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947df4",
+      "text": "dyld_sim policy is not allowed on iOS: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947e1e",
+      "text": "boot-args allow process with invalid signature: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947e51",
+      "text": "found local signing key as a system key",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947e79",
+      "text": "unable to find local signing key on the system",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947ea8",
+      "text": "unable to add public key to AMFI",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947ec9",
+      "text": "the local signing private key is not available: %d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947efc",
+      "text": "successfully copied local signing private key",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947f2a",
+      "text": "unable to get local signing private key from AMFI: %d (%s)",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947f65",
+      "text": "unable to create data for storing local signing private key: <unknown>",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947fac",
+      "text": "unable to allocate a CFMutableDictionaryRef for the keyAttributes: <unknown>",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a947ff9",
+      "text": "successfully copied local signing private key from AMFI",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948031",
+      "text": "SecKeyCreate error: <unknown>",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94804f",
+      "text": "SecKeyCreate error: %ld (%s)",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94806c",
+      "text": "SecKeyCreate error: %ld",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948084",
+      "text": "unable to extract public key from local signing private key",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9480c0",
+      "text": "unable to extract public key bytes from public key: %d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9480f7",
+      "text": "unexpected public key length: %lu",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948119",
+      "text": "unable to add public key to AMFI: %d (%s)",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948143",
+      "text": "added local signing public key to AMFI",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94816a",
+      "text": "Unexpected MISError (0x%x): %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948189",
+      "text": "Unexpected Profile Manager error (%ld): %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9481b4",
+      "text": "Dropping validation metrics because queue is full",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9481e6",
+      "text": "[%s] profile UUID must be provided",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948209",
+      "text": "[%s] must capture reboot requirement",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94822e",
+      "text": "[%s] request for profile: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94824b",
+      "text": "[%s] platform unsupported",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948265",
+      "text": "%s: attempting to schedule profile: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94828c",
+      "text": "[%s] unable to check for reboot: %@ | %u",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9482b5",
+      "text": "[%s] no reboot requirement: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9482d4",
+      "text": "[%s] unable to stage profile: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9482f5",
+      "text": "[%s] must capture scheduled profile",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948319",
+      "text": "[%s] unable to acquire staged profile: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948343",
+      "text": "[%s] missing profile: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94835c",
+      "text": "[%s] missing Team ID: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948375",
+      "text": "[%s] missing Team Name: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948390",
+      "text": "[%s] attempting to commit profile: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9483b6",
+      "text": "[%s] attempting to remove staged profile",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9483df",
+      "text": "[%s] unable to commit profile: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948401",
+      "text": "[%s] team ID must be provided",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94841f",
+      "text": "[%s] unknown trust type: %u",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94843b",
+      "text": "[%s] attempting to set trust for team ID: %@ | %u",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94846d",
+      "text": "[%s] unable to set trust for team ID: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948496",
+      "text": "[%s] attempting to remove trust for team ID: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9484c6",
+      "text": "[%s] unable to remove trust for team ID: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a9484f2",
+      "text": "[%s] auxiliary signature unsupported: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94851b",
+      "text": "[%s] unable to create aux-sig: %@ | %@ (not-fatal)",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94854e",
+      "text": "[%s] xpc error: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a948561",
+      "text": "[%s] data migration error: %@",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x21a94857f",
+      "text": "[%s] developer mode daemons error: %@",
+      "section": "__oslogstring"
+    }
+  ],
+  "patched_bytes_primary": []
+}

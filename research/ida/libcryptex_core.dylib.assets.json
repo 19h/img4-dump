@@ -1,0 +1,132 @@
+[
+  {
+    "symbol": "__cryptex_asset_type_im4m",
+    "ea": "0x2da39f988",
+    "bytes": "040000000000000000000000000000000000000000000000030000000000000000000000000000000db080cb0200000012b080cb02000000",
+    "fourcc": "\u0000\u0000\u0000\u0000",
+    "file_name": "im4m",
+    "entry_name": "Image4Manifest",
+    "index": 3,
+    "flags": "0x4"
+  },
+  {
+    "symbol": "__cryptex_asset_type_asset_root",
+    "ea": "0x2da39f9c0",
+    "bytes": "1000000000000000000000000000000000000000000000000400000000000000000000000000000021b080cb0200000026b080cb02000000",
+    "fourcc": "\u0000\u0000\u0000\u0000",
+    "file_name": "root",
+    "entry_name": "RootDirectory",
+    "index": 4,
+    "flags": "0x10"
+  },
+  {
+    "symbol": "__cryptex_asset_type_content_root",
+    "ea": "0x2da39f9f8",
+    "bytes": "1000000000000000000000000000000000000000000000000500000000000000000000000000000034b080cb0200000039b080cb02000000",
+    "fourcc": "\u0000\u0000\u0000\u0000",
+    "file_name": "cont",
+    "entry_name": "Content",
+    "index": 5,
+    "flags": "0x10"
+  },
+  {
+    "symbol": "__cryptex_asset_type_cx1p",
+    "ea": "0x2da39fa30",
+    "bytes": "0400000000000000000000000000000000000000000000000c000000000000000000000000000000d8b080cb02000000ddb080cb02000000",
+    "fourcc": "\u0000\u0000\u0000\u0000",
+    "file_name": "cx1p",
+    "entry_name": "Cryptex1Properties",
+    "index": 12,
+    "flags": "0x4"
+  },
+  {
+    "symbol": "__cryptex_asset_type_cpxd",
+    "ea": "0x2ddf30880",
+    "bytes": "2900000000000000d4607fcb02000000e0607fcb0200000000000000000000006478706300000000ccaf80cb02000000d1af80cb02000000",
+    "fourcc": "cpxd",
+    "file_name": "cpxd",
+    "entry_name": "CryptexDMG",
+    "index": 0,
+    "flags": "0x29"
+  },
+  {
+    "symbol": "__cryptex_asset_type_ltrs",
+    "ea": "0x2ddf308b8",
+    "bytes": "000000000000000008617fcb02000000000000000000000001000000000000007372746c00000000dcaf80cb02000000e1af80cb02000000",
+    "fourcc": "ltrs",
+    "file_name": "ltrs",
+    "entry_name": "LoadableTrustCache",
+    "index": 1,
+    "flags": "0x0"
+  },
+  {
+    "symbol": "__cryptex_asset_type_c411",
+    "ea": "0x2ddf308f0",
+    "bytes": "010000000000000008617fcb02000000000000000000000002000000000000003131346300000000f4af80cb02000000f9af80cb02000000",
+    "fourcc": "c411",
+    "file_name": "c411",
+    "entry_name": "Ap,CryptexInfoPlist",
+    "index": 2,
+    "flags": "0x1"
+  },
+  {
+    "symbol": "__cryptex_asset_type_pdmg",
+    "ea": "0x2ddf30928",
+    "bytes": "29000000000000004c647fcb0200000000000000000000000600000000000000676d64700000000041b080cb0200000046b080cb02000000",
+    "fourcc": "pdmg",
+    "file_name": "pdmg",
+    "entry_name": "PersonalizedDMG",
+    "index": 6,
+    "flags": "0x29"
+  },
+  {
+    "symbol": "__cryptex_asset_type_roothash",
+    "ea": "0x2ddf30960",
+    "bytes": "290000000000000008617fcb0200000000000000000000000700000000000000687361680000000056b080cb020000005bb080cb02000000",
+    "fourcc": "hash",
+    "file_name": "hash",
+    "entry_name": "RootHash",
+    "index": 7,
+    "flags": "0x29"
+  },
+  {
+    "symbol": "__cryptex_asset_type_gtcd",
+    "ea": "0x2ddf30998",
+    "bytes": "000000000000000058647fcb0200000000000000000000000800000000000000646374670000000064b080cb0200000069b080cb02000000",
+    "fourcc": "gtcd",
+    "file_name": "gtcd",
+    "entry_name": "Cryptex1,GenericTrustCache",
+    "index": 8,
+    "flags": "0x0"
+  },
+  {
+    "symbol": "__cryptex_asset_type_ginf",
+    "ea": "0x2ddf309d0",
+    "bytes": "010000000000000058647fcb0200000000000000000000000900000000000000666e69670000000084b080cb0200000089b080cb02000000",
+    "fourcc": "ginf",
+    "file_name": "ginf",
+    "entry_name": "Cryptex1,CryptexInfoPlist",
+    "index": 9,
+    "flags": "0x1"
+  },
+  {
+    "symbol": "__cryptex_asset_type_gdmg",
+    "ea": "0x2ddf30a08",
+    "bytes": "290000000000000058647fcb0200000000000000000000000a00000000000000676d646700000000a3b080cb02000000a8b080cb02000000",
+    "fourcc": "gdmg",
+    "file_name": "gdmg",
+    "entry_name": "Cryptex1,GenericDmg",
+    "index": 10,
+    "flags": "0x29"
+  },
+  {
+    "symbol": "__cryptex_asset_type_gtgv",
+    "ea": "0x2ddf30a40",
+    "bytes": "290000000000000058647fcb0200000000000000000000000b000000000000007667746700000000bcb080cb02000000c1b080cb02000000",
+    "fourcc": "gtgv",
+    "file_name": "gtgv",
+    "entry_name": "Cryptex1,GenericVolume",
+    "index": 11,
+    "flags": "0x29"
+  }
+]

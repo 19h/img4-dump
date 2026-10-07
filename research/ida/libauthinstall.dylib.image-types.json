@@ -1,0 +1,1340 @@
+[
+  {
+    "index": 0,
+    "ea": "0x269176518",
+    "entry_name": "LLB",
+    "fourcc": "illb"
+  },
+  {
+    "index": 1,
+    "ea": "0x269176528",
+    "entry_name": "iBoot",
+    "fourcc": "ibot"
+  },
+  {
+    "index": 2,
+    "ea": "0x269176538",
+    "entry_name": "AppleLogo",
+    "fourcc": "logo"
+  },
+  {
+    "index": 3,
+    "ea": "0x269176548",
+    "entry_name": "DeviceTree",
+    "fourcc": "dtre"
+  },
+  {
+    "index": 4,
+    "ea": "0x269176558",
+    "entry_name": "KernelCache",
+    "fourcc": "krnl"
+  },
+  {
+    "index": 5,
+    "ea": "0x269176568",
+    "entry_name": "Diags",
+    "fourcc": "diag"
+  },
+  {
+    "index": 6,
+    "ea": "0x269176578",
+    "entry_name": "BatteryCharging",
+    "fourcc": "glyC"
+  },
+  {
+    "index": 7,
+    "ea": "0x269176588",
+    "entry_name": "BatteryPlugin",
+    "fourcc": "glyP"
+  },
+  {
+    "index": 8,
+    "ea": "0x269176598",
+    "entry_name": "BatteryCharging0",
+    "fourcc": "chg0"
+  },
+  {
+    "index": 9,
+    "ea": "0x2691765a8",
+    "entry_name": "BatteryCharging1",
+    "fourcc": "chg1"
+  },
+  {
+    "index": 10,
+    "ea": "0x2691765b8",
+    "entry_name": "BatteryFull",
+    "fourcc": "batF"
+  },
+  {
+    "index": 11,
+    "ea": "0x2691765c8",
+    "entry_name": "BatteryLow0",
+    "fourcc": "bat0"
+  },
+  {
+    "index": 12,
+    "ea": "0x2691765d8",
+    "entry_name": "BatteryLow1",
+    "fourcc": "bat1"
+  },
+  {
+    "index": 13,
+    "ea": "0x2691765e8",
+    "entry_name": "RecoveryMode",
+    "fourcc": "recm"
+  },
+  {
+    "index": 14,
+    "ea": "0x2691765f8",
+    "entry_name": "NeedService",
+    "fourcc": "nsrv"
+  },
+  {
+    "index": 15,
+    "ea": "0x269176608",
+    "entry_name": "iBSS",
+    "fourcc": "ibss"
+  },
+  {
+    "index": 16,
+    "ea": "0x269176618",
+    "entry_name": "iBEC",
+    "fourcc": "ibec"
+  },
+  {
+    "index": 17,
+    "ea": "0x269176628",
+    "entry_name": "InputDevice",
+    "fourcc": "ipdf"
+  },
+  {
+    "index": 18,
+    "ea": "0x269176638",
+    "entry_name": "RestoreLogo",
+    "fourcc": "rlgo"
+  },
+  {
+    "index": 19,
+    "ea": "0x269176648",
+    "entry_name": "RestoreDeviceTree",
+    "fourcc": "rdtr"
+  },
+  {
+    "index": 20,
+    "ea": "0x269176658",
+    "entry_name": "RestoreKernelCache",
+    "fourcc": "rkrn"
+  },
+  {
+    "index": 21,
+    "ea": "0x269176668",
+    "entry_name": "RestoreRamDisk",
+    "fourcc": "rdsk"
+  },
+  {
+    "index": 22,
+    "ea": "0x269176678",
+    "entry_name": "RestoreTrustCache",
+    "fourcc": "rtsc"
+  },
+  {
+    "index": 23,
+    "ea": "0x269176688",
+    "entry_name": "SEP",
+    "fourcc": "sepi"
+  },
+  {
+    "index": 24,
+    "ea": "0x269176698",
+    "entry_name": "SIO",
+    "fourcc": "siof"
+  },
+  {
+    "index": 25,
+    "ea": "0x2691766a8",
+    "entry_name": "ANE",
+    "fourcc": "anef"
+  },
+  {
+    "index": 26,
+    "ea": "0x2691766b8",
+    "entry_name": "AVE",
+    "fourcc": "avef"
+  },
+  {
+    "index": 27,
+    "ea": "0x2691766c8",
+    "entry_name": "GFX",
+    "fourcc": "gfxf"
+  },
+  {
+    "index": 28,
+    "ea": "0x2691766d8",
+    "entry_name": "Ap,GFX1Firmware",
+    "fourcc": "gf1f"
+  },
+  {
+    "index": 29,
+    "ea": "0x2691766e8",
+    "entry_name": "ISP",
+    "fourcc": "ispf"
+  },
+  {
+    "index": 30,
+    "ea": "0x2691766f8",
+    "entry_name": "PMP",
+    "fourcc": "pmpf"
+  },
+  {
+    "index": 31,
+    "ea": "0x269176708",
+    "entry_name": "SystemLocker",
+    "fourcc": "lckr"
+  },
+  {
+    "index": 32,
+    "ea": "0x269176718",
+    "entry_name": "RestoreSEP",
+    "fourcc": "rsep"
+  },
+  {
+    "index": 33,
+    "ea": "0x269176728",
+    "entry_name": "CFELoader",
+    "fourcc": "cfel"
+  },
+  {
+    "index": 34,
+    "ea": "0x269176738",
+    "entry_name": "RBM",
+    "fourcc": "rbmt"
+  },
+  {
+    "index": 35,
+    "ea": "0x269176748",
+    "entry_name": "PHLEET",
+    "fourcc": "phlt"
+  },
+  {
+    "index": 36,
+    "ea": "0x269176758",
+    "entry_name": "PERTOS",
+    "fourcc": "pert"
+  },
+  {
+    "index": 37,
+    "ea": "0x269176768",
+    "entry_name": "PEHammer",
+    "fourcc": "hmmr"
+  },
+  {
+    "index": 38,
+    "ea": "0x269176778",
+    "entry_name": "ACIBTLPEM",
+    "fourcc": "lpbt"
+  },
+  {
+    "index": 39,
+    "ea": "0x269176788",
+    "entry_name": "ACIWIFI",
+    "fourcc": "aciw"
+  },
+  {
+    "index": 40,
+    "ea": "0x269176798",
+    "entry_name": "AudioCodecFirmware",
+    "fourcc": "acfw"
+  },
+  {
+    "index": 41,
+    "ea": "0x2691767a8",
+    "entry_name": "ACIBT",
+    "fourcc": "acib"
+  },
+  {
+    "index": 42,
+    "ea": "0x2691767b8",
+    "entry_name": "AOP",
+    "fourcc": "aopf"
+  },
+  {
+    "index": 43,
+    "ea": "0x2691767c8",
+    "entry_name": "RestoreAOP",
+    "fourcc": "raop"
+  },
+  {
+    "index": 44,
+    "ea": "0x2691767d8",
+    "entry_name": "DCP",
+    "fourcc": "dcpf"
+  },
+  {
+    "index": 45,
+    "ea": "0x2691767e8",
+    "entry_name": "ExtDCP",
+    "fourcc": "edcp"
+  },
+  {
+    "index": 46,
+    "ea": "0x2691767f8",
+    "entry_name": "LeapHaptics",
+    "fourcc": "lphp"
+  },
+  {
+    "index": 47,
+    "ea": "0x269176808",
+    "entry_name": "LowPowerWallet0",
+    "fourcc": "lpw0"
+  },
+  {
+    "index": 48,
+    "ea": "0x269176818",
+    "entry_name": "LowPowerWallet1",
+    "fourcc": "lpw1"
+  },
+  {
+    "index": 49,
+    "ea": "0x269176828",
+    "entry_name": "LowPowerWallet2",
+    "fourcc": "lpw2"
+  },
+  {
+    "index": 50,
+    "ea": "0x269176838",
+    "entry_name": "Multitouch",
+    "fourcc": "mtfw"
+  },
+  {
+    "index": 51,
+    "ea": "0x269176848",
+    "entry_name": "Dali",
+    "fourcc": "dali"
+  },
+  {
+    "index": 52,
+    "ea": "0x269176858",
+    "entry_name": "OSRamdisk",
+    "fourcc": "osrd"
+  },
+  {
+    "index": 53,
+    "ea": "0x269176868",
+    "entry_name": "iBootData",
+    "fourcc": "ibdt"
+  },
+  {
+    "index": 54,
+    "ea": "0x269176878",
+    "entry_name": "iBootDataStage1",
+    "fourcc": "ibd1"
+  },
+  {
+    "index": 55,
+    "ea": "0x269176888",
+    "entry_name": "iBootTest",
+    "fourcc": "itst"
+  },
+  {
+    "index": 56,
+    "ea": "0x269176898",
+    "entry_name": "Hamm",
+    "fourcc": "hamf"
+  },
+  {
+    "index": 57,
+    "ea": "0x2691768a8",
+    "entry_name": "Ap,HapticAssets",
+    "fourcc": "hpas"
+  },
+  {
+    "index": 58,
+    "ea": "0x2691768b8",
+    "entry_name": "Homer",
+    "fourcc": "homr"
+  },
+  {
+    "index": 59,
+    "ea": "0x2691768c8",
+    "entry_name": "Alamo",
+    "fourcc": "almo"
+  },
+  {
+    "index": 60,
+    "ea": "0x2691768d8",
+    "entry_name": "Liquid",
+    "fourcc": "liqd"
+  },
+  {
+    "index": 61,
+    "ea": "0x2691768e8",
+    "entry_name": "PersonalizedDMG",
+    "fourcc": "pdmg"
+  },
+  {
+    "index": 62,
+    "ea": "0x2691768f8",
+    "entry_name": "RestoreDCP",
+    "fourcc": "rdcp"
+  },
+  {
+    "index": 63,
+    "ea": "0x269176908",
+    "entry_name": "RestoreExtDCP",
+    "fourcc": "recp"
+  },
+  {
+    "index": 64,
+    "ea": "0x269176918",
+    "entry_name": "RestoreRTP",
+    "fourcc": "rrtp"
+  },
+  {
+    "index": 65,
+    "ea": "0x269176928",
+    "entry_name": "RTP",
+    "fourcc": "rtpf"
+  },
+  {
+    "index": 66,
+    "ea": "0x269176938",
+    "entry_name": "MacEFI",
+    "fourcc": "mefi"
+  },
+  {
+    "index": 67,
+    "ea": "0x269176948",
+    "entry_name": "MtpFirmware",
+    "fourcc": "mtpf"
+  },
+  {
+    "index": 68,
+    "ea": "0x269176958",
+    "entry_name": "SCE",
+    "fourcc": "scef"
+  },
+  {
+    "index": 69,
+    "ea": "0x269176968",
+    "entry_name": "SCE1Firmware",
+    "fourcc": "sc1f"
+  },
+  {
+    "index": 70,
+    "ea": "0x269176978",
+    "entry_name": "EngineeringTrustCache",
+    "fourcc": "dtrs"
+  },
+  {
+    "index": 71,
+    "ea": "0x269176988",
+    "entry_name": "LoadableTrustCache",
+    "fourcc": "ltrs"
+  },
+  {
+    "index": 72,
+    "ea": "0x269176998",
+    "entry_name": "StaticTrustCache",
+    "fourcc": "trst"
+  },
+  {
+    "index": 73,
+    "ea": "0x2691769a8",
+    "entry_name": "WCHFirmwareUpdater",
+    "fourcc": "wchf"
+  },
+  {
+    "index": 74,
+    "ea": "0x2691769b8",
+    "entry_name": "ANS",
+    "fourcc": "ansf"
+  },
+  {
+    "index": 75,
+    "ea": "0x2691769c8",
+    "entry_name": "RestoreANS",
+    "fourcc": "rans"
+  },
+  {
+    "index": 76,
+    "ea": "0x2691769d8",
+    "entry_name": "CrownFirmware",
+    "fourcc": "crwn"
+  },
+  {
+    "index": 77,
+    "ea": "0x2691769e8",
+    "entry_name": "Ap,BootabilityBrainTrustCache",
+    "fourcc": "trbb"
+  },
+  {
+    "index": 78,
+    "ea": "0x2691769f8",
+    "entry_name": "Ap,CIO",
+    "fourcc": "ciof"
+  },
+  {
+    "index": 79,
+    "ea": "0x269176a08",
+    "entry_name": "Ap,RestoreCIO",
+    "fourcc": "rcio"
+  },
+  {
+    "index": 80,
+    "ea": "0x269176a18",
+    "entry_name": "Ap,TMU",
+    "fourcc": "tmuf"
+  },
+  {
+    "index": 81,
+    "ea": "0x269176a28",
+    "entry_name": "Ap,RestoreTMU",
+    "fourcc": "rtmu"
+  },
+  {
+    "index": 82,
+    "ea": "0x269176a38",
+    "entry_name": "Ap,AudioBootChime",
+    "fourcc": "aubt"
+  },
+  {
+    "index": 83,
+    "ea": "0x269176a48",
+    "entry_name": "Ap,AudioPowerAttachChime",
+    "fourcc": "aupr"
+  },
+  {
+    "index": 84,
+    "ea": "0x269176a58",
+    "entry_name": "Ap,AudioAccessibilityBootChime",
+    "fourcc": "auac"
+  },
+  {
+    "index": 85,
+    "ea": "0x269176a68",
+    "entry_name": "Ap,LocalBoot",
+    "fourcc": "lobo"
+  },
+  {
+    "index": 86,
+    "ea": "0x269176a78",
+    "entry_name": "Ap,LocalPolicy",
+    "fourcc": "lpol"
+  },
+  {
+    "index": 87,
+    "ea": "0x269176a88",
+    "entry_name": "Ap,NextStageIM4MHash",
+    "fourcc": "nsih"
+  },
+  {
+    "index": 88,
+    "ea": "0x269176a98",
+    "entry_name": "Ap,RecoveryOSPolicyNonceHash",
+    "fourcc": "ronh"
+  },
+  {
+    "index": 89,
+    "ea": "0x269176aa8",
+    "entry_name": "Ap,VolumeUUID",
+    "fourcc": "vuid"
+  },
+  {
+    "index": 90,
+    "ea": "0x269176ab8",
+    "entry_name": "Ap,Scorpius",
+    "fourcc": "scpf"
+  },
+  {
+    "index": 91,
+    "ea": "0x269176ac8",
+    "entry_name": "Ap,ANE1",
+    "fourcc": "ane1"
+  },
+  {
+    "index": 92,
+    "ea": "0x269176ad8",
+    "entry_name": "Ap,ANE2",
+    "fourcc": "ane2"
+  },
+  {
+    "index": 93,
+    "ea": "0x269176ae8",
+    "entry_name": "Ap,ANE3",
+    "fourcc": "ane3"
+  },
+  {
+    "index": 94,
+    "ea": "0x269176af8",
+    "entry_name": "Ap,RestoreANE1",
+    "fourcc": "ran1"
+  },
+  {
+    "index": 95,
+    "ea": "0x269176b08",
+    "entry_name": "Ap,RestoreANE2",
+    "fourcc": "ran2"
+  },
+  {
+    "index": 96,
+    "ea": "0x269176b18",
+    "entry_name": "Ap,RestoreANE3",
+    "fourcc": "ran3"
+  },
+  {
+    "index": 97,
+    "ea": "0x269176b28",
+    "entry_name": "Ap,rOSLogo1",
+    "fourcc": "rlg1"
+  },
+  {
+    "index": 98,
+    "ea": "0x269176b38",
+    "entry_name": "Ap,rOSLogo2",
+    "fourcc": "rlg2"
+  },
+  {
+    "index": 99,
+    "ea": "0x269176b48",
+    "entry_name": "iBootTestStage1",
+    "fourcc": "its1"
+  },
+  {
+    "index": 100,
+    "ea": "0x269176b58",
+    "entry_name": "Ap,DebugCPUFirmware",
+    "fourcc": "dbfw"
+  },
+  {
+    "index": 101,
+    "ea": "0x269176b68",
+    "entry_name": "Ap,SecurePageTableMonitor",
+    "fourcc": "sptm"
+  },
+  {
+    "index": 102,
+    "ea": "0x269176b78",
+    "entry_name": "Ap,TouchASICFW",
+    "fourcc": "tasf"
+  },
+  {
+    "index": 103,
+    "ea": "0x269176b88",
+    "entry_name": "Ap,TrustedExecutionMonitor",
+    "fourcc": "trxm"
+  },
+  {
+    "index": 104,
+    "ea": "0x269176b98",
+    "entry_name": "Ap,cL4",
+    "fourcc": "excl"
+  },
+  {
+    "index": 105,
+    "ea": "0x269176ba8",
+    "entry_name": "Ap,MandoFW",
+    "fourcc": "mndo"
+  },
+  {
+    "index": 106,
+    "ea": "0x269176bb8",
+    "entry_name": "AOP2",
+    "fourcc": "aop2"
+  },
+  {
+    "index": 107,
+    "ea": "0x269176bc8",
+    "entry_name": "AVISP1,ACIO",
+    "fourcc": "acio"
+  },
+  {
+    "index": 108,
+    "ea": "0x269176bd8",
+    "entry_name": "AVISP1,AOP",
+    "fourcc": "aopf"
+  },
+  {
+    "index": 109,
+    "ea": "0x269176be8",
+    "entry_name": "AVISP1,AudioLeft",
+    "fourcc": "audl"
+  },
+  {
+    "index": 110,
+    "ea": "0x269176bf8",
+    "entry_name": "AVISP1,AudioRight",
+    "fourcc": "audr"
+  },
+  {
+    "index": 111,
+    "ea": "0x269176c08",
+    "entry_name": "AVISP1,DiagRTKitOS",
+    "fourcc": "drko"
+  },
+  {
+    "index": 112,
+    "ea": "0x269176c18",
+    "entry_name": "AVISP1,Display",
+    "fourcc": "disp"
+  },
+  {
+    "index": 113,
+    "ea": "0x269176c28",
+    "entry_name": "AVISP1,DisplaySec",
+    "fourcc": "diss"
+  },
+  {
+    "index": 114,
+    "ea": "0x269176c38",
+    "entry_name": "AVISP1,ISP",
+    "fourcc": "ispf"
+  },
+  {
+    "index": 115,
+    "ea": "0x269176c48",
+    "entry_name": "AVISP1,LLB",
+    "fourcc": "illb"
+  },
+  {
+    "index": 116,
+    "ea": "0x269176c58",
+    "entry_name": "AVISP1,LeapBinsDigestsArray",
+    "fourcc": "lpda"
+  },
+  {
+    "index": 117,
+    "ea": "0x269176c68",
+    "entry_name": "AVISP1,PERTOS",
+    "fourcc": "pert"
+  },
+  {
+    "index": 118,
+    "ea": "0x269176c78",
+    "entry_name": "AVISP1,RTKitOS",
+    "fourcc": "rkos"
+  },
+  {
+    "index": 119,
+    "ea": "0x269176c88",
+    "entry_name": "AVISP1,SCodec",
+    "fourcc": "strc"
+  },
+  {
+    "index": 120,
+    "ea": "0x269176c98",
+    "entry_name": "AVISP1,TMU",
+    "fourcc": "tmuf"
+  },
+  {
+    "index": 121,
+    "ea": "0x269176ca8",
+    "entry_name": "AVISP1,kmpi",
+    "fourcc": "kmpi"
+  },
+  {
+    "index": 122,
+    "ea": "0x269176cb8",
+    "entry_name": "Ap,ApplePMCFirmware",
+    "fourcc": "pmcf"
+  },
+  {
+    "index": 123,
+    "ea": "0x269176cc8",
+    "entry_name": "Ap,AppleTypeCPhyFirmware",
+    "fourcc": "cphy"
+  },
+  {
+    "index": 124,
+    "ea": "0x269176cd8",
+    "entry_name": "Ap,AppleVideoEncoder0",
+    "fourcc": "ave0"
+  },
+  {
+    "index": 125,
+    "ea": "0x269176ce8",
+    "entry_name": "Ap,AppleVideoEncoder1",
+    "fourcc": "ave1"
+  },
+  {
+    "index": 126,
+    "ea": "0x269176cf8",
+    "entry_name": "Ap,AppleVideoEncoder2",
+    "fourcc": "ave2"
+  },
+  {
+    "index": 127,
+    "ea": "0x269176d08",
+    "entry_name": "Ap,AppleVideoEncoder3",
+    "fourcc": "ave3"
+  },
+  {
+    "index": 128,
+    "ea": "0x269176d18",
+    "entry_name": "Ap,AppleVideoEncoder4",
+    "fourcc": "ave4"
+  },
+  {
+    "index": 129,
+    "ea": "0x269176d28",
+    "entry_name": "Ap,AppleVideoEncoder5",
+    "fourcc": "ave5"
+  },
+  {
+    "index": 130,
+    "ea": "0x269176d38",
+    "entry_name": "Ap,AppleVideoEncoder6",
+    "fourcc": "ave6"
+  },
+  {
+    "index": 131,
+    "ea": "0x269176d48",
+    "entry_name": "Ap,AppleVideoEncoder7",
+    "fourcc": "ave7"
+  },
+  {
+    "index": 132,
+    "ea": "0x269176d58",
+    "entry_name": "Ap,AppleVideoEncoder8",
+    "fourcc": "ave8"
+  },
+  {
+    "index": 133,
+    "ea": "0x269176d68",
+    "entry_name": "Ap,AVD",
+    "fourcc": "avdf"
+  },
+  {
+    "index": 134,
+    "ea": "0x269176d78",
+    "entry_name": "Ap,BaseSystemTrustCache",
+    "fourcc": "bstc"
+  },
+  {
+    "index": 135,
+    "ea": "0x269176d88",
+    "entry_name": "Ap,CryptexInfoPlist",
+    "fourcc": "c411"
+  },
+  {
+    "index": 136,
+    "ea": "0x269176d98",
+    "entry_name": "Ap,DCP2",
+    "fourcc": "dcp2"
+  },
+  {
+    "index": 137,
+    "ea": "0x269176da8",
+    "entry_name": "Ap,DisplayVendorCalibration",
+    "fourcc": "dven"
+  },
+  {
+    "index": 138,
+    "ea": "0x269176db8",
+    "entry_name": "Ap,ExclaveOS",
+    "fourcc": "exos"
+  },
+  {
+    "index": 139,
+    "ea": "0x269176dc8",
+    "entry_name": "Ap,ExclaveOSIntegrityCatalog",
+    "fourcc": "exic"
+  },
+  {
+    "index": 140,
+    "ea": "0x269176dd8",
+    "entry_name": "Ap,ExclaveOSTrustCache",
+    "fourcc": "extc"
+  },
+  {
+    "index": 141,
+    "ea": "0x269176de8",
+    "entry_name": "Ap,ExclaveOSVolume",
+    "fourcc": "exvl"
+  },
+  {
+    "index": 142,
+    "ea": "0x269176df8",
+    "entry_name": "Ap,LowPowerMode",
+    "fourcc": "alpm"
+  },
+  {
+    "index": 143,
+    "ea": "0x269176e08",
+    "entry_name": "Ap,MSRFirmware",
+    "fourcc": "msrf"
+  },
+  {
+    "index": 144,
+    "ea": "0x269176e18",
+    "entry_name": "Ap,RestoreDCP2",
+    "fourcc": "rdc2"
+  },
+  {
+    "index": 145,
+    "ea": "0x269176e28",
+    "entry_name": "Ap,RestoreMSRFirmware",
+    "fourcc": "rmsr"
+  },
+  {
+    "index": 146,
+    "ea": "0x269176e38",
+    "entry_name": "Ap,RestoreSecureM3Firmware",
+    "fourcc": "rsm3"
+  },
+  {
+    "index": 147,
+    "ea": "0x269176e48",
+    "entry_name": "Ap,RestoreSecurePageTableMonitor",
+    "fourcc": "rspt"
+  },
+  {
+    "index": 148,
+    "ea": "0x269176e58",
+    "entry_name": "Ap,RestoreTrustedExecutionMonitor",
+    "fourcc": "rtrx"
+  },
+  {
+    "index": 149,
+    "ea": "0x269176e68",
+    "entry_name": "Ap,RestorecL4",
+    "fourcc": "rxcl"
+  },
+  {
+    "index": 150,
+    "ea": "0x269176e78",
+    "entry_name": "Ap,SCodec",
+    "fourcc": "strc"
+  },
+  {
+    "index": 151,
+    "ea": "0x269176e88",
+    "entry_name": "Ap,SecureM3Firmware",
+    "fourcc": "sm3f"
+  },
+  {
+    "index": 152,
+    "ea": "0x269176e98",
+    "entry_name": "Ap,SystemVolumeCanonicalMetadata",
+    "fourcc": "msys"
+  },
+  {
+    "index": 153,
+    "ea": "0x269176ea8",
+    "entry_name": "Ap,XHC",
+    "fourcc": "xhcf"
+  },
+  {
+    "index": 154,
+    "ea": "0x269176eb8",
+    "entry_name": "Audio1,RTKitOS",
+    "fourcc": "rkos"
+  },
+  {
+    "index": 155,
+    "ea": "0x269176ec8",
+    "entry_name": "AudioAP1,ACIBT",
+    "fourcc": "acib"
+  },
+  {
+    "index": 156,
+    "ea": "0x269176ed8",
+    "entry_name": "AudioAP1,PhyBlueTooth",
+    "fourcc": "phyb"
+  },
+  {
+    "index": 157,
+    "ea": "0x269176ee8",
+    "entry_name": "AudioAP1,RTKitOS",
+    "fourcc": "rkos"
+  },
+  {
+    "index": 158,
+    "ea": "0x269176ef8",
+    "entry_name": "AudioAP1,RTKitOSFeature",
+    "fourcc": "rkof"
+  },
+  {
+    "index": 159,
+    "ea": "0x269176f08",
+    "entry_name": "AudioAP1,SoftwareBinaryDsp1",
+    "fourcc": "sbd1"
+  },
+  {
+    "index": 160,
+    "ea": "0x269176f18",
+    "entry_name": "Baobab,BacklightController",
+    "fourcc": "bklc"
+  },
+  {
+    "index": 161,
+    "ea": "0x269176f28",
+    "entry_name": "Baobab,Cabal",
+    "fourcc": "cabl"
+  },
+  {
+    "index": 162,
+    "ea": "0x269176f38",
+    "entry_name": "Baobab,TCON",
+    "fourcc": "tcon"
+  },
+  {
+    "index": 163,
+    "ea": "0x269176f48",
+    "entry_name": "Baobab,Trinity",
+    "fourcc": "trin"
+  },
+  {
+    "index": 164,
+    "ea": "0x269176f58",
+    "entry_name": "BaseSystem",
+    "fourcc": "bsys"
+  },
+  {
+    "index": 165,
+    "ea": "0x269176f68",
+    "entry_name": "BaseSystemVolume",
+    "fourcc": "csys"
+  },
+  {
+    "index": 166,
+    "ea": "0x269176f78",
+    "entry_name": "Buttons1,ButtonsFirmware",
+    "fourcc": "butn"
+  },
+  {
+    "index": 167,
+    "ea": "0x269176f88",
+    "entry_name": "Cellular1,CdpAscDl",
+    "fourcc": "cdpd"
+  },
+  {
+    "index": 168,
+    "ea": "0x269176f98",
+    "entry_name": "Cellular1,CdpAscUl",
+    "fourcc": "cdpu"
+  },
+  {
+    "index": 169,
+    "ea": "0x269176fa8",
+    "entry_name": "Cellular1,CdpHost",
+    "fourcc": "cdph"
+  },
+  {
+    "index": 170,
+    "ea": "0x269176fb8",
+    "entry_name": "Cellular1,LLB",
+    "fourcc": "illb"
+  },
+  {
+    "index": 171,
+    "ea": "0x269176fc8",
+    "entry_name": "Cellular1,PMUFW",
+    "fourcc": "apmu"
+  },
+  {
+    "index": 172,
+    "ea": "0x269176fd8",
+    "entry_name": "Cellular1,PMUFW2",
+    "fourcc": "pmfw"
+  },
+  {
+    "index": 173,
+    "ea": "0x269176fe8",
+    "entry_name": "Cellular1,RTKitOS",
+    "fourcc": "rkos"
+  },
+  {
+    "index": 174,
+    "ea": "0x269176ff8",
+    "entry_name": "Cellular1,iBootData",
+    "fourcc": "ibdt"
+  },
+  {
+    "index": 175,
+    "ea": "0x269177008",
+    "entry_name": "Cryptex1,AppOS",
+    "fourcc": "caos"
+  },
+  {
+    "index": 176,
+    "ea": "0x269177018",
+    "entry_name": "Cryptex1,AppTrustCache",
+    "fourcc": "trca"
+  },
+  {
+    "index": 177,
+    "ea": "0x269177028",
+    "entry_name": "Cryptex1,AppVolume",
+    "fourcc": "casy"
+  },
+  {
+    "index": 178,
+    "ea": "0x269177038",
+    "entry_name": "Cryptex1,CryptexInfoPlist",
+    "fourcc": "ginf"
+  },
+  {
+    "index": 179,
+    "ea": "0x269177048",
+    "entry_name": "Cryptex1,GenericDmg",
+    "fourcc": "gdmg"
+  },
+  {
+    "index": 180,
+    "ea": "0x269177058",
+    "entry_name": "Cryptex1,GenericIntegrityCatalog",
+    "fourcc": "ginc"
+  },
+  {
+    "index": 181,
+    "ea": "0x269177068",
+    "entry_name": "Cryptex1,GenericTrustCache",
+    "fourcc": "gtcd"
+  },
+  {
+    "index": 182,
+    "ea": "0x269177078",
+    "entry_name": "Cryptex1,GenericVolume",
+    "fourcc": "gtgv"
+  },
+  {
+    "index": 183,
+    "ea": "0x269177088",
+    "entry_name": "Cryptex1,MobileAssetBrainOS",
+    "fourcc": "osab"
+  },
+  {
+    "index": 184,
+    "ea": "0x269177098",
+    "entry_name": "Cryptex1,MobileAssetBrainTrustCache",
+    "fourcc": "trab"
+  },
+  {
+    "index": 185,
+    "ea": "0x2691770a8",
+    "entry_name": "Cryptex1,MobileAssetBrainVolume",
+    "fourcc": "syab"
+  },
+  {
+    "index": 186,
+    "ea": "0x2691770b8",
+    "entry_name": "Cryptex1,RosettaOS",
+    "fourcc": "cros"
+  },
+  {
+    "index": 187,
+    "ea": "0x2691770c8",
+    "entry_name": "Cryptex1,RosettaTrustCache",
+    "fourcc": "trcr"
+  },
+  {
+    "index": 188,
+    "ea": "0x2691770d8",
+    "entry_name": "Cryptex1,RosettaVolume",
+    "fourcc": "crsy"
+  },
+  {
+    "index": 189,
+    "ea": "0x2691770e8",
+    "entry_name": "Cryptex1,SystemOS",
+    "fourcc": "csos"
+  },
+  {
+    "index": 190,
+    "ea": "0x2691770f8",
+    "entry_name": "Cryptex1,SystemTrustCache",
+    "fourcc": "trcs"
+  },
+  {
+    "index": 191,
+    "ea": "0x269177108",
+    "entry_name": "Cryptex1,SystemVolume",
+    "fourcc": "cssy"
+  },
+  {
+    "index": 192,
+    "ea": "0x269177118",
+    "entry_name": "CryptexDMG",
+    "fourcc": "cpxd"
+  },
+  {
+    "index": 193,
+    "ea": "0x269177128",
+    "entry_name": "DMC,BaobabTCONPresets",
+    "fourcc": "tprd"
+  },
+  {
+    "index": 194,
+    "ea": "0x269177138",
+    "entry_name": "DMC,BaobabTCONTrinityCabalLUTs",
+    "fourcc": "ttld"
+  },
+  {
+    "index": 195,
+    "ea": "0x269177148",
+    "entry_name": "DMC,Firmware1",
+    "fourcc": "dfw1"
+  },
+  {
+    "index": 196,
+    "ea": "0x269177158",
+    "entry_name": "DMC,HarmonyDB",
+    "fourcc": "thrd"
+  },
+  {
+    "index": 197,
+    "ea": "0x269177168",
+    "entry_name": "DMC,USBPDThunderboltFirmware",
+    "fourcc": "dutf"
+  },
+  {
+    "index": 198,
+    "ea": "0x269177178",
+    "entry_name": "DMC,UsbHubFirmware",
+    "fourcc": "duhf"
+  },
+  {
+    "index": 199,
+    "ea": "0x269177188",
+    "entry_name": "DMC,VCOMFirmware1",
+    "fourcc": "dvf1"
+  },
+  {
+    "index": 200,
+    "ea": "0x269177198",
+    "entry_name": "OS",
+    "fourcc": "rosi"
+  },
+  {
+    "index": 201,
+    "ea": "0x2691771a8",
+    "entry_name": "Rap,RTKitIOConfig",
+    "fourcc": "icnf"
+  },
+  {
+    "index": 202,
+    "ea": "0x2691771b8",
+    "entry_name": "Rap,RTKitOS",
+    "fourcc": "rkos"
+  },
+  {
+    "index": 203,
+    "ea": "0x2691771c8",
+    "entry_name": "Rap,RestoreRTKitOS",
+    "fourcc": "rrko"
+  },
+  {
+    "index": 204,
+    "ea": "0x2691771d8",
+    "entry_name": "Rap,SoftwareBinaryDsp1",
+    "fourcc": "sbd1"
+  },
+  {
+    "index": 205,
+    "ea": "0x2691771e8",
+    "entry_name": "SE,Bootloader",
+    "fourcc": "sebl"
+  },
+  {
+    "index": 206,
+    "ea": "0x2691771f8",
+    "entry_name": "SE,Firmware",
+    "fourcc": "sefw"
+  },
+  {
+    "index": 207,
+    "ea": "0x269177208",
+    "entry_name": "SE,MigrationOS",
+    "fourcc": "semo"
+  },
+  {
+    "index": 208,
+    "ea": "0x269177218",
+    "entry_name": "SE,OS",
+    "fourcc": "seos"
+  },
+  {
+    "index": 209,
+    "ea": "0x269177228",
+    "entry_name": "SE,RapRTKitOS",
+    "fourcc": "rkos"
+  },
+  {
+    "index": 210,
+    "ea": "0x269177238",
+    "entry_name": "SE,RapSwBinDsp",
+    "fourcc": "sbd1"
+  },
+  {
+    "index": 211,
+    "ea": "0x269177248",
+    "entry_name": "SE,UpdatePayload",
+    "fourcc": "seph"
+  },
+  {
+    "index": 212,
+    "ea": "0x269177258",
+    "entry_name": "SepStage1",
+    "fourcc": "stg1"
+  },
+  {
+    "index": 213,
+    "ea": "0x269177268",
+    "entry_name": "SystemVolume",
+    "fourcc": "isys"
+  },
+  {
+    "index": 214,
+    "ea": "0x269177278",
+    "entry_name": "Timer,AppleTypeCPhyFirmware,1",
+    "fourcc": "cphy"
+  },
+  {
+    "index": 215,
+    "ea": "0x269177288",
+    "entry_name": "Timer,RTKitOS,1",
+    "fourcc": "rrko"
+  },
+  {
+    "index": 216,
+    "ea": "0x269177298",
+    "entry_name": "USBPortController1,USBFirmware",
+    "fourcc": "usbf"
+  },
+  {
+    "index": 217,
+    "ea": "0x2691772a8",
+    "entry_name": "Wireless1,RTKitOS",
+    "fourcc": "rkos"
+  },
+  {
+    "index": 218,
+    "ea": "0x2691772b8",
+    "entry_name": "YonkersIR1,SepObject",
+    "fourcc": "sepi"
+  },
+  {
+    "index": 219,
+    "ea": "0x2691772c8",
+    "entry_name": "ftap",
+    "fourcc": "ftap"
+  },
+  {
+    "index": 220,
+    "ea": "0x2691772d8",
+    "entry_name": "ftsp",
+    "fourcc": "ftsp"
+  },
+  {
+    "index": 221,
+    "ea": "0x2691772e8",
+    "entry_name": "rfta",
+    "fourcc": "rfta"
+  },
+  {
+    "index": 222,
+    "ea": "0x2691772f8",
+    "entry_name": "rfts",
+    "fourcc": "rfts"
+  }
+]

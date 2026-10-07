@@ -1,0 +1,116 @@
+warning: `package.homepage` is redundant with `package.repository`
+ --> Cargo.toml:8:12
+  |
+7 | repository = "https://github.com/19h/img4-dump"
+  |              ----------------------------------
+8 | homepage = "https://github.com/19h/img4-dump"
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `cargo::redundant_homepage` is set to `warn` by default
+help: consider removing `package.homepage`
+warning: `img4-dump` (manifest) generated 1 warning
+   Compiling img4-dump v3.1.0 (/Users/int/dev/img4-dump)
+warning: variable does not need to be mutable
+   --> src/decompress_lzss.rs:161:13
+    |
+161 | ...   let mut emit = |out: &mut Vec<u8>, is_literal: bool, payload: &[u8], flags: &mut u8, flag_bit: &mut u8, flag_pos: &mut usize| {
+    |           ----^^^^
+    |           |
+    |           help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: `img4-dump` (bin "img4-dump" test) generated 1 warning (run `cargo fix --bin "img4-dump" -p img4-dump --tests` to apply 1 suggestion)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.63s
+     Running unittests src/main.rs (target/debug/build/img4-dump/a6fee3a33565928b/out/img4_dump-a6fee3a33565928b)
+
+running 44 tests
+test decompress_lzfse::tests::magic_detection ... ok
+test decompress_lzss::tests::adler32_known_vector ... ok
+test crypto::tests::rejects_empty_ciphertext ... ok
+test crypto::tests::cbc_rejects_unaligned_length ... ok
+test decompress_lzss::tests::complzss_compressed_size_overrun_is_rejected ... ok
+test crypto::tests::rejects_bad_iv_length ... ok
+test decompress_lzss::tests::rt_empty ... ok
+test crypto::tests::rejects_bad_key_length ... ok
+test crypto::tests::cbc_aes128_nist_vector ... ok
+test formatter::tests::test_format_bytes ... ok
+test crypto::tests::ctr_aes128_nist_vector ... ok
+test formatter::tests::test_group_images ... ok
+test crypto::tests::ctr_round_trip_any_length ... ok
+test decompress_lzss::tests::complzss_oversized_uncompressed_size_is_bounded ... ok
+test fourcc::tests::test_property_fallback ... ok
+test parse::tests::cert_chain_overrun_is_rejected ... ok
+test parse::tests::cert_chain_truncated_is_rejected ... ok
+test parse::tests::cert_chain_valid_two_certs ... ok
+test parse::tests::len_indefinite_rejected ... ok
+test decompress_lzfse::tests::round_trip_with_undersized_hint ... ok
+test parse::tests::len_long_form ... ok
+test parse::tests::len_oversized_rejected_no_overflow ... ok
+test parse::tests::len_reserved_rejected ... ok
+test parse::tests::len_short_form ... ok
+test parse::tests::len_truncated_rejected ... ok
+test parse::tests::tag_high_form_ok ... ok
+test fourcc::tests::test_get_known_codes ... ok
+test fourcc::tests::test_unknown_code ... ok
+test parse::tests::tag_high_form_overflow_rejected_no_panic ... ok
+test fourcc::tests::native_image_entries_preserve_aliases ... ok
+test parse::tests::tag_high_form_truncated_rejected ... ok
+test parse::tests::tag_low_form ... ok
+test util::tests::entropy_of_uniform_is_max ... ok
+test util::tests::validate_flags_all_zero_invalid ... ok
+test util::tests::validate_flags_known_magic_valid ... ok
+test decompress_lzss::tests::complzss_bad_adler_is_rejected ... ok
+test util::tests::validate_flags_structured_valid ... ok
+test util::tests::validate_small_payload_is_inconclusive_not_valid ... ok
+test decompress_lzss::tests::rt_repetitive ... ok
+test util::tests::validate_moderate_entropy_structured_is_valid ... ok
+test util::tests::validate_flags_random_as_invalid ... ok
+test decompress_lzss::tests::rt_literals ... ok
+test decompress_lzss::tests::complzss_container_round_trip_and_validation ... ok
+test decompress_lzss::tests::rt_structured ... ok
+
+test result: ok. 44 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running tests/auto.rs (target/debug/build/img4-dump/3e3bdff8baa44ff4/out/auto-3e3bdff8baa44ff4)
+
+running 4 tests
+test auto_without_im4p_errors ... ok
+test auto_without_keys_or_kbag_errors ... ok
+test auto_cbc_writes_sibling_and_recovers ... ok
+test auto_json_reports_mode ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/cli.rs (target/debug/build/img4-dump/8b9089b7d2ac8b36/out/cli-8b9089b7d2ac8b36)
+
+running 26 tests
+test im4p_stray_sequence_tolerated ... ok
+test im4p_compression_without_keybag ... ok
+test im4p_keybag_two_entries_redacted ... ok
+test im4p_compression_oversized_size_degrades ... ok
+test im4p_standalone_basic ... ok
+test im4m_version_out_of_range_tolerated ... ok
+test im4m_standalone ... ok
+test im4m_images_present_structural ... ok
+test im4r_bncn_extracted ... ok
+test im4p_keybag_and_compression ... ok
+test im4m_big_integer_property ... ok
+test im4m_structured_manifest_props ... ok
+test im4p_payp_properties ... ok
+test im4p_bare_payp_compatibility ... ok
+test im4r_numeric_nonce_slots ... ok
+test json_error_boundary ... ok
+test img4_full_container ... ok
+test im4r_standalone ... ok
+test json_lists_output_files ... ok
+test rejects_garbage ... ok
+test json_includes_im4r_properties ... ok
+test kbag_class_selection_enforced ... ok
+test im4p_malformed_payp_wrapper ... ok
+test native_property_types_and_anomalies ... ok
+test im4p_payp_optional_fields ... ok
+test rejects_trailing_bytes_after_top_level_der ... ok
+
+test result: ok. 26 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+

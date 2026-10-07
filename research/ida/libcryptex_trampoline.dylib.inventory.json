@@ -1,0 +1,206 @@
+{
+  "file": "/private/tmp/img4/libcryptex_trampoline.dylib",
+  "sha256": "c85438b1089104a9fd3d09c1fd8aa68122e2feef50d81caf1e93dbfeca3b5005",
+  "primary": {
+    "name": "__TEXT",
+    "start": 12004167680,
+    "end": 12004173824,
+    "sections": [
+      {
+        "name": "__text",
+        "start": 12004169696,
+        "end": 12004171460,
+        "offset": 67552
+      },
+      {
+        "name": "__const",
+        "start": 12004171464,
+        "end": 12004171576,
+        "offset": 69320
+      },
+      {
+        "name": "__cstring",
+        "start": 12004171576,
+        "end": 12004172159,
+        "offset": 69432
+      },
+      {
+        "name": "__oslogstring",
+        "start": 12004172159,
+        "end": 12004172419,
+        "offset": 70015
+      },
+      {
+        "name": "__info_plist",
+        "start": 12004172419,
+        "end": 12004173687,
+        "offset": 70275
+      },
+      {
+        "name": "__unwind_info",
+        "start": 12004173688,
+        "end": 12004173824,
+        "offset": 71544
+      },
+      {
+        "name": "__auth_stubs",
+        "start": 12004173824,
+        "end": 12004173824,
+        "offset": 0
+      }
+    ]
+  },
+  "function_count": 12,
+  "functions": [
+    {
+      "ea": "0x2cb8117e0",
+      "name": "_cryptex_trampoline_upgrade_wait_options_create",
+      "size": 108,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb81184c",
+      "name": "_cryptex_trampoline_upgrade_wait_options_destroy",
+      "size": 64,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb81188c",
+      "name": "_cryptex_trampoline_upgrade_wait_options_set_cryptex_name",
+      "size": 184,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb811944",
+      "name": "_cryptex_trampoline_upgrade_wait",
+      "size": 696,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb811bfc",
+      "name": "___cryptex_trampoline_osl_block_invoke",
+      "size": 48,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb811c2c",
+      "name": "_OUTLINED_FUNCTION_0",
+      "size": 120,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb811ca4",
+      "name": "_OUTLINED_FUNCTION_1",
+      "size": 32,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb811cc4",
+      "name": "_OUTLINED_FUNCTION_2",
+      "size": 56,
+      "flags": 136192
+    },
+    {
+      "ea": "0x2cb811cfc",
+      "name": "_sysctl_upgrade_is_ongoing",
+      "size": 120,
+      "flags": 5136
+    },
+    {
+      "ea": "0x2cb811d74",
+      "name": "_cryptex_trampoline_upgrade_wait_options_create.cold.1",
+      "size": 224,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb811e54",
+      "name": "_cryptex_trampoline_upgrade_wait_options_set_cryptex_name.cold.1",
+      "size": 88,
+      "flags": 5137
+    },
+    {
+      "ea": "0x2cb811eac",
+      "name": "_cryptex_trampoline_upgrade_wait.cold.1",
+      "size": 24,
+      "flags": 5136
+    }
+  ],
+  "strings": [
+    {
+      "ea": "0x2cb811f38",
+      "text": "known-constant allocation",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb811f52",
+      "text": "v8@?0",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb811f58",
+      "text": "com.apple.libcryptex",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb811f6d",
+      "text": "trampoline",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb811f78",
+      "text": "kern.proc_rsr_in_progress",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb811f92",
+      "text": "761.40.23",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb811f9c",
+      "text": "Monitor Cryptex Upgrades Version 2.0.0: Sat Sep 12 00:30:30 PDT 2026; root:libcryptex-761.40.23~235/libcryptex_trampoline/RELEASE_ARM64E",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb812025",
+      "text": "RELEASE",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb81202d",
+      "text": "@(#)VERSION:Monitor Cryptex Upgrades Version 2.0.0: Sat Sep 12 00:30:30 PDT 2026; root:libcryptex-761.40.23~235/libcryptex_trampoline/RELEASE_ARM64E",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb8120c2",
+      "text": "/AppleInternal/Library/BuildRoots/4~CYXdugChSfIhpJX7EukH244OqQI1ztU2_lWelkc/Library/Caches/com.apple.xbs/TemporaryDirectory.ZfEZH4/Binaries/libcryptex/install/Symbols/libcryptex_trampoline",
+      "section": "__cstring"
+    },
+    {
+      "ea": "0x2cb81217f",
+      "text": "Failed to read upgrade sysctl.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb8121b0",
+      "text": "Blocking on upgrade for cryptex '%{public}s.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb8121dd",
+      "text": "Error encountered blocking on cryptex upgrade.: %{darwin.errno}d",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb81221e",
+      "text": "Unblocked after upgrade for cryptex '%{public}s.",
+      "section": "__oslogstring"
+    },
+    {
+      "ea": "0x2cb81224f",
+      "text": "allocation failed: obj = %s, size = %lu, error = %s",
+      "section": "__oslogstring"
+    }
+  ],
+  "patched_bytes_primary": []
+}
